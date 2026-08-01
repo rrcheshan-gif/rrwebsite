@@ -152,12 +152,12 @@
 }
 
 /* Outline buttons in Dark Mode */
-[data-theme="dark"] .btn-outline {
+[data-theme="dark"] .btn-glass {
   color: #f8fafc !important;
   border-color: #cbd5e1 !important;
 }
 
-[data-theme="dark"] .btn-outline:hover {
+[data-theme="dark"] .btn-glass:hover {
   background-color: #f8fafc !important;
   color: #0b0f19 !important;
 }
@@ -321,7 +321,7 @@ ul {
 }
 
 /* Liquid Translucent Dark/Outline Glass Button */
-.btn-outline {
+.btn-glass {
   background: linear-gradient(
     135deg, 
     rgba(255, 255, 255, 0.18) 0%, 
@@ -338,7 +338,7 @@ ul {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-.btn-outline:hover {
+.btn-glass:hover {
   background: linear-gradient(
     135deg, 
     rgba(255, 255, 255, 0.35) 0%, 
@@ -1479,3 +1479,8 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
+
+
+
+.btn-outline { background: transparent !important; color: var(--text-dark) !important; border: 1.5px solid var(--text-dark) !important; }
+.btn-outline:hover { background: var(--text-dark) !important; color: var(--bg-base) !important; }

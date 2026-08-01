@@ -246,7 +246,7 @@ export default function Home() {
                   <Link href="/projects" className="btn btn-primary">
                     Our Projects <ArrowRight style={{ marginLeft: '8px', width: '20px', height: '20px' }} />
                   </Link>
-                  <Link href="/about" className="btn btn-outline">
+                  <Link href="/about" className="btn btn-glass">
                     Our Story
                   </Link>
                 </div>
