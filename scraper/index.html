@@ -1,0 +1,509 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RR Construction (Pvt) Ltd - Engineering The Nation's Infrastructure</title>
+    <meta name="description" content="RR Construction (Pvt) Ltd — A leading civil engineering enterprise building Sri Lanka's roads, bridges, harbours, and water infrastructure since 1995. Engineering that stands the test of time.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="floating-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo"> <img src="images/logo.png" alt="RR Construction Logo" class="nav-logo-img"> <div class="logo-text"> <span class="logo-title">CONSTRUCTION</span> <span class="logo-sub">(PVT) LTD</span> </div> </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html" style="cursor: pointer;">About Us <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="quality-policy.html">Quality Policy</a></li>
+                        <li><a href="awards.html">Awards & Recognitions</a></li>
+                    </ul>
+                </li>
+                                <li class="dropdown">
+                    <a href="projects.html" style="cursor: pointer;">Projects <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="projects.html">Completed Projects</a></li>
+                        <li><a href="ongoing.html">Ongoing Projects</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="people.html" style="cursor: pointer;">People <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="people.html">Our People</a></li>
+                        <li><a href="training.html">Training & Development</a></li>
+                        <li><a href="welfare.html">Employee Welfare</a></li>
+
+                    </ul>
+                </li>
+                                <li><a href="quarries-aggregates.html">Quarries & Aggregates</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="career.html">Careers</a></li>
+                <li><button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode"><i data-lucide="moon" class="moon-icon"></i><i data-lucide="sun" class="sun-icon"></i></button></li>
+                <li><a href="contact.html" class="btn-nav-contact">Contact Us</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- FULLSCREEN HERO SECTION -->
+    <section class="hero-fullscreen">
+        <!-- Background Slider -->
+        <div class="hero-bg-slider" id="heroSlider">
+            <div class="hero-slide active">
+                <img loading="lazy" src="images/highway.jpg" alt="Highway Networks & Infrastructure" onerror="this.src='images/causeway.jpg'">
+            </div>
+            <div class="hero-slide">
+                <img loading="lazy" src="images/hero-road-roller.jpg" alt="Highway Construction" style="object-position: center 50%;">
+            </div>
+            <div class="hero-slide">
+                <img loading="lazy" src="images/maritime-harbour-site.jpg" alt="Maritime Harbour Projects" style="object-position: center 55%;">
+            </div>
+            <div class="hero-slide">
+                <img loading="lazy" src="images/puttalam-hero.jpg" alt="Bridges & Overpasses">
+            </div>
+            <div class="hero-slide">
+                <img loading="lazy" src="images/kandy-landslide/kandy-5.jpg" alt="Landslide & Soil Mitigation">
+            </div>
+            <div class="hero-slide">
+                <img loading="lazy" src="images/veerapuram/omanthai-1.jpg" alt="Veerapuram M Sand Plant">
+            </div>
+            <div class="hero-slide">
+                <img loading="lazy" src="images/equipment.jpg" alt="Heavy Resource Fleet">
+            </div>
+            
+            <!-- Overlay -->
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Foreground Content -->
+        <div class="hero-content-wrapper">
+            <div class="hero-content">
+                                <div class="hero-text-slides">
+                    <!-- Slide 1 (Original Home Slide) -->
+                    <div class="hero-text-slide active">
+                        <div class="scale-up" style="display: inline-block; padding: 8px 20px; background: rgba(229, 57, 53, 0.9); backdrop-filter: blur(10px); color: white; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 4px 15px rgba(229, 57, 53, 0.4);">PASSION FOR ENGINEERING EXCELLENCE</div>
+                        <h1 class="hero-heading" style="color: #ffffff !important;"><span class="text-reveal-wrapper"><span class="text-reveal" style="color: #ffffff;">Engineering</span></span><br><span class="text-reveal-wrapper"><span class="text-reveal" style="transition-delay: 0.1s;"><span style="color: #ff4d4d; text-shadow: 0 0 20px rgba(255, 77, 77, 0.4);">Sri Lanka's</span></span></span><br><span class="text-reveal-wrapper"><span class="text-reveal" style="transition-delay: 0.2s; color: #ffffff;">Tomorrow</span></span></h1>
+                        <p class="fade-in hero-text-white" style="font-size: 1.25rem; line-height: 1.8; margin-bottom: 30px; color: #ffffff !important; max-width: 650px; font-weight: 400; transition-delay: 0.3s; ">For three decades, RR Construction has turned ambitious blueprints into the roads, bridges, harbours, and water systems that keep Sri Lanka moving forward — built to last, delivered on time.</p>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="hero-text-slide">
+                        <div class="scale-up" style="display: inline-block; padding: 8px 20px; background: rgba(229, 57, 53, 0.9); backdrop-filter: blur(10px); color: white; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 4px 15px rgba(229, 57, 53, 0.4);">01 / HIGHWAY NETWORKS & INFRASTRUCTURE</div>
+                        <h1 class="hero-heading" style="color: #ffffff !important;"><span class="text-reveal-wrapper"><span class="text-reveal" style="color: #ffffff;">Carving Nationwide</span></span><br><span class="text-reveal-wrapper"><span class="text-reveal" style="transition-delay: 0.1s;"><span style="color: #ff4d4d; text-shadow: 0 0 20px rgba(255, 77, 77, 0.4);">Expressway Systems</span></span></span></h1>
+                        <p class="fade-in hero-text-white" style="font-size: 1.25rem; line-height: 1.8; margin-bottom: 30px; color: #ffffff !important; max-width: 650px; font-weight: 400; transition-delay: 0.3s; ">As a leading civil engineering partner, we construct key expressway packages across Sri Lanka. Our expertise in major excavation, stabilization, and asphalt laying accelerates connectivity.</p>
+                    </div>
+                    
+                    <!-- Slide 4 -->
+                    <div class="hero-text-slide">
+                        <div class="scale-up" style="display: inline-block; padding: 8px 20px; background: rgba(229, 57, 53, 0.9); backdrop-filter: blur(10px); color: white; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 4px 15px rgba(229, 57, 53, 0.4);">02 / MARITIME & HARBOUR CONSTRUCTION</div>
+                        <h1 class="hero-heading" style="color: #ffffff !important;"><span class="text-reveal-wrapper"><span class="text-reveal" style="color: #ffffff;">Building Sri Lanka's</span></span><br><span class="text-reveal-wrapper"><span class="text-reveal" style="transition-delay: 0.1s;"><span style="color: #ff4d4d; text-shadow: 0 0 20px rgba(255, 77, 77, 0.4);">Maritime Heritage</span></span></span></h1>
+                        <p class="fade-in hero-text-white" style="font-size: 1.25rem; line-height: 1.8; margin-bottom: 30px; color: #ffffff !important; max-width: 650px; font-weight: 400; transition-delay: 0.3s; ">We deliver advanced maritime infrastructure, including dredging, breakwaters, and harbour facility development, ensuring robust connectivity for Sri Lanka’s coastal trade and economic growth.</p>
+                    </div>
+                    
+                    <!-- Slide 5 -->
+                    <div class="hero-text-slide">
+                        <div class="scale-up" style="display: inline-block; padding: 8px 20px; background: rgba(229, 57, 53, 0.9); backdrop-filter: blur(10px); color: white; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 4px 15px rgba(229, 57, 53, 0.4);">03 / BRIDGES & OVERPASSES</div>
+                        <h1 class="hero-heading" style="color: #ffffff !important;"><span class="text-reveal-wrapper"><span class="text-reveal" style="color: #ffffff;">Structural Integrity</span></span><br><span class="text-reveal-wrapper"><span class="text-reveal" style="transition-delay: 0.1s;"><span style="color: #ff4d4d; text-shadow: 0 0 20px rgba(255, 77, 77, 0.4);">Spanning Generations</span></span></span></h1>
+                        <p class="fade-in hero-text-white" style="font-size: 1.25rem; line-height: 1.8; margin-bottom: 30px; color: #ffffff !important; max-width: 650px; font-weight: 400; transition-delay: 0.3s; ">Using high-strength concrete and advanced structural steel fabrication, we build river crossings, heavy overpasses, and causeways designed to carry extreme traffic loads safely.</p>
+                    </div>
+                    
+                    <!-- Slide 6 -->
+                    <div class="hero-text-slide">
+                        <div class="scale-up" style="display: inline-block; padding: 8px 20px; background: rgba(229, 57, 53, 0.9); backdrop-filter: blur(10px); color: white; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 4px 15px rgba(229, 57, 53, 0.4);">04 / LANDSLIDE & SOIL MITIGATION</div>
+                        <h1 class="hero-heading" style="color: #ffffff !important;"><span class="text-reveal-wrapper"><span class="text-reveal" style="color: #ffffff;">Stabilizing Communities</span></span><br><span class="text-reveal-wrapper"><span class="text-reveal" style="transition-delay: 0.1s;"><span style="color: #ff4d4d; text-shadow: 0 0 20px rgba(255, 77, 77, 0.4);">Under Geological Threat</span></span></span></h1>
+                        <p class="fade-in hero-text-white" style="font-size: 1.25rem; line-height: 1.8; margin-bottom: 30px; color: #ffffff !important; max-width: 650px; font-weight: 400; transition-delay: 0.3s; ">In critical hillside zones (Nuwara Eliya, Hatton, Kandy), we deploy state-of-the-art geotechnical engineering. Soil retaining structures and rock-fall nets keep national roadways secure.</p>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="hero-text-slide">
+                        <div class="scale-up" style="display: inline-block; padding: 8px 20px; background: rgba(229, 57, 53, 0.9); backdrop-filter: blur(10px); color: white; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 4px 15px rgba(229, 57, 53, 0.4);">05 / AGGREGATES & MATERIAL PRODUCTION</div>
+                        <h1 class="hero-heading" style="color: #ffffff !important;"><span class="text-reveal-wrapper"><span class="text-reveal" style="color: #ffffff;">Sustainable Aggregate</span></span><br><span class="text-reveal-wrapper"><span class="text-reveal" style="transition-delay: 0.1s;"><span style="color: #ff4d4d; text-shadow: 0 0 20px rgba(255, 77, 77, 0.4);">Supply Chain</span></span></span></h1>
+                        <p class="fade-in hero-text-white" style="font-size: 1.25rem; line-height: 1.8; margin-bottom: 30px; color: #ffffff !important; max-width: 650px; font-weight: 400; transition-delay: 0.3s; ">We operate large-scale, eco-friendly M-Sand and crusher facilities to supply high-quality, continuous aggregates. Our self-reliant production ensures superior concrete strength for major infrastructure projects nationwide.</p>
+                    </div>
+                    
+                    <!-- Slide 7 -->
+                    <div class="hero-text-slide">
+                        <div class="scale-up" style="display: inline-block; padding: 8px 20px; background: rgba(229, 57, 53, 0.9); backdrop-filter: blur(10px); color: white; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 4px 15px rgba(229, 57, 53, 0.4);">06 / HEAVY RESOURCE FLEET</div>
+                        <h1 class="hero-heading" style="color: #ffffff !important;"><span class="text-reveal-wrapper"><span class="text-reveal" style="color: #ffffff;">Self-Owned Assets</span></span><br><span class="text-reveal-wrapper"><span class="text-reveal" style="transition-delay: 0.1s;"><span style="color: #ff4d4d; text-shadow: 0 0 20px rgba(255, 77, 77, 0.4);">For Speed & Independence</span></span></span></h1>
+                        <p class="fade-in hero-text-white" style="font-size: 1.25rem; line-height: 1.8; margin-bottom: 30px; color: #ffffff !important; max-width: 650px; font-weight: 400; transition-delay: 0.3s; ">We operate a massive self-owned fleet of 1,000+ heavy machines and high-output asphalt plants. This independence ensures zero dependency on third-party schedules.</p>
+                    </div>
+                
+                </div>
+                <div class="fade-in hero-buttons" style="display: flex; gap: 20px; flex-wrap: wrap; transition-delay: 0.4s;">
+                    <a href="projects.html" class="btn-solid-red">Our Projects <i data-lucide="arrow-right" style="width: 20px; height: 20px; vertical-align: middle; margin-left: 8px;"></i></a>
+                    <a href="about.html" class="btn-solid-white">Our Story</a>
+                </div>
+
+        </div>
+<!-- Scroll Indicator -->
+        <div class="scroll-indicator fade-in" style="transition-delay: 1s;">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+        </div>
+
+        <script>
+            // Synced Background & Foreground Slider Logic
+            document.addEventListener('DOMContentLoaded', function() {
+                const bgSlides = document.querySelectorAll('.hero-bg-slider .hero-slide');
+                const textSlides = document.querySelectorAll('.hero-text-slides .hero-text-slide');
+                let currentSlide = 0;
+                const totalSlides = bgSlides.length;
+
+                if (totalSlides > 0 && textSlides.length === totalSlides) {
+                    setInterval(() => {
+                        // Deactivate current slide
+                        bgSlides[currentSlide].classList.remove('active');
+                        textSlides[currentSlide].classList.remove('active');
+
+                        // Move to next slide
+                        currentSlide = (currentSlide + 1) % totalSlides;
+
+                        // Activate next slide
+                        bgSlides[currentSlide].classList.add('active');
+                        textSlides[currentSlide].classList.add('active');
+                        
+                        // Update the modern slide indicator if it exists
+                        const slideNum = document.querySelector('.current-slide-num');
+                        if (slideNum) {
+                            slideNum.textContent = String(currentSlide + 1).padStart(2, '0');
+                        }
+                    }, 6000); // 6 seconds auto rotation
+                }
+            });
+        </script>
+    </section>
+
+    <!-- CORPORATE STATS BAR (Maga Style) -->
+    <section class="stats-bar" style="background: var(--bg-dark-panel); padding: 0; margin-top: -5px; position: relative; z-index: 10; border-bottom: 4px solid var(--primary-color);">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-around; max-width: 1800px; margin: 0 auto;">
+            <div class="stat-item" style="flex: 1; min-width: 250px; padding: 40px 20px; text-align: center; border-right: 1px solid rgba(255,255,255,0.1);">
+                <i data-lucide="calendar" style="width: 35px; height: 35px; color: var(--primary-color); margin-bottom: 15px;"></i>
+                <h3 style="color: white; font-size: 2.2rem; margin-bottom: 5px;">1995</h3>
+                <p style="color: #94a3b8; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">Established</p>
+            </div>
+            <div class="stat-item" style="flex: 1; min-width: 250px; padding: 40px 20px; text-align: center; border-right: 1px solid rgba(255,255,255,0.1);">
+                <i data-lucide="users" style="width: 35px; height: 35px; color: var(--primary-color); margin-bottom: 15px;"></i>
+                <h3 style="color: white; font-size: 2.2rem; margin-bottom: 5px;">1,800+</h3>
+                <p style="color: #94a3b8; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">Skilled Workforce</p>
+            </div>
+            <div class="stat-item" style="flex: 1; min-width: 250px; padding: 40px 20px; text-align: center; border-right: 1px solid rgba(255,255,255,0.1);">
+                <i data-lucide="award" style="width: 35px; height: 35px; color: var(--primary-color); margin-bottom: 15px;"></i>
+                <h3 style="color: white; font-size: 2.2rem; margin-bottom: 5px;">100+</h3>
+                <p style="color: #94a3b8; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">Projects Completed</p>
+            </div>
+            <div class="stat-item" style="flex: 1; min-width: 250px; padding: 40px 20px; text-align: center;">
+                <i data-lucide="shield-check" style="width: 35px; height: 35px; color: var(--primary-color); margin-bottom: 15px;"></i>
+                <h3 style="color: white; font-size: 2.2rem; margin-bottom: 5px;">ISO Certified</h3>
+                <p style="color: #94a3b8; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">9001, 14001, 45001</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORPORATE PROFILE (Modern Layout) -->
+    <section class="bg-base" style="padding: var(--section-padding);">
+        <div style="max-width: 1800px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 60px;">
+            <div class="slide-in-left" style="flex: 1; min-width: 350px; position: relative;">
+                <div style="position: absolute; top: -20px; left: -20px; width: 100px; height: 100px; border-top: 5px solid var(--primary-color); border-left: 5px solid var(--primary-color); z-index: 1;"></div>
+                <img loading="lazy" src="images/kilinochchi-bridge-feature.jpg" alt="Kilinochchi Bridge Construction" style="width: 100%; height: auto; border-radius: 4px; position: relative; z-index: 2; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
+                <div style="position: absolute; bottom: -30px; right: -30px; background: var(--bg-dark-panel); padding: 30px; border-radius: 4px; z-index: 3; max-width: 250px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-bottom: 4px solid var(--primary-color);">
+                    <h4 style="color: white; margin: 0; font-size: 1.2rem;">Strong Financial Backing</h4>
+                    <p style="color: #94a3b8; margin: 0; font-size: 0.9rem;">Solid Foundation</p>
+                </div>
+                </div>
+            <div class="slide-in-right" style="flex: 1; min-width: 350px;">
+                <h4 style="color: var(--primary-color); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; text-shadow: 0 2px 5px rgba(0,0,0,0.8);">Corporate Profile</h4>
+                <h2 style="font-size: 3rem; line-height: 1.2; margin-bottom: 25px; color: var(--text-primary);">BUILDING THE FUTURE<br>OF SRI LANKA</h2>
+                <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 20px; font-weight: 500; line-height: 1.7;">We measure success the way our clients do: the right quality, delivered on schedule, at a fair cost.</p>
+                <p style="color: var(--text-secondary); margin-bottom: 35px; line-height: 1.8;">With massive financial backing and a self-owned fleet of 1,000+ machines, we don't wait on hired equipment or third-party schedules. From expressways to harbour works, we bring the full strength of our resources to every site — so Sri Lanka's infrastructure keeps pace with its ambitions.</p>
+                <a href="about.html" class="btn-glass" style="background: var(--primary-color); color: white; border-radius: 4px; padding: 14px 28px; text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">Discover Our Legacy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE EXPERTISE (Modern Image Cards) -->
+    <section style="padding: var(--section-padding); background: var(--bg-light);">
+        <div style="max-width: 1800px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 60px;" class="fade-in">
+                <h4 style="color: var(--primary-color); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; text-shadow: 0 2px 5px rgba(0,0,0,0.8);">Sectors of Operation</h4>
+                <h2 style="font-size: 3rem; color: var(--text-primary);"><span class="text-reveal-wrapper"><span class="text-reveal">OUR CORE EXPERTISE</span></span></h2>
+                <div style="width: 60px; height: 4px; background: var(--primary-color); margin: 20px auto;"></div>
+            </div>
+            
+            <div class="stagger-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                <!-- Card 1 -->
+                <div class="modern-service-card stagger-item" style="position: relative; height: 400px; overflow: hidden; border-radius: 8px; background: #111;">
+                    <img loading="lazy" src="images/highways-roads-site.jpg" alt="Highways" style="width: 100%; height: 100%; object-fit: cover; object-position: center 60%; transition: transform 0.6s ease; opacity: 0.75;">
+                    <div class="msc-content" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 30px; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); color: white; transition: transform 0.4s ease;">
+                        <i data-lucide="map" style="width: 30px; height: 30px; color: var(--primary-color); margin-bottom: 15px;"></i>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 10px; color: white;">Highways & Roads</h3>
+                        <p class="msc-text" style="font-size: 0.95rem; color: #cbd5e1; height: 0; overflow: hidden; transition: height 0.4s ease; opacity: 0;">Specialized civil engineering expertise carving expressways and national highways through every terrain.</p>
+                </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="modern-service-card stagger-item" style="position: relative; height: 400px; overflow: hidden; border-radius: 8px; background: #111;">
+                    <img loading="lazy" src="images/kilinochchi-bridge-feature.jpg" alt="Bridges" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; opacity: 0.6;">
+                    <div class="msc-content" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 30px; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); color: white; transition: transform 0.4s ease;">
+                        <i data-lucide="git-merge" style="width: 30px; height: 30px; color: var(--primary-color); margin-bottom: 15px;"></i>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 10px; color: white;">Bridge Construction</h3>
+                        <p class="msc-text" style="font-size: 0.95rem; color: #cbd5e1; height: 0; overflow: hidden; transition: height 0.4s ease; opacity: 0;">CS-1 graded structural steel and reinforced concrete bridges built to carry the load for generations.</p>
+                </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="modern-service-card stagger-item" style="position: relative; height: 400px; overflow: hidden; border-radius: 8px; background: #111;">
+                    <img loading="lazy" src="images/building-projects-site.jpg" alt="Buildings" style="width: 100%; height: 100%; object-fit: cover; object-position: center 40%; transition: transform 0.6s ease; opacity: 0.75;">
+                    <div class="msc-content" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 30px; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); color: white; transition: transform 0.4s ease;">
+                        <i data-lucide="building-2" style="width: 30px; height: 30px; color: var(--primary-color); margin-bottom: 15px;"></i>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 10px; color: white;">Building Projects</h3>
+                        <p class="msc-text" style="font-size: 0.95rem; color: #cbd5e1; height: 0; overflow: hidden; transition: height 0.4s ease; opacity: 0;">C-2 graded construction shaping commercial, industrial, and high-rise developments.</p>
+                </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="modern-service-card stagger-item" style="position: relative; height: 400px; overflow: hidden; border-radius: 8px; background: #111;">
+                    <img loading="lazy" src="images/maritime-harbour-site.jpg" alt="Maritime" style="width: 100%; height: 100%; object-fit: cover; object-position: center 55%; transition: transform 0.6s ease; opacity: 0.75;">
+                    <div class="msc-content" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 30px; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); color: white; transition: transform 0.4s ease;">
+                        <i data-lucide="waves" style="width: 30px; height: 30px; color: var(--primary-color); margin-bottom: 15px;"></i>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 10px; color: white;">Maritime & Water</h3>
+                        <p class="msc-text" style="font-size: 0.95rem; color: #cbd5e1; height: 0; overflow: hidden; transition: height 0.4s ease; opacity: 0;">Dredging, reclamation, and water supply systems engineered to serve communities at scale.</p>
+                </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="services.html" class="btn-glass" style="border: 1px solid var(--border-soft); color: var(--text-primary); padding: 12px 30px; text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: SUSTAINABILITY & HSE SECTION (Maga / Global Style) -->
+    <section style="padding: var(--section-padding); background: var(--bg-dark-panel); color: white;">
+        <div style="max-width: 1800px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 50px;">
+            <div class="fade-in">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <div style="width: 50px; height: 50px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i data-lucide="leaf" style="color: #4ade80;"></i>
+                    </div>
+                    <h3 style="font-size: 2rem; margin: 0; color: white;">Sustainable Engineering</h3>
+                </div>
+                <p style="color: #94a3b8; line-height: 1.8; margin-bottom: 20px;">We recognize our responsibility to the environment. Through efficient resource management, sustainable material sourcing, and strict adherence to ISO 14001 Environmental Management Systems, we minimize our ecological footprint while building infrastructure that lasts.</p>
+            </div>
+            
+            <div class="fade-in" style="transition-delay: 0.2s;">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <div style="width: 50px; height: 50px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i data-lucide="hard-hat" style="color: #fbbf24;"></i>
+                    </div>
+                    <h3 style="font-size: 2rem; margin: 0; color: white;">Health & Safety First</h3>
+                </div>
+                <p style="color: #94a3b8; line-height: 1.8; margin-bottom: 20px;">Zero harm is our ultimate goal. We maintain a rigorous Health & Safety culture on every site, backed by our ISO 45001 certification. Our 1,800+ workforce is continuously trained to operate under the highest global safety standards, ensuring everyone goes home safely.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- PROJECT HIGHLIGHTS -->
+    <section style="padding: var(--section-padding); background: var(--bg-light);">
+        <div style="max-width: 1800px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 60px;">
+            <div class="slide-in-left" style="flex: 1; min-width: 350px;">
+                <h4 style="color: var(--primary-color); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; text-shadow: 0 2px 5px rgba(0,0,0,0.8);">Our Legacy</h4>
+                <h2 style="font-size: 3rem; line-height: 1.2; margin-bottom: 25px; color: var(--text-primary);"><span class="text-reveal-wrapper"><span class="text-reveal">THREE DECADES OF</span></span><br><span class="text-reveal-wrapper"><span class="text-reveal" style="transition-delay: 0.1s;">EXCELLENCE</span></span></h2>
+                <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 20px; line-height: 1.7;">Since 1995, RR Construction has helped shape the physical foundations of modern Sri Lanka. What began as a subcontracting partnership with international firms like ED Zublin AG has grown into one of the country's most trusted construction names.</p>
+                <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 40px; line-height: 1.7;">Hundreds of completed projects later — expressways, deep-water dredging, bridges spanning over 100 metres, and water treatment plants serving entire districts — our portfolio speaks for itself.</p>
+                <a href="projects.html" class="btn-glass" style="background: var(--bg-dark-panel); color: white; border-radius: 4px; padding: 14px 28px; text-transform: uppercase; font-weight: 600; letter-spacing: 1px; display: inline-flex; align-items: center; gap: 10px;">Full Project Portfolio <i data-lucide="arrow-right" style="width: 18px;"></i></a>
+            </div>
+            <div class="slide-in-right" style="flex: 1; min-width: 350px; background: var(--bg-base); padding: 50px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border-top: 5px solid var(--primary-color);">
+                <h3 style="font-size: 2rem; margin-bottom: 30px; color: var(--text-primary);">Flagship Highlights</h3>
+                
+                <div style="margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--border-glass); display: flex; gap: 20px;">
+                    <div style="width: 60px; height: 60px; background: rgba(139, 30, 30, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i data-lucide="anchor" style="color: var(--primary-color); width: 30px; height: 30px;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 5px;">Gandara Fishery Harbour</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">Major maritime development</p>
+                </div>
+                </div>
+
+                <div style="margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--border-glass); display: flex; gap: 20px;">
+                    <div style="width: 60px; height: 60px; background: rgba(139, 30, 30, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i data-lucide="map" style="color: var(--primary-color); width: 30px; height: 30px;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 5px;">Central Expressway</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">Section 2 Package-A</p>
+                </div>
+                </div>
+
+                <div style="display: flex; gap: 20px;">
+                    <div style="width: 60px; height: 60px; background: rgba(139, 30, 30, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i data-lucide="droplets" style="color: var(--primary-color); width: 30px; height: 30px;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 5px;">Ampara Water Treatment Plant</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">172,000 cum/day capacity</p>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+        <!-- TRUSTED PARTNERS / CLIENTS -->
+    <section style="padding: var(--section-padding-sm); background: var(--bg-light); text-align: center; border-top: 1px solid var(--border-soft);">
+        <div style="max-width: 1800px; margin: 0 auto;">
+            <h4 style="color: var(--primary-color); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; text-shadow: 0 2px 5px rgba(0,0,0,0.8);">Trusted By</h4>
+            <h2 style="font-size: 2.5rem; color: var(--text-primary); margin-bottom: 50px;">OUR MAJOR CLIENTS</h2>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; align-items: center; opacity: 0.7;">
+                <!-- We will use text-based logos since we don't have images for them, styled to look like corporate logos -->
+                <div style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 800; color: #64748b; letter-spacing: -1px;">ROAD DEVELOPMENT AUTHORITY</div>
+                <div style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 800; color: #64748b; letter-spacing: -1px;">NATIONAL WATER BOARD</div>
+                <div style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 800; color: #64748b; letter-spacing: -1px;">U.D.A. SRI LANKA</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LATEST UPDATES / NEWSROOM -->
+    <section style="padding: var(--section-padding); background: var(--bg-base);">
+        <div style="max-width: 1800px; margin: 0 auto;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 50px; flex-wrap: wrap; gap: 20px;">
+                <div>
+                    <h4 style="color: var(--primary-color); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; text-shadow: 0 2px 5px rgba(0,0,0,0.8);">Newsroom</h4>
+                    <h2 style="font-size: 3rem; color: var(--text-primary); margin: 0;"><span class="text-reveal-wrapper"><span class="text-reveal">LATEST UPDATES</span></span></h2>
+                </div>
+                <a href="#" class="btn-glass" style="border: 1px solid var(--primary-color); color: var(--primary-color); padding: 12px 25px; text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">View All News</a>
+            </div>
+
+            <div class="stagger-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                <!-- News Item 1 -->
+                <div class="stagger-item" style="background: var(--bg-light); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s ease; cursor: pointer;">
+                    <img loading="lazy" src="images/maritime-harbour-site.jpg" alt="Gandara Harbour" style="width: 100%; height: 200px; object-fit: cover; object-position: center 55%;">
+                    <div style="padding: 30px;">
+                        <span style="color: var(--primary-color); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Maritime</span>
+                        <h3 style="font-size: 1.4rem; color: var(--text-primary); margin: 15px 0;">Gandara Fishery Harbour Phase 1 Completed</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">Major milestones achieved in dredging and breakwater construction at the major southern maritime project.</p>
+                        <span style="color: #94a3b8; font-size: 0.85rem; font-weight: 600;"><i data-lucide="clock" style="width: 14px; height: 14px; vertical-align: middle; margin-right: 5px;"></i> June 15, 2026</span>
+                </div>
+                </div>
+
+                <!-- News Item 2 -->
+                <div class="stagger-item" style="background: var(--bg-light); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s ease; cursor: pointer;">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1504307651254-35680f356f58?auto=format&fit=crop&w=600&q=80" alt="ISO Audit" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 30px;">
+                        <span style="color: var(--primary-color); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Corporate</span>
+                        <h3 style="font-size: 1.4rem; color: var(--text-primary); margin: 15px 0;">RR Construction Passes Annual ISO Surveillance Audit</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">Successfully maintaining our ISO 9001, 14001, and 45001 certifications, reaffirming our commitment to global standards.</p>
+                        <span style="color: #94a3b8; font-size: 0.85rem; font-weight: 600;"><i data-lucide="clock" style="width: 14px; height: 14px; vertical-align: middle; margin-right: 5px;"></i> May 28, 2026</span>
+                </div>
+                </div>
+
+                <!-- News Item 3 -->
+                <div class="stagger-item" style="background: var(--bg-light); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s ease; cursor: pointer;">
+                    <img loading="lazy" src="images/kalutara-crusher-plant.jpg" alt="Equipment Fleet" style="width: 100%; height: 200px; object-fit: cover; object-position: center 70%;">
+                    <div style="padding: 30px;">
+                        <span style="color: var(--primary-color); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Machinery</span>
+                        <h3 style="font-size: 1.4rem; color: var(--text-primary); margin: 15px 0;">New High-Capacity Asphalt Plant Commissioned</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">Expanding our self-owned fleet capabilities to accelerate the delivery of the Central Expressway Project Section 3.</p>
+                        <span style="color: #94a3b8; font-size: 0.85rem; font-weight: 600;"><i data-lucide="clock" style="width: 14px; height: 14px; vertical-align: middle; margin-right: 5px;"></i> May 10, 2026</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo-container" style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
+                    <div class="logo-box" style="background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 8px; padding: 6px 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: fit-content;">
+                        <img src="images/logo.png" alt="RR Construction Logo" style="height: 32px; width: auto; object-fit: contain;">
+                    </div>
+                    <div class="footer-logo-text" style="display: flex; flex-direction: column; justify-content: center; text-align: left;">
+                        <span style="color: white; font-size: 1.25rem; font-weight: 800; letter-spacing: 1px; line-height: 1;">CONSTRUCTION</span>
+                        <span style="color: var(--primary-color); font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px; margin-top: 4px;">(PVT) LTD</span>
+                </div>
+                </div>
+                <p style="color: var(--text-secondary); margin-bottom: 25px; max-width: 320px; font-size: 0.95rem; line-height: 1.6;"><strong>Passion for Engineering Excellence.</strong> A leading civil engineering enterprise engineering the roads, bridges, and infrastructure that move Sri Lanka forward.</p>
+                <div class="footer-social-links">
+                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                </div>
+                </div>
+            <div>
+                <h3 style="color: white;">Quick Links</h3>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 10px;"><a href="about.html" style="color: var(--text-secondary);">Corporate Profile</a></li>
+                    <li style="margin-bottom: 10px;"><a href="services.html" style="color: var(--text-secondary);">Our Services</a></li>
+                    <li style="margin-bottom: 10px;"><a href="projects.html" style="color: var(--text-secondary);">Projects Portfolio</a></li>
+                    <li style="margin-bottom: 10px;"><a href="career.html" style="color: var(--text-secondary);">Careers</a></li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h3 style="color: white;">Head Office</h3>
+                <ul class="footer-contact" style="list-style: none;">
+                    <li><i data-lucide="map-pin"></i> No. 865, Dr. Danister de Silva MW, Baseline Road, Colombo 09.</li>
+                    <li><i data-lucide="phone"></i> 011-2433427</li>
+                    <li><i data-lucide="mail"></i> general@rrconstruction.lk</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 RR Construction (Pvt) Ltd. All Rights Reserved. Engineering the ground beneath tomorrow.<br><span style="font-size: 0.85rem; opacity: 0.7; margin-top: 5px; display: inline-block;">developed by Heshan Samaranayake</span></p>
+        </div>
+    </footer>
+
+    <!-- Floating Admin Portal Button -->
+    <a href="http://rrconstruction.lk/admin" class="btn-admin-floating" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="shield-check"></i>
+        <span>Admin</span>
+    </a>
+
+    <!-- Lucide Icons & Main JS -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Hover effects for the modern service cards
+        document.querySelectorAll('.modern-service-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.querySelector('img').style.transform = 'scale(1.1)';
+                card.querySelector('img').style.opacity = '0.3';
+                card.querySelector('.msc-content').style.transform = 'translateY(-10px)';
+                card.querySelector('.msc-text').style.height = '60px';
+                card.querySelector('.msc-text').style.opacity = '1';
+                card.querySelector('.msc-text').style.marginTop = '15px';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.querySelector('img').style.transform = 'scale(1)';
+                card.querySelector('img').style.opacity = '0.6';
+                card.querySelector('.msc-content').style.transform = 'translateY(0)';
+                card.querySelector('.msc-text').style.height = '0';
+                card.querySelector('.msc-text').style.opacity = '0';
+                card.querySelector('.msc-text').style.marginTop = '0';
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

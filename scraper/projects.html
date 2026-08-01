@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completed Projects - RR Construction (Pvt) Ltd</title>
+    <meta name="description" content="Explore RR Construction's portfolio of 60+ completed projects across roads, bridges, maritime works, water supply, and buildings throughout Sri Lanka and overseas.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="floating-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo"> <img src="images/logo.png" alt="RR Construction Logo" class="nav-logo-img"> <div class="logo-text"> <span class="logo-title">CONSTRUCTION</span> <span class="logo-sub">(PVT) LTD</span> </div> </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html" style="cursor: pointer;">About Us <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="quality-policy.html">Quality Policy</a></li>
+                        <li><a href="awards.html">Awards & Recognitions</a></li>
+                    </ul>
+                </li>
+                                <li class="dropdown">
+                    <a href="projects.html" style="cursor: pointer;">Projects <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="projects.html">Completed Projects</a></li>
+                        <li><a href="ongoing.html">Ongoing Projects</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="people.html" style="cursor: pointer;">People <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="people.html">Our People</a></li>
+                        <li><a href="training.html">Training & Development</a></li>
+                        <li><a href="welfare.html">Employee Welfare</a></li>
+
+                    </ul>
+                </li>
+                                <li><a href="quarries-aggregates.html">Quarries & Aggregates</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="career.html">Careers</a></li>
+                <li><button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode"><i data-lucide="moon" class="moon-icon"></i><i data-lucide="sun" class="sun-icon"></i></button></li>
+                <li><a href="contact.html" class="btn-nav-contact">Contact Us</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('images/completed-hero.jpg');">
+        <h1 class="fade-in">Completed Projects</h1>
+        <p class="fade-in page-header-subtitle">Every project here is proof of work delivered, not just promised – road networks, water retaining structures, bridges, multi-storied buildings, and dredging & reclamation works completed across Sri Lanka and beyond.</p>
+    </section>
+
+    <!-- Project Filters -->
+    <section style="padding-bottom: 20px;">
+        <div class="filter-tabs fade-in">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="roads">Roads & Highways</button>
+            <button class="filter-btn" data-filter="bridges">Bridges</button>
+            <button class="filter-btn" data-filter="water">Water Supply</button>
+            <button class="filter-btn" data-filter="maritime">Maritime & Dredging</button>
+            <button class="filter-btn" data-filter="buildings">Buildings</button>
+            <button class="filter-btn" data-filter="irrigation">Irrigation</button>
+            <button class="filter-btn" data-filter="disaster">Disaster Mgmt</button>
+            <button class="filter-btn" data-filter="railway">Railway</button>
+            <button class="filter-btn" data-filter="overseas">Overseas</button>
+        </div>
+
+        <div id="projects-container" class="grid-3" style="margin-bottom: 80px; max-width: 1200px; margin-left: auto; margin-right: auto;">
+            <!-- Projects will be dynamically injected here by JS -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo-container" style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
+                    <div class="logo-box" style="background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 8px; padding: 6px 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: fit-content;">
+                        <img src="images/logo.png" alt="RR Construction Logo" style="height: 32px; width: auto; object-fit: contain;">
+                    </div>
+                    <div class="footer-logo-text" style="display: flex; flex-direction: column; justify-content: center; text-align: left;">
+                        <span style="color: white; font-size: 1.25rem; font-weight: 800; letter-spacing: 1px; line-height: 1;">CONSTRUCTION</span>
+                        <span style="color: var(--primary-color); font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px; margin-top: 4px;">(PVT) LTD</span>
+                    </div>
+                </div>
+                <p style="color: var(--text-secondary); margin-bottom: 25px; max-width: 320px; font-size: 0.95rem; line-height: 1.6;"><strong>Passion for Engineering Excellence.</strong> A leading civil engineering enterprise engineering the roads, bridges, and infrastructure that move Sri Lanka forward.</p>
+                <div class="footer-social-links">
+                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 style="color: white;">Quick Links</h3>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 10px;"><a href="about.html" style="color: var(--text-secondary);">Corporate Profile</a></li>
+                    <li style="margin-bottom: 10px;"><a href="services.html" style="color: var(--text-secondary);">Our Services</a></li>
+                    <li style="margin-bottom: 10px;"><a href="projects.html" style="color: var(--text-secondary);">Projects Portfolio</a></li>
+                    <li style="margin-bottom: 10px;"><a href="career.html" style="color: var(--text-secondary);">Careers</a></li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h3 style="color: white;">Head Office</h3>
+                <ul class="footer-contact" style="list-style: none;">
+                    <li><i data-lucide="map-pin"></i> No. 865, Dr. Danister de Silva MW, Baseline Road, Colombo 09.</li>
+                    <li><i data-lucide="phone"></i> 011-2433427</li>
+                    <li><i data-lucide="mail"></i> general@rrconstruction.lk</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 RR Construction (Pvt) Ltd. All Rights Reserved. Engineering the ground beneath tomorrow.</p>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons & Main JS -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/projects-data.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

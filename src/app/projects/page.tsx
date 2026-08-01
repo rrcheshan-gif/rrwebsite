@@ -1,0 +1,143 @@
+"use client";
+
+import { useState } from 'react';
+import Link from 'next/link';
+import projectsData from './data';
+
+export default function Projects() {
+  const [filter, setFilter] = useState('all');
+
+  const completedProjects = projectsData.filter((p: any) => p.type !== 'ongoing');
+  const filteredProjects = completedProjects.filter((p: any) => 
+    filter === 'all' ? true : p.category === filter
+  );
+
+  return (
+    <div style={{ paddingTop: "140px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+      {/* Page Header */}
+      <section className="page-header" style={{ backgroundImage: "url('/images/projects-hero.jpg')", padding: "80px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
+        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4))", zIndex: 1 }}></div>
+        <div className="container" style={{ position: "relative", zIndex: 2 }}>
+          <h1 className="hero-heading fade-in" style={{ color: "white", fontSize: "3.5rem", textAlign: "center", fontFamily: "var(--font-heading)" }}>Our Portfolio</h1>
+          <p style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto", color: "#e2e8f0", fontSize: "1.1rem" }}>
+            Every project here is proof of work delivered, not just promised – road networks, water retaining structures, bridges, multi-storied buildings, and dredging & reclamation works completed across Sri Lanka and beyond.
+          </p>
+        </div>
+      </section>
+
+      <div className="container">
+
+        {/* Status Toggle Tabs */}
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '30px', marginTop: '20px' }}>
+          <div style={{ display: 'flex', background: 'var(--bg-base)', borderRadius: '50px', padding: '6px', border: '1px solid var(--border-soft)' }}>
+             <Link href="/projects" style={{ padding: '12px 40px', borderRadius: '50px', background: 'var(--primary-red)', color: 'white', fontWeight: 'bold', textDecoration: 'none', boxShadow: '0 4px 15px rgba(229,57,53,0.3)' }}>
+               Completed Projects
+             </Link>
+             <Link href="/ongoing" style={{ padding: '12px 40px', borderRadius: '50px', color: 'var(--text-dark)', fontWeight: 'bold', textDecoration: 'none' }}>
+               Ongoing Projects
+             </Link>
+          </div>
+        </div>
+
+        {/* Filter Tabs */}
+        <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '15px', marginBottom: '50px' }}>
+          {['all', 'roads', 'bridges', 'water', 'maritime', 'buildings', 'irrigation', 'disaster', 'railway', 'overseas'].map(f => (
+            <button 
+              key={f}
+              onClick={() => setFilter(f)}
+              style={{
+                padding: '10px 20px',
+                borderRadius: '50px',
+                border: `1px solid ${filter === f ? 'var(--primary-red)' : 'var(--border-soft)'}`,
+                background: filter === f ? 'var(--primary-red)' : 'var(--white)',
+                color: filter === f ? '#fff' : 'var(--text-dark)',
+                cursor: 'pointer',
+                textTransform: 'capitalize',
+                transition: 'all 0.3s ease',
+                fontWeight: filter === f ? '700' : '500',
+                boxShadow: filter === f ? '0 10px 20px rgba(229,57,53,0.2)' : '0 4px 10px rgba(0,0,0,0.02)'
+              }}
+            >
+              {f === 'all' ? 'All Projects' : f === 'disaster' ? 'Disaster Mgmt' : f}
+            </button>
+          ))}
+        </div>
+
+        {/* Projects Grid */}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "30px", paddingBottom: "80px" }}>
+          {filteredProjects.map((project: any) => (
+            <Link href={`/projects/${project.id}`} key={project.id} className="fade-in" style={{ display: 'flex', flexDirection: 'column', height: '100%', textDecoration: 'none' }}>
+              <div 
+                style={{ 
+                  background: "var(--white)", 
+                  borderRadius: "24px", 
+                  boxShadow: "0 10px 30px rgba(0,0,0,0.05)", 
+                  border: '1px solid var(--border-soft)',
+                  display: 'flex', 
+                  flexDirection: 'column',
+                  flex: 1,
+                  transition: "transform 0.4s ease, box-shadow 0.4s ease",
+                  overflow: "hidden"
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-10px)';
+                  e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.05)';
+                }}
+              >
+                <div style={{ position: "relative", height: "220px", overflow: "hidden", background: "var(--bg-base)" }}>
+                  {(project.heroImage || project.images?.[0]) ? (
+                    <img 
+                      src={`/${project.heroImage || project.images?.[0]}`} 
+                      alt={project.title} 
+                      className="img-polished img-hover-zoom" 
+                      style={{ width: "100%", height: "100%", objectFit: "cover" }} 
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).style.display = 'none';
+                      }}
+                    />
+                  ) : null}
+                  <div style={{ position: "absolute", top: "12px", left: "12px", display: "flex", gap: "6px", flexWrap: "wrap", zIndex: 2 }}>
+                    <span style={{ padding: '4px 10px', background: 'rgba(15, 23, 42, 0.75)', backdropFilter: 'blur(8px)', color: 'white', borderRadius: '6px', fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px', border: '1px solid rgba(255,255,255,0.2)' }}>{project.category}</span>
+                    <span style={{ padding: '4px 10px', background: project.status?.includes('Ongoing') ? 'rgba(217, 119, 6, 0.85)' : 'rgba(16, 185, 129, 0.85)', backdropFilter: 'blur(8px)', color: 'white', borderRadius: '6px', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.3px', border: '1px solid rgba(255,255,255,0.25)' }}>{project.status}</span>
+                  </div>
+                </div>
+                
+                <div style={{ padding: '25px', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                  <div style={{ color: 'var(--primary-red)', fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', marginBottom: '10px' }}>
+                    {project.category}
+                  </div>
+                  <h3 style={{ color: "var(--text-dark)", fontSize: '1.2rem', marginBottom: '15px', lineHeight: '1.4', fontFamily: 'var(--font-heading)' }}>
+                    {project.title}
+                  </h3>
+                  
+                  <div style={{ marginTop: 'auto' }}>
+                    <p style={{ color: "var(--text-light)", fontSize: '0.95rem', marginBottom: '15px', lineHeight: '1.5' }}>
+                      A comprehensive {project.category} project executed for {project.client}, emphasizing modern engineering standards and timely delivery.
+                    </p>
+                    
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '15px', paddingTop: '15px', borderTop: '1px solid #eee' }}>
+                      <div style={{ display: 'flex', flexDirection: 'column' }}>
+                          <span style={{ fontSize: '0.8rem', color: '#94a3b8', fontWeight: '600', textTransform: 'uppercase' }}>Completion Year</span>
+                          <span style={{ fontSize: '1rem', color: 'var(--text-dark)', fontWeight: 'bold' }}>{project.year}</span>
+                      </div>
+                    </div>
+                    
+                    <div style={{ marginTop: '20px', textAlign: 'center' }}>
+                      <span style={{ display: 'inline-block', padding: '10px 20px', background: 'transparent', border: '1px solid var(--primary-red)', color: 'var(--primary-red)', borderRadius: '30px', fontSize: '0.9rem', fontWeight: 'bold', transition: 'all 0.3s' }}>
+                        View Details →
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
