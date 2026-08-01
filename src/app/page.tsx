@@ -380,26 +380,26 @@ export default function Home() {
       </section>
 
       {/* SUSTAINABILITY & HSE SECTION */}
-      <section className="bg-gradient-dark" style={{ padding: "80px 20px", color: "white", position: "relative" }}>
-        <div className="ambient-glow" style={{ bottom: "-10vw", right: "-10%" }}></div>
-        <div className="container sustainability-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", overflow: "hidden", position: "relative", zIndex: 2, background: "rgba(15, 23, 42, 0.95)", backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)", border: "1px solid rgba(255, 255, 255, 0.15)", borderRadius: "24px", boxShadow: "0 20px 50px rgba(0,0,0,0.3)" }}>
-          <div className="sustainability-col" style={{ padding: "clamp(30px, 5vw, 80px) clamp(20px, 4vw, 60px)", borderRight: "1px solid rgba(255,255,255,0.05)" }}>
+      <section style={{ padding: "80px 20px", background: "var(--bg-light)", position: "relative", overflow: "hidden" }}>
+        <div className="ambient-glow" style={{ bottom: "-10vw", right: "-10%", opacity: 0.4 }}></div>
+        <div className="container sustainability-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", overflow: "hidden", position: "relative", zIndex: 2, background: "var(--white)", border: "1px solid rgba(0, 0, 0, 0.06)", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.05)" }}>
+          <div className="sustainability-col" style={{ padding: "clamp(30px, 5vw, 80px) clamp(20px, 4vw, 60px)", borderRight: "1px solid rgba(0,0,0,0.06)" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "20px", marginBottom: "30px", flexWrap: "wrap" }}>
               <div style={{ width: "60px", height: "60px", background: "rgba(74, 222, 128, 0.1)", borderRadius: "20px", display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid rgba(74, 222, 128, 0.2)", boxShadow: "0 0 30px rgba(74, 222, 128, 0.1)", flexShrink: 0 }}>
-                <Leaf color="#4ade80" size={30} />
+                <Leaf color="#16a34a" size={30} />
               </div>
-              <h3 style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)", margin: 0, color: "white", fontFamily: "var(--font-heading)" }}>Sustainable<br/>Engineering</h3>
+              <h3 style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)", margin: 0, color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>Sustainable<br/>Engineering</h3>
             </div>
-            <p style={{ color: "#cbd5e1", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "0" }}>We recognize our responsibility to the environment. Through efficient resource management, sustainable material sourcing, and strict adherence to ISO 14001 Environmental Management Systems, we minimize our ecological footprint while building infrastructure that lasts.</p>
+            <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "0" }}>We recognize our responsibility to the environment. Through efficient resource management, sustainable material sourcing, and strict adherence to ISO 14001 Environmental Management Systems, we minimize our ecological footprint while building infrastructure that lasts.</p>
           </div>
           <div className="sustainability-col" style={{ padding: "clamp(30px, 5vw, 80px) clamp(20px, 4vw, 60px)" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "20px", marginBottom: "30px", flexWrap: "wrap" }}>
               <div style={{ width: "60px", height: "60px", background: "rgba(251, 191, 36, 0.1)", borderRadius: "20px", display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid rgba(251, 191, 36, 0.2)", boxShadow: "0 0 30px rgba(251, 191, 36, 0.1)", flexShrink: 0 }}>
-                <HardHat color="#fbbf24" size={30} />
+                <HardHat color="#d97706" size={30} />
               </div>
-              <h3 style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)", margin: 0, color: "white", fontFamily: "var(--font-heading)" }}>Health & Safety<br/>First</h3>
+              <h3 style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)", margin: 0, color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>Health & Safety<br/>First</h3>
             </div>
-            <p style={{ color: "#cbd5e1", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "0" }}>Zero harm is our ultimate goal. We maintain a rigorous Health & Safety culture on every site, backed by our ISO 45001 certification. Our 1,800+ workforce is continuously trained to operate under the highest global safety standards, ensuring everyone goes home safely.</p>
+            <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "0" }}>Zero harm is our ultimate goal. We maintain a rigorous Health & Safety culture on every site, backed by our ISO 45001 certification. Our 1,800+ workforce is continuously trained to operate under the highest global safety standards, ensuring everyone goes home safely.</p>
           </div>
         </div>
       </section>
