@@ -51,15 +51,21 @@
   -webkit-font-smoothing: antialiased;
 }
 
-[data-theme="light"] h1, [data-theme="light"] h2, [data-theme="light"] h3, 
-[data-theme="light"] h4, [data-theme="light"] h5, [data-theme="light"] h6,
-:root:not([data-theme="dark"]) h1, :root:not([data-theme="dark"]) h2, 
-:root:not([data-theme="dark"]) h3, :root:not([data-theme="dark"]) h4 {
+[data-theme="light"] h1:not(.site-footer *):not(.bg-gradient-dark *):not(.hero-section *), 
+[data-theme="light"] h2:not(.site-footer *):not(.bg-gradient-dark *):not(.hero-section *), 
+[data-theme="light"] h3:not(.site-footer *):not(.bg-gradient-dark *):not(.hero-section *), 
+[data-theme="light"] h4:not(.site-footer *):not(.bg-gradient-dark *):not(.hero-section *), 
+[data-theme="light"] h5:not(.site-footer *):not(.bg-gradient-dark *):not(.hero-section *), 
+[data-theme="light"] h6:not(.site-footer *):not(.bg-gradient-dark *):not(.hero-section *),
+:root:not([data-theme="dark"]) h1:not(.site-footer *):not(.bg-gradient-dark *):not(.hero-section *), 
+:root:not([data-theme="dark"]) h2:not(.site-footer *):not(.bg-gradient-dark *):not(.hero-section *), 
+:root:not([data-theme="dark"]) h3:not(.site-footer *):not(.bg-gradient-dark *):not(.hero-section *), 
+:root:not([data-theme="dark"]) h4:not(.site-footer *):not(.bg-gradient-dark *):not(.hero-section *) {
   color: #0f172a;
 }
 
-[data-theme="light"] p,
-:root:not([data-theme="dark"]) p {
+[data-theme="light"] p:not(.site-footer *):not(.bg-gradient-dark *):not(.hero-section *),
+:root:not([data-theme="dark"]) p:not(.site-footer *):not(.bg-gradient-dark *):not(.hero-section *) {
   color: #334155;
 }
 
@@ -1117,13 +1123,29 @@ ul {
 
 /* Premium Responsive Footer System */
 .site-footer {
-  background: linear-gradient(180deg, #090d16 0%, #030509 100%);
-  color: #f8fafc;
+  background: linear-gradient(180deg, #090d16 0%, #030509 100%) !important;
+  color: #f8fafc !important;
   padding: 80px 0 40px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   position: relative;
   overflow: hidden;
   width: 100%;
+}
+
+.site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6, .site-footer .footer-heading, .site-footer .logo-title {
+  color: #ffffff !important;
+}
+
+.site-footer p, .site-footer .footer-bio, .site-footer .footer-contact-list li, .site-footer .footer-bottom-bar p {
+  color: #94a3b8 !important;
+}
+
+.site-footer .footer-links-list a {
+  color: #cbd5e1 !important;
+}
+
+.site-footer .footer-links-list a:hover {
+  color: #ffffff !important;
 }
 
 .footer-content-wrapper {
