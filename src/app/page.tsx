@@ -264,10 +264,13 @@ export default function Home() {
       </section>
 
       {/* CORPORATE STATS BAR */}
-      <section style={{ padding: "60px 0 0 0", position: "relative", zIndex: 10, background: "var(--bg-base)" }}>
-        <div className="container">
-          <div className="glass-panel" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", padding: "10px", position: "relative", overflow: "hidden" }}>
-            <div className="ambient-glow" style={{ top: "-20vw", left: "10%" }}></div>
+      <section style={{ padding: "80px 20px", position: "relative", zIndex: 10, background: "var(--bg-light)", overflow: "hidden" }}>
+        {/* Colorful ambient glows behind the glass to create refraction */}
+        <div className="ambient-glow" style={{ top: "10%", left: "15%", width: "40vw", height: "40vw", opacity: 0.6, background: "radial-gradient(circle, rgba(229, 57, 83, 0.15) 0%, transparent 70%)" }}></div>
+        <div className="ambient-glow" style={{ bottom: "-10%", right: "10%", width: "45vw", height: "45vw", background: "radial-gradient(circle, rgba(14, 165, 233, 0.12) 0%, transparent 70%)" }}></div>
+        
+        <div className="container" style={{ position: "relative" }}>
+          <div className="liquid-glass-panel" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", padding: "10px", position: "relative", overflow: "hidden" }}>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative", zIndex: 1 }}>
               <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.15), transparent)" }}></div>
               <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>1995</h3>
