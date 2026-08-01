@@ -106,8 +106,8 @@ export default function Home() {
             />
           </div>
         ))}
-        {/* Balanced Cinematic Overlay for ~58% image visibility */}
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(180deg, rgba(5, 10, 25, 0.48) 0%, rgba(0, 0, 0, 0.28) 45%, rgba(5, 10, 25, 0.65) 100%)', zIndex: 2 }}></div>
+        {/* Balanced Cinematic Overlay for high text contrast */}
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(180deg, rgba(5, 10, 25, 0.65) 0%, rgba(0, 0, 0, 0.45) 45%, rgba(5, 10, 25, 0.8) 100%)', zIndex: 2 }}></div>
 
         {/* Foreground Content */}
         <div className="container" style={{ position: "relative", zIndex: 3, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
@@ -239,14 +239,14 @@ export default function Home() {
                   <span style={{ color: "#ff4d4d", WebkitTextStroke: "0.5px rgba(0,0,0,0.8)", textShadow: "2px 2px 0px rgba(0,0,0,1), 0 8px 30px rgba(0, 0, 0, 1)" }}>{slide.heading2}</span>
                   {slide.heading3 && <><br/>{slide.heading3}</>}
                 </h1>
-                <p style={{ fontSize: "clamp(1.05rem, 2vw, 1.3rem)", lineHeight: 1.8, marginBottom: "clamp(15px, 3vh, 30px)", color: "#f1f5f9", maxWidth: "780px", margin: "0 auto clamp(15px, 3vh, 30px)", fontWeight: 500, textShadow: "1px 1px 0px rgba(0,0,0,1), 0 4px 20px rgba(0,0,0,0.95)", textAlign: "center" }}>
+                <p style={{ fontSize: "clamp(1.05rem, 2vw, 1.3rem)", lineHeight: 1.8, marginBottom: "clamp(15px, 3vh, 30px)", color: "#ffffff", maxWidth: "780px", margin: "0 auto clamp(15px, 3vh, 30px)", fontWeight: 500, textShadow: "1px 1px 3px rgba(0,0,0,1), 0 4px 20px rgba(0,0,0,0.95)", textAlign: "center" }}>
                   {slide.desc}
                 </p>
                 <div className="hero-buttons" style={{ display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: "center" }}>
-                  <Link href="/projects" style={{ display: 'inline-flex', alignItems: 'center', background: 'var(--primary-red)', color: 'white', padding: 'clamp(10px, 2vw, 15px) clamp(20px, 4vw, 35px)', borderRadius: '50px', textTransform: 'uppercase', fontWeight: 600, letterSpacing: '1px', textDecoration: 'none', transition: 'all 0.3s', boxShadow: '0 8px 25px rgba(229, 57, 53, 0.4)', fontSize: 'clamp(0.85rem, 1.5vw, 1rem)' }} onMouseOver={(e) => { e.currentTarget.style.background = '#c62828'; e.currentTarget.style.transform = 'translateY(-2px)'; }} onMouseOut={(e) => { e.currentTarget.style.background = 'var(--primary-red)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+                  <Link href="/projects" style={{ display: 'inline-flex', alignItems: 'center', background: 'var(--primary-red)', color: 'white', padding: 'clamp(10px, 2vw, 15px) clamp(20px, 4vw, 35px)', borderRadius: '50px', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '1px', textDecoration: 'none', transition: 'all 0.3s', boxShadow: '0 8px 25px rgba(229, 57, 53, 0.5)', fontSize: 'clamp(0.85rem, 1.5vw, 1rem)' }} onMouseOver={(e) => { e.currentTarget.style.background = '#c62828'; e.currentTarget.style.transform = 'translateY(-2px)'; }} onMouseOut={(e) => { e.currentTarget.style.background = 'var(--primary-red)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
                     Our Projects <ArrowRight style={{ marginLeft: '8px', width: '20px', height: '20px' }} />
                   </Link>
-                  <Link href="/about" style={{ display: 'inline-flex', alignItems: 'center', background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)', color: 'white', border: '1px solid rgba(255,255,255,0.3)', padding: 'clamp(10px, 2vw, 15px) clamp(20px, 4vw, 35px)', borderRadius: '50px', textTransform: 'uppercase', fontWeight: 600, letterSpacing: '1px', textDecoration: 'none', transition: 'all 0.3s', fontSize: 'clamp(0.85rem, 1.5vw, 1rem)' }} onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.2)'; e.currentTarget.style.transform = 'translateY(-2px)'; }} onMouseOut={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+                  <Link href="/about" style={{ display: 'inline-flex', alignItems: 'center', background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(10px)', color: 'white', border: '1.5px solid rgba(255,255,255,0.7)', padding: 'clamp(10px, 2vw, 15px) clamp(20px, 4vw, 35px)', borderRadius: '50px', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '1px', textDecoration: 'none', transition: 'all 0.3s', fontSize: 'clamp(0.85rem, 1.5vw, 1rem)' }} onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(0,0,0,0.7)'; e.currentTarget.style.transform = 'translateY(-2px)'; }} onMouseOut={(e) => { e.currentTarget.style.background = 'rgba(0,0,0,0.5)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
                     Our Story
                   </Link>
                 </div>
@@ -269,22 +269,22 @@ export default function Home() {
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", background: "rgba(10, 10, 10, 0.75)", backdropFilter: "blur(20px)", borderRadius: "24px", padding: "10px", border: "1px solid rgba(255,255,255,0.1)", boxShadow: "0 25px 50px rgba(0,0,0,0.3)" }}>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative" }}>
               <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.15), transparent)" }}></div>
-              <h3 style={{ color: "var(--primary-red)", fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>1995</h3>
-              <p style={{ color: "white", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 600 }}>Established</p>
+              <h3 style={{ color: "#ef4444", fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1, textShadow: "0 4px 15px rgba(239, 68, 68, 0.4)" }}>1995</h3>
+              <p style={{ color: "#ffffff", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Established</p>
             </div>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative" }}>
               <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.15), transparent)" }}></div>
-              <h3 style={{ color: "var(--primary-red)", fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>1,800+</h3>
-              <p style={{ color: "white", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 600 }}>Skilled Workforce</p>
+              <h3 style={{ color: "#ef4444", fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1, textShadow: "0 4px 15px rgba(239, 68, 68, 0.4)" }}>1,800+</h3>
+              <p style={{ color: "#ffffff", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Skilled Workforce</p>
             </div>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative" }}>
               <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.15), transparent)" }}></div>
-              <h3 style={{ color: "var(--primary-red)", fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>100+</h3>
-              <p style={{ color: "white", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 600 }}>Projects Completed</p>
+              <h3 style={{ color: "#ef4444", fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1, textShadow: "0 4px 15px rgba(239, 68, 68, 0.4)" }}>100+</h3>
+              <p style={{ color: "#ffffff", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Projects Completed</p>
             </div>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center" }}>
-              <h3 style={{ color: "var(--primary-red)", fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>ISO</h3>
-              <p style={{ color: "white", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 600 }}>9001, 14001, 45001</p>
+              <h3 style={{ color: "#ef4444", fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1, textShadow: "0 4px 15px rgba(239, 68, 68, 0.4)" }}>ISO</h3>
+              <p style={{ color: "#ffffff", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>9001, 14001, 45001</p>
             </div>
           </div>
         </div>
@@ -338,9 +338,9 @@ export default function Home() {
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Corporate Profile</h4>
             </div>
             
-            <h2 style={{ fontSize: "3.5rem", lineHeight: 1.1, marginBottom: "35px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>BUILDING THE FUTURE<br/><span style={{ color: "var(--text-light)", fontWeight: 300 }}>OF SRI LANKA</span></h2>
+            <h2 style={{ fontSize: "3.5rem", lineHeight: 1.1, marginBottom: "35px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>BUILDING THE FUTURE<br/><span style={{ color: "var(--text-light)", fontWeight: 500 }}>OF SRI LANKA</span></h2>
             
-            <p style={{ fontSize: "1.25rem", color: "var(--text-dark)", marginBottom: "30px", fontWeight: 500, lineHeight: 1.7, borderLeft: "4px solid var(--primary-red)", paddingLeft: "20px" }}>We measure success the way our clients do: the right quality, delivered on schedule, at a fair cost.</p>
+            <p style={{ fontSize: "1.25rem", color: "var(--text-dark)", marginBottom: "30px", fontWeight: 600, lineHeight: 1.7, borderLeft: "4px solid var(--primary-red)", paddingLeft: "20px" }}>We measure success the way our clients do: the right quality, delivered on schedule, at a fair cost.</p>
             
             <p style={{ color: "var(--text-light)", marginBottom: "45px", lineHeight: 1.9, fontSize: "1.05rem" }}>With massive financial backing and a self-owned fleet of 1,000+ machines, we don't wait on hired equipment or third-party schedules. From expressways to harbour works, we bring the full strength of our resources to every site — so Sri Lanka's infrastructure keeps pace with its ambitions.</p>
             
@@ -391,7 +391,7 @@ export default function Home() {
               </div>
               <h3 style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)", margin: 0, color: "white", fontFamily: "var(--font-heading)" }}>Sustainable<br/>Engineering</h3>
             </div>
-            <p style={{ color: "#94a3b8", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "0" }}>We recognize our responsibility to the environment. Through efficient resource management, sustainable material sourcing, and strict adherence to ISO 14001 Environmental Management Systems, we minimize our ecological footprint while building infrastructure that lasts.</p>
+            <p style={{ color: "#cbd5e1", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "0" }}>We recognize our responsibility to the environment. Through efficient resource management, sustainable material sourcing, and strict adherence to ISO 14001 Environmental Management Systems, we minimize our ecological footprint while building infrastructure that lasts.</p>
           </div>
           <div className="sustainability-col" style={{ padding: "clamp(30px, 5vw, 80px) clamp(20px, 4vw, 60px)" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "20px", marginBottom: "30px", flexWrap: "wrap" }}>
@@ -400,7 +400,7 @@ export default function Home() {
               </div>
               <h3 style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)", margin: 0, color: "white", fontFamily: "var(--font-heading)" }}>Health & Safety<br/>First</h3>
             </div>
-            <p style={{ color: "#94a3b8", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "0" }}>Zero harm is our ultimate goal. We maintain a rigorous Health & Safety culture on every site, backed by our ISO 45001 certification. Our 1,800+ workforce is continuously trained to operate under the highest global safety standards, ensuring everyone goes home safely.</p>
+            <p style={{ color: "#cbd5e1", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "0" }}>Zero harm is our ultimate goal. We maintain a rigorous Health & Safety culture on every site, backed by our ISO 45001 certification. Our 1,800+ workforce is continuously trained to operate under the highest global safety standards, ensuring everyone goes home safely.</p>
           </div>
         </div>
       </section>
@@ -451,10 +451,10 @@ export default function Home() {
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px" }}>Trusted By</h4>
           <h2 style={{ fontSize: "2.5rem", color: "var(--text-dark)", marginBottom: "50px", fontFamily: "var(--font-heading)" }}>OUR MAJOR CLIENTS</h2>
           
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "40px", alignItems: "center", opacity: 0.7 }}>
-            <div style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", fontWeight: 800, color: "var(--text-light)", letterSpacing: "-1px" }}>ROAD DEVELOPMENT AUTHORITY</div>
-            <div style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", fontWeight: 800, color: "var(--text-light)", letterSpacing: "-1px" }}>NATIONAL WATER BOARD</div>
-            <div style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", fontWeight: 800, color: "var(--text-light)", letterSpacing: "-1px" }}>U.D.A. SRI LANKA</div>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "40px", alignItems: "center", opacity: 0.95 }}>
+            <div style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", fontWeight: 800, color: "var(--text-dark)", letterSpacing: "-1px" }}>ROAD DEVELOPMENT AUTHORITY</div>
+            <div style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", fontWeight: 800, color: "var(--text-dark)", letterSpacing: "-1px" }}>NATIONAL WATER BOARD</div>
+            <div style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", fontWeight: 800, color: "var(--text-dark)", letterSpacing: "-1px" }}>U.D.A. SRI LANKA</div>
           </div>
         </div>
       </section>

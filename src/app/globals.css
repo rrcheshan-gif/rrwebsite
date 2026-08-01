@@ -5,7 +5,7 @@
   --primary-dark-red: #B71C1C;
   --bg-light: #F8F9FA;
   --text-dark: #0f172a;
-  --text-light: #475569;
+  --text-light: #334155;
   --white: #ffffff;
   
   /* Typography */
@@ -29,7 +29,7 @@
 [data-theme="dark"] {
   --bg-light: #0b0f19;
   --text-dark: #f8fafc;
-  --text-light: #94a3b8;
+  --text-light: #cbd5e1;
   --white: #1e293b;
   --bg-base: #151d2a;
   
