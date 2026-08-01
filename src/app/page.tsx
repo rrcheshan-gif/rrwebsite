@@ -265,30 +265,30 @@ export default function Home() {
 
       {/* CORPORATE STATS BAR */}
       <section style={{ padding: "80px 20px", position: "relative", zIndex: 10, background: "var(--bg-light)", overflow: "hidden" }}>
-        {/* Modern corporate ambient glows (blue & cyan) */}
-        <div className="ambient-glow" style={{ top: "10%", left: "15%", width: "40vw", height: "40vw", opacity: 0.7, background: "radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%)" }}></div>
-        <div className="ambient-glow" style={{ bottom: "-10%", right: "10%", width: "45vw", height: "45vw", background: "radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, transparent 70%)" }}></div>
+        {/* Soft elegant ambient glows matching overall layout */}
+        <div className="ambient-glow" style={{ top: "10%", left: "15%", width: "40vw", height: "40vw", opacity: 0.5, background: "radial-gradient(circle, rgba(211, 47, 47, 0.08) 0%, transparent 70%)" }}></div>
+        <div className="ambient-glow" style={{ bottom: "-10%", right: "10%", width: "45vw", height: "45vw", background: "radial-gradient(circle, rgba(148, 163, 184, 0.15) 0%, transparent 70%)" }}></div>
         
         <div className="container" style={{ position: "relative" }}>
           <div className="liquid-glass-panel" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", padding: "10px", position: "relative", overflow: "hidden" }}>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative", zIndex: 1 }}>
-              <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.15), transparent)" }}></div>
-              <h3 style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1, color: "#38bdf8", textShadow: "0 2px 10px rgba(56, 189, 248, 0.3)" }}>1995</h3>
-              <p style={{ color: "#f8fafc", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Established</p>
+              <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(148, 163, 184, 0.25), transparent)" }}></div>
+              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>1995</h3>
+              <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Established</p>
             </div>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative", zIndex: 1 }}>
-              <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.15), transparent)" }}></div>
-              <h3 style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1, color: "#38bdf8", textShadow: "0 2px 10px rgba(56, 189, 248, 0.3)" }}>1,800+</h3>
-              <p style={{ color: "#f8fafc", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Skilled Workforce</p>
+              <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(148, 163, 184, 0.25), transparent)" }}></div>
+              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>1,800+</h3>
+              <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Skilled Workforce</p>
             </div>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative", zIndex: 1 }}>
-              <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.15), transparent)" }}></div>
-              <h3 style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1, color: "#38bdf8", textShadow: "0 2px 10px rgba(56, 189, 248, 0.3)" }}>100+</h3>
-              <p style={{ color: "#f8fafc", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Projects Completed</p>
+              <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(148, 163, 184, 0.25), transparent)" }}></div>
+              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>100+</h3>
+              <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Projects Completed</p>
             </div>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", zIndex: 1 }}>
-              <h3 style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1, color: "#38bdf8", textShadow: "0 2px 10px rgba(56, 189, 248, 0.3)" }}>ISO</h3>
-              <p style={{ color: "#f8fafc", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>9001, 14001, 45001</p>
+              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>ISO</h3>
+              <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>9001, 14001, 45001</p>
             </div>
           </div>
         </div>
