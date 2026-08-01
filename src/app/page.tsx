@@ -243,10 +243,10 @@ export default function Home() {
                   {slide.desc}
                 </p>
                 <div className="hero-buttons" style={{ display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: "center" }}>
-                  <Link href="/projects" style={{ display: 'inline-flex', alignItems: 'center', background: 'var(--primary-red)', color: 'white', padding: 'clamp(10px, 2vw, 15px) clamp(20px, 4vw, 35px)', borderRadius: '50px', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '1px', textDecoration: 'none', transition: 'all 0.3s', boxShadow: '0 8px 25px rgba(229, 57, 53, 0.5)', fontSize: 'clamp(0.85rem, 1.5vw, 1rem)' }} onMouseOver={(e) => { e.currentTarget.style.background = '#c62828'; e.currentTarget.style.transform = 'translateY(-2px)'; }} onMouseOut={(e) => { e.currentTarget.style.background = 'var(--primary-red)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+                  <Link href="/projects" className="btn btn-primary">
                     Our Projects <ArrowRight style={{ marginLeft: '8px', width: '20px', height: '20px' }} />
                   </Link>
-                  <Link href="/about" style={{ display: 'inline-flex', alignItems: 'center', background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(10px)', color: 'white', border: '1.5px solid rgba(255,255,255,0.7)', padding: 'clamp(10px, 2vw, 15px) clamp(20px, 4vw, 35px)', borderRadius: '50px', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '1px', textDecoration: 'none', transition: 'all 0.3s', fontSize: 'clamp(0.85rem, 1.5vw, 1rem)' }} onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(0,0,0,0.7)'; e.currentTarget.style.transform = 'translateY(-2px)'; }} onMouseOut={(e) => { e.currentTarget.style.background = 'rgba(0,0,0,0.5)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+                  <Link href="/about" className="btn btn-outline">
                     Our Story
                   </Link>
                 </div>
