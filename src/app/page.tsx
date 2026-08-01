@@ -292,7 +292,7 @@ export default function Home() {
       </section>
 
       {/* CORPORATE PROFILE */}
-      <section className="bg-gradient-dark" style={{ padding: "140px 20px", position: "relative", overflow: 'hidden' }}>
+      <section className="bg-gradient-adaptive" style={{ padding: "140px 20px", position: "relative", overflow: 'hidden' }}>
         <div className="container" style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "80px", position: "relative", zIndex: 2 }}>
           <div style={{ flex: 1, minWidth: 'min(100%, 340px)', position: "relative", marginBottom: "40px" }}>
             <div className="ambient-glow" style={{ top: "10%", left: "-10%" }}></div>
@@ -456,7 +456,7 @@ export default function Home() {
       </section>
 
       {/* LATEST UPDATES / NEWSROOM */}
-      <section className="bg-gradient-dark" style={{ padding: "140px 20px", position: "relative", overflow: "hidden" }}>
+      <section className="bg-gradient-adaptive" style={{ padding: "140px 20px", position: "relative", overflow: "hidden" }}>
         <div className="ambient-glow" style={{ top: "10%", right: "-10%" }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "60px", flexWrap: "wrap", gap: "20px" }}>

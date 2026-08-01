@@ -1436,7 +1436,16 @@ ul {
 }
 
 .bg-gradient-dark {
+  background: radial-gradient(circle at top right, rgba(229, 57, 83, 0.15) 0%, transparent 40%),
+              radial-gradient(circle at bottom left, rgba(10, 15, 30, 0.9) 0%, #0a0a0a 100%);
+}
+
+.bg-gradient-adaptive {
   background: radial-gradient(circle at top right, rgba(229, 57, 83, 0.05) 0%, transparent 40%),
+              radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.03) 0%, var(--bg-base) 100%);
+}
+[data-theme='dark'] .bg-gradient-adaptive {
+  background: radial-gradient(circle at top right, rgba(229, 57, 83, 0.08) 0%, transparent 40%),
               radial-gradient(circle at bottom left, rgba(10, 15, 30, 0.8) 0%, var(--bg-base) 100%);
 }
 
