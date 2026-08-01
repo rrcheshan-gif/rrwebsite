@@ -273,22 +273,22 @@ export default function Home() {
           <div className="liquid-glass-panel" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", padding: "10px", position: "relative", overflow: "hidden" }}>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative", zIndex: 1 }}>
               <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.25), transparent)" }}></div>
-              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>1995</h3>
-              <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Established</p>
+              <h3 style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1, color: "#ffffff", textShadow: "0 2px 5px rgba(0,0,0,0.2)" }}>1995</h3>
+              <p style={{ color: "rgba(255, 255, 255, 0.9)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Established</p>
             </div>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative", zIndex: 1 }}>
               <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.25), transparent)" }}></div>
-              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>1,800+</h3>
-              <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Skilled Workforce</p>
+              <h3 style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1, color: "#ffffff", textShadow: "0 2px 5px rgba(0,0,0,0.2)" }}>1,800+</h3>
+              <p style={{ color: "rgba(255, 255, 255, 0.9)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Skilled Workforce</p>
             </div>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative", zIndex: 1 }}>
               <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.25), transparent)" }}></div>
-              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>100+</h3>
-              <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Projects Completed</p>
+              <h3 style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1, color: "#ffffff", textShadow: "0 2px 5px rgba(0,0,0,0.2)" }}>100+</h3>
+              <p style={{ color: "rgba(255, 255, 255, 0.9)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Projects Completed</p>
             </div>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", zIndex: 1 }}>
-              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>ISO</h3>
-              <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>9001, 14001, 45001</p>
+              <h3 style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1, color: "#ffffff", textShadow: "0 2px 5px rgba(0,0,0,0.2)" }}>ISO</h3>
+              <p style={{ color: "rgba(255, 255, 255, 0.9)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>9001, 14001, 45001</p>
             </div>
           </div>
         </div>
