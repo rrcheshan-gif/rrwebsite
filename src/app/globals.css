@@ -27,11 +27,11 @@
 }
 
 [data-theme="dark"] {
-  --bg-light: #0b0f19;
+  --bg-light: #111827;
   --text-dark: #f8fafc;
   --text-light: #cbd5e1;
   --white: #1e293b;
-  --bg-base: #151d2a;
+  --bg-base: #1e293b;
   
   /* Form & Inputs */
   --input-bg: #1e293b;
@@ -71,7 +71,7 @@
 
 /* Global Dark Mode Text & Container Contrast System */
 [data-theme="dark"] body {
-  background-color: #0b0f19;
+  background-color: #0f172a;
   color: #f8fafc;
 }
 
@@ -1123,7 +1123,7 @@ ul {
 
 /* Premium Responsive Footer System */
 .site-footer {
-  background: linear-gradient(180deg, #090d16 0%, #030509 100%) !important;
+  background: linear-gradient(180deg, #0f172a 0%, #0b1120 100%) !important;
   color: #f8fafc !important;
   padding: 80px 0 40px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -1458,8 +1458,9 @@ ul {
 }
 
 .bg-gradient-dark {
-  background: radial-gradient(circle at top right, rgba(229, 57, 83, 0.15) 0%, transparent 40%),
-              radial-gradient(circle at bottom left, rgba(10, 15, 30, 0.9) 0%, #0a0a0a 100%);
+  background: radial-gradient(circle at top right, rgba(229, 57, 83, 0.12) 0%, transparent 40%),
+              radial-gradient(circle at bottom left, #1e293b 0%, #0f172a 100%);
+  color: white;
 }
 
 .bg-gradient-adaptive {
