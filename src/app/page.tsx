@@ -359,7 +359,7 @@ export default function Home() {
             {[
               { title: "Highways & Roads", img: "/images/home/rathnapura.jpg", icon: <Map size={30} />, text: "Specialized civil engineering expertise carving expressways and national highways through every terrain." },
               { title: "Bridge Construction", img: "/images/kilinochchi-bridge-feature.jpg", icon: <GitMerge size={30} />, text: "CS-1 graded structural steel and reinforced concrete bridges built to carry the load for generations." },
-              { title: "Building Projects", img: "/images/wellamankara/building projects.jpg", icon: <Building2 size={30} />, text: "C-2 graded construction shaping commercial, industrial, and high-rise developments." },
+              { title: "Building Projects", img: "/images/wellamankara/building-projects.jpg", icon: <Building2 size={30} />, text: "C-2 graded construction shaping commercial, industrial, and high-rise developments." },
               { title: "Maritime & Water", img: "/images/maritime-harbour-site.jpg", icon: <Waves size={30} />, text: "Dredging, reclamation, and water supply systems engineered to serve communities at scale." }
             ].map((srv, i) => (
               <div key={i} className="modern-service-card" style={{ gridColumn: i === 0 || i === 3 ? "span 7" : "span 5", minHeight: "450px", position: "relative", overflow: "hidden", borderRadius: "32px", background: "#111", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>

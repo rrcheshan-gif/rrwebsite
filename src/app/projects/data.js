@@ -599,7 +599,7 @@ const projectsData = [
       'images/wellamankara/IMG_20220124_084547_236.jpg',
       'images/wellamankara/IMG_20220124_084659_272.jpg',
       'images/wellamankara/IMG_20220124_084720_479.jpg',
-      'images/wellamankara/building projects.jpg',
+      'images/wellamankara/building-projects.jpg',
       'images/wellamankara/IMG_20220124_084819_781.jpg',
       'images/wellamankara/IMG_20220124_084837_095.jpg',
       'images/wellamankara/IMG_20220124_084844_400.jpg',
