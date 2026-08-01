@@ -270,22 +270,25 @@ export default function Home() {
         <div className="ambient-glow" style={{ bottom: "-10%", right: "10%", width: "45vw", height: "45vw", background: "radial-gradient(circle, rgba(14, 165, 233, 0.12) 0%, transparent 70%)" }}></div>
         
         <div className="container" style={{ position: "relative" }}>
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "40px", padding: "10px", position: "relative" }}>
-            <div className="liquid-glass-circle">
-              <h3 className="text-gradient" style={{ fontFamily: "var(--font-heading)", lineHeight: 1 }}>1995</h3>
-              <p style={{ color: "var(--text-dark)", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Established</p>
+          <div className="liquid-glass-panel" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", padding: "10px", position: "relative", overflow: "hidden" }}>
+            <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative", zIndex: 1 }}>
+              <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.25), transparent)" }}></div>
+              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>1995</h3>
+              <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Established</p>
             </div>
-            <div className="liquid-glass-circle">
-              <h3 className="text-gradient" style={{ fontFamily: "var(--font-heading)", lineHeight: 1 }}>1,800+</h3>
-              <p style={{ color: "var(--text-dark)", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Skilled Workforce</p>
+            <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative", zIndex: 1 }}>
+              <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.25), transparent)" }}></div>
+              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>1,800+</h3>
+              <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Skilled Workforce</p>
             </div>
-            <div className="liquid-glass-circle">
-              <h3 className="text-gradient" style={{ fontFamily: "var(--font-heading)", lineHeight: 1 }}>100+</h3>
-              <p style={{ color: "var(--text-dark)", textTransform: "uppercase", letterSpacing: "1.5px", fontWeight: 700 }}>Projects Completed</p>
+            <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative", zIndex: 1 }}>
+              <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.25), transparent)" }}></div>
+              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>100+</h3>
+              <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Projects Completed</p>
             </div>
-            <div className="liquid-glass-circle">
-              <h3 className="text-gradient" style={{ fontFamily: "var(--font-heading)", lineHeight: 1 }}>ISO</h3>
-              <p style={{ color: "var(--text-dark)", textTransform: "uppercase", letterSpacing: "1.5px", fontWeight: 700 }}>9001, 14001, 45001</p>
+            <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", zIndex: 1 }}>
+              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>ISO</h3>
+              <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>9001, 14001, 45001</p>
             </div>
           </div>
         </div>
