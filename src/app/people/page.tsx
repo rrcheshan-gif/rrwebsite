@@ -58,31 +58,11 @@ export default function People() {
       </section>
 
       {/* Join Us CTA */}
-      <section style={{ 
-        padding: "90px 20px", 
-        background: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)", 
-        color: "white", 
-        textAlign: "center",
-        position: "relative",
-        borderTop: "4px solid var(--primary-red)",
-        boxShadow: "0 -10px 30px rgba(0, 0, 0, 0.1)"
-      }}>
+      <section style={{ padding: "80px 20px", background: "var(--primary-red)", color: "white", textAlign: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "3rem", marginBottom: "20px", color: "#ffffff", fontWeight: 700 }}>Build Your Career With Us</h2>
-          <p style={{ color: "#cbd5e1", fontSize: "1.2rem", maxWidth: "800px", margin: "0 auto 40px", lineHeight: 1.7 }}>Ready to engineer tomorrow? We are always looking for passionate engineers, project managers, and skilled tradespeople to join our growing team.</p>
-          <Link href="/career" className="btn btn-primary" style={{ 
-            display: "inline-block", 
-            padding: "16px 38px", 
-            background: "linear-gradient(135deg, var(--primary-red), var(--primary-dark-red))", 
-            color: "#ffffff", 
-            fontWeight: 700, 
-            textTransform: "uppercase", 
-            letterSpacing: "1.5px", 
-            borderRadius: "8px", 
-            textDecoration: "none",
-            boxShadow: "0 8px 25px rgba(211, 47, 47, 0.4)",
-            border: "none"
-          }}>View Vacancies</Link>
+          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "3rem", marginBottom: "20px", color: "white" }}>Build Your Career With Us</h2>
+          <p style={{ color: "var(--text-light)", fontSize: "1.2rem", maxWidth: "800px", margin: "0 auto 40px", lineHeight: 1.6 }}>Ready to engineer tomorrow? We are always looking for passionate engineers, project managers, and skilled tradespeople to join our growing team.</p>
+          <Link href="/career" className="btn btn-primary" style={{ display: "inline-block", padding: "15px 35px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", borderRadius: "6px", textDecoration: "none" }}>View Vacancies</Link>
         </div>
       </section>
     </div>
