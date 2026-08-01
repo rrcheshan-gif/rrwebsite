@@ -1484,3 +1484,20 @@ ul {
 
 .btn-outline { background: transparent !important; color: var(--text-dark) !important; border: 1.5px solid var(--text-dark) !important; }
 .btn-outline:hover { background: var(--text-dark) !important; color: var(--bg-base) !important; }
+.btn-outline::before {
+  background: linear-gradient(
+    90deg, 
+    transparent 0%, 
+    rgba(229, 57, 83, 0.3) 50%, 
+    transparent 100%
+  ) !important;
+}
+[data-theme='dark'] .btn-outline::before {
+  background: linear-gradient(
+    90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.65) 50%, 
+    transparent 100%
+  ) !important;
+}
+
