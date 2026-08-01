@@ -374,7 +374,7 @@ export default function Home() {
             ))}
           </div>
           <div style={{ textAlign: "center", marginTop: "50px" }}>
-            <Link href="/services" className="btn btn-outline hover-glow">View All Services</Link>
+            <Link href="/services" className="btn btn-primary hover-glow">View All Services</Link>
           </div>
         </div>
       </section>
@@ -382,7 +382,7 @@ export default function Home() {
       {/* SUSTAINABILITY & HSE SECTION */}
       <section className="bg-gradient-dark" style={{ padding: "80px 20px", color: "white", position: "relative" }}>
         <div className="ambient-glow" style={{ bottom: "-10vw", right: "-10%" }}></div>
-        <div className="container sustainability-grid glass-panel" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", overflow: "hidden", position: "relative", zIndex: 2 }}>
+        <div className="container sustainability-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", overflow: "hidden", position: "relative", zIndex: 2, background: "rgba(15, 23, 42, 0.95)", backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)", border: "1px solid rgba(255, 255, 255, 0.15)", borderRadius: "24px", boxShadow: "0 20px 50px rgba(0,0,0,0.3)" }}>
           <div className="sustainability-col" style={{ padding: "clamp(30px, 5vw, 80px) clamp(20px, 4vw, 60px)", borderRight: "1px solid rgba(255,255,255,0.05)" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "20px", marginBottom: "30px", flexWrap: "wrap" }}>
               <div style={{ width: "60px", height: "60px", background: "rgba(74, 222, 128, 0.1)", borderRadius: "20px", display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid rgba(74, 222, 128, 0.2)", boxShadow: "0 0 30px rgba(74, 222, 128, 0.1)", flexShrink: 0 }}>
