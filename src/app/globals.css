@@ -1562,19 +1562,19 @@ ul {
   content: '';
   position: absolute;
   top: -50%;
-  left: -120%;
-  width: 70%;
+  left: -130%;
+  width: 65%;
   height: 200%;
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.05) 20%,
-    rgba(255, 255, 255, 0.35) 50%,
-    rgba(255, 255, 255, 0.05) 80%,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.2) 80%,
     transparent 100%
-  );
+  ) !important;
   transform: rotate(25deg);
-  animation: glassSweep 9s ease-in-out infinite;
+  animation: glassSweep 5s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
   pointer-events: none;
   z-index: 5;
 }
@@ -1583,17 +1583,19 @@ ul {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(56, 189, 248, 0.02) 20%,
-    rgba(255, 255, 255, 0.25) 50%,
-    rgba(56, 189, 248, 0.02) 80%,
+    rgba(255, 255, 255, 0.15) 20%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.15) 80%,
     transparent 100%
-  );
+  ) !important;
 }
 
 @keyframes glassSweep {
-  0% { left: -120%; }
-  75% { left: 180%; }
-  100% { left: 180%; }
+  0% { left: -130%; opacity: 0; }
+  10% { opacity: 1; }
+  75% { left: 170%; opacity: 1; }
+  85% { opacity: 0; }
+  100% { left: 170%; opacity: 0; }
 }
 
 
@@ -1694,17 +1696,17 @@ ul {
 .liquid-glass-panel {
   background: linear-gradient(
     135deg,
-    rgba(148, 163, 184, 0.38) 0%,
-    rgba(100, 116, 139, 0.28) 100%
+    rgba(226, 232, 240, 0.65) 0%,
+    rgba(148, 163, 184, 0.45) 100%
   ) !important;
   backdrop-filter: blur(25px) saturate(160%);
   -webkit-backdrop-filter: blur(25px) saturate(160%);
-  border: 1.5px solid rgba(255, 255, 255, 0.85) !important;
+  border: 2px solid rgba(255, 255, 255, 0.95) !important;
   border-radius: 80px !important;
   box-shadow: 
-    0 15px 35px 0 rgba(71, 85, 105, 0.16),
-    inset 0 2px 4px 0 rgba(255, 255, 255, 0.9),
-    inset 0 -2px 6px 0 rgba(0, 0, 0, 0.06) !important;
+    0 20px 45px 0 rgba(15, 23, 42, 0.15),
+    inset 0 3px 5px 0 rgba(255, 255, 255, 0.95),
+    inset 0 -3px 8px 0 rgba(0, 0, 0, 0.08) !important;
   position: relative;
   overflow: hidden;
   transition: all 0.4s ease;
@@ -1714,14 +1716,14 @@ ul {
 [data-theme='dark'] .liquid-glass-panel {
   background: linear-gradient(
     135deg,
-    rgba(71, 85, 105, 0.55) 0%,
-    rgba(51, 65, 85, 0.65) 100%
+    rgba(51, 65, 85, 0.65) 0%,
+    rgba(30, 41, 59, 0.75) 100%
   ) !important;
-  border: 1.5px solid rgba(255, 255, 255, 0.22) !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
   box-shadow: 
-    0 15px 35px 0 rgba(0, 0, 0, 0.45),
-    inset 0 2px 4px 0 rgba(255, 255, 255, 0.2),
-    inset 0 -2px 6px 0 rgba(0, 0, 0, 0.4) !important;
+    0 20px 45px 0 rgba(0, 0, 0, 0.5),
+    inset 0 3px 5px 0 rgba(255, 255, 255, 0.3),
+    inset 0 -3px 8px 0 rgba(0, 0, 0, 0.5) !important;
   color: #ffffff !important;
 }
 
