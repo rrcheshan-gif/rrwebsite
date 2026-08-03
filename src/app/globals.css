@@ -1696,17 +1696,17 @@ ul {
 .liquid-glass-panel {
   background: linear-gradient(
     135deg,
-    rgba(226, 232, 240, 0.65) 0%,
-    rgba(148, 163, 184, 0.45) 100%
+    rgba(209, 213, 219, 0.65) 0%,
+    rgba(156, 163, 175, 0.45) 100%
   ) !important;
   backdrop-filter: blur(25px) saturate(160%);
   -webkit-backdrop-filter: blur(25px) saturate(160%);
   border: 2px solid rgba(255, 255, 255, 0.95) !important;
   border-radius: 80px !important;
   box-shadow: 
-    0 20px 45px 0 rgba(15, 23, 42, 0.15),
+    0 20px 45px 0 rgba(75, 85, 99, 0.18),
     inset 0 3px 5px 0 rgba(255, 255, 255, 0.95),
-    inset 0 -3px 8px 0 rgba(0, 0, 0, 0.08) !important;
+    inset 0 -3px 8px 0 rgba(0, 0, 0, 0.06) !important;
   position: relative;
   overflow: hidden;
   transition: all 0.4s ease;
@@ -1716,8 +1716,8 @@ ul {
 [data-theme='dark'] .liquid-glass-panel {
   background: linear-gradient(
     135deg,
-    rgba(51, 65, 85, 0.65) 0%,
-    rgba(30, 41, 59, 0.75) 100%
+    rgba(75, 85, 99, 0.65) 0%,
+    rgba(55, 65, 81, 0.75) 100%
   ) !important;
   border: 2px solid rgba(255, 255, 255, 0.3) !important;
   box-shadow: 
