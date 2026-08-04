@@ -318,18 +318,20 @@ export default function Home() {
               position: "absolute", 
               bottom: "-45px", 
               right: "10px", 
-              background: "white", 
+              background: "rgba(255, 255, 255, 0.75)", 
+              backdropFilter: "blur(16px)",
+              WebkitBackdropFilter: "blur(16px)",
               padding: "16px 22px", 
               borderRadius: "20px", 
               zIndex: 3, 
               maxWidth: "210px", 
               color: "var(--primary-red)", 
-              boxShadow: "0 15px 35px rgba(0, 0, 0, 0.15)",
-              border: "2px solid var(--primary-red)"
+              boxShadow: "0 15px 35px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.8)",
+              border: "2px solid rgba(211, 47, 47, 0.85)"
             }}>
               <div style={{ fontSize: "2.2rem", fontWeight: 800, fontFamily: "var(--font-heading)", lineHeight: 1, marginBottom: "2px", color: "var(--primary-red)" }}>25+</div>
-              <h4 style={{ margin: 0, fontSize: "0.88rem", fontFamily: "var(--font-heading)", textTransform: "uppercase", letterSpacing: "0.5px", color: "var(--primary-red)" }}>Years of Excellence</h4>
-              <p style={{ color: "var(--primary-red)", margin: "4px 0 0 0", fontSize: "0.75rem", lineHeight: 1.3, opacity: 0.8 }}>Solid Foundation & Strong Financial Backing</p>
+              <h4 style={{ margin: 0, fontSize: "0.88rem", fontFamily: "var(--font-heading)", textTransform: "uppercase", letterSpacing: "0.5px", color: "var(--primary-red)", fontWeight: 700 }}>Years of Excellence</h4>
+              <p style={{ color: "#0f172a", margin: "4px 0 0 0", fontSize: "0.75rem", lineHeight: 1.3, fontWeight: 600 }}>Solid Foundation & Strong Financial Backing</p>
             </div>
           </div>
           <div style={{ flex: 1, minWidth: 'min(100%, 350px)' }}>
