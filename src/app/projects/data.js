@@ -506,7 +506,9 @@ const projectsData = [
       'images/BADULLA/WhatsApp Image 2026-07-28 at 14.18.21.jpeg',
       'images/BADULLA/WhatsApp Image 2026-07-28 at 14.23.11.jpeg',
       'images/BADULLA/WhatsApp Image 2026-07-28 at 14.23.53.jpeg',
-      'images/BADULLA/WhatsApp Image 2026-07-28 at 14.26.09.jpeg'
+      'images/BADULLA/WhatsApp Image 2026-07-28 at 14.26.09.jpeg',
+      'images/BADULLA/WhatsApp Image 2026-08-01 at 12.15.02.jpeg',
+      'images/BADULLA/WhatsApp Image 2026-08-01 at 12.18.10.jpeg'
     ]
   },
   {
