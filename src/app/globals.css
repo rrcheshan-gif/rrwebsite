@@ -1821,44 +1821,44 @@ ul {
 }
 
 .nav-logo-img, .footer-logo-img {
-  height: 40px !important; /* Set to exactly match text block */
+  height: 48px !important;
   width: auto !important;
   object-fit: contain !important;
+  margin-top: 2px !important; /* Slight tweak to align visually */
 }
 
 .logo-text, .footer-logo-text {
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
-  height: 40px !important;
 }
 
 .logo-title {
-  font-size: 1.6rem !important;
+  font-size: 1.5rem !important;
+  font-weight: 800 !important;
   line-height: 1 !important;
-  margin-bottom: 2px !important;
+  margin-bottom: 3px !important;
+  letter-spacing: 0.5px !important;
 }
 
 .logo-sub {
-  font-size: 0.75rem !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
   line-height: 1 !important;
-  letter-spacing: 2px !important;
+  letter-spacing: 2.5px !important;
   margin-top: 0 !important;
 }
 
 /* Mobile specific tweaks for logo */
 @media (max-width: 768px) {
   .nav-logo-img, .footer-logo-img {
-    height: 32px !important;
-  }
-  .logo-text, .footer-logo-text {
-    height: 32px !important;
+    height: 36px !important;
   }
   .logo-title {
     font-size: 1.25rem !important;
   }
   .logo-sub {
-    font-size: 0.6rem !important;
+    font-size: 0.65rem !important;
   }
 }
 
