@@ -73,7 +73,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
 
   // --- Google Maps URLs ---
   const getMapSearchQuery = (title: string) => {
-    let cleaned = title.replace(/\(.*\)/g, ''); // Remove parenthesis content like (Balance Work), (A-035)
+    let cleaned = title.replace(/\(.*?\)/g, ''); // Remove parenthesis content
     cleaned = cleaned.replace(/Rehabilitation and Improvement of/gi, '');
     cleaned = cleaned.replace(/Rehabilitation and Maintenance of/gi, '');
     cleaned = cleaned.replace(/Reconstruction of Proposed Improvement and Rehabilitation of/gi, '');
@@ -83,15 +83,24 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
     cleaned = cleaned.replace(/Rehabilitation of/gi, '');
     cleaned = cleaned.replace(/Construction of/gi, '');
     cleaned = cleaned.replace(/Landslide Mitigation Measures at.*?Locations? in /gi, '');
+    cleaned = cleaned.replace(/Landslide Mitigation Measures in /gi, '');
+    cleaned = cleaned.replace(/Landslide Mitigation in /gi, '');
+    cleaned = cleaned.replace(/Landslide Mitigation /gi, '');
     cleaned = cleaned.replace(/Rectification of Unstable Slope at /gi, '');
     cleaned = cleaned.replace(/Quarry And Crusher Plant - /gi, '');
     cleaned = cleaned.replace(/Procurement of construction of boat launching ramp at /gi, '');
     cleaned = cleaned.replace(/Water Treatment Plant - /gi, '');
+    cleaned = cleaned.replace(/Emergency Reconstruction of Northern Railway Line Damaged by Cyclone Ditwah /gi, '');
+    cleaned = cleaned.replace(/Emergency Reconstruction of /gi, '');
+    cleaned = cleaned.replace(/Reactivation and Reconstruction of /gi, '');
+    cleaned = cleaned.replace(/Widening & Redecking of /gi, '');
+    cleaned = cleaned.replace(/Second Integrated Road Investment Program - /gi, '');
+    cleaned = cleaned.replace(/Integrated Road Investment Program - /gi, '');
     
     const onMatch = cleaned.match(/on\s+(.*?Road)/i);
     if (onMatch) return onMatch[1].trim() + ', Sri Lanka';
     
-    const inMatch = cleaned.match(/in\s+(.*?District)/i);
+    const inMatch = cleaned.match(/in\s+(.*?District|.*?Province)/i);
     if (inMatch) return inMatch[1].trim() + ', Sri Lanka';
 
     const atMatch = cleaned.match(/at\s+(.*)/i);
@@ -100,7 +109,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
     return cleaned.trim() + ', Sri Lanka';
   };
 
-  const mapSearchTerm = project.mapQuery || getMapSearchQuery(project.title || '');
+  const mapSearchTerm = project.mapQuery || project.location || getMapSearchQuery(project.title || '');
   const searchQuery = encodeURIComponent(mapSearchTerm);
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${searchQuery}`;
   const mapSrc = `https://maps.google.com/maps?q=${searchQuery}&output=embed&hl=en`;

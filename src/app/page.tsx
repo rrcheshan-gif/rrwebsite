@@ -246,7 +246,7 @@ export default function Home() {
                   <Link href="/projects" className="btn btn-primary">
                     Our Projects <ArrowRight style={{ marginLeft: '8px', width: '20px', height: '20px' }} />
                   </Link>
-                  <Link href="/about" className="btn btn-outline">
+                  <Link href="/about" className="btn btn-glass">
                     Our Story
                   </Link>
                 </div>
@@ -264,35 +264,39 @@ export default function Home() {
       </section>
 
       {/* CORPORATE STATS BAR */}
-      <section style={{ padding: "60px 0 0 0", position: "relative", zIndex: 10, background: "var(--bg-base)" }}>
-        <div className="container">
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", background: "rgba(10, 10, 10, 0.75)", backdropFilter: "blur(20px)", borderRadius: "24px", padding: "10px", border: "1px solid rgba(255,255,255,0.1)", boxShadow: "0 25px 50px rgba(0,0,0,0.3)" }}>
-            <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative" }}>
-              <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.15), transparent)" }}></div>
-              <h3 style={{ color: "#ef4444", fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1, textShadow: "0 4px 15px rgba(239, 68, 68, 0.4)" }}>1995</h3>
-              <p style={{ color: "#ffffff", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Established</p>
+      <section style={{ padding: "80px 20px", position: "relative", zIndex: 10, background: "var(--bg-light)", overflow: "hidden" }}>
+        {/* Soft elegant ambient glows matching overall layout */}
+        <div className="ambient-glow" style={{ top: "10%", left: "15%", width: "40vw", height: "40vw", opacity: 0.5, background: "radial-gradient(circle, rgba(211, 47, 47, 0.08) 0%, transparent 70%)" }}></div>
+        <div className="ambient-glow" style={{ bottom: "-10%", right: "10%", width: "45vw", height: "45vw", background: "radial-gradient(circle, rgba(148, 163, 184, 0.15) 0%, transparent 70%)" }}></div>
+        
+        <div className="container" style={{ position: "relative" }}>
+          <div className="liquid-glass-panel" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", padding: "10px", position: "relative", overflow: "hidden" }}>
+            <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative", zIndex: 1 }}>
+              <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(148, 163, 184, 0.25), transparent)" }}></div>
+              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>1995</h3>
+              <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Established</p>
             </div>
-            <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative" }}>
-              <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.15), transparent)" }}></div>
-              <h3 style={{ color: "#ef4444", fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1, textShadow: "0 4px 15px rgba(239, 68, 68, 0.4)" }}>1,800+</h3>
-              <p style={{ color: "#ffffff", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Skilled Workforce</p>
+            <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative", zIndex: 1 }}>
+              <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(148, 163, 184, 0.25), transparent)" }}></div>
+              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>1,800+</h3>
+              <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Skilled Workforce</p>
             </div>
-            <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative" }}>
-              <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.15), transparent)" }}></div>
-              <h3 style={{ color: "#ef4444", fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1, textShadow: "0 4px 15px rgba(239, 68, 68, 0.4)" }}>100+</h3>
-              <p style={{ color: "#ffffff", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Projects Completed</p>
+            <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative", zIndex: 1 }}>
+              <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(148, 163, 184, 0.25), transparent)" }}></div>
+              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>100+</h3>
+              <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Projects Completed</p>
             </div>
-            <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center" }}>
-              <h3 style={{ color: "#ef4444", fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1, textShadow: "0 4px 15px rgba(239, 68, 68, 0.4)" }}>ISO</h3>
-              <p style={{ color: "#ffffff", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>9001, 14001, 45001</p>
+            <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", zIndex: 1 }}>
+              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>ISO</h3>
+              <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>9001, 14001, 45001</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CORPORATE PROFILE */}
-      <section style={{ padding: "140px 20px", background: "var(--bg-base)", overflow: 'hidden' }}>
-        <div className="container" style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "80px" }}>
+      <section className="bg-gradient-adaptive" style={{ padding: "140px 20px", position: "relative", overflow: 'hidden' }}>
+        <div className="container" style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "80px", position: "relative", zIndex: 2 }}>
           <div style={{ flex: 1, minWidth: 'min(100%, 340px)', position: "relative", marginBottom: "40px" }}>
             {/* Outer Frame Accent */}
             <div style={{ position: "absolute", top: "-15px", left: "-15px", width: "calc(100% + 30px)", height: "calc(100% + 30px)", border: "2px dashed var(--primary-red)", borderRadius: "36px", zIndex: 0, opacity: 0.25 }}></div>
@@ -314,7 +318,7 @@ export default function Home() {
             </div>
             
             {/* Floating 25+ Years Box at Bottom-Right Accent Position */}
-            <div style={{ 
+            <div className="glass-panel hover-lift" style={{ 
               position: "absolute", 
               bottom: "-45px", 
               right: "10px", 
@@ -322,7 +326,6 @@ export default function Home() {
               backdropFilter: "blur(16px)",
               WebkitBackdropFilter: "blur(16px)",
               padding: "16px 22px", 
-              borderRadius: "20px", 
               zIndex: 3, 
               maxWidth: "210px", 
               color: "var(--primary-red)", 
@@ -340,23 +343,23 @@ export default function Home() {
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Corporate Profile</h4>
             </div>
             
-            <h2 style={{ fontSize: "3.5rem", lineHeight: 1.1, marginBottom: "35px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>BUILDING THE FUTURE<br/><span style={{ color: "var(--text-light)", fontWeight: 500 }}>OF SRI LANKA</span></h2>
+            <h2 style={{ fontSize: "3.5rem", lineHeight: 1.1, marginBottom: "35px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>BUILDING THE FUTURE<br/><span className="text-gradient" style={{ fontWeight: 500 }}>OF SRI LANKA</span></h2>
             
             <p style={{ fontSize: "1.25rem", color: "var(--text-dark)", marginBottom: "30px", fontWeight: 600, lineHeight: 1.7, borderLeft: "4px solid var(--primary-red)", paddingLeft: "20px" }}>We measure success the way our clients do: the right quality, delivered on schedule, at a fair cost.</p>
             
             <p style={{ color: "var(--text-light)", marginBottom: "45px", lineHeight: 1.9, fontSize: "1.05rem" }}>With massive financial backing and a self-owned fleet of 1,000+ machines, we don't wait on hired equipment or third-party schedules. From expressways to harbour works, we bring the full strength of our resources to every site — so Sri Lanka's infrastructure keeps pace with its ambitions.</p>
             
-            <Link href="/about" className="btn btn-primary" style={{ padding: "18px 40px", fontSize: "1rem" }}>Discover Our Legacy</Link>
+            <Link href="/about" className="btn btn-primary hover-glow" style={{ padding: "18px 40px", fontSize: "1rem" }}>Discover Our Legacy</Link>
           </div>
         </div>
       </section>
 
       {/* CORE EXPERTISE */}
-      <section style={{ padding: "100px 20px", background: "var(--bg-light)" }}>
-        <div className="container">
+      <section style={{ padding: "100px 20px", background: "var(--bg-light)", position: "relative" }}>
+        <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px" }}>Sectors of Operation</h4>
-            <h2 style={{ fontSize: "3rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>OUR CORE EXPERTISE</h2>
+            <h2 className="text-gradient" style={{ fontSize: "3rem", fontFamily: "var(--font-heading)" }}>OUR CORE EXPERTISE</h2>
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
           
@@ -364,13 +367,13 @@ export default function Home() {
             {[
               { title: "Highways & Roads", img: "/images/home/rathnapura.jpg", icon: <Map size={30} />, text: "Specialized civil engineering expertise carving expressways and national highways through every terrain." },
               { title: "Bridge Construction", img: "/images/kilinochchi-bridge-feature.jpg", icon: <GitMerge size={30} />, text: "CS-1 graded structural steel and reinforced concrete bridges built to carry the load for generations." },
-              { title: "Building Projects", img: "/images/wellamankara/building projects.jpg", icon: <Building2 size={30} />, text: "C-2 graded construction shaping commercial, industrial, and high-rise developments." },
+              { title: "Building Projects", img: "/images/wellamankara/building-projects.jpg", icon: <Building2 size={30} />, text: "C-2 graded construction shaping commercial, industrial, and high-rise developments." },
               { title: "Maritime & Water", img: "/images/maritime-harbour-site.jpg", icon: <Waves size={30} />, text: "Dredging, reclamation, and water supply systems engineered to serve communities at scale." }
             ].map((srv, i) => (
-              <div key={i} className="modern-service-card" style={{ gridColumn: i === 0 || i === 3 ? "span 7" : "span 5", minHeight: "450px", position: "relative", overflow: "hidden", borderRadius: "32px", background: "#111", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
+              <div key={i} className="modern-service-card glass-panel hover-lift" style={{ gridColumn: i === 0 || i === 3 ? "span 7" : "span 5", minHeight: "450px", position: "relative", overflow: "hidden", padding: 0 }}>
                 <img src={srv.img} alt={srv.title} className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.6 }} onMouseOver={(e) => { e.currentTarget.style.opacity = '0.8' }} onMouseOut={(e) => { e.currentTarget.style.opacity = '0.6' }} />
                 <div className="msc-content" style={{ position: "absolute", bottom: 0, left: 0, width: "100%", padding: "40px", background: "linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 70%, transparent)", color: "white", pointerEvents: "none" }}>
-                  <div style={{ color: "white", marginBottom: "20px", display: "inline-block", padding: "15px", background: "var(--primary-red)", borderRadius: "20px" }}>{srv.icon}</div>
+                  <div style={{ color: "white", marginBottom: "20px", display: "inline-block", padding: "15px", background: "var(--primary-red)", borderRadius: "20px", boxShadow: "0 10px 20px rgba(229,57,53,0.3)" }}>{srv.icon}</div>
                   <h3 style={{ fontSize: "2.2rem", marginBottom: "15px", color: "white", fontFamily: "var(--font-heading)", letterSpacing: "1px" }}>{srv.title}</h3>
                   <p className="msc-text" style={{ fontSize: "1rem", color: "#e2e8f0", margin: 0, lineHeight: 1.6 }}>{srv.text}</p>
                 </div>
@@ -378,47 +381,48 @@ export default function Home() {
             ))}
           </div>
           <div style={{ textAlign: "center", marginTop: "50px" }}>
-            <Link href="/services" className="btn btn-outline">View All Services</Link>
+            <Link href="/services" className="btn btn-primary hover-glow">View All Services</Link>
           </div>
         </div>
       </section>
 
       {/* SUSTAINABILITY & HSE SECTION */}
-      <section style={{ padding: "80px 20px", background: "linear-gradient(to bottom, #0a0a0a, #111)", color: "white" }}>
-        <div className="container sustainability-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", background: "rgba(255,255,255,0.02)", borderRadius: "32px", border: "1px solid rgba(255,255,255,0.05)", overflow: "hidden" }}>
-          <div className="sustainability-col" style={{ padding: "clamp(30px, 5vw, 80px) clamp(20px, 4vw, 60px)", borderRight: "1px solid rgba(255,255,255,0.05)" }}>
+      <section style={{ padding: "80px 20px", background: "var(--bg-light)", position: "relative", overflow: "hidden" }}>
+        <div className="ambient-glow" style={{ bottom: "-10vw", right: "-10%", opacity: 0.4 }}></div>
+        <div className="container sustainability-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", overflow: "hidden", position: "relative", zIndex: 2, background: "var(--white)", border: "1px solid rgba(0, 0, 0, 0.06)", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.05)" }}>
+          <div className="sustainability-col" style={{ padding: "clamp(30px, 5vw, 80px) clamp(20px, 4vw, 60px)", borderRight: "1px solid rgba(0,0,0,0.06)" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "20px", marginBottom: "30px", flexWrap: "wrap" }}>
               <div style={{ width: "60px", height: "60px", background: "rgba(74, 222, 128, 0.1)", borderRadius: "20px", display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid rgba(74, 222, 128, 0.2)", boxShadow: "0 0 30px rgba(74, 222, 128, 0.1)", flexShrink: 0 }}>
-                <Leaf color="#4ade80" size={30} />
+                <Leaf color="#16a34a" size={30} />
               </div>
-              <h3 style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)", margin: 0, color: "white", fontFamily: "var(--font-heading)" }}>Sustainable<br/>Engineering</h3>
+              <h3 style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)", margin: 0, color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>Sustainable<br/>Engineering</h3>
             </div>
-            <p style={{ color: "#cbd5e1", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "0" }}>We recognize our responsibility to the environment. Through efficient resource management, sustainable material sourcing, and strict adherence to ISO 14001 Environmental Management Systems, we minimize our ecological footprint while building infrastructure that lasts.</p>
+            <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "0" }}>We recognize our responsibility to the environment. Through efficient resource management, sustainable material sourcing, and strict adherence to ISO 14001 Environmental Management Systems, we minimize our ecological footprint while building infrastructure that lasts.</p>
           </div>
           <div className="sustainability-col" style={{ padding: "clamp(30px, 5vw, 80px) clamp(20px, 4vw, 60px)" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "20px", marginBottom: "30px", flexWrap: "wrap" }}>
               <div style={{ width: "60px", height: "60px", background: "rgba(251, 191, 36, 0.1)", borderRadius: "20px", display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid rgba(251, 191, 36, 0.2)", boxShadow: "0 0 30px rgba(251, 191, 36, 0.1)", flexShrink: 0 }}>
-                <HardHat color="#fbbf24" size={30} />
+                <HardHat color="#d97706" size={30} />
               </div>
-              <h3 style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)", margin: 0, color: "white", fontFamily: "var(--font-heading)" }}>Health & Safety<br/>First</h3>
+              <h3 style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)", margin: 0, color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>Health & Safety<br/>First</h3>
             </div>
-            <p style={{ color: "#cbd5e1", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "0" }}>Zero harm is our ultimate goal. We maintain a rigorous Health & Safety culture on every site, backed by our ISO 45001 certification. Our 1,800+ workforce is continuously trained to operate under the highest global safety standards, ensuring everyone goes home safely.</p>
+            <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "0" }}>Zero harm is our ultimate goal. We maintain a rigorous Health & Safety culture on every site, backed by our ISO 45001 certification. Our 1,800+ workforce is continuously trained to operate under the highest global safety standards, ensuring everyone goes home safely.</p>
           </div>
         </div>
       </section>
 
       {/* PROJECT HIGHLIGHTS */}
-      <section style={{ padding: "140px 20px", background: "var(--bg-light)", overflow: "hidden" }}>
-        <div className="container" style={{ display: "flex", flexWrap: "wrap", gap: "80px", alignItems: "center" }}>
+      <section style={{ padding: "140px 20px", background: "var(--bg-light)", overflow: "hidden", position: "relative" }}>
+        <div className="container" style={{ display: "flex", flexWrap: "wrap", gap: "80px", alignItems: "center", position: "relative", zIndex: 2 }}>
           <div style={{ flex: 1, minWidth: 'min(100%, 350px)', position: "relative" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
               <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Our Legacy</h4>
             </div>
-            <h2 style={{ fontSize: "3.5rem", lineHeight: 1.1, marginBottom: "30px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>THREE DECADES OF<br/><span style={{ color: "var(--text-light)", fontWeight: 300 }}>EXCELLENCE</span></h2>
+            <h2 style={{ fontSize: "3.5rem", lineHeight: 1.1, marginBottom: "30px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>THREE DECADES OF<br/><span className="text-gradient" style={{ fontWeight: 300 }}>EXCELLENCE</span></h2>
             <p style={{ color: "var(--text-dark)", fontSize: "1.15rem", marginBottom: "25px", lineHeight: 1.8, fontWeight: 500 }}>Since 1995, RR Construction has helped shape the physical foundations of modern Sri Lanka. What began as a subcontracting partnership with international firms like ED Zublin AG has grown into one of the country's most trusted construction names.</p>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginBottom: "50px", lineHeight: 1.8 }}>Hundreds of completed projects later — expressways, deep-water dredging, bridges spanning over 100 metres, and water treatment plants serving entire districts — our portfolio speaks for itself.</p>
-            <Link href="/projects" className="btn btn-primary" style={{ display: 'inline-flex', gap: '10px', padding: "18px 40px", fontSize: "1rem" }}>
+            <Link href="/projects" className="btn btn-primary hover-glow" style={{ display: 'inline-flex', gap: '10px', padding: "18px 40px", fontSize: "1rem" }}>
               Full Project Portfolio <ArrowRight size={20} />
             </Link>
           </div>
@@ -432,7 +436,7 @@ export default function Home() {
                { icon: <MapPin color="white" size={24} />, title: "Central Expressway", text: "Section 2 Package-A", num: "02" },
                { icon: <Droplets color="white" size={24} />, title: "Ampara Water Treatment Plant", text: "172,000 cum/day capacity", num: "03" }
              ].map((proj, i) => (
-                <div key={i} style={{ display: "flex", gap: "25px", background: "var(--white)", padding: "30px", borderRadius: "24px", border: "1px solid var(--border-soft)", position: "relative", zIndex: 1, transform: i === 1 ? "translateX(-30px)" : "none", transition: "transform 0.4s ease, box-shadow 0.4s ease", cursor: "pointer" }} onMouseOver={(e) => { e.currentTarget.style.transform = i === 1 ? "translateX(-20px) translateY(-5px)" : "translateY(-5px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.05)" }} onMouseOut={(e) => { e.currentTarget.style.transform = i === 1 ? "translateX(-30px)" : "none"; e.currentTarget.style.boxShadow = "none" }}>
+                <div key={i} className="glass-panel hover-lift" style={{ display: "flex", gap: "25px", padding: "30px", position: "relative", zIndex: 1, transform: i === 1 ? "translateX(-30px)" : "none", transition: "transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease", cursor: "pointer", background: "var(--white)", border: "1px solid var(--border-soft)" }} onMouseOver={(e) => { e.currentTarget.style.transform = i === 1 ? "translateX(-20px) translateY(-5px)" : "translateY(-5px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.05)" }} onMouseOut={(e) => { e.currentTarget.style.transform = i === 1 ? "translateX(-30px)" : "none"; e.currentTarget.style.boxShadow = "none" }}>
                   <div style={{ position: "absolute", right: "20px", top: "15px", fontSize: "3rem", fontWeight: 800, color: "var(--text-light)", opacity: 0.15, fontFamily: "var(--font-heading)", lineHeight: 1 }}>{proj.num}</div>
                   <div style={{ width: "60px", height: "60px", background: "var(--primary-red)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 10px 20px rgba(229,57,53,0.2)" }}>
                     {proj.icon}
@@ -462,17 +466,18 @@ export default function Home() {
       </section>
 
       {/* LATEST UPDATES / NEWSROOM */}
-      <section style={{ padding: "140px 20px", background: "var(--bg-base)" }}>
-        <div className="container">
+      <section className="bg-gradient-adaptive" style={{ padding: "140px 20px", position: "relative", overflow: "hidden" }}>
+        <div className="ambient-glow" style={{ top: "10%", right: "-10%" }}></div>
+        <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "60px", flexWrap: "wrap", gap: "20px" }}>
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
                 <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
                 <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Newsroom</h4>
               </div>
-              <h2 style={{ fontSize: "3.5rem", color: "var(--text-dark)", margin: 0, fontFamily: "var(--font-heading)", lineHeight: 1.1 }}>LATEST <span style={{ color: "var(--text-light)", fontWeight: 300 }}>UPDATES</span></h2>
+              <h2 style={{ fontSize: "3.5rem", color: "var(--text-dark)", margin: 0, fontFamily: "var(--font-heading)", lineHeight: 1.1 }}>LATEST <span className="text-gradient" style={{ fontWeight: 300 }}>UPDATES</span></h2>
             </div>
-            <Link href="#" className="btn btn-outline" style={{ padding: "15px 30px", border: "1px solid var(--border-soft)" }}>View All News</Link>
+            <Link href="#" className="btn btn-outline hover-glow" style={{ padding: "15px 30px", border: "1px solid var(--border-soft)" }}>View All News</Link>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px" }}>
@@ -481,7 +486,7 @@ export default function Home() {
               { tag: 'Corporate', title: 'RR Construction Passes Annual ISO Surveillance Audit', desc: 'Successfully maintaining our ISO 9001, 14001, and 45001 certifications, reaffirming our commitment to global standards.', date: 'May 28, 2026', img: '/images/health-safety-site.jpg' },
               { tag: 'Machinery', title: 'New High-Capacity Asphalt Plant Commissioned', desc: 'Expanding our self-owned fleet capabilities to accelerate the delivery of the Central Expressway Project Section 3.', date: 'May 10, 2026', img: '/images/kalutara-crusher-plant.jpg', crop: 'top' }
             ].map((news, i) => (
-              <div key={i} style={{ background: "var(--white)", borderRadius: "24px", overflow: "hidden", border: "1px solid var(--border-soft)", cursor: "pointer", transition: "transform 0.4s ease, box-shadow 0.4s ease" }} className="news-card" onMouseOver={(e) => { e.currentTarget.style.transform = "translateY(-10px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.05)" }} onMouseOut={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none" }}>
+              <div key={i} style={{ background: "var(--white)", borderRadius: "24px", overflow: "hidden", border: "1px solid var(--border-soft)", cursor: "pointer", transition: "transform 0.4s ease, box-shadow 0.4s ease" }} className="news-card glass-panel hover-lift" onMouseOver={(e) => { e.currentTarget.style.transform = "translateY(-10px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.05)" }} onMouseOut={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none" }}>
                 <div style={{ height: "220px", overflow: "hidden" }}>
                   <img src={news.img} alt={news.title} className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: news.crop === 'top' ? 'top center' : 'center', transition: "transform 0.4s ease" }} onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'} onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'} />
                 </div>
