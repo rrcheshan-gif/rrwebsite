@@ -446,22 +446,75 @@ export default function Home() {
                     <p style={{ color: "var(--text-light)", fontSize: "0.95rem", margin: 0 }}>{proj.text}</p>
                   </div>
                 </div>
-             ))}
+              ))}
           </div>
-        </div>
-      </section>
 
-      {/* TRUSTED PARTNERS */}
-      <section style={{ padding: "60px 20px", background: "var(--bg-light)", textAlign: "center", borderTop: "1px solid var(--border-soft)" }}>
-        <div className="container">
-          <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px" }}>Trusted By</h4>
-          <h2 style={{ fontSize: "2.5rem", color: "var(--text-dark)", marginBottom: "50px", fontFamily: "var(--font-heading)" }}>OUR MAJOR CLIENTS</h2>
-          
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "40px", alignItems: "center", opacity: 0.95 }}>
-            <div style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", fontWeight: 800, color: "var(--text-dark)", letterSpacing: "-1px" }}>ROAD DEVELOPMENT AUTHORITY</div>
-            <div style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", fontWeight: 800, color: "var(--text-dark)", letterSpacing: "-1px" }}>NATIONAL WATER BOARD</div>
-            <div style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", fontWeight: 800, color: "var(--text-dark)", letterSpacing: "-1px" }}>U.D.A. SRI LANKA</div>
+          {/* Seamlessly Integrated Major Clients Footer Strip */}
+          <div 
+            style={{ 
+              width: "100%", 
+              marginTop: "80px", 
+              paddingTop: "50px", 
+              borderTop: "1px solid var(--border-soft)", 
+              display: "flex", 
+              flexDirection: "column", 
+              alignItems: "center", 
+              textAlign: "center", 
+              gap: "25px", 
+              position: "relative", 
+              zIndex: 2 
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
+              <div style={{ width: "35px", height: "1px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.85rem" }}>
+                Trusted By Our Major Clients
+              </h4>
+              <div style={{ width: "35px", height: "1px", background: "var(--primary-red)" }}></div>
+            </div>
+
+            <div 
+              style={{ 
+                display: "flex", 
+                flexWrap: "wrap", 
+                justifyContent: "center", 
+                alignItems: "center", 
+                gap: "20px 30px", 
+                width: "100%", 
+                maxWidth: "1100px" 
+              }}
+            >
+              {[
+                { name: "ROAD DEVELOPMENT AUTHORITY", tag: "RDA SRI LANKA" },
+                { name: "NATIONAL WATER BOARD", tag: "NWSDB" },
+                { name: "U.D.A. SRI LANKA", tag: "URBAN DEVELOPMENT" },
+                { name: "MINISTRY OF IRRIGATION", tag: "IWWRMP" },
+                { name: "IRCON INTERNATIONAL", tag: "GOVT OF INDIA" }
+              ].map((client, idx) => (
+                <div 
+                  key={idx} 
+                  className="glass-panel hover-lift" 
+                  style={{ 
+                    padding: "16px 28px", 
+                    borderRadius: "20px", 
+                    background: "var(--white)", 
+                    border: "1px solid var(--border-soft)", 
+                    boxShadow: "0 10px 30px rgba(0,0,0,0.04)", 
+                    display: "flex", 
+                    alignItems: "center", 
+                    gap: "12px", 
+                    cursor: "default" 
+                  }}
+                >
+                  <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "var(--primary-red)", boxShadow: "0 0 10px var(--primary-red)" }}></div>
+                  <span style={{ fontFamily: "var(--font-heading)", fontSize: "1.05rem", fontWeight: 800, color: "var(--text-dark)", letterSpacing: "0.5px" }}>
+                    {client.name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
+
         </div>
       </section>
 
