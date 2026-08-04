@@ -591,13 +591,19 @@ const projectsData = [
   },
   {
     id: 'project-40',
-    type: 'completed', category: "irrigation",
-    title: "Rehabilitation of Kalmadu Scheme Head Works",
+    type: 'completed',
+    category: "irrigation",
+    title: "Rehabilitation of Kalmadu Scheme Headworks",
+    contractNo: "LK-MOMDE-163045-CW-RFB",
+    contractAmount: "LKR 484,096,095.57 + VAT",
     status: "Completed",
-    client: "Ministry of Irrigation",
-    
-    duration: "24 Months",
-    year: 2023
+    client: "Ministry of Irrigation - IWWRMP (Kilinochchi Range)",
+    duration: "24 Months (730 Days)",
+    year: 2023,
+    description: `<p style="margin-bottom: 20px;">The <strong>"Rehabilitation of Kalmadu Scheme Headworks"</strong> [Contract No: LK-MOMDE-163045-CW-RFB] is a major water resources and irrigation infrastructure project executed under the <strong>Integrated Watershed & Water Resources Management Project (IWWRMP)</strong> of the <strong>Ministry of Irrigation</strong>.</p>
+                   <p style="margin-bottom: 20px;">Awarded at a contract value of <strong>LKR 484,096,095.57 + VAT</strong> with a 730-day (24-month) completion schedule, the project focused on comprehensive structural rehabilitation of headworks, dam spillways, sluice gates, bund reinforcement, and water management structures in the Kilinochchi Range, Northern Province.</p>
+                   <p style="margin-bottom: 20px;">Leveraging RR Construction's specialized hydraulic engineering divisions and earth-moving machinery, the headworks were restored to increase reservoir storage capacity, secure agricultural irrigation channels, and safeguard local communities against severe flood risks during heavy monsoonal seasons.</p>
+                   <p>All irrigation civil works strictly complied with Northern Province Irrigation Department specifications, ICTAD/SBD/02 standards, and ISO 9001 quality management guidelines.</p>`
   },
 
   // 2022
