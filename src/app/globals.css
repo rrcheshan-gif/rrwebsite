@@ -1812,3 +1812,52 @@ ul {
   z-index: 10 !important;
   position: relative !important;
 }
+
+/* Global override to perfectly align RR logo image and text height */
+.logo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.nav-logo-img, .footer-logo-img {
+  height: 40px !important; /* Set to exactly match text block */
+  width: auto !important;
+  object-fit: contain !important;
+}
+
+.logo-text, .footer-logo-text {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  height: 40px !important;
+}
+
+.logo-title {
+  font-size: 1.6rem !important;
+  line-height: 1 !important;
+  margin-bottom: 2px !important;
+}
+
+.logo-sub {
+  font-size: 0.75rem !important;
+  line-height: 1 !important;
+  letter-spacing: 2px !important;
+  margin-top: 0 !important;
+}
+
+/* Mobile specific tweaks for logo */
+@media (max-width: 768px) {
+  .nav-logo-img, .footer-logo-img {
+    height: 32px !important;
+  }
+  .logo-text, .footer-logo-text {
+    height: 32px !important;
+  }
+  .logo-title {
+    font-size: 1.25rem !important;
+  }
+  .logo-sub {
+    font-size: 0.6rem !important;
+  }
+}
