@@ -2,6 +2,16 @@
 const projectsData = [
   // ONGOING PROJECTS
   {
+    id: 'project-rda-kurikadduvan-jetty',
+    type: 'ongoing',
+    category: "maritime",
+    title: "RECONSTRUCTION OF PROPOSED IMPROVEMENT AND REHABILITATION OF KURIKADDUVAN JETTY",
+    client: "Road Development Authority",
+    duration: "553 Days",
+    year: 2026,
+    status: "Ongoing"
+  },
+  {
     id: 'project-mod-landslide-10j',
     type: 'ongoing',
     category: "disaster",
