@@ -1,26 +1,39 @@
 "use client";
 
-import { useEffect, useState, Suspense } from "react";
+import { useEffect, useState, useRef, Suspense } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 
 function PageTransitionContent() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const [isTransitioning, setIsTransitioning] = useState(false);
+  const isInitialLoad = useRef(true);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  const [duration, setDuration] = useState(1800); // Default 1.8s for initial load
 
   useEffect(() => {
-    // When the route changes, trigger the transition overlay
-    setIsTransitioning(true);
-    
-    // The overlay lasts for 0.5 seconds (maximum speed as requested)
-    const timer = setTimeout(() => {
-      setIsTransitioning(false);
-    }, 500); 
-
-    return () => clearTimeout(timer);
-  }, [pathname, searchParams]); // Run every time the path or query changes
+    if (isInitialLoad.current) {
+      // First site load: 1.8s so logo & tagline are clearly visible
+      isInitialLoad.current = false;
+      setIsTransitioning(true);
+      setDuration(1800);
+      const timer = setTimeout(() => {
+        setIsTransitioning(false);
+      }, 1800);
+      return () => clearTimeout(timer);
+    } else {
+      // Route change page transition: 900ms (smooth & intentional)
+      setIsTransitioning(true);
+      setDuration(900);
+      const timer = setTimeout(() => {
+        setIsTransitioning(false);
+      }, 900);
+      return () => clearTimeout(timer);
+    }
+  }, [pathname, searchParams]);
 
   if (!isTransitioning) return null;
+
+  const durationSec = (duration / 1000).toFixed(1) + "s";
 
   return (
     <div style={{
@@ -38,7 +51,7 @@ function PageTransitionContent() {
       textAlign: "center",
       padding: "20px",
       boxSizing: "border-box",
-      animation: "revealOut 0.5s cubic-bezier(0.8, 0, 0.2, 1) forwards",
+      animation: `revealOut ${durationSec} cubic-bezier(0.65, 0, 0.35, 1) forwards`,
       pointerEvents: "none"
     }}>
       <div style={{ 
@@ -47,7 +60,7 @@ function PageTransitionContent() {
         alignItems: "center", 
         justifyContent: "center",
         textAlign: "center",
-        gap: "15px",
+        gap: "18px",
         maxWidth: "90vw",
         width: "100%",
         margin: "0 auto"
@@ -55,14 +68,14 @@ function PageTransitionContent() {
         <img 
           src="/images/logo.png" 
           alt="RR Construction" 
-          style={{ width: "clamp(150px, 45vw, 220px)", height: "auto", display: "block", margin: "0 auto" }} 
+          style={{ width: "clamp(160px, 45vw, 240px)", height: "auto", display: "block", margin: "0 auto" }} 
         />
         <h3 style={{ 
           color: "var(--primary-red)", 
           fontFamily: "var(--font-heading)", 
-          fontSize: "clamp(0.8rem, 3.5vw, 1.05rem)", 
+          fontSize: "clamp(0.85rem, 3.5vw, 1.1rem)", 
           fontWeight: 800, 
-          letterSpacing: "1.5px", 
+          letterSpacing: "2px", 
           textTransform: "uppercase",
           textAlign: "center",
           margin: "5px auto",
@@ -71,7 +84,7 @@ function PageTransitionContent() {
           Passion for Engineering Excellence
         </h3>
         <div style={{
-          width: "140px",
+          width: "160px",
           height: "4px",
           background: "var(--border-soft)",
           borderRadius: "2px",
@@ -82,23 +95,23 @@ function PageTransitionContent() {
           <div style={{
             position: "absolute",
             top: 0, left: 0, height: "100%",
-            width: "50%",
+            width: "0%",
             background: "var(--primary-red)",
             borderRadius: "2px",
-            animation: "fastLoadingBar 0.5s ease-in-out forwards"
+            animation: `smoothLoadingBar ${durationSec} ease-in-out forwards`
           }}></div>
         </div>
       </div>
 
       <style>{`
         @keyframes revealOut {
-          0% { opacity: 1; transform: translateY(0); }
-          60% { opacity: 1; transform: translateY(0); }
-          100% { opacity: 0; transform: translateY(-3%); pointer-events: none; }
+          0% { opacity: 1; transform: scale(1); }
+          75% { opacity: 1; transform: scale(1); }
+          100% { opacity: 0; transform: scale(1.02); pointer-events: none; }
         }
-        @keyframes fastLoadingBar {
+        @keyframes smoothLoadingBar {
           0% { width: 0%; }
-          50% { width: 70%; }
+          70% { width: 85%; }
           100% { width: 100%; }
         }
       `}</style>
