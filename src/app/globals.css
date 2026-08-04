@@ -1821,10 +1821,10 @@ ul {
 }
 
 .nav-logo-img, .footer-logo-img {
-  height: 60px !important;
+  height: 70px !important;
   width: auto !important;
   object-fit: contain !important;
-  margin-top: -2px !important; /* Lift the logo up slightly to match the top of CONSTRUCTION */
+  transform: translateY(-6px) !important; /* Push logo up noticeably */
 }
 
 .logo-text, .footer-logo-text {
