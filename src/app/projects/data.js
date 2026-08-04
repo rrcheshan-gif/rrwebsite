@@ -600,6 +600,19 @@ const projectsData = [
     client: "Ministry of Irrigation - IWWRMP (Kilinochchi Range)",
     duration: "24 Months (730 Days)",
     year: 2023,
+    heroImage: 'images/KALMADU/BACKGROUND IMAGE.jpeg',
+    galleryImages: [
+      'images/KALMADU/BACKGROUND IMAGE.jpeg',
+      'images/KALMADU/WhatsApp Image 2026-08-01 at 11.46.27.jpeg',
+      'images/KALMADU/WhatsApp Image 2026-08-01 at 11.46.47.jpeg',
+      'images/KALMADU/WhatsApp Image 2026-08-01 at 11.47.08.jpeg',
+      'images/KALMADU/WhatsApp Image 2026-08-01 at 11.55.27.jpeg',
+      'images/KALMADU/WhatsApp Image 2026-08-01 at 11.55.53.jpeg',
+      'images/KALMADU/WhatsApp Image 2026-08-01 at 11.56.12.jpeg',
+      'images/KALMADU/WhatsApp Image 2026-08-01 at 11.57.55.jpeg',
+      'images/KALMADU/WhatsApp Image 2026-08-01 at 11.58.39 (1).jpeg',
+      'images/KALMADU/WhatsApp Image 2026-08-01 at 11.58.39.jpeg'
+    ],
     description: `<p style="margin-bottom: 20px;">The <strong>"Rehabilitation of Kalmadu Scheme Headworks"</strong> [Contract No: LK-MOMDE-163045-CW-RFB] is a major water resources and irrigation infrastructure project executed under the <strong>Integrated Watershed & Water Resources Management Project (IWWRMP)</strong> of the <strong>Ministry of Irrigation</strong>.</p>
                    <p style="margin-bottom: 20px;">Awarded at a contract value of <strong>LKR 484,096,095.57 + VAT</strong> with a 730-day (24-month) completion schedule, the project focused on comprehensive structural rehabilitation of headworks, dam spillways, sluice gates, bund reinforcement, and water management structures in the Kilinochchi Range, Northern Province.</p>
                    <p style="margin-bottom: 20px;">Leveraging RR Construction's specialized hydraulic engineering divisions and earth-moving machinery, the headworks were restored to increase reservoir storage capacity, secure agricultural irrigation channels, and safeguard local communities against severe flood risks during heavy monsoonal seasons.</p>
