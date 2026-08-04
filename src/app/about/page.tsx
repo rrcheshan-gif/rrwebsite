@@ -4,11 +4,11 @@ export default function About() {
   return (
     <div style={{ paddingTop: "140px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/about-story.jpg')", padding: "80px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4))", zIndex: 1 }}></div>
+      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/about-story.jpg')", padding: "100px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center 30%", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
+        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.65) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <h4 style={{ fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", marginBottom: "15px", color: "var(--primary-red)" }}>Who We Are</h4>
-          <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "4rem", color: "white", margin: 0 }}>OUR STORY</h1>
+          <h4 style={{ fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", marginBottom: "15px", color: "var(--primary-red)", textShadow: "0 2px 8px rgba(0,0,0,0.8)" }}>Who We Are</h4>
+          <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "4rem", color: "white", margin: 0, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>OUR STORY</h1>
         </div>
       </section>
 
