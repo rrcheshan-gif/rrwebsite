@@ -2,6 +2,16 @@
 const projectsData = [
   // ONGOING PROJECTS
   {
+    id: 'project-rda-northern-province-lot03',
+    type: 'ongoing',
+    category: "roads",
+    title: "SECOND INTEGRATED ROAD INVESTMENT PROGRAM: REHABILITATION AND IMPROVEMENT OF RURAL ROADS IN THE NORTHERN PROVINCE – LOT/03",
+    client: "Road Development Authority",
+    duration: "15 Months",
+    year: 2026,
+    status: "Ongoing"
+  },
+  {
     id: 'project-rda-colombo-galle',
     type: 'ongoing',
     category: "roads",
