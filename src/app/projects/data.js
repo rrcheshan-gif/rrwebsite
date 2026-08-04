@@ -365,6 +365,7 @@ const projectsData = [
     client: "Ministry of Defence - Disaster Management Division",
     duration: "9 Months (270 Days)",
     year: 2024,
+    location: "Matara and Hambantota, Sri Lanka",
     description: `<p style="margin-bottom: 20px;">The <strong>"Landslide Mitigation Measures at 02 Locations in Matara & Hambantota Districts (Site No. 104, 151) Under Package – 06F of Reduction of Landslide Vulnerability by Mitigation Measures Project (RLVMMP)"</strong> [Contract No: RLVMMP/WORKS/06F] is a major disaster management infrastructure project executed for the <strong>Ministry of Defence - Disaster Management Division</strong>.</p>
                    <p style="margin-bottom: 20px;">With an accepted contract amount of <strong>LKR 106,872,056.50 + 18% VAT</strong> and an intensive execution duration of 270 calendar days, RR Construction (Pvt) Ltd deployed specialized slope stabilization engineering teams, heavy drilling rigs, soil nailing systems, shotcreting equipment, and subsurface drainage mechanisms to secure vulnerable landslide sites in the Matara and Hambantota districts.</p>
                    <p style="margin-bottom: 20px;">By leveraging deep geotextile engineering, high-tensile wire mesh anchoring, and rigorous geotechnical monitoring, our engineering divisions successfully stabilized unstable slopes at Site No. 104 & Site No. 151, protecting critical transportation corridors, local communities, and public infrastructure from soil erosion and slope failures.</p>
@@ -380,6 +381,7 @@ const projectsData = [
     client: "State Ministry of Fishery Harbour Development",
     duration: "12 Months",
     year: 2021,
+    location: "Myliddy Fishery Harbour, Kankesanthurai, Sri Lanka",
     description: `<p style="margin-bottom: 20px;">The <strong>"Reactivation and Reconstruction of Myliddy Fishery Harbour in Northern Province – Phase II"</strong> project is a landmark maritime engineering development executed for the <strong>State Ministry of Fishery Harbour Development and Fish Exports</strong> at a contract price of <strong>Rs. 244,651,102.00</strong>.</p>
                    <p style="margin-bottom: 20px;">Following the successful completion of Phase I, Phase II involved extensive marine civil engineering works, including breakwater reconstruction, basin deepening through marine dredging, quay wall extension, slipway rehabilitation, and modern anchorages for multiday fishing vessels in the Jaffna peninsula.</p>
                    <p style="margin-bottom: 20px;">Deploying RR Construction's specialized marine equipment fleet, barge-mounted excavators, and coastal engineering specialists, the harbour was restored to full operational capacity, empowering northern fishing communities and boosting regional fish export logistics.</p>
@@ -396,6 +398,7 @@ const projectsData = [
     client: "Road Development Authority",
     duration: "9 Months (273 Days)",
     year: 2025,
+    location: "Nagoda Kalwellawa Bellapitiya Road, Sri Lanka",
     description: `<p style="margin-bottom: 20px;">The <strong>"Widening & Redecking of Bridge No. 25/3 on Nagoda – Kalwellawa – Bellapitiya Road (B 304) – (Balance Work)"</strong> [Contract No: RDA/RM&M/WP/GOSL(WB)/2025/04] is a vital bridge infrastructure project executed for the <strong>Road Development Authority (RDA)</strong>.</p>
                    <p style="margin-bottom: 20px;">Awarded at a contract price of <strong>Rs. 53,400,958.10 (excl. VAT)</strong> with an execution timeframe of 273 calendar days, the scope involved extensive structural bridge engineering, including span widening, reinforced concrete deck replacement, abutment reinforcement, and asphalt approach road surfacing on the B 304 highway corridor.</p>
                    <p style="margin-bottom: 20px;">Leveraging RR Construction's heavy machinery fleet and specialized bridge construction teams, the bridge was successfully widened to modern safety standards, dramatically enhancing traffic capacity and structural resilience against heavy vehicle loads and monsoonal flood conditions.</p>
@@ -412,6 +415,7 @@ const projectsData = [
     client: "IRCON International Limited (Government of India Undertaking)",
     duration: "2 Months",
     year: 2026,
+    location: "Maho Railway Station, Maho, Sri Lanka",
     description: `<p style="margin-bottom: 20px;">The <strong>"Emergency Reconstruction of Northern Railway Line Damaged by Cyclone Ditwah: Civil Works between Maho and Omanthai"</strong> [LOA No: IRCON/9046/SLR.MAHO-OMT/Restoration Work/Civil-03/LOA] is an urgent railway infrastructure restoration project funded under Indian Grant Assistance and executed for <strong>IRCON International Limited</strong> at a total accepted contract value of <strong>LKR 224,697,785.00</strong>.</p>
                    <p style="margin-bottom: 20px;">Following severe cyclone damage across 128 km of the Northern Railway Line, RR Construction deployed rapid-response civil engineering teams, heavy excavators, rock boulder transportation, and specialized track machinery to perform emergency embankment restoration across multiple key sections (including Ambanpola-Galgamuwa, Galgamuwa-Senarathgama, Tambuttegama-Talawa, Sravastipura-Anuradhapura, Boo Oya-Vavuniya, and Thandikulam-Omanthai).</p>
                    <p style="margin-bottom: 20px;">The scope of work included the removal of washed-away debris, formation preparation with rock boulders (2,720 Cum), ABC layer laying and compaction (750 Cum), geotextile & geogrid bearing layer installation, gabion wall construction, grouted stone riprap slope protection (1,315 Cum), and the supply & laying of 3,500 Cum of railway ballast.</p>
@@ -428,6 +432,7 @@ const projectsData = [
     client: "IRCON International Limited (Government of India Undertaking)",
     duration: "2 Months",
     year: 2026,
+    location: "Medawachchiya Railway Station, Medawachchiya, Sri Lanka",
     heroImage: 'images/IRCON-MANNAR/Background image.jpeg',
     galleryImages: [
       'images/IRCON-MANNAR/Background image.jpeg',
@@ -600,6 +605,7 @@ const projectsData = [
     client: "Ministry of Irrigation - IWWRMP (Kilinochchi Range)",
     duration: "24 Months (730 Days)",
     year: 2023,
+    location: "Kalmadu Tank, Ramanathapuram, Kilinochchi, Sri Lanka",
     heroImage: 'images/KALMADU/BACKGROUND IMAGE.jpeg',
     galleryImages: [
       'images/KALMADU/BACKGROUND IMAGE.jpeg',
