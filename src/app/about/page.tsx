@@ -60,13 +60,19 @@ export default function About() {
       </section>
 
       {/* Corporate Info */}
-      <section style={{ padding: "100px 20px", background: "linear-gradient(to bottom, #0a0a0a, #111)", color: "white" }}>
+      <section style={{ padding: "100px 20px", background: "var(--bg-light)", borderTop: "1px solid var(--border-soft)", borderBottom: "1px solid var(--border-soft)" }}>
         <div className="container" style={{ display: "flex", flexWrap: "wrap", gap: "60px", justifyContent: "space-between" }}>
           <div style={{ flex: 1, minWidth: 'min(100%, 300px)' }}>
-            <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", marginBottom: "20px" }}>Corporate Information</h3>
-            <p style={{ color: "#94a3b8", fontSize: "1.1rem", lineHeight: 1.8 }}>Key organizational details and statutory information of RR Construction (Pvt) Ltd.</p>
+            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "35px", height: "1.5px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2.5px", textTransform: "uppercase", margin: 0, fontSize: "0.85rem" }}>
+                Official Records
+              </h4>
+            </div>
+            <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", marginBottom: "20px", lineHeight: 1.2 }}>Corporate Information</h3>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.85, fontWeight: 500 }}>Key organizational details and statutory information of RR Construction (Pvt) Ltd.</p>
           </div>
-          <div style={{ flex: 2, minWidth: 'min(100%, 300px)', display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "25px" }}>
+          <div style={{ flex: 2, minWidth: 'min(100%, 300px)', display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "20px" }}>
             {[{ label: "Company Name", value: "RR Construction (Pvt) Ltd" },
               { label: "Established", value: "1995" },
               { label: "Company Reg No", value: "PV 11346" },
@@ -74,9 +80,9 @@ export default function About() {
               { label: "Auditor", value: "P. Wijayawardana & Co." },
               { label: "Bankers", value: "HNB, DFCC, Sampath, NDB, Commercial, Peoples Bank, NTB" }
             ].map((info, i) => (
-              <div key={i} style={{ background: "rgba(255,255,255,0.02)", padding: "30px", borderRadius: "20px", border: "1px solid rgba(255,255,255,0.05)", borderLeft: "4px solid var(--primary-red)", transition: "transform 0.3s ease", cursor: "default" }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'none'}>
-                <strong style={{ color: "#94a3b8", fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "1px" }}>{info.label}</strong>
-                <div style={{ fontSize: "1.2rem", marginTop: "10px", fontWeight: 500 }}>{info.value}</div>
+              <div key={i} className="glass-panel hover-lift" style={{ background: "var(--white)", padding: "28px 24px", borderRadius: "20px", border: "1px solid var(--border-soft)", borderLeft: "4px solid var(--primary-red)", transition: "transform 0.3s ease, box-shadow 0.3s ease", cursor: "default", boxShadow: "0 10px 30px rgba(0,0,0,0.03)" }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'none'}>
+                <strong style={{ color: "var(--primary-red)", fontSize: "0.82rem", textTransform: "uppercase", letterSpacing: "1.2px", fontWeight: 700 }}>{info.label}</strong>
+                <div style={{ fontSize: "1.15rem", marginTop: "10px", fontWeight: 700, color: "var(--text-dark)", lineHeight: 1.4 }}>{info.value}</div>
               </div>
             ))}
           </div>
