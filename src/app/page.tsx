@@ -294,18 +294,21 @@ export default function Home() {
       <section style={{ padding: "140px 20px", background: "var(--bg-base)", overflow: 'hidden' }}>
         <div className="container" style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "80px" }}>
           <div style={{ flex: 1, minWidth: 'min(100%, 340px)', position: "relative", marginBottom: "40px" }}>
-            {/* Seamless Combined 4-Picture Project Collage (No Outer Borders) */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4px", borderRadius: "24px", overflow: "hidden", boxShadow: "0 20px 50px rgba(0,0,0,0.12)", position: "relative", zIndex: 2 }}>
-              <div style={{ height: "215px", overflow: "hidden" }}>
+            {/* Outer Frame Accent */}
+            <div style={{ position: "absolute", top: "-15px", left: "-15px", width: "calc(100% + 30px)", height: "calc(100% + 30px)", border: "2px dashed var(--primary-red)", borderRadius: "36px", zIndex: 0, opacity: 0.25 }}></div>
+
+            {/* 4-Picture Project Collage */}
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", padding: "12px", background: "var(--white)", borderRadius: "32px", boxShadow: "0 25px 60px rgba(0,0,0,0.08)", position: "relative", zIndex: 2 }}>
+              <div style={{ height: "200px", borderRadius: "20px", overflow: "hidden" }}>
                 <img src="/images/home/IMG_3025.jpg" alt="Road Construction - Tea Plantation" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
-              <div style={{ height: "215px", overflow: "hidden" }}>
+              <div style={{ height: "200px", borderRadius: "20px", overflow: "hidden" }}>
                 <img src="/images/home/WhatsApp Image 2026-07-18 at 10.24.03.jpeg" alt="Road Rehabilitation - CAT Machine" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
-              <div style={{ height: "215px", overflow: "hidden" }}>
+              <div style={{ height: "200px", borderRadius: "20px", overflow: "hidden" }}>
                 <img src="/images/kandy-landslide/kandy-5.jpg" alt="Landslide Mitigation - Geotechnical Wall" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
-              <div style={{ height: "215px", overflow: "hidden" }}>
+              <div style={{ height: "200px", borderRadius: "20px", overflow: "hidden" }}>
                 <img src="/images/home/WhatsApp Image 2026-07-24 at 23.23.33.jpeg" alt="Irrigation Construction - Excavator" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
             </div>
