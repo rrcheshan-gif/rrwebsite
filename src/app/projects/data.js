@@ -386,6 +386,22 @@ const projectsData = [
                    <p>All marine construction operations strictly complied with ISO 9001 quality management standards and marine environmental safety guidelines.</p>`
   },
   {
+    id: 'project-97',
+    type: 'completed',
+    category: "bridges",
+    title: "Widening & Redecking of Bridge No. 25/3 on Nagoda – Kalwellawa – Bellapitiya Road (B 304) – (Balance Work)",
+    contractNo: "RDA/RM&M/WP/GOSL(WB)/2025/04",
+    contractAmount: "Rs. 53,400,958.10 (excl. VAT)",
+    status: "Completed",
+    client: "Road Development Authority",
+    duration: "9 Months (273 Days)",
+    year: 2025,
+    description: `<p style="margin-bottom: 20px;">The <strong>"Widening & Redecking of Bridge No. 25/3 on Nagoda – Kalwellawa – Bellapitiya Road (B 304) – (Balance Work)"</strong> [Contract No: RDA/RM&M/WP/GOSL(WB)/2025/04] is a vital bridge infrastructure project executed for the <strong>Road Development Authority (RDA)</strong>.</p>
+                   <p style="margin-bottom: 20px;">Awarded at a contract price of <strong>Rs. 53,400,958.10 (excl. VAT)</strong> with an execution timeframe of 273 calendar days, the scope involved extensive structural bridge engineering, including span widening, reinforced concrete deck replacement, abutment reinforcement, and asphalt approach road surfacing on the B 304 highway corridor.</p>
+                   <p style="margin-bottom: 20px;">Leveraging RR Construction's heavy machinery fleet and specialized bridge construction teams, the bridge was successfully widened to modern safety standards, dramatically enhancing traffic capacity and structural resilience against heavy vehicle loads and monsoonal flood conditions.</p>
+                   <p>All bridge widening and redecking operations strictly complied with RDA technical specifications, ISO 9001 quality management, and ISO 45001 safety protocols.</p>`
+  },
+  {
     id: 'project-29',
     type: 'completed', category: "roads",
     title: "Central Expressway Project Section 3 (Pothuhera to Galagedara)",
