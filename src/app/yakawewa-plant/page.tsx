@@ -102,7 +102,7 @@ export default function YakawewaPlant() {
               </div>
             </div>
             <div style={{ position: "relative", minHeight: "350px", background: "#eee" }}>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126359.83733055375!2d80.4571991!3d8.9328224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afc0593b4a22b79%3A0x6b63c9ccde6587c4!2sOmanthai!5e0!3m2!1sen!2slk!4v1" width="100%" height="100%" style={{ border: 0, position: "absolute", top: 0, left: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://maps.google.com/maps?q=Yakawewa,+Sri+Lanka&t=k&output=embed" width="100%" height="100%" style={{ border: 0, position: "absolute", top: 0, left: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -110,3 +110,4 @@ export default function YakawewaPlant() {
     </div>
   );
 }
+

@@ -303,7 +303,7 @@ export default function VeerapuramPlant() {
               </div>
             </div>
             <div style={{ position: "relative", minHeight: "350px", background: "#eee" }}>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126425.82914170364!2d80.4208035!3d8.7523999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afc136a87c10b41%3A0xbc5388c340b07a16!2sVavuniya!5e0!3m2!1sen!2slk!4v1" width="100%" height="100%" style={{ border: 0, position: "absolute", top: 0, left: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://maps.google.com/maps?q=Veerapuram,+Vavuniya,+Sri+Lanka&t=k&output=embed" width="100%" height="100%" style={{ border: 0, position: "absolute", top: 0, left: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -311,3 +311,4 @@ export default function VeerapuramPlant() {
     </div>
   );
 }
+
