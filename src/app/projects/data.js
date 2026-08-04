@@ -428,6 +428,15 @@ const projectsData = [
     client: "IRCON International Limited (Government of India Undertaking)",
     duration: "2 Months",
     year: 2026,
+    heroImage: 'images/IRCON-MANNAR/Background image.jpeg',
+    galleryImages: [
+      'images/IRCON-MANNAR/Background image.jpeg',
+      'images/IRCON-MANNAR/WhatsApp Image 2026-08-01 at 12.32.07.jpeg',
+      'images/IRCON-MANNAR/WhatsApp Image 2026-08-01 at 12.32.28.jpeg',
+      'images/IRCON-MANNAR/WhatsApp Image 2026-08-01 at 12.34.36.jpeg',
+      'images/IRCON-MANNAR/WhatsApp Image 2026-08-01 at 12.35.05.jpeg',
+      'images/IRCON-MANNAR/WhatsApp Image 2026-08-01 at 12.35.44.jpeg'
+    ],
     description: `<p style="margin-bottom: 20px;">The <strong>"Emergency Reconstruction of Northern Railway Line Damaged by Cyclone Ditwah: Civil Works between Medawachchiya and Talai Mannar"</strong> [LOA No: IRCON/9046/SLR.MAHO-OMT/Restoration Work/Civil-04/LOA] is a major emergency railway restoration project funded under Indian Grant Assistance and executed for <strong>IRCON International Limited</strong> at an accepted contract value of <strong>LKR 244,680,445.00</strong>.</p>
                    <p style="margin-bottom: 20px;">Covering 105 km of damaged track corridor between Medawachchiya (MWH) and Talaimannar (TMP) (including Chettikulam, Madhu Road, and Murukkan sections), RR Construction executed rapid-scale formation civil works to restore rail connectivity following Cyclone Ditwah.</p>
                    <p style="margin-bottom: 20px;">The critical scope comprised removal of washed-away debris (2,325 Cum), rock boulder formation preparation (2,820 Cum), ABC sub-ballast compaction (2,400 Cum), geotextile laying (8,120 Sqm), grouted stone riprap slope stabilization (1,025 Cum), and transportation and supply of 3,500 Cum of railway ballast.</p>
