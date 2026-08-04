@@ -315,7 +315,6 @@ export default function Services() {
               <p style={{ color: "var(--text-light)", fontSize: isMobile ? "1.05rem" : "1.15rem", lineHeight: 1.9, marginBottom: "40px", fontWeight: 500 }}>
                 That&apos;s why, before breaking ground, we map out the construction schedule, organisation chart, plant and equipment allocation, and materials schedule against the master programme — so every resource is in the right place before it&apos;s needed.
               </p>
-              <Link href="/" className="btn btn-outline" style={{ padding: "16px 38px", border: "2px solid var(--primary-red)", color: "var(--primary-red)", fontWeight: "bold", borderRadius: "50px", textDecoration: "none", display: "inline-flex", transition: "var(--transition)" }}>View Our Equipment</Link>
             </div>
           </div>
         </div>

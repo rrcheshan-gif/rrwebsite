@@ -534,7 +534,6 @@ export default function Home() {
               </div>
               <h2 style={{ fontSize: "3.5rem", color: "var(--text-dark)", margin: 0, fontFamily: "var(--font-heading)", lineHeight: 1.1 }}>LATEST <span className="text-gradient" style={{ fontWeight: 300 }}>UPDATES</span></h2>
             </div>
-            <Link href="#" className="btn btn-outline hover-glow" style={{ padding: "15px 30px", border: "1px solid var(--border-soft)" }}>View All News</Link>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px" }}>
