@@ -412,16 +412,16 @@ export default function Home() {
       </section>
 
       {/* PROJECT HIGHLIGHTS */}
-      <section style={{ padding: "140px 20px", background: "var(--bg-light)", overflow: "hidden", position: "relative" }}>
-        <div className="container" style={{ display: "flex", flexWrap: "wrap", gap: "80px", alignItems: "center", position: "relative", zIndex: 2 }}>
+      <section style={{ padding: "80px 20px", background: "var(--bg-light)", overflow: "hidden", position: "relative" }}>
+        <div className="container" style={{ display: "flex", flexWrap: "wrap", gap: "40px", alignItems: "center", position: "relative", zIndex: 2 }}>
           <div style={{ flex: 1, minWidth: 'min(100%, 350px)', position: "relative" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
               <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Our Legacy</h4>
             </div>
-            <h2 style={{ fontSize: "3.5rem", lineHeight: 1.1, marginBottom: "30px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>THREE DECADES OF<br/><span className="text-gradient" style={{ fontWeight: 300 }}>EXCELLENCE</span></h2>
-            <p style={{ color: "var(--text-dark)", fontSize: "1.15rem", marginBottom: "20px", lineHeight: 1.8, fontWeight: 500 }}>Since 1995, RR Construction has helped shape the physical foundations of modern Sri Lanka. What began as a subcontracting partnership with international firms like ED Zublin AG has grown into one of the country's most trusted construction names.</p>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginBottom: "15px", lineHeight: 1.8 }}>Hundreds of completed projects later — expressways, deep-water dredging, bridges spanning over 100 metres, and water treatment plants serving entire districts — our portfolio speaks for itself.</p>
+            <h2 style={{ fontSize: "3.2rem", lineHeight: 1.1, marginBottom: "20px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>THREE DECADES OF<br/><span className="text-gradient" style={{ fontWeight: 300 }}>EXCELLENCE</span></h2>
+            <p style={{ color: "var(--text-dark)", fontSize: "1.1rem", marginBottom: "12px", lineHeight: 1.7, fontWeight: 500 }}>Since 1995, RR Construction has helped shape the physical foundations of modern Sri Lanka. What began as a subcontracting partnership with international firms like ED Zublin AG has grown into one of the country's most trusted construction names.</p>
+            <p style={{ color: "var(--text-light)", fontSize: "1.05rem", margin: 0, lineHeight: 1.7 }}>Hundreds of completed projects later — expressways, deep-water dredging, bridges spanning over 100 metres, and water treatment plants serving entire districts — our portfolio speaks for itself.</p>
           </div>
           
           <div style={{ flex: 1, minWidth: 'min(100%, 350px)', display: "grid", gap: "25px", position: "relative" }}>
@@ -450,14 +450,14 @@ export default function Home() {
           <div 
             style={{ 
               width: "100%", 
-              marginTop: "35px", 
-              paddingTop: "25px", 
+              marginTop: "15px", 
+              paddingTop: "20px", 
               borderTop: "1px solid var(--border-soft)", 
               display: "flex", 
               flexDirection: "column", 
               alignItems: "center", 
               textAlign: "center", 
-              gap: "20px", 
+              gap: "15px", 
               position: "relative", 
               zIndex: 2 
             }}
@@ -476,7 +476,7 @@ export default function Home() {
                 flexWrap: "wrap", 
                 justifyContent: "center", 
                 alignItems: "center", 
-                gap: "12px 18px", 
+                gap: "10px 14px", 
                 width: "100%", 
                 maxWidth: "1100px" 
               }}
@@ -492,19 +492,19 @@ export default function Home() {
                   key={idx} 
                   className="glass-panel hover-lift" 
                   style={{ 
-                    padding: "10px 22px", 
-                    borderRadius: "16px", 
+                    padding: "9px 20px", 
+                    borderRadius: "14px", 
                     background: "var(--white)", 
                     border: "1px solid var(--border-soft)", 
-                    boxShadow: "0 6px 20px rgba(0,0,0,0.03)", 
+                    boxShadow: "0 4px 15px rgba(0,0,0,0.03)", 
                     display: "flex", 
                     alignItems: "center", 
-                    gap: "10px", 
+                    gap: "8px", 
                     cursor: "default" 
                   }}
                 >
-                  <div style={{ width: "7px", height: "7px", borderRadius: "50%", background: "var(--primary-red)", boxShadow: "0 0 8px var(--primary-red)" }}></div>
-                  <span style={{ fontFamily: "var(--font-heading)", fontSize: "0.95rem", fontWeight: 800, color: "var(--text-dark)", letterSpacing: "0.5px" }}>
+                  <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--primary-red)", boxShadow: "0 0 6px var(--primary-red)" }}></div>
+                  <span style={{ fontFamily: "var(--font-heading)", fontSize: "0.92rem", fontWeight: 800, color: "var(--text-dark)", letterSpacing: "0.5px" }}>
                     {client.name}
                   </span>
                 </div>
@@ -512,8 +512,8 @@ export default function Home() {
             </div>
 
             {/* FULL PROJECT PORTFOLIO BUTTON AT THE BOTTOM */}
-            <div style={{ marginTop: "15px" }}>
-              <Link href="/projects" className="btn btn-primary hover-glow" style={{ display: 'inline-flex', gap: '10px', padding: "18px 45px", fontSize: "1.05rem" }}>
+            <div style={{ marginTop: "10px" }}>
+              <Link href="/projects" className="btn btn-primary hover-glow" style={{ display: 'inline-flex', gap: '10px', padding: "16px 40px", fontSize: "1rem" }}>
                 Full Project Portfolio <ArrowRight size={20} />
               </Link>
             </div>
