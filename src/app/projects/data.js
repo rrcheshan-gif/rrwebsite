@@ -355,6 +355,22 @@ const projectsData = [
     year: 2025
   },
   {
+    id: 'project-95',
+    type: 'completed',
+    category: "disaster",
+    title: "Landslide Mitigation Measures at 02 Locations in Matara & Hambantota Districts (Site No. 104, 151) Under Package – 06F (RLVMMP)",
+    contractNo: "RLVMMP/WORKS/06F",
+    contractAmount: "LKR 106,872,056.50 + 18% VAT",
+    status: "Completed",
+    client: "Ministry of Defence - Disaster Management Division",
+    duration: "9 Months (270 Days)",
+    year: 2024,
+    description: `<p style="margin-bottom: 20px;">The <strong>"Landslide Mitigation Measures at 02 Locations in Matara & Hambantota Districts (Site No. 104, 151) Under Package – 06F of Reduction of Landslide Vulnerability by Mitigation Measures Project (RLVMMP)"</strong> [Contract No: RLVMMP/WORKS/06F] is a major disaster management infrastructure project executed for the <strong>Ministry of Defence - Disaster Management Division</strong>.</p>
+                   <p style="margin-bottom: 20px;">With an accepted contract amount of <strong>LKR 106,872,056.50 + 18% VAT</strong> and an intensive execution duration of 270 calendar days, RR Construction (Pvt) Ltd deployed specialized slope stabilization engineering teams, heavy drilling rigs, soil nailing systems, shotcreting equipment, and subsurface drainage mechanisms to secure vulnerable landslide sites in the Matara and Hambantota districts.</p>
+                   <p style="margin-bottom: 20px;">By leveraging deep geotextile engineering, high-tensile wire mesh anchoring, and rigorous geotechnical monitoring, our engineering divisions successfully stabilized unstable slopes at Site No. 104 & Site No. 151, protecting critical transportation corridors, local communities, and public infrastructure from soil erosion and slope failures.</p>
+                   <p>All mitigation works were strictly executed in compliance with ISO 9001 quality, ISO 14001 environmental, and ISO 45001 occupational safety standards, as well as strict NBRO (National Building Research Organisation) engineering protocols.</p>`
+  },
+  {
     id: 'project-29',
     type: 'completed', category: "roads",
     title: "Central Expressway Project Section 3 (Pothuhera to Galagedara)",
