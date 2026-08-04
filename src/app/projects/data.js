@@ -2,6 +2,16 @@
 const projectsData = [
   // ONGOING PROJECTS
   {
+    id: 'project-mod-landslide-10f',
+    type: 'ongoing',
+    category: "disaster",
+    title: "Landslide Mitigation Measures at 06 Location in Kegalle District (Package 10F of RLVMMP)",
+    client: "Ministry of Defence, Disaster Management Division",
+    duration: "270 Days",
+    year: 2025,
+    status: "Ongoing"
+  },
+  {
     id: 'project-rda-kurikadduvan-jetty',
     type: 'ongoing',
     category: "maritime",
