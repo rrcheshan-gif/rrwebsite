@@ -42,6 +42,18 @@ const projectsData = [
     status: "Ongoing"
   },
   {
+    id: 'project-cfhc-kirinda-sand-removal',
+    type: 'completed',
+    category: "maritime",
+    title: "Removal and leveling of accumulated sea sand at Kirinda Fishery Harbour",
+    client: "Ceylon Fishery Harbours Corporation",
+    duration: "120 Days",
+    year: 2025,
+    status: "Completed",
+    heroImage: '/images/page-headers/projects-portfolio.jpg',
+    galleryImages: ['/images/page-headers/projects-portfolio.jpg']
+  },
+  {
     id: 'project-2',
     type: 'completed',
     category: "maritime",
