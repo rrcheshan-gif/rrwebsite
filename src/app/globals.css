@@ -1817,14 +1817,15 @@ ul {
 .logo {
   display: flex !important;
   align-items: center !important;
-  gap: 12px !important;
+  gap: 10px !important;
+  margin-right: 20px !important; /* Ensure it never touches the Home link */
 }
 
 .nav-logo-img, .footer-logo-img {
-  height: 70px !important;
+  height: 60px !important;
   width: auto !important;
   object-fit: contain !important;
-  transform: translateY(-6px) !important; /* Push logo up noticeably */
+  transform: translateY(-5px) !important; /* Push logo up noticeably */
 }
 
 .logo-text, .footer-logo-text {
@@ -1834,7 +1835,7 @@ ul {
 }
 
 .logo-title {
-  font-size: 1.5rem !important;
+  font-size: 1.35rem !important;
   font-weight: 800 !important;
   line-height: 1 !important;
   margin-bottom: 3px !important;
@@ -1842,10 +1843,10 @@ ul {
 }
 
 .logo-sub {
-  font-size: 0.8rem !important;
+  font-size: 0.75rem !important;
   font-weight: 700 !important;
   line-height: 1 !important;
-  letter-spacing: 2.5px !important;
+  letter-spacing: 2px !important;
   margin-top: 0 !important;
 }
 
