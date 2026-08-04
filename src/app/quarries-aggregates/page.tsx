@@ -86,7 +86,7 @@ export default function QuarriesAggregates() {
       )}
 
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/thudugala-crusher-plant.jpg')", padding: "100px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center 30%", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
+      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/quarry-hero.jpg')", padding: "100px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center 30%", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.65) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px", textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>Premium Aggregates Supply</h4>
