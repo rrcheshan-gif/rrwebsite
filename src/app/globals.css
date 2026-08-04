@@ -1880,7 +1880,7 @@ ul {
 
 /* Global override for page header subtitles (h4) to fix visibility against image backgrounds */
 .page-header h4 {
-  color: #fbbf24 !important; /* Premium Gold/Yellow color for better contrast than dark red */
+  color: #ffffff !important; /* White color as requested */
   text-shadow: 0 4px 12px rgba(0,0,0,0.9), 0 1px 4px rgba(0,0,0,0.9) !important;
   z-index: 10 !important;
   position: relative !important;
