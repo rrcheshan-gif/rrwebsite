@@ -2,6 +2,16 @@
 const projectsData = [
   // ONGOING PROJECTS
   {
+    id: 'project-mod-landslide-10d',
+    type: 'ongoing',
+    category: "disaster",
+    title: "Landslide Mitigation Measures at 07 Location in Badulla District (Package 10D of RLVMMP)",
+    client: "Ministry of Defence, Disaster Management Division",
+    duration: "270 Days",
+    year: 2025,
+    status: "Ongoing"
+  },
+  {
     id: 'project-mod-landslide-10f',
     type: 'ongoing',
     category: "disaster",
