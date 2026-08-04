@@ -2,6 +2,16 @@
 const projectsData = [
   // ONGOING PROJECTS
   {
+    id: 'project-rda-colombo-galle',
+    type: 'ongoing',
+    category: "roads",
+    title: "IMPROVEMENT OF COLOMBO – GALLE – HAMBANTOTA - WELLAWAYA ROAD FROM 154 + 000 KM TO 167+300KM (A002)",
+    client: "Road Development Authority",
+    duration: "18 Months",
+    year: 2026,
+    status: "Ongoing"
+  },
+  {
     id: 'project-1',
     type: 'ongoing',
     category: "roads",
