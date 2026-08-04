@@ -371,6 +371,21 @@ const projectsData = [
                    <p>All mitigation works were strictly executed in compliance with ISO 9001 quality, ISO 14001 environmental, and ISO 45001 occupational safety standards, as well as strict NBRO (National Building Research Organisation) engineering protocols.</p>`
   },
   {
+    id: 'project-96',
+    type: 'completed',
+    category: "maritime",
+    title: "Reactivation and Reconstruction of Myliddy Fishery Harbour in Northern Province – Phase II",
+    contractAmount: "Rs. 244,651,102.00 (excl. VAT & Contingencies)",
+    status: "Completed",
+    client: "State Ministry of Fishery Harbour Development",
+    duration: "12 Months",
+    year: 2021,
+    description: `<p style="margin-bottom: 20px;">The <strong>"Reactivation and Reconstruction of Myliddy Fishery Harbour in Northern Province – Phase II"</strong> project is a landmark maritime engineering development executed for the <strong>State Ministry of Fishery Harbour Development and Fish Exports</strong> at a contract price of <strong>Rs. 244,651,102.00</strong>.</p>
+                   <p style="margin-bottom: 20px;">Following the successful completion of Phase I, Phase II involved extensive marine civil engineering works, including breakwater reconstruction, basin deepening through marine dredging, quay wall extension, slipway rehabilitation, and modern anchorages for multiday fishing vessels in the Jaffna peninsula.</p>
+                   <p style="margin-bottom: 20px;">Deploying RR Construction's specialized marine equipment fleet, barge-mounted excavators, and coastal engineering specialists, the harbour was restored to full operational capacity, empowering northern fishing communities and boosting regional fish export logistics.</p>
+                   <p>All marine construction operations strictly complied with ISO 9001 quality management standards and marine environmental safety guidelines.</p>`
+  },
+  {
     id: 'project-29',
     type: 'completed', category: "roads",
     title: "Central Expressway Project Section 3 (Pothuhera to Galagedara)",
