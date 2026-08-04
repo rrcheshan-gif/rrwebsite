@@ -2,6 +2,16 @@
 const projectsData = [
   // ONGOING PROJECTS
   {
+    id: 'project-mod-landslide-10j',
+    type: 'ongoing',
+    category: "disaster",
+    title: "Landslide Mitigation Measures at 11 Location in Colombo & Kegalle District (Package 10J of RLVMMP)",
+    client: "Ministry of Defence, Disaster Management Division",
+    duration: "180 Days",
+    year: 2025,
+    status: "Ongoing"
+  },
+  {
     id: 'project-rda-northern-province-lot03',
     type: 'ongoing',
     category: "roads",
