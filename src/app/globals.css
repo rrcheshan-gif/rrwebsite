@@ -1169,18 +1169,19 @@ ul {
 }
 
 .footer-brand-col .logo-box {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 12px;
-  padding: 8px 14px;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: none;
 }
 
 .footer-brand-col .logo-box img {
-  height: 36px;
+  height: 42px;
   width: auto;
+  object-fit: contain;
 }
 
 .footer-brand-col .footer-logo-text {
