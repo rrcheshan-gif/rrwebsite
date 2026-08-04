@@ -412,6 +412,19 @@ const projectsData = [
     client: "IRCON International Limited (Government of India Undertaking)",
     duration: "2 Months",
     year: 2026,
+    heroImage: 'images/WhatsApp Unknown 2026-08-04 at 09.43.59/WhatsApp Image 2026-08-01 at 11.57.05.jpeg',
+    galleryImages: [
+      'images/WhatsApp Unknown 2026-08-04 at 09.43.59/WhatsApp Image 2026-08-01 at 11.57.05.jpeg',
+      'images/WhatsApp Unknown 2026-08-04 at 09.43.59/WhatsApp Image 2026-08-01 at 11.46.27.jpeg',
+      'images/WhatsApp Unknown 2026-08-04 at 09.43.59/WhatsApp Image 2026-08-01 at 11.46.47.jpeg',
+      'images/WhatsApp Unknown 2026-08-04 at 09.43.59/WhatsApp Image 2026-08-01 at 11.47.08.jpeg',
+      'images/WhatsApp Unknown 2026-08-04 at 09.43.59/WhatsApp Image 2026-08-01 at 11.55.27.jpeg',
+      'images/WhatsApp Unknown 2026-08-04 at 09.43.59/WhatsApp Image 2026-08-01 at 11.55.53.jpeg',
+      'images/WhatsApp Unknown 2026-08-04 at 09.43.59/WhatsApp Image 2026-08-01 at 11.56.12.jpeg',
+      'images/WhatsApp Unknown 2026-08-04 at 09.43.59/WhatsApp Image 2026-08-01 at 11.57.55.jpeg',
+      'images/WhatsApp Unknown 2026-08-04 at 09.43.59/WhatsApp Image 2026-08-01 at 11.58.39 (1).jpeg',
+      'images/WhatsApp Unknown 2026-08-04 at 09.43.59/WhatsApp Image 2026-08-01 at 11.58.39.jpeg'
+    ],
     description: `<p style="margin-bottom: 20px;">The <strong>"Emergency Reconstruction of Northern Railway Line Damaged by Cyclone Ditwah: Civil Works between Maho and Omanthai"</strong> [LOA No: IRCON/9046/SLR.MAHO-OMT/Restoration Work/Civil-03/LOA] is an urgent railway infrastructure restoration project funded under Indian Grant Assistance and executed for <strong>IRCON International Limited</strong> at a total accepted contract value of <strong>LKR 224,697,785.00</strong>.</p>
                    <p style="margin-bottom: 20px;">Following severe cyclone damage across 128 km of the Northern Railway Line, RR Construction deployed rapid-response civil engineering teams, heavy excavators, rock boulder transportation, and specialized track machinery to perform emergency embankment restoration across multiple key sections (including Ambanpola-Galgamuwa, Galgamuwa-Senarathgama, Tambuttegama-Talawa, Sravastipura-Anuradhapura, Boo Oya-Vavuniya, and Thandikulam-Omanthai).</p>
                    <p style="margin-bottom: 20px;">The scope of work included the removal of washed-away debris, formation preparation with rock boulders (2,720 Cum), ABC layer laying and compaction (750 Cum), geotextile & geogrid bearing layer installation, gabion wall construction, grouted stone riprap slope protection (1,315 Cum), and the supply & laying of 3,500 Cum of railway ballast.</p>
