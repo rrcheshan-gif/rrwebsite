@@ -144,7 +144,7 @@ export default function QuarriesAggregates() {
               <div style={{ padding: "25px", flexGrow: 1, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Thudugala Crusher Plant</h3>
-                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "20px" }}>Serving Colombo and Western Province developments, providing high-yield aggregates for high-rise buildings and expressways.</p>
+                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "20px" }}>Serving Colombo and Western Province developments, providing high-yield aggregates for high-rise buildings, expressways, and major infrastructure projects. Equipped with state-of-the-art crushing technology to ensure consistent material quality.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", gap: "10px", marginTop: "15px" }}>
                   <Link href="/thudugala-plant" className="btn-glass-red btn-glass-sm" style={{ flex: 1 }}>View Details</Link>
@@ -162,7 +162,7 @@ export default function QuarriesAggregates() {
               <div style={{ padding: "25px", flexGrow: 1, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Veerapuram M Sand Plant</h3>
-                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "20px" }}>Advanced Sand Plant manufacturing high-quality M-Sand and premium washed aggregates.</p>
+                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "20px" }}>Advanced Sand Plant manufacturing high-quality M-Sand and premium washed aggregates. Designed to meet eco-friendly construction standards while providing superior compressive strength for structural engineering.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", gap: "10px", marginTop: "15px" }}>
                   <Link href="/veerapuram-plant" className="btn-glass-red btn-glass-sm" style={{ flex: 1 }}>View Details</Link>
@@ -180,7 +180,7 @@ export default function QuarriesAggregates() {
               <div style={{ padding: "25px", flexGrow: 1, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Omanthai Plant</h3>
-                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "20px" }}>A key aggregates supplier for Northern infrastructure development and commercial sectors.</p>
+                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "20px" }}>A key aggregates supplier for Northern infrastructure development and commercial sectors. Operating with high-capacity machinery to deliver uninterrupted material supply for large-scale provincial road and bridge constructions.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", gap: "10px", marginTop: "15px" }}>
                   <Link href="/omanthai-plant" className="btn-glass-red btn-glass-sm" style={{ flex: 1 }}>View Details</Link>
@@ -198,7 +198,7 @@ export default function QuarriesAggregates() {
               <div style={{ padding: "25px", flexGrow: 1, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Yakawewa Asphalt Plant</h3>
-                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "20px" }}>Premium hot-mix asphalt supplier for major highway and road paving projects across the region.</p>
+                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "20px" }}>Premium hot-mix asphalt supplier for major highway and road paving projects across the region. Featuring automated temperature and mix-control systems to guarantee maximum durability and smooth road surface finishes.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", gap: "10px", marginTop: "15px" }}>
                   <Link href="/yakawewa-plant" className="btn-glass-red btn-glass-sm" style={{ flex: 1 }}>View Details</Link>
