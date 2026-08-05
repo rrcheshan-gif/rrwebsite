@@ -219,7 +219,8 @@ export default function Services() {
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.65) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
-            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1.5px solid var(--primary-red)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1.5px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)" }}>← Back to Home</Link>
+            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
+            </Link>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2.5rem" : "4.5rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>What We Build</h1>
         </div>
@@ -322,3 +323,4 @@ export default function Services() {
     </div>
   );
 }
+

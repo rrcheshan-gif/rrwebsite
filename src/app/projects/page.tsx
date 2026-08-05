@@ -18,6 +18,10 @@ export default function Projects() {
       <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/projects-portfolio.jpg')", padding: "100px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center 30%", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.65) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
+          <div style={{ textAlign: "left", marginBottom: "20px" }}>
+            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
+            </Link>
+          </div>
           <h1 className="hero-heading fade-in" style={{ color: "white", fontSize: "3.5rem", textAlign: "center", fontFamily: "var(--font-heading)", textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our Portfolio</h1>
           <p style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto", color: "#f8fafc", fontSize: "1.1rem", textShadow: "0 2px 10px rgba(0,0,0,0.9)", fontWeight: 500 }}>
             Every project here is proof of work delivered, not just promised – road networks, water retaining structures, bridges, multi-storied buildings, and dredging & reclamation works completed across Sri Lanka and beyond.
@@ -141,3 +145,5 @@ export default function Projects() {
     </div>
   );
 }
+
+
