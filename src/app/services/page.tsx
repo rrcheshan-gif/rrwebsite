@@ -16,18 +16,18 @@ export default function Services() {
   const services = [
     {
       icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
           <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
           <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
           <path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/>
         </svg>
       ),
-      iconBg: 'rgba(255,255,255,0.08)',
-      iconBorder: '1px solid rgba(255,255,255,0.12)',
-      cardBg: 'linear-gradient(135deg, #111827, #1f2937)',
-      titleColor: '#ffffff',
-      textColor: '#9ca3af',
+      iconBg: 'rgba(229,57,53,0.08)',
+      iconBorder: 'none',
+      cardBg: 'var(--white)',
+      titleColor: 'var(--text-dark)',
+      textColor: 'var(--text-light)',
       title: 'Buildings & Structures',
       desc: 'Multi-storied buildings, water retaining structures, water towers, and heavy steel fabrication raised with absolute precision.',
     },
@@ -93,17 +93,17 @@ export default function Services() {
     },
     {
       icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 22V8"/>
           <path d="M5 12H2a10 10 0 0 0 20 0h-3"/>
           <circle cx="12" cy="5" r="3"/>
         </svg>
       ),
-      iconBg: 'rgba(255,255,255,0.08)',
-      iconBorder: '1px solid rgba(255,255,255,0.12)',
+      iconBg: 'rgba(229,57,53,0.08)',
+      iconBorder: 'none',
       cardBg: 'linear-gradient(135deg, #1f2937, #111827)',
-      titleColor: '#ffffff',
-      textColor: '#9ca3af',
+      titleColor: 'var(--text-dark)',
+      textColor: 'var(--text-light)',
       title: 'Maritime & Dredging',
       desc: 'Fishery harbours, commercial breakwaters, coastal erosion stabilization, and marine dredging.',
     },
@@ -131,13 +131,19 @@ export default function Services() {
       {/* Scope-isolated clean CSS classes specifically for this page */}
       <style>{`
         .services-card-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-          gap: 30px;
-        }
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+          }
         
         .services-item-card {
-          border-radius: 24px;
+            width: calc(33.333% - 20px);
+            min-width: 320px;
+            max-width: 450px;
+            border-radius: 24px;
+            border-top: 4px solid var(--primary-red) !important;
+            background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%) !important;
           padding: 40px;
           box-shadow: 0 10px 30px rgba(0,0,0,0.04);
           transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease, border-color 0.3s ease;
@@ -176,11 +182,13 @@ export default function Services() {
 
         @media (max-width: 768px) {
           .services-card-grid {
-            grid-template-columns: 1fr !important;
+              flex-direction: column !important;
             gap: 20px !important;
           }
           .services-item-card {
-            padding: 30px 24px !important;
+              width: 100% !important;
+              max-width: none !important;
+              padding: 30px 24px !important;
             border-radius: 20px !important;
           }
           .services-item-card:hover {
