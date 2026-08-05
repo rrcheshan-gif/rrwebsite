@@ -143,7 +143,7 @@ export default function Services() {
             max-width: 450px;
             border-radius: 24px;
             border-top: 4px solid var(--primary-red) !important;
-            background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%) !important;
+            background: var(--white) !important;
           padding: 40px;
           box-shadow: 0 10px 30px rgba(0,0,0,0.04);
           transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease, border-color 0.3s ease;
