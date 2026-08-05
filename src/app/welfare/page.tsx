@@ -70,7 +70,7 @@ export default function Welfare() {
             </ul>
           </div>
           <div style={{ flex: 1, minWidth: 'min(100%, 300px)' }}>
-            <img className="img-polished img-hover-zoom" src="/images/completed-hero.jpg" alt="Social Support" style={{ width: "100%", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }} />
+            <img className="img-polished img-hover-zoom" src="/images/welfare-support.jpg" alt="Social Support" style={{ width: "100%", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }} />
           </div>
         </div>
       </section>
