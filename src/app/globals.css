@@ -1937,5 +1937,6 @@ ul {
 .btn-glass-sm {
   padding: 8px 12px !important;
   font-size: 0.8rem !important;
-  border-radius: 8px !important;
+  border-radius: 30px !important;
+  white-space: nowrap !important;
 }

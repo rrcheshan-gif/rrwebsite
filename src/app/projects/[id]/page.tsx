@@ -183,8 +183,8 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
             ← Back to Projects
           </Link>
           <div style={{ display: 'flex', gap: '8px', marginBottom: '15px' }}>
-            <span style={{ padding: '5px 14px', background: 'rgba(15, 23, 42, 0.8)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.25)', borderRadius: '6px', fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>{categoryDisplay}</span>
-            <span style={{ padding: '5px 14px', background: project.status.includes('Ongoing') ? 'rgba(217, 119, 6, 0.85)' : 'rgba(16, 185, 129, 0.85)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.3)', borderRadius: '6px', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.3px' }}>{project.status}</span>
+            <span style={{ padding: '5px 14px', background: 'rgba(15, 23, 42, 0.8)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.25)', borderRadius: "30px", fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>{categoryDisplay}</span>
+            <span style={{ padding: '5px 14px', background: project.status.includes('Ongoing') ? 'rgba(217, 119, 6, 0.85)' : 'rgba(16, 185, 129, 0.85)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.3)', borderRadius: "30px", fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.3px' }}>{project.status}</span>
           </div>
           <h1 className="hero-heading" style={{ fontSize: 'clamp(1.5rem, 3.2vw, 2.4rem)', lineHeight: '1.3', marginBottom: '0', textShadow: '0 2px 8px rgba(0,0,0,0.5)', color: 'white' }}>{project.title}</h1>
         </div>
@@ -266,7 +266,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                     Location
                   </h3>
-                  <a href={googleImagesUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 12px', background: 'var(--primary-red)', color: 'white', borderRadius: '6px', fontSize: '0.75rem', fontWeight: 'bold', textDecoration: 'none' }}>
+                  <a href={googleImagesUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 12px', background: 'var(--primary-red)', color: 'white', borderRadius: "30px", fontSize: '0.75rem', fontWeight: 'bold', textDecoration: 'none' }}>
                     View Photos
                   </a>
                 </div>

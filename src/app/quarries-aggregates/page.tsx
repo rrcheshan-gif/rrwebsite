@@ -148,7 +148,7 @@ export default function QuarriesAggregates() {
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", gap: "10px", marginTop: "15px" }}>
                   <Link href="/thudugala-plant" className="btn-glass-red btn-glass-sm" style={{ flex: 1 }}>View Details</Link>
-                  <a href="#inquiry" style={{ display: "block", flex: 1, textAlign: "center", padding: "10px 0", background: "var(--primary-red)", color: "white", fontWeight: "bold", borderRadius: "6px", textDecoration: "none" }}>Quote</a>
+                  <a href="#inquiry" className="btn-glass-red btn-glass-sm" style={{ flex: 1, display: "block", textDecoration: "none" }}>Quote</a>
                 </div>
               </div>
             </div>
@@ -166,7 +166,7 @@ export default function QuarriesAggregates() {
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", gap: "10px", marginTop: "15px" }}>
                   <Link href="/veerapuram-plant" className="btn-glass-red btn-glass-sm" style={{ flex: 1 }}>View Details</Link>
-                  <a href="#inquiry" style={{ display: "block", flex: 1, textAlign: "center", padding: "10px 0", background: "var(--primary-red)", color: "white", fontWeight: "bold", borderRadius: "6px", textDecoration: "none" }}>Quote</a>
+                  <a href="#inquiry" className="btn-glass-red btn-glass-sm" style={{ flex: 1, display: "block", textDecoration: "none" }}>Quote</a>
                 </div>
               </div>
             </div>
@@ -184,7 +184,7 @@ export default function QuarriesAggregates() {
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", gap: "10px", marginTop: "15px" }}>
                   <Link href="/omanthai-plant" className="btn-glass-red btn-glass-sm" style={{ flex: 1 }}>View Details</Link>
-                  <a href="#inquiry" style={{ display: "block", flex: 1, textAlign: "center", padding: "10px 0", background: "var(--primary-red)", color: "white", fontWeight: "bold", borderRadius: "6px", textDecoration: "none" }}>Quote</a>
+                  <a href="#inquiry" className="btn-glass-red btn-glass-sm" style={{ flex: 1, display: "block", textDecoration: "none" }}>Quote</a>
                 </div>
               </div>
             </div>
@@ -202,7 +202,7 @@ export default function QuarriesAggregates() {
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", gap: "10px", marginTop: "15px" }}>
                   <Link href="/yakawewa-plant" className="btn-glass-red btn-glass-sm" style={{ flex: 1 }}>View Details</Link>
-                  <a href="#inquiry" style={{ display: "block", flex: 1, textAlign: "center", padding: "10px 0", background: "var(--primary-red)", color: "white", fontWeight: "bold", borderRadius: "6px", textDecoration: "none" }}>Quote</a>
+                  <a href="#inquiry" className="btn-glass-red btn-glass-sm" style={{ flex: 1, display: "block", textDecoration: "none" }}>Quote</a>
                 </div>
               </div>
             </div>

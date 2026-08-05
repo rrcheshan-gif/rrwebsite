@@ -63,7 +63,7 @@ export default function People() {
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "3rem", marginBottom: "20px", color: "white" }}>Build Your Career With Us</h2>
           <p style={{ color: "#cbd5e1", fontSize: "1.2rem", maxWidth: "800px", margin: "0 auto 40px", lineHeight: 1.6 }}>Ready to engineer tomorrow? We are always looking for passionate engineers, project managers, and skilled tradespeople to join our growing team.</p>
-          <Link href="/career" className="btn btn-primary" style={{ display: "inline-block", padding: "15px 35px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", borderRadius: "6px", textDecoration: "none" }}>View Vacancies</Link>
+          <Link href="/career" className="btn btn-primary" style={{ display: "inline-block", padding: "15px 35px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", borderRadius: "30px", textDecoration: "none" }}>View Vacancies</Link>
         </div>
       </section>
     </div>
