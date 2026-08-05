@@ -424,7 +424,7 @@ export default function Home() {
             <p style={{ color: "var(--text-light)", fontSize: "1.05rem", margin: 0, lineHeight: 1.7 }}>Hundreds of completed projects later — expressways, deep-water dredging, bridges spanning over 100 metres, and water treatment plants serving entire districts — our portfolio speaks for itself.</p>
           </div>
           
-          <div style={{ flex: 1, minWidth: 'min(100%, 350px)', display: "grid", gap: "25px", position: "relative" }}>
+          <div style={{ flex: 1, minWidth: 'min(100%, 350px)', display: "grid", gap: "25px", position: "relative", marginTop: "60px" }}>
              {/* Large background decorative number */}
              <div style={{ position: "absolute", right: "-50px", top: "-50px", fontSize: "15rem", fontWeight: 900, color: "rgba(0,0,0,0.02)", fontFamily: "var(--font-heading)", zIndex: 0, pointerEvents: "none", lineHeight: 1 }}>03</div>
              
