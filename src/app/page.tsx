@@ -413,8 +413,8 @@ export default function Home() {
 
       {/* PROJECT HIGHLIGHTS */}
       <section style={{ padding: "80px 20px", background: "var(--bg-light)", overflow: "hidden", position: "relative" }}>
-        <div className="container" style={{ display: "flex", flexWrap: "wrap", gap: "40px", alignItems: "center", position: "relative", zIndex: 2 }}>
-          <div style={{ flex: 1, minWidth: 'min(100%, 350px)', position: "relative" }}>
+        <div className="container" style={{ display: "flex", flexWrap: "wrap", gap: "40px", alignItems: "flex-start", position: "relative", zIndex: 2 }}>
+          <div style={{ flex: 1, minWidth: 'min(100%, 350px)', position: "relative", paddingTop: "20px" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
               <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Our Legacy</h4>
