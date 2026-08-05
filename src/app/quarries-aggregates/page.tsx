@@ -147,7 +147,7 @@ export default function QuarriesAggregates() {
                   <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "20px" }}>Serving Colombo and Western Province developments, providing high-yield aggregates for high-rise buildings and expressways.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", gap: "10px", marginTop: "15px" }}>
-                  <Link href="/thudugala-plant" style={{ display: "block", flex: 1, textAlign: "center", padding: "10px 0", background: "var(--bg-light)", color: "var(--text-dark)", border: "1px solid var(--border-soft)", fontWeight: "bold", borderRadius: "6px", textDecoration: "none" }}>View Details</Link>
+                  <Link href="/thudugala-plant" className="btn-glass-red" style={{ flex: 1 }}>View Details</Link>
                   <a href="#inquiry" style={{ display: "block", flex: 1, textAlign: "center", padding: "10px 0", background: "var(--primary-red)", color: "white", fontWeight: "bold", borderRadius: "6px", textDecoration: "none" }}>Quote</a>
                 </div>
               </div>
@@ -165,7 +165,7 @@ export default function QuarriesAggregates() {
                   <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "20px" }}>Advanced Sand Plant manufacturing high-quality M-Sand and premium washed aggregates.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", gap: "10px", marginTop: "15px" }}>
-                  <Link href="/veerapuram-plant" style={{ display: "block", flex: 1, textAlign: "center", padding: "10px 0", background: "var(--bg-light)", color: "var(--text-dark)", border: "1px solid var(--border-soft)", fontWeight: "bold", borderRadius: "6px", textDecoration: "none" }}>View Details</Link>
+                  <Link href="/veerapuram-plant" className="btn-glass-red" style={{ flex: 1 }}>View Details</Link>
                   <a href="#inquiry" style={{ display: "block", flex: 1, textAlign: "center", padding: "10px 0", background: "var(--primary-red)", color: "white", fontWeight: "bold", borderRadius: "6px", textDecoration: "none" }}>Quote</a>
                 </div>
               </div>
@@ -183,7 +183,7 @@ export default function QuarriesAggregates() {
                   <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "20px" }}>A key aggregates supplier for Northern infrastructure development and commercial sectors.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", gap: "10px", marginTop: "15px" }}>
-                  <Link href="/omanthai-plant" style={{ display: "block", flex: 1, textAlign: "center", padding: "10px 0", background: "var(--bg-light)", color: "var(--text-dark)", border: "1px solid var(--border-soft)", fontWeight: "bold", borderRadius: "6px", textDecoration: "none" }}>View Details</Link>
+                  <Link href="/omanthai-plant" className="btn-glass-red" style={{ flex: 1 }}>View Details</Link>
                   <a href="#inquiry" style={{ display: "block", flex: 1, textAlign: "center", padding: "10px 0", background: "var(--primary-red)", color: "white", fontWeight: "bold", borderRadius: "6px", textDecoration: "none" }}>Quote</a>
                 </div>
               </div>
@@ -201,7 +201,7 @@ export default function QuarriesAggregates() {
                   <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "20px" }}>Premium hot-mix asphalt supplier for major highway and road paving projects across the region.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", gap: "10px", marginTop: "15px" }}>
-                  <Link href="/yakawewa-plant" style={{ display: "block", flex: 1, textAlign: "center", padding: "10px 0", background: "var(--bg-light)", color: "var(--text-dark)", border: "1px solid var(--border-soft)", fontWeight: "bold", borderRadius: "6px", textDecoration: "none" }}>View Details</Link>
+                  <Link href="/yakawewa-plant" className="btn-glass-red" style={{ flex: 1 }}>View Details</Link>
                   <a href="#inquiry" style={{ display: "block", flex: 1, textAlign: "center", padding: "10px 0", background: "var(--primary-red)", color: "white", fontWeight: "bold", borderRadius: "6px", textDecoration: "none" }}>Quote</a>
                 </div>
               </div>

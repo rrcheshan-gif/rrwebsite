@@ -124,9 +124,7 @@ export default function OngoingProjects() {
                       </div>
                       
                       <div style={{ marginTop: '20px', textAlign: 'center' }}>
-                        <span style={{ display: 'inline-block', padding: '10px 20px', background: 'transparent', border: '1px solid var(--primary-red)', color: 'var(--primary-red)', borderRadius: '30px', fontSize: '0.9rem', fontWeight: 'bold', transition: 'all 0.3s' }}>
-                          View Details →
-                        </span>
+                        <span className="btn-glass-red">View Details &rarr;</span>
                       </div>
                     </div>
                   </div>
