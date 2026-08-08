@@ -22,8 +22,8 @@ export async function POST(request: Request) {
     // To make this work, you need to add these variables to your .env.local file
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || 'smtp.gmail.com',
-      port: Number(process.env.SMTP_PORT) || 465,
-      secure: true, // true for 465, false for other ports
+      port: Number(process.env.SMTP_PORT) || 587,
+      secure: Number(process.env.SMTP_PORT) === 465, // true for 465, false for 587 (Outlook)
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
