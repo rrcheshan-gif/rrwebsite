@@ -1,13 +1,36 @@
 "use client";
 
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Career() {
+  
+  const [status, setStatus] = useState('');
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Thank you for your application! If your profile matches our requirements, our HR team will contact you.');
-    (e.target as HTMLFormElement).reset();
+    setStatus('loading');
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('/api/apply', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        form.reset();
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      console.error('Submission error:', error);
+      setStatus('error');
+    }
   };
+
 
   return (
     <div style={{ paddingTop: "100px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
@@ -76,23 +99,35 @@ export default function Career() {
                 <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.6rem", marginBottom: "25px", color: "var(--text-dark)" }}>Submit Your Application</h3>
                 
                 <form onSubmit={handleSubmit}>
+
+                  {status === 'success' && (
+                    <div style={{ padding: "15px", marginBottom: "20px", background: "rgba(16, 185, 129, 0.1)", color: "#10b981", borderRadius: "8px", border: "1px solid rgba(16, 185, 129, 0.2)" }}>
+                      Your application has been submitted successfully! We will contact you soon.
+                    </div>
+                  )}
+                  {status === 'error' && (
+                    <div style={{ padding: "15px", marginBottom: "20px", background: "rgba(239, 68, 68, 0.1)", color: "#ef4444", borderRadius: "8px", border: "1px solid rgba(239, 68, 68, 0.2)" }}>
+                      Failed to submit application. Please try again or email us directly.
+                    </div>
+                  )}
+
                   <div style={{ marginBottom: "20px" }}>
                     <label style={{ display: "block", marginBottom: "8px", fontWeight: 500, color: "var(--text-dark)" }}>Full Name</label>
-                    <input type="text" required style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", borderRadius: "8px", background: "var(--input-bg)", color: "var(--text-dark)" }} />
+                    <input type="text" name="name" required style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", borderRadius: "8px", background: "var(--input-bg)", color: "var(--text-dark)" }} />
                   </div>
                   <div className="career-form-grid">
                     <div>
                       <label style={{ display: "block", marginBottom: "8px", fontWeight: 500, color: "var(--text-dark)" }}>Email</label>
-                      <input type="email" required style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", borderRadius: "8px", background: "var(--input-bg)", color: "var(--text-dark)" }} />
+                      <input type="email" name="email" required style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", borderRadius: "8px", background: "var(--input-bg)", color: "var(--text-dark)" }} />
                     </div>
                     <div>
                       <label style={{ display: "block", marginBottom: "8px", fontWeight: 500, color: "var(--text-dark)" }}>Phone Number</label>
-                      <input type="tel" required style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", borderRadius: "8px", background: "var(--input-bg)", color: "var(--text-dark)" }} />
+                      <input type="tel" name="phone" required style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", borderRadius: "8px", background: "var(--input-bg)", color: "var(--text-dark)" }} />
                     </div>
                   </div>
                   <div style={{ marginBottom: "20px" }}>
                     <label style={{ display: "block", marginBottom: "8px", fontWeight: 500, color: "var(--text-dark)" }}>Position Applied For</label>
-                    <select required style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", borderRadius: "8px", background: "var(--input-bg)", color: "var(--text-dark)" }}>
+                    <select name="position" required style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", borderRadius: "8px", background: "var(--input-bg)", color: "var(--text-dark)" }}>
                       <option value="">Select a position...</option>
                       <option value="Project Manager">Project Manager (Civil)</option>
                       <option value="Site Engineer">Site Engineer</option>
@@ -103,9 +138,11 @@ export default function Career() {
                   </div>
                   <div style={{ marginBottom: "30px" }}>
                     <label style={{ display: "block", marginBottom: "8px", fontWeight: 500, color: "var(--text-dark)" }}>Upload CV/Resume (PDF)</label>
-                    <input type="file" accept=".pdf,.doc,.docx" required style={{ width: "100%", padding: "10px", border: "1px dashed var(--input-border)", borderRadius: "8px", background: "var(--input-bg)", color: "var(--text-dark)" }} />
+                    <input type="file" name="file" accept=".pdf,.doc,.docx" required style={{ width: "100%", padding: "10px", border: "1px dashed var(--input-border)", borderRadius: "8px", background: "var(--input-bg)", color: "var(--text-dark)" }} />
                   </div>
-                  <button type="submit" className="btn btn-primary" style={{ width: "100%" }}>Submit Application</button>
+                  <button type="submit" disabled={status === 'loading'} className="btn btn-primary" style={{ width: "100%", opacity: status === 'loading' ? 0.7 : 1 }}>
+                    {status === 'loading' ? 'Sending...' : 'Submit Application'}
+                  </button>
                 </form>
               </div>
             </div>
