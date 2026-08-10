@@ -30,7 +30,7 @@ export default function Navbar() {
   const isHomePage = pathname === '/';
 
   const toggleDropdown = (name: string, e: React.MouseEvent) => {
-    if (window.innerWidth <= 1280) {
+    if (window.innerWidth <= 1366) {
       e.preventDefault();
       setActiveDropdown(prev => prev === name ? null : name);
     }
