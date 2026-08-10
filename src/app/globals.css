@@ -506,10 +506,11 @@ ul {
 }
 
 .nav-links {
-  display: flex;
-  gap: clamp(6px, 1vw, 18px);
-  align-items: center;
-}
+    display: flex;
+    gap: clamp(10px, 1.5vw, 25px);
+    align-items: center;
+    margin-left: auto;
+  }
 
 .nav-links a,
 .dropdown-header a {
