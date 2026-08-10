@@ -61,8 +61,14 @@ export default function Navbar() {
                 </div>
                 <ul className="dropdown-menu">
                   <li><Link href="/about" onClick={() => setMobileMenuOpen(false)}>Our Story</Link></li>
-                  <li><Link href="/quality-policy" onClick={() => setMobileMenuOpen(false)}>Quality Policy</Link></li>
-                  <li><Link href="/awards" onClick={() => setMobileMenuOpen(false)}>Awards & Recognitions</Link></li>
+                  <li><Link href="/about/key-data" onClick={() => setMobileMenuOpen(false)}>Key Data</Link></li>
+                  <li><Link href="/about/vision-mission" onClick={() => setMobileMenuOpen(false)}>Vision & Mission</Link></li>
+                  <li><Link href="/about/core-values" onClick={() => setMobileMenuOpen(false)}>Core Values</Link></li>
+                  <li><Link href="/about/board-of-directors" onClick={() => setMobileMenuOpen(false)}>Board of Directors</Link></li>
+                  <li><Link href="/about/key-policies" onClick={() => setMobileMenuOpen(false)}>Key Policies</Link></li>
+                  <li><Link href="/about/goals-targets" onClick={() => setMobileMenuOpen(false)}>Goals & Targets</Link></li>
+                  <li><Link href="/about/history" onClick={() => setMobileMenuOpen(false)}>Company History & Timeline</Link></li>
+                  <li><Link href="/awards" onClick={() => setMobileMenuOpen(false)}>Awards & Achievements</Link></li>
                 </ul>
               </li>
               
