@@ -25,8 +25,8 @@ export default function About() {
           {/* MD Picture */}
           <div style={{ flex: 1, minWidth: 'min(100%, 300px)', display: "flex", justifyContent: "center", position: "relative" }}>
             <div style={{ position: "absolute", bottom: "-30px", right: "20px", background: "var(--primary-red)", color: "white", padding: "20px 30px", borderRadius: "20px", zIndex: 3, boxShadow: "0 15px 30px rgba(229, 57, 53, 0.3)" }}>
-              <h4 style={{ margin: 0, fontSize: "1.5rem", fontFamily: "var(--font-heading)" }}>30+ Years</h4>
-              <p style={{ margin: 0, fontSize: "0.9rem", fontWeight: 600 }}>of Engineering Leadership</p>
+              <h4 style={{ margin: 0, fontSize: "1.5rem", fontFamily: "var(--font-heading)", color: "#ffffff" }}>30+ Years</h4>
+              <p style={{ margin: 0, fontSize: "0.9rem", fontWeight: 600, color: "#ffffff" }}>of Engineering Leadership</p>
             </div>
             <div style={{ padding: "12px", background: "var(--white)", borderRadius: "32px", width: "100%", maxWidth: "450px", boxShadow: "0 20px 50px rgba(0,0,0,0.08)", position: "relative", zIndex: 2, border: "3px solid var(--primary-red)" }}>
               <div className="portrait-polished" style={{ width: "100%", height: "500px", background: "var(--border-soft)", borderRadius: "24px", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center" }}>
