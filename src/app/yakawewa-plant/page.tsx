@@ -31,11 +31,20 @@ export default function YakawewaPlant() {
             </p>
           </div>
 
-          <div style={{ display: "flex", justifyContent: "center", gap: "20px", flexWrap: "wrap" }}>
-            <span style={{ background: "var(--primary-red)", color: "white", padding: "10px 25px", borderRadius: "30px", fontWeight: 600, fontSize: "1rem", boxShadow: "0 4px 10px rgba(0,0,0,0.1)" }}>High Quality</span>
-            <span style={{ background: "var(--primary-red)", color: "white", padding: "10px 25px", borderRadius: "30px", fontWeight: 600, fontSize: "1rem", boxShadow: "0 4px 10px rgba(0,0,0,0.1)" }}>Cost Effective</span>
-            <span style={{ background: "var(--primary-red)", color: "white", padding: "10px 25px", borderRadius: "30px", fontWeight: 600, fontSize: "1rem", boxShadow: "0 4px 10px rgba(0,0,0,0.1)" }}>Eco Friendly</span>
-          </div>
+                      <div style={{ display: "flex", justifyContent: "center", gap: "25px", flexWrap: "wrap", marginTop: "15px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "10px", background: "rgba(229, 57, 53, 0.08)", border: "1px solid rgba(229, 57, 53, 0.2)", color: "var(--primary-red)", padding: "10px 22px", borderRadius: "12px", fontWeight: 700, fontSize: "1.05rem", backdropFilter: "blur(5px)" }}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                High Quality
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "10px", background: "rgba(229, 57, 53, 0.08)", border: "1px solid rgba(229, 57, 53, 0.2)", color: "var(--primary-red)", padding: "10px 22px", borderRadius: "12px", fontWeight: 700, fontSize: "1.05rem", backdropFilter: "blur(5px)" }}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Cost Effective
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "10px", background: "rgba(229, 57, 53, 0.08)", border: "1px solid rgba(229, 57, 53, 0.2)", color: "var(--primary-red)", padding: "10px 22px", borderRadius: "12px", fontWeight: 700, fontSize: "1.05rem", backdropFilter: "blur(5px)" }}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Eco Friendly
+              </div>
+            </div>
         </div>
       </section>
 
