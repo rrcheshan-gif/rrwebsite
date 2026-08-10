@@ -8,7 +8,15 @@ export default function Projects() {
   const [filter, setFilter] = useState('all');
 
   const completedProjects = projectsData.filter((p: any) => p.type !== 'ongoing');
-  const filteredProjects = completedProjects.filter((p: any) => 
+  
+  // Sort projects by year descending
+  const sortedProjects = [...completedProjects].sort((a: any, b: any) => {
+    const yearA = parseInt(String(a.year).substring(0, 4)) || 0;
+    const yearB = parseInt(String(b.year).substring(0, 4)) || 0;
+    return yearB - yearA;
+  });
+
+  const filteredProjects = sortedProjects.filter((p: any) => 
     filter === 'all' ? true : p.category === filter
   );
 
