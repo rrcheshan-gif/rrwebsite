@@ -18,8 +18,12 @@ export default function OngoingProjects() {
       return baseYearB.localeCompare(baseYearA);
     }
 
-    const hasCustomImageA = a.heroImage && a.heroImage !== '/images/page-headers/projects-portfolio.jpg' ? 1 : 0;
-    const hasCustomImageB = b.heroImage && b.heroImage !== '/images/page-headers/projects-portfolio.jpg' ? 1 : 0;
+    const getImage = (p: any) => p.heroImage || (p.images && p.images[0]) || (p.galleryImages && p.galleryImages[0]);
+    const imgA = getImage(a);
+    const imgB = getImage(b);
+    
+    const hasCustomImageA = imgA && imgA !== '/images/page-headers/projects-portfolio.jpg' ? 1 : 0;
+    const hasCustomImageB = imgB && imgB !== '/images/page-headers/projects-portfolio.jpg' ? 1 : 0;
     
     if (hasCustomImageA !== hasCustomImageB) {
       return hasCustomImageB - hasCustomImageA;
