@@ -482,7 +482,7 @@ ul {
   padding: 10px 0;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1281px) {
   .navbar-wrapper.home-nav:not(.scrolled) .logo-title,
   .navbar-wrapper.home-nav:not(.scrolled) .nav-links > li > a,
   .navbar-wrapper.home-nav:not(.scrolled) .nav-links > li > .dropdown-header > a,
@@ -507,7 +507,7 @@ ul {
 
 .nav-links {
     display: flex;
-    gap: clamp(10px, 1.5vw, 25px);
+    gap: clamp(8px, 1vw, 18px);
     align-items: center;
     margin-left: auto;
   }
@@ -829,7 +829,7 @@ ul {
   gap: 12px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .nav-right-mobile {
     display: flex !important;
   }
@@ -1961,7 +1961,7 @@ ul {
   pointer-events: all;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .nav-links {
     position: fixed !important;
     top: 0 !important;
