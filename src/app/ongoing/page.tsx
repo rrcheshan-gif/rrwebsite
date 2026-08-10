@@ -11,13 +11,6 @@ export default function OngoingProjects() {
   
   // Sort projects: 1) Base Year Desc, 2) Has Custom Image, 3) Full Date Desc
   const sortedProjects = [...ongoingProjects].sort((a: any, b: any) => {
-    const baseYearA = String(a.year || "").substring(0, 4);
-    const baseYearB = String(b.year || "").substring(0, 4);
-    
-    if (baseYearA !== baseYearB) {
-      return baseYearB.localeCompare(baseYearA);
-    }
-
     const getImage = (p: any) => p.heroImage || (p.images && p.images[0]) || (p.galleryImages && p.galleryImages[0]);
     const imgA = getImage(a);
     const imgB = getImage(b);
@@ -27,6 +20,13 @@ export default function OngoingProjects() {
     
     if (hasCustomImageA !== hasCustomImageB) {
       return hasCustomImageB - hasCustomImageA;
+    }
+
+    const baseYearA = String(a.year || "").substring(0, 4);
+    const baseYearB = String(b.year || "").substring(0, 4);
+    
+    if (baseYearA !== baseYearB) {
+      return baseYearB.localeCompare(baseYearA);
     }
 
     const valA = String(a.year || "");
