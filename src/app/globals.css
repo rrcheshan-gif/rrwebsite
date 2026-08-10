@@ -450,16 +450,20 @@ ul {
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 60px;
+  }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    margin-right: auto;
+  }
 
 .logo-text {
   display: flex;
