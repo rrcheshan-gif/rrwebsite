@@ -95,13 +95,13 @@ export default function Navbar() {
                   <li><Link href="/people" onClick={() => setMobileMenuOpen(false)}>Our People</Link></li>
                   <li><Link href="/training" onClick={() => setMobileMenuOpen(false)}>Training & Development</Link></li>
                   <li><Link href="/welfare" onClick={() => setMobileMenuOpen(false)}>Employee Welfare</Link></li>
+                  <li><Link href="/career" onClick={() => setMobileMenuOpen(false)}>Careers</Link></li>
                 </ul>
               </li>
               
               <li><Link href="/quarries-aggregates" onClick={() => setMobileMenuOpen(false)}>Quarries & Aggregates</Link></li>
               <li><Link href="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link></li>
               <li><Link href="/sustainability" onClick={() => setMobileMenuOpen(false)}>Sustainability</Link></li>
-              <li><Link href="/career" onClick={() => setMobileMenuOpen(false)}>Careers</Link></li>
               
               <li className="nav-extra-actions">
                 <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
