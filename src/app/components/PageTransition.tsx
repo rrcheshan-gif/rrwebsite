@@ -1,11 +1,10 @@
 "use client";
 
-import { useEffect, useState, useRef, Suspense } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { useEffect, useState, useRef } from "react";
+import { usePathname } from "next/navigation";
 
-function PageTransitionContent() {
+export default function PageTransition() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const isInitialLoad = useRef(true);
   const [isTransitioning, setIsTransitioning] = useState(true);
   const [duration, setDuration] = useState(1800); // Default 1.8s for initial load
@@ -29,7 +28,7 @@ function PageTransitionContent() {
       }, 900);
       return () => clearTimeout(timer);
     }
-  }, [pathname, searchParams]);
+  }, [pathname]);
 
   if (!isTransitioning) return null;
 
@@ -116,13 +115,5 @@ function PageTransitionContent() {
         }
       `}</style>
     </div>
-  );
-}
-
-export default function PageTransition() {
-  return (
-    <Suspense fallback={null}>
-      <PageTransitionContent />
-    </Suspense>
   );
 }
