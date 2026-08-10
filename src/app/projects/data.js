@@ -617,7 +617,7 @@ const projectsData = [
   {
     id: 'project-36',
     type: 'completed', category: "railway",
-    title: "Anuradhapura to Vauniya Railway Track Rehabilitation",
+    title: "Anuradhapura to Vavuniya Railway Track Rehabilitation",
     status: "Completed",
     client: "IRCON International Limited",
     
@@ -958,7 +958,7 @@ const projectsData = [
   {
     id: 'project-63',
     type: 'completed', category: "roads",
-    title: "Rehabilitation of 42Km Rural Roads in Hambanthota (H3)",
+    title: "Rehabilitation of 42Km Rural Roads in Hambantota (H3)",
     status: "Completed",
     client: "Road Development Authority",
     
@@ -1184,7 +1184,7 @@ const projectsData = [
   {
     id: 'project-85',
     type: 'completed', category: "buildings",
-    title: "Matara - Kaburugamuwa Hospital",
+    title: "Matara - Kamburugamuwa Hospital",
     status: "Completed",
     client: "Sam Hee Construction Korea",
     
