@@ -9,11 +9,11 @@ export default function Projects() {
 
   const completedProjects = projectsData.filter((p: any) => p.type !== 'ongoing');
   
-  // Sort projects by year descending
+  // Sort projects by year descending (full dates like "2026/06/10" will sort before just "2026")
   const sortedProjects = [...completedProjects].sort((a: any, b: any) => {
-    const yearA = parseInt(String(a.year).substring(0, 4)) || 0;
-    const yearB = parseInt(String(b.year).substring(0, 4)) || 0;
-    return yearB - yearA;
+    const valA = String(a.year || "");
+    const valB = String(b.year || "");
+    return valB.localeCompare(valA);
   });
 
   const filteredProjects = sortedProjects.filter((p: any) => 
