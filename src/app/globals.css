@@ -412,17 +412,17 @@ ul {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 95%;
-  max-width: 1400px;
+  width: 98%;
+    max-width: 1500px;
   z-index: 1000;
   transition: var(--transition);
   border-radius: 50px;
 }
 
 .navbar-wrapper .container {
-  max-width: 100%;
-  padding: 0 40px;
-}
+    max-width: 100%;
+    padding: 0 20px;
+  }
 
 .navbar-wrapper.home-nav {
   padding: 10px 0;
@@ -519,7 +519,7 @@ ul {
 .nav-links a,
 .dropdown-header a {
   font-weight: 700;
-  font-size: clamp(0.8rem, 0.9vw, 1rem);
+  font-size: clamp(0.75rem, 0.85vw, 0.95rem);
   letter-spacing: 0.3px;
   color: var(--text-dark);
   position: relative;
@@ -544,6 +544,8 @@ ul {
 }
 
 .nav-contact-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
   background: linear-gradient(135deg, rgba(239, 68, 68, 0.9), rgba(185, 28, 28, 0.95)) !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
