@@ -78,7 +78,7 @@ const projectsData = [
     title: "Removal and leveling of accumulated sea sand at Kirinda Fishery Harbour",
     client: "Ceylon Fishery Harbours Corporation",
     duration: "120 Days",
-    year: 2025,
+    year: 2026,
     status: "Completed",
     heroImage: '/images/page-headers/projects-portfolio.jpg',
     galleryImages: ['/images/page-headers/projects-portfolio.jpg']
