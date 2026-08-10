@@ -28,8 +28,11 @@ export default function VisionMission() {
                 </div>
                 <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", margin: 0 }}>Our Vision</h2>
               </div>
-              <p style={{ color: "var(--text-light)", fontSize: "1.2rem", lineHeight: 1.8, fontWeight: 500 }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.2rem", lineHeight: 1.8, fontWeight: 500, fontStyle: "italic", marginBottom: "20px" }}>
                 "To be the premier civil engineering and infrastructure development organization in Sri Lanka, recognized for our unwavering commitment to quality, timely delivery, and sustainable engineering solutions that elevate the nation."
+              </p>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8 }}>
+                At RR Construction, our vision extends beyond mere brick and mortar. We envision a highly connected, rapidly developing Sri Lanka where world-class infrastructure is the backbone of economic prosperity. We aim to set the absolute benchmark in the construction industry, where our name becomes synonymous with reliability, engineering excellence, and monumental scale. By continually pushing the boundaries of what is possible in civil engineering, we strive to leave a lasting legacy for future generations.
               </p>
             </div>
 
@@ -41,14 +44,15 @@ export default function VisionMission() {
                 </div>
                 <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", margin: 0 }}>Our Mission</h2>
               </div>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8 }}>
-                We are dedicated to:
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
+                Our mission is to translate our grand vision into actionable, day-to-day excellence across every project site. We are dedicated to:
               </p>
-              <ul style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, paddingLeft: "20px", marginTop: "15px", display: "flex", flexDirection: "column", gap: "10px" }}>
-                <li>Delivering high-quality construction projects safely, on time, and within budget.</li>
-                <li>Fostering a culture of continuous improvement, integrating modern technology and innovative practices.</li>
-                <li>Empowering our workforce through training and career development.</li>
-                <li>Maintaining the highest standards of environmental protection and corporate social responsibility.</li>
+              <ul style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, paddingLeft: "20px", display: "flex", flexDirection: "column", gap: "15px" }}>
+                <li><strong>Uncompromising Delivery:</strong> Executing complex, high-value infrastructure projects safely, on time, and strictly within budget, regardless of logistical challenges.</li>
+                <li><strong>Technological Integration:</strong> Fostering a culture of continuous improvement by heavily investing in state-of-the-art heavy machinery and modern engineering practices.</li>
+                <li><strong>Empowering People:</strong> Cultivating a highly skilled, motivated workforce of over 1,800 direct employees through rigorous training, career development, and a zero-harm safety culture.</li>
+                <li><strong>Sustainable Practices:</strong> Maintaining the highest standards of environmental stewardship and corporate social responsibility in accordance with ISO 14001 and ISO 45001 certifications.</li>
+                <li><strong>Client Satisfaction:</strong> Building enduring relationships with state and private stakeholders through absolute transparency, ethical bidding, and flawless contract execution.</li>
               </ul>
             </div>
 

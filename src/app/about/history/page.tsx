@@ -6,28 +6,33 @@ export default function CompanyHistory() {
   const milestones = [
     {
       year: "1995",
-      title: "Foundation",
-      desc: "RR Construction was incorporated as a private limited liability company with a vision to transform Sri Lanka's infrastructure."
+      title: "Foundation & Early Years",
+      desc: "RR Construction (Pvt) Ltd was incorporated as a private limited liability company. Founded by Mr. Ranjith Senadheera, the company began with a clear vision to transform Sri Lanka's infrastructure landscape through robust engineering and unwavering commitment to quality."
     },
     {
-      year: "2000",
-      title: "CIDA Registration",
-      desc: "Achieved top-tier registration with the Construction Industry Development Authority, cementing our capability to undertake mega projects."
+      year: "2000 - 2005",
+      title: "CIDA Registration & Growth",
+      desc: "Rapid expansion led to achieving top-tier registration with the Construction Industry Development Authority (CIDA). This milestone cemented our capability to undertake mega national projects and marked our transition into a major player in the civil engineering sector."
     },
     {
       year: "2010",
-      title: "Fleet Expansion",
-      desc: "Massive investment in heavy machinery, growing our owned fleet to over 1,000 units, significantly boosting operational independence."
+      title: "Massive Fleet Expansion",
+      desc: "Recognizing the need for operational independence and zero-delay execution, RR Construction invested heavily in heavy machinery. Our owned fleet grew to over 1,000 units, including advanced asphalt plants, crusher plants, and earth-moving equipment, significantly boosting our self-reliance."
     },
     {
       year: "2015",
-      title: "ISO Certification",
-      desc: "Awarded ISO 9001, ISO 14001, and ISO 45001 certifications, reflecting our absolute commitment to quality, environment, and safety."
+      title: "International ISO Certifications",
+      desc: "Our relentless pursuit of operational excellence was formally recognized internationally. We were awarded the prestigious ISO 9001 (Quality), ISO 14001 (Environment), and ISO 45001 (Occupational Health & Safety) certifications."
+    },
+    {
+      year: "2020",
+      title: "Surpassing 100 Mega Projects",
+      desc: "Despite global challenges, RR Construction successfully completed its 100th major infrastructure project, encompassing vast networks of highways, critical bridges, and complex water supply systems across the island."
     },
     {
       year: "Present",
       title: "National Leadership",
-      desc: "Today, with over 1,800 direct employees and 100+ completed mega projects, RR Construction stands as a pillar of Sri Lankan engineering."
+      desc: "Today, with a highly skilled workforce of over 1,800 direct employees and a portfolio of landmark projects, RR Construction stands as an undisputed pillar of Sri Lankan engineering, continuously driving the nation's progress forward."
     }
   ];
 
@@ -46,6 +51,13 @@ export default function CompanyHistory() {
 
       <section style={{ padding: "60px 20px" }}>
         <div className="container">
+          
+          <div style={{ maxWidth: "800px", margin: "0 auto 50px", textAlign: "center" }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8 }}>
+              Since our inception in 1995, RR Construction has embarked on a remarkable journey of growth, resilience, and engineering excellence. What began as a bold vision has evolved into a national powerhouse, shaping the very foundation of Sri Lanka's infrastructure. Discover the milestones that define our legacy.
+            </p>
+          </div>
+
           <div style={{ maxWidth: "800px", margin: "0 auto", position: "relative" }}>
             
             {/* Vertical Line */}

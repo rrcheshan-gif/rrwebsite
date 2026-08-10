@@ -9,10 +9,12 @@ export default function KeyData() {
     { label: "Registration Number", value: "C 4268" },
     { label: "Legal Status", value: "Private Limited Liability Company" },
     { label: "Registered Office", value: "No. 865, Dr. Danister de Silva MW, Baseline Road, Colombo 09, Sri Lanka" },
-    { label: "Core Expertise", value: "Roads, Bridges, Water Supply, Irrigation, Maritime & Building Construction" },
-    { label: "Certifications", value: "ISO 9001:2015, ISO 14001:2015, ISO 45001:2018" },
-    { label: "Workforce", value: "1,800+ Direct Employees" },
-    { label: "Heavy Machinery", value: "1,000+ Company-owned Units" },
+    { label: "Core Expertise", value: "Highways & Roads, Bridges, Water Supply & Drainage, Irrigation, Maritime Structures & Building Construction" },
+    { label: "Certifications", value: "ISO 9001:2015, ISO 14001:2015, ISO 45001:2018 (Accredited)" },
+    { label: "Workforce", value: "Over 1,800 Direct Highly-Skilled Employees" },
+    { label: "Heavy Machinery Fleet", value: "Over 1,000+ Company-owned Advanced Equipment Units" },
+    { label: "Completed Projects", value: "100+ Mega National Infrastructure Projects" },
+    { label: "CIDA Grading", value: "Top-Tier National Contractor" },
   ];
 
   return (
@@ -30,6 +32,11 @@ export default function KeyData() {
 
       <section style={{ padding: "60px 20px" }}>
         <div className="container">
+          <div style={{ maxWidth: "800px", margin: "0 auto 40px", textAlign: "center" }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8 }}>
+              RR Construction (Pvt) Ltd is a premier, CIDA-registered civil engineering contractor in Sri Lanka. With over two decades of operational excellence, we possess the financial stability, immense equipment fleet, and skilled workforce required to execute the nation's most demanding infrastructure projects.
+            </p>
+          </div>
           <div style={{ maxWidth: "800px", margin: "0 auto", background: "var(--white)", padding: "40px", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.06)", border: "1px solid var(--border-soft)" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", marginBottom: "30px", borderBottom: "2px solid var(--border-soft)", paddingBottom: "15px" }}>Corporate Information</h2>
             

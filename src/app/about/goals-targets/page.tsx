@@ -7,23 +7,23 @@ export default function GoalsTargets() {
   const goals = [
     {
       icon: <TrendingUp size={32} />,
-      title: "Market Leadership",
-      desc: "To consolidate our position as the top-tier civil engineering contractor in Sri Lanka by securing and executing national-scale infrastructure projects."
+      title: "Market Leadership & Growth",
+      desc: "To consolidate our position as the top-tier civil engineering contractor in Sri Lanka by securing and flawlessly executing national-scale infrastructure projects. We aim to increase our market share in large-scale highways, bridges, and maritime construction over the next decade."
     },
     {
       icon: <Globe size={32} />,
       title: "Sustainable Expansion",
-      desc: "To integrate green building technologies and reduce carbon emissions across all our batching and asphalt plants by 20% over the next 5 years."
+      desc: "To aggressively integrate green building technologies and reduce carbon emissions across all our batching, crusher, and asphalt plants by 20% over the next 5 years, aligning with global climate action initiatives."
     },
     {
       icon: <Users size={32} />,
-      title: "Workforce Development",
-      desc: "To invest significantly in the continuous training and upskilling of our 1,800+ employees, ensuring they remain at the forefront of modern construction methodologies."
+      title: "Workforce Excellence",
+      desc: "To invest significantly in the continuous training, upskilling, and welfare of our 1,800+ employees. We aim to foster the most skilled, technically proficient, and safety-conscious engineering workforce in the nation."
     },
     {
       icon: <Target size={32} />,
-      title: "Operational Excellence",
-      desc: "To maintain our perfect track record of project delivery without compromising on ISO standards for quality, safety, and environmental protection."
+      title: "Operational Perfection",
+      desc: "To maintain our unblemished track record of project delivery—achieving 100% on-time completion rates without compromising our stringent ISO standards for quality, safety, and environmental protection."
     }
   ];
 
@@ -42,6 +42,11 @@ export default function GoalsTargets() {
 
       <section style={{ padding: "60px 20px" }}>
         <div className="container">
+          <div style={{ maxWidth: "800px", margin: "0 auto 50px", textAlign: "center" }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8 }}>
+              Our strategic goals and targets are the measurable milestones that propel RR Construction forward. By setting ambitious yet achievable objectives, we ensure continuous growth, relentless innovation, and a lasting positive impact on Sri Lanka's infrastructure development.
+            </p>
+          </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "30px", maxWidth: "1000px", margin: "0 auto" }}>
             {goals.map((goal, idx) => (
               <div key={idx} style={{ background: "var(--white)", padding: "40px", borderRadius: "24px", boxShadow: "0 10px 30px rgba(0,0,0,0.04)", border: "1px solid var(--border-soft)", transition: "transform 0.3s ease", cursor: "default" }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-10px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'none'}>
