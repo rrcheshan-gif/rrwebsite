@@ -511,7 +511,7 @@ ul {
 
 .nav-links {
     display: flex;
-    gap: clamp(8px, 1vw, 18px);
+    gap: clamp(15px, 2vw, 32px);
     align-items: center;
     margin-left: auto;
   }
@@ -519,7 +519,7 @@ ul {
 .nav-links a,
 .dropdown-header a {
   font-weight: 700;
-  font-size: clamp(0.75rem, 0.85vw, 0.95rem);
+  font-size: clamp(0.9rem, 1vw, 1.05rem);
   letter-spacing: 0.3px;
   color: var(--text-dark);
   position: relative;
