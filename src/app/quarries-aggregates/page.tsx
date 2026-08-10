@@ -91,7 +91,7 @@ export default function QuarriesAggregates() {
       <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/quarry-hero.jpg')", padding: "100px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center 30%", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.65) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <div style={{ textAlign: "left", marginBottom: "20px" }}>
+          <div style={{ textAlign: "left", marginBottom: "5px" }}>
             <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
             </Link>
           </div>
@@ -103,7 +103,7 @@ export default function QuarriesAggregates() {
       {/* Introduction Section */}
       <section style={{ padding: "80px 20px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", textTransform: "uppercase", textShadow: "0 2px 10px rgba(0,0,0,0.05)", marginBottom: "20px" }}>Industrial-Grade Aggregates for Construction Projects</h2>
+          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", textTransform: "uppercase", textShadow: "0 2px 10px rgba(0,0,0,0.05)", marginBottom: "5px" }}>Industrial-Grade Aggregates for Construction Projects</h2>
           <p style={{ fontSize: "1.2rem", lineHeight: 1.8, color: "var(--text-light)", maxWidth: "800px", margin: "0 auto 30px" }}>
             RR Construction operates three high-capacity, fully automated quarries and processing plants strategically located across Sri Lanka. Catering to major B2B infrastructure developers, road contractors, and commercial builders, we guarantee consistent quality, massive stockpiles, and a direct transport fleet for on-time site delivery.
           </p>
@@ -136,17 +136,17 @@ export default function QuarriesAggregates() {
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "30px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "30px", alignItems: "start" }}>
             {/* Thudugala Plant */}
             <div onClick={() => router.push('/thudugala-plant')} style={{ background: "var(--white)", borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", cursor: "pointer", transition: "transform 0.2s ease" }}>
               <div style={{ flex: 1, minWidth: 'min(100%, 300px)', cursor: "pointer", position: "relative" }} className="img-polish" >
                 <img className="img-polished img-hover-zoom" src="/images/thudugala-5.jpg" alt="Thudugala Plant" style={{ width: "100%", height: "300px", objectFit: "cover", display: "block" }} />
                 <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px", textTransform: "uppercase", letterSpacing: "1px" }}>Western Province</span>
               </div>
-              <div style={{ padding: "25px", flexGrow: 1, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+              <div style={{ padding: "20px", display: "flex", flexDirection: "column" }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Thudugala Crusher Plant</h3>
-                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "20px" }}>Serving Colombo and Western Province developments, providing high-yield aggregates for high-rise buildings, expressways, and major infrastructure projects. Equipped with state-of-the-art crushing technology to ensure consistent material quality.</p>
+                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>Serving Colombo and Western Province developments, providing high-yield aggregates for high-rise buildings, expressways, and major infrastructure projects. Equipped with state-of-the-art crushing technology to ensure consistent material quality.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "15px" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>
@@ -161,10 +161,10 @@ export default function QuarriesAggregates() {
                 <img className="img-polished img-hover-zoom" src="/images/omanthai-1.jpg" alt="Veerapuram Plant" style={{ width: "100%", height: "300px", objectFit: "cover", display: "block" }} />
                 <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px", textTransform: "uppercase", letterSpacing: "1px" }}>Northern Province</span>
               </div>
-              <div style={{ padding: "25px", flexGrow: 1, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+              <div style={{ padding: "20px", display: "flex", flexDirection: "column" }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Veerapuram M Sand Plant</h3>
-                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "20px" }}>Advanced Sand Plant manufacturing high-quality M-Sand and premium washed aggregates. Designed to meet eco-friendly construction standards while providing superior compressive strength for structural engineering.</p>
+                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>Advanced Sand Plant manufacturing high-quality M-Sand and premium washed aggregates. Designed to meet eco-friendly construction standards while providing superior compressive strength for structural engineering.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "15px" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>
@@ -179,10 +179,10 @@ export default function QuarriesAggregates() {
                 <img className="img-polished img-hover-zoom" src="/images/omanthai/plant-1.jpg" alt="Omanthai Plant" style={{ width: "100%", height: "300px", objectFit: "cover", display: "block" }} />
                 <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px", textTransform: "uppercase", letterSpacing: "1px" }}>Northern Province</span>
               </div>
-              <div style={{ padding: "25px", flexGrow: 1, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+              <div style={{ padding: "20px", display: "flex", flexDirection: "column" }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Omanthai Plant</h3>
-                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "20px" }}>A key aggregates supplier for Northern infrastructure development and commercial sectors. Operating with high-capacity machinery to deliver uninterrupted material supply for large-scale provincial road and bridge constructions.</p>
+                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>A key aggregates supplier for Northern infrastructure development and commercial sectors. Operating with high-capacity machinery to deliver uninterrupted material supply for large-scale provincial road and bridge constructions.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "15px" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>
@@ -197,10 +197,10 @@ export default function QuarriesAggregates() {
                 <img className="img-polished img-hover-zoom" src="/images/yakawewa-asphalt-2.jpg" alt="Yakawewa Asphalt Plant" style={{ width: "100%", height: "300px", objectFit: "cover", display: "block" }} />
                 <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px", textTransform: "uppercase", letterSpacing: "1px" }}>North Central Province</span>
               </div>
-              <div style={{ padding: "25px", flexGrow: 1, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+              <div style={{ padding: "20px", display: "flex", flexDirection: "column" }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Yakawewa Asphalt Plant</h3>
-                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "20px" }}>Premium hot-mix asphalt supplier for major highway and road paving projects across the region. Featuring automated temperature and mix-control systems to guarantee maximum durability and smooth road surface finishes.</p>
+                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>Premium hot-mix asphalt supplier for major highway and road paving projects across the region. Featuring automated temperature and mix-control systems to guarantee maximum durability and smooth road surface finishes.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "15px" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>
