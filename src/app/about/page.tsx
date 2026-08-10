@@ -60,6 +60,7 @@ export default function About() {
               <p style={{ fontSize: "1.2rem", lineHeight: 1.9, color: "var(--text-dark)", fontWeight: 500, position: "relative", zIndex: 1 }}>
                 We measure success the way our clients do: the right quality, delivered on schedule, at a fair cost. This philosophy, backed by our financial strength and dedicated workforce, ensures that we remain an engineering powerhouse ready for tomorrow's challenges.
               </p>
+              <span style={{ position: "absolute", right: "20px", bottom: "-40px", fontSize: "5rem", color: "rgba(229,57,53,0.1)", fontFamily: "var(--font-heading)", lineHeight: 1 }}>"</span>
             </div>
           </div>
         </div>
