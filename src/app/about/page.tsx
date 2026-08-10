@@ -32,7 +32,7 @@ export default function About() {
               <div className="portrait-polished" style={{ width: "100%", height: "500px", background: "var(--border-soft)", borderRadius: "24px", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <img 
                   src="/images/director_hd.jpg" 
-                  alt="Mr. Ranjith Senadeera - Managing Director" 
+                  alt="Mr. Ranjith Senadheera - Managing Director" 
                   className="img-polished" 
                   style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", filter: "contrast(105%) saturate(108%)" }} 
                   onError={(e) => { (e.target as HTMLImageElement).src = 'https://rrconstruction.lk/images/director_hd.jpg'; }} 
@@ -46,7 +46,7 @@ export default function About() {
               <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
               <h3 style={{ color: "var(--primary-red)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", margin: 0, fontWeight: 700 }}>Message from the Managing Director</h3>
             </div>
-            <h2 style={{ fontSize: "3.5rem", color: "var(--text-dark)", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Mr. Ranjith Senadeera</h2>
+            <h2 style={{ fontSize: "3.5rem", color: "var(--text-dark)", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Mr. Ranjith Senadheera</h2>
             <h4 style={{ color: "var(--text-light)", fontSize: "1.15rem", fontWeight: 500, marginBottom: "40px", borderBottom: "1px solid var(--border-soft)", paddingBottom: "30px" }}>
               B.Sc. Engineering (Hons), M.Eng., CEng, MIE (Sri Lanka)<br/>
               <span style={{ fontSize: "1rem", fontWeight: 600, color: "var(--primary-red)", display: "inline-block", marginTop: "10px" }}>Managing Director - RR Construction (Pvt) Ltd</span>
@@ -108,12 +108,12 @@ export default function About() {
             <div style={{ background: "var(--bg-light)", padding: "40px 30px", textAlign: "center", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
               <img 
                 src="/images/director_hd.jpg" 
-                alt="Mr. Ranjith Senadeera" 
+                alt="Mr. Ranjith Senadheera" 
                 className="portrait-polished img-polished" 
                 style={{ width: 'min(100%, 120px)', height: "120px", borderRadius: "50%", objectFit: "cover", objectPosition: "top center", border: "3px solid var(--primary-red)", marginBottom: "20px" }} 
                 onError={(e) => { (e.target as HTMLImageElement).src = 'https://rrconstruction.lk/images/director_hd.jpg'; }} 
               />
-              <h3 style={{ color: "var(--text-dark)", fontSize: "1.5rem", marginBottom: "5px", fontFamily: "var(--font-heading)" }}>Mr. Ranjith Senadeera</h3>
+              <h3 style={{ color: "var(--text-dark)", fontSize: "1.5rem", marginBottom: "5px", fontFamily: "var(--font-heading)" }}>Mr. Ranjith Senadheera</h3>
               <p style={{ color: "var(--primary-red)", fontWeight: 600, marginBottom: "15px", textTransform: "uppercase", fontSize: "0.9rem", letterSpacing: "1px" }}>Managing Director</p>
               <p style={{ color: "var(--text-light)", fontSize: "1rem", lineHeight: 1.6 }}>A visionary civil engineer with decades of experience steering monumental infrastructure projects across Sri Lanka.</p>
             </div>
