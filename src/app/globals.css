@@ -486,7 +486,7 @@ ul {
   padding: 10px 0;
 }
 
-@media (min-width: 1367px) {
+@media (min-width: 1201px) {
   .navbar-wrapper.home-nav:not(.scrolled) .logo-title,
   .navbar-wrapper.home-nav:not(.scrolled) .nav-links > li > a,
   .navbar-wrapper.home-nav:not(.scrolled) .nav-links > li > .dropdown-header > a,
@@ -835,7 +835,7 @@ ul {
   gap: 12px;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1200px) {
   .nav-right-mobile {
     display: flex !important;
   }
@@ -1872,7 +1872,7 @@ ul {
   pointer-events: all;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1200px) {
   .nav-links {
     position: fixed !important;
     top: 0 !important;
