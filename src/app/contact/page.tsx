@@ -121,7 +121,7 @@ export default function Contact() {
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", marginBottom: "30px" }}>Visit Our Head Office</h2>
           <div style={{ background: "var(--white)", padding: "15px", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.08)", border: "1px solid var(--border-soft)" }}>
             <iframe 
-              src="https://maps.google.com/maps?q=RR%20Construction,%20Orugodawatta,%20Colombo&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=6.9464,79.8780&t=&z=16&ie=UTF8&iwloc=&output=embed"
               width="100%" 
               height="450" 
               style={{ border: 0, borderRadius: "16px" }} 
