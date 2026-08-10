@@ -511,12 +511,7 @@ export default function Home() {
               ))}
             </div>
 
-            {/* FULL PROJECT PORTFOLIO BUTTON AT THE BOTTOM */}
-            <div style={{ marginTop: "10px" }}>
-              <Link href="/projects" className="btn btn-primary hover-glow" style={{ display: 'inline-flex', gap: '10px', padding: "16px 40px", fontSize: "1rem" }}>
-                Full Project Portfolio <ArrowRight size={20} />
-              </Link>
-            </div>
+
           </div>
 
         </div>
