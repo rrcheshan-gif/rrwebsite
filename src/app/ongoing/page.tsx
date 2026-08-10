@@ -8,7 +8,29 @@ export default function OngoingProjects() {
   const [filter, setFilter] = useState('all');
 
   const ongoingProjects = projectsData.filter((p: any) => p.type === 'ongoing');
-  const filteredProjects = ongoingProjects.filter((p: any) => 
+  
+  // Sort projects: 1) Base Year Desc, 2) Has Custom Image, 3) Full Date Desc
+  const sortedProjects = [...ongoingProjects].sort((a: any, b: any) => {
+    const baseYearA = String(a.year || "").substring(0, 4);
+    const baseYearB = String(b.year || "").substring(0, 4);
+    
+    if (baseYearA !== baseYearB) {
+      return baseYearB.localeCompare(baseYearA);
+    }
+
+    const hasCustomImageA = a.heroImage && a.heroImage !== '/images/page-headers/projects-portfolio.jpg' ? 1 : 0;
+    const hasCustomImageB = b.heroImage && b.heroImage !== '/images/page-headers/projects-portfolio.jpg' ? 1 : 0;
+    
+    if (hasCustomImageA !== hasCustomImageB) {
+      return hasCustomImageB - hasCustomImageA;
+    }
+
+    const valA = String(a.year || "");
+    const valB = String(b.year || "");
+    return valB.localeCompare(valA);
+  });
+
+  const filteredProjects = sortedProjects.filter((p: any) => 
     filter === 'all' ? true : p.category === filter
   );
 
