@@ -334,7 +334,7 @@ export default function Home() {
             }}>
               <div style={{ fontSize: "2.2rem", fontWeight: 800, fontFamily: "var(--font-heading)", lineHeight: 1, marginBottom: "2px", color: "var(--primary-red)" }}>25+</div>
               <h4 style={{ margin: 0, fontSize: "0.88rem", fontFamily: "var(--font-heading)", textTransform: "uppercase", letterSpacing: "0.5px", color: "var(--primary-red)", fontWeight: 700 }}>Years of Excellence</h4>
-              <p style={{ color: "#0f172a", margin: "4px 0 0 0", fontSize: "0.75rem", lineHeight: 1.3, fontWeight: 600 }}>Solid Foundation & Strong Financial Backing</p>
+              <p style={{ color: "var(--text-dark)", margin: "4px 0 0 0", fontSize: "0.75rem", lineHeight: 1.3, fontWeight: 600 }}>Solid Foundation & Strong Financial Backing</p>
             </div>
           </div>
           <div style={{ flex: 1, minWidth: 'min(100%, 350px)' }}>
