@@ -111,6 +111,26 @@ export default function Contact() {
             </div>
 
         </div>
+        
+        {/* Google Map Section */}
+        <div className="container" style={{ marginTop: "80px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
+            <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
+            <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Our Location</h4>
+          </div>
+          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", marginBottom: "30px" }}>Visit Our Head Office</h2>
+          <div style={{ background: "var(--white)", padding: "15px", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.08)", border: "1px solid var(--border-soft)" }}>
+            <iframe 
+              src="https://maps.google.com/maps?q=RR%20Construction,%20Orugodawatta,%20Colombo&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              width="100%" 
+              height="450" 
+              style={{ border: 0, borderRadius: "16px" }} 
+              allowFullScreen={false} 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
       </section>
     </div>
   );
