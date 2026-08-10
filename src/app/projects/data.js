@@ -9,7 +9,15 @@ const projectsData = [
     client: "Ministry of Defence, Disaster Management Division",
     duration: "270 Days",
     year: 2025,
-    status: "Ongoing"
+    status: "Ongoing",
+      heroImage: 'images/Badulla Landslide/Background image.jpeg',
+      galleryImages: [
+        'images/Badulla Landslide/Background image.jpeg',
+        'images/Badulla Landslide/WhatsApp Image 2026-07-28 at 16.41.31.jpeg',
+        'images/Badulla Landslide/WhatsApp Image 2026-07-28 at 16.41.34.jpeg',
+        'images/Badulla Landslide/WhatsApp Image 2026-07-28 at 16.41.43.jpeg',
+        'images/Badulla Landslide/WhatsApp Image 2026-07-28 at 16.41.45.jpeg'
+      ]
   },
   {
     id: 'project-mod-landslide-10f',
@@ -220,24 +228,6 @@ const projectsData = [
       'images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.28 (1).jpeg',
       'images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.33.jpeg',
       'images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.55.jpeg'
-    ]
-  },
-  {
-    id: 'project-13',
-    type: 'ongoing',
-    category: "disaster",
-    title: "Landslide Mitigation Measures at 07 Locations in Badulla District (RLVMMP)",
-    client: "Ministry of Defence",
-    duration: "12 Months",
-    year: 2025,
-    status: "Ongoing",
-    heroImage: 'images/Badulla Landslide/Background image.jpeg',
-    galleryImages: [
-      'images/Badulla Landslide/Background image.jpeg',
-      'images/Badulla Landslide/WhatsApp Image 2026-07-28 at 16.41.31.jpeg',
-      'images/Badulla Landslide/WhatsApp Image 2026-07-28 at 16.41.34.jpeg',
-      'images/Badulla Landslide/WhatsApp Image 2026-07-28 at 16.41.43.jpeg',
-      'images/Badulla Landslide/WhatsApp Image 2026-07-28 at 16.41.45.jpeg'
     ]
   },
   {
