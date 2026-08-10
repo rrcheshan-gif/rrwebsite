@@ -136,19 +136,19 @@ export default function QuarriesAggregates() {
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "30px", alignItems: "start" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "30px", alignItems: "stretch" }}>
             {/* Thudugala Plant */}
             <div onClick={() => router.push('/thudugala-plant')} style={{ background: "var(--white)", borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", cursor: "pointer", transition: "transform 0.2s ease" }}>
-              <div style={{ flex: 1, minWidth: 'min(100%, 300px)', cursor: "pointer", position: "relative" }} className="img-polish" >
+              <div style={{ minWidth: 'min(100%, 300px)', cursor: "pointer", position: "relative" }} className="img-polish" >
                 <img className="img-polished img-hover-zoom" src="/images/thudugala-5.jpg" alt="Thudugala Plant" style={{ width: "100%", height: "300px", objectFit: "cover", display: "block" }} />
                 <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px", textTransform: "uppercase", letterSpacing: "1px" }}>Western Province</span>
               </div>
-              <div style={{ padding: "20px", display: "flex", flexDirection: "column" }}>
+              <div style={{ padding: "20px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Thudugala Crusher Plant</h3>
                   <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>Serving Colombo and Western Province developments, providing high-yield aggregates for high-rise buildings, expressways, and major infrastructure projects. Equipped with state-of-the-art crushing technology to ensure consistent material quality.</p>
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "15px" }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "auto" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>
                   <a href="#inquiry" className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center", textDecoration: "none" }} onClick={(e) => e.stopPropagation()}>Quote</a>
                 </div>
@@ -157,16 +157,16 @@ export default function QuarriesAggregates() {
 
             {/* Veerapuram M Sand Plant */}
             <div onClick={() => router.push('/veerapuram-plant')} style={{ background: "var(--white)", borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", cursor: "pointer", transition: "transform 0.2s ease" }}>
-              <div style={{ flex: 1, minWidth: 'min(100%, 300px)', cursor: "pointer", position: "relative" }} className="img-polish" >
+              <div style={{ minWidth: 'min(100%, 300px)', cursor: "pointer", position: "relative" }} className="img-polish" >
                 <img className="img-polished img-hover-zoom" src="/images/omanthai-1.jpg" alt="Veerapuram Plant" style={{ width: "100%", height: "300px", objectFit: "cover", display: "block" }} />
                 <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px", textTransform: "uppercase", letterSpacing: "1px" }}>Northern Province</span>
               </div>
-              <div style={{ padding: "20px", display: "flex", flexDirection: "column" }}>
+              <div style={{ padding: "20px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Veerapuram M Sand Plant</h3>
                   <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>Advanced Sand Plant manufacturing high-quality M-Sand and premium washed aggregates. Designed to meet eco-friendly construction standards while providing superior compressive strength for structural engineering.</p>
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "15px" }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "auto" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>
                   <a href="#inquiry" className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center", textDecoration: "none" }} onClick={(e) => e.stopPropagation()}>Quote</a>
                 </div>
@@ -175,16 +175,16 @@ export default function QuarriesAggregates() {
 
             {/* Omanthai Plant */}
             <div onClick={() => router.push('/omanthai-plant')} style={{ background: "var(--white)", borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", cursor: "pointer", transition: "transform 0.2s ease" }}>
-              <div style={{ flex: 1, minWidth: 'min(100%, 300px)', cursor: "pointer", position: "relative" }} className="img-polish" >
+              <div style={{ minWidth: 'min(100%, 300px)', cursor: "pointer", position: "relative" }} className="img-polish" >
                 <img className="img-polished img-hover-zoom" src="/images/omanthai/plant-1.jpg" alt="Omanthai Plant" style={{ width: "100%", height: "300px", objectFit: "cover", display: "block" }} />
                 <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px", textTransform: "uppercase", letterSpacing: "1px" }}>Northern Province</span>
               </div>
-              <div style={{ padding: "20px", display: "flex", flexDirection: "column" }}>
+              <div style={{ padding: "20px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Omanthai Plant</h3>
                   <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>A key aggregates supplier for Northern infrastructure development and commercial sectors. Operating with high-capacity machinery to deliver uninterrupted material supply for large-scale provincial road and bridge constructions.</p>
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "15px" }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "auto" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>
                   <a href="#inquiry" className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center", textDecoration: "none" }} onClick={(e) => e.stopPropagation()}>Quote</a>
                 </div>
@@ -193,16 +193,16 @@ export default function QuarriesAggregates() {
             
             {/* Yakawewa Asphalt Plant */}
             <div onClick={() => router.push('/yakawewa-plant')} style={{ background: "var(--white)", borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", cursor: "pointer", transition: "transform 0.2s ease" }}>
-              <div style={{ flex: 1, minWidth: 'min(100%, 300px)', cursor: "pointer", position: "relative" }} className="img-polish" >
+              <div style={{ minWidth: 'min(100%, 300px)', cursor: "pointer", position: "relative" }} className="img-polish" >
                 <img className="img-polished img-hover-zoom" src="/images/yakawewa-asphalt-2.jpg" alt="Yakawewa Asphalt Plant" style={{ width: "100%", height: "300px", objectFit: "cover", display: "block" }} />
                 <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px", textTransform: "uppercase", letterSpacing: "1px" }}>North Central Province</span>
               </div>
-              <div style={{ padding: "20px", display: "flex", flexDirection: "column" }}>
+              <div style={{ padding: "20px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Yakawewa Asphalt Plant</h3>
                   <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>Premium hot-mix asphalt supplier for major highway and road paving projects across the region. Featuring automated temperature and mix-control systems to guarantee maximum durability and smooth road surface finishes.</p>
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "15px" }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "auto" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>
                   <a href="#inquiry" className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center", textDecoration: "none" }} onClick={(e) => e.stopPropagation()}>Quote</a>
                 </div>
