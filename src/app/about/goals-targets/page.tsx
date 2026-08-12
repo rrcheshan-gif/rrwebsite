@@ -73,7 +73,7 @@ export default function GoalsTargets() {
             </Link>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2.8rem" : "4.5rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textTransform: "uppercase" }}>
-            Goals & <span className="text-gradient">Targets</span>
+            Goals & <span style={{ color: "var(--primary-red)" }}>Targets</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Strategic objectives driving our pursuit of engineering perfection.
@@ -96,7 +96,7 @@ export default function GoalsTargets() {
             {goals.map((goal, idx) => (
               <div 
                 key={idx} 
-                className="glass-panel" 
+                 
                 style={{ 
                   background: "var(--white)", 
                   padding: "40px 30px", 
@@ -105,7 +105,7 @@ export default function GoalsTargets() {
                   boxShadow: "0 10px 30px rgba(0,0,0,0.03)"
                 }}
               >
-                <div style={{ marginBottom: "25px", background: "rgba(229, 57, 53, 0.08)", display: "inline-flex", padding: "16px", borderRadius: "16px" }}>
+                <div style={{ marginBottom: "25px", background: "var(--bg-light)", display: "inline-flex", padding: "16px", borderRadius: "16px" }}>
                   {goal.icon}
                 </div>
                 <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "25px" }}>{goal.title}</h3>
@@ -149,7 +149,7 @@ export default function GoalsTargets() {
       <section style={{ padding: isMobile ? "60px 20px" : "100px 20px", textAlign: "center", background: "var(--white)", borderTop: "1px solid var(--border-soft)" }}>
         <div className="container" style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>
-            Explore Our <span className="text-gradient">Sustainability</span>
+            Explore Our <span style={{ color: "var(--primary-red)" }}>Sustainability</span>
           </h2>
           <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.7, marginBottom: "40px" }}>
             Discover how our environmental targets are transforming our construction sites.

@@ -67,7 +67,7 @@ export default function KeyData() {
             </Link>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2.8rem" : "4.5rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textTransform: "uppercase" }}>
-            Key <span className="text-gradient">Data</span>
+            Key <span style={{ color: "var(--primary-red)" }}>Data</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             The numbers behind our capability to engineer Sri Lanka's most demanding infrastructure.
@@ -86,8 +86,8 @@ export default function KeyData() {
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "30px", marginBottom: "80px" }}>
             {stats.map((stat, idx) => (
-              <div key={idx} className="glass-panel" style={{ background: "var(--white)", padding: "40px 30px", borderRadius: "24px", textAlign: "center", border: "1px solid var(--border-soft)", boxShadow: "0 10px 30px rgba(0,0,0,0.03)" }}>
-                <div style={{ marginBottom: "20px", display: "inline-block", padding: "20px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "50%" }}>
+              <div key={idx}  style={{ background: "var(--white)", padding: "40px 30px", borderRadius: "24px", textAlign: "center", border: "1px solid var(--border-soft)", boxShadow: "0 10px 30px rgba(0,0,0,0.03)" }}>
+                <div style={{ marginBottom: "20px", display: "inline-block", padding: "20px", background: "var(--bg-light)", borderRadius: "50%" }}>
                   {stat.icon}
                 </div>
                 <h3 style={{ fontSize: "3.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 10px", lineHeight: 1 }}>{stat.value}</h3>
@@ -104,7 +104,7 @@ export default function KeyData() {
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "30px" }}>
               {certifications.map((cert, idx) => (
-                <div key={idx} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", padding: "30px", borderRadius: "20px", display: "flex", alignItems: "center", gap: "20px", backdropFilter: "blur(10px)" }}>
+                <div key={idx} style={{ background: "var(--bg-light)", border: "1px solid var(--border-soft)", border: "1px solid rgba(255,255,255,0.1)", padding: "30px", borderRadius: "20px", display: "flex", alignItems: "center", gap: "20px", backdropFilter: "blur(10px)" }}>
                   <Award size={40} color="var(--primary-red)" />
                   <div>
                     <h4 style={{ fontSize: "1.5rem", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 5px", color: "white" }}>{cert.title}</h4>
@@ -139,7 +139,7 @@ export default function KeyData() {
       <section style={{ padding: isMobile ? "60px 20px" : "100px 20px", textAlign: "center", background: "var(--white)", borderTop: "1px solid var(--border-soft)" }}>
         <div className="container" style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>
-            See Our <span className="text-gradient">Capabilities</span> in Action
+            See Our <span style={{ color: "var(--primary-red)" }}>Capabilities</span> in Action
           </h2>
           <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.7, marginBottom: "40px" }}>
             Review our portfolio of complex engineering projects successfully delivered across Sri Lanka.

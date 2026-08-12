@@ -85,7 +85,7 @@ export default function HistoryTimeline() {
             </Link>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2.5rem" : "4.5rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textTransform: "uppercase" }}>
-            Company <span className="text-gradient">History</span>
+            Company <span style={{ color: "var(--primary-red)" }}>History</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Three decades of steady growth, technical evolution, and nation-building.
@@ -148,7 +148,7 @@ export default function HistoryTimeline() {
                 </div>
 
                 {/* Content Box */}
-                <div className="glass-panel" style={{ 
+                <div  style={{ 
                   width: isMobile ? "100%" : "45%", 
                   background: "var(--white)", 
                   padding: "30px", 
@@ -178,7 +178,7 @@ export default function HistoryTimeline() {
       <section style={{ padding: isMobile ? "60px 20px" : "100px 20px", textAlign: "center", background: "var(--white)", borderTop: "1px solid var(--border-soft)" }}>
         <div className="container" style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>
-            View Our <span className="text-gradient">Achievements</span>
+            View Our <span style={{ color: "var(--primary-red)" }}>Achievements</span>
           </h2>
           <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.7, marginBottom: "40px" }}>
             Decades of experience has resulted in widespread recognition for our engineering capabilities.

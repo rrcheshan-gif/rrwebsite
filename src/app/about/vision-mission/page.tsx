@@ -40,7 +40,7 @@ export default function VisionMission() {
             </Link>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2.5rem" : "4.5rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textTransform: "uppercase" }}>
-            Vision & <span className="text-gradient">Mission</span>
+            Vision & <span style={{ color: "var(--primary-red)" }}>Mission</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Guiding principles that drive our commitment to engineering excellence.
@@ -102,7 +102,7 @@ export default function VisionMission() {
               { title: "Uncompromising Safety", desc: "Fostering a 'Zero Harm' culture by strictly adhering to ISO 45001 Occupational Health & Safety standards.", icon: <Shield size={32} color="var(--primary-red)" /> },
               { title: "Environmental Responsibility", desc: "Minimizing ecological impact through sustainable material sourcing, waste reduction, and ISO 14001 compliance.", icon: <Globe size={32} color="var(--primary-red)" /> }
             ].map((mission, idx) => (
-              <div key={idx} className="glass-panel" style={{ background: "var(--bg-light)", padding: "40px 30px", borderRadius: "24px", border: "1px solid var(--border-soft)", transition: "transform 0.3s" }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+              <div key={idx}  style={{ background: "var(--bg-light)", padding: "40px 30px", borderRadius: "24px", border: "1px solid var(--border-soft)", transition: "transform 0.3s" }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
                 <div style={{ marginBottom: "20px" }}>{mission.icon}</div>
                 <h4 style={{ fontSize: "1.3rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>{mission.title}</h4>
                 <p style={{ color: "var(--text-light)", lineHeight: 1.7, margin: 0 }}>{mission.desc}</p>
@@ -137,7 +137,7 @@ export default function VisionMission() {
       <section style={{ padding: isMobile ? "60px 20px" : "100px 20px", textAlign: "center", background: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>
-            See Our <span className="text-gradient">Core Values</span>
+            See Our <span style={{ color: "var(--primary-red)" }}>Core Values</span>
           </h2>
           <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.7, marginBottom: "40px" }}>
             Learn more about the principles that govern our operations and relationships.

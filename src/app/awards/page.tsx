@@ -69,7 +69,7 @@ export default function Awards() {
             </Link>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2.5rem" : "4.5rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textTransform: "uppercase" }}>
-            Project <span className="text-gradient">Achievements</span>
+            Project <span style={{ color: "var(--primary-red)" }}>Achievements</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Recognized milestones and certifications in our pursuit of engineering excellence.
@@ -91,7 +91,7 @@ export default function Awards() {
             
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "30px" }}>
               {certifications.map((cert, idx) => (
-                <div key={idx} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", padding: "30px", borderRadius: "20px", backdropFilter: "blur(10px)", textAlign: "center", transition: "transform 0.3s" }} className="hover-lift">
+                <div key={idx} style={{ background: "var(--bg-light)", border: "1px solid var(--border-soft)", border: "1px solid rgba(255,255,255,0.1)", padding: "30px", borderRadius: "20px", backdropFilter: "blur(10px)", textAlign: "center", transition: "transform 0.3s" }} className="hover-lift">
                   <h3 style={{ fontSize: "2rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--primary-red)", margin: "0 0 10px" }}>{cert.title}</h3>
                   <p style={{ color: "white", margin: 0, fontSize: "1.1rem", fontWeight: 600 }}>{cert.desc}</p>
                 </div>
@@ -116,7 +116,7 @@ export default function Awards() {
             {achievements.map((item, idx) => (
               <div 
                 key={idx} 
-                className="glass-panel" 
+                 
                 style={{ 
                   background: "var(--white)", 
                   padding: "40px 30px", 
@@ -128,7 +128,7 @@ export default function Awards() {
                 onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-10px)'; e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.08)' }} 
                 onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none' }}
               >
-                <div style={{ marginBottom: "25px", background: "rgba(229, 57, 53, 0.08)", display: "inline-block", padding: "16px", borderRadius: "20px" }}>
+                <div style={{ marginBottom: "25px", background: "var(--bg-light)", display: "inline-block", padding: "16px", borderRadius: "20px" }}>
                   {item.icon}
                 </div>
                 <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>{item.title}</h3>
@@ -145,7 +145,7 @@ export default function Awards() {
         <div className="container" style={{ maxWidth: "800px", margin: "0 auto" }}>
           <Trophy size={48} color="var(--primary-red)" style={{ margin: "0 auto 20px" }} />
           <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>
-            See Our <span className="text-gradient">Projects</span>
+            See Our <span style={{ color: "var(--primary-red)" }}>Projects</span>
           </h2>
           <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.7, marginBottom: "40px" }}>
             The best proof of our capability is the infrastructure we have built. 
