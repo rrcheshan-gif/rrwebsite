@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Construction & Civil Engineering Services | RR Construction (Pvt) Ltd",
   description: "Explore RR Construction's services: road construction, highway engineering, bridge building, maritime construction, geotechnical mitigation, and water infrastructure in Sri Lanka.",
   alternates: {
-    canonical: 'https://rrwebsite-xi.vercel.app/services',
+    canonical: 'https://www.rrcon.company/services',
   }
 };
 

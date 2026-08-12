@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://rrwebsite-xi.vercel.app/sitemap.xml',
+    sitemap: 'https://www.rrcon.company/sitemap.xml',
   }
 }

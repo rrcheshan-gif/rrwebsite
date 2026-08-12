@@ -13,7 +13,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://rrwebsite-xi.vercel.app'),
+  metadataBase: new URL('https://www.rrcon.company'),
   title: {
     template: "%s | RR Construction (Pvt) Ltd",
     default: "RR Construction (Pvt) Ltd | Leading Construction & Civil Engineering Company in Sri Lanka",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "RR Construction (Pvt) Ltd | Leading Construction & Civil Engineering Company in Sri Lanka",
     description: "RR Construction (Pvt) Ltd is a leading Sri Lankan construction and civil engineering company specializing in road construction, highways, bridges, infrastructure, harbour construction, geotechnical engineering, and sustainable construction solutions.",
-    url: 'https://rrwebsite-xi.vercel.app',
+    url: 'https://www.rrcon.company',
     siteName: 'RR Construction (Pvt) Ltd',
     locale: 'en_US',
     type: 'website',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     images: ['/images/og-image.jpg'],
   },
   alternates: {
-    canonical: 'https://rrwebsite-xi.vercel.app',
+    canonical: 'https://www.rrcon.company',
   },
 };
 
@@ -57,8 +57,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "RR Construction (Pvt) Ltd",
-  "url": "https://rrwebsite-xi.vercel.app",
-  "logo": "https://rrwebsite-xi.vercel.app/images/logo.png",
+  "url": "https://www.rrcon.company",
+  "logo": "https://www.rrcon.company/images/logo.png",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+94-11-2433427",
