@@ -295,61 +295,77 @@ export default function Home() {
       </section>
 
       {/* CORPORATE PROFILE */}
-      <section className="bg-gradient-adaptive" style={{ padding: "140px 20px", position: "relative", overflow: 'hidden' }}>
-        <div className="container" style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "80px", position: "relative", zIndex: 2 }}>
-          <div style={{ flex: 1, minWidth: 'min(100%, 340px)', position: "relative", marginBottom: "40px" }}>
+      <section className="bg-gradient-adaptive" style={{ padding: "120px 20px", position: "relative", overflow: 'hidden' }}>
+        <div className="container" style={{ display: "flex", flexWrap: "wrap", alignItems: "stretch", gap: "60px", position: "relative", zIndex: 2 }}>
+          
+          <div style={{ flex: "1 1 400px", position: "relative", display: "flex", alignItems: "center" }}>
             {/* Outer Frame Accent */}
-            <div style={{ position: "absolute", top: "-15px", left: "-15px", width: "calc(100% + 30px)", height: "calc(100% + 30px)", border: "2px dashed var(--primary-red)", borderRadius: "36px", zIndex: 0, opacity: 0.25 }}></div>
+            <div style={{ position: "absolute", top: "-20px", left: "-20px", right: "20px", bottom: "-20px", border: "2px dashed var(--border-soft)", borderRadius: "36px", zIndex: 0 }}></div>
 
-            {/* 4-Picture Project Collage */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", padding: "12px", background: "var(--white)", borderRadius: "32px", boxShadow: "0 25px 60px rgba(0,0,0,0.08)", position: "relative", zIndex: 2 }}>
-              <div style={{ height: "200px", borderRadius: "20px", overflow: "hidden" }}>
-                <img src="/images/home/IMG_3025.jpg" alt="RR Construction Road Construction Project Sri Lanka - Tea Plantation" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            {/* Picture Collage */}
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "15px", padding: "15px", background: "var(--white)", borderRadius: "32px", boxShadow: "0 25px 60px rgba(0,0,0,0.06)", position: "relative", zIndex: 2, width: "100%" }}>
+              <div style={{ height: "240px", borderRadius: "20px", overflow: "hidden" }}>
+                <img src="/images/home/IMG_3025.jpg" alt="Road Construction" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
-              <div style={{ height: "200px", borderRadius: "20px", overflow: "hidden" }}>
-                <img src="/images/home/WhatsApp Image 2026-07-18 at 10.24.03.jpeg" alt="RR Construction Road Rehabilitation and Highway Construction - CAT Machine" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              <div style={{ height: "240px", borderRadius: "20px", overflow: "hidden", marginTop: "40px" }}>
+                <img src="/images/home/WhatsApp Image 2026-07-18 at 10.24.03.jpeg" alt="CAT Machine" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
-              <div style={{ height: "200px", borderRadius: "20px", overflow: "hidden" }}>
-                <img src="/images/kandy-landslide/kandy-5.jpg" alt="RR Construction Landslide Mitigation and Geotechnical Engineering - Retaining Wall" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              <div style={{ height: "240px", borderRadius: "20px", overflow: "hidden", marginTop: "-40px" }}>
+                <img src="/images/kandy-landslide/kandy-5.jpg" alt="Retaining Wall" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
-              <div style={{ height: "200px", borderRadius: "20px", overflow: "hidden" }}>
-                <img src="/images/home/WhatsApp Image 2026-07-24 at 23.23.33.jpeg" alt="RR Construction Irrigation and Water Infrastructure Construction - Excavator" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              <div style={{ height: "240px", borderRadius: "20px", overflow: "hidden" }}>
+                <img src="/images/home/WhatsApp Image 2026-07-24 at 23.23.33.jpeg" alt="Excavator" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
             </div>
             
-            {/* Floating 25+ Years Box at Bottom-Right Accent Position */}
+            {/* Floating 25+ Years Box */}
             <div className="glass-panel hover-lift" style={{ 
               position: "absolute", 
-              bottom: "-45px", 
-              right: "10px", 
-              background: "rgba(255, 255, 255, 0.75)", 
+              bottom: "20px", 
+              left: "50%", 
+              transform: "translateX(-50%)",
+              background: "rgba(255, 255, 255, 0.9)", 
               backdropFilter: "blur(16px)",
-              WebkitBackdropFilter: "blur(16px)",
-              padding: "16px 22px", 
+              padding: "15px 25px", 
               zIndex: 3, 
-              maxWidth: "210px", 
-              color: "var(--primary-red)", 
-              boxShadow: "0 15px 35px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.8)",
-              border: "2px solid rgba(211, 47, 47, 0.85)"
+              width: "max-content",
+              textAlign: "center",
+              borderRadius: "20px",
+              boxShadow: "0 15px 35px rgba(0, 0, 0, 0.12)",
+              border: "1px solid rgba(211, 47, 47, 0.3)"
             }}>
-              <div style={{ fontSize: "2.2rem", fontWeight: 800, fontFamily: "var(--font-heading)", lineHeight: 1, marginBottom: "2px", color: "var(--primary-red)" }}>25+</div>
-              <h4 style={{ margin: 0, fontSize: "0.88rem", fontFamily: "var(--font-heading)", textTransform: "uppercase", letterSpacing: "0.5px", color: "var(--primary-red)", fontWeight: 700 }}>Years of Excellence</h4>
-              <p style={{ color: "var(--text-dark)", margin: "4px 0 0 0", fontSize: "0.75rem", lineHeight: 1.3, fontWeight: 600 }}>Solid Foundation & Strong Financial Backing</p>
+              <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
+                <div style={{ fontSize: "2.5rem", fontWeight: 800, fontFamily: "var(--font-heading)", lineHeight: 1, color: "var(--primary-red)" }}>30+</div>
+                <div style={{ textAlign: "left" }}>
+                  <h4 style={{ margin: 0, fontSize: "0.9rem", fontFamily: "var(--font-heading)", textTransform: "uppercase", letterSpacing: "1px", color: "var(--primary-red)", fontWeight: 800 }}>Years of</h4>
+                  <p style={{ color: "var(--text-dark)", margin: 0, fontSize: "0.9rem", fontWeight: 700, textTransform: "uppercase" }}>Excellence</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div style={{ textAlign: "left", flex: 1, paddingRight: "50px" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
-                  <div style={{ width: "40px", height: "4px", background: "var(--primary-red)" }}></div>
-                  <h2 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Corporate Profile</h2>
-                </div>
-                
-                <h1 style={{ fontSize: "clamp(2.5rem, 4vw, 3.5rem)", lineHeight: 1.1, marginBottom: "35px", color: "var(--text-dark)", fontFamily: "var(--font-heading)", textTransform: "uppercase" }}>RR CONSTRUCTION (PVT) LTD<br/><span className="text-gradient" style={{ fontWeight: 500, fontSize: "0.65em", letterSpacing: "1px", display: "block", marginTop: "10px" }}>CONSTRUCTION & CIVIL ENGINEERING IN SRI LANKA</span></h1>
-                
-                <p style={{ fontSize: "1.25rem", color: "var(--text-dark)", marginBottom: "30px", fontWeight: 600, lineHeight: 1.7, borderLeft: "4px solid var(--primary-red)", paddingLeft: "20px" }}>We measure success the way our clients do: the right quality, delivered on schedule, at a fair cost.</p>
-                
-                <p style={{ color: "var(--text-light)", marginBottom: "45px", lineHeight: 1.9, fontSize: "1.05rem" }}>With massive financial backing and a self-owned fleet of 1,000+ heavy construction machines, we don't wait on hired equipment or third-party schedules. From expressways and road rehabilitation to bridge construction, harbour works, and landslide mitigation, we bring the full strength of our civil engineering resources to every site — so Sri Lanka's infrastructure keeps pace with its ambitions.</p>
+          
+          <div style={{ flex: "1 1 500px", display: "flex", flexDirection: "column", justifyContent: "center", paddingLeft: "clamp(0px, 4vw, 40px)" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "25px" }}>
+              <div style={{ width: "50px", height: "4px", background: "var(--primary-red)", borderRadius: "2px" }}></div>
+              <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.95rem" }}>Corporate Profile</h2>
+            </div>
             
-            <Link href="/about" className="btn btn-primary hover-glow" style={{ padding: "18px 40px", fontSize: "1rem" }}>Discover Our Legacy</Link>
+            <h1 style={{ fontSize: "clamp(2.2rem, 3.5vw, 3.2rem)", lineHeight: 1.15, marginBottom: "25px", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800 }}>
+              RR CONSTRUCTION<br />(PVT) LTD
+              <span style={{ color: "var(--primary-red)", fontWeight: 600, fontSize: "0.45em", letterSpacing: "2px", display: "block", marginTop: "15px", textTransform: "uppercase" }}>Construction & Civil Engineering In Sri Lanka</span>
+            </h1>
+            
+            <p style={{ fontSize: "1.2rem", color: "var(--text-dark)", marginBottom: "30px", fontWeight: 600, lineHeight: 1.7, borderLeft: "4px solid var(--primary-red)", paddingLeft: "25px" }}>
+              We measure success the way our clients do: the right quality, delivered on schedule, at a fair cost.
+            </p>
+            
+            <p style={{ color: "var(--text-light)", marginBottom: "40px", lineHeight: 1.8, fontSize: "1.1rem" }}>
+              With massive financial backing and a self-owned fleet of 1,000+ heavy construction machines, we don't wait on hired equipment or third-party schedules. From expressways and road rehabilitation to bridge construction, harbour works, and landslide mitigation, we bring the full strength of our civil engineering resources to every site — so Sri Lanka's infrastructure keeps pace with its ambitions.
+            </p>
+        
+            <div>
+              <Link href="/about" className="btn btn-primary hover-glow" style={{ padding: "16px 36px", fontSize: "1rem" }}>Discover Our Legacy</Link>
+            </div>
           </div>
         </div>
       </section>
