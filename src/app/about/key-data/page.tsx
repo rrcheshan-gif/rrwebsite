@@ -104,10 +104,10 @@ export default function KeyData() {
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "30px" }}>
               {certifications.map((cert, idx) => (
-                <div key={idx} style={{ background: "var(--bg-light)", border: "1px solid var(--border-soft)", border: "1px solid rgba(255,255,255,0.1)", padding: "30px", borderRadius: "20px", display: "flex", alignItems: "center", gap: "20px", backdropFilter: "blur(10px)" }}>
+                <div key={idx} style={{ background: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.15)", padding: "30px", borderRadius: "20px", display: "flex", alignItems: "center", gap: "20px", backdropFilter: "blur(10px)" }}>
                   <Award size={40} color="var(--primary-red)" />
                   <div>
-                    <h4 style={{ fontSize: "1.5rem", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 5px", color: "white" }}>{cert.title}</h4>
+                    <h4 style={{ fontSize: "1.5rem", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 5px", color: "#f1f5f9" }}>{cert.title}</h4>
                     <p style={{ color: "#94a3b8", margin: 0, fontSize: "1rem", fontWeight: 500 }}>{cert.desc}</p>
                   </div>
                 </div>

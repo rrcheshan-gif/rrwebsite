@@ -91,9 +91,9 @@ export default function Awards() {
             
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "30px" }}>
               {certifications.map((cert, idx) => (
-                <div key={idx} style={{ background: "var(--bg-light)", border: "1px solid var(--border-soft)", border: "1px solid rgba(255,255,255,0.1)", padding: "30px", borderRadius: "20px", backdropFilter: "blur(10px)", textAlign: "center", transition: "transform 0.3s" }} className="hover-lift">
+                <div key={idx} style={{ background: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.15)", padding: "30px", borderRadius: "20px", backdropFilter: "blur(10px)", textAlign: "center", transition: "transform 0.3s" }} className="hover-lift">
                   <h3 style={{ fontSize: "2rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--primary-red)", margin: "0 0 10px" }}>{cert.title}</h3>
-                  <p style={{ color: "white", margin: 0, fontSize: "1.1rem", fontWeight: 600 }}>{cert.desc}</p>
+                  <p style={{ color: "#f1f5f9", margin: 0, fontSize: "1.1rem", fontWeight: 600 }}>{cert.desc}</p>
                 </div>
               ))}
             </div>

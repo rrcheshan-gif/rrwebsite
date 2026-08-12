@@ -24,6 +24,10 @@
   /* Utilities */
   --glass-bg: rgba(255, 255, 255, 0.7);
   --glass-border: rgba(255, 255, 255, 0.4);
+  --border-soft: rgba(0, 0, 0, 0.08);
+  --card-bg: #ffffff;
+  --dark-panel-bg: #1e293b;
+  --dark-panel-text: #cbd5e1;
 }
 
 [data-theme="dark"] {
@@ -32,6 +36,9 @@
   --text-light: #cbd5e1;
   --white: #1e293b;
   --bg-base: #1e293b;
+  --card-bg: #1e293b;
+  --dark-panel-bg: #0f172a;
+  --dark-panel-text: #94a3b8;
   
   /* Form & Inputs */
   --input-bg: #1e293b;
@@ -166,6 +173,64 @@
 [data-theme="dark"] .btn-glass:hover {
   background-color: #f8fafc !important;
   color: #0b0f19 !important;
+}
+
+/* ===================================================
+   COMPREHENSIVE DARK MODE — ABOUT US & GENERAL PAGES
+   =================================================== */
+
+/* All plain white card divs (var(--white) background) adapt via the CSS variable.
+   This rule catches any leftover hardcoded background-color: white */
+[data-theme="dark"] div[style*="background: \"var(--white)\""],
+[data-theme="dark"] div[style*="background-color: white"],
+[data-theme="dark"] div[style*="background-color: #ffffff"],
+[data-theme="dark"] div[style*="background-color: \"#fff\""] {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+}
+
+/* Section backgrounds that use var(--bg-light) adapt correctly via CSS var.
+   But sections with hardcoded white need this override */
+[data-theme="dark"] section[style*="background: white"],
+[data-theme="dark"] section[style*="background: #ffffff"],
+[data-theme="dark"] section[style*="background-color: white"],
+[data-theme="dark"] section[style*="background-color: #ffffff"],
+[data-theme="dark"] section[style*="background-color: \"white\""],
+[data-theme="dark"] section[style*="background-color: \"#fff\""] {
+  background-color: #111827 !important;
+}
+
+/* Timeline content boxes */
+[data-theme="dark"] .timeline-content-box {
+  background: #1e293b !important;
+  border-color: rgba(255,255,255,0.1) !important;
+}
+
+/* All hover-lift cards in dark mode */
+[data-theme="dark"] .hover-lift {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* About page section separators / borders */
+[data-theme="dark"] *[style*="borderBottom: \"1px solid var(--border-soft)\""] {
+  border-bottom-color: rgba(255,255,255,0.1) !important;
+}
+[data-theme="dark"] *[style*="borderTop: \"1px solid var(--border-soft)\""] {
+  border-top-color: rgba(255,255,255,0.1) !important;
+}
+
+/* Fix pill/badge tags that use var(--bg-light) to look ok in dark mode */
+[data-theme="dark"] div[style*="background: \"var(--bg-light)\""],
+[data-theme="dark"] span[style*="background: \"var(--bg-light)\""] {
+  background-color: #1e293b !important;
+  border-color: rgba(255,255,255,0.12) !important;
+}
+
+/* ===================================================
+   DARK MODE — IMAGE FRAME BORDERS
+   =================================================== */
+[data-theme="dark"] div[style*="border: \"2px solid var(--border-soft)\""] {
+  border-color: rgba(255,255,255,0.1) !important;
 }
 
 html, body {
