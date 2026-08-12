@@ -15,7 +15,7 @@ export default function Services() {
 
   const services = [
     {
-      slug: 'road-highway-construction',
+      slug: 'road-construction',
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
@@ -48,7 +48,7 @@ export default function Services() {
       desc: 'High-strength river crossings, complex overpasses, flyovers, and steel superstructures built to outlast generations.',
     },
     {
-      slug: 'water-supply-drainage',
+      slug: 'water-infrastructure',
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/>
@@ -63,7 +63,7 @@ export default function Services() {
       desc: 'Extensive pipe networks, high-output treatment plants, and water storage towers delivering clean water securely.',
     },
     {
-      slug: 'irrigation-drainage',
+      slug: 'water-infrastructure',
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M2 6c.6 0 1.2-.2 1.7-.6.9-.6 2.5-.6 3.5 0 .5.4 1.1.6 1.7.6s1.2-.2 1.7-.6c.9-.6 2.5-.6 3.5 0 .5.4 1.1.6 1.7.6s1.2-.2 1.7-.6c.9-.6 2.5-.6 3.5 0 .5.4 1.1.6 1.7.6.6 0 1.2-.2 1.7-.6.9-.6 2.5-.6 3.5 0 .5.4 1.1.6 1.7.6"/>
@@ -143,7 +143,7 @@ export default function Services() {
       desc: 'Formation, civil works, and ancillary works in connection with railway line up-gradation.',
     },
     {
-      slug: 'disaster-mitigation',
+      slug: 'landslide-mitigation',
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
