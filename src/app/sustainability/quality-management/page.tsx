@@ -33,7 +33,7 @@ export default function QualityManagement() {
           overflow: "hidden" 
         }}
       >
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(37, 99, 235, 0.5) 0%, rgba(15, 23, 42, 0.95) 100%)", zIndex: 1 }}></div>
+        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(229, 57, 53, 0.4) 0%, rgba(15, 23, 42, 0.95) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
             <Link href="/sustainability" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
@@ -41,7 +41,7 @@ export default function QualityManagement() {
             </Link>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2.5rem" : "4.5rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", lineHeight: 1.2 }}>
-            Quality <br/><span style={{ color: "#3b82f6" }}>Management</span>
+            Quality <br/><span style={{ color: "var(--primary-red)" }}>Management</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "800px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Delivering structural integrity that outlasts generations, governed by ISO 9001:2015 and top-tier CIDA CS-2 standards.
@@ -54,9 +54,9 @@ export default function QualityManagement() {
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "50px", alignItems: "center" }}>
             <div>
-              <h4 style={{ color: "#2563eb", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px" }}>ISO 9001:2015</h4>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px" }}>ISO 9001:2015</h4>
               <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.2 }}>
-                Quality Assured from <span style={{ color: "#2563eb" }}>The Ground Up</span>
+                Quality Assured from <span style={{ color: "var(--primary-red)" }}>The Ground Up</span>
               </h2>
               <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
                 True quality in civil engineering cannot be retrofitted; it must be engineered into every mix, every pour, and every weld. RR Construction’s reputation as a top-tier infrastructure developer is built on an unwavering commitment to structural integrity.
@@ -65,8 +65,8 @@ export default function QualityManagement() {
                 Certified under <strong>ISO 9001:2015 (Quality Management Systems)</strong> and holding CIDA's highest gradings across multiple disciplines (Highway CS-2, Bridge CS-1), we execute massive public works with extreme precision.
               </p>
             </div>
-            <div style={{ background: "var(--white)", padding: isMobile ? "30px" : "50px", borderRadius: "24px", border: "1px solid rgba(37, 99, 235, 0.2)", boxShadow: "0 20px 40px rgba(37, 99, 235, 0.05)" }}>
-              <Award size={50} color="#2563eb" style={{ marginBottom: "20px" }} />
+            <div style={{ background: "var(--white)", padding: isMobile ? "30px" : "50px", borderRadius: "24px", border: "1px solid rgba(229, 57, 53, 0.2)", boxShadow: "0 20px 40px rgba(229, 57, 53, 0.05)" }}>
+              <Award size={50} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "25px" }}>The RR Quality Guarantee</h3>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {[
@@ -77,7 +77,7 @@ export default function QualityManagement() {
                   "Continuous auditing of structural elements during bridge and marine construction."
                 ].map((item, idx) => (
                   <li key={idx} style={{ display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "15px", paddingBottom: "15px", borderBottom: idx !== 4 ? "1px solid var(--border-soft)" : "none" }}>
-                    <CheckCircle2 size={22} color="#2563eb" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <CheckCircle2 size={22} color="var(--primary-red)" style={{ flexShrink: 0, marginTop: "2px" }} />
                     <span style={{ color: "var(--text-dark)", fontSize: "1.05rem", fontWeight: 500, lineHeight: 1.5 }}>{item}</span>
                   </li>
                 ))}
@@ -99,7 +99,7 @@ export default function QualityManagement() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "30px" }}>
             
             <div className="glass-panel hover-lift" style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)" }}>
-              <Factory size={40} color="#2563eb" style={{ marginBottom: "20px" }} />
+              <Factory size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Vertical Integration</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
                 By relying on our own heavy machinery fleet and self-operated crusher plants, we completely control the supply chain. This eliminates the risk of third-party delays or substandard aggregate materials entering our construction sites.
@@ -107,7 +107,7 @@ export default function QualityManagement() {
             </div>
 
             <div className="glass-panel hover-lift" style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)" }}>
-              <ClipboardCheck size={40} color="#2563eb" style={{ marginBottom: "20px" }} />
+              <ClipboardCheck size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Rigorous Testing</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
                 Before an asphalt layer is laid on the Central Expressway or concrete is poured for a bridge pier, it undergoes strict laboratory testing. Core sampling, compaction tests, and load-bearing verifications are standard operating procedures.
@@ -115,7 +115,7 @@ export default function QualityManagement() {
             </div>
 
             <div className="glass-panel hover-lift" style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)" }}>
-              <Target size={40} color="#2563eb" style={{ marginBottom: "20px" }} />
+              <Target size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Expert Supervision</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
                 Our sites are monitored by highly experienced Chartered Engineers and Senior Quantity Surveyors. We catch deviations from technical specifications early, ensuring every milestone is achieved right the first time.

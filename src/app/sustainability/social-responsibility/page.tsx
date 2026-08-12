@@ -32,7 +32,7 @@ export default function SocialResponsibility() {
           overflow: "hidden" 
         }}
       >
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(225, 29, 72, 0.5) 0%, rgba(15, 23, 42, 0.95) 100%)", zIndex: 1 }}></div>
+        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(229, 57, 53, 0.4) 0%, rgba(15, 23, 42, 0.95) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
             <Link href="/sustainability" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
@@ -40,7 +40,7 @@ export default function SocialResponsibility() {
             </Link>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2.5rem" : "4.5rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", lineHeight: 1.2 }}>
-            Social <br/><span style={{ color: "#e11d48" }}>Responsibility</span>
+            Social <br/><span style={{ color: "var(--primary-red)" }}>Responsibility</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "800px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             We do not just construct infrastructure; we build communities, empower local economies, and minimize disruption.
@@ -53,9 +53,9 @@ export default function SocialResponsibility() {
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "50px", alignItems: "center" }}>
             <div>
-              <h4 style={{ color: "#e11d48", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px" }}>Community First</h4>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px" }}>Community First</h4>
               <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.2 }}>
-                Engineering for <span style={{ color: "#e11d48" }}>The People</span>
+                Engineering for <span style={{ color: "var(--primary-red)" }}>The People</span>
               </h2>
               <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
                 Large-scale construction inherently impacts local communities. Whether we are driving a new expressway through the heart of the country or mitigating dangerous landslides in the central hills, RR Construction views the local community as a primary stakeholder.
@@ -64,8 +64,8 @@ export default function SocialResponsibility() {
                 Our Corporate Social Responsibility (CSR) initiatives are deeply integrated into our project planning. We aim to leave every community vastly improved not just by the final infrastructure, but by the economic and social opportunities generated during the construction phase.
               </p>
             </div>
-            <div style={{ background: "var(--white)", padding: isMobile ? "30px" : "50px", borderRadius: "24px", border: "1px solid rgba(225, 29, 72, 0.2)", boxShadow: "0 20px 40px rgba(225, 29, 72, 0.05)" }}>
-              <Users size={50} color="#e11d48" style={{ marginBottom: "20px" }} />
+            <div style={{ background: "var(--white)", padding: isMobile ? "30px" : "50px", borderRadius: "24px", border: "1px solid rgba(229, 57, 53, 0.2)", boxShadow: "0 20px 40px rgba(229, 57, 53, 0.05)" }}>
+              <Users size={50} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "25px" }}>Core CSR Objectives</h3>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {[
@@ -76,7 +76,7 @@ export default function SocialResponsibility() {
                   "Strict community liaison protocols to address public grievances rapidly."
                 ].map((item, idx) => (
                   <li key={idx} style={{ display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "15px", paddingBottom: "15px", borderBottom: idx !== 4 ? "1px solid var(--border-soft)" : "none" }}>
-                    <CheckCircle2 size={22} color="#e11d48" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <CheckCircle2 size={22} color="var(--primary-red)" style={{ flexShrink: 0, marginTop: "2px" }} />
                     <span style={{ color: "var(--text-dark)", fontSize: "1.05rem", fontWeight: 500, lineHeight: 1.5 }}>{item}</span>
                   </li>
                 ))}
@@ -98,7 +98,7 @@ export default function SocialResponsibility() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "30px" }}>
             
             <div className="glass-panel hover-lift" style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)" }}>
-              <MapPin size={40} color="#e11d48" style={{ marginBottom: "20px" }} />
+              <MapPin size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Rural Connectivity</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
                 Through projects like the iRoad program and rural bridge reconstructions, we directly stimulate local agrarian economies by drastically cutting transport times for farmers reaching urban markets.
@@ -106,7 +106,7 @@ export default function SocialResponsibility() {
             </div>
 
             <div className="glass-panel hover-lift" style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)" }}>
-              <BookOpen size={40} color="#e11d48" style={{ marginBottom: "20px" }} />
+              <BookOpen size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Education & Youth</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
                 We actively hire youth from regions adjacent to our major sites (like the Central Expressway or Northern Railway), providing them with invaluable hands-on technical training and long-term career paths in civil engineering.
@@ -114,7 +114,7 @@ export default function SocialResponsibility() {
             </div>
 
             <div className="glass-panel hover-lift" style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)" }}>
-              <Building2 size={40} color="#e11d48" style={{ marginBottom: "20px" }} />
+              <Building2 size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Minimizing Disruption</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
                 During urban water supply works or high-traffic road rehabilitation, we employ rigorous traffic management and night-time operation schedules to ensure the daily lives of citizens are not heavily hindered by our operations.

@@ -19,36 +19,36 @@ export default function SustainabilityHub() {
       id: "environmental",
       title: "Environmental Stewardship",
       desc: "Strict adherence to ISO 14001:2015. Optimizing our machinery fleet, reducing emissions, and protecting ecological balance on every site.",
-      icon: <Leaf size={40} color="#16a34a" />,
+      icon: <Leaf size={40} color="var(--primary-red)" />,
       link: "/sustainability/environmental-stewardship",
-      color: "#16a34a",
+      color: "var(--primary-red)",
       bgImage: "/images/thudugala-crusher-plant.jpg"
     },
     {
       id: "health-safety",
       title: "Health & Safety",
       desc: "Our unwavering 'Zero Harm' policy backed by ISO 45001:2018. Guaranteeing the physical security of our entire workforce.",
-      icon: <ShieldCheck size={40} color="#ea580c" />,
+      icon: <ShieldCheck size={40} color="var(--primary-red)" />,
       link: "/sustainability/health-and-safety",
-      color: "#ea580c",
+      color: "var(--primary-red)",
       bgImage: "/images/health-safety-site.jpg"
     },
     {
       id: "quality",
       title: "Quality Management",
       desc: "Engineering excellence certified by ISO 9001:2015 and CIDA CS-2. Delivering structural integrity that lasts generations.",
-      icon: <Award size={40} color="#2563eb" />,
+      icon: <Award size={40} color="var(--primary-red)" />,
       link: "/sustainability/quality-management",
-      color: "#2563eb",
+      color: "var(--primary-red)",
       bgImage: "/images/hero-bg-2.jpg"
     },
     {
       id: "social",
       title: "Social Responsibility",
       desc: "Uplifting rural economies, providing vocational training, and building infrastructure that truly empowers local communities.",
-      icon: <Users size={40} color="#e11d48" />,
+      icon: <Users size={40} color="var(--primary-red)" />,
       link: "/sustainability/social-responsibility",
-      color: "#e11d48",
+      color: "var(--primary-red)",
       bgImage: "/images/about_section.jpg"
     }
   ];
