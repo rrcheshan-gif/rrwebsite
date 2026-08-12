@@ -1,0 +1,10 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "RR", "rrconstruction", "CIDA", "ICTAD", "NBRO", "RDA", "NWSDB", "CECB", "UDA", "CEB", "MAGA", "msand", "geotechnical", "MIEDSL", "MNFET",
+    "Thudugala", "Veerapuram", "Omanthai", "Yakawewa", "Kalutara", "Mannar", "Medawachchiya", "Vavuniya", "Thudarikkulam", "Negombo", "Kalmadu", "Gandara", "Padiyathalawa", "Maho", "Anuradhapura", "Kurunegala", "Kandy", "Colombo", "Matara", "Galle", "Trincomalee", "Batticaloa", "Jaffna", "Kilinochchi", "Mullaitivu", "Polonnaruwa", "Ampara", "Monaragala", "Badulla", "Nuwara", "Eliya", "Kegalle", "Ratnapura", "Gampaha", "Puttalam", "Hambantota", "Matale", "Dambulla", "Sigiriya", "Welimada", "Malabe",
+    "Ranjith", "Senadeera", "Ajith", "Priyantha", "Galahitiyawa", "Gamage", "organisation"
+  ],
+  "ignorePaths": ["node_modules/**", ".next/**", "public/**", "src/app/projects/data.js"]
+}
