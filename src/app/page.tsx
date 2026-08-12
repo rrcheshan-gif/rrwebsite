@@ -550,6 +550,12 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          <div style={{ textAlign: "center", marginTop: "50px" }}>
+            <Link href="/news" className="btn btn-primary hover-glow" style={{ padding: "18px 40px", fontSize: "1.05rem", display: "inline-flex", alignItems: "center", gap: "10px", borderRadius: "30px" }}>
+              View All News & Updates <ArrowRight size={20} />
+            </Link>
+          </div>
         </div>
       </section>
 

@@ -102,6 +102,7 @@ export default function Navbar() {
               <li><Link href="/quarries-aggregates" onClick={() => setMobileMenuOpen(false)}>Quarries & Aggregates</Link></li>
               <li><Link href="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link></li>
               <li><Link href="/sustainability" onClick={() => setMobileMenuOpen(false)}>Sustainability</Link></li>
+              <li><Link href="/news" onClick={() => setMobileMenuOpen(false)}>News & Updates</Link></li>
               
               <li className="nav-extra-actions">
                 <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
