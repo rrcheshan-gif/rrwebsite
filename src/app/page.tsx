@@ -87,9 +87,6 @@ export default function Home() {
     <>
       {/* FULLSCREEN HERO SECTION */}
       <section className="hero-fullscreen" style={{ position: 'relative', height: '100vh', minHeight: '600px', overflow: 'hidden' }}>
-        <h1 style={{ position: "absolute", width: "1px", height: "1px", padding: 0, margin: "-1px", overflow: "hidden", clip: "rect(0, 0, 0, 0)", whiteSpace: "nowrap", border: 0 }}>
-          RR Construction (Pvt) Ltd - Construction & Civil Engineering Company in Sri Lanka
-        </h1>
         {/* Background Slider */}
         {slides.map((slide, index) => (
           <div 
@@ -340,17 +337,17 @@ export default function Home() {
               <p style={{ color: "var(--text-dark)", margin: "4px 0 0 0", fontSize: "0.75rem", lineHeight: 1.3, fontWeight: 600 }}>Solid Foundation & Strong Financial Backing</p>
             </div>
           </div>
-          <div style={{ flex: 1, minWidth: 'min(100%, 350px)' }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "30px" }}>
-              <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Corporate Profile</h4>
-            </div>
-            
-            <h2 style={{ fontSize: "3.5rem", lineHeight: 1.1, marginBottom: "35px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>BUILDING THE FUTURE<br/><span className="text-gradient" style={{ fontWeight: 500 }}>OF SRI LANKA</span></h2>
-            
-            <p style={{ fontSize: "1.25rem", color: "var(--text-dark)", marginBottom: "30px", fontWeight: 600, lineHeight: 1.7, borderLeft: "4px solid var(--primary-red)", paddingLeft: "20px" }}>We measure success the way our clients do: the right quality, delivered on schedule, at a fair cost.</p>
-            
-            <p style={{ color: "var(--text-light)", marginBottom: "45px", lineHeight: 1.9, fontSize: "1.05rem" }}>With massive financial backing and a self-owned fleet of 1,000+ machines, we don't wait on hired equipment or third-party schedules. From expressways to harbour works, we bring the full strength of our resources to every site — so Sri Lanka's infrastructure keeps pace with its ambitions.</p>
+          <div style={{ textAlign: "left", flex: 1, paddingRight: "50px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
+                  <div style={{ width: "40px", height: "4px", background: "var(--primary-red)" }}></div>
+                  <h2 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Corporate Profile</h2>
+                </div>
+                
+                <h1 style={{ fontSize: "clamp(2.5rem, 4vw, 3.5rem)", lineHeight: 1.1, marginBottom: "35px", color: "var(--text-dark)", fontFamily: "var(--font-heading)", textTransform: "uppercase" }}>RR CONSTRUCTION (PVT) LTD<br/><span className="text-gradient" style={{ fontWeight: 500, fontSize: "0.65em", letterSpacing: "1px", display: "block", marginTop: "10px" }}>CONSTRUCTION & CIVIL ENGINEERING IN SRI LANKA</span></h1>
+                
+                <p style={{ fontSize: "1.25rem", color: "var(--text-dark)", marginBottom: "30px", fontWeight: 600, lineHeight: 1.7, borderLeft: "4px solid var(--primary-red)", paddingLeft: "20px" }}>We measure success the way our clients do: the right quality, delivered on schedule, at a fair cost.</p>
+                
+                <p style={{ color: "var(--text-light)", marginBottom: "45px", lineHeight: 1.9, fontSize: "1.05rem" }}>With massive financial backing and a self-owned fleet of 1,000+ heavy construction machines, we don't wait on hired equipment or third-party schedules. From expressways and road rehabilitation to bridge construction, harbour works, and landslide mitigation, we bring the full strength of our civil engineering resources to every site — so Sri Lanka's infrastructure keeps pace with its ambitions.</p>
             
             <Link href="/about" className="btn btn-primary hover-glow" style={{ padding: "18px 40px", fontSize: "1rem" }}>Discover Our Legacy</Link>
           </div>
