@@ -13,14 +13,67 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "RR Construction (Pvt) Ltd - Engineering The Nation's Infrastructure",
-  description: "A leading civil engineering enterprise building Sri Lanka's roads, bridges, harbours, and water infrastructure since 1995. Engineering that stands the test of time.",
+  metadataBase: new URL('https://rrwebsite-xi.vercel.app'),
+  title: {
+    template: "%s | RR Construction (Pvt) Ltd",
+    default: "RR Construction (Pvt) Ltd | Leading Construction & Civil Engineering Company in Sri Lanka",
+  },
+  description: "RR Construction (Pvt) Ltd is a leading Sri Lankan construction and civil engineering company specializing in road construction, highways, bridges, infrastructure, harbour construction, geotechnical engineering, and sustainable construction solutions.",
+  keywords: ["RR Construction", "RR Construction Sri Lanka", "Construction Company in Sri Lanka", "Civil Engineering Company in Sri Lanka", "Civil Construction Company Sri Lanka", "Construction Contractor Sri Lanka", "Engineering Construction Company Sri Lanka"],
+  openGraph: {
+    title: "RR Construction (Pvt) Ltd | Leading Construction & Civil Engineering Company in Sri Lanka",
+    description: "RR Construction (Pvt) Ltd is a leading Sri Lankan construction and civil engineering company specializing in road construction, highways, bridges, infrastructure, harbour construction, geotechnical engineering, and sustainable construction solutions.",
+    url: 'https://rrwebsite-xi.vercel.app',
+    siteName: 'RR Construction (Pvt) Ltd',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'RR Construction (Pvt) Ltd Sri Lanka',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "RR Construction (Pvt) Ltd | Leading Construction & Civil Engineering Company in Sri Lanka",
+    description: "RR Construction (Pvt) Ltd is a leading Sri Lankan construction and civil engineering company specializing in road construction, highways, bridges, infrastructure, harbour construction, geotechnical engineering, and sustainable construction solutions.",
+    images: ['/images/og-image.jpg'],
+  },
+  alternates: {
+    canonical: 'https://rrwebsite-xi.vercel.app',
+  },
 };
 
 export const viewport: Viewport = {
   themeColor: "#e53935",
   width: "device-width",
   initialScale: 1,
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RR Construction (Pvt) Ltd",
+  "url": "https://rrwebsite-xi.vercel.app",
+  "logo": "https://rrwebsite-xi.vercel.app/images/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+94-11-2433427",
+    "contactType": "customer service",
+    "areaServed": "LK",
+    "availableLanguage": ["English", "Sinhala", "Tamil"]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 77, K.C. De Silva Puragama",
+    "addressLocality": "Peliyagoda",
+    "addressRegion": "Western Province",
+    "postalCode": "11830",
+    "addressCountry": "LK"
+  }
 };
 
 import Navbar from "./components/Navbar";
@@ -42,6 +95,10 @@ export default function RootLayout({
         <meta name="theme-color" content="#e53935" />
         <meta name="msapplication-navbutton-color" content="#e53935" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body>
         <ThemeProvider>

@@ -87,6 +87,9 @@ export default function Home() {
     <>
       {/* FULLSCREEN HERO SECTION */}
       <section className="hero-fullscreen" style={{ position: 'relative', height: '100vh', minHeight: '600px', overflow: 'hidden' }}>
+        <h1 style={{ position: "absolute", width: "1px", height: "1px", padding: 0, margin: "-1px", overflow: "hidden", clip: "rect(0, 0, 0, 0)", whiteSpace: "nowrap", border: 0 }}>
+          RR Construction (Pvt) Ltd - Construction & Civil Engineering Company in Sri Lanka
+        </h1>
         {/* Background Slider */}
         {slides.map((slide, index) => (
           <div 
@@ -234,11 +237,11 @@ export default function Home() {
                     </div>
                   </div>
                 )}
-                <h1 style={{ fontFamily: "var(--font-heading)", color: "#ffffff", fontSize: "clamp(2.5rem, 5vw + 1rem, 4.5rem)", lineHeight: 1.1, marginBottom: "clamp(10px, 2vh, 20px)", textTransform: "uppercase", WebkitTextStroke: "0.5px rgba(0,0,0,0.8)", textShadow: "2px 2px 0px rgba(0,0,0,1), 0 8px 30px rgba(0, 0, 0, 1), 0 4px 15px rgba(0, 0, 0, 0.9)", textAlign: "center" }}>
+                <h2 style={{ fontFamily: "var(--font-heading)", color: "#ffffff", fontSize: "clamp(2.5rem, 5vw + 1rem, 4.5rem)", lineHeight: 1.1, marginBottom: "clamp(10px, 2vh, 20px)", textTransform: "uppercase", WebkitTextStroke: "0.5px rgba(0,0,0,0.8)", textShadow: "2px 2px 0px rgba(0,0,0,1), 0 8px 30px rgba(0, 0, 0, 1), 0 4px 15px rgba(0, 0, 0, 0.9)", textAlign: "center" }}>
                   {slide.heading1}<br/>
                   <span style={{ color: "#ff4d4d", WebkitTextStroke: "0.5px rgba(0,0,0,0.8)", textShadow: "2px 2px 0px rgba(0,0,0,1), 0 8px 30px rgba(0, 0, 0, 1)" }}>{slide.heading2}</span>
                   {slide.heading3 && <><br/>{slide.heading3}</>}
-                </h1>
+                </h2>
                 <p style={{ fontSize: "clamp(1.05rem, 2vw, 1.3rem)", lineHeight: 1.8, marginBottom: "clamp(15px, 3vh, 30px)", color: "#ffffff", maxWidth: "780px", margin: "0 auto clamp(15px, 3vh, 30px)", fontWeight: 500, textShadow: "1px 1px 3px rgba(0,0,0,1), 0 4px 20px rgba(0,0,0,0.95)", textAlign: "center" }}>
                   {slide.desc}
                 </p>
@@ -304,16 +307,16 @@ export default function Home() {
             {/* 4-Picture Project Collage */}
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", padding: "12px", background: "var(--white)", borderRadius: "32px", boxShadow: "0 25px 60px rgba(0,0,0,0.08)", position: "relative", zIndex: 2 }}>
               <div style={{ height: "200px", borderRadius: "20px", overflow: "hidden" }}>
-                <img src="/images/home/IMG_3025.jpg" alt="Road Construction - Tea Plantation" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                <img src="/images/home/IMG_3025.jpg" alt="RR Construction Road Construction Project Sri Lanka - Tea Plantation" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
               <div style={{ height: "200px", borderRadius: "20px", overflow: "hidden" }}>
-                <img src="/images/home/WhatsApp Image 2026-07-18 at 10.24.03.jpeg" alt="Road Rehabilitation - CAT Machine" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                <img src="/images/home/WhatsApp Image 2026-07-18 at 10.24.03.jpeg" alt="RR Construction Road Rehabilitation and Highway Construction - CAT Machine" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
               <div style={{ height: "200px", borderRadius: "20px", overflow: "hidden" }}>
-                <img src="/images/kandy-landslide/kandy-5.jpg" alt="Landslide Mitigation - Geotechnical Wall" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                <img src="/images/kandy-landslide/kandy-5.jpg" alt="RR Construction Landslide Mitigation and Geotechnical Engineering - Retaining Wall" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
               <div style={{ height: "200px", borderRadius: "20px", overflow: "hidden" }}>
-                <img src="/images/home/WhatsApp Image 2026-07-24 at 23.23.33.jpeg" alt="Irrigation Construction - Excavator" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                <img src="/images/home/WhatsApp Image 2026-07-24 at 23.23.33.jpeg" alt="RR Construction Irrigation and Water Infrastructure Construction - Excavator" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
             </div>
             

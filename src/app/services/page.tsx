@@ -294,6 +294,12 @@ export default function Services() {
                 }}>
                   {svc.desc}
                 </p>
+                
+                <div style={{ marginTop: "25px", display: "flex", justifyContent: "flex-end", flex: 1, alignItems: "flex-end" }}>
+                  <Link href="/projects" style={{ color: "var(--primary-red)", fontWeight: 700, textDecoration: "none", fontSize: "0.95rem", display: "inline-flex", alignItems: "center", gap: "5px" }}>
+                    View {svc.title} Projects <span style={{ fontSize: "1.2rem" }}>&rarr;</span>
+                  </Link>
+                </div>
               </div>
             ))}
           </div>

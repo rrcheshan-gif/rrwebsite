@@ -118,7 +118,7 @@ export default function OngoingProjects() {
                     {(project.heroImage || project.images?.[0]) ? (
                       <img 
                         src={`/${project.heroImage || project.images?.[0]}`} 
-                        alt={project.title} 
+                        alt={`${project.title} - RR Construction Sri Lanka`} 
                         className="img-polished img-hover-zoom" 
                         style={{ width: "100%", height: "100%", objectFit: "cover" }} 
                         onError={(e) => {
