@@ -547,7 +547,8 @@ const projectsData = [
     galleryImages: [ 'images/maritime-harbour-site.jpg', 'images/gandara/gandara-1.jpg', 'images/gandara/gandara-2.jpg', 'images/gandara/gandara-3.jpg', 'images/gandara/gandara-4.jpg', 'images/gandara/gandara-5.jpg', 'images/gandara/gandara-6.jpg', 'images/gandara/gandara-7.jpg', 'images/gandara/gandara-8.jpg', 'images/gandara/gandara-9.jpg', 'images/gandara/gandara-10.jpg', 'images/gandara/gandara-11.jpg', 'images/gandara/gandara-12.jpg', 'images/gandara/gandara-13.jpg', 'images/gandara/gandara-14.jpg', 'images/gandara/gandara-15.jpg', 'images/gandara/gandara-16.jpg', 'images/gandara/gandara-17.jpg', 'images/gandara/gandara-18.jpg', 'images/gandara/gandara-19.jpg', 'images/gandara/gandara-20.jpg', 'images/gandara/gandara-21.jpg', 'images/gandara/gandara-22.jpg', 'images/gandara/gandara-23.jpg', 'images/gandara/gandara-24.jpg', 'images/gandara/gandara-25.jpg', 'images/gandara/gandara-26.jpg', 'images/gandara/gandara-27.jpg', 'images/gandara/gandara-28.jpg', 'images/gandara/gandara-29.jpg', 'images/gandara/gandara-30.jpg', 'images/gandara/gandara-31.jpg', 'images/gandara/gandara-32.jpg', 'images/gandara/gandara-33.jpg', 'images/gandara/gandara-34.jpg', 'images/gandara/gandara-35.jpg', 'images/gandara/gandara-36.jpg', 'images/gandara/gandara-37.jpg', 'images/gandara/gandara-38.jpg', 'images/gandara/gandara-39.jpg', 'images/gandara/gandara-40.jpg', 'images/gandara/gandara-41.jpg', 'images/gandara/gandara-42.jpg' ],
     status: "Completed",
     client: "Ministry of Fisheries",
-    
+    contractNo: "MFARD/PIMU/2019/CAPC/003",
+    value: "LKR 5,367,689,206.70",
     duration: "36 Months",
     year: 2025
   },

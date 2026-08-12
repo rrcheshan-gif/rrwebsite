@@ -246,6 +246,19 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
                   <p style={{ color: 'var(--text-dark)', fontSize: '1.1rem', fontWeight: 'bold' }}>{project.client}</p>
                 </div>
                 
+                {project.contractNo && (
+                  <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
+                    <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '5px', letterSpacing: '1px' }}>Contract No</h4>
+                    <p style={{ color: 'var(--text-dark)', fontSize: '1.1rem', fontWeight: 'bold' }}>{project.contractNo}</p>
+                  </div>
+                )}
+                
+                {project.value && (
+                  <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
+                    <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '5px', letterSpacing: '1px' }}>Contract Value</h4>
+                    <p style={{ color: 'var(--text-dark)', fontSize: '1.1rem', fontWeight: 'bold' }}>{project.value}</p>
+                  </div>
+                )}
                 
                 <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
                   <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '5px', letterSpacing: '1px' }}>Duration</h4>
