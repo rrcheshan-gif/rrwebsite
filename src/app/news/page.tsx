@@ -156,73 +156,7 @@ export default function News() {
         </div>
       </section>
 
-      {/* Latest News Grid */}
-      <section style={{ padding: isMobile ? "20px 10px 80px" : "20px 20px 100px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
-          
-          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "30px" }}>
-            <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
-            <h2 style={{ color: "var(--text-dark)", fontWeight: 800, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "1.2rem", fontFamily: "var(--font-heading)" }}>Recent Updates</h2>
-          </div>
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "30px" }}>
-            {regularNews.map((news) => (
-              <div 
-                key={news.id} 
-                style={{ 
-                  background: "var(--white)", 
-                  borderRadius: "24px", 
-                  overflow: "hidden", 
-                  border: "1px solid var(--border-soft)", 
-                  cursor: "pointer", 
-                  transition: "transform 0.4s ease, box-shadow 0.4s ease",
-                  display: "flex",
-                  flexDirection: "column"
-                }} 
-                className="news-card glass-panel hover-lift" 
-                onMouseOver={(e) => { e.currentTarget.style.transform = "translateY(-10px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.08)" }} 
-                onMouseOut={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none" }}
-              >
-                <div style={{ height: "240px", overflow: "hidden", position: "relative" }}>
-                  <img 
-                    src={news.img} 
-                    alt={news.title} 
-                    className="img-polished img-hover-zoom" 
-                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: news.crop === 'top' ? 'top center' : 'center', transition: "transform 0.5s ease" }} 
-                    onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'} 
-                    onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'} 
-                  />
-                  <div style={{ position: "absolute", top: "15px", left: "15px", background: "rgba(255, 255, 255, 0.9)", backdropFilter: "blur(5px)", color: "var(--primary-red)", padding: "4px 12px", borderRadius: "20px", fontSize: "0.75rem", fontWeight: 800, letterSpacing: "1px", textTransform: "uppercase" }}>
-                    {news.tag}
-                  </div>
-                </div>
-                <div style={{ padding: "30px", flex: 1, display: "flex", flexDirection: "column" }}>
-                  <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", margin: "0 0 15px", fontFamily: "var(--font-heading)", lineHeight: 1.4, fontWeight: 800 }}>
-                    {news.title}
-                  </h3>
-                  <p style={{ color: "var(--text-light)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "25px", flex: 1 }}>
-                    {news.desc}
-                  </p>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px solid var(--border-soft)", paddingTop: "20px" }}>
-                    <span style={{ color: "var(--text-light)", fontSize: "0.85rem", fontWeight: 600, display: "flex", alignItems: "center", gap: "6px" }}>
-                      <Clock size={14} color="var(--primary-red)" /> {news.date}
-                    </span>
-                    <ArrowRight size={18} color="var(--text-light)" />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          <div style={{ textAlign: "center", marginTop: "60px" }}>
-            <button className="btn btn-outline" style={{ padding: "15px 40px", fontSize: "1rem", borderRadius: "30px", fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase" }}>
-              Load More News
-            </button>
-          </div>
-
-        </div>
-      </section>
-
+      {/* Latest News Grid Removed */}
       <style jsx global>{`
         .hover-lift {
           transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
