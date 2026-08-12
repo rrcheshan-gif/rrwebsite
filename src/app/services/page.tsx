@@ -15,23 +15,7 @@ export default function Services() {
 
   const services = [
     {
-      icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
-          <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
-          <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
-          <path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/>
-        </svg>
-      ),
-      iconBg: 'rgba(229,57,53,0.08)',
-      iconBorder: 'none',
-      cardBg: 'var(--white)',
-      titleColor: 'var(--text-dark)',
-      textColor: 'var(--text-light)',
-      title: 'Buildings & Structures',
-      desc: 'Multi-storied buildings, water retaining structures, water towers, and heavy steel fabrication raised with absolute precision.',
-    },
-    {
+      slug: 'road-highway-construction',
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
@@ -44,10 +28,11 @@ export default function Services() {
       cardBg: 'var(--white)',
       titleColor: 'var(--text-dark)',
       textColor: 'var(--text-light)',
-      title: 'Roads & Highways',
-      desc: 'Rehabilitating rural road networks and constructing major national expressways using state-of-the-art asphalt paving.',
+      title: 'Road & Highway Construction',
+      desc: 'Expertise in national highway construction, asphalt paving, and rural road rehabilitation.',
     },
     {
+      slug: 'bridge-construction',
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
@@ -59,10 +44,11 @@ export default function Services() {
       cardBg: 'var(--white)',
       titleColor: 'var(--text-dark)',
       textColor: 'var(--text-light)',
-      title: 'Bridges',
+      title: 'Bridge Construction',
       desc: 'High-strength river crossings, complex overpasses, flyovers, and steel superstructures built to outlast generations.',
     },
     {
+      slug: 'water-supply-drainage',
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/>
@@ -77,10 +63,10 @@ export default function Services() {
       desc: 'Extensive pipe networks, high-output treatment plants, and water storage towers delivering clean water securely.',
     },
     {
+      slug: 'irrigation-drainage',
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M2 6c.6 0 1.2-.2 1.7-.6.9-.6 2.5-.6 3.5 0 .5.4 1.1.6 1.7.6s1.2-.2 1.7-.6c.9-.6 2.5-.6 3.5 0 .5.4 1.1.6 1.7.6s1.2-.2 1.7-.6c.9-.6 2.5-.6 3.5 0 .5.4 1.1.6 1.7.6.6 0 1.2-.2 1.7-.6.9-.6 2.5-.6 3.5 0 .5.4 1.1.6 1.7.6"/>
-          <path d="M2 12c.6 0 1.2-.2 1.7-.6.9-.6 2.5-.6 3.5 0 .5.4 1.1.6 1.7.6s1.2-.2 1.7-.6c.9-.6 2.5-.6 3.5 0 .5.4 1.1.6 1.7.6s1.2-.2 1.7-.6c.9-.6 2.5-.6 3.5 0 .5.4 1.1.6 1.7.6.6 0 1.2-.2 1.7-.6.9-.6 2.5-.6 3.5 0 .5.4 1.1.6 1.7.6"/><path d="M2 18c.6 0 1.2-.2 1.7-.6.9-.6 2.5-.6 3.5 0 .5.4 1.1.6 1.7.6s1.2-.2 1.7-.6c.9-.6 2.5-.6 3.5 0 .5.4 1.1.6 1.7.6s1.2-.2 1.7-.6c.9-.6 2.5-.6 3.5 0 .5.4 1.1.6 1.7.6.6 0 1.2-.2 1.7-.6.9-.6 2.5-.6 3.5 0 .5.4 1.1.6 1.7.6"/>
         </svg>
       ),
       iconBg: 'rgba(229,57,53,0.1)',
@@ -88,10 +74,11 @@ export default function Services() {
       cardBg: 'var(--white)',
       titleColor: 'var(--text-dark)',
       textColor: 'var(--text-light)',
-      title: 'Irrigation & Canals',
+      title: 'Irrigation & Drainage',
       desc: 'Large-scale agricultural irrigation schemes, distribution canals, and flood prevention dams.',
     },
     {
+      slug: 'maritime-construction',
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 22V8"/>
@@ -102,12 +89,61 @@ export default function Services() {
       iconBg: 'rgba(229,57,53,0.08)',
       iconBorder: 'none',
       cardBg: 'linear-gradient(135deg, #1f2937, #111827)',
-      titleColor: 'var(--text-dark)',
-      textColor: 'var(--text-light)',
-      title: 'Maritime & Dredging',
-      desc: 'Fishery harbours, commercial breakwaters, coastal erosion stabilization, and marine dredging.',
+      titleColor: 'white',
+      textColor: '#cbd5e1',
+      title: 'Maritime Construction',
+      desc: 'Fishery harbours, commercial breakwaters, and marine infrastructure development.',
     },
     {
+      slug: 'dredging-reclamation',
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 22V8"/>
+          <path d="M5 12H2a10 10 0 0 0 20 0h-3"/>
+        </svg>
+      ),
+      iconBg: 'rgba(229,57,53,0.1)',
+      iconBorder: 'none',
+      cardBg: 'var(--white)',
+      titleColor: 'var(--text-dark)',
+      textColor: 'var(--text-light)',
+      title: 'Dredging & Reclamation',
+      desc: 'Deep-water dredging, land reclamation, and coastal civil works.',
+    },
+    {
+      slug: 'buildings-structures',
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+          <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+          <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+        </svg>
+      ),
+      iconBg: 'rgba(229,57,53,0.08)',
+      iconBorder: 'none',
+      cardBg: 'var(--white)',
+      titleColor: 'var(--text-dark)',
+      textColor: 'var(--text-light)',
+      title: 'Buildings & Structures',
+      desc: 'Multi-storied buildings, water retaining structures, water towers, and heavy steel fabrication.',
+    },
+    {
+      slug: 'railway-civil-works',
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M4 11h16M4 15h16M5 7h14M5 19h14"/>
+        </svg>
+      ),
+      iconBg: 'rgba(229,57,53,0.1)',
+      iconBorder: 'none',
+      cardBg: 'var(--white)',
+      titleColor: 'var(--text-dark)',
+      textColor: 'var(--text-light)',
+      title: 'Railway Civil Works',
+      desc: 'Formation, civil works, and ancillary works in connection with railway line up-gradation.',
+    },
+    {
+      slug: 'disaster-mitigation',
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
@@ -120,8 +156,8 @@ export default function Services() {
       cardBg: 'var(--white)',
       titleColor: 'var(--text-dark)',
       textColor: 'var(--text-light)',
-      title: 'Disaster Mitigation & Civil Works',
-      desc: 'Landslide vulnerability reduction, unstable slope rectification, road disaster countermeasures, and general civil works.',
+      title: 'Disaster Mitigation',
+      desc: 'Landslide vulnerability reduction, unstable slope rectification, and road disaster countermeasures.',
     },
   ];
 
@@ -296,8 +332,8 @@ export default function Services() {
                 </p>
                 
                 <div style={{ marginTop: "25px", display: "flex", justifyContent: "flex-end", flex: 1, alignItems: "flex-end" }}>
-                  <Link href="/projects" style={{ color: "var(--primary-red)", fontWeight: 700, textDecoration: "none", fontSize: "0.95rem", display: "inline-flex", alignItems: "center", gap: "5px" }}>
-                    View {svc.title} Projects <span style={{ fontSize: "1.2rem" }}>&rarr;</span>
+                  <Link href={`/services/${svc.slug}`} style={{ color: svc.cardBg === 'var(--white)' ? "var(--primary-red)" : "white", fontWeight: 700, textDecoration: "none", fontSize: "0.95rem", display: "inline-flex", alignItems: "center", gap: "5px" }}>
+                    View Details <span style={{ fontSize: "1.2rem" }}>&rarr;</span>
                   </Link>
                 </div>
               </div>

@@ -60,13 +60,14 @@ export default function Navbar() {
                   </button>
                 </div>
                 <ul className="dropdown-menu">
-                  <li><Link href="/about" onClick={() => setMobileMenuOpen(false)}>Our Story</Link></li>
-                  <li><Link href="/about/key-data" onClick={() => setMobileMenuOpen(false)}>Key Data</Link></li>
+                  <li><Link href="/about/company-overview" onClick={() => setMobileMenuOpen(false)}>Company Overview</Link></li>
+                  <li><Link href="/about/history" onClick={() => setMobileMenuOpen(false)}>History & Milestones</Link></li>
+                  <li><Link href="/about/leadership" onClick={() => setMobileMenuOpen(false)}>Board of Directors</Link></li>
                   <li><Link href="/about/vision-mission" onClick={() => setMobileMenuOpen(false)}>Vision & Mission</Link></li>
                   <li><Link href="/about/core-values" onClick={() => setMobileMenuOpen(false)}>Core Values</Link></li>
                   <li><Link href="/about/key-policies" onClick={() => setMobileMenuOpen(false)}>Key Policies</Link></li>
-                  <li><Link href="/about/goals-targets" onClick={() => setMobileMenuOpen(false)}>Goals & Targets</Link></li>
-                  <li><Link href="/about/history" onClick={() => setMobileMenuOpen(false)}>Company History & Timeline</Link></li>
+                  <li><Link href="/about/cida-registration" onClick={() => setMobileMenuOpen(false)}>CIDA Registration</Link></li>
+
                   <li><Link href="/awards" onClick={() => setMobileMenuOpen(false)}>Awards & Achievements</Link></li>
                 </ul>
               </li>
@@ -101,7 +102,20 @@ export default function Navbar() {
               
               <li><Link href="/quarries-aggregates" onClick={() => setMobileMenuOpen(false)}>Quarries & Aggregates</Link></li>
               <li><Link href="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link></li>
-              <li><Link href="/sustainability" onClick={() => setMobileMenuOpen(false)}>Sustainability</Link></li>
+              <li className={`dropdown ${activeDropdown === 'sustainability' ? 'open' : ''}`}>
+                <div className="dropdown-header">
+                  <Link href="/sustainability" onClick={() => setMobileMenuOpen(false)}>Sustainability</Link>
+                  <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('sustainability', e)} aria-label="Toggle Sustainability Submenu">
+                    <ChevronDown size={14} />
+                  </button>
+                </div>
+                <ul className="dropdown-menu">
+                  <li><Link href="/sustainability/environmental-stewardship" onClick={() => setMobileMenuOpen(false)}>Environmental Stewardship</Link></li>
+                  <li><Link href="/sustainability/health-and-safety" onClick={() => setMobileMenuOpen(false)}>Health & Safety (HSE)</Link></li>
+                  <li><Link href="/sustainability/quality-management" onClick={() => setMobileMenuOpen(false)}>Quality Management</Link></li>
+                  <li><Link href="/sustainability/social-responsibility" onClick={() => setMobileMenuOpen(false)}>Social Responsibility</Link></li>
+                </ul>
+              </li>
               <li><Link href="/news" onClick={() => setMobileMenuOpen(false)}>News & Updates</Link></li>
               
               <li className="nav-extra-actions">

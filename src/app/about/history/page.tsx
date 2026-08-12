@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight, Flag, Construction, ShieldCheck, Map, Factory, Globe } from 'lucide-react';
+import { COMPANY_DATA } from '@/data/company-data';
 
 export default function HistoryTimeline() {
   const [isMobile, setIsMobile] = useState(false);
@@ -16,45 +17,33 @@ export default function HistoryTimeline() {
 
   const timelineEvents = [
     {
-      epoch: "1995",
-      title: "Company Established",
-      desc: "RR Construction (Pvt) Ltd was founded with a vision to contribute to Sri Lanka's socio-economic development through dependable engineering.",
+      epoch: COMPANY_DATA.established.toString(),
+      title: "Foundation & First Projects",
+      desc: `${COMPANY_DATA.name} was founded. The company commenced operations through civil construction work undertaken with ED Zublin AG on the Central Bank extension project.`,
       icon: <Flag size={24} color="white" />
     },
     {
       epoch: "Early Development",
-      title: "Regional Contracting",
-      desc: "Began building a reputation for reliability in early regional infrastructure projects, establishing the foundation of our engineering workforce.",
+      title: "Building Experience",
+      desc: "Developed experience through initial infrastructure projects for local and international clients, establishing the core engineering workforce.",
       icon: <Map size={24} color="white" />
     },
     {
-      epoch: "Expansion of Capabilities",
-      title: "Growth in Infrastructure",
-      desc: "Expanded operations into large-scale road construction, rural rehabilitation, and structural engineering projects across multiple provinces.",
+      epoch: "Expansion Phase",
+      title: "Construction Capabilities Growth",
+      desc: "Expanded scope to include earthworks, structural concrete, buildings, roads, highways, bridges, irrigation, drainage, and water supply systems.",
       icon: <Construction size={24} color="white" />
     },
     {
-      epoch: "Investment in Heavy Equipment",
-      title: "Scaling Internal Resources",
-      desc: "Began aggressive investment in a self-owned heavy machinery fleet and aggregate production facilities, minimizing reliance on third-party suppliers.",
+      epoch: "Sector Development",
+      title: "Infrastructure Specialist",
+      desc: "Evolved into an infrastructure specialist handling heavy steel fabrication, maritime construction, dredging, reclamation, and mechanical maintenance.",
       icon: <Factory size={24} color="white" />
     },
     {
-      epoch: "Strengthening Systems",
-      title: "International Certifications",
-      desc: "Formalized our commitment to quality, environment, and safety by securing ISO 9001, ISO 14001, and ISO 45001 management standard certifications.",
-      icon: <ShieldCheck size={24} color="white" />
-    },
-    {
-      epoch: "2020s - Building Greater Capacity",
-      title: "Specialized Construction",
-      desc: "Successfully executed highly complex maritime, dredging, and geotechnical engineering projects, cementing our status as a comprehensive civil engineering organization.",
-      icon: <Globe size={24} color="white" />
-    },
-    {
       epoch: "Present",
-      title: "Engineering Sri Lanka's Tomorrow",
-      desc: "Today, with over 1,800 employees and 100+ completed projects, we continue to engineer the critical infrastructure that drives national progress.",
+      title: "Current Capability",
+      desc: `Today, with a massive self-owned fleet of ${COMPANY_DATA.machineryFleet} heavy machines and ${COMPANY_DATA.workforce} workforce, we operate as a leading civil engineering firm.`,
       icon: <ArrowRight size={24} color="white" />
     }
   ];
@@ -100,7 +89,7 @@ export default function HistoryTimeline() {
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0 }}>Our Timeline</h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "15px", maxWidth: "800px", margin: "15px auto 0" }}>
-              From a regional contractor in 1995 to a national civil engineering powerhouse today.
+              From a regional contractor in {COMPANY_DATA.established} to a national civil engineering powerhouse today.
             </p>
           </div>
 
@@ -184,7 +173,7 @@ export default function HistoryTimeline() {
             Decades of experience has resulted in widespread recognition for our engineering capabilities.
           </p>
           <div style={{ display: "flex", gap: "20px", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/awards" className="btn btn-primary hover-glow" style={{ padding: "18px 40px", fontSize: "1.05rem", borderRadius: "30px", display: "inline-flex", alignItems: "center", gap: "10px" }}>
+            <Link href="/about/awards" className="btn btn-primary hover-glow" style={{ padding: "18px 40px", fontSize: "1.05rem", borderRadius: "30px", display: "inline-flex", alignItems: "center", gap: "10px" }}>
               View Awards & Achievements <ArrowRight size={20} />
             </Link>
           </div>

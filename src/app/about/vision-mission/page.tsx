@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { ArrowRight, Eye, Target, CheckCircle2, Globe, Shield, HardHat, TrendingUp } from 'lucide-react';
+import { ArrowRight, Eye, Target, CheckCircle2, Globe, Shield, HardHat, TrendingUp, Star, Gem, Leaf, Users, Lightbulb, HeartHandshake, Handshake, ShieldCheck } from 'lucide-react';
+import { COMPANY_DATA } from '@/data/company-data';
 
 export default function VisionMission() {
   const [isMobile, setIsMobile] = useState(false);
@@ -40,7 +41,7 @@ export default function VisionMission() {
             </Link>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2.5rem" : "4.5rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textTransform: "uppercase" }}>
-            Vision & <span style={{ color: "var(--primary-red)" }}>Mission</span>
+            Vision, Mission & <span style={{ color: "var(--primary-red)" }}>Values</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Guiding principles that drive our commitment to engineering excellence.
@@ -133,20 +134,34 @@ export default function VisionMission() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section style={{ padding: isMobile ? "60px 20px" : "100px 20px", textAlign: "center", background: "var(--white)" }}>
-        <div className="container" style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>
-            See Our <span style={{ color: "var(--primary-red)" }}>Core Values</span>
-          </h2>
-          <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.7, marginBottom: "40px" }}>
-            Learn more about the principles that govern our operations and relationships.
-          </p>
-          <div style={{ display: "flex", gap: "20px", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/about/core-values" className="btn btn-primary hover-glow" style={{ padding: "18px 40px", fontSize: "1.05rem", borderRadius: "30px", display: "inline-flex", alignItems: "center", gap: "10px" }}>
-              View Core Values <ArrowRight size={20} />
-            </Link>
+      {/* Core Values Section */}
+      <section style={{ padding: isMobile ? "60px 10px" : "100px 20px", background: "var(--white)" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
+          
+          <div style={{ textAlign: "center", marginBottom: "60px" }}>
+            <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0 }}>Our Core Values</h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "15px", maxWidth: "800px", margin: "15px auto 0" }}>
+              The fundamental beliefs that guide our behavior, decisions, and relationships.
+            </p>
           </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "30px" }}>
+            {[
+              { title: "Engineering Excellence", desc: "We strive for technical superiority in every project, ensuring our infrastructure solutions are robust.", icon: <Star size={32} color="var(--primary-red)" /> },
+              { title: "Integrity & Transparency", desc: "We conduct our business with absolute honesty. Transparency builds lasting trust.", icon: <ShieldCheck size={32} color="var(--primary-red)" /> },
+              { title: "Quality", desc: "Our commitment to ISO 9001 standards ensures that quality is never compromised.", icon: <Gem size={32} color="var(--primary-red)" /> },
+              { title: "Safety First", desc: "A 'Zero Harm' culture is our priority. We strictly enforce ISO 45001 standards.", icon: <HardHat size={32} color="var(--primary-red)" /> },
+              { title: "Sustainability", desc: "We integrate ISO 14001 environmental management practices into our operations.", icon: <Leaf size={32} color="var(--primary-red)" /> },
+              { title: "Teamwork", desc: `Collaboration is our strength. We foster an environment where our ${COMPANY_DATA.workforce} employees work seamlessly.`, icon: <Users size={32} color="var(--primary-red)" /> },
+            ].map((val, idx) => (
+              <div key={idx} style={{ background: "var(--bg-light)", padding: "30px", borderRadius: "20px", border: "1px solid var(--border-soft)", transition: "transform 0.3s" }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+                <div style={{ marginBottom: "20px" }}>{val.icon}</div>
+                <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>{val.title}</h3>
+                <p style={{ color: "var(--text-light)", lineHeight: 1.7, margin: 0 }}>{val.desc}</p>
+              </div>
+            ))}
+          </div>
+          
         </div>
       </section>
 

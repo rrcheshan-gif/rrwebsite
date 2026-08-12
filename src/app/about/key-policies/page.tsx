@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { COMPANY_DATA } from '@/data/company-data';
 
 export default function KeyPolicies() {
   const [isMobile, setIsMobile] = useState(false);
@@ -33,7 +34,7 @@ export default function KeyPolicies() {
       points: [
         "Maintain a strict 'Zero Harm' working environment by adhering to ISO 45001:2018 standards.",
         "Conduct regular hazard identification and comprehensive risk assessments across all sites.",
-        "Provide ongoing safety training and mandatory Personal Protective Equipment (PPE) to all 1,800+ employees.",
+        `Provide ongoing safety training and mandatory Personal Protective Equipment (PPE) to all ${COMPANY_DATA.workforce} employees.`,
         "Implement proactive incident prevention strategies rather than reactive measures."
       ]
     },
@@ -168,14 +169,14 @@ export default function KeyPolicies() {
       <section style={{ padding: isMobile ? "60px 20px" : "100px 20px", textAlign: "center", background: "var(--white)", borderTop: "1px solid var(--border-soft)" }}>
         <div className="container" style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>
-            Review Our <span style={{ color: "var(--primary-red)" }}>Goals & Targets</span>
+            Review Our <span style={{ color: "var(--primary-red)" }}>Company Data</span>
           </h2>
           <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.7, marginBottom: "40px" }}>
-            See how these policies translate into measurable targets for the future.
+            See how these policies translate into measurable targets and scale for the future.
           </p>
           <div style={{ display: "flex", gap: "20px", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/about/goals-targets" className="btn btn-primary hover-glow" style={{ padding: "18px 40px", fontSize: "1.05rem", borderRadius: "30px", display: "inline-flex", alignItems: "center", gap: "10px" }}>
-              View Goals & Targets <ArrowRight size={20} />
+            <Link href="/about/company-overview" className="btn btn-primary hover-glow" style={{ padding: "18px 40px", fontSize: "1.05rem", borderRadius: "30px", display: "inline-flex", alignItems: "center", gap: "10px" }}>
+              Company Overview <ArrowRight size={20} />
             </Link>
           </div>
         </div>

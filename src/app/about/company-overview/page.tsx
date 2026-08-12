@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2, ShieldCheck, HardHat, Building2, Droplets, MapPin } from 'lucide-react';
+import { COMPANY_DATA } from '@/data/company-data';
 
 export default function AboutStory() {
   const [isMobile, setIsMobile] = useState(false);
@@ -40,10 +41,10 @@ export default function AboutStory() {
             </Link>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2.8rem" : "4.5rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textTransform: "uppercase" }}>
-            Our <span style={{ color: "var(--primary-red)" }}>Story</span>
+            Company <span style={{ color: "var(--primary-red)" }}>Overview</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
-            Building the Foundations of a Stronger Sri Lanka since 1995 through dependable engineering and uncompromising quality.
+            Building the Foundations of a Stronger Sri Lanka since {COMPANY_DATA.established} through dependable engineering and uncompromising quality.
           </p>
         </div>
       </section>
@@ -61,17 +62,47 @@ export default function AboutStory() {
                 A Legacy of Engineering <br/><span style={{ color: "var(--text-light)" }}>Excellence.</span>
               </h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
-                Since our establishment in 1995, RR Construction (Pvt) Ltd has been driven by a singular commitment: to contribute to Sri Lanka's socio-economic development through dependable civil engineering and infrastructure construction.
+                {COMPANY_DATA.name} is a Sri Lankan civil engineering and construction company established in {COMPANY_DATA.established}. The company commenced its operations through civil construction work undertaken with ED Zublin AG on the Central Bank extension project and subsequently developed experience through projects for local and international clients.
               </p>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "30px" }}>
-                Over the past three decades, we have evolved from regional contracting into a comprehensive civil engineering organization, trusted to execute some of the nation's most demanding infrastructure projects. Our growth is built on a foundation of long-term value creation, ensuring every structure we build stands the test of time.
-              </p>
+              
+              <div style={{ marginBottom: "30px" }}>
+                <h4 style={{ color: "var(--text-dark)", fontSize: "1.1rem", fontWeight: 700, marginBottom: "15px" }}>Comprehensive Engineering Scope:</h4>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px" }}>
+                  {[
+                    "Earthworks & Structural Concrete",
+                    "Buildings & Facilities",
+                    "Roads & Highways",
+                    "Bridges & Overpasses",
+                    "Irrigation & Drainage",
+                    "Water Supply & Sewerage",
+                    "Water Retaining Structures",
+                    "Maritime Construction",
+                    "Dredging & Reclamation",
+                    "Water Towers & Treatment Plants",
+                    "Heavy Steel Fabrication & Erection",
+                    "Mechanical Maintenance",
+                    "Machine & Equipment Rental"
+                  ].map((item, idx) => (
+                    <div key={idx} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                      <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--primary-red)" }}></div>
+                      <span style={{ color: "var(--text-light)", fontSize: "0.95rem" }}>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div style={{ background: "rgba(229, 57, 53, 0.05)", padding: "20px", borderRadius: "16px", borderLeft: "4px solid var(--primary-red)" }}>
+                <h4 style={{ color: "var(--primary-red)", fontSize: "1rem", fontWeight: 800, textTransform: "uppercase", marginBottom: "8px" }}>Company Objective</h4>
+                <p style={{ color: "var(--text-dark)", fontSize: "1.05rem", fontWeight: 500, margin: 0, fontStyle: "italic" }}>
+                  "To achieve a high degree of customer satisfaction through appropriate technology, effective project delivery, cost-conscious execution and timely completion."
+                </p>
+              </div>
             </div>
             <div style={{ flex: "1", minWidth: "300px" }}>
               <div style={{ borderRadius: "24px", overflow: "hidden", position: "relative", boxShadow: "0 20px 50px rgba(0,0,0,0.1)" }}>
                 <img src="/images/building-projects.jpg" alt="RR Construction Project Site" style={{ width: "100%", height: "auto", display: "block", minHeight: "400px", objectFit: "cover" }} />
                 <div style={{ position: "absolute", bottom: "30px", left: "-20px", background: "var(--primary-red)", color: "white", padding: "20px 30px", borderRadius: "12px", boxShadow: "0 10px 30px rgba(229, 57, 53, 0.4)" }}>
-                  <h4 style={{ margin: 0, fontSize: "2rem", fontFamily: "var(--font-heading)", fontWeight: 800 }}>1995</h4>
+                  <h4 style={{ margin: 0, fontSize: "2rem", fontFamily: "var(--font-heading)", fontWeight: 800 }}>{COMPANY_DATA.established}</h4>
                   <p style={{ margin: 0, fontSize: "0.9rem", textTransform: "uppercase", letterSpacing: "1px", fontWeight: 600 }}>Year Established</p>
                 </div>
               </div>
@@ -87,7 +118,7 @@ export default function AboutStory() {
             
             <div style={{ flex: 1, minWidth: 'min(100%, 300px)', display: "flex", justifyContent: "center", position: "relative" }}>
               <div style={{ position: "absolute", bottom: "-20px", right: "20px", background: "var(--primary-red)", color: "white", padding: "15px 25px", borderRadius: "16px", zIndex: 3, boxShadow: "0 15px 30px rgba(229, 57, 53, 0.3)" }}>
-                <h4 style={{ margin: 0, fontSize: "1.2rem", fontFamily: "var(--font-heading)", color: "#ffffff", fontWeight: 800 }}>30+ Years</h4>
+                <h4 style={{ margin: 0, fontSize: "1.2rem", fontFamily: "var(--font-heading)", color: "#ffffff", fontWeight: 800 }}>{COMPANY_DATA.yearsOfExcellence} Years</h4>
                 <p style={{ margin: 0, fontSize: "0.8rem", fontWeight: 600, color: "#ffffff", letterSpacing: "0.5px", textTransform: "uppercase" }}>Leadership</p>
               </div>
               <div style={{ padding: "12px", background: "var(--white)", borderRadius: "32px", width: "100%", maxWidth: "450px", boxShadow: "0 20px 50px rgba(0,0,0,0.08)", position: "relative", zIndex: 2, border: "2px solid var(--border-soft)" }}>
@@ -114,13 +145,13 @@ export default function AboutStory() {
               <div style={{ position: "relative" }}>
                 <span style={{ position: "absolute", top: "-20px", left: "-20px", fontSize: "5rem", color: "var(--border-soft)", fontFamily: "Georgia, serif", lineHeight: 1, zIndex: 0 }}>"</span>
                 <p style={{ fontSize: "1.15rem", color: "var(--text-dark)", lineHeight: 1.8, marginBottom: "25px", position: "relative", zIndex: 1, fontWeight: 500 }}>
-                  RR Construction traces its roots back to 1995. Over the last 3 decades, the organization has progressed and established its strong presence in the construction industry in Sri Lanka.
+                  {COMPANY_DATA.name} traces its roots back to {COMPANY_DATA.established}. Over the last {parseInt(COMPANY_DATA.yearsOfExcellence.replace('+', ''))} years, the organization has progressed and established its strong presence in the construction industry in {COMPANY_DATA.headquarters}.
                 </p>
                 <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "25px", position: "relative", zIndex: 1 }}>
                   By continuously developing new capabilities to overcome emerging challenges, introducing structural changes to the organization, and creating a strong culture of teamwork combined with professional methodologies, we have grown into one of the country's leading infrastructure developers.
                 </p>
                 <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.05rem", position: "relative", zIndex: 1 }}>
-                  Our highly experienced workforce and massive fleet of self-owned heavy machinery allow us to execute complex road, bridge, maritime, and structural engineering projects efficiently, maintaining the highest standards of safety and quality while ensuring timely delivery for our clients.
+                  Our highly experienced workforce and massive fleet of self-owned heavy machinery allow us to execute complex road, bridge, maritime, and structural engineering projects efficiently, maintaining the highest standards of safety and quality.
                 </p>
               </div>
             </div>
@@ -160,19 +191,19 @@ export default function AboutStory() {
             <div style={{ flex: 1, minWidth: "300px" }}>
               <h3 style={{ fontSize: "2rem", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px" }}>Unmatched Internal Strength</h3>
               <p style={{ color: "#cbd5e1", lineHeight: 1.8, fontSize: "1.1rem", marginBottom: "20px" }}>
-                We rely on our own resources rather than third-party dependencies. Our operations are powered by a highly skilled workforce of over 1,800 experienced engineers and construction professionals.
+                We rely on our own resources rather than third-party dependencies. Our operations are powered by a highly skilled workforce of experienced engineers and construction professionals.
               </p>
               <p style={{ color: "#cbd5e1", lineHeight: 1.8, fontSize: "1.1rem" }}>
-                Combined with a self-owned fleet of 1,000+ heavy construction machines and proprietary aggregate production plants, we maintain total control over project timelines and quality parameters.
+                Combined with a self-owned fleet of heavy construction machines and proprietary aggregate production plants, we maintain total control over project timelines and quality parameters.
               </p>
             </div>
             <div style={{ flex: 1, minWidth: "300px", display: "flex", gap: "20px", flexDirection: "column" }}>
               <div style={{ background: "rgba(255,255,255,0.1)", padding: "30px", borderRadius: "20px", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.1)" }}>
-                <h4 style={{ fontSize: "3rem", color: "var(--primary-red)", margin: 0, fontFamily: "var(--font-heading)", fontWeight: 800, lineHeight: 1 }}>1,800+</h4>
+                <h4 style={{ fontSize: "3rem", color: "var(--primary-red)", margin: 0, fontFamily: "var(--font-heading)", fontWeight: 800, lineHeight: 1 }}>{COMPANY_DATA.workforce}</h4>
                 <p style={{ color: "white", margin: "10px 0 0", fontSize: "1rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "1px" }}>Dedicated Workforce</p>
               </div>
               <div style={{ background: "rgba(255,255,255,0.1)", padding: "30px", borderRadius: "20px", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.1)" }}>
-                <h4 style={{ fontSize: "3rem", color: "var(--primary-red)", margin: 0, fontFamily: "var(--font-heading)", fontWeight: 800, lineHeight: 1 }}>1,000+</h4>
+                <h4 style={{ fontSize: "3rem", color: "var(--primary-red)", margin: 0, fontFamily: "var(--font-heading)", fontWeight: 800, lineHeight: 1 }}>{COMPANY_DATA.machineryFleet}</h4>
                 <p style={{ color: "white", margin: "10px 0 0", fontSize: "1rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "1px" }}>Heavy Machinery Fleet</p>
               </div>
             </div>
@@ -221,8 +252,8 @@ export default function AboutStory() {
             <Link href="/projects" className="btn btn-primary hover-glow" style={{ padding: "18px 40px", fontSize: "1.05rem", borderRadius: "30px", display: "inline-flex", alignItems: "center", gap: "10px" }}>
               Explore Our Capabilities <ArrowRight size={20} />
             </Link>
-            <Link href="/about/key-data" className="btn btn-outline" style={{ padding: "18px 40px", fontSize: "1.05rem", borderRadius: "30px", fontWeight: 700 }}>
-              View Key Data
+            <Link href="/about/cida-registration" className="btn btn-outline" style={{ padding: "18px 40px", fontSize: "1.05rem", borderRadius: "30px", fontWeight: 700 }}>
+              CIDA Registration
             </Link>
           </div>
         </div>

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Map, GitMerge, Building2, Waves, Leaf, HardHat, Anchor, Droplets, MapPin, Clock } from "lucide-react";
+import { COMPANY_DATA } from '@/data/company-data';
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -71,7 +72,7 @@ export default function Home() {
       heading1: 'Self-Owned Assets',
       heading2: 'For Speed & Independence',
       heading3: '',
-      desc: 'We operate a massive self-owned fleet of 1,000+ heavy machines and high-output asphalt plants. This independence ensures zero dependency on third-party schedules.'
+      desc: `We operate a massive self-owned fleet of ${COMPANY_DATA.machineryFleet} heavy machines and high-output asphalt plants. This independence ensures zero dependency on third-party schedules.`
     }
   ];
 
@@ -273,17 +274,17 @@ export default function Home() {
           <div className="liquid-glass-panel" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", padding: "10px", position: "relative", overflow: "hidden" }}>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative", zIndex: 1 }}>
               <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(148, 163, 184, 0.25), transparent)" }}></div>
-              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>1995</h3>
+              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>{COMPANY_DATA.established}</h3>
               <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Established</p>
             </div>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative", zIndex: 1 }}>
               <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(148, 163, 184, 0.25), transparent)" }}></div>
-              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>1,800+</h3>
+              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>{COMPANY_DATA.workforce}</h3>
               <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Skilled Workforce</p>
             </div>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", position: "relative", zIndex: 1 }}>
               <div style={{ position: "absolute", right: 0, top: "20%", height: "60%", width: "1px", background: "linear-gradient(to bottom, transparent, rgba(148, 163, 184, 0.25), transparent)" }}></div>
-              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>100+</h3>
+              <h3 className="text-gradient" style={{ fontSize: "3.5rem", marginBottom: "10px", fontFamily: "var(--font-heading)", lineHeight: 1 }}>{COMPANY_DATA.completedProjects}</h3>
               <p style={{ color: "var(--text-dark)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", fontWeight: 700 }}>Projects Completed</p>
             </div>
             <div style={{ flex: 1, minWidth: 'min(100%, 200px)', padding: "40px 20px", textAlign: "center", zIndex: 1 }}>
@@ -335,7 +336,7 @@ export default function Home() {
               border: "1px solid rgba(211, 47, 47, 0.3)"
             }}>
               <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
-                <div style={{ fontSize: "2.5rem", fontWeight: 800, fontFamily: "var(--font-heading)", lineHeight: 1, color: "var(--primary-red)" }}>30+</div>
+                <div style={{ fontSize: "2.5rem", fontWeight: 800, fontFamily: "var(--font-heading)", lineHeight: 1, color: "var(--primary-red)" }}>{COMPANY_DATA.yearsOfExcellence}</div>
                 <div style={{ textAlign: "left" }}>
                   <h4 style={{ margin: 0, fontSize: "0.9rem", fontFamily: "var(--font-heading)", textTransform: "uppercase", letterSpacing: "1px", color: "var(--primary-red)", fontWeight: 800 }}>Years of</h4>
                   <p style={{ color: "var(--text-dark)", margin: 0, fontSize: "0.9rem", fontWeight: 700, textTransform: "uppercase" }}>Excellence</p>
@@ -356,11 +357,11 @@ export default function Home() {
             </h1>
             
             <p style={{ fontSize: "1.2rem", color: "var(--text-dark)", marginBottom: "30px", fontWeight: 600, lineHeight: 1.7, borderLeft: "4px solid var(--primary-red)", paddingLeft: "25px" }}>
-              We measure success the way our clients do: the right quality, delivered on schedule, at a fair cost.
+              Our main objective is to achieve the highest degree of customer satisfaction at correct time & correct cost using appropriate technology.
             </p>
             
             <p style={{ color: "var(--text-light)", marginBottom: "40px", lineHeight: 1.8, fontSize: "1.1rem" }}>
-              With massive financial backing and a self-owned fleet of 1,000+ heavy construction machines, we don't wait on hired equipment or third-party schedules. From expressways and road rehabilitation to bridge construction, harbour works, and landslide mitigation, we bring the full strength of our civil engineering resources to every site — so Sri Lanka's infrastructure keeps pace with its ambitions.
+              With financial facilities exceeding Rs. 12.50 Billion and a self-owned fleet of {COMPANY_DATA.machineryFleet} heavy construction machines, our capabilities go beyond earthworks and structural concrete. We execute large-scale highways, bridges, irrigation canals, maritime construction, dredging, and heavy steel fabrication. We bring the full strength of our civil engineering resources to every site, ensuring Sri Lanka's infrastructure is built with absolute reliability.
             </p>
         
             <div>
@@ -422,7 +423,7 @@ export default function Home() {
               </div>
               <h3 style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)", margin: 0, color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>Health & Safety<br/>First</h3>
             </div>
-            <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "0" }}>Zero harm is our ultimate goal. We maintain a rigorous Health & Safety culture on every site, backed by our ISO 45001 certification. Our 1,800+ workforce is continuously trained to operate under the highest global safety standards, ensuring everyone goes home safely.</p>
+            <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "0" }}>Zero harm is our ultimate goal. We maintain a rigorous Health & Safety culture on every site, backed by our ISO 45001 certification. Our {COMPANY_DATA.workforce} workforce is continuously trained to operate under the highest global safety standards, ensuring everyone goes home safely.</p>
           </div>
         </div>
       </section>
@@ -436,8 +437,8 @@ export default function Home() {
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Our Legacy</h4>
             </div>
             <h2 style={{ fontSize: "3.2rem", lineHeight: 1.1, marginBottom: "20px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>THREE DECADES OF<br/><span className="text-gradient" style={{ fontWeight: 300 }}>EXCELLENCE</span></h2>
-            <p style={{ color: "var(--text-dark)", fontSize: "1.1rem", marginBottom: "12px", lineHeight: 1.7, fontWeight: 500 }}>Since 1995, RR Construction has helped shape the physical foundations of modern Sri Lanka. What began as a subcontracting partnership with international firms like ED Zublin AG has grown into one of the country's most trusted construction names.</p>
-            <p style={{ color: "var(--text-light)", fontSize: "1.05rem", margin: 0, lineHeight: 1.7 }}>Hundreds of completed projects later — expressways, deep-water dredging, bridges spanning over 100 metres, and water treatment plants serving entire districts — our portfolio speaks for itself.</p>
+            <p style={{ color: "var(--text-dark)", fontSize: "1.1rem", marginBottom: "12px", lineHeight: 1.7, fontWeight: 500 }}>The company started its operations in {COMPANY_DATA.established} to cater to the growing demand for quality constructions. We primarily started civil construction with ED Zublin AG in the Central Bank extension project as a sub-contractor.</p>
+            <p style={{ color: "var(--text-light)", fontSize: "1.05rem", margin: 0, lineHeight: 1.7 }}>Since then, we have evolved into a fully-fledged civil engineering contractor delivering multi-billion rupee projects for both local and international clients, backed by a proven track record of 27 years of history.</p>
           </div>
           
           <div style={{ flex: 1, minWidth: 'min(100%, 350px)', display: "grid", gap: "25px", position: "relative", marginTop: "60px" }}>

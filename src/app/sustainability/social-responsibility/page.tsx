@@ -1,0 +1,130 @@
+"use client";
+
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { Users, BookOpen, Building2, MapPin, CheckCircle2 } from 'lucide-react';
+
+export default function SocialResponsibility() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth <= 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+
+  return (
+    <div style={{ paddingTop: isMobile ? "90px" : "140px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+      
+      {/* Hero Section */}
+      <section 
+        className="page-header" 
+        style={{ 
+          backgroundImage: "url('/images/about_section.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
+          padding: isMobile ? "70px 20px" : "120px 20px", 
+          textAlign: "center", 
+          position: "relative", 
+          backgroundSize: "cover", 
+          backgroundPosition: "center 30%", 
+          borderRadius: isMobile ? "24px" : "32px", 
+          margin: isMobile ? "0 12px 30px" : "0 20px 50px", 
+          overflow: "hidden" 
+        }}
+      >
+        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(225, 29, 72, 0.5) 0%, rgba(15, 23, 42, 0.95) 100%)", zIndex: 1 }}></div>
+        <div className="container" style={{ position: "relative", zIndex: 2 }}>
+          <div style={{ textAlign: "left", marginBottom: "20px" }}>
+            <Link href="/sustainability" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
+              &larr; Back to Sustainability
+            </Link>
+          </div>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2.5rem" : "4.5rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", lineHeight: 1.2 }}>
+            Social <br/><span style={{ color: "#e11d48" }}>Responsibility</span>
+          </h1>
+          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "800px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
+            We do not just construct infrastructure; we build communities, empower local economies, and minimize disruption.
+          </p>
+        </div>
+      </section>
+
+      {/* Intro Section */}
+      <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "50px", alignItems: "center" }}>
+            <div>
+              <h4 style={{ color: "#e11d48", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px" }}>Community First</h4>
+              <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.2 }}>
+                Engineering for <span style={{ color: "#e11d48" }}>The People</span>
+              </h2>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
+                Large-scale construction inherently impacts local communities. Whether we are driving a new expressway through the heart of the country or mitigating dangerous landslides in the central hills, RR Construction views the local community as a primary stakeholder.
+              </p>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8 }}>
+                Our Corporate Social Responsibility (CSR) initiatives are deeply integrated into our project planning. We aim to leave every community vastly improved not just by the final infrastructure, but by the economic and social opportunities generated during the construction phase.
+              </p>
+            </div>
+            <div style={{ background: "var(--white)", padding: isMobile ? "30px" : "50px", borderRadius: "24px", border: "1px solid rgba(225, 29, 72, 0.2)", boxShadow: "0 20px 40px rgba(225, 29, 72, 0.05)" }}>
+              <Users size={50} color="#e11d48" style={{ marginBottom: "20px" }} />
+              <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "25px" }}>Core CSR Objectives</h3>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                {[
+                  "Prioritizing the hiring of local labor surrounding project sites.",
+                  "Providing vocational and technical training for rural youth in construction trades.",
+                  "Upgrading local access roads and drainage systems during primary construction.",
+                  "Direct financial and material support for local schools, hospitals, and temples.",
+                  "Strict community liaison protocols to address public grievances rapidly."
+                ].map((item, idx) => (
+                  <li key={idx} style={{ display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "15px", paddingBottom: "15px", borderBottom: idx !== 4 ? "1px solid var(--border-soft)" : "none" }}>
+                    <CheckCircle2 size={22} color="#e11d48" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <span style={{ color: "var(--text-dark)", fontSize: "1.05rem", fontWeight: 500, lineHeight: 1.5 }}>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Action Areas Grid */}
+      <section style={{ padding: "80px 20px", background: "var(--white)" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
+          <div style={{ textAlign: "center", marginBottom: "60px" }}>
+            <h2 style={{ fontSize: isMobile ? "2.2rem" : "3rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0" }}>
+              Making an Impact
+            </h2>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "30px" }}>
+            
+            <div className="glass-panel hover-lift" style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)" }}>
+              <MapPin size={40} color="#e11d48" style={{ marginBottom: "20px" }} />
+              <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Rural Connectivity</h3>
+              <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
+                Through projects like the iRoad program and rural bridge reconstructions, we directly stimulate local agrarian economies by drastically cutting transport times for farmers reaching urban markets.
+              </p>
+            </div>
+
+            <div className="glass-panel hover-lift" style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)" }}>
+              <BookOpen size={40} color="#e11d48" style={{ marginBottom: "20px" }} />
+              <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Education & Youth</h3>
+              <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
+                We actively hire youth from regions adjacent to our major sites (like the Central Expressway or Northern Railway), providing them with invaluable hands-on technical training and long-term career paths in civil engineering.
+              </p>
+            </div>
+
+            <div className="glass-panel hover-lift" style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)" }}>
+              <Building2 size={40} color="#e11d48" style={{ marginBottom: "20px" }} />
+              <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Minimizing Disruption</h3>
+              <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
+                During urban water supply works or high-traffic road rehabilitation, we employ rigorous traffic management and night-time operation schedules to ensure the daily lives of citizens are not heavily hindered by our operations.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+  );
+}

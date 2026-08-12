@@ -1,94 +1,149 @@
-import Link from 'next/link';
+"use client";
 
-export default function Sustainability() {
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { Leaf, ShieldCheck, Award, Users, ArrowRight } from 'lucide-react';
+
+export default function SustainabilityHub() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth <= 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+
+  const pillars = [
+    {
+      id: "environmental",
+      title: "Environmental Stewardship",
+      desc: "Strict adherence to ISO 14001:2015. Optimizing our machinery fleet, reducing emissions, and protecting ecological balance on every site.",
+      icon: <Leaf size={40} color="#16a34a" />,
+      link: "/sustainability/environmental-stewardship",
+      color: "#16a34a",
+      bgImage: "/images/thudugala-crusher-plant.jpg"
+    },
+    {
+      id: "health-safety",
+      title: "Health & Safety",
+      desc: "Our unwavering 'Zero Harm' policy backed by ISO 45001:2018. Guaranteeing the physical security of our entire workforce.",
+      icon: <ShieldCheck size={40} color="#ea580c" />,
+      link: "/sustainability/health-and-safety",
+      color: "#ea580c",
+      bgImage: "/images/health-safety-site.jpg"
+    },
+    {
+      id: "quality",
+      title: "Quality Management",
+      desc: "Engineering excellence certified by ISO 9001:2015 and CIDA CS-2. Delivering structural integrity that lasts generations.",
+      icon: <Award size={40} color="#2563eb" />,
+      link: "/sustainability/quality-management",
+      color: "#2563eb",
+      bgImage: "/images/hero-bg-2.jpg"
+    },
+    {
+      id: "social",
+      title: "Social Responsibility",
+      desc: "Uplifting rural economies, providing vocational training, and building infrastructure that truly empowers local communities.",
+      icon: <Users size={40} color="#e11d48" />,
+      link: "/sustainability/social-responsibility",
+      color: "#e11d48",
+      bgImage: "/images/about_section.jpg"
+    }
+  ];
+
   return (
-    <div style={{ paddingTop: "100px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
-      {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/sustainability-green.jpg')", padding: "100px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center 30%", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.65) 100%)", zIndex: 1 }}></div>
+    <div style={{ paddingTop: isMobile ? "90px" : "140px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+      
+      {/* Hero Section */}
+      <section 
+        className="page-header" 
+        style={{ 
+          backgroundImage: "url('/images/page-headers/sustainability-green.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
+          padding: isMobile ? "70px 20px" : "120px 20px", 
+          textAlign: "center", 
+          position: "relative", 
+          backgroundSize: "cover", 
+          backgroundPosition: "center 30%", 
+          borderRadius: isMobile ? "24px" : "32px", 
+          margin: isMobile ? "0 12px 30px" : "0 20px 50px", 
+          overflow: "hidden" 
+        }}
+      >
+        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.85) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
-            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
+            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
+              &larr; Back to Home
             </Link>
           </div>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px", textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>Our Responsibility</h4>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem", textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>SUSTAINABILITY & HSE</h1>
-        </div>
-      </section>
-
-      {/* Health & Safety */}
-      <section style={{ padding: "80px 20px", background: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", flexWrap: "wrap", gap: "50px", alignItems: "center" }}>
-          <div style={{ flex: 1, minWidth: 'min(100%, 300px)' }}>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", marginBottom: "20px" }}>Health & Safety (ISO 45001)</h2>
-            <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", marginBottom: "20px" }}></div>
-            <p style={{ fontSize: "1.1rem", lineHeight: 1.8, color: "var(--text-light)", marginBottom: "20px" }}>
-              At RR Construction, we believe that every worker deserves a safe environment. Our "Zero Harm" policy is not just a slogan; it is embedded in our daily operations across all sites. We are proudly certified under <strong>ISO 45001:2018 (Occupational Health and Safety Management Systems)</strong>.
-            </p>
-            <ul style={{ listStyle: "none", padding: 0, marginBottom: "30px" }}>
-              <li style={{ display: "flex", gap: "15px", marginBottom: "15px" }}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: "3px" }}><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                <span style={{ color: "var(--text-light)", fontSize: "1.05rem" }}>Rigorous safety inductions and continuous training for our 1,800+ workforce.</span>
-              </li>
-              <li style={{ display: "flex", gap: "15px", marginBottom: "15px" }}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: "3px" }}><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                <span style={{ color: "var(--text-light)", fontSize: "1.05rem" }}>Mandatory daily tool-box talks and hazard identification protocols.</span>
-              </li>
-              <li style={{ display: "flex", gap: "15px", marginBottom: "15px" }}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: "3px" }}><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                <span style={{ color: "var(--text-light)", fontSize: "1.05rem" }}>Provision of high-quality Personal Protective Equipment (PPE) to all staff and site visitors.</span>
-              </li>
-            </ul>
-          </div>
-          <div style={{ flex: 1, minWidth: 'min(100%, 300px)', borderRadius: "8px", overflow: "hidden", boxShadow: "0 10px 30px rgba(0,0,0,0.15)", height: "420px", position: "relative" }}>
-            <img className="img-polished img-hover-zoom" src="/images/health-safety-site.jpg" alt="Health and Safety" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "60% 55%" }} />
-          </div>
-        </div>
-      </section>
-
-      {/* Environmental Management */}
-      <section style={{ padding: "80px 20px", background: "#0f172a", color: "white" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", flexWrap: "wrap-reverse", gap: "50px", alignItems: "center" }}>
-          <div style={{ flex: 1, minWidth: 'min(100%, 300px)' }}>
-            <img className="img-polished img-hover-zoom" src="/images/thudugala-crusher-plant.jpg" alt="Environment" style={{ width: "100%", borderRadius: "8px", boxShadow: "0 10px 30px rgba(0,0,0,0.5)", objectFit: "cover", objectPosition: "center" }} />
-          </div>
-          <div style={{ flex: 1, minWidth: 'min(100%, 300px)' }}>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "white", marginBottom: "20px" }}>Environmental Management (ISO 14001)</h2>
-            <div style={{ width: "60px", height: "4px", background: "#4ade80", marginBottom: "20px" }}></div>
-            <p style={{ fontSize: "1.1rem", lineHeight: 1.8, color: "#94a3b8", marginBottom: "20px" }}>
-              As a massive infrastructure developer, we acknowledge our footprint. RR Construction strictly adheres to <strong>ISO 14001:2015</strong> to ensure our projects harmonize with the natural environment.
-            </p>
-            <ul style={{ listStyle: "none", padding: 0 }}>
-              <li style={{ display: "flex", gap: "15px", marginBottom: "15px" }}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4ade80" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: "3px" }}><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg>
-                <span style={{ color: "#cbd5e1", fontSize: "1.05rem" }}><strong>Dust & Noise Control:</strong> Deployment of advanced suppression systems at all concrete and asphalt batching plants.</span>
-              </li>
-              <li style={{ display: "flex", gap: "15px", marginBottom: "15px" }}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4ade80" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: "3px" }}><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg>
-                <span style={{ color: "#cbd5e1", fontSize: "1.05rem" }}><strong>Waste Management:</strong> Systematic recycling of construction debris and responsible disposal of hazardous materials.</span>
-              </li>
-              <li style={{ display: "flex", gap: "15px", marginBottom: "15px" }}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4ade80" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: "3px" }}><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg>
-                <span style={{ color: "#cbd5e1", fontSize: "1.05rem" }}><strong>Resource Efficiency:</strong> Optimizing fuel usage across our 1,000+ machine fleet to reduce carbon emissions.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* Corporate Social Responsibility */}
-      <section style={{ padding: "80px 20px", background: "var(--bg-base)" }}>
-        <div className="container" style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
-          <div style={{ width: "80px", height: "80px", background: "rgba(229, 57, 53, 0.1)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px" }}>
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"></path></svg>
-          </div>
-          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", marginBottom: "20px" }}>Community Impact (CSR)</h2>
-          <p style={{ fontSize: "1.1rem", lineHeight: 1.8, color: "var(--text-light)" }}>
-            We don't just build roads; we connect communities. Our CSR initiatives focus on uplifting the localities surrounding our mega-projects. We prioritize hiring local labor, providing vocational training for rural youth in construction trades, and engaging in infrastructure development for local schools and religious institutions. Building Sri Lanka means empowering its people.
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2.8rem" : "4.5rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", lineHeight: 1.2 }}>
+            Sustainability <br/><span style={{ color: "var(--primary-red)" }}>& HSE</span>
+          </h1>
+          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "800px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
+            Building the foundations of Sri Lanka demands an absolute commitment to environmental balance, uncompromising worker safety, and community empowerment.
           </p>
         </div>
       </section>
+
+      {/* Grid Section */}
+      <section style={{ padding: isMobile ? "20px 10px 80px" : "40px 20px 100px" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
+          
+          <div style={{ textAlign: "center", marginBottom: "60px" }}>
+            <h2 style={{ fontSize: isMobile ? "2.2rem" : "3rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0" }}>
+              Our Four Pillars
+            </h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "700px", margin: "0 auto" }}>
+              Explore how our certified management systems translate into real-world impact across every infrastructure project we undertake.
+            </p>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "30px" }}>
+            {pillars.map((pillar) => (
+              <Link href={pillar.link} key={pillar.id} style={{ textDecoration: "none" }} className="hover-lift">
+                <div style={{ 
+                  borderRadius: "24px", 
+                  overflow: "hidden", 
+                  background: "var(--white)", 
+                  border: `1px solid rgba(0,0,0,0.05)`, 
+                  boxShadow: "0 15px 35px rgba(0,0,0,0.05)",
+                  display: "flex",
+                  flexDirection: "column",
+                  height: "100%",
+                  position: "relative"
+                }}>
+                  {/* Image Header */}
+                  <div style={{ height: "200px", position: "relative", overflow: "hidden" }}>
+                    <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: `linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%)`, zIndex: 1 }}></div>
+                    <img src={pillar.bgImage} alt={pillar.title} style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease" }} className="img-hover-scale" />
+                    <div style={{ position: "absolute", bottom: "20px", left: "20px", zIndex: 2, background: "white", padding: "12px", borderRadius: "12px", display: "inline-flex", boxShadow: "0 10px 20px rgba(0,0,0,0.2)" }}>
+                      {pillar.icon}
+                    </div>
+                  </div>
+                  
+                  {/* Content */}
+                  <div style={{ padding: "30px", display: "flex", flexDirection: "column", flexGrow: 1 }}>
+                    <h3 style={{ fontSize: "1.6rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0" }}>
+                      {pillar.title}
+                    </h3>
+                    <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.6, marginBottom: "30px", flexGrow: 1 }}>
+                      {pillar.desc}
+                    </p>
+                    <div style={{ display: "flex", alignItems: "center", gap: "10px", color: pillar.color, fontWeight: 700, fontSize: "1.05rem", textTransform: "uppercase", letterSpacing: "1px" }}>
+                      Explore <ArrowRight size={20} />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+          
+        </div>
+      </section>
+
     </div>
   );
 }
-
