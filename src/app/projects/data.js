@@ -33,7 +33,7 @@ const projectsData = [
     id: 'project-rda-kurikadduvan-jetty',
     type: 'ongoing',
     category: "maritime",
-    title: "RECONSTRUCTION OF PROPOSED IMPROVEMENT AND REHABILITATION OF KURIKADDUVAN JETTY",
+    title: "Reconstruction of Proposed Improvement and Rehabilitation of Kurikadduvan Jetty",
     client: "Road Development Authority",
     duration: "553 Days",
     year: 2026,
@@ -53,7 +53,7 @@ const projectsData = [
     id: 'project-rda-northern-province-lot03',
     type: 'ongoing',
     category: "roads",
-    title: "SECOND INTEGRATED ROAD INVESTMENT PROGRAM: REHABILITATION AND IMPROVEMENT OF RURAL ROADS IN THE NORTHERN PROVINCE – LOT/03",
+    title: "Second Integrated Road Investment Program: Rehabilitation and Improvement of Rural Roads in the Northern Province – Lot/03",
     client: "Road Development Authority",
     duration: "15 Months",
     year: 2026,
@@ -70,7 +70,7 @@ const projectsData = [
     id: 'project-rda-colombo-galle',
     type: 'ongoing',
     category: "roads",
-    title: "IMPROVEMENT OF COLOMBO – GALLE – HAMBANTOTA - WELLAWAYA ROAD FROM 154 + 000 KM TO 167+300KM (A002)",
+    title: "Improvement of Colombo – Galle – Hambantota - Wellawaya Road From 154 + 000 Km to 167+300km (a002)",
     client: "Road Development Authority",
     duration: "18 Months",
     year: 2026,
@@ -90,7 +90,7 @@ const projectsData = [
     id: 'project-cfhc-kirinda-sand-removal',
     type: 'completed',
     category: "maritime",
-    title: "Removal and leveling of accumulated sea sand at Kirinda Fishery Harbour",
+    title: "Removal and Leveling of Accumulated Sea Sand at Kirinda Fishery Harbour",
     client: "Ceylon Fishery Harbours Corporation",
     duration: "120 Days",
     year: 2026,
@@ -102,7 +102,7 @@ const projectsData = [
     id: 'project-2',
     type: 'completed',
     category: "maritime",
-    title: "Procurement of construction of boat launching ramp at Beruwala",
+    title: "Procurement of Construction of Boat Launching Ramp at Beruwala",
     client: "Ministry of Fisheries",
     duration: "12 Months",
     year: "2026/06/10",
@@ -223,7 +223,7 @@ const projectsData = [
     id: 'project-11',
     type: 'completed',
     category: "bridges",
-    title: "Rehabilitation of bridge No. 27/1 on Jaffna - Manipay - Karainagar Road (AB017)",
+    title: "Rehabilitation of Bridge No. 27/1 on Jaffna - Manipay - Karainagar Road (AB017)",
     client: "Road Development Authority",
     duration: "12 Months",
     year: 2026,
@@ -270,7 +270,7 @@ const projectsData = [
     id: 'project-16',
     type: 'ongoing',
     category: "bridges",
-    title: "Reconstruction of bridge No. 52/1 & culvert No. 52/2 on Colombo - Galle - Hambantota Road",
+    title: "Reconstruction of Bridge No. 52/1 & Culvert No. 52/2 on Colombo - Galle - Hambantota Road",
     client: "Road Development Authority",
     duration: "12 Months",
     year: 2025,
@@ -438,7 +438,7 @@ const projectsData = [
     id: 'project-94',
     type: 'completed',
     category: "disaster",
-    title: "Landslide Mitigation Measures at 06 Location in Ratnapura District (Site No. 62,65,66,70,71,106) under Package 6C of Reduction of Landslide Vulnerability by Mitigation Measures Project (RLVMMP)",
+    title: "Landslide Mitigation Measures at 06 Location in Ratnapura District (Site No. 62,65,66,70,71,106) Under Package 6C of Reduction of Landslide Vulnerability by Mitigation Measures Project (RLVMMP)",
     status: "Completed",
     client: "Ministry of Defence / NBRO",
     duration: "9 Months",
@@ -560,7 +560,7 @@ const projectsData = [
   {
     id: 'project-31',
     type: 'completed', category: "roads",
-    title: "Rehabilitation of 20.80 km Rural Roads in Palindanuwara (Kalutara)",
+    title: "Rehabilitation of 20.80 Km Rural Roads in Palindanuwara (Kalutara)",
     status: "Completed",
     client: "Road Development Authority",
     
@@ -586,7 +586,7 @@ const projectsData = [
     id: 'project-91',
     type: 'completed',
     category: "roads",
-    title: "Second Integrated Road Investment Program - Rehabilitation, Improvement and Maintenance of 23.96 km Rural Roads in Badulla District",
+    title: "Second Integrated Road Investment Program - Rehabilitation, Improvement and Maintenance of 23.96 Km Rural Roads in Badulla District",
     status: "Completed",
     client: "Road Development Authority",
     duration: "24 Months",
@@ -658,7 +658,7 @@ const projectsData = [
   {
     id: 'project-37',
     type: 'completed', category: "disaster",
-    title: "Landslide Mitigation in 32 sites (Kalutara, Rathnapura, Matara)",
+    title: "Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)",
     status: "Completed",
     client: "Ministry of Defence",
     
@@ -680,7 +680,7 @@ const projectsData = [
   {
     id: 'project-39',
     type: 'completed', category: "disaster",
-    title: "Landslide Mitigation along Railway Main Line (22 Sites)",
+    title: "Landslide Mitigation Along Railway Main Line (22 Sites)",
     status: "Completed",
     client: "Ministry of Defence",
     
@@ -870,7 +870,7 @@ const projectsData = [
   {
     id: 'project-51',
     type: 'completed', category: "bridges",
-    title: "Construction of Flood Gate with Culvert near Thalangama Tank",
+    title: "Construction of Flood Gate With Culvert Near Thalangama Tank",
     status: "Completed",
     client: "Ministry of Megapolis",
     
@@ -1048,7 +1048,7 @@ const projectsData = [
   {
     id: 'project-68',
     type: 'completed', category: "roads",
-    title: "Kiriella - Nedurana - Eheliyagoda Road (14+750 km)",
+    title: "Kiriella - Nedurana - Eheliyagoda Road (14+750 Km)",
     status: "Completed",
     client: "Road Development Authority",
     
@@ -1068,7 +1068,7 @@ const projectsData = [
   {
     id: 'project-70',
     type: 'completed', category: "bridges",
-    title: "46 Nos. Bridges under French Government (Kirimetiya - Yala)",
+    title: "46 Nos. Bridges Under French Government (Kirimetiya - Yala)",
     status: "Completed",
     client: "Road Development Authority",
     
@@ -1252,7 +1252,7 @@ const projectsData = [
   {
     id: 'project-88',
     type: 'completed', category: "water",
-    title: "Water Treatment Plant - Ampara (172,000 cum/day)",
+    title: "Water Treatment Plant - Ampara (172,000 Cum/day)",
     status: "Completed",
     client: "NWSDB",
     
