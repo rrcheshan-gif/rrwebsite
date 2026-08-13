@@ -379,12 +379,11 @@ const projectsData = [
     category: "railway",
     title: "Maho to Anuradhapura Railway Line Track Rehabilitation & Ancillary Works",
     client: "IRCON International Limited",
-    contractSum: "Rs. 2,095,347,973.11",
     duration: "6 Months",
     year: 2023,
     status: "Completed",
     description: `<p style="margin-bottom: 20px;"><strong>Formation, Civil & other Ancillary works between Anuradhapura to Vauniya in Connection with up gradation of Railway Line from Maho to Omanthai under Indian Line of Credit - Track Rehabilitation & Ancillary Works.</strong></p>
-<p>Executed for IRCON International Limited at a massive contract sum of <strong>Rs. 2,095,347,973.11</strong>, this critical railway infrastructure project was completed in 6 months, restoring high-speed rail connectivity to the northern line.</p>`
+<p>Executed for IRCON International Limited this critical railway infrastructure project was completed in 6 months, restoring high-speed rail connectivity to the northern line.</p>`
   },
   {
     id: 'project-27',
@@ -458,14 +457,13 @@ const projectsData = [
     category: "disaster",
     title: "Landslide Mitigation Measures at 02 Locations in Matara & Hambantota Districts (Site No. 104, 151) Under Package – 06F (RLVMMP)",
     contractNo: "RLVMMP/WORKS/06F",
-    contractAmount: "LKR 106,872,056.50 + 18% VAT",
     status: "Completed",
     client: "Ministry of Defence - Disaster Management Division",
     duration: "9 Months (270 Days)",
     year: 2024,
     location: "Matara and Hambantota, Sri Lanka",
     description: `<p style="margin-bottom: 20px;">The <strong>"Landslide Mitigation Measures at 02 Locations in Matara & Hambantota Districts (Site No. 104, 151) Under Package – 06F of Reduction of Landslide Vulnerability by Mitigation Measures Project (RLVMMP)"</strong> [Contract No: RLVMMP/WORKS/06F] is a major disaster management infrastructure project executed for the <strong>Ministry of Defence - Disaster Management Division</strong>.</p>
-                   <p style="margin-bottom: 20px;">With an accepted contract amount of <strong>LKR 106,872,056.50 + 18% VAT</strong> and an intensive execution duration of 270 calendar days, RR Construction (Pvt) Ltd deployed specialized slope stabilization engineering teams, heavy drilling rigs, soil nailing systems, shotcreting equipment, and subsurface drainage mechanisms to secure vulnerable landslide sites in the Matara and Hambantota districts.</p>
+                   <p style="margin-bottom: 20px;">With an intensive execution duration of 270 calendar days, RR Construction (Pvt) Ltd deployed specialized slope stabilization engineering teams, heavy drilling rigs, soil nailing systems, shotcreting equipment, and subsurface drainage mechanisms to secure vulnerable landslide sites in the Matara and Hambantota districts.</p>
                    <p style="margin-bottom: 20px;">By leveraging deep geotextile engineering, high-tensile wire mesh anchoring, and rigorous geotechnical monitoring, our engineering divisions successfully stabilized unstable slopes at Site No. 104 & Site No. 151, protecting critical transportation corridors, local communities, and public infrastructure from soil erosion and slope failures.</p>
                    <p>All mitigation works were strictly executed in compliance with ISO 9001 quality, ISO 14001 environmental, and ISO 45001 occupational safety standards, as well as strict NBRO (National Building Research Organisation) engineering protocols.</p>`
   },
@@ -474,13 +472,12 @@ const projectsData = [
     type: 'completed',
     category: "maritime",
     title: "Reactivation and Reconstruction of Myliddy Fishery Harbour in Northern Province – Phase II",
-    contractAmount: "Rs. 244,651,102.00 (excl. VAT & Contingencies)",
     status: "Completed",
     client: "State Ministry of Fishery Harbour Development",
     duration: "12 Months",
     year: 2021,
     location: "Myliddy Fishery Harbour, Kankesanthurai, Sri Lanka",
-    description: `<p style="margin-bottom: 20px;">The <strong>"Reactivation and Reconstruction of Myliddy Fishery Harbour in Northern Province – Phase II"</strong> project is a landmark maritime engineering development executed for the <strong>State Ministry of Fishery Harbour Development and Fish Exports</strong> at a contract price of <strong>Rs. 244,651,102.00</strong>.</p>
+    description: `<p style="margin-bottom: 20px;">The <strong>"Reactivation and Reconstruction of Myliddy Fishery Harbour in Northern Province – Phase II"</strong> project is a landmark maritime engineering development executed for the <strong>State Ministry of Fishery Harbour Development and Fish Exports</strong> .</p>
                    <p style="margin-bottom: 20px;">Following the successful completion of Phase I, Phase II involved extensive marine civil engineering works, including breakwater reconstruction, basin deepening through marine dredging, quay wall extension, slipway rehabilitation, and modern anchorages for multiday fishing vessels in the Jaffna peninsula.</p>
                    <p style="margin-bottom: 20px;">Deploying RR Construction's specialized marine equipment fleet, barge-mounted excavators, and coastal engineering specialists, the harbour was restored to full operational capacity, empowering northern fishing communities and boosting regional fish export logistics.</p>
                    <p>All marine construction operations strictly complied with ISO 9001 quality management standards and marine environmental safety guidelines.</p>`
@@ -491,14 +488,13 @@ const projectsData = [
     category: "bridges",
     title: "Widening & Redecking of Bridge No. 25/3 on Nagoda – Kalwellawa – Bellapitiya Road (B 304) – (Balance Work)",
     contractNo: "RDA/RM&M/WP/GOSL(WB)/2025/04",
-    contractAmount: "Rs. 53,400,958.10 (excl. VAT)",
     status: "Completed",
     client: "Road Development Authority",
     duration: "9 Months (273 Days)",
     year: 2025,
     location: "Nagoda Kalwellawa Bellapitiya Road, Sri Lanka",
     description: `<p style="margin-bottom: 20px;">The <strong>"Widening & Redecking of Bridge No. 25/3 on Nagoda – Kalwellawa – Bellapitiya Road (B 304) – (Balance Work)"</strong> [Contract No: RDA/RM&M/WP/GOSL(WB)/2025/04] is a vital bridge infrastructure project executed for the <strong>Road Development Authority (RDA)</strong>.</p>
-                   <p style="margin-bottom: 20px;">Awarded at a contract price of <strong>Rs. 53,400,958.10 (excl. VAT)</strong> with an execution timeframe of 273 calendar days, the scope involved extensive structural bridge engineering, including span widening, reinforced concrete deck replacement, abutment reinforcement, and asphalt approach road surfacing on the B 304 highway corridor.</p>
+                   <p style="margin-bottom: 20px;">With an execution timeframe of 273 calendar days, the scope involved extensive structural bridge engineering, including span widening, reinforced concrete deck replacement, abutment reinforcement, and asphalt approach road surfacing on the B 304 highway corridor.</p>
                    <p style="margin-bottom: 20px;">Leveraging RR Construction's heavy machinery fleet and specialized bridge construction teams, the bridge was successfully widened to modern safety standards, dramatically enhancing traffic capacity and structural resilience against heavy vehicle loads and monsoonal flood conditions.</p>
                    <p>All bridge widening and redecking operations strictly complied with RDA technical specifications, ISO 9001 quality management, and ISO 45001 safety protocols.</p>`
   },
@@ -508,13 +504,12 @@ const projectsData = [
     category: "railway",
     title: "Emergency Reconstruction of Northern Railway Line Damaged by Cyclone Ditwah (Maho to Omanthai)",
     contractNo: "IRCON/9046/SLR.MAHO-OMT/Restoration Work/Civil-03/LOA",
-    contractAmount: "LKR 224,697,785.00",
     status: "Completed",
     client: "IRCON International Limited (Government of India Undertaking)",
     duration: "2 Months",
     year: 2026,
     location: "Maho Railway Station, Maho, Sri Lanka",
-    description: `<p style="margin-bottom: 20px;">The <strong>"Emergency Reconstruction of Northern Railway Line Damaged by Cyclone Ditwah: Civil Works between Maho and Omanthai"</strong> [LOA No: IRCON/9046/SLR.MAHO-OMT/Restoration Work/Civil-03/LOA] is an urgent railway infrastructure restoration project funded under Indian Grant Assistance and executed for <strong>IRCON International Limited</strong> at a total accepted contract value of <strong>LKR 224,697,785.00</strong>.</p>
+    description: `<p style="margin-bottom: 20px;">The <strong>"Emergency Reconstruction of Northern Railway Line Damaged by Cyclone Ditwah: Civil Works between Maho and Omanthai"</strong> [LOA No: IRCON/9046/SLR.MAHO-OMT/Restoration Work/Civil-03/LOA] is an urgent railway infrastructure restoration project funded under Indian Grant Assistance and executed for <strong>IRCON International Limited</strong> .</p>
                    <p style="margin-bottom: 20px;">Following severe cyclone damage across 128 km of the Northern Railway Line, RR Construction deployed rapid-response civil engineering teams, heavy excavators, rock boulder transportation, and specialized track machinery to perform emergency embankment restoration across multiple key sections (including Ambanpola-Galgamuwa, Galgamuwa-Senarathgama, Tambuttegama-Talawa, Sravastipura-Anuradhapura, Boo Oya-Vavuniya, and Thandikulam-Omanthai).</p>
                    <p style="margin-bottom: 20px;">The scope of work included the removal of washed-away debris, formation preparation with rock boulders (2,720 Cum), ABC layer laying and compaction (750 Cum), geotextile & geogrid bearing layer installation, gabion wall construction, grouted stone riprap slope protection (1,315 Cum), and the supply & laying of 3,500 Cum of railway ballast.</p>
                    <p>All emergency railway formation civil works were completed within an intensive 2-month timeframe during track block operations in full compliance with IRCON technical specifications and CIDA SCA/5 standards.</p>`
@@ -525,7 +520,6 @@ const projectsData = [
     category: "railway",
     title: "Emergency Reconstruction of Northern Railway Line Damaged by Cyclone Ditwah (Medawachchiya to Talai Mannar)",
     contractNo: "IRCON/9046/SLR.MAHO-OMT/Restoration Work/Civil-04/LOA",
-    contractAmount: "LKR 244,680,445.00",
     status: "Completed",
     client: "IRCON International Limited (Government of India Undertaking)",
     duration: "2 Months",
@@ -540,7 +534,7 @@ const projectsData = [
       'images/IRCON-MANNAR/WhatsApp Image 2026-08-01 at 12.35.05.jpeg',
       'images/IRCON-MANNAR/WhatsApp Image 2026-08-01 at 12.35.44.jpeg'
     ],
-    description: `<p style="margin-bottom: 20px;">The <strong>"Emergency Reconstruction of Northern Railway Line Damaged by Cyclone Ditwah: Civil Works between Medawachchiya and Talai Mannar"</strong> [LOA No: IRCON/9046/SLR.MAHO-OMT/Restoration Work/Civil-04/LOA] is a major emergency railway restoration project funded under Indian Grant Assistance and executed for <strong>IRCON International Limited</strong> at an accepted contract value of <strong>LKR 244,680,445.00</strong>.</p>
+    description: `<p style="margin-bottom: 20px;">The <strong>"Emergency Reconstruction of Northern Railway Line Damaged by Cyclone Ditwah: Civil Works between Medawachchiya and Talai Mannar"</strong> [LOA No: IRCON/9046/SLR.MAHO-OMT/Restoration Work/Civil-04/LOA] is a major emergency railway restoration project funded under Indian Grant Assistance and executed for <strong>IRCON International Limited</strong> .</p>
                    <p style="margin-bottom: 20px;">Covering 105 km of damaged track corridor between Medawachchiya (MWH) and Talaimannar (TMP) (including Chettikulam, Madhu Road, and Murukkan sections), RR Construction executed rapid-scale formation civil works to restore rail connectivity following Cyclone Ditwah.</p>
                    <p style="margin-bottom: 20px;">The critical scope comprised removal of washed-away debris (2,325 Cum), rock boulder formation preparation (2,820 Cum), ABC sub-ballast compaction (2,400 Cum), geotextile laying (8,120 Sqm), grouted stone riprap slope stabilization (1,025 Cum), and transportation and supply of 3,500 Cum of railway ballast.</p>
                    <p>Executed within a strict 2-month schedule, this emergency restoration restored safe, high-speed rail transportation to Sri Lanka's northern coastal line under ISO 9001 and IRCON quality standards.</p>`
@@ -584,7 +578,6 @@ const projectsData = [
     status: "Completed",
     client: "Ministry of Fisheries",
     contractNo: "MFARD/PIMU/2019/CAPC/003",
-    value: "LKR 5,367,689,206.70",
     duration: "36 Months",
     year: 2025
   },
@@ -621,11 +614,10 @@ const projectsData = [
     title: "Rehabilitation of 26.05 Km of Rural Roads in Kalutara District",
     status: "Completed",
     client: "Road Development Authority",
-    contractSum: "Rs. 859,612,391.17",
     duration: "09 Months",
     year: 2024,
     description: `<p style="margin-bottom: 20px;">The <strong>Rehabilitation / Improvement of 26.05 Km of Rural Roads in the Kalutara District</strong> project included performance-based maintenance for three years, executed for the Road Development Authority.</p>
-<p>Completed in a fast-tracked 9-month timeframe, the <strong>Rs. 859,612,391.17</strong> project dramatically enhanced rural transport infrastructure in the district.</p>`
+<p>Completed in a fast-tracked 9-month timeframe, the project dramatically enhanced rural transport infrastructure in the district.</p>`
   },
   {
     id: 'project-34',
@@ -701,7 +693,6 @@ const projectsData = [
     category: "irrigation",
     title: "Rehabilitation of Kalmadu Scheme Headworks",
     contractNo: "LK-MOMDE-163045-CW-RFB",
-    contractAmount: "LKR 484,096,095.57 + VAT",
     status: "Completed",
     client: "Ministry of Irrigation - IWWRMP (Kilinochchi Range)",
     duration: "24 Months (730 Days)",
@@ -721,7 +712,7 @@ const projectsData = [
       'images/KALMADU/WhatsApp Image 2026-08-01 at 11.58.39.jpeg'
     ],
     description: `<p style="margin-bottom: 20px;">The <strong>"Rehabilitation of Kalmadu Scheme Headworks"</strong> [Contract No: LK-MOMDE-163045-CW-RFB] is a major water resources and irrigation infrastructure project executed under the <strong>Integrated Watershed & Water Resources Management Project (IWWRMP)</strong> of the <strong>Ministry of Irrigation</strong>.</p>
-                   <p style="margin-bottom: 20px;">Awarded at a contract value of <strong>LKR 484,096,095.57 + VAT</strong> with a 730-day (24-month) completion schedule, the project focused on comprehensive structural rehabilitation of headworks, dam spillways, sluice gates, bund reinforcement, and water management structures in the Kilinochchi Range, Northern Province.</p>
+                   <p style="margin-bottom: 20px;">With a 730-day (24-month) completion schedule, the project focused on comprehensive structural rehabilitation of headworks, dam spillways, sluice gates, bund reinforcement, and water management structures in the Kilinochchi Range, Northern Province.</p>
                    <p style="margin-bottom: 20px;">Leveraging RR Construction's specialized hydraulic engineering divisions and earth-moving machinery, the headworks were restored to increase reservoir storage capacity, secure agricultural irrigation channels, and safeguard local communities against severe flood risks during heavy monsoonal seasons.</p>
                    <p>All irrigation civil works strictly complied with Northern Province Irrigation Department specifications, ICTAD/SBD/02 standards, and ISO 9001 quality management guidelines.</p>`
   },
@@ -733,11 +724,10 @@ const projectsData = [
     title: "Second Integrated Road Investment Program - Mannar District (49.01 Km)",
     status: "Completed",
     client: "Road Development Authority",
-    contractSum: "Rs. 2,481,994,000.80",
     duration: "24 Months",
     year: 2022,
     description: `<p style="margin-bottom: 20px;">The <strong>"Second Integrated Road Investment Program - Rehabilitation / Improvement and Maintenance of 49.01 Km Rural Roads in Mannar District in the Northern Province – Package 3"</strong> is a major infrastructure development executed for the <strong>Road Development Authority</strong>.</p>
-<p style="margin-bottom: 20px;">With a contract sum of <strong>Rs. 2,481,994,000.80</strong> and a 24-month duration, RR Construction successfully rehabilitated a vast network of rural roads in the Mannar district, enhancing rural connectivity, agricultural transport, and economic development in the region.</p>
+<p style="margin-bottom: 20px;">With a 24-month duration, RR Construction successfully rehabilitated a vast network of rural roads in the Mannar district, enhancing rural connectivity, agricultural transport, and economic development in the region.</p>
 <p>The project involved extensive earthworks, sub-base and base course construction, asphalt paving, and the establishment of robust drainage systems across 49.01 kilometers.</p>`
   },
   {
@@ -748,10 +738,9 @@ const projectsData = [
     galleryImages: [ 'images/kilinochchi-iroad/kilinochchi-hero.jpg', 'images/kilinochchi-iroad/kilinochchi-1.jpg', 'images/kilinochchi-iroad/kilinochchi-2.jpg', 'images/kilinochchi-iroad/kilinochchi-3.jpg', 'images/kilinochchi-iroad/kilinochchi-4.jpg', 'images/kilinochchi-iroad/kilinochchi-5.jpg' ],
     status: "Completed",
     client: "Road Development Authority",
-    contractSum: "Rs. 2,599,995,936.60",
     duration: "24 Months",
     year: 2022,
-    description: `<p style="margin-bottom: 20px;">Executed for the <strong>Road Development Authority</strong>, this <strong>Rs. 2,599,995,936.60</strong> project involved the rehabilitation and improvement of 53.60 km of rural roads in the Kilinochchi District (Package 2) under the Second Integrated Road Investment Program.</p>
+    description: `<p style="margin-bottom: 20px;">Executed for the <strong>Road Development Authority</strong>, this project involved the rehabilitation and improvement of 53.60 km of rural roads in the Kilinochchi District (Package 2) under the Second Integrated Road Investment Program.</p>
 <p>Over the 24-month contract period, our engineering teams delivered comprehensive road reconstruction, asphalt surfacing, and associated drainage structures, significantly improving the transport network in the Northern Province.</p>`
   },
   {
@@ -760,11 +749,10 @@ const projectsData = [
     title: "Integrated Road Development Program - Kurunegala (99.00 Km)",
     status: "Completed",
     client: "Road Development Authority",
-    contractSum: "Rs. 2,165,263,498.51",
     duration: "12 Months",
     year: 2022,
     description: `<p style="margin-bottom: 20px;">The <strong>Integrated Road Development Program - Rehabilitation/ Improvements of 99.00 Km Rural Roads in the Kurunegala District</strong> (Package 3) included performance-based maintenance for three years.</p>
-<p>With a contract value of <strong>Rs. 2,165,263,498.51</strong>, this extensive 12-month project upgraded nearly 100 kilometers of rural road infrastructure, demonstrating RR Construction's capacity to deliver massive road network improvements efficiently and to the highest standards.</p>`
+<p>this extensive 12-month project upgraded nearly 100 kilometers of rural road infrastructure, demonstrating RR Construction's capacity to deliver massive road network improvements efficiently and to the highest standards.</p>`
   },
   {
     id: 'project-44',

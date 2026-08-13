@@ -332,7 +332,7 @@ export default function Home() {
             </p>
             
             <p style={{ color: "var(--text-light)", marginBottom: "40px", lineHeight: 1.8, fontSize: "1.1rem" }}>
-              With financial facilities exceeding Rs. 12.50 Billion and a self-owned fleet of {COMPANY_DATA.machineryFleet} heavy construction machines, our capabilities go beyond earthworks and structural concrete. We execute large-scale highways, bridges, irrigation canals, maritime construction, dredging, and heavy steel fabrication. We bring the full strength of our civil engineering resources to every site, ensuring Sri Lanka's infrastructure is built with absolute reliability.
+              With a self-owned fleet of {COMPANY_DATA.machineryFleet} heavy construction machines, our capabilities go beyond earthworks and structural concrete. We execute large-scale highways, bridges, irrigation canals, maritime construction, dredging, and heavy steel fabrication. We bring the full strength of our civil engineering resources to every site, ensuring Sri Lanka's infrastructure is built with absolute reliability.
             </p>
         
             <div>

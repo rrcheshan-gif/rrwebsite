@@ -17,7 +17,7 @@ export const NEWS_DATA: NewsItem[] = [
     slug: 'vadduvakal-bridge-construction-commences',
     tag: 'Infrastructure',
     title: 'Construction of Vadduvakal Bridge Commences in Mullaitivu',
-    desc: 'President Anura Kumara Dissanayake officially inaugurated the construction of the Rs. 1.4 billion two-lane Vadduvakal Bridge over the Nandikadal Lagoon, a major project awarded to RR Construction.',
+    desc: 'President Anura Kumara Dissanayake officially inaugurated the construction of the two-lane Vadduvakal Bridge over the Nandikadal Lagoon, a major project awarded to RR Construction.',
     date: 'September 02, 2025',
     img: '/images/news/vadduvakal-bridge.jpg',
     featured: true,
@@ -30,9 +30,9 @@ export const NEWS_DATA: NewsItem[] = [
       <p>The President noted that a series of new development projects are set to begin across the country this September. He emphasized that the government will put an end to the long-standing practice of delaying projects beyond their deadlines and spending beyond allocated budgets. Instead, all projects will be completed within the scheduled timeframe to ensure their benefits reach the people without delay.</p>
 
       <h3>Project Details and Investment</h3>
-      <p>The Vadduvakal Bridge, located near the Nandikadal Lagoon along the Paranthan – Karachchi - Mullaitivu road, accommodates more than 3,000 vehicles daily. Due to the lack of maintenance over an extended period, the bridge has become severely unsafe. The Road Development Authority has planned to construct a new two-lane bridge at a cost of Rs. 1.4 billion in public funds, with completion targeted for September 2, 2027.</p>
+      <p>The Vadduvakal Bridge, located near the Nandikadal Lagoon along the Paranthan – Karachchi - Mullaitivu road, accommodates more than 3,000 vehicles daily. Due to the lack of maintenance over an extended period, the bridge has become severely unsafe. The Road Development Authority has planned to construct a new two-lane bridge, with completion targeted for September 2, 2027.</p>
 
-      <p>Minister of Transport, Highways, Ports and Civil Aviation Bimal Rathnayake, speaking at the event, highlighted that although the project was initially estimated at Rs. 1.8 billion, under the current government’s transparent administration it will be completed at a reduced cost of Rs. 1.4 billion. The remaining Rs. 400 million will be allocated for highway development in the Vanni District. He further stated that Rs. 12.5 billion has been allocated for the construction of bridges and highways in the North this year, with provisions expected to increase further in the coming year.</p>
+      <p>Minister of Transport, Highways, Ports and Civil Aviation Bimal Rathnayake, speaking at the event, highlighted the government's commitment to transparent administration and efficient project execution. He further stated that substantial provisions have been allocated for the construction of bridges and highways in the North this year, with further development expected in the coming year.</p>
 
       <h3>A Vision for the North</h3>
       <p>Minister Rathnayake also emphasized that the present government is dedicated to rebuilding the entire country while uniting the North through peace and development. He urged the public to evaluate the current administration based on observable efforts and concrete actions rather than prejudiced ideas.</p>
@@ -72,7 +72,7 @@ export const NEWS_DATA: NewsItem[] = [
       <p>On July 21, 2026, the Procurement Sub Department of Sri Lanka Railways formally awarded the contract (Procurement No. SRS/F. 8176) to RR Construction for the "CONSTRUCTION OF DOUBLE LINE RAILWAY BRIDGE AT 33M 43CH - COST LINE / MAGGONA".</p>
 
       <h3>Project Scope and Investment</h3>
-      <p>This critical infrastructure project is valued at a total Contract Price of <strong>Rs. 401,031,779.97</strong> (Four Hundred One Million Thirty-One Thousand Seven Hundred Seventy-nine Rupees and Ninety-Seven Cents), which includes VAT and contingencies. The project marks another significant milestone in our ongoing efforts to modernize and enhance Sri Lanka's national railway network.</p>
+      <p>The project marks another significant milestone in our ongoing efforts to modernize and enhance Sri Lanka's national railway network.</p>
 
       <h3>Commencement and Execution</h3>
       <p>Following the official acceptance, our engineering and project management teams are mobilizing for immediate deployment. The official commencement date is set for 14 days from the issuance of the Letter of Acceptance, with all preliminary material approvals and reinforcement planning already underway in strict accordance with the contract specifications and engineer's requirements.</p>

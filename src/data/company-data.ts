@@ -5,7 +5,6 @@ export const COMPANY_DATA = {
   workforce: "1,800",
   machineryFleet: "1,000+",
   completedProjects: "100+",
-  financialFacilities: "Rs. 12.50 Billion",
   certifications: ["ISO 9001:2015", "ISO 14001:2015", "ISO 45001:2018"],
   headquarters: "Sri Lanka",
   sectors: [
