@@ -144,6 +144,64 @@ export default function SustainabilityHub() {
         </div>
       </section>
 
+      {/* Corporate Governance & Risk Section */}
+      <section style={{ padding: isMobile ? "40px 10px 80px" : "60px 20px 100px", background: "var(--white)", borderTop: "1px solid var(--border-soft)" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
+          <div style={{ textAlign: "center", marginBottom: "50px" }}>
+            <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0" }}>
+              Corporate Governance
+            </h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto" }}>
+              Our operational excellence is governed by strict ethical standards and proactive risk mitigation.
+            </p>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "40px" }}>
+            <div style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "24px", border: "1px solid var(--border-soft)" }}>
+              <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", display: "flex", alignItems: "center", gap: "15px" }}>
+                <ShieldCheck size={32} color="var(--primary-red)" />
+                Business Ethics
+              </h3>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "15px" }}>
+                <li style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
+                  <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--primary-red)", marginTop: "8px", flexShrink: 0 }} />
+                  <span style={{ color: "var(--text-light)", lineHeight: 1.6 }}>Conduct all business operations with absolute integrity, transparency, and fairness.</span>
+                </li>
+                <li style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
+                  <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--primary-red)", marginTop: "8px", flexShrink: 0 }} />
+                  <span style={{ color: "var(--text-light)", lineHeight: 1.6 }}>Prohibit all forms of bribery, corruption, or unethical anti-competitive practices.</span>
+                </li>
+                <li style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
+                  <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--primary-red)", marginTop: "8px", flexShrink: 0 }} />
+                  <span style={{ color: "var(--text-light)", lineHeight: 1.6 }}>Ensure strict accountability in financial reporting and supplier compliance.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "24px", border: "1px solid var(--border-soft)" }}>
+              <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", display: "flex", alignItems: "center", gap: "15px" }}>
+                <ShieldCheck size={32} color="var(--primary-red)" />
+                Risk Management
+              </h3>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "15px" }}>
+                <li style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
+                  <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--primary-red)", marginTop: "8px", flexShrink: 0 }} />
+                  <span style={{ color: "var(--text-light)", lineHeight: 1.6 }}>Proactively identify and mitigate technical, financial, and environmental risks.</span>
+                </li>
+                <li style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
+                  <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--primary-red)", marginTop: "8px", flexShrink: 0 }} />
+                  <span style={{ color: "var(--text-light)", lineHeight: 1.6 }}>Develop robust contingency plans for supply chain disruptions and weather hazards.</span>
+                </li>
+                <li style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
+                  <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--primary-red)", marginTop: "8px", flexShrink: 0 }} />
+                  <span style={{ color: "var(--text-light)", lineHeight: 1.6 }}>Ensure comprehensive insurance coverage and liability protection across all sites.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }
