@@ -340,7 +340,7 @@ const projectsData = [
     id: 'project-21',
     type: 'ongoing',
     category: "bridges",
-    title: "Reconstruction of Bridge No. 50/1 on Paranthan - Karachchi - Mullativu Road (A-035)",
+    title: "Reconstruction of Vadduvakal Bridge (Bridge No. 50/1) on Paranthan - Karachchi - Mullativu Road (A-035)",
     client: "Road Development Authority",
     duration: "12 Months",
     year: 2025,
