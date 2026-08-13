@@ -277,7 +277,7 @@ export default function Home() {
               <div style={{ position: "absolute", top: "-15px", bottom: "-15px", left: "-15px", right: "-15px", border: "2px dashed rgba(229, 57, 53, 0.5)", borderRadius: "48px", zIndex: 0, pointerEvents: "none" }}></div>
               
               <div style={{ position: "relative", width: "100%", padding: "15px", background: "var(--white)", borderRadius: "40px", boxShadow: "0 25px 70px rgba(0,0,0,0.06)", border: "1px solid rgba(0,0,0,0.04)", zIndex: 2 }}>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridTemplateRows: "repeat(2, 220px)", gap: "12px", position: "relative", zIndex: 1 }}>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridTemplateRows: "repeat(2, 180px)", gap: "12px", position: "relative", zIndex: 1 }}>
                 
                 {/* Top Left - Wide */}
                 <div style={{ gridColumn: "1 / 3", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
