@@ -70,7 +70,7 @@ export default function MaritimeConstructionPage() {
             opacity: 0.9, 
             lineHeight: 1.6 
           }}>
-            Expert harbour development, marine civil engineering, and coastal infrastructure solutions holding CIDA Grade CS-2.
+            Expert harbour development, marine civil engineering, and coastal infrastructure solutions.
           </p>
         </div>
       </section>
@@ -94,14 +94,14 @@ export default function MaritimeConstructionPage() {
                 Sri Lanka's Premier Maritime Constructor
               </h2>
               <p style={{ fontSize: '16px', color: 'var(--text-light)', lineHeight: 1.8, marginBottom: '20px' }}>
-                As a CIDA Grade CS-2 maritime constructor, RR Construction possesses the specialized equipment, technical expertise, and engineering capabilities required for complex marine environments.
+                RR Construction possesses the specialized equipment, technical expertise, and engineering capabilities required for complex marine environments.
               </p>
               <p style={{ fontSize: '16px', color: 'var(--text-light)', lineHeight: 1.8, marginBottom: '30px' }}>
                 Our maritime division undertakes technically challenging projects from commercial ports and fishery harbours to coastal protection structures, delivering resilient infrastructure designed to withstand harsh marine conditions.
               </p>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '15px' }}>
                 {[
-                  `CIDA Grade CS-2 in Maritime Construction`,
+                  `Specialized in Maritime Construction`,
                   `ISO 9001:2015 Quality Management`,
                   `ISO 14001:2015 Environmental Management`,
                   `ISO 45001:2018 Occupational Health & Safety`
@@ -555,22 +555,6 @@ export default function MaritimeConstructionPage() {
           </div>
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-            <details style={{ 
-              backgroundColor: 'var(--white)', 
-              borderRadius: '16px', 
-              padding: '20px', 
-              border: '1px solid var(--border-soft)',
-              cursor: 'pointer'
-            }}>
-              <summary style={{ fontSize: '18px', fontWeight: 600, color: 'var(--text-dark)', listStyle: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                What grading does RR Construction hold for maritime works?
-                <span style={{ color: 'var(--primary-red)' }}>+</span>
-              </summary>
-              <p style={{ fontSize: '16px', color: 'var(--text-light)', lineHeight: 1.7, marginTop: '15px', paddingTop: '15px', borderTop: '1px solid var(--border-soft)' }}>
-                We hold CIDA (Construction Industry Development Authority) Grade CS-2 for Maritime Construction in Sri Lanka, which qualifies us to undertake major marine infrastructure projects.
-              </p>
-            </details>
-
             <details style={{ 
               backgroundColor: 'var(--white)', 
               borderRadius: '16px', 

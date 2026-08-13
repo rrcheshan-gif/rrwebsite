@@ -474,15 +474,11 @@ export default function BridgeConstructionPage() {
             {[
               {
                 q: "What types of bridges does RR Construction build?",
-                a: "We construct all types of major bridges including Pre-Stressed Concrete (PSC) girder bridges, Reinforced Concrete T-beam bridges, steel composite bridges, large box culverts, and pedestrian overpasses. Our CS-1 grading permits us to undertake bridges of any complexity."
+                a: "We construct all types of major bridges including Pre-Stressed Concrete (PSC) girder bridges, Reinforced Concrete T-beam bridges, steel composite bridges, large box culverts, and pedestrian overpasses. Our extensive experience permits us to undertake bridges of any complexity."
               },
               {
                 q: "Do you undertake bridge repair and widening projects?",
                 a: "Yes, bridge rehabilitation is a core service. We handle structural repairs, capacity widening, deck replacements, substructure strengthening, and anti-corrosion treatments for existing bridge structures to extend their operational lifespan."
-              },
-              {
-                q: "What is the significance of the CIDA CS-1 grading for bridges?",
-                a: "CS-1 is the highest national grading awarded by the Construction Industry Development Authority (CIDA) of Sri Lanka. It signifies that RR Construction possesses the financial capacity, technical expertise, equipment, and track record to successfully execute the country's most complex and high-value bridge construction contracts."
               },
               {
                 q: "Do you own your own bridge construction equipment?",

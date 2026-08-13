@@ -282,33 +282,6 @@ export default function Services() {
         </div>
       </section>
 
-      {/* ── CIDA GRADES ── */}
-      <section style={{ padding: isMobile ? '50px 12px' : '80px 20px', background: 'var(--white)', borderTop: '1px solid var(--border-soft)', borderBottom: '1px solid var(--border-soft)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? '40px' : '80px', alignItems: 'start' }}>
-
-          <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
-              <div style={{ width: '36px', height: '2px', background: 'var(--primary-red)' }} />
-              <span style={{ color: 'var(--primary-red)', fontWeight: 800, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.82rem' }}>CIDA Registered</span>
-            </div>
-            <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '2rem' : '2.6rem', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 16px', lineHeight: 1.15 }}>
-              All Registered Disciplines
-            </h2>
-            <p style={{ color: 'var(--text-light)', lineHeight: 1.75, fontSize: '1rem', margin: '0 0 28px' }}>
-              Registration No. <strong>{COMPANY_DATA.cidaRegistration}</strong> — covering {COMPANY_DATA.cidaGrades.length} construction disciplines with the highest available grades in bridges and irrigation.
-            </p>
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '10px' }}>
-            {COMPANY_DATA.cidaGrades.map((g, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'var(--bg-light)', borderRadius: '12px', padding: '14px 18px', border: '1px solid var(--border-soft)' }}>
-                <span style={{ fontSize: '0.92rem', fontWeight: 600, color: 'var(--text-dark)' }}>{g.field}</span>
-                <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 900, fontSize: '1rem', color: 'var(--primary-red)', marginLeft: '12px', flexShrink: 0 }}>{g.grade}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── RESOURCE PLANNING ── */}
       <section style={{ padding: isMobile ? '60px 12px' : '100px 20px' }}>

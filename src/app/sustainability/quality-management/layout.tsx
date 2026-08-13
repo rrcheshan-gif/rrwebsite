@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Quality Management | Sustainability | RR Construction",
-  description: "RR Construction guarantees engineering excellence through ISO 9001:2015 certified quality management systems and CIDA CS-2 grade compliance.",
+  description: "RR Construction guarantees engineering excellence through ISO 9001:2015 certified quality management systems.",
   alternates: {
     canonical: 'https://www.rrcon.company/sustainability/quality-management',
   }

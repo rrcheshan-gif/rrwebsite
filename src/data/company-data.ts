@@ -18,16 +18,7 @@ export const COMPANY_DATA = {
     "Railway Civil Works"
   ],
   cidaRegistration: "C-10171",
-  cidaGrades: [
-    { field: "Highway", grade: "CS-2" },
-    { field: "Bridge", grade: "CS-1" },
-    { field: "Maritime Construction", grade: "CS-2" },
-    { field: "Building", grade: "C-2" },
-    { field: "Irrigation & Drainage Canals", grade: "C-1" },
-    { field: "Dredging & Reclamation", grade: "C-2" },
-    { field: "Storm Water Disposal & Land Drainage", grade: "C-2" },
-    { field: "Water Supply and Sewerage", grade: "C-7" }
-  ],
+
   leadership: [
     { name: "Mr. Ranjith Senadheera S.D.", role: "Managing Director", qual: "B.Sc. Engineering (Hons), M.Eng. (IEM)", image: "/images/director.jpg" },
     { name: "Mr. Ajith Priyantha Galahitiyawa", role: "General Manager – Contracts", qual: "B.Sc. Engineering, Chartered Engineer", image: "" },

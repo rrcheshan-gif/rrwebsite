@@ -36,7 +36,7 @@ export default function SustainabilityHub() {
     {
       id: "quality",
       title: "Quality Management",
-      desc: "Engineering excellence certified by ISO 9001:2015 and CIDA CS-2. Delivering structural integrity that lasts generations.",
+      desc: "Engineering excellence certified by ISO 9001:2015. Delivering structural integrity that lasts generations.",
       icon: <Award size={40} color="var(--primary-red)" />,
       link: "/sustainability/quality-management",
       color: "var(--primary-red)",

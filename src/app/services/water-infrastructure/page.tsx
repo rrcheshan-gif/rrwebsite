@@ -45,62 +45,6 @@ export default function WaterInfrastructurePage() {
         </p>
       </section>
 
-      {/* Water Infrastructure Capabilities */}
-      <section style={{ padding: isMobile ? "60px 20px" : "100px 40px", backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ color: 'var(--text-dark)', fontSize: '32px', fontFamily: 'var(--font-heading)', marginBottom: '30px' }}>
-            Infrastructure Capabilities & Registrations
-          </h2>
-          <p style={{ color: 'var(--text-light)', fontSize: '16px', lineHeight: 1.8, maxWidth: '800px', margin: '0 auto 40px auto' }}>
-            RR Construction (Pvt) Ltd holds the highest possible grading in multiple disciplines from the Construction Industry Development Authority (CIDA) in Sri Lanka, demonstrating our capacity and technical expertise in complex civil engineering projects.
-          </p>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)',
-            gap: '30px'
-          }}>
-            <div style={{
-              backgroundColor: 'var(--bg-light)',
-              padding: '40px 30px',
-              borderRadius: '24px',
-              border: '1px solid var(--border-soft)',
-            }}>
-              <div style={{ fontSize: '48px', color: 'var(--primary-red)', marginBottom: '20px', fontWeight: 'bold' }}>C-7</div>
-              <h3 style={{ color: 'var(--text-dark)', fontSize: '20px', marginBottom: '15px' }}>Water Supply & Sewerage</h3>
-              <p style={{ color: 'var(--text-light)', fontSize: '15px', lineHeight: 1.6, margin: 0 }}>
-                Highest possible CIDA grading for water supply and sewerage infrastructure projects.
-              </p>
-            </div>
-            
-            <div style={{
-              backgroundColor: 'var(--bg-light)',
-              padding: '40px 30px',
-              borderRadius: '24px',
-              border: '1px solid var(--border-soft)',
-            }}>
-              <div style={{ fontSize: '48px', color: 'var(--primary-red)', marginBottom: '20px', fontWeight: 'bold' }}>C-1</div>
-              <h3 style={{ color: 'var(--text-dark)', fontSize: '20px', marginBottom: '15px' }}>Irrigation & Drainage</h3>
-              <p style={{ color: 'var(--text-light)', fontSize: '15px', lineHeight: 1.6, margin: 0 }}>
-                Highest possible CIDA grading (C-1) for large-scale irrigation and drainage canal networks.
-              </p>
-            </div>
-            
-            <div style={{
-              backgroundColor: 'var(--bg-light)',
-              padding: '40px 30px',
-              borderRadius: '24px',
-              border: '1px solid var(--border-soft)',
-            }}>
-              <div style={{ fontSize: '48px', color: 'var(--primary-red)', marginBottom: '20px', fontWeight: 'bold' }}>C-2</div>
-              <h3 style={{ color: 'var(--text-dark)', fontSize: '20px', marginBottom: '15px' }}>Storm Water Drainage</h3>
-              <p style={{ color: 'var(--text-light)', fontSize: '15px', lineHeight: 1.6, margin: 0 }}>
-                CIDA Grade C-2 registration for storm water and land drainage infrastructure.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Services Grid */}
       <section style={{ padding: isMobile ? "60px 20px" : "100px 40px", backgroundColor: 'var(--bg-light)' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -169,7 +113,7 @@ export default function WaterInfrastructurePage() {
                 Irrigation & Drainage
               </h3>
               <p style={{ color: 'var(--text-light)', fontSize: '16px', lineHeight: 1.8, marginBottom: '20px' }}>
-                With CIDA Grade C-1 registration, we handle large-scale irrigation projects essential for Sri Lanka's agricultural sector and rural development.
+                We handle large-scale irrigation projects essential for Sri Lanka's agricultural sector and rural development.
               </p>
               <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
                 {['Irrigation canals and channels', 'Spillways and weirs', 'Anicuts and sluice structures', 'Tank (wewa) rehabilitation', 'Agricultural drainage systems'].map((item, i) => (
@@ -313,12 +257,7 @@ export default function WaterInfrastructurePage() {
           </h2>
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            <div style={{ padding: '25px', backgroundColor: 'var(--bg-light)', borderRadius: '16px', border: '1px solid var(--border-soft)' }}>
-              <h4 style={{ color: 'var(--text-dark)', fontSize: '18px', marginBottom: '10px' }}>What does CIDA Grade C-7 in Water Supply signify?</h4>
-              <p style={{ color: 'var(--text-light)', fontSize: '15px', lineHeight: 1.6, margin: 0 }}>
-                Grade C-7 is the highest possible registration grade awarded by the Construction Industry Development Authority for water supply and sewerage projects in Sri Lanka, meaning there is no financial limit on the projects we can undertake.
-              </p>
-            </div>
+
             <div style={{ padding: '25px', backgroundColor: 'var(--bg-light)', borderRadius: '16px', border: '1px solid var(--border-soft)' }}>
               <h4 style={{ color: 'var(--text-dark)', fontSize: '18px', marginBottom: '10px' }}>Do you provide mechanical and electrical (M&E) installation for treatment plants?</h4>
               <p style={{ color: 'var(--text-light)', fontSize: '15px', lineHeight: 1.6, margin: 0 }}>
@@ -328,7 +267,7 @@ export default function WaterInfrastructurePage() {
             <div style={{ padding: '25px', backgroundColor: 'var(--bg-light)', borderRadius: '16px', border: '1px solid var(--border-soft)' }}>
               <h4 style={{ color: 'var(--text-dark)', fontSize: '18px', marginBottom: '10px' }}>What types of irrigation projects do you handle?</h4>
               <p style={{ color: 'var(--text-light)', fontSize: '15px', lineHeight: 1.6, margin: 0 }}>
-                With our CIDA C-1 grading, we construct major irrigation canals, structures such as anicuts and spillways, and undertake rehabilitation of tanks and reservoirs for agricultural zones.
+                We construct major irrigation canals, structures such as anicuts and spillways, and undertake rehabilitation of tanks and reservoirs for agricultural zones.
               </p>
             </div>
           </div>

@@ -66,7 +66,7 @@ export default function RoadConstructionPage() {
             opacity: 0.9,
             lineHeight: 1.6
           }}>
-            Since {COMPANY_DATA.established}, RR Construction has been a cornerstone of Sri Lanka's infrastructure development. With CIDA CS-2 Highway grading, we deliver expert road construction, rehabilitation, and asphalt paving services across all provinces.
+            Since {COMPANY_DATA.established}, RR Construction has been a cornerstone of Sri Lanka's infrastructure development. With extensive experience, we deliver expert road construction, rehabilitation, and asphalt paving services across all provinces.
           </p>
         </div>
       </section>
@@ -151,7 +151,7 @@ export default function RoadConstructionPage() {
               </h3>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 {[
-                  'CIDA CS-2 Grade for Highway Construction',
+                  'Specialized in Highway Construction',
                   'In-house material testing and quality control laboratories',
                   'Dedicated earthworks and pavement divisions',
                   'Advanced surveying and setting out capabilities',
@@ -359,10 +359,7 @@ export default function RoadConstructionPage() {
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              {
-                q: "What grading does RR Construction hold for highway construction?",
-                a: "RR Construction holds the prestigious CIDA CS-2 grade for Highway Construction, reflecting our financial, technical, and resource capabilities to handle major national infrastructure projects."
-              },
+
               {
                 q: "Who are your primary clients for road construction?",
                 a: "We work extensively with government bodies, primarily the Road Development Authority (RDA) of Sri Lanka, executing large-scale projects like the iRoad Programme and Expressway developments."

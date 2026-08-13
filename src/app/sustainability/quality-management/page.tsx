@@ -44,7 +44,7 @@ export default function QualityManagement() {
             Quality <br/><span style={{ color: "var(--primary-red)" }}>Management</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "800px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
-            Delivering structural integrity that outlasts generations, governed by ISO 9001:2015 and top-tier CIDA CS-2 standards.
+            Delivering structural integrity that outlasts generations, governed by ISO 9001:2015 standards.
           </p>
         </div>
       </section>
@@ -61,8 +61,8 @@ export default function QualityManagement() {
               <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
                 True quality in civil engineering cannot be retrofitted; it must be engineered into every mix, every pour, and every weld. RR Construction’s reputation as a top-tier infrastructure developer is built on an unwavering commitment to structural integrity.
               </p>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8 }}>
-                Certified under <strong>ISO 9001:2015 (Quality Management Systems)</strong> and holding CIDA's highest gradings across multiple disciplines (Highway CS-2, Bridge CS-1), we execute massive public works with extreme precision.
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
+                Certified under <strong>ISO 9001:2015 (Quality Management Systems)</strong>, we execute massive public works with extreme precision.
               </p>
             </div>
             <div style={{ background: "var(--white)", padding: isMobile ? "30px" : "50px", borderRadius: "24px", border: "1px solid rgba(229, 57, 53, 0.2)", boxShadow: "0 20px 40px rgba(229, 57, 53, 0.05)" }}>

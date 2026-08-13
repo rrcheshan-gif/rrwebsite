@@ -97,9 +97,8 @@ export default function DredgingReclamationPage() {
             opacity: 0.9,
             lineHeight: 1.6,
             maxWidth: '600px',
-            margin: '0 auto'
           }}>
-            Advanced marine dredging, harbour development, and land reclamation solutions by a C-2 CIDA graded contractor.
+            Advanced marine dredging, harbour development, and land reclamation solutions.
           </p>
         </div>
       </section>
