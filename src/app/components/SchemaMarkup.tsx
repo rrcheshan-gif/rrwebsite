@@ -10,7 +10,7 @@ export function OrganizationSchema() {
     "name": "RR Construction (Pvt) Ltd",
     "alternateName": "RR Construction",
     "url": "https://www.rrcon.company",
-    "logo": "https://www.rrcon.company/images/rr-logo.png",
+    "logo": "https://www.rrcon.company/images/logo.png",
     "foundingDate": "1995",
     "description": "RR Construction (Pvt) Ltd is a civil engineering and construction company in Sri Lanka established in 1995, specialising in road construction, bridge construction, maritime construction, and water infrastructure.",
     "address": {
