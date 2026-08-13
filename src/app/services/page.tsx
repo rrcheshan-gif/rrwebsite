@@ -72,8 +72,8 @@ const SERVICES = [
     subtitle: 'Multi-Storey Buildings · Water Towers · Steel Fabrication',
     desc: 'Reinforced concrete multi-storey buildings, water retaining structures, elevated water towers, and complex steel fabrication.',
     highlights: ['Multi-storey RC Buildings', 'Elevated Water Towers', 'Heavy Steel Fabrication'],
-    image: '/images/page-headers/services-build.jpg',
-    cta: '/services',
+    image: null,
+    cta: '/projects',
   },
   {
     slug: 'railway-civil-works',
@@ -82,8 +82,8 @@ const SERVICES = [
     subtitle: 'Formation · Civil Infrastructure · Track Upgradation',
     desc: 'Civil and formation works in connection with railway line upgradation projects — earthworks, drainage, retaining structures, and ancillary civil works supporting Sri Lanka\'s national rail network modernisation.',
     highlights: ['Railway Formation Works', 'Maho–Anuradhapura Line', 'Earthworks & Drainage', 'Ancillary Civil Structures'],
-    image: '/images/page-headers/services-build.jpg',
-    cta: '/services',
+    image: null,
+    cta: '/projects',
   },
 ];
 
@@ -224,21 +224,24 @@ export default function Services() {
           <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)', gap: '24px' }}>
             {SERVICES.map((svc, idx) => (
               <Link key={svc.slug} href={svc.cta} className="svc-card" style={{ animationDelay: `${(idx % 3) * 80}ms` }}>
-                {/* Image */}
-                <div style={{ overflow: 'hidden', position: 'relative' }}>
-                  <img
-                    src={svc.image}
-                    alt={svc.title}
-                    className="svc-card-img"
-                    onError={e => {
-                      (e.currentTarget as HTMLImageElement).src = '/images/page-headers/services-build.jpg';
-                    }}
-                  />
-                  {/* Number badge */}
-                  <div style={{ position: 'absolute', top: '14px', left: '14px', background: 'var(--primary-red)', color: 'white', borderRadius: '8px', padding: '3px 10px', fontSize: '0.75rem', fontWeight: 800, letterSpacing: '1px' }}>
-                    {svc.num}
+                {/* Image — only if provided */}
+                {svc.image && (
+                  <div style={{ overflow: 'hidden', position: 'relative' }}>
+                    <img
+                      src={svc.image}
+                      alt={svc.title}
+                      className="svc-card-img"
+                      onError={e => {
+                        (e.currentTarget as HTMLImageElement).style.display = 'none';
+                        (e.currentTarget as HTMLImageElement).parentElement!.style.display = 'none';
+                      }}
+                    />
+                    {/* Number badge */}
+                    <div style={{ position: 'absolute', top: '14px', left: '14px', background: 'var(--primary-red)', color: 'white', borderRadius: '8px', padding: '3px 10px', fontSize: '0.75rem', fontWeight: 800, letterSpacing: '1px' }}>
+                      {svc.num}
+                    </div>
                   </div>
-                </div>
+                )}
 
                 {/* Body */}
                 <div className="svc-card-body">
