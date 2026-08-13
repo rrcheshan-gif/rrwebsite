@@ -59,51 +59,58 @@ export default function News() {
             <h2 style={{ color: "var(--text-dark)", fontWeight: 800, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "1.2rem", fontFamily: "var(--font-heading)" }}>Featured Story</h2>
           </div>
 
-          <Link href={`/news/${featuredNews.slug}`} style={{ textDecoration: 'none' }}>
-            <div 
-              style={{ 
-                display: "flex", 
-                flexDirection: isMobile ? "column" : "row", 
-                background: "var(--white)", 
-                borderRadius: "32px", 
-                overflow: "hidden", 
-                boxShadow: "0 20px 50px rgba(0,0,0,0.06)",
-                border: "1px solid var(--border-soft)",
-                cursor: "pointer",
-                transition: "transform 0.4s ease, box-shadow 0.4s ease"
-              }}
-              className="hover-lift"
-              onMouseOver={(e) => { e.currentTarget.style.transform = "translateY(-8px)"; e.currentTarget.style.boxShadow = "0 30px 60px rgba(0,0,0,0.12)" }} 
-              onMouseOut={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 20px 50px rgba(0,0,0,0.06)" }}
-            >
-              <div style={{ flex: "1.2", height: isMobile ? "300px" : "auto", minHeight: "400px", position: "relative", overflow: "hidden" }}>
-                <img 
-                  src={featuredNews.img} 
-                  alt={featuredNews.title} 
-                  style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.6s ease" }}
-                  onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'} 
-                  onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                />
-                <div style={{ position: "absolute", top: "20px", left: "20px", background: "var(--primary-red)", color: "white", padding: "6px 16px", borderRadius: "30px", fontSize: "0.85rem", fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase" }}>
-                  {featuredNews.tag}
-                </div>
-              </div>
-              <div style={{ flex: "1", padding: isMobile ? "30px 20px" : "50px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                <span style={{ color: "var(--text-light)", fontSize: "0.95rem", fontWeight: 600, display: "flex", alignItems: "center", gap: "8px", marginBottom: "15px" }}>
-                  <Calendar size={18} color="var(--primary-red)" /> {featuredNews.date}
-                </span>
-                <h3 style={{ fontSize: isMobile ? "1.8rem" : "2.5rem", color: "var(--text-dark)", margin: "0 0 20px", fontFamily: "var(--font-heading)", lineHeight: 1.2, fontWeight: 800 }}>
-                  {featuredNews.title}
-                </h3>
-                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "30px", flex: 1 }}>
-                  {featuredNews.desc}
-                </p>
-                <div style={{ display: "inline-flex", alignItems: "center", gap: "10px", color: "var(--primary-red)", fontWeight: 700, fontSize: "1rem", textTransform: "uppercase", letterSpacing: "1px" }}>
-                  Read Full Story <ArrowRight size={20} />
-                </div>
+          <div 
+            style={{ 
+              display: "flex", 
+              flexDirection: isMobile ? "column" : "row", 
+              background: "var(--white)", 
+              borderRadius: "32px", 
+              overflow: "hidden", 
+              boxShadow: "0 20px 50px rgba(0,0,0,0.06)",
+              border: "1px solid var(--border-soft)",
+              transition: "transform 0.4s ease, box-shadow 0.4s ease"
+            }}
+            className="hover-lift"
+          >
+            <div style={{ flex: "1.2", height: isMobile ? "300px" : "auto", minHeight: "400px", position: "relative", overflow: "hidden" }}>
+              <img 
+                src={featuredNews.img} 
+                alt={featuredNews.title} 
+                style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.6s ease" }}
+              />
+              <div style={{ position: "absolute", top: "20px", left: "20px", background: "var(--primary-red)", color: "white", padding: "6px 16px", borderRadius: "30px", fontSize: "0.85rem", fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase" }}>
+                {featuredNews.tag}
               </div>
             </div>
-          </Link>
+            <div style={{ flex: "1", padding: isMobile ? "30px 20px" : "50px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+              <span style={{ color: "var(--text-light)", fontSize: "0.95rem", fontWeight: 600, display: "flex", alignItems: "center", gap: "8px", marginBottom: "15px" }}>
+                <Calendar size={18} color="var(--primary-red)" /> {featuredNews.date}
+              </span>
+              <h3 style={{ fontSize: isMobile ? "1.8rem" : "2.5rem", color: "var(--text-dark)", margin: "0 0 20px", fontFamily: "var(--font-heading)", lineHeight: 1.2, fontWeight: 800 }}>
+                {featuredNews.title}
+              </h3>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "30px", flex: 1 }}>
+                {featuredNews.desc}
+              </p>
+              <Link 
+                href={`/news/${featuredNews.slug}`}
+                style={{ 
+                  display: "inline-flex", 
+                  alignItems: "center", 
+                  gap: "10px", 
+                  color: "var(--primary-red)", 
+                  fontWeight: 700, 
+                  fontSize: "1rem", 
+                  textTransform: "uppercase", 
+                  letterSpacing: "1px",
+                  textDecoration: "none",
+                  cursor: "pointer"
+                }}
+              >
+                Read Full Story <ArrowRight size={20} />
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -118,30 +125,25 @@ export default function News() {
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "30px" }}>
             {regularNews.map((news) => (
-              <Link href={`/news/${news.slug}`} key={news.id} style={{ textDecoration: 'none' }}>
                 <div 
+                  key={news.id}
                   style={{ 
                     background: "var(--white)", 
                     borderRadius: "24px", 
                     overflow: "hidden", 
                     border: "1px solid var(--border-soft)", 
-                    cursor: "pointer", 
                     transition: "transform 0.4s ease, box-shadow 0.4s ease",
                     display: "flex",
                     flexDirection: "column",
                     height: "100%"
                   }} 
                   className="hover-lift" 
-                  onMouseOver={(e) => { e.currentTarget.style.transform = "translateY(-10px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.05)" }} 
-                  onMouseOut={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none" }}
                 >
                   <div style={{ height: "220px", overflow: "hidden", position: "relative" }}>
                     <img 
                       src={news.img} 
                       alt={news.title} 
                       style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: news.crop === 'top' ? 'top center' : 'center', transition: "transform 0.5s ease" }} 
-                      onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.08)'} 
-                      onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'} 
                     />
                   </div>
                   <div style={{ padding: "30px", flex: 1, display: "flex", flexDirection: "column" }}>
@@ -149,13 +151,16 @@ export default function News() {
                     <h3 style={{ fontSize: "1.35rem", color: "var(--text-dark)", margin: "0 0 15px", fontFamily: "var(--font-heading)", lineHeight: 1.4, fontWeight: 700 }}>{news.title}</h3>
                     <p style={{ color: "var(--text-light)", fontSize: "1rem", lineHeight: 1.6, marginBottom: "25px", flex: 1 }}>{news.desc}</p>
                     
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px solid var(--border-soft)", paddingTop: "20px" }}>
-                      <span style={{ color: "var(--text-light)", fontSize: "0.9rem", fontWeight: 600, display: "flex", alignItems: "center", gap: "8px" }}><Clock size={16} color="var(--primary-red)" /> {news.date}</span>
-                      <ArrowRight size={18} color="var(--primary-red)" />
-                    </div>
+                    <Link href={`/news/${news.slug}`} style={{ textDecoration: 'none' }}>
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px solid var(--border-soft)", paddingTop: "20px", cursor: "pointer" }}>
+                        <span style={{ color: "var(--text-light)", fontSize: "0.9rem", fontWeight: 600, display: "flex", alignItems: "center", gap: "8px" }}><Clock size={16} color="var(--primary-red)" /> {news.date}</span>
+                        <div style={{ display: "flex", alignItems: "center", gap: "5px", color: "var(--primary-red)", fontWeight: 600 }}>
+                          Read More <ArrowRight size={18} />
+                        </div>
+                      </div>
+                    </Link>
                   </div>
                 </div>
-              </Link>
             ))}
           </div>
 
