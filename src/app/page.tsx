@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Map, GitMerge, Building2, Waves, Leaf, HardHat, Anchor, Droplets, MapPin, Clock } from "lucide-react";
 import { COMPANY_DATA } from '@/data/company-data';
+import { NEWS_DATA } from '@/data/news-data';
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -519,22 +520,20 @@ export default function Home() {
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px" }}>
-            {[
-              { tag: 'Infrastructure', title: 'Vadduvakal Bridge Construction Commences', desc: 'President Anura Kumara Dissanayake officially inaugurated the construction of the Rs. 1.4 billion Vadduvakal Bridge in Mullaitivu.', date: 'September 02, 2025', img: '/images/news/vadduvakal-bridge.jpg' },
-              { tag: 'Maritime', title: 'Gandara Fishery Harbour Project 90% Completed', desc: 'Major milestones achieved in dredging and breakwater construction at the major southern maritime project.', date: 'June 15, 2026', img: '/images/maritime-harbour-site.jpg' },
-              { tag: 'Corporate', title: 'RR Construction Passes Annual ISO Surveillance Audit', desc: 'Successfully maintaining our ISO 9001, 14001, and 45001 certifications, reaffirming our commitment to global standards.', date: 'May 28, 2026', img: '/images/health-safety-site.jpg' }
-            ].map((news, i) => (
-              <div key={i} style={{ background: "var(--white)", borderRadius: "24px", overflow: "hidden", border: "1px solid var(--border-soft)", cursor: "pointer", transition: "transform 0.4s ease, box-shadow 0.4s ease" }} className="news-card glass-panel hover-lift" onMouseOver={(e) => { e.currentTarget.style.transform = "translateY(-10px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.05)" }} onMouseOut={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none" }}>
-                <div style={{ height: "220px", overflow: "hidden" }}>
-                  <img src={news.img} alt={news.title} className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: news.crop === 'top' ? 'top center' : 'center', transition: "transform 0.4s ease" }} onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'} onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'} />
+            {NEWS_DATA.slice(0, 3).map((news, i) => (
+              <Link href={`/news/${news.slug}`} key={i} style={{ textDecoration: 'none' }}>
+                <div style={{ background: "var(--white)", borderRadius: "24px", overflow: "hidden", border: "1px solid var(--border-soft)", cursor: "pointer", transition: "transform 0.4s ease, box-shadow 0.4s ease", height: "100%", display: "flex", flexDirection: "column" }} className="news-card glass-panel hover-lift" onMouseOver={(e) => { e.currentTarget.style.transform = "translateY(-10px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.05)" }} onMouseOut={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none" }}>
+                  <div style={{ height: "220px", overflow: "hidden" }}>
+                    <img src={news.img} alt={news.title} className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: news.crop === 'top' ? 'top center' : 'center', transition: "transform 0.4s ease" }} onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'} onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'} />
+                  </div>
+                  <div style={{ padding: "35px", flex: 1, display: "flex", flexDirection: "column" }}>
+                    <span style={{ color: "var(--primary-red)", fontWeight: 700, fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "1.5px" }}>{news.tag}</span>
+                    <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", margin: "15px 0", fontFamily: "var(--font-heading)", lineHeight: 1.4 }}>{news.title}</h3>
+                    <p style={{ color: "var(--text-light)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "25px", flex: 1 }}>{news.desc}</p>
+                    <span style={{ color: "var(--text-light)", fontSize: "0.9rem", fontWeight: 600, display: "flex", alignItems: "center", gap: "8px", borderTop: "1px solid var(--border-soft)", paddingTop: "20px" }}><Clock size={16} color="var(--primary-red)" /> {news.date}</span>
+                  </div>
                 </div>
-                <div style={{ padding: "35px" }}>
-                  <span style={{ color: "var(--primary-red)", fontWeight: 700, fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "1.5px" }}>{news.tag}</span>
-                  <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", margin: "15px 0", fontFamily: "var(--font-heading)", lineHeight: 1.4 }}>{news.title}</h3>
-                  <p style={{ color: "var(--text-light)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "25px" }}>{news.desc}</p>
-                  <span style={{ color: "var(--text-light)", fontSize: "0.9rem", fontWeight: 600, display: "flex", alignItems: "center", gap: "8px", borderTop: "1px solid var(--border-soft)", paddingTop: "20px" }}><Clock size={16} color="var(--primary-red)" /> {news.date}</span>
-                </div>
-              </div>
+              </Link>
             ))}
           </div>
 
