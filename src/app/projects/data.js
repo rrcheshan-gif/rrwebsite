@@ -1,4 +1,4 @@
-// Sorted array of all RR Construction completed & ongoing projects by Year (Descending)
+﻿// Sorted array of all RR Construction completed & ongoing projects by Year (Descending)
 const projectsData = [
   // ONGOING PROJECTS
   {
@@ -58,12 +58,12 @@ const projectsData = [
     duration: "15 Months",
     year: 2026,
     status: "Ongoing",
-    heroImage: "/images/KRP/hero.jpeg",
+    heroImage: "images/KRP/hero.jpeg",
     galleryImages: [
-      "/images/KRP/img-1.jpeg",
-      "/images/KRP/img-2.jpeg",
-      "/images/KRP/img-3.jpeg",
-      "/images/KRP/img-4.jpeg"
+      "images/KRP/img-1.jpeg",
+      "images/KRP/img-2.jpeg",
+      "images/KRP/img-3.jpeg",
+      "images/KRP/img-4.jpeg"
     ]
   },
   {
@@ -125,14 +125,14 @@ const projectsData = [
     duration: "12 Months",
     year: 2025,
     status: "Ongoing",
-    heroImage: "/images/BBP/hero.jpeg",
+    heroImage: "images/BBP/hero.jpeg",
     galleryImages: [
-      "/images/BBP/img-1.jpeg",
-      "/images/BBP/img-2.jpeg",
-      "/images/BBP/img-3.jpeg",
-      "/images/BBP/img-4.jpeg",
-      "/images/BBP/img-5.jpeg",
-      "/images/BBP/img-6.jpeg"
+      "images/BBP/img-1.jpeg",
+      "images/BBP/img-2.jpeg",
+      "images/BBP/img-3.jpeg",
+      "images/BBP/img-4.jpeg",
+      "images/BBP/img-5.jpeg",
+      "images/BBP/img-6.jpeg"
     ]
   },
   {
@@ -355,14 +355,14 @@ const projectsData = [
     duration: "12 Months",
     year: 2025,
     status: "Ongoing",
-    heroImage: "/images/WBP/hero.jpeg",
+    heroImage: "images/WBP/hero.jpeg",
     galleryImages: [
-      "/images/WBP/img-1.jpeg",
-      "/images/WBP/img-2.jpeg",
-      "/images/WBP/img-3.jpeg",
-      "/images/WBP/img-4.jpeg",
-      "/images/WBP/img-5.jpeg",
-      "/images/WBP/img-6.jpeg"
+      "images/WBP/img-1.jpeg",
+      "images/WBP/img-2.jpeg",
+      "images/WBP/img-3.jpeg",
+      "images/WBP/img-4.jpeg",
+      "images/WBP/img-5.jpeg",
+      "images/WBP/img-6.jpeg"
     ]
   },
   {
