@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'RR Construction | Company Overview',
-  description: 'Learn about the legacy, engineering capabilities, and corporate story of RR Construction (Pvt) Ltd, a leading civil engineering company in Sri Lanka.',
+  title: 'RR Construction | RR Overview',
+  description: 'Learn about RR Construction\'s history, mission, and comprehensive engineering capabilities across Sri Lanka.',
   alternates: {
     canonical: 'https://www.rrcon.company/about/company-overview'
   }
