@@ -87,12 +87,7 @@ const SERVICES = [
   },
 ];
 
-const STATS = [
-  { value: COMPANY_DATA.yearsOfExcellence, label: 'Years of Experience' },
-  { value: COMPANY_DATA.completedProjects, label: 'Projects Completed' },
-  { value: COMPANY_DATA.workforce, label: 'Strong Workforce' },
-  { value: COMPANY_DATA.machineryFleet, label: 'Heavy Machines' },
-];
+
 
 export default function Services() {
   const [isMobile, setIsMobile] = useState(false);
@@ -211,17 +206,7 @@ export default function Services() {
         </div>
       </section>
 
-      {/* ── STATS ── */}
-      <section style={{ padding: isMobile ? '0 12px 40px' : '0 20px 56px' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(4, 1fr)', gap: '16px' }}>
-          {STATS.map((s, i) => (
-            <div key={i} className="stat-card">
-              <div style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '2.2rem' : '3rem', fontWeight: 900, color: 'var(--primary-red)', lineHeight: 1, marginBottom: '8px' }}>{s.value}</div>
-              <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-light)', textTransform: 'uppercase', letterSpacing: '1px' }}>{s.label}</div>
-            </div>
-          ))}
-        </div>
-      </section>
+
 
       {/* ── ALL SERVICES GRID ── */}
       <section style={{ padding: isMobile ? '0 12px 60px' : '0 20px 100px' }}>
