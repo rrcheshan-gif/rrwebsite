@@ -22,20 +22,22 @@ export const NEWS_DATA: NewsItem[] = [
     img: '/images/news/vadduvakal-bridge.jpg',
     featured: true,
     content: `
-      <h2>A Milestone for Northern Infrastructure</h2>
-      <p>The construction of the new Vadduvakal Bridge in the Mullaitivu District is officially underway. The project was inaugurated by President Anura Kumara Dissanayake on September 2, 2025, marking a significant milestone in the development of the Northern Province's transport network.</p>
+      <h2>The Country is Being Steered Towards Development</h2>
+      <p><strong>The country is being steered towards development through a structured programme that identifies economic potential and expands economic opportunities to rural areas - President</strong></p>
       
-      <p>The new structure is being built as a modern, two-lane bridge to replace the existing, long-standing causeway/bridge on the Paranthan–Karachchi–Mullaitivu road (A035), which spans across the historic Nandikadal Lagoon. The existing bridge had become severely unsafe due to a lack of maintenance and structural deterioration over an extended period.</p>
+      <p>President Anura Kumara Dissanayake stated that the current government’s objective is to drive national development through a structured plan that recognizes economic strengths and brings economic growth to rural areas. He further affirmed his administration’s commitment to lifting rural communities out of poverty during his address at the inauguration of the Vadduvakal Bridge construction project in the Mullaitivu District today (02).</p>
 
-      <h3>Project Scope and Investment</h3>
-      <p>The project is being executed at an estimated cost of <strong>Rs. 1.4 billion</strong>. This reflects a strategic reduction from the initial estimate of Rs. 1.8 billion, with the government reallocating the Rs. 400 million in savings toward other vital highway development projects in the Vanni District.</p>
-      
-      <p>M/s RR Construction (Pvt) Limited was awarded the construction contract following a highly competitive bidding process, reaffirming our position as a leader in national civil engineering projects. Our engineering teams have already mobilized at the site, bringing in state-of-the-art piling and bridge construction equipment.</p>
+      <p>The President noted that a series of new development projects are set to begin across the country this September. He emphasized that the government will put an end to the long-standing practice of delaying projects beyond their deadlines and spending beyond allocated budgets. Instead, all projects will be completed within the scheduled timeframe to ensure their benefits reach the people without delay.</p>
 
-      <h3>Looking Ahead</h3>
-      <p>The project is targeted for completion by <strong>September 2, 2027</strong>. Once completed, the Vadduvakal Bridge will provide a safe, uninterrupted, and highly efficient transport link for the communities in the Mullaitivu and Kilinochchi districts, facilitating enhanced trade, accessibility, and socio-economic growth in the region.</p>
-      
-      <p>Government officials, including the Deputy Minister of Transport and Highways, will conduct regular site inspections alongside our project managers to monitor the progress and ensure the highest standards of quality and safety are maintained throughout the construction lifecycle.</p>
+      <h3>Project Details and Investment</h3>
+      <p>The Vadduvakal Bridge, located near the Nandikadal Lagoon along the Paranthan – Karachchi - Mullaitivu road, accommodates more than 3,000 vehicles daily. Due to the lack of maintenance over an extended period, the bridge has become severely unsafe. The Road Development Authority has planned to construct a new two-lane bridge at a cost of Rs. 1.4 billion in public funds, with completion targeted for September 2, 2027.</p>
+
+      <p>Minister of Transport, Highways, Ports and Civil Aviation Bimal Rathnayake, speaking at the event, highlighted that although the project was initially estimated at Rs. 1.8 billion, under the current government’s transparent administration it will be completed at a reduced cost of Rs. 1.4 billion. The remaining Rs. 400 million will be allocated for highway development in the Vanni District. He further stated that Rs. 12.5 billion has been allocated for the construction of bridges and highways in the North this year, with provisions expected to increase further in the coming year.</p>
+
+      <h3>A Vision for the North</h3>
+      <p>Minister Rathnayake also emphasized that the present government is dedicated to rebuilding the entire country while uniting the North through peace and development. He urged the public to evaluate the current administration based on observable efforts and concrete actions rather than prejudiced ideas.</p>
+
+      <p>Minister of Fisheries, Aquatic and Ocean Resources, Ramalingam Chandrasekar, Deputy Minister of Cooperative Development Upali Samarasingha, Governor of the Northern Province Nagalingam Vethanayahan, Secretary to the Ministry of Transport, Highways, Ports and Civil Aviation Senior Professor Kapila C.K. Perera and officials of the Road Development Authority were among those present.</p>
     `
   },
   {
