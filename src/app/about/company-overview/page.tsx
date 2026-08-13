@@ -191,7 +191,7 @@ export default function AboutStory() {
             <div style={{ flex: 1, minWidth: "300px" }}>
               <h3 style={{ fontSize: "2rem", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px" }}>Unmatched Internal Strength</h3>
               <p style={{ color: "#cbd5e1", lineHeight: 1.8, fontSize: "1.1rem", marginBottom: "20px" }}>
-                We rely on our own resources rather than third-party dependencies. Our operations are powered by a highly skilled workforce of experienced engineers and construction professionals.
+                We rely on our own resources rather than third-party dependencies. Our operations are powe'red by a highly skilled workforce of experienced engineers and construction professionals.
               </p>
               <p style={{ color: "#cbd5e1", lineHeight: 1.8, fontSize: "1.1rem" }}>
                 Combined with a self-owned fleet of heavy construction machines and proprietary aggregate production plants, we maintain total control over project timelines and quality parameters.

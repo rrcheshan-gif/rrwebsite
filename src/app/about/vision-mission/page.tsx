@@ -62,10 +62,10 @@ export default function VisionMission() {
                 "Engineering Sri Lanka's <span style={{ color: "var(--primary-red)" }}>Tomorrow.</span>"
               </h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.2rem", lineHeight: 1.8, marginBottom: "20px", fontWeight: 500 }}>
-                We envision a future where robust, sustainable, and world-class infrastructure forms the backbone of Sri Lankaâ€™s socio-economic development. 
+                We envision a future where robust, sustainable, and world-class infrastructure forms the backbone of Sri Lanka's socio-economic development. 
               </p>
               <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8 }}>
-                Our goal is to be the nationâ€™s premier engineering and construction organizationâ€”recognized internationally for our technical capability, unwavering safety standards, and commitment to long-term national progress.
+                Our goal is to be the nation's premier engineering and construction organization—recognized internationally for our technical capability, unwavering safety standards, and commitment to long-term national progress.
               </p>
             </div>
             <div style={{ flex: "1", minWidth: "300px", display: "flex", justifyContent: "center" }}>

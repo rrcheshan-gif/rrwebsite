@@ -205,7 +205,7 @@ export default function WaterInfrastructurePage() {
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '50px' }}>
           <div>
             <h2 style={{ color: 'var(--text-dark)', fontSize: '28px', fontFamily: 'var(--font-heading)', marginBottom: '30px' }}>
-              Key Client Organizations
+              Key Client organization's
             </h2>
             <p style={{ color: 'var(--text-light)', fontSize: '16px', lineHeight: 1.8, marginBottom: '20px' }}>
               We are a trusted partner and registered contractor for major government bodies and authorities responsible for water infrastructure in Sri Lanka:

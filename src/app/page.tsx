@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -18,7 +18,7 @@ export default function Home() {
       heading1: 'Engineering',
       heading2: "Sri Lanka's",
       heading3: 'Tomorrow',
-      desc: 'For three decades, RR Construction has turned ambitious blueprints into the roads, bridges, harbours, and water systems that keep Sri Lanka moving forward â€” built to last, delivered on time.'
+      desc: "For three decades, RR Construction has turned ambitious blueprints into the roads, bridges, harbours, and water systems that keep Sri Lanka moving forward — built to last, delivered on time."
     },
     {
       img: '/images/home/slider/polished/road.jpg',
@@ -28,7 +28,7 @@ export default function Home() {
       heading1: 'Built on Every',
       heading2: 'Road We Pave',
       heading3: '',
-      desc: 'From national highways to rural roads, RR Construction delivers precision road construction, rehabilitation, and asphalt paving across Sri Lanka â€” engineered for durability, safety, and long-term performance.'
+      desc: "From national highways to rural roads, RR Construction delivers precision road construction, rehabilitation, and asphalt paving across Sri Lanka — engineered for durability, safety, and long-term performance."
     },
     {
       img: '/images/home/slider/polished/maritime.jpg',
@@ -37,7 +37,7 @@ export default function Home() {
       heading1: "Building Sri Lanka's",
       heading2: 'Maritime Heritage',
       heading3: '',
-      desc: 'We deliver advanced maritime infrastructure, including dredging, breakwaters, and harbour facility development, ensuring robust connectivity for Sri Lankaâ€™s coastal trade and economic growth.'
+      desc: "We deliver advanced maritime infrastructure, including dredging, breakwaters, and harbour facility development, ensuring robust connectivity for Sri Lanka's coastal trade and economic growth."
     },
     {
       img: '/images/home/slider/polished/bridge.jpg',

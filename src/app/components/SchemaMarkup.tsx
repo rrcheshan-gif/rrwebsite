@@ -3,7 +3,7 @@
 import Script from 'next/script';
 
 // Organization Schema - used on home page and landing pages
-export function OrganizationSchema() {
+export function organization'schema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",

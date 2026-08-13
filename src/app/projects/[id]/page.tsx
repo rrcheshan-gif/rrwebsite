@@ -60,11 +60,11 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
     } else if (cat === 'maritime') {
         catDetails = "Maritime operations are inherently complex. This project involved extensive deep-water dredging, the construction of robust breakwaters, and coastal reclamation. Our specialized marine engineering divisions worked around tidal schedules and severe monsoonal challenges to secure the coastline and build a facility that supports local fisheries and maritime logistics.";
     } else if (cat === 'water') {
-        catDetails = "Ensuring access to clean water is critical. The engineering parameters for this project included the excavation and laying of extensive pipeline networks, the construction of high-capacity treatment units, and the integration of advanced pumping mechanisms. Stringent pressure testing and environmental safety audits were conducted at every phase.";
+        catDetails = "Ensuring access to clean water is critical. The engineering parameters for this project included the excavation and laying of extensive pipeline networks, the construction of high-capacity treatment units, and the integration of advanced pumping mechanisms. Stringent pressure testing and environmental safety audits we're conducted at every phase.";
     } else if (cat === 'buildings') {
         catDetails = "This structural development required precise architectural coordination, deep foundation laying, and the erection of a multi-story framework. We utilized high-grade industrial materials and advanced civil engineering practices to deliver a modern, energy-efficient building that meets all stringent urban planning and safety regulations.";
     } else {
-        catDetails = "The infrastructure required a multidisciplinary engineering approach, involving extensive site preparation, structural integrity testing, and the deployment of our heavy-machinery fleet. Our highly skilled workforce ensured that all architectural and safety parameters were met without compromising on the delivery timeline.";
+        catDetails = "The infrastructure required a multidisciplinary engineering approach, involving extensive site preparation, structural integrity testing, and the deployment of our heavy-machinery fleet. Our highly skilled workforce ensured that all architectural and safety parameters we're met without compromising on the delivery timeline.";
     }
 
     description = `<p style="margin-bottom: 20px;">The <strong>"${project.title || 'infrastructure development'}"</strong> project stands as a testament to modern engineering capabilities in the ${categoryDisplay.toLowerCase()} sector. ${clientPhrase}</p>

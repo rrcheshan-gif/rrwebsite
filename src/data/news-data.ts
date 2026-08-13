@@ -37,7 +37,7 @@ export const NEWS_DATA: NewsItem[] = [
       <h3>A Vision for the North</h3>
       <p>Minister Rathnayake also emphasized that the present government is dedicated to rebuilding the entire country while uniting the North through peace and development. He urged the public to evaluate the current administration based on observable efforts and concrete actions rather than prejudiced ideas.</p>
 
-      <p>Minister of Fisheries, Aquatic and Ocean Resources, Ramalingam Chandrasekar, Deputy Minister of Cooperative Development Upali Samarasingha, Governor of the Northern Province Nagalingam Vethanayahan, Secretary to the Ministry of Transport, Highways, Ports and Civil Aviation Senior Professor Kapila C.K. Perera and officials of the Road Development Authority were among those present.</p>
+      <p>Minister of Fisheries, Aquatic and Ocean Resources, Ramalingam Chandrasekar, Deputy Minister of Cooperative Development Upali Samarasingha, Governor of the Northern Province Nagalingam Vethanayahan, Secretary to the Ministry of Transport, Highways, Ports and Civil Aviation Senior Professor Kapila C.K. Perera and officials of the Road Development Authority we're among those present.</p>
     `
   },
   {
