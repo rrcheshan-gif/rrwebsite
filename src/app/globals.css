@@ -8,7 +8,9 @@
   --text-light: #334155;
   --white: #ffffff;
   
-  /* Typography (Injected via Next.js fonts in layout.tsx) */
+  /* Typography */
+  --font-heading: var(--font-heading), sans-serif;
+  --font-body: var(--font-body), sans-serif;
   
   /* Layout */
   --nav-height: 80px;
