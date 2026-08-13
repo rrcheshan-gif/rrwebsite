@@ -17,14 +17,7 @@ export function OrganizationSchema() {
       "@type": "PostalAddress",
       "addressCountry": "LK"
     },
-    "sameAs": [],
-    "hasCredential": [
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "CIDA Registration",
-        "name": "CIDA Registration C-10171"
-      }
-    ]
+    "sameAs": []
   };
   return (
     <Script id="schema-organization" type="application/ld+json" strategy="afterInteractive">

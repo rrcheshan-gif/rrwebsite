@@ -73,7 +73,7 @@ export default function QualityManagement() {
                   "In-house production of M-Sand, ABC, and Asphalt ensures zero dilution of material quality.",
                   "Dedicated Quality Assurance (QA) engineers deployed on every major site.",
                   "Advanced material testing laboratories verifying mix designs before application.",
-                  "Strict adherence to ICTAD/CIDA specifications and international engineering codes.",
+                  "Strict adherence to national specifications and international engineering codes.",
                   "Continuous auditing of structural elements during bridge and marine construction."
                 ].map((item, idx) => (
                   <li key={idx} style={{ display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "15px", paddingBottom: "15px", borderBottom: idx !== 4 ? "1px solid var(--border-soft)" : "none" }}>

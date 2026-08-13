@@ -41,10 +41,6 @@ export default function DredgingReclamationPage() {
 
   const faqs = [
     {
-      q: "What is your CIDA grading for Dredging & Reclamation?",
-      a: `RR Construction holds a C-2 CIDA grading in Dredging and Reclamation, demonstrating our capability to handle major marine projects.`
-    },
-    {
       q: "Do you own your own dredging equipment?",
       a: "Yes, we maintain a self-owned marine equipment fleet, ensuring reliable availability and efficient project execution."
     },

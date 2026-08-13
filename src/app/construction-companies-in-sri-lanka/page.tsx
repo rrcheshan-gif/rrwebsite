@@ -44,7 +44,7 @@ export default function ConstructionCompaniesSEO() {
             Among the Top <br/><span style={{ color: "var(--primary-red)" }}>Construction Companies in Sri Lanka</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "800px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
-            With over {new Date().getFullYear() - COMPANY_DATA.established} years of proven expertise, RR Construction is a CIDA registered premier infrastructure development firm delivering large-scale engineering solutions nationwide.
+            With over {new Date().getFullYear() - COMPANY_DATA.established} years of proven expertise, RR Construction is a premier infrastructure development firm delivering large-scale engineering solutions nationwide.
           </p>
         </div>
       </section>
@@ -61,8 +61,8 @@ export default function ConstructionCompaniesSEO() {
               <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
                 When searching for reliable construction companies in Sri Lanka, capacity and past performance are paramount. RR Construction stands apart through its massive internal resource base, ensuring we rarely depend on third-party suppliers to meet project deadlines.
               </p>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "30px" }}>
-                As a fully CIDA registered organization, we hold top-tier gradings across Highway (CS-2), Bridge (CS-1), Building (C-2), Water Supply (C-7) and Maritime (CS-2) construction, making us one of the most versatile civil engineering contractors on the island.
+              <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.8, marginBottom: "20px" }}>
+                We hold top-tier capabilities across Highway, Bridge, Building, Water Supply and Maritime construction, making us one of the most versatile civil engineering contractors on the island.
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", marginBottom: "40px" }}>

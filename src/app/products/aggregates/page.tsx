@@ -128,7 +128,7 @@ export default function AggregatesPage() {
               <p style={{ color: 'var(--text-light)', marginBottom: '20px' }}>Our aggregate materials adhere to rigorous quality controls, guaranteeing structural performance.</p>
               <ul style={{ listStyle: 'none', padding: 0 }}>
                 {[
-                  'Compliance with ICTAD/CIDA specifications',
+                  'Compliance with national engineering specifications',
                   'Regular impact value and crushing strength tests',
                   'Controlled flakiness and elongation indices',
                   'Consistent grading analysis'

@@ -78,7 +78,7 @@ export default function BridgeConstructionPage() {
               opacity: 0.9,
             }}
           >
-            Building vital connections across the island since 1995. Highest-tier CIDA CS-1 certified bridge engineering contractors.
+            Building vital connections across the island since 1995. Top-tier bridge engineering contractors.
           </p>
         </div>
       </section>
@@ -124,10 +124,10 @@ export default function BridgeConstructionPage() {
                 }}
               >
                 <h3 style={{ fontSize: '20px', color: 'var(--text-dark)', marginBottom: '12px' }}>
-                  CIDA Grade: CS-1 (Highest Tier)
+                  Unlimited Engineering Capacity
                 </h3>
                 <p style={{ color: 'var(--text-light)', margin: 0 }}>
-                  We hold the highest possible national grading (CS-1) for Bridge Construction from the Construction Industry Development Authority (CIDA) of Sri Lanka, authorizing us to execute projects of unlimited financial value and technical complexity.
+                  We hold the highest capabilities for Bridge Construction, authorizing us to execute projects of unlimited financial value and technical complexity.
                 </p>
               </div>
             </div>
@@ -298,7 +298,7 @@ export default function BridgeConstructionPage() {
             Major National Bridge Works
           </h2>
           <p style={{ textAlign: 'center', fontSize: '18px', color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto 60px' }}>
-            Our CIDA CS-1 grading for bridges allows us to undertake the nation's most demanding bridge construction contracts. Below are key highlights from our portfolio of critical river crossings and highway bridges.
+            Our capabilities allow us to undertake the nation's most demanding bridge construction contracts. Below are key highlights from our portfolio of critical river crossings and highway bridges.
           </p>
           
           <div
