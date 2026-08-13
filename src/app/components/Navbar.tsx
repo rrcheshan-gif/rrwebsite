@@ -100,8 +100,18 @@ export default function Navbar() {
                 </ul>
               </li>
               
-              <li><Link href="/quarries-aggregates" onClick={() => setMobileMenuOpen(false)}>Quarries & Aggregates</Link></li>
-              <li><Link href="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link></li>
+              <li className={`dropdown ${activeDropdown === 'services' ? 'open' : ''}`}>
+                <div className="dropdown-header">
+                  <Link href="/services" onClick={() => setMobileMenuOpen(false)}>Technology & Services</Link>
+                  <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('services', e)} aria-label="Toggle Services Submenu">
+                    <ChevronDown size={14} />
+                  </button>
+                </div>
+                <ul className="dropdown-menu">
+                  <li><Link href="/services" onClick={() => setMobileMenuOpen(false)}>Technology & Services</Link></li>
+                  <li><Link href="/quarries-aggregates" onClick={() => setMobileMenuOpen(false)}>Quarries & Aggregates</Link></li>
+                </ul>
+              </li>
               <li className={`dropdown ${activeDropdown === 'sustainability' ? 'open' : ''}`}>
                 <div className="dropdown-header">
                   <Link href="/sustainability" onClick={() => setMobileMenuOpen(false)}>Sustainability</Link>

@@ -202,7 +202,7 @@ export default function Services() {
           </div>
 
           <h1 style={{ fontFamily: 'var(--font-heading)', color: 'white', fontSize: isMobile ? '2.8rem' : '4.8rem', fontWeight: 900, margin: '0 0 20px', lineHeight: 1.05, letterSpacing: '-1px' }}>
-            What We <span style={{ color: 'var(--primary-red)' }}>Build</span>
+            Technology & <span style={{ color: 'var(--primary-red)' }}>Services</span>
           </h1>
 
           <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: isMobile ? '1rem' : '1.2rem', maxWidth: '640px', lineHeight: 1.75, margin: 0, fontWeight: 400 }}>
