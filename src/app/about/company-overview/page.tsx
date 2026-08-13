@@ -252,9 +252,6 @@ export default function AboutStory() {
             <Link href="/projects" className="btn btn-primary hover-glow" style={{ padding: "18px 40px", fontSize: "1.05rem", borderRadius: "30px", display: "inline-flex", alignItems: "center", gap: "10px" }}>
               Explore Our Capabilities <ArrowRight size={20} />
             </Link>
-            <Link href="/about/cida-registration" className="btn btn-outline" style={{ padding: "18px 40px", fontSize: "1.05rem", borderRadius: "30px", fontWeight: 700 }}>
-              CIDA Registration
-            </Link>
           </div>
         </div>
       </section>

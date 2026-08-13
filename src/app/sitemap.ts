@@ -12,7 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/about/history',                              priority: 0.7, freq: 'monthly' },
     { path: '/about/leadership',                           priority: 0.7, freq: 'monthly' },
     { path: '/about/vision-mission',                       priority: 0.7, freq: 'monthly' },
-    { path: '/about/cida-registration',                    priority: 0.8, freq: 'monthly' },
     { path: '/about/awards',                               priority: 0.6, freq: 'monthly' },
     // Services Hub
     { path: '/services',                                   priority: 0.9, freq: 'monthly' },

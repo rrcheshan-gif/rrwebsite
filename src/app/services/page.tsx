@@ -297,9 +297,6 @@ export default function Services() {
             <p style={{ color: 'var(--text-light)', lineHeight: 1.75, fontSize: '1rem', margin: '0 0 28px' }}>
               Registration No. <strong>{COMPANY_DATA.cidaRegistration}</strong> — covering {COMPANY_DATA.cidaGrades.length} construction disciplines with the highest available grades in bridges and irrigation.
             </p>
-            <Link href="/about/cida-registration" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--primary-red)', color: 'white', padding: '13px 28px', borderRadius: '50px', fontWeight: 700, textDecoration: 'none', fontSize: '0.92rem', boxShadow: '0 8px 24px rgba(229,57,53,0.3)' }}>
-              View Full CIDA Profile →
-            </Link>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '10px' }}>
