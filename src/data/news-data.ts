@@ -63,7 +63,7 @@ export const NEWS_DATA: NewsItem[] = [
     title: 'Contract Awarded for Maggona Double Line Railway Bridge',
     desc: 'RR Construction has been officially awarded the contract for the construction of a double line railway bridge at Maggona on the Coastal Line by Sri Lanka Railways.',
     date: 'July 21, 2026',
-    img: '/images/services-build.jpg',
+    img: '/images/news/railway-edited.jpg',
     featured: false,
     content: `
       <h2>New Contract Award: Maggona Railway Bridge</h2>
