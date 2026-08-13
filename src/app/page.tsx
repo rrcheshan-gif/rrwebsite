@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -18,7 +18,7 @@ export default function Home() {
       heading1: 'Engineering',
       heading2: "Sri Lanka's",
       heading3: 'Tomorrow',
-      desc: 'For three decades, RR Construction has turned ambitious blueprints into the roads, bridges, harbours, and water systems that keep Sri Lanka moving forward — built to last, delivered on time.'
+      desc: 'For three decades, RR Construction has turned ambitious blueprints into the roads, bridges, harbours, and water systems that keep Sri Lanka moving forward â€” built to last, delivered on time.'
     },
     {
       img: '/images/home/slider/polished/road.jpg',
@@ -28,7 +28,7 @@ export default function Home() {
       heading1: 'Built on Every',
       heading2: 'Road We Pave',
       heading3: '',
-      desc: 'From national highways to rural roads, RR Construction delivers precision road construction, rehabilitation, and asphalt paving across Sri Lanka — engineered for durability, safety, and long-term performance.'
+      desc: 'From national highways to rural roads, RR Construction delivers precision road construction, rehabilitation, and asphalt paving across Sri Lanka â€” engineered for durability, safety, and long-term performance.'
     },
     {
       img: '/images/home/slider/polished/maritime.jpg',
@@ -37,7 +37,7 @@ export default function Home() {
       heading1: "Building Sri Lanka's",
       heading2: 'Maritime Heritage',
       heading3: '',
-      desc: 'We deliver advanced maritime infrastructure, including dredging, breakwaters, and harbour facility development, ensuring robust connectivity for Sri Lanka’s coastal trade and economic growth.'
+      desc: 'We deliver advanced maritime infrastructure, including dredging, breakwaters, and harbour facility development, ensuring robust connectivity for Sri Lankaâ€™s coastal trade and economic growth.'
     },
     {
       img: '/images/home/slider/polished/bridge.jpg',
@@ -267,7 +267,7 @@ export default function Home() {
 
 
       {/* CORPORATE PROFILE */}
-      <section className="bg-gradient-adaptive" style={{ padding: "120px 20px", position: "relative", overflow: 'hidden' }}>
+      <section className="bg-gradient-adaptive" style={{ padding: "70px 20px", position: "relative", overflow: 'hidden' }}>
         <div className="container" style={{ display: "flex", flexWrap: "wrap", alignItems: "stretch", gap: "60px", position: "relative", zIndex: 2 }}>
           
           <div style={{ flex: "1 1 400px", position: "relative", display: "flex", alignItems: "center" }}>
@@ -343,7 +343,7 @@ export default function Home() {
       </section>
 
       {/* CORE EXPERTISE */}
-      <section style={{ padding: "100px 20px", background: "var(--bg-light)", position: "relative" }}>
+      <section style={{ padding: "60px 20px", background: "var(--bg-light)", position: "relative" }}>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px" }}>Sectors of Operation</h4>
@@ -375,7 +375,7 @@ export default function Home() {
       </section>
 
       {/* SUSTAINABILITY & HSE SECTION */}
-      <section style={{ padding: "80px 20px", background: "var(--bg-light)", position: "relative", overflow: "hidden" }}>
+      <section style={{ padding: "50px 20px", background: "var(--bg-light)", position: "relative", overflow: "hidden" }}>
         <div className="ambient-glow" style={{ bottom: "-10vw", right: "-10%", opacity: 0.4 }}></div>
         <div className="container sustainability-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", overflow: "hidden", position: "relative", zIndex: 2, background: "var(--white)", border: "1px solid rgba(0, 0, 0, 0.06)", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.05)" }}>
           <div className="sustainability-col" style={{ padding: "clamp(30px, 5vw, 80px) clamp(20px, 4vw, 60px)", borderRight: "1px solid rgba(0,0,0,0.06)" }}>
@@ -400,7 +400,7 @@ export default function Home() {
       </section>
 
       {/* PROJECT HIGHLIGHTS */}
-      <section style={{ padding: "80px 20px", background: "var(--bg-light)", overflow: "hidden", position: "relative" }}>
+      <section style={{ padding: "50px 20px", background: "var(--bg-light)", overflow: "hidden", position: "relative" }}>
         <div className="container" style={{ display: "flex", flexWrap: "wrap", gap: "40px", alignItems: "flex-start", position: "relative", zIndex: 2 }}>
           <div style={{ flex: 1, minWidth: 'min(100%, 350px)', position: "relative", paddingTop: "20px" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>

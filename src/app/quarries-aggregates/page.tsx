@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -41,7 +41,7 @@ export default function QuarriesAggregates() {
   };
 
   return (
-    <div style={{ paddingTop: "140px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+    <div style={{ paddingTop: "110px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Lightbox Modal */}
       {lightboxImg && (
         <div 
@@ -68,7 +68,7 @@ export default function QuarriesAggregates() {
             }}
             style={{ position: 'absolute', left: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
-            ←
+            â†
           </button>
 
           <img src={`/${lightboxImg.replace(/^\//, '')}`} alt="Fullscreen view" style={{ maxWidth: '90%', maxHeight: '90vh', borderRadius: '8px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', objectFit: 'contain', position: 'relative', zIndex: 10000 }} />
@@ -82,12 +82,12 @@ export default function QuarriesAggregates() {
             }}
             style={{ position: 'absolute', right: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
-            →
+            â†’
           </button>
         </div>
       )}
 
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/quarry-hero-new.jpg')", padding: "120px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
+      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/quarry-hero-new.jpg')", padding: "70px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.65) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "5px" }}>
@@ -100,7 +100,7 @@ export default function QuarriesAggregates() {
       </section>
 
       {/* Introduction Section */}
-      <section style={{ padding: "80px 20px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "50px 20px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", textTransform: "uppercase", textShadow: "0 2px 10px rgba(0,0,0,0.05)", marginBottom: "5px" }}>Industrial-Grade Aggregates for Construction Projects</h2>
           <p style={{ fontSize: "1.2rem", lineHeight: 1.8, color: "var(--text-light)", maxWidth: "800px", margin: "0 auto 30px" }}>
@@ -127,7 +127,7 @@ export default function QuarriesAggregates() {
       </section>
 
       {/* Our Plants Section */}
-      <section style={{ padding: "80px 20px", background: "var(--bg-base)" }}>
+      <section style={{ padding: "50px 20px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", textTransform: "uppercase" }}>Our Strategic Plant Locations</h2>
@@ -212,7 +212,7 @@ export default function QuarriesAggregates() {
       </section>
 
       {/* Product Catalog Section */}
-      <section style={{ padding: "80px 20px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "50px 20px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", textTransform: "uppercase" }}>Available Products & Specifications</h2>
@@ -267,7 +267,7 @@ export default function QuarriesAggregates() {
       </section>
 
       {/* B2B Order & Inquiry Form Section */}
-      <section id="inquiry" style={{ padding: "80px 20px", background: "var(--bg-base)" }}>
+      <section id="inquiry" style={{ padding: "50px 20px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "800px", margin: "0 auto" }}>
           <div style={{ background: "var(--white)", color: "var(--text-dark)", padding: "50px", borderRadius: "12px", borderTop: "6px solid var(--primary-red)", boxShadow: "0 15px 40px rgba(0,0,0,0.05)" }}>
             <div style={{ textAlign: "center", marginBottom: "40px" }}>

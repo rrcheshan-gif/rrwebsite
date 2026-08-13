@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+﻿import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Clock, ArrowLeft, Share2 } from 'lucide-react';
 import { NEWS_DATA } from '@/data/news-data';
@@ -34,14 +34,14 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
   }
 
   return (
-    <div style={{ paddingTop: "120px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+    <div style={{ paddingTop: "100px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       
       {/* Article Header */}
       <section 
         className="page-header" 
         style={{ 
           backgroundImage: `url('${news.img}')`, 
-          padding: "100px 20px", 
+          padding: "60px 20px", 
           textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 

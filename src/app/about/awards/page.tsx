@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -44,14 +44,14 @@ export default function Awards() {
   ];
 
   return (
-    <div style={{ paddingTop: isMobile ? "90px" : "140px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+    <div style={{ paddingTop: isMobile ? "90px" : "110px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       
       {/* Hero Section */}
       <section 
         className="page-header" 
         style={{ 
           backgroundImage: "url('/images/page-headers/awards.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
-          padding: isMobile ? "70px 20px" : "120px 20px", 
+          padding: isMobile ? "40px 20px" : "70px 20px", 
           textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 
@@ -141,7 +141,7 @@ export default function Awards() {
       </section>
 
       {/* CTA Section */}
-      <section style={{ padding: isMobile ? "60px 20px" : "100px 20px", textAlign: "center", background: "var(--white)", borderTop: "1px solid var(--border-soft)" }}>
+      <section style={{ padding: isMobile ? "40px 20px" : "60px 20px", textAlign: "center", background: "var(--white)", borderTop: "1px solid var(--border-soft)" }}>
         <div className="container" style={{ maxWidth: "800px", margin: "0 auto" }}>
           <Trophy size={48} color="var(--primary-red)" style={{ margin: "0 auto 20px" }} />
           <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>

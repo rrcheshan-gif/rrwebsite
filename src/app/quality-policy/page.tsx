@@ -1,10 +1,10 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 
 export default function QualityPolicy() {
   return (
     <div style={{ paddingTop: "100px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/quality-policy.jpg')", padding: "100px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center 30%", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
+      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/quality-policy.jpg')", padding: "60px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center 30%", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.65) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
@@ -17,7 +17,7 @@ export default function QualityPolicy() {
       </section>
 
       {/* ISO 9001 Section */}
-      <section style={{ padding: "80px 20px" }}>
+      <section style={{ padding: "50px 20px" }}>
         <div className="container">
           <div style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
             <div style={{ marginBottom: "20px", display: "inline-block", padding: "20px", background: "rgba(229, 57, 53, 0.1)", borderRadius: "50%" }}>
@@ -33,7 +33,7 @@ export default function QualityPolicy() {
             <div style={{ background: "var(--white)", padding: "40px", borderRadius: "8px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: "15px" }}><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
               <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "15px" }}>Material Testing</h3>
-              <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>All construction materials—from aggregate and soil to steel and asphalt—undergo strict laboratory testing before site application to guarantee durability and compliance with standard engineering specifications.</p>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>All construction materialsâ€”from aggregate and soil to steel and asphaltâ€”undergo strict laboratory testing before site application to guarantee durability and compliance with standard engineering specifications.</p>
             </div>
             
             <div style={{ background: "var(--white)", padding: "40px", borderRadius: "8px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>

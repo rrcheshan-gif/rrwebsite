@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -63,7 +63,7 @@ export default function OmanthaiPlant() {
             }}
             style={{ position: 'absolute', left: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
-            ←
+            â†
           </button>
 
           <img src={`/${lightboxImg}`} alt="Fullscreen view" style={{ maxWidth: '90%', maxHeight: '90vh', borderRadius: '8px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', objectFit: 'contain', position: 'relative', zIndex: 10000 }} />
@@ -77,16 +77,16 @@ export default function OmanthaiPlant() {
             }}
             style={{ position: 'absolute', right: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
-            →
+            â†’
           </button>
         </div>
       )}
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/omanthai-plant-header.jpg')", padding: "80px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/omanthai-plant-header.jpg')", padding: "50px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0,0,0,0.4)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
-            <Link href="/quarries-aggregates" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold" }}>← Back to Quarries & Aggregates</Link>
+            <Link href="/quarries-aggregates" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold" }}>â† Back to Quarries & Aggregates</Link>
           </div>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px", textShadow: "0 2px 5px rgba(0,0,0,0.8)" }}>High Capacity Crusher Plant</h4>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem", textTransform: "uppercase", textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}>OMANTHAI PLANT</h1>
@@ -94,7 +94,7 @@ export default function OmanthaiPlant() {
       </section>
 
       {/* Intro Section */}
-      <section style={{ padding: "80px 20px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "50px 20px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "2px", marginBottom: "10px" }}>Omanthai Metal Crusher Plant</h4>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>Premium Quality Aggregates & Crushed Metal</h2>
@@ -125,7 +125,7 @@ export default function OmanthaiPlant() {
       </section>
 
       {/* Photo Gallery */}
-      <section style={{ padding: "80px 20px", background: "var(--bg-base)" }}>
+      <section style={{ padding: "50px 20px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", textTransform: "uppercase" }}>Our Omanthai Facility</h2>
@@ -143,7 +143,7 @@ export default function OmanthaiPlant() {
       </section>
 
       {/* Products List */}
-      <section style={{ padding: "80px 20px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "50px 20px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", textTransform: "uppercase" }}>OMANTHAI PLANT: Our Products</h2>
@@ -166,7 +166,7 @@ export default function OmanthaiPlant() {
       </section>
 
       {/* Contact Section */}
-      <section style={{ padding: "80px 20px", background: "var(--bg-base)" }}>
+      <section style={{ padding: "50px 20px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto" }}>
           <div style={{ background: "var(--white)", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", overflow: "hidden", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
             <div style={{ padding: "40px" }}>

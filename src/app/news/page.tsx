@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -20,14 +20,14 @@ export default function News() {
   const regularNews = NEWS_DATA.filter(n => !n.featured);
 
   return (
-    <div style={{ paddingTop: isMobile ? "90px" : "140px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+    <div style={{ paddingTop: isMobile ? "90px" : "110px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       
       {/* Page Header */}
       <section 
         className="page-header" 
         style={{ 
           backgroundImage: "url('/images/page-headers/news-header.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
-          padding: isMobile ? "70px 20px" : "120px 20px", 
+          padding: isMobile ? "40px 20px" : "70px 20px", 
           textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 

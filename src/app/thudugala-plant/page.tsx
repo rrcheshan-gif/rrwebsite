@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { useEffect } from "react";
@@ -7,11 +7,11 @@ export default function ThudugalaPlant() {
   return (
     <div style={{ paddingTop: "100px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/thudugala-plant-header.jpg')", padding: "80px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/thudugala-plant-header.jpg')", padding: "50px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0,0,0,0.4)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
-            <Link href="/quarries-aggregates" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold" }}>← Back to Quarries & Aggregates</Link>
+            <Link href="/quarries-aggregates" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold" }}>â† Back to Quarries & Aggregates</Link>
           </div>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px", textShadow: "0 2px 5px rgba(0,0,0,0.8)" }}>High Capacity Crusher Plant</h4>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem", textTransform: "uppercase", textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}>THUDUGALA PLANT</h1>
@@ -19,7 +19,7 @@ export default function ThudugalaPlant() {
       </section>
 
       {/* Intro Section */}
-      <section style={{ padding: "80px 20px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "50px 20px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "2px", marginBottom: "10px" }}>Thudugala Crusher Plant</h4>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>Premium Quality Aggregates & Crushed Metal</h2>
@@ -50,7 +50,7 @@ export default function ThudugalaPlant() {
       </section>
 
       {/* Photo Gallery */}
-      <section style={{ padding: "80px 20px", background: "var(--bg-base)" }}>
+      <section style={{ padding: "50px 20px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", textTransform: "uppercase" }}>Our Thudugala Facility</h2>
@@ -68,7 +68,7 @@ export default function ThudugalaPlant() {
       </section>
 
       {/* Products List */}
-      <section style={{ padding: "80px 20px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "50px 20px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", textTransform: "uppercase" }}>THUDUGALA PLANT: Our Products</h2>
@@ -91,7 +91,7 @@ export default function ThudugalaPlant() {
       </section>
 
       {/* Contact Section */}
-      <section style={{ padding: "80px 20px", background: "var(--bg-base)" }}>
+      <section style={{ padding: "50px 20px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto" }}>
           <div style={{ background: "var(--white)", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", overflow: "hidden", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
             <div style={{ padding: "40px" }}>

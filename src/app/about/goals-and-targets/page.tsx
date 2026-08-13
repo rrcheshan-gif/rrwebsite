@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -28,7 +28,7 @@ export default function GoalsAndTargets() {
     },
     {
       title: "Resource Independence",
-      desc: "Further scale our internal capabilities—from machinery to raw materials (Asphalt, ABC, M-Sand)—to ensure 100% self-reliance in project execution.",
+      desc: "Further scale our internal capabilitiesâ€”from machinery to raw materials (Asphalt, ABC, M-Sand)â€”to ensure 100% self-reliance in project execution.",
       icon: <Construction size={32} color="var(--primary-red)" />
     },
     {
@@ -62,14 +62,14 @@ export default function GoalsAndTargets() {
   ];
 
   return (
-    <div style={{ paddingTop: isMobile ? "90px" : "140px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+    <div style={{ paddingTop: isMobile ? "90px" : "110px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       
       {/* Hero Section */}
       <section 
         className="page-header" 
         style={{ 
           backgroundImage: "url('/images/page-headers/services-build.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
-          padding: isMobile ? "70px 20px" : "120px 20px", 
+          padding: isMobile ? "40px 20px" : "70px 20px", 
           textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 

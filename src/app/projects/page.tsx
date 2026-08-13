@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -39,8 +39,8 @@ export default function Projects() {
   );
 
   return (
-    <div style={{ paddingTop: "140px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
-      <section className="page-header" style={{ backgroundImage: "url('/images/BADULLA/completed_project_background.jpeg')", padding: "120px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
+    <div style={{ paddingTop: "110px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+      <section className="page-header" style={{ backgroundImage: "url('/images/BADULLA/completed_project_background.jpeg')", padding: "70px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.65) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
@@ -49,7 +49,7 @@ export default function Projects() {
           </div>
           <h1 className="hero-heading fade-in" style={{ color: "white", fontSize: "3.5rem", textAlign: "center", fontFamily: "var(--font-heading)", textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our Portfolio</h1>
           <p style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto", color: "#f8fafc", fontSize: "1.1rem", textShadow: "0 2px 10px rgba(0,0,0,0.9)", fontWeight: 500 }}>
-            Every project here is proof of work delivered, not just promised – road networks, water retaining structures, bridges, multi-storied buildings, and dredging & reclamation works completed across Sri Lanka and beyond.
+            Every project here is proof of work delivered, not just promised â€“ road networks, water retaining structures, bridges, multi-storied buildings, and dredging & reclamation works completed across Sri Lanka and beyond.
           </p>
         </div>
       </section>
