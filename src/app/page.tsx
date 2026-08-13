@@ -271,7 +271,7 @@ export default function Home() {
           
           <div style={{ flex: "1 1 400px", position: "relative", display: "flex", alignItems: "center" }}>
             {/* Outer Frame Accent */}
-            <div style={{ position: "absolute", top: "-20px", left: "-20px", right: "20px", bottom: "-20px", border: "2px dashed var(--border-soft)", borderRadius: "36px", zIndex: 0 }}></div>
+            <div style={{ position: "absolute", top: "-20px", left: "-20px", right: "20px", bottom: "-20px", border: "2px dashed rgba(229, 57, 53, 0.4)", borderRadius: "36px", zIndex: 0, boxShadow: "inset 0 0 20px rgba(229, 57, 53, 0.05)" }}></div>
 
             {/* Picture Collage */}
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "15px", padding: "15px", background: "var(--white)", borderRadius: "32px", boxShadow: "0 25px 60px rgba(0,0,0,0.06)", position: "relative", zIndex: 2, width: "100%" }}>
