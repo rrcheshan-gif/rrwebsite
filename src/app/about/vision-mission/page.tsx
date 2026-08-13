@@ -40,7 +40,7 @@ export default function VisionMission() {
               &larr; Back to About
             </Link>
           </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2.5rem" : "4.5rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textTransform: "uppercase" }}>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2rem" : "2.8rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textTransform: "uppercase" }}>
             Vision, Mission & <span style={{ color: "var(--primary-red)" }}>Values</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
@@ -58,7 +58,7 @@ export default function VisionMission() {
                 <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
                 <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "1rem", fontFamily: "var(--font-heading)" }}>Our Vision</h2>
               </div>
-              <h3 style={{ fontSize: isMobile ? "2.2rem" : "3.5rem", color: "var(--text-dark)", margin: "0 0 30px", fontFamily: "var(--font-heading)", lineHeight: 1.2, fontWeight: 800 }}>
+              <h3 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", margin: "0 0 30px", fontFamily: "var(--font-heading)", lineHeight: 1.2, fontWeight: 800 }}>
                 "Engineering Sri Lanka's <span style={{ color: "var(--primary-red)" }}>Tomorrow.</span>"
               </h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.2rem", lineHeight: 1.8, marginBottom: "20px", fontWeight: 500 }}>

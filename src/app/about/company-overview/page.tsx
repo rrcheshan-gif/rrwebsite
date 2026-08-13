@@ -40,7 +40,7 @@ export default function AboutStory() {
               &larr; Back to Home
             </Link>
           </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2.8rem" : "4.5rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textTransform: "uppercase" }}>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2rem" : "2.8rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textTransform: "uppercase" }}>
             RR <span style={{ color: "var(--primary-red)" }}>Overview</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
@@ -137,7 +137,7 @@ export default function AboutStory() {
                 <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
                 <h3 style={{ color: "var(--primary-red)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", margin: 0, fontWeight: 800, fontFamily: "var(--font-heading)" }}>Message from the Managing Director</h3>
               </div>
-              <h2 style={{ fontSize: isMobile ? "2.5rem" : "3.5rem", color: "var(--text-dark)", marginBottom: "10px", fontFamily: "var(--font-heading)", fontWeight: 800 }}>Mr. Ranjith Senadheera</h2>
+              <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", marginBottom: "10px", fontFamily: "var(--font-heading)", fontWeight: 800 }}>Mr. Ranjith Senadheera</h2>
               <h4 style={{ color: "var(--text-light)", fontSize: "1.15rem", fontWeight: 500, marginBottom: "40px", borderBottom: "1px solid var(--border-soft)", paddingBottom: "30px" }}>
                 Managing Director, RR Construction (Pvt) Ltd
               </h4>
@@ -242,7 +242,7 @@ export default function AboutStory() {
       <section style={{ padding: isMobile ? "40px 20px" : "60px 20px", textAlign: "center" }}>
         <div className="container" style={{ maxWidth: "800px", margin: "0 auto" }}>
           <ShieldCheck size={48} color="var(--primary-red)" style={{ margin: "0 auto 20px" }} />
-          <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>
+          <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>
             Engineering Sri Lanka's <span style={{ color: "var(--primary-red)" }}>Tomorrow</span>
           </h2>
           <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.7, marginBottom: "40px" }}>
