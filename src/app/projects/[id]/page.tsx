@@ -2,11 +2,13 @@
 
 import { use, useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { notFound } from 'next/navigation';
 import projectsData from '../data';
 
 export default function ProjectDetail({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params);
+  const router = useRouter();
   const project: any = projectsData.find((p: any) => p.id === resolvedParams.id);
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
 
@@ -179,9 +181,12 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
         paddingBottom: '40px'
       }}>
         <div className="container" style={{ position: 'relative', zIndex: 10 }}>
-          <Link href="/projects" style={{ display: 'inline-block', marginBottom: '20px', color: '#ccc', textDecoration: 'none', borderBottom: '1px solid #ccc', paddingBottom: '2px' }}>
-            ← Back to Projects
-          </Link>
+          <button
+            onClick={() => router.back()}
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '20px', color: '#ccc', textDecoration: 'none', borderBottom: '1px solid #ccc', paddingBottom: '2px', background: 'none', border: 'none', borderBottom: '1px solid #ccc', cursor: 'pointer', fontSize: '1rem', fontFamily: 'inherit' }}
+          >
+            ← Back
+          </button>
           <div style={{ display: 'flex', gap: '8px', marginBottom: '15px' }}>
             <span style={{ padding: '5px 14px', background: 'rgba(15, 23, 42, 0.8)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.25)', borderRadius: "30px", fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>{categoryDisplay}</span>
             <span style={{ padding: '5px 14px', background: project.status.includes('Ongoing') ? 'rgba(217, 119, 6, 0.85)' : 'rgba(16, 185, 129, 0.85)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.3)', borderRadius: "30px", fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.3px' }}>{project.status}</span>
