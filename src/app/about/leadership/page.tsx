@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -22,7 +22,7 @@ export default function Leadership() {
       <section 
         className="page-header" 
         style={{ 
-          backgroundImage: "url('/images/director_hd.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
+          backgroundImage: "url('/images/Background.jpeg'), linear-gradient(180deg, rgba(31, 41, 55, 0.9), rgba(17, 24, 39, 0.95))", 
           padding: isMobile ? "40px 20px" : "70px 20px", 
           textAlign: "center", 
           position: "relative", 
