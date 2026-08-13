@@ -90,9 +90,9 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${outfit.variable} ${jakarta.variable}`}
+      suppressHydrationWarning
     >
       <head>
-        <meta name="theme-color" content="#e53935" />
         <meta name="msapplication-navbutton-color" content="#e53935" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <script
@@ -100,7 +100,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <ThemeProvider>
           <PageTransition />
           <Navbar />
