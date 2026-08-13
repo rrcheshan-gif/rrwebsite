@@ -100,14 +100,18 @@ export default function Navbar() {
               
               <li className={`dropdown ${activeDropdown === 'services' ? 'open' : ''}`}>
                 <div className="dropdown-header">
-                  <Link href="/services" onClick={() => setMobileMenuOpen(false)}>Technology & Services</Link>
+                  <Link href="/technology-services" onClick={() => setMobileMenuOpen(false)}>Technology & Services</Link>
                   <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('services', e)} aria-label="Toggle Services Submenu">
                     <ChevronDown size={14} />
                   </button>
                 </div>
                 <ul className="dropdown-menu">
-                  <li><Link href="/services" onClick={() => setMobileMenuOpen(false)}>Technology & Services</Link></li>
-                  <li><Link href="/quarries-aggregates" onClick={() => setMobileMenuOpen(false)}>Quarries & Aggregates</Link></li>
+                  <li><Link href="/technology-services/market-segments" onClick={() => setMobileMenuOpen(false)}>Market Segments</Link></li>
+                  <li><Link href="/technology-services/our-resources" onClick={() => setMobileMenuOpen(false)}>Our Resources</Link></li>
+                  <li><Link href="/technology-services/construction-management" onClick={() => setMobileMenuOpen(false)}>Construction Management Services</Link></li>
+                  <li><Link href="/technology-services/design-build" onClick={() => setMobileMenuOpen(false)}>Design-Build Solutions</Link></li>
+                  <li><Link href="/technology-services/products-services" onClick={() => setMobileMenuOpen(false)}>Products & Services</Link></li>
+                  <li><Link href="/technology-services/research-development" onClick={() => setMobileMenuOpen(false)}>Research & Development</Link></li>
                 </ul>
               </li>
               <li className={`dropdown ${activeDropdown === 'sustainability' ? 'open' : ''}`}>
