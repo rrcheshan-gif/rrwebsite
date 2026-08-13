@@ -153,7 +153,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
             ←
           </button>
 
-          <img src={`/${lightboxImg}`} alt="Fullscreen view" style={{ maxWidth: '90%', maxHeight: '90vh', borderRadius: '8px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', objectFit: 'contain', position: 'relative', zIndex: 10000 }} />
+          <img src={lightboxImg.startsWith('/') ? lightboxImg : `/${lightboxImg}`} alt="Fullscreen view" style={{ maxWidth: '90%', maxHeight: '90vh', borderRadius: '8px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', objectFit: 'contain', position: 'relative', zIndex: 10000 }} />
 
           <button 
             onClick={(e) => {
@@ -176,7 +176,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
         minHeight: '350px',
         display: 'flex',
         alignItems: 'flex-end',
-        background: project.heroImage ? `linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%), url('/${project.heroImage}') center/cover` : 'linear-gradient(135deg, #B71C1C 0%, #E53935 100%)',
+        background: project.heroImage ? `linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%), url('${project.heroImage.startsWith('/') ? project.heroImage : `/${project.heroImage}`}') center/cover` : 'linear-gradient(135deg, #B71C1C 0%, #E53935 100%)',
         color: 'white',
         paddingBottom: '40px'
       }}>
@@ -229,7 +229,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
                         onClick={() => setLightboxImg(img)}
                       >
                         <img className="img-polished img-hover-zoom" 
-                          src={`/${img}`} 
+                          src={img.startsWith('/') ? img : `/${img}`} 
                           alt={`${project.title} - Image ${idx + 1}`} 
                           style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.3s' }} 
                           onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.05)')}
