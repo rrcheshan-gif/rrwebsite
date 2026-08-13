@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from 'next/link';
 
@@ -119,16 +119,21 @@ export default function Contact() {
             <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Our Location</h4>
           </div>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", marginBottom: "30px" }}>Visit Our Head Office</h2>
-          <div style={{ background: "var(--white)", padding: "15px", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.08)", border: "1px solid var(--border-soft)" }}>
-            <iframe 
-              src="https://maps.google.com/maps?q=6.9464,79.8780&t=&z=16&ie=UTF8&iwloc=&output=embed"
-              width="100%" 
-              height="450" 
-              style={{ border: 0, borderRadius: "16px" }} 
-              allowFullScreen={false} 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade">
-            </iframe>
+          <div style={{ background: "var(--white)", padding: "15px", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.08)", border: "1px solid var(--border-soft)", display: "flex", flexWrap: "wrap", gap: "15px" }}>
+            <div style={{ flex: "1", minWidth: "300px" }}>
+              <img src="/images/head-office.png" alt="RR Construction Head Office" style={{ width: "100%", height: "450px", objectFit: "cover", borderRadius: "16px" }} />
+            </div>
+            <div style={{ flex: "1", minWidth: "300px" }}>
+              <iframe 
+                src="https://maps.google.com/maps?q=6.9464,79.8780&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                width="100%" 
+                height="450" 
+                style={{ border: 0, borderRadius: "16px" }} 
+                allowFullScreen={false} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
           </div>
         </div>
       </section>
