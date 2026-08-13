@@ -270,60 +270,60 @@ export default function Home() {
       <section className="bg-gradient-adaptive" style={{ padding: "70px 20px", position: "relative", overflow: 'hidden' }}>
         <div className="container" style={{ display: "flex", flexWrap: "wrap", alignItems: "stretch", gap: "60px", position: "relative", zIndex: 2 }}>
           
-          <div style={{ flex: "1 1 400px", position: "relative", display: "flex", alignItems: "center" }}>
+          <div style={{ flex: "1 1 400px", position: "relative" }}>
             {/* Premium Picture Collage */}
-            <div style={{ position: "relative", width: "100%", zIndex: 1 }}>
+            <div style={{ position: "relative", width: "100%", zIndex: 1, marginTop: "10px" }}>
               {/* Perfectly Aligned Red Dashed Outer Frame */}
               <div style={{ position: "absolute", top: "-15px", bottom: "-15px", left: "-15px", right: "-15px", border: "2px dashed rgba(229, 57, 53, 0.5)", borderRadius: "48px", zIndex: 0, pointerEvents: "none" }}></div>
               
               <div style={{ position: "relative", width: "100%", padding: "15px", background: "var(--white)", borderRadius: "40px", boxShadow: "0 25px 70px rgba(0,0,0,0.06)", border: "1px solid rgba(0,0,0,0.04)", zIndex: 2 }}>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridTemplateRows: "repeat(2, 180px)", gap: "12px", position: "relative", zIndex: 1 }}>
-                
-                {/* Top Left - Wide */}
-                <div style={{ gridColumn: "1 / 3", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
-                  <img src="/images/home/IMG_3025.jpg" alt="Road Construction" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                </div>
-                
-                {/* Top Right - Square */}
-                <div style={{ gridColumn: "3 / 4", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
-                  <img src="/images/home/WhatsApp Image 2026-07-18 at 10.24.03.jpeg" alt="CAT Machine" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                </div>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridTemplateRows: "repeat(2, 190px)", gap: "12px", position: "relative", zIndex: 1 }}>
+                  
+                  {/* Top Left - Wide */}
+                  <div style={{ gridColumn: "1 / 3", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
+                    <img src="/images/home/IMG_3025.jpg" alt="Road Construction" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  </div>
+                  
+                  {/* Top Right - Square */}
+                  <div style={{ gridColumn: "3 / 4", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
+                    <img src="/images/home/WhatsApp Image 2026-07-18 at 10.24.03.jpeg" alt="CAT Machine" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  </div>
 
-                {/* Bottom Left - Square */}
-                <div style={{ gridColumn: "1 / 2", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
-                  <img src="/images/home/WhatsApp Image 2026-07-24 at 23.23.33.jpeg" alt="Excavator" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                </div>
+                  {/* Bottom Left - Square */}
+                  <div style={{ gridColumn: "1 / 2", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
+                    <img src="/images/home/WhatsApp Image 2026-07-24 at 23.23.33.jpeg" alt="Excavator" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  </div>
 
-                {/* Bottom Right - Wide */}
-                <div style={{ gridColumn: "2 / 4", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
-                  <img src="/images/kandy-landslide/kandy-5.jpg" alt="Retaining Wall" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  {/* Bottom Right - Wide */}
+                  <div style={{ gridColumn: "2 / 4", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
+                    <img src="/images/kandy-landslide/kandy-5.jpg" alt="Retaining Wall" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  </div>
+                  
                 </div>
-                
               </div>
-            </div>
-            </div>
-            
-            {/* Floating 25+ Years Box */}
-            <div className="glass-panel hover-lift" style={{ 
-              position: "absolute", 
-              bottom: "20px", 
-              left: "50%", 
-              transform: "translateX(-50%)",
-              background: "rgba(255, 255, 255, 0.9)", 
-              backdropFilter: "blur(16px)",
-              padding: "15px 25px", 
-              zIndex: 3, 
-              width: "max-content",
-              textAlign: "center",
-              borderRadius: "20px",
-              boxShadow: "0 15px 35px rgba(0, 0, 0, 0.12)",
-              border: "1px solid rgba(211, 47, 47, 0.3)"
-            }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
-                <div style={{ fontSize: "2.5rem", fontWeight: 800, fontFamily: "var(--font-heading)", lineHeight: 1, color: "var(--primary-red)" }}>{COMPANY_DATA.yearsOfExcellence}</div>
-                <div style={{ textAlign: "left" }}>
-                  <h4 style={{ margin: 0, fontSize: "0.9rem", fontFamily: "var(--font-heading)", textTransform: "uppercase", letterSpacing: "1px", color: "var(--primary-red)", fontWeight: 800 }}>Years of</h4>
-                  <p style={{ color: "var(--text-dark)", margin: 0, fontSize: "0.9rem", fontWeight: 700, textTransform: "uppercase" }}>Excellence</p>
+              
+              {/* Floating 25+ Years Box Attached to Pictures */}
+              <div className="glass-panel hover-lift" style={{ 
+                position: "absolute", 
+                bottom: "-25px", 
+                left: "50%", 
+                transform: "translateX(-50%)",
+                background: "rgba(255, 255, 255, 0.95)", 
+                backdropFilter: "blur(16px)",
+                padding: "15px 25px", 
+                zIndex: 3, 
+                width: "max-content",
+                textAlign: "center",
+                borderRadius: "20px",
+                boxShadow: "0 15px 35px rgba(0, 0, 0, 0.12)",
+                border: "1px solid rgba(211, 47, 47, 0.3)"
+              }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
+                  <div style={{ fontSize: "2.5rem", fontWeight: 800, fontFamily: "var(--font-heading)", lineHeight: 1, color: "var(--primary-red)" }}>{COMPANY_DATA.yearsOfExcellence}</div>
+                  <div style={{ textAlign: "left" }}>
+                    <h4 style={{ margin: 0, fontSize: "0.9rem", fontFamily: "var(--font-heading)", textTransform: "uppercase", letterSpacing: "1px", color: "var(--primary-red)", fontWeight: 800 }}>Years of</h4>
+                    <p style={{ color: "var(--text-dark)", margin: 0, fontSize: "0.9rem", fontWeight: 700, textTransform: "uppercase" }}>Excellence</p>
+                  </div>
                 </div>
               </div>
             </div>
