@@ -1,4 +1,4 @@
-﻿/* Premium Design System for RR Construction Clone */
+/* Premium Design System for RR Construction Clone */
 :root {
   /* Colors */
   --primary-red: #D32F2F;
@@ -8,9 +8,7 @@
   --text-light: #334155;
   --white: #ffffff;
   
-  /* Typography */
-  --font-heading: var(--font-heading), sans-serif;
-  --font-body: var(--font-body), sans-serif;
+  /* Typography (Injected via Next.js fonts in layout.tsx) */
   
   /* Layout */
   --nav-height: 80px;
