@@ -57,7 +57,14 @@ const projectsData = [
     client: "Road Development Authority",
     duration: "15 Months",
     year: 2026,
-    status: "Ongoing"
+    status: "Ongoing",
+    heroImage: "/images/KRP/hero.jpeg",
+    galleryImages: [
+      "/images/KRP/img-1.jpeg",
+      "/images/KRP/img-2.jpeg",
+      "/images/KRP/img-3.jpeg",
+      "/images/KRP/img-4.jpeg"
+    ]
   },
   {
     id: 'project-rda-colombo-galle',
