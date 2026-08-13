@@ -505,45 +505,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* LATEST UPDATES / NEWSROOM */}
-      <section className="bg-gradient-adaptive" style={{ padding: "140px 20px", position: "relative", overflow: "hidden" }}>
-        <div className="ambient-glow" style={{ top: "10%", right: "-10%" }}></div>
-        <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "60px", flexWrap: "wrap", gap: "20px" }}>
-            <div>
-              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
-                <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
-                <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Newsroom</h4>
-              </div>
-              <h2 style={{ fontSize: "3.5rem", color: "var(--text-dark)", margin: 0, fontFamily: "var(--font-heading)", lineHeight: 1.1 }}>LATEST <span className="text-gradient" style={{ fontWeight: 300 }}>UPDATES</span></h2>
-            </div>
-          </div>
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px" }}>
-            {NEWS_DATA.slice(0, 3).map((news, i) => (
-              <Link href={`/news/${news.slug}`} key={i} style={{ textDecoration: 'none' }}>
-                <div style={{ background: "var(--white)", borderRadius: "24px", overflow: "hidden", border: "1px solid var(--border-soft)", cursor: "pointer", transition: "transform 0.4s ease, box-shadow 0.4s ease", height: "100%", display: "flex", flexDirection: "column" }} className="news-card glass-panel hover-lift" onMouseOver={(e) => { e.currentTarget.style.transform = "translateY(-10px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.05)" }} onMouseOut={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none" }}>
-                  <div style={{ height: "220px", overflow: "hidden" }}>
-                    <img src={news.img} alt={news.title} className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: news.crop === 'top' ? 'top center' : 'center', transition: "transform 0.4s ease" }} onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'} onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'} />
-                  </div>
-                  <div style={{ padding: "35px", flex: 1, display: "flex", flexDirection: "column" }}>
-                    <span style={{ color: "var(--primary-red)", fontWeight: 700, fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "1.5px" }}>{news.tag}</span>
-                    <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", margin: "15px 0", fontFamily: "var(--font-heading)", lineHeight: 1.4 }}>{news.title}</h3>
-                    <p style={{ color: "var(--text-light)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "25px", flex: 1 }}>{news.desc}</p>
-                    <span style={{ color: "var(--text-light)", fontSize: "0.9rem", fontWeight: 600, display: "flex", alignItems: "center", gap: "8px", borderTop: "1px solid var(--border-soft)", paddingTop: "20px" }}><Clock size={16} color="var(--primary-red)" /> {news.date}</span>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          <div style={{ textAlign: "center", marginTop: "50px" }}>
-            <Link href="/news" className="btn btn-primary hover-glow" style={{ padding: "18px 40px", fontSize: "1.05rem", display: "inline-flex", alignItems: "center", gap: "10px", borderRadius: "30px" }}>
-              View All News & Updates <ArrowRight size={20} />
-            </Link>
-          </div>
-        </div>
-      </section>
 
       <style jsx global>{`
         @keyframes scrollWheel {
