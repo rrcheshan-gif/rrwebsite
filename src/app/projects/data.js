@@ -1,4 +1,4 @@
-﻿// Sorted array of all RR Construction completed & ongoing projects by Year (Descending)
+// Sorted array of all RR Construction completed & ongoing projects by Year (Descending)
 const projectsData = [
   // ONGOING PROJECTS
   {
@@ -344,7 +344,14 @@ const projectsData = [
     client: "Road Development Authority",
     duration: "12 Months",
     year: 2025,
-    status: "Ongoing"
+    status: "Ongoing",
+    heroImage: "images/VBP/hero.jpeg",
+    galleryImages: [
+      "images/VBP/img-1.jpeg",
+      "images/VBP/img-2.jpeg",
+      "images/VBP/img-3.jpeg",
+      "images/VBP/img-4.jpeg"
+    ]
   },
   {
     id: 'project-22',
