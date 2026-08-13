@@ -178,7 +178,7 @@ export default function Services() {
         backgroundImage: "linear-gradient(rgba(10,18,35,0.72), rgba(10,18,35,0.84)), url('/images/page-headers/services-build.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center 35%',
-        padding: isMobile ? '70px 20px 60px' : '110px 20px 90px',
+        padding: isMobile ? '40px 20px' : '70px 20px',
         borderRadius: isMobile ? '20px' : '28px',
         margin: isMobile ? '0 12px 36px' : '0 20px 52px',
         position: 'relative',

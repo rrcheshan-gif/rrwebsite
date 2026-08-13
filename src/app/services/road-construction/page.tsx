@@ -30,7 +30,7 @@ export default function RoadConstructionPage() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'var(--white)',
-          padding: isMobile ? "100px 20px 60px" : "150px 20px 100px",
+          padding: isMobile ? '40px 20px' : '70px 20px',
           textAlign: 'center'
         }}
       >

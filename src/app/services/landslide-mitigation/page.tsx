@@ -19,7 +19,7 @@ export default function LandslideMitigationPage() {
       backgroundImage: "url('/images/home/slider/polished/hatton.jpg')",
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      padding: isMobile ? '80px 20px' : '120px 40px',
+      padding: isMobile ? '40px 20px' : '70px 20px',
       color: 'var(--white)',
       textAlign: 'center' as const,
     },

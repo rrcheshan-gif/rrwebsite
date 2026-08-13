@@ -25,7 +25,7 @@ export default function MaritimeConstructionPage() {
         className="page-header" 
         style={{
           position: 'relative',
-          padding: isMobile ? '120px 20px 60px' : '160px 40px 80px',
+          padding: isMobile ? '40px 20px' : '70px 20px',
           backgroundImage: 'url("/images/page-headers/services-build.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',

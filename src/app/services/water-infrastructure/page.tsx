@@ -21,7 +21,7 @@ export default function WaterInfrastructurePage() {
       {/* Hero Section */}
       <section className="page-header" style={{
         position: 'relative',
-        padding: isMobile ? "80px 20px" : "120px 40px",
+        padding: isMobile ? '40px 20px' : '70px 20px',
         backgroundColor: 'var(--text-dark)',
         backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/services/water-hero.jpg")',
         backgroundSize: 'cover',

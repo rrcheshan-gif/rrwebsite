@@ -59,7 +59,7 @@ export default function DredgingReclamationPage() {
       {/* Hero Section */}
       <section className="page-header" style={{
         position: 'relative',
-        padding: isMobile ? '120px 20px 60px' : '160px 20px 80px',
+        padding: isMobile ? '40px 20px' : '70px 20px',
         backgroundColor: 'var(--text-dark)',
         backgroundImage: 'linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.9)), url("/images/services/dredging-hero.jpg")',
         backgroundSize: 'cover',
