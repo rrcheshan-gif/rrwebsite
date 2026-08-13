@@ -41,7 +41,7 @@ export default function Leadership() {
             </Link>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2.8rem" : "4.5rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textTransform: "uppercase" }}>
-            Company <span style={{ color: "var(--primary-red)" }}>Leadership</span>
+            Board of <span style={{ color: "var(--primary-red)" }}>Management</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Guiding RR Construction through decades of civil engineering excellence.
@@ -61,9 +61,15 @@ export default function Leadership() {
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "30px" }}>
             {COMPANY_DATA.leadership.map((leader, idx) => (
               <div key={idx} style={{ display: "flex", gap: "30px", background: "var(--white)", padding: isMobile ? "30px 20px" : "40px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: "center", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left" }}>
-                <div style={{ width: "80px", height: "80px", background: "rgba(229, 57, 53, 0.1)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                  <User size={40} color="var(--primary-red)" />
-                </div>
+                {leader.image ? (
+                  <div style={{ width: "120px", height: "120px", borderRadius: "50%", overflow: "hidden", flexShrink: 0, boxShadow: "0 10px 20px rgba(0,0,0,0.1)", border: "4px solid var(--white)" }}>
+                    <img src={leader.image} alt={leader.name} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  </div>
+                ) : (
+                  <div style={{ width: "120px", height: "120px", background: "rgba(229, 57, 53, 0.1)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 10px 20px rgba(0,0,0,0.1)", border: "4px solid var(--white)" }}>
+                    <User size={50} color="var(--primary-red)" />
+                  </div>
+                )}
                 <div>
                   <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 5px 0" }}>{leader.name}</h3>
                   <p style={{ color: "var(--primary-red)", fontSize: "1.1rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", margin: "0 0 10px 0" }}>{leader.role}</p>

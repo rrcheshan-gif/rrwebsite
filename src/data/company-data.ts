@@ -29,8 +29,8 @@ export const COMPANY_DATA = {
     { field: "Water Supply and Sewerage", grade: "C-7" }
   ],
   leadership: [
-    { name: "Mr. Ranjith Senadeera S.D.", role: "Managing Director", qual: "B.Sc. Engineering (Hons), M.Eng. (IEM)" },
-    { name: "Mr. Ajith Priyantha Galahitiyawa", role: "General Manager – Contracts", qual: "B.Sc. Engineering, Chartered Engineer" },
-    { name: "Mr. S.R. Gamage", role: "General Manager – Operations", qual: "Diploma in Engineering (NDT), CEI Part 1 & 2, London, MIEDSL, MNFET" }
+    { name: "Mr. Ranjith Senadeera S.D.", role: "Managing Director", qual: "B.Sc. Engineering (Hons), M.Eng. (IEM)", image: "/images/director.jpg" },
+    { name: "Mr. Ajith Priyantha Galahitiyawa", role: "General Manager – Contracts", qual: "B.Sc. Engineering, Chartered Engineer", image: "" },
+    { name: "Mr. S.R. Gamage", role: "General Manager – Operations", qual: "Diploma in Engineering (NDT), CEI Part 1 & 2, London, MIEDSL, MNFET", image: "/images/gamage.jpg" }
   ]
 };
