@@ -271,22 +271,30 @@ export default function Home() {
         <div className="container" style={{ display: "flex", flexWrap: "wrap", alignItems: "stretch", gap: "60px", position: "relative", zIndex: 2 }}>
           
           <div style={{ flex: "1 1 400px", position: "relative", display: "flex", alignItems: "center" }}>
-            {/* Outer Frame Accent */}
-            <div style={{ position: "absolute", top: "-20px", left: "-20px", right: "20px", bottom: "-20px", border: "2px dashed rgba(229, 57, 53, 0.4)", borderRadius: "36px", zIndex: 0, boxShadow: "inset 0 0 20px rgba(229, 57, 53, 0.05)" }}></div>
+            {/* Premium Picture Collage */}
+            <div style={{ position: "relative", width: "100%", padding: "15px", background: "var(--white)", borderRadius: "40px", boxShadow: "0 25px 70px rgba(0,0,0,0.06)", border: "1px solid rgba(0,0,0,0.04)" }}>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridTemplateRows: "repeat(2, 220px)", gap: "12px", position: "relative", zIndex: 1 }}>
+                
+                {/* Top Left - Wide */}
+                <div style={{ gridColumn: "1 / 3", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
+                  <img src="/images/home/IMG_3025.jpg" alt="Road Construction" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                </div>
+                
+                {/* Top Right - Square */}
+                <div style={{ gridColumn: "3 / 4", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
+                  <img src="/images/home/WhatsApp Image 2026-07-18 at 10.24.03.jpeg" alt="CAT Machine" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                </div>
 
-            {/* Picture Collage */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "15px", padding: "15px", background: "var(--white)", borderRadius: "32px", boxShadow: "0 25px 60px rgba(0,0,0,0.06)", position: "relative", zIndex: 2, width: "100%" }}>
-              <div style={{ height: "240px", borderRadius: "20px", overflow: "hidden" }}>
-                <img src="/images/home/IMG_3025.jpg" alt="Road Construction" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-              </div>
-              <div style={{ height: "240px", borderRadius: "20px", overflow: "hidden", marginTop: "40px" }}>
-                <img src="/images/home/WhatsApp Image 2026-07-18 at 10.24.03.jpeg" alt="CAT Machine" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-              </div>
-              <div style={{ height: "240px", borderRadius: "20px", overflow: "hidden", marginTop: "-40px" }}>
-                <img src="/images/kandy-landslide/kandy-5.jpg" alt="Retaining Wall" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-              </div>
-              <div style={{ height: "240px", borderRadius: "20px", overflow: "hidden" }}>
-                <img src="/images/home/WhatsApp Image 2026-07-24 at 23.23.33.jpeg" alt="Excavator" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                {/* Bottom Left - Square */}
+                <div style={{ gridColumn: "1 / 2", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
+                  <img src="/images/home/WhatsApp Image 2026-07-24 at 23.23.33.jpeg" alt="Excavator" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                </div>
+
+                {/* Bottom Right - Wide */}
+                <div style={{ gridColumn: "2 / 4", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
+                  <img src="/images/kandy-landslide/kandy-5.jpg" alt="Retaining Wall" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                </div>
+                
               </div>
             </div>
             
