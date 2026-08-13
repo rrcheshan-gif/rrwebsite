@@ -9,8 +9,9 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const news = NEWS_DATA.find((n) => n.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const news = NEWS_DATA.find((n) => n.slug === resolvedParams.slug);
   
   if (!news) {
     return {
@@ -24,8 +25,9 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-export default function NewsArticle({ params }: { params: { slug: string } }) {
-  const news = NEWS_DATA.find((n) => n.slug === params.slug);
+export default async function NewsArticle({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const news = NEWS_DATA.find((n) => n.slug === resolvedParams.slug);
 
   if (!news) {
     notFound();
@@ -100,7 +102,7 @@ export default function NewsArticle({ params }: { params: { slug: string } }) {
             <div style={{ marginTop: "50px", paddingTop: "30px", borderTop: "1px solid var(--border-soft)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <span style={{ fontWeight: 700, color: "var(--text-dark)" }}>Share this story</span>
               <div style={{ display: "flex", gap: "15px" }}>
-                <button style={{ background: "var(--bg-light)", border: "none", width: "40px", height: "40px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", color: "var(--text-dark)", transition: "background 0.3s" }} onMouseOver={(e) => e.currentTarget.style.background = 'var(--border-soft)'} onMouseOut={(e) => e.currentTarget.style.background = 'var(--bg-light)'}>
+                <button className="share-btn" style={{ background: "var(--bg-light)", border: "none", width: "40px", height: "40px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", color: "var(--text-dark)", transition: "background 0.3s" }}>
                   <Share2 size={18} />
                 </button>
               </div>
