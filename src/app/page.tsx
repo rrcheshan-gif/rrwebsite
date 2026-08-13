@@ -520,9 +520,9 @@ export default function Home() {
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px" }}>
             {[
+              { tag: 'Infrastructure', title: 'Vadduvakal Bridge Construction Commences', desc: 'President Anura Kumara Dissanayake officially inaugurated the construction of the Rs. 1.4 billion Vadduvakal Bridge in Mullaitivu.', date: 'September 02, 2025', img: '/images/home/slider/bridge.jpg' },
               { tag: 'Maritime', title: 'Gandara Fishery Harbour Phase 1 Completed', desc: 'Major milestones achieved in dredging and breakwater construction at the major southern maritime project.', date: 'June 15, 2026', img: '/images/maritime-harbour-site.jpg' },
-              { tag: 'Corporate', title: 'RR Construction Passes Annual ISO Surveillance Audit', desc: 'Successfully maintaining our ISO 9001, 14001, and 45001 certifications, reaffirming our commitment to global standards.', date: 'May 28, 2026', img: '/images/health-safety-site.jpg' },
-              { tag: 'Machinery', title: 'New High-Capacity Asphalt Plant Commissioned', desc: 'Expanding our self-owned fleet capabilities to accelerate the delivery of the Central Expressway Project Section 3.', date: 'May 10, 2026', img: '/images/kalutara-crusher-plant.jpg', crop: 'top' }
+              { tag: 'Corporate', title: 'RR Construction Passes Annual ISO Surveillance Audit', desc: 'Successfully maintaining our ISO 9001, 14001, and 45001 certifications, reaffirming our commitment to global standards.', date: 'May 28, 2026', img: '/images/health-safety-site.jpg' }
             ].map((news, i) => (
               <div key={i} style={{ background: "var(--white)", borderRadius: "24px", overflow: "hidden", border: "1px solid var(--border-soft)", cursor: "pointer", transition: "transform 0.4s ease, box-shadow 0.4s ease" }} className="news-card glass-panel hover-lift" onMouseOver={(e) => { e.currentTarget.style.transform = "translateY(-10px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.05)" }} onMouseOut={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none" }}>
                 <div style={{ height: "220px", overflow: "hidden" }}>

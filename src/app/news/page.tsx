@@ -16,13 +16,22 @@ export default function News() {
 
   const newsItems = [
     {
+      id: 7,
+      tag: 'Infrastructure',
+      title: 'Construction of Vadduvakal Bridge Commences in Mullaitivu',
+      desc: 'President Anura Kumara Dissanayake officially inaugurated the construction of the Rs. 1.4 billion two-lane Vadduvakal Bridge over the Nandikadal Lagoon, a major project awarded to RR Construction.',
+      date: 'September 02, 2025',
+      img: '/images/home/slider/bridge.jpg',
+      featured: true
+    },
+    {
       id: 1,
       tag: 'Maritime',
       title: 'Gandara Fishery Harbour Phase 1 Completed',
       desc: 'Major milestones achieved in dredging and breakwater construction at the major southern maritime project. This facility is expected to boost the local fishing industry significantly.',
       date: 'June 15, 2026',
       img: '/images/maritime-harbour-site.jpg',
-      featured: true
+      featured: false
     },
     {
       id: 2,
