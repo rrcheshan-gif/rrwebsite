@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -100,7 +100,7 @@ export default function AboutStory() {
             </div>
             <div style={{ flex: "1", minWidth: "300px" }}>
               <div style={{ borderRadius: "24px", overflow: "hidden", position: "relative", boxShadow: "0 20px 50px rgba(0,0,0,0.1)" }}>
-                <img src="/images/building-projects.jpg" alt="RR Construction Project Site" style={{ width: "100%", height: "auto", display: "block", minHeight: "400px", objectFit: "cover" }} />
+                <img src="/images/overview-page.png" alt="RR Construction Project Site" style={{ width: "100%", height: "auto", display: "block", minHeight: "400px", objectFit: "cover" }} />
                 <div style={{ position: "absolute", bottom: "30px", left: "-20px", background: "var(--primary-red)", color: "white", padding: "20px 30px", borderRadius: "12px", boxShadow: "0 10px 30px rgba(229, 57, 53, 0.4)" }}>
                   <h4 style={{ margin: 0, fontSize: "2rem", fontFamily: "var(--font-heading)", fontWeight: 800 }}>{COMPANY_DATA.established}</h4>
                   <p style={{ margin: 0, fontSize: "0.9rem", textTransform: "uppercase", letterSpacing: "1px", fontWeight: 600 }}>Year Established</p>
