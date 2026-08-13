@@ -7,40 +7,59 @@ export default function PageTransition() {
   const pathname = usePathname();
   const isInitialLoad = useRef(true);
   const [isTransitioning, setIsTransitioning] = useState(true);
-  const [duration, setDuration] = useState(1800); // Default 1.8s for initial load
+  const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
     if (isInitialLoad.current) {
-      // First site load: 1.8s so logo & tagline are clearly visible
+      // First site load: show logo splash for 1.2s
       isInitialLoad.current = false;
       setIsTransitioning(true);
-      setDuration(1800);
+      setShowSplash(true);
       const timer = setTimeout(() => {
         setIsTransitioning(false);
-      }, 1800);
+      }, 1200);
       return () => clearTimeout(timer);
     } else {
-      // Route change page transition: 900ms (smooth & intentional)
+      // Route change: fast 200ms fade — no blocking overlay
       setIsTransitioning(true);
-      setDuration(900);
+      setShowSplash(false);
       const timer = setTimeout(() => {
         setIsTransitioning(false);
-      }, 900);
+      }, 200);
       return () => clearTimeout(timer);
     }
   }, [pathname]);
 
   if (!isTransitioning) return null;
 
-  const durationSec = (duration / 1000).toFixed(1) + "s";
+  // Route change: minimal fade overlay
+  if (!showSplash) {
+    return (
+      <div style={{
+        position: "fixed",
+        top: 0, left: 0,
+        width: "100vw", height: "100dvh",
+        backgroundColor: "var(--bg-light)",
+        zIndex: 99999,
+        pointerEvents: "none",
+        animation: "quickFade 200ms ease-out forwards"
+      }}>
+        <style>{`
+          @keyframes quickFade {
+            0% { opacity: 0.4; }
+            100% { opacity: 0; }
+          }
+        `}</style>
+      </div>
+    );
+  }
 
+  // Initial load: full splash with logo
   return (
     <div style={{
       position: "fixed",
-      top: 0,
-      left: 0,
-      width: "100vw",
-      height: "100dvh",
+      top: 0, left: 0,
+      width: "100vw", height: "100dvh",
       backgroundColor: "var(--bg-light)",
       zIndex: 99999,
       display: "flex",
@@ -50,7 +69,7 @@ export default function PageTransition() {
       textAlign: "center",
       padding: "20px",
       boxSizing: "border-box",
-      animation: `revealOut ${durationSec} cubic-bezier(0.65, 0, 0.35, 1) forwards`,
+      animation: "revealOut 1.2s cubic-bezier(0.65, 0, 0.35, 1) forwards",
       pointerEvents: "none"
     }}>
       <div style={{ 
@@ -97,7 +116,7 @@ export default function PageTransition() {
             width: "0%",
             background: "var(--primary-red)",
             borderRadius: "2px",
-            animation: `smoothLoadingBar ${durationSec} ease-in-out forwards`
+            animation: "smoothLoadingBar 1.2s ease-in-out forwards"
           }}></div>
         </div>
       </div>

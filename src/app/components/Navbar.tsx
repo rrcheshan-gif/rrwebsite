@@ -41,16 +41,16 @@ export default function Navbar() {
       <header className={`navbar-wrapper ${scrolled ? "scrolled" : ""} ${isHomePage ? "home-nav" : "default-nav"}`}>
         <div className="container">
           <nav className="navbar">
-            <a href="/" className="logo" onClick={() => setMobileMenuOpen(false)}>
+            <Link href="/" className="logo" onClick={() => setMobileMenuOpen(false)}>
               <img src="/images/logo.png" alt="RR Construction Logo" className="nav-logo-img" />
               <div className="logo-text">
                 <span className="logo-title">CONSTRUCTION</span>
                 <span className="logo-sub">(PVT) LTD</span>
               </div>
-            </a>
+            </Link>
             
             <ul className={`nav-links ${mobileMenuOpen ? "active" : ""}`}>
-              <li><a href="/" onClick={() => setMobileMenuOpen(false)}>Home</a></li>
+              <li><Link href="/" onClick={() => setMobileMenuOpen(false)}>Home</Link></li>
               
               <li className={`dropdown ${activeDropdown === 'about' ? 'open' : ''}`}>
                 <div className="dropdown-header">
@@ -66,7 +66,7 @@ export default function Navbar() {
                   <li><Link href="/about/vision-mission" onClick={() => setMobileMenuOpen(false)}>Vision & Mission</Link></li>
                   <li><Link href="/about/goals-and-targets" onClick={() => setMobileMenuOpen(false)}>Goals & Targets</Link></li>
 
-                  <li><Link href="/awards" onClick={() => setMobileMenuOpen(false)}>Awards & Achievements</Link></li>
+                  <li><Link href="/about/awards" onClick={() => setMobileMenuOpen(false)}>Awards & Achievements</Link></li>
                 </ul>
               </li>
               

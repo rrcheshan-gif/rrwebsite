@@ -12,7 +12,7 @@ export default function Footer() {
                 <img src="/images/logo.png" alt="RR Construction Logo" />
               </div>
               <div className="footer-logo-text">
-                <span className="logo-title">CONSTRUCTION</span>
+                <span className="logo-title">RR CONSTRUCTION</span>
                 <span className="logo-sub">(PVT) LTD</span>
               </div>
             </div>
@@ -30,7 +30,7 @@ export default function Footer() {
           <div className="footer-col footer-links-col">
             <h4 className="footer-heading">Quick Links</h4>
             <ul className="footer-links-list">
-              <li><Link href="/about">Corporate Profile</Link></li>
+              <li><Link href="/about/company-overview">Corporate Profile</Link></li>
               <li><Link href="/services">Our Services</Link></li>
               <li><Link href="/projects">Projects Portfolio</Link></li>
               <li><Link href="/career">Careers</Link></li>
@@ -48,11 +48,11 @@ export default function Footer() {
               </li>
               <li>
                 <span className="contact-icon">📞</span>
-                <span>011-2433427</span>
+                <span><a href="tel:+94112433427" style={{ color: 'inherit', textDecoration: 'none' }}>011-2433427</a></span>
               </li>
               <li>
                 <span className="contact-icon">✉️</span>
-                <span>general@rrconstruction.lk</span>
+                <span><a href="mailto:general@rrconstruction.lk" style={{ color: 'inherit', textDecoration: 'none' }}>general@rrconstruction.lk</a></span>
               </li>
             </ul>
           </div>
