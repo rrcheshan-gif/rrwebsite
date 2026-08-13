@@ -100,7 +100,20 @@ export default function Navbar() {
                 </ul>
               </li>
               
-              <li><Link href="/quarries-aggregates" onClick={() => setMobileMenuOpen(false)}>Quarries & Aggregates</Link></li>
+              <li className={`dropdown ${activeDropdown === 'quarries' ? 'open' : ''}`}>
+                <div className="dropdown-header">
+                  <Link href="/quarries-aggregates" onClick={() => setMobileMenuOpen(false)}>Quarries & Products</Link>
+                  <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('quarries', e)} aria-label="Toggle Quarries Submenu">
+                    <ChevronDown size={14} />
+                  </button>
+                </div>
+                <ul className="dropdown-menu">
+                  <li><Link href="/quarries-aggregates" onClick={() => setMobileMenuOpen(false)}>Quarries & Aggregates</Link></li>
+                  <li><Link href="/asphalt" onClick={() => setMobileMenuOpen(false)}>Asphalt</Link></li>
+                  <li><Link href="/products/m-sand" onClick={() => setMobileMenuOpen(false)}>M-Sand</Link></li>
+                  <li><Link href="/products/aggregates" onClick={() => setMobileMenuOpen(false)}>Aggregates</Link></li>
+                </ul>
+              </li>
               <li className={`dropdown ${activeDropdown === 'services' ? 'open' : ''}`}>
                 <div className="dropdown-header">
                   <Link href="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link>
@@ -115,19 +128,6 @@ export default function Navbar() {
                   <li><Link href="/services/dredging-reclamation" onClick={() => setMobileMenuOpen(false)}>Dredging & Reclamation</Link></li>
                   <li><Link href="/services/water-infrastructure" onClick={() => setMobileMenuOpen(false)}>Water Infrastructure</Link></li>
                   <li><Link href="/services/landslide-mitigation" onClick={() => setMobileMenuOpen(false)}>Landslide Mitigation</Link></li>
-                </ul>
-              </li>
-              <li className={`dropdown ${activeDropdown === 'products' ? 'open' : ''}`}>
-                <div className="dropdown-header">
-                  <Link href="/products/aggregates" onClick={() => setMobileMenuOpen(false)}>Products</Link>
-                  <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('products', e)} aria-label="Toggle Products Submenu">
-                    <ChevronDown size={14} />
-                  </button>
-                </div>
-                <ul className="dropdown-menu">
-                  <li><Link href="/asphalt" onClick={() => setMobileMenuOpen(false)}>Asphalt</Link></li>
-                  <li><Link href="/products/m-sand" onClick={() => setMobileMenuOpen(false)}>M-Sand</Link></li>
-                  <li><Link href="/products/aggregates" onClick={() => setMobileMenuOpen(false)}>Aggregates</Link></li>
                 </ul>
               </li>
               <li className={`dropdown ${activeDropdown === 'sustainability' ? 'open' : ''}`}>
