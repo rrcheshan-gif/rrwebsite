@@ -117,7 +117,16 @@ const projectsData = [
     client: "Road Development Authority",
     duration: "12 Months",
     year: 2025,
-    status: "Ongoing"
+    status: "Ongoing",
+    heroImage: "/images/BBP/hero.jpeg",
+    galleryImages: [
+      "/images/BBP/img-1.jpeg",
+      "/images/BBP/img-2.jpeg",
+      "/images/BBP/img-3.jpeg",
+      "/images/BBP/img-4.jpeg",
+      "/images/BBP/img-5.jpeg",
+      "/images/BBP/img-6.jpeg"
+    ]
   },
   {
     id: 'project-4',
