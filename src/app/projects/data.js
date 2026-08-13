@@ -95,8 +95,8 @@ const projectsData = [
     duration: "120 Days",
     year: 2026,
     status: "Completed",
-    heroImage: '/images/page-headers/projects-portfolio.jpg',
-    galleryImages: ['/images/page-headers/projects-portfolio.jpg']
+    
+    
   },
   {
     id: 'project-2',
