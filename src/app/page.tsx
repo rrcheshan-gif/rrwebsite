@@ -272,12 +272,12 @@ export default function Home() {
           
           <div style={{ flex: "1 1 400px", position: "relative" }}>
             {/* Premium Picture Collage */}
-            <div style={{ position: "relative", width: "100%", zIndex: 1, marginTop: "10px" }}>
+            <div style={{ position: "relative", width: "100%", height: "calc(100% - 10px)", zIndex: 1, marginTop: "10px" }}>
               {/* Perfectly Aligned Red Dashed Outer Frame */}
               <div style={{ position: "absolute", top: "-15px", bottom: "-15px", left: "-15px", right: "-15px", border: "2px dashed rgba(229, 57, 53, 0.5)", borderRadius: "48px", zIndex: 0, pointerEvents: "none" }}></div>
               
-              <div style={{ position: "relative", width: "100%", padding: "15px", background: "var(--white)", borderRadius: "40px", boxShadow: "0 25px 70px rgba(0,0,0,0.06)", border: "1px solid rgba(0,0,0,0.04)", zIndex: 2 }}>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridTemplateRows: "repeat(2, 190px)", gap: "12px", position: "relative", zIndex: 1 }}>
+              <div style={{ position: "relative", width: "100%", height: "100%", padding: "15px", background: "var(--white)", borderRadius: "40px", boxShadow: "0 25px 70px rgba(0,0,0,0.06)", border: "1px solid rgba(0,0,0,0.04)", zIndex: 2, display: "flex", flexDirection: "column" }}>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridTemplateRows: "repeat(2, 1fr)", flex: 1, minHeight: "380px", gap: "12px", position: "relative", zIndex: 1 }}>
                   
                   {/* Top Left - Wide */}
                   <div style={{ gridColumn: "1 / 3", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
