@@ -302,21 +302,21 @@ export default function Home() {
                 </div>
               </div>
               
-              {/* Floating 25+ Years Box Attached to Pictures */}
+              {/* Floating 30+ Years Box Attached to Pictures */}
               <div className="glass-panel hover-lift" style={{ 
                 position: "absolute", 
-                bottom: "-25px", 
+                bottom: "20px", 
                 left: "50%", 
                 transform: "translateX(-50%)",
                 background: "rgba(255, 255, 255, 0.95)", 
                 backdropFilter: "blur(16px)",
-                padding: "15px 25px", 
-                zIndex: 3, 
+                padding: "15px 30px", 
+                zIndex: 10, 
                 width: "max-content",
                 textAlign: "center",
-                borderRadius: "20px",
-                boxShadow: "0 15px 35px rgba(0, 0, 0, 0.12)",
-                border: "1px solid rgba(211, 47, 47, 0.3)"
+                borderRadius: "30px",
+                boxShadow: "0 15px 35px rgba(0, 0, 0, 0.15)",
+                border: "1px solid rgba(211, 47, 47, 0.2)"
               }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
                   <div style={{ fontSize: "2.5rem", fontWeight: 800, fontFamily: "var(--font-heading)", lineHeight: 1, color: "var(--primary-red)" }}>{COMPANY_DATA.yearsOfExcellence}</div>
