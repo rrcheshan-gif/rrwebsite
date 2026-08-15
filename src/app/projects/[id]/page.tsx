@@ -157,9 +157,11 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
           <div style={{ position: 'relative', zIndex: 10000, maxWidth: '90%', maxHeight: '90vh' }} onClick={(e) => e.stopPropagation()}>
             <TransformWrapper
               initialScale={1}
-              minScale={0.5}
-              maxScale={5}
+              minScale={1}
+              maxScale={4}
               centerOnInit={true}
+              limitToBounds={true}
+              wheel={{ step: 0.1 }}
             >
               <TransformComponent wrapperStyle={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <img 
