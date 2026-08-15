@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { notFound } from 'next/navigation';
 import projectsData from '../data';
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 export default function ProjectDetail({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params);
@@ -153,7 +154,22 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
             ←
           </button>
 
-          <img src={lightboxImg.startsWith('/') ? lightboxImg : `/${lightboxImg}`} alt="Fullscreen view" style={{ maxWidth: '90%', maxHeight: '90vh', borderRadius: '8px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', objectFit: 'contain', position: 'relative', zIndex: 10000 }} />
+          <div style={{ position: 'relative', zIndex: 10000, maxWidth: '90%', maxHeight: '90vh' }} onClick={(e) => e.stopPropagation()}>
+            <TransformWrapper
+              initialScale={1}
+              minScale={0.5}
+              maxScale={5}
+              centerOnInit={true}
+            >
+              <TransformComponent wrapperStyle={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <img 
+                  src={lightboxImg.startsWith('/') ? lightboxImg : `/${lightboxImg}`} 
+                  alt="Fullscreen view" 
+                  style={{ maxWidth: '90vw', maxHeight: '90vh', borderRadius: '8px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', objectFit: 'contain' }} 
+                />
+              </TransformComponent>
+            </TransformWrapper>
+          </div>
 
           <button 
             onClick={(e) => {
