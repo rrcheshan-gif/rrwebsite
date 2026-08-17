@@ -91,7 +91,7 @@ export default function OngoingProjects() {
         </div>
 
         {/* Project Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '30px', marginBottom: '60px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: '30px', marginBottom: '60px' }}>
           {filteredProjects.map((project: any, index: number) => {
             const hasDetail = !!project.id;
             const CardWrapper: any = hasDetail ? Link : 'div';

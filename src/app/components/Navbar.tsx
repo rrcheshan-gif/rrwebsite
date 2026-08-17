@@ -27,6 +27,16 @@ export default function Navbar() {
     setActiveDropdown(null);
   }, [pathname]);
 
+  // Prevent body scrolling when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [mobileMenuOpen]);
+
   const isHomePage = pathname === '/';
 
   const toggleDropdown = (name: string, e: React.MouseEvent) => {

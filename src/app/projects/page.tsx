@@ -93,7 +93,7 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "30px", paddingBottom: "80px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 300px), 1fr))", gap: "30px", paddingBottom: "80px" }}>
           {filteredProjects.map((project: any) => (
             <Link href={`/projects/${project.id}`} key={project.id} className="fade-in" style={{ display: 'flex', flexDirection: 'column', height: '100%', textDecoration: 'none' }}>
               <div 

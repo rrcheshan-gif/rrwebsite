@@ -1974,9 +1974,9 @@ ul {
     min-height: 44px !important; /* Apple Human Interface Guidelines */
   }
   
-  h1 { font-size: clamp(2rem, 8vw, 3rem) !important; }
-  h2 { font-size: clamp(1.8rem, 6vw, 2.5rem) !important; }
-  h3 { font-size: clamp(1.4rem, 5vw, 1.8rem) !important; }
+  h1 { font-size: clamp(1.8rem, 8vw, 2.5rem) !important; }
+  h2 { font-size: clamp(1.5rem, 6vw, 2rem) !important; }
+  h3 { font-size: clamp(1.25rem, 5vw, 1.6rem) !important; }
   
   section {
     padding-top: 50px !important;
@@ -1987,7 +1987,7 @@ ul {
     padding: 0 20px !important;
   }
   
-  .grid, [style*="grid-template-columns"] {
+  .grid, [style*="grid-template-columns"]:not(.collage-grid) {
     grid-template-columns: 1fr !important;
     gap: 30px !important;
   }
