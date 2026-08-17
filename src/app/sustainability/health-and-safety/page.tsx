@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { ShieldCheck, HardHat, AlertTriangle, UserCheck, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, HardHat, AlertTriangle, UserCheck, CheckCircle2, HeartPulse } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
 export default function HealthAndSafety() {
@@ -119,6 +119,14 @@ export default function HealthAndSafety() {
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Competency Training</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
                 PPE is useless without proper knowledge. We invest heavily in ongoing occupational health training, ensuring that our {COMPANY_DATA.workforce} workers understand the precise physics and dangers of the materials they handle.
+              </p>
+            </div>
+
+            <div className="glass-panel hover-lift" style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)" }}>
+              <HeartPulse size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
+              <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Employee Wellbeing</h3>
+              <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
+                We actively prevent work-related injuries and occupational ill health. By continuously monitoring site conditions and ensuring all workers use properly selected Personal Protective Equipment (PPE), we protect our workforce from preventable harm.
               </p>
             </div>
 
