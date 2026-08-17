@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -120,6 +120,61 @@ export default function EnvironmentalStewardship() {
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
                 By operating our own crusher plants and manufacturing our own M-Sand, we bypass the environmentally destructive river sand mining practices. We heavily recycle asphalt pavement (RAP) and employ controlled rock blasting techniques to maximize resource yields while minimizing topographical scarring.
               </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* HSE Environmental Policy Integration Section */}
+      <section style={{ padding: "80px 20px", background: "var(--bg-base)" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
+          
+          <div style={{ textAlign: "center", marginBottom: "50px" }}>
+            <h2 style={{ fontSize: "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0" }}>
+              Comprehensive Environmental Policy
+            </h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.8 }}>
+              Our operations are strictly governed by our overarching Health, Safety, and Environment (HSE) Policy, ensuring we go beyond compliance to actively improve our ecological footprint.
+            </p>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "40px" }}>
+            
+            <div style={{ background: "var(--white)", padding: "30px", borderRadius: "16px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
+              <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Waste & Pollution Control</h3>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px" }}>
+                We apply the principle of prevention before protection. Our site operations are mandated to:
+              </p>
+              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "20px", margin: 0 }}>
+                <li>Ensure proper collection, storage, and disposal of all project waste.</li>
+                <li>Prevent contamination of soil, surface water, and groundwater from hazardous substances.</li>
+                <li>Minimize waste generation and heavily promote reduction, reuse, and recycling.</li>
+              </ul>
+            </div>
+
+            <div style={{ background: "var(--white)", padding: "30px", borderRadius: "16px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
+              <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Strict Legal Compliance</h3>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px" }}>
+                Operating at scale requires absolute adherence to the law. Our management continuously identifies and complies with:
+              </p>
+              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "20px", margin: 0 }}>
+                <li>National environmental and labor legislation.</li>
+                <li>Construction and project-specific client requirements.</li>
+                <li>Strict permit and licence conditions for all manufacturing plants.</li>
+              </ul>
+            </div>
+
+            <div style={{ background: "var(--white)", padding: "30px", borderRadius: "16px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
+              <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Continual Auditing & Improvement</h3>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px" }}>
+                We conduct internal HSE audits at planned intervals to guarantee our management systems achieve their intended outcomes. Top Management periodically reviews:
+              </p>
+              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "20px", margin: 0 }}>
+                <li>Environmental performance metrics and compliance status.</li>
+                <li>System suitability, adequacy, and overall effectiveness.</li>
+                <li>Changes in risks and opportunities for ecological improvement.</li>
+              </ul>
             </div>
 
           </div>

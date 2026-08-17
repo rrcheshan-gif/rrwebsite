@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -120,6 +120,62 @@ export default function HealthAndSafety() {
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
                 PPE is useless without proper knowledge. We invest heavily in ongoing occupational health training, ensuring that our {COMPANY_DATA.workforce} workers understand the precise physics and dangers of the materials they handle.
               </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* HSE Policy Integration Section */}
+      <section style={{ padding: "80px 20px", background: "var(--bg-base)" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
+          
+          <div style={{ textAlign: "center", marginBottom: "50px" }}>
+            <h2 style={{ fontSize: "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0" }}>
+              Comprehensive HSE Policy Integration
+            </h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.8 }}>
+              Our commitment to Occupational Health and Safety extends beyond basic compliance. We have integrated strict protocols covering worker participation, emergency response, and continuous hazard management.
+            </p>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "40px" }}>
+            
+            <div style={{ background: "var(--white)", padding: "30px", borderRadius: "16px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
+              <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Worker Consultation & Participation</h3>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px" }}>
+                Effective HSE performance requires active engagement from every employee. We guarantee reasonable time, information, and resources for workers to participate in:
+              </p>
+              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "20px", margin: 0 }}>
+                <li>Hazard identification and risk assessments.</li>
+                <li>Toolbox meetings and safety briefings.</li>
+                <li>Reporting hazards or stopping work where immediate danger exists—without fear of retaliation.</li>
+              </ul>
+            </div>
+
+            <div style={{ background: "var(--white)", padding: "30px", borderRadius: "16px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
+              <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Emergency Preparedness</h3>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px" }}>
+                Our sites are high-stakes environments. We maintain rigorous emergency response procedures to handle foreseeable situations instantly, including:
+              </p>
+              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "20px", margin: 0 }}>
+                <li>Fire, explosion, and natural disasters.</li>
+                <li>Serious injuries or medical emergencies.</li>
+                <li>Chemical and fuel spills.</li>
+                <li>Working-at-height and confined-space emergencies.</li>
+              </ul>
+            </div>
+
+            <div style={{ background: "var(--white)", padding: "30px", borderRadius: "16px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
+              <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Incident & Nonconformity Actions</h3>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px" }}>
+                All near-misses, accidents, and significant unsafe conditions are systematically reported and investigated. We actively:
+              </p>
+              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "20px", margin: 0 }}>
+                <li>Identify immediate and underlying root causes.</li>
+                <li>Implement corrective actions within agreed timeframes.</li>
+                <li>Communicate lessons learned across all operational teams to prevent recurrence.</li>
+              </ul>
             </div>
 
           </div>

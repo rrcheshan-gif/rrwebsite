@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 
 export default function QualityPolicy() {
   return (
@@ -47,6 +47,46 @@ export default function QualityPolicy() {
               <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "15px" }}>Continuous Improvement</h3>
               <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>We leverage advanced construction technologies and actively seek client feedback to continuously refine our engineering methodologies and elevate our service delivery.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* HSE Management Commitment Section */}
+      <section style={{ padding: "80px 20px", background: "var(--bg-base)" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          
+          <div style={{ textAlign: "center", marginBottom: "50px" }}>
+            <h2 style={{ fontSize: "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0" }}>
+              Management Commitment & Responsibilities
+            </h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.8 }}>
+              Our Top Management demonstrates absolute leadership and commitment to the continual improvement of our Health, Safety, and Environmental (HSE) Management Systems.
+            </p>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px" }}>
+            
+            <div style={{ background: "var(--white)", padding: "30px", borderRadius: "16px", borderLeft: "5px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
+              <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Managing Director & General Managers</h3>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>
+                The Managing Director provides overall leadership, direction, and commitment to the HSE policy, ensuring adequate resources are provided. General Managers ensure effective implementation within their respective areas of responsibility. Management is accountable for providing competent personnel, equipment, facilities, and training based on identified risks.
+              </p>
+            </div>
+
+            <div style={{ background: "var(--white)", padding: "30px", borderRadius: "16px", borderLeft: "5px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
+              <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Project Managers & Site Engineers</h3>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>
+                Project Managers have overall responsibility for HSE performance at the project level, ensuring safe systems of work and that serious risks are halted immediately. Site Engineers actively identify hazards, conduct toolbox meetings, ensure PPE compliance, and report all near misses or unsafe acts to maintain a zero-harm environment.
+              </p>
+            </div>
+
+            <div style={{ background: "var(--white)", padding: "30px", borderRadius: "16px", borderLeft: "5px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
+              <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>HSE Personnel & Every Employee</h3>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>
+                Dedicated HSE/Safety Officers conduct rigorous site inspections, monitor compliance, and assist in incident investigations. Ultimately, HSE is a shared responsibility. Every worker is personally responsible for following safe procedures, taking reasonable care of themselves and others, and protecting the environment.
+              </p>
+            </div>
+
           </div>
         </div>
       </section>
