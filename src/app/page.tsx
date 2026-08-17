@@ -281,22 +281,22 @@ export default function Home() {
                   
                   {/* Top Left - Wide */}
                   <div style={{ gridColumn: "1 / 3", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
-                    <img src="/images/home/IMG_3025.jpg" alt="Road Construction" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    <img src="/images/home/IMG_3025.jpg" alt="Major Highway and Road Construction by RR Construction Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   </div>
                   
                   {/* Top Right - Square */}
                   <div style={{ gridColumn: "3 / 4", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
-                    <img src="/images/home/WhatsApp Image 2026-07-18 at 10.24.03.jpeg" alt="CAT Machine" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    <img src="/images/home/WhatsApp Image 2026-07-18 at 10.24.03.jpeg" alt="Heavy Construction Machinery Fleet in Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   </div>
 
                   {/* Bottom Left - Square */}
                   <div style={{ gridColumn: "1 / 2", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
-                    <img src="/images/home/WhatsApp Image 2026-07-24 at 23.23.33.jpeg" alt="Excavator" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    <img src="/images/home/WhatsApp Image 2026-07-24 at 23.23.33.jpeg" alt="Civil Engineering and Earthworks Equipment Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   </div>
 
                   {/* Bottom Right - Wide */}
                   <div style={{ gridColumn: "2 / 4", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
-                    <img src="/images/kandy-landslide/kandy-5.jpg" alt="Retaining Wall" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    <img src="/images/kandy-landslide/kandy-5.jpg" alt="Landslide Mitigation and Geotechnical Engineering in Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   </div>
                   
                 </div>

@@ -55,17 +55,13 @@ export const viewport: Viewport = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "ConstructionBusiness",
   "name": "RR Construction (Pvt) Ltd",
+  "alternateName": "RR Construction Sri Lanka",
   "url": "https://www.rrcon.company",
   "logo": "https://www.rrcon.company/images/logo.png",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+94-11-2433427",
-    "contactType": "customer service",
-    "areaServed": "LK",
-    "availableLanguage": ["English", "Sinhala", "Tamil"]
-  },
+  "image": "https://www.rrcon.company/images/og-image.jpg",
+  "description": "Leading civil engineering and construction company in Sri Lanka specializing in highways, bridges, maritime structures, and infrastructure development.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "No. 77, K.C. De Silva Puragama",
@@ -73,6 +69,27 @@ const jsonLd = {
     "addressRegion": "Western Province",
     "postalCode": "11830",
     "addressCountry": "LK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "6.9534",
+    "longitude": "79.8821"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+94-11-2433427",
+    "contactType": "customer service",
+    "areaServed": "LK",
+    "availableLanguage": ["English", "Sinhala", "Tamil"]
+  },
+  "sameAs": [
+    "https://www.facebook.com/rrconstruction",
+    "https://www.linkedin.com/company/rrconstruction"
+  ],
+  "priceRange": "$$$",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Sri Lanka"
   }
 };
 
