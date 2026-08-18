@@ -257,16 +257,6 @@ const projectsData = [
     status: "Ongoing"
   },
   {
-    id: 'project-15',
-    type: 'completed',
-    category: "disaster",
-    title: "Landslide Mitigation Measures at 11 Locations in Colombo & Kegalle District (RLVMMP)",
-    client: "Ministry of Defence",
-    duration: "12 Months",
-    year: 2025,
-    status: "Completed"
-  },
-  {
     id: 'project-16',
     type: 'ongoing',
     category: "bridges",
