@@ -64,7 +64,7 @@ export default function Navbar() {
               
               <li className={`dropdown ${activeDropdown === 'about' ? 'open' : ''}`}>
                 <div className="dropdown-header">
-                  <Link href="/about" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
+                  <Link href="/about" title="Leading Construction Company in Sri Lanka" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
                   <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('about', e)} aria-label="Toggle About Submenu">
                     <ChevronDown size={14} />
                   </button>
@@ -82,7 +82,7 @@ export default function Navbar() {
               
               <li className={`dropdown ${activeDropdown === 'projects' ? 'open' : ''}`}>
                 <div className="dropdown-header">
-                  <Link href="/projects" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
+                  <Link href="/projects" title="Major Infrastructure & Civil Engineering Projects Sri Lanka" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
                   <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('projects', e)} aria-label="Toggle Projects Submenu">
                     <ChevronDown size={14} />
                   </button>
@@ -95,7 +95,7 @@ export default function Navbar() {
               
               <li className={`dropdown ${activeDropdown === 'people' ? 'open' : ''}`}>
                 <div className="dropdown-header">
-                  <Link href="/people" onClick={() => setMobileMenuOpen(false)}>People</Link>
+                  <Link href="/people" title="Civil Engineering Workforce Sri Lanka" onClick={() => setMobileMenuOpen(false)}>People</Link>
                   <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('people', e)} aria-label="Toggle People Submenu">
                     <ChevronDown size={14} />
                   </button>
@@ -110,7 +110,7 @@ export default function Navbar() {
               
               <li className={`dropdown ${activeDropdown === 'services' ? 'open' : ''}`}>
                 <div className="dropdown-header">
-                  <Link href="/services" onClick={() => setMobileMenuOpen(false)}>Technology & Services</Link>
+                  <Link href="/services" title="Top Construction & Engineering Services Sri Lanka" onClick={() => setMobileMenuOpen(false)}>Technology & Services</Link>
                   <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('services', e)} aria-label="Toggle Services Submenu">
                     <ChevronDown size={14} />
                   </button>
@@ -122,7 +122,7 @@ export default function Navbar() {
               </li>
               <li className={`dropdown ${activeDropdown === 'sustainability' ? 'open' : ''}`}>
                 <div className="dropdown-header">
-                  <Link href="/sustainability" onClick={() => setMobileMenuOpen(false)}>Sustainability</Link>
+                  <Link href="/sustainability" title="Sustainable Construction Practices Sri Lanka" onClick={() => setMobileMenuOpen(false)}>Sustainability</Link>
                   <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('sustainability', e)} aria-label="Toggle Sustainability Submenu">
                     <ChevronDown size={14} />
                   </button>
@@ -134,13 +134,13 @@ export default function Navbar() {
                   <li><Link href="/sustainability/social-responsibility" onClick={() => setMobileMenuOpen(false)}>Social Responsibility</Link></li>
                 </ul>
               </li>
-              <li><Link href="/news" onClick={() => setMobileMenuOpen(false)}>News & Updates</Link></li>
+              <li><Link href="/news" title="Sri Lanka Construction Industry News" onClick={() => setMobileMenuOpen(false)}>News & Updates</Link></li>
               
               <li className="nav-extra-actions">
                 <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
                   {theme === 'light' ? '🌙' : '☀️'}
                 </button>
-                <Link href="/contact" className="nav-contact-btn" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
+                <Link href="/contact" title="Contact Top Construction Contractors in Sri Lanka" className="nav-contact-btn" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
               </li>
             </ul>
 
