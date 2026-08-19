@@ -13,7 +13,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.rrcon.company'),
+  metadataBase: new URL('https://www.rrconstruction.lk'),
   title: {
     template: "%s | RR Construction (Pvt) Ltd",
     default: "RR Construction (Pvt) Ltd | Leading Construction & Civil Engineering Company in Sri Lanka",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "RR Construction (Pvt) Ltd | Leading Construction & Civil Engineering Company in Sri Lanka",
     description: "RR Construction (Pvt) Ltd is a leading Sri Lankan construction and civil engineering company specializing in road construction, highways, bridges, infrastructure, harbour construction, geotechnical engineering, and sustainable construction solutions.",
-    url: 'https://www.rrcon.company',
+    url: 'https://www.rrconstruction.lk',
     siteName: 'RR Construction (Pvt) Ltd',
     locale: 'en_US',
     type: 'website',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     images: ['/images/og-image.jpg'],
   },
   alternates: {
-    canonical: 'https://www.rrcon.company',
+    canonical: 'https://www.rrconstruction.lk',
   },
 };
 
@@ -58,9 +58,9 @@ const jsonLd = {
   "@type": "ConstructionBusiness",
   "name": "RR Construction (Pvt) Ltd",
   "alternateName": "RR Construction Sri Lanka",
-  "url": "https://www.rrcon.company",
-  "logo": "https://www.rrcon.company/images/logo.png",
-  "image": "https://www.rrcon.company/images/og-image.jpg",
+  "url": "https://www.rrconstruction.lk",
+  "logo": "https://www.rrconstruction.lk/images/logo.png",
+  "image": "https://www.rrconstruction.lk/images/og-image.jpg",
   "description": "Leading civil engineering and construction company in Sri Lanka specializing in highways, bridges, maritime structures, and infrastructure development.",
   "address": {
     "@type": "PostalAddress",

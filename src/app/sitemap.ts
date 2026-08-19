@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.rrcon.company';
+  const baseUrl = 'https://www.rrconstruction.lk';
 
   const routes: { path: string; priority: number; freq: 'always'|'hourly'|'daily'|'weekly'|'monthly'|'yearly'|'never' }[] = [
     // Core

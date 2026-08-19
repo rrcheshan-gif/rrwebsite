@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Quality Management | Sustainability | RR Construction",
   description: "RR Construction guarantees engineering excellence through ISO 9001:2015 certified quality management systems.",
   alternates: {
-    canonical: 'https://www.rrcon.company/sustainability/quality-management',
+    canonical: 'https://www.rrconstruction.lk/sustainability/quality-management',
   }
 };
 

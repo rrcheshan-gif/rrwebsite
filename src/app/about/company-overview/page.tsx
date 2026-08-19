@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { ArrowRight, CheckCircle2, ShieldCheck, HardHat, Building2, Droplets, MapPin } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ShieldCheck, HardHat, Building2, Droplets, MapPin, Trophy, Users, Globe2 } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
 export default function AboutStory() {

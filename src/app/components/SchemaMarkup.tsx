@@ -9,8 +9,8 @@ export function organization'schema() {
     "@type": "Organization",
     "name": "RR Construction (Pvt) Ltd",
     "alternateName": "RR Construction",
-    "url": "https://www.rrcon.company",
-    "logo": "https://www.rrcon.company/images/logo.png",
+    "url": "https://www.rrconstruction.lk",
+    "logo": "https://www.rrconstruction.lk/images/logo.png",
     "foundingDate": "1995",
     "description": "RR Construction (Pvt) Ltd is a civil engineering and construction company in Sri Lanka established in 1995, specialising in road construction, bridge construction, maritime construction, and water infrastructure.",
     "address": {
@@ -32,7 +32,7 @@ export function WebSiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "RR Construction (Pvt) Ltd",
-    "url": "https://www.rrcon.company",
+    "url": "https://www.rrconstruction.lk",
     "description": "Official website of RR Construction (Pvt) Ltd, a civil engineering and construction company in Sri Lanka."
   };
   return (
@@ -58,7 +58,7 @@ export function ServiceSchema({ name, description, url }: ServiceSchemaProps) {
     "provider": {
       "@type": "Organization",
       "name": "RR Construction (Pvt) Ltd",
-      "url": "https://www.rrcon.company"
+      "url": "https://www.rrconstruction.lk"
     },
     "areaServed": {
       "@type": "Country",

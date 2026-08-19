@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.rrcon.company/sitemap.xml',
+    sitemap: 'https://www.rrconstruction.lk/sitemap.xml',
   }
 }

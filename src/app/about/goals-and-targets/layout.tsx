@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'RR Construction | Goals & Targets',
   description: 'Discover the strategic goals and measurable targets driving RR Construction towards sustainable infrastructure development and engineering excellence in Sri Lanka.',
   alternates: {
-    canonical: 'https://www.rrcon.company/about/goals-and-targets'
+    canonical: 'https://www.rrconstruction.lk/about/goals-and-targets'
   }
 };
 

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: "View RR Construction's extensive portfolio of mega civil engineering and infrastructure projects across Sri Lanka, including highways, bridges, and maritime works.",
   keywords: ["construction projects Sri Lanka", "infrastructure projects Sri Lanka", "highway construction projects Sri Lanka", "mega construction Sri Lanka"],
   alternates: {
-    canonical: 'https://www.rrcon.company/projects',
+    canonical: 'https://www.rrconstruction.lk/projects',
   }
 };
 
