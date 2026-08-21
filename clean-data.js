@@ -1,21 +1,23 @@
 const fs = require('fs');
+const path = require('path');
 
-let p = fs.readFileSync('src/app/projects/data.js', 'utf8');
+function cleanFile(filePath) {
+  let content = fs.readFileSync(filePath, 'utf8');
+  const original = content;
+  
+  // Replace the specific encoding artifacts
+  // The mangled dash is often "?"" or "â€”" or similar. We can use a regex to catch it.
+  content = content.replace(/moving forward[^\w]+built to last/g, 'moving forward — built to last');
+  content = content.replace(/General Manager[^\w]+Contracts/g, 'General Manager - Contracts');
+  content = content.replace(/General Manager[^\w]+Operations/g, 'General Manager - Operations');
+  content = content.replace(/across Sri Lanka[^\w]+engineered/g, 'across Sri Lanka — engineered');
+  
+  if (content !== original) {
+    fs.writeFileSync(filePath, content, 'utf8');
+    console.log('Cleaned:', filePath);
+  }
+}
 
-// Remove properties (handling both \n and \r\n)
-p = p.replace(/\s*contractSum:\s*".*?",\r?\n/g, '\r\n');
-p = p.replace(/\s*contractAmount:\s*".*?",\r?\n/g, '\r\n');
-p = p.replace(/\s*value:\s*".*?",\r?\n/g, '\r\n');
-
-// Clean up description HTML
-p = p.replace(/at a massive contract sum of <strong>Rs\. [0-9,.]+<\/strong>, /g, '');
-p = p.replace(/at a contract price of <strong>Rs\. [0-9,.]+ \(excl\. VAT\)<\/strong> /g, '');
-p = p.replace(/at a contract price of <strong>Rs\. [0-9,.]+<\/strong>\./g, '.');
-p = p.replace(/Awarded at a contract price of <strong>.*?<\/strong> with/g, 'With');
-p = p.replace(/, the <strong>Rs\. [0-9,.]+<\/strong> project/g, ', the project');
-p = p.replace(/With a contract sum of <strong>Rs\. [0-9,.]+<\/strong> and a /g, 'With a ');
-p = p.replace(/this <strong>Rs\. [0-9,.]+<\/strong> project/g, 'this project');
-p = p.replace(/With a contract value of <strong>Rs\. [0-9,.]+<\/strong>, /g, '');
-
-fs.writeFileSync('src/app/projects/data.js', p);
-console.log('Cleaned data.js properly');
+cleanFile('src/app/page.tsx');
+cleanFile('src/data/company-data.ts');
+console.log('Encoding fixes applied.');
