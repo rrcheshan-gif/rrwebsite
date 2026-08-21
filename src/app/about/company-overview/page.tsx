@@ -62,7 +62,10 @@ export default function AboutStory() {
                 A Legacy of Engineering <br/><span style={{ color: "var(--text-light)" }}>Excellence.</span>
               </h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
-                {COMPANY_DATA.name} is a Sri Lankan civil engineering and construction company established in {COMPANY_DATA.established}. The company commenced its operations through civil construction work undertaken with ED Zublin AG on the Central Bank extension project and subsequently developed experience through projects for local and international clients.
+                {COMPANY_DATA.name} is a Sri Lankan civil engineering and construction company established in {COMPANY_DATA.established}. Over the last {COMPANY_DATA.yearsOfExcellence} years, the organization has progressed to establish a strong presence in the infrastructure development industry in {COMPANY_DATA.headquarters}.
+              </p>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
+                <Link href="/about/history" style={{ color: "var(--primary-red)", fontWeight: 600, textDecoration: "none" }}>Read our full History & Milestones &rarr;</Link>
               </p>
               
               <div style={{ marginBottom: "30px" }}>
@@ -91,12 +94,7 @@ export default function AboutStory() {
                 </div>
               </div>
 
-              <div style={{ background: "rgba(229, 57, 53, 0.05)", padding: "20px", borderRadius: "16px", borderLeft: "4px solid var(--primary-red)" }}>
-                <h4 style={{ color: "var(--primary-red)", fontSize: "1rem", fontWeight: 800, textTransform: "uppercase", marginBottom: "8px" }}>Company Objective</h4>
-                <p style={{ color: "var(--text-dark)", fontSize: "1.05rem", fontWeight: 500, margin: 0, fontStyle: "italic" }}>
-                  "To achieve a high degree of customer satisfaction through appropriate technology, effective project delivery, cost-conscious execution and timely completion."
-                </p>
-              </div>
+              <div style={{ paddingBottom: "20px" }}></div>
             </div>
             <div style={{ flex: "1", minWidth: "300px" }}>
               <div style={{ borderRadius: "24px", overflow: "hidden", position: "relative", boxShadow: "0 20px 50px rgba(0,0,0,0.1)", height: "100%" }}>
@@ -144,9 +142,6 @@ export default function AboutStory() {
               
               <div style={{ position: "relative" }}>
                 <span style={{ position: "absolute", top: "-20px", left: "-20px", fontSize: "5rem", color: "var(--border-soft)", fontFamily: "Georgia, serif", lineHeight: 1, zIndex: 0 }}>"</span>
-                <p style={{ fontSize: "1.15rem", color: "var(--text-dark)", lineHeight: 1.8, marginBottom: "25px", position: "relative", zIndex: 1, fontWeight: 500 }}>
-                  {COMPANY_DATA.name} traces its roots back to {COMPANY_DATA.established}. Over the last {parseInt(COMPANY_DATA.yearsOfExcellence.replace('+', ''))} years, the organization has progressed and established its strong presence in the construction industry in {COMPANY_DATA.headquarters}.
-                </p>
                 <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "25px", position: "relative", zIndex: 1 }}>
                   By continuously developing new capabilities to overcome emerging challenges, introducing structural changes to the organization, and creating a strong culture of teamwork combined with professional methodologies, we have grown into one of the country's leading infrastructure developers.
                 </p>

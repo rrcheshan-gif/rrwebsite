@@ -51,7 +51,7 @@ export default function Career() {
         <div className="container">
           <div style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto 50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 5vw, 2.5rem)", color: "var(--primary-red)", marginBottom: "20px" }}>Build Your Future With Us</h2>
-            <p style={{ fontSize: "clamp(1rem, 2.5vw, 1.15rem)", color: "var(--text-light)", lineHeight: 1.8 }}>Our 1,800-strong team is made up of people who take pride in getting it right — technically sound, hands-on, and committed to the work. If that sounds like you, we're always looking for passionate professionals ready to help shape Sri Lanka's infrastructure.</p>
+            <p style={{ fontSize: "clamp(1rem, 2.5vw, 1.15rem)", color: "var(--text-light)", lineHeight: 1.8 }}>Our 1,400-strong team is made up of people who take pride in getting it right — technically sound, hands-on, and committed to the work. If that sounds like you, we're always looking for passionate professionals ready to help shape Sri Lanka's infrastructure.</p>
           </div>
 
           <div className="career-grid">

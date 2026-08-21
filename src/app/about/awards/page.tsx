@@ -32,7 +32,7 @@ export default function Awards() {
     },
     {
       title: "Workforce Expansion",
-      desc: "Grew into a major national employer, fostering a dedicated workforce of over 1,800 highly skilled engineers and construction professionals.",
+      desc: "Grew into a major national employer, fostering a dedicated workforce of over 1,400+ highly skilled engineers and construction professionals.",
       icon: <ShieldCheck size={40} color="var(--primary-red)" />
     }
   ];

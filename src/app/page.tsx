@@ -350,10 +350,6 @@ export default function Home() {
               <span style={{ color: "var(--primary-red)", fontWeight: 600, fontSize: "0.45em", letterSpacing: "2px", display: "block", marginTop: "15px", textTransform: "uppercase" }}>Construction & Civil Engineering In Sri Lanka</span>
             </h1>
             
-            <p style={{ fontSize: "1.2rem", color: "var(--text-dark)", marginBottom: "30px", fontWeight: 600, lineHeight: 1.7, borderLeft: "4px solid var(--primary-red)", paddingLeft: "25px" }}>
-              Our main objective is to achieve the highest degree of customer satisfaction at correct time & correct cost using appropriate technology.
-            </p>
-            
             <p style={{ color: "var(--text-light)", marginBottom: "40px", lineHeight: 1.8, fontSize: "1.1rem" }}>
               With a self-owned fleet of {COMPANY_DATA.machineryFleet} heavy construction machines, our capabilities go beyond earthworks and structural concrete. We execute large-scale highways, bridges, irrigation canals, maritime construction, dredging, and heavy steel fabrication. We bring the full strength of our civil engineering resources to every site, ensuring Sri Lanka's infrastructure is built with absolute reliability.
             </p>
@@ -431,8 +427,12 @@ export default function Home() {
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Our Legacy</h4>
             </div>
             <h2 style={{ fontSize: "3.2rem", lineHeight: 1.1, marginBottom: "20px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>THREE DECADES OF<br/><span className="text-gradient" style={{ fontWeight: 300 }}>EXCELLENCE</span></h2>
-            <p style={{ color: "var(--text-dark)", fontSize: "1.1rem", marginBottom: "12px", lineHeight: 1.7, fontWeight: 500 }}>The company started its operations in {COMPANY_DATA.established} to cater to the growing demand for quality constructions. We primarily started civil construction with ED Zublin AG in the Central Bank extension project as a sub-contractor.</p>
-            <p style={{ color: "var(--text-light)", fontSize: "1.05rem", margin: 0, lineHeight: 1.7 }}>Since then, we have evolved into a fully-fledged civil engineering contractor delivering multi-billion rupee projects for both local and international clients, backed by a proven track record of 27 years of history.</p>
+            <p style={{ fontSize: "1.1rem", color: "var(--text-light)", marginBottom: "25px", lineHeight: 1.8 }}>
+              Since our establishment in {COMPANY_DATA.established}, we have evolved into a fully-fledged civil engineering contractor delivering multi-billion rupee projects for both local and international clients.
+            </p>
+            <p style={{ fontSize: "1.1rem", color: "var(--text-light)", marginBottom: "30px", lineHeight: 1.8 }}>
+              Backed by a proven track record of {COMPANY_DATA.yearsOfExcellence} years, we continue to build the critical infrastructure that keeps Sri Lanka moving forward. <Link href="/about/history" style={{ color: "var(--primary-red)", fontWeight: 600, textDecoration: "none" }}>Learn more about our history &rarr;</Link>
+            </p>
           </div>
           
           <div style={{ flex: 1, minWidth: 'min(100%, 350px)', display: "grid", gap: "25px", position: "relative", marginTop: "60px" }}>

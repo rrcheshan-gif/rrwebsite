@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -33,7 +33,7 @@ export default function GoalsAndTargets() {
     },
     {
       title: "Workforce Development",
-      desc: "Empower our 1,800+ employees through continuous training, prioritizing their health, safety, and professional advancement in the engineering sector.",
+      desc: "Empower our 1,400+ employees through continuous training, prioritizing their health, safety, and professional advancement in the engineering sector.",
       icon: <Users size={32} color="var(--primary-red)" />
     }
   ];
@@ -100,8 +100,20 @@ export default function GoalsAndTargets() {
         </div>
       </section>
 
+      {/* Main Objective */}
+      <section style={{ padding: isMobile ? "30px 10px" : "40px 20px" }}>
+        <div className="container" style={{ maxWidth: "900px", margin: "0 auto", padding: "0 16px" }}>
+          <div style={{ background: "rgba(229, 57, 53, 0.05)", padding: "30px", borderRadius: "16px", borderLeft: "4px solid var(--primary-red)", textAlign: "center" }}>
+            <h4 style={{ color: "var(--primary-red)", fontSize: "1.1rem", fontWeight: 800, textTransform: "uppercase", marginBottom: "15px" }}>Primary Objective</h4>
+            <p style={{ color: "var(--text-dark)", fontSize: "1.2rem", fontWeight: 600, margin: 0, fontStyle: "italic", lineHeight: 1.6 }}>
+              "To achieve a high degree of customer satisfaction through appropriate technology, effective project delivery, cost-conscious execution and timely completion."
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Corporate Goals Section */}
-      <section style={{ padding: isMobile ? "40px 10px" : "80px 20px" }}>
+      <section style={{ padding: isMobile ? "20px 10px" : "40px 20px" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
           
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
