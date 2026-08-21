@@ -72,7 +72,7 @@ export default function Navbar() {
                 <ul className="dropdown-menu">
                   <li><Link href="/about/company-overview" onClick={() => setMobileMenuOpen(false)}>RR Overview</Link></li>
                   <li><Link href="/about/history" onClick={() => setMobileMenuOpen(false)}>History & Milestones</Link></li>
-                  <li><Link href="/about/leadership" onClick={() => setMobileMenuOpen(false)}>Board of Management</Link></li>
+                  <li><Link href="/about/leadership" onClick={() => setMobileMenuOpen(false)}>Board of Directors</Link></li>
                   <li><Link href="/about/vision-mission" onClick={() => setMobileMenuOpen(false)}>Vision & Mission</Link></li>
                   <li><Link href="/about/goals-and-targets" onClick={() => setMobileMenuOpen(false)}>Goals & Targets</Link></li>
 
