@@ -49,9 +49,17 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
   // --- Description ---
   let description = project.description || '';
   if (!description) {
-    let timePhrase = (project.year && project.type !== 'ongoing') ? `The project operations are anchored around the year ${project.year}` : `The project was systematically undertaken`;
-    let durationPhrase = (project.duration && project.type !== 'ongoing') ? ` and executed across an intensive ${project.duration} timeframe` : ``;
-    let clientPhrase = project.client ? `This flagship development is being spearheaded on behalf of the <strong>${project.client}</strong>.` : `This development is managed by RR Construction's internal engineering divisions.`;
+    let timeAndDuration = (project.type === 'ongoing') 
+      ? `The project is being systematically undertaken` 
+      : (project.year && project.duration) 
+        ? `The project operations were anchored around the year ${project.year} and executed across an intensive ${project.duration} timeframe`
+        : project.year 
+          ? `The project operations were anchored around the year ${project.year}` 
+          : `The project was systematically undertaken`;
+          
+    let clientPhrase = project.client && project.client !== 'Confidential' 
+      ? `This flagship development is being spearheaded on behalf of <strong>${project.client}</strong>.` 
+      : `This development is managed by our specialized engineering divisions.`;
     
     let catDetails = "";
     if (cat === 'roads') {
@@ -69,7 +77,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
     }
 
     description = `<p style="margin-bottom: 20px;">The <strong>"${project.title || 'infrastructure development'}"</strong> project stands as a testament to modern engineering capabilities in the ${categoryDisplay.toLowerCase()} sector. ${clientPhrase}</p>
-                   <p style="margin-bottom: 20px;">${timePhrase}${durationPhrase}, showcasing RR Construction's unwavering commitment to delivering large-scale infrastructure on schedule without sacrificing quality.</p>
+                   <p style="margin-bottom: 20px;">${timeAndDuration}, showcasing RR Construction's unwavering commitment to delivering large-scale infrastructure on schedule without sacrificing quality.</p>
                    <p style="margin-bottom: 20px;">${catDetails}</p>
                    <p>By leveraging our decades of civil engineering expertise, a massive self-owned machinery fleet, and a dedicated workforce of over 1,400 professionals, we ensured that this project strictly adhered to ISO 9001 quality, ISO 14001 environmental, and ISO 45001 safety standards from inception to completion.</p>`;
   }
