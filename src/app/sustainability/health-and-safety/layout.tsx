@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Health & Safety | Sustainability | RR Construction",
-  description: "RR Construction's Zero Harm policy, backed by ISO 45001:2018 certification, ensures the absolute safety of our 1800+ workforce on every construction site.",
+  description: "RR Construction's Zero Harm policy, backed by ISO 45001:2018 certification, ensures the absolute safety of our 1400+ workforce on every construction site.",
   alternates: {
     canonical: 'https://www.rrconstruction.lk/sustainability/health-and-safety',
   }

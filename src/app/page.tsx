@@ -318,13 +318,23 @@ export default function Home() {
                 boxShadow: "0 15px 35px rgba(0, 0, 0, 0.15)",
                 border: "1px solid rgba(211, 47, 47, 0.2)"
               }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
-                  <div style={{ fontSize: "2.5rem", fontWeight: 800, fontFamily: "var(--font-heading)", lineHeight: 1, color: "var(--primary-red)" }}>{COMPANY_DATA.yearsOfExcellence}</div>
-                  <div style={{ textAlign: "left" }}>
-                    <h4 style={{ margin: 0, fontSize: "0.9rem", fontFamily: "var(--font-heading)", textTransform: "uppercase", letterSpacing: "1px", color: "var(--primary-red)", fontWeight: 800 }}>Years of</h4>
-                    <p style={{ color: "var(--text-dark)", margin: 0, fontSize: "0.9rem", fontWeight: 700, textTransform: "uppercase" }}>Excellence</p>
+                  <div style={{ display: "flex", alignItems: "center", gap: "25px" }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
+                      <div style={{ fontSize: "2.5rem", fontWeight: 800, fontFamily: "var(--font-heading)", lineHeight: 1, color: "var(--primary-red)" }}>{COMPANY_DATA.yearsOfExcellence}</div>
+                      <div style={{ textAlign: "left" }}>
+                        <h4 style={{ margin: 0, fontSize: "0.9rem", fontFamily: "var(--font-heading)", textTransform: "uppercase", letterSpacing: "1px", color: "var(--primary-red)", fontWeight: 800 }}>Years of</h4>
+                        <p style={{ color: "var(--text-dark)", margin: 0, fontSize: "0.9rem", fontWeight: 700, textTransform: "uppercase" }}>Excellence</p>
+                      </div>
+                    </div>
+                    <div style={{ width: "2px", height: "40px", backgroundColor: "rgba(211, 47, 47, 0.2)" }}></div>
+                    <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
+                      <div style={{ fontSize: "2.5rem", fontWeight: 800, fontFamily: "var(--font-heading)", lineHeight: 1, color: "var(--primary-red)" }}>{COMPANY_DATA.workforce}</div>
+                      <div style={{ textAlign: "left" }}>
+                        <h4 style={{ margin: 0, fontSize: "0.9rem", fontFamily: "var(--font-heading)", textTransform: "uppercase", letterSpacing: "1px", color: "var(--primary-red)", fontWeight: 800 }}>Dedicated</h4>
+                        <p style={{ color: "var(--text-dark)", margin: 0, fontSize: "0.9rem", fontWeight: 700, textTransform: "uppercase" }}>Workforce</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>

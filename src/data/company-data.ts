@@ -2,7 +2,7 @@ export const COMPANY_DATA = {
   name: "RR Construction (Pvt) Ltd",
   established: 1995,
   yearsOfExcellence: "30+",
-  workforce: "1,800",
+  workforce: "1400+",
   machineryFleet: "1,000+",
   completedProjects: "100+",
   certifications: ["ISO 9001:2015", "ISO 14001:2015", "ISO 45001:2018"],

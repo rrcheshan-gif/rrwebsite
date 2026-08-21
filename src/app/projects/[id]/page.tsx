@@ -79,7 +79,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
     description = `<p style="margin-bottom: 20px;">The <strong>"${project.title || 'infrastructure development'}"</strong> project stands as a testament to modern engineering capabilities in the ${categoryDisplay.toLowerCase()} sector. ${clientPhrase}</p>
                    <p style="margin-bottom: 20px;">${timeAndDuration}, showcasing RR Construction's unwavering commitment to delivering large-scale infrastructure on schedule without sacrificing quality.</p>
                    <p style="margin-bottom: 20px;">${catDetails}</p>
-                   <p>By leveraging our decades of civil engineering expertise, a massive self-owned machinery fleet, and a dedicated workforce of over 1,400 professionals, we ensured that this project strictly adhered to ISO 9001 quality, ISO 14001 environmental, and ISO 45001 safety standards from inception to completion.</p>`;
+                   <p>By leveraging our decades of civil engineering expertise, a massive self-owned machinery fleet, and a dedicated workforce of over 1400 professionals, we ensured that this project strictly adhered to ISO 9001 quality, ISO 14001 environmental, and ISO 45001 safety standards from inception to completion.</p>`;
   }
 
   // --- Google Maps URLs ---

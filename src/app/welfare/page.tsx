@@ -23,7 +23,7 @@ export default function Welfare() {
           </div>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", marginBottom: "20px" }}>Beyond the Worksite</h2>
           <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "var(--text-light)", marginBottom: "40px" }}>
-            The well-being of our 1,800+ workforce is our highest priority. We understand that our success is built on their hard work, and we are committed to providing a supportive, secure, and rewarding environment for them and their families.
+            The well-being of our 1400+ workforce is our highest priority. We understand that our success is built on their hard work, and we are committed to providing a supportive, secure, and rewarding environment for them and their families.
           </p>
         </div>
       </section>
