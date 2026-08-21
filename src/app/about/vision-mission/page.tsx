@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -50,87 +50,78 @@ export default function VisionMission() {
       </section>
 
       {/* Vision Section */}
-      <section style={{ padding: isMobile ? "40px 10px" : "80px 20px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "center" }}>
-            <div style={{ flex: "1", minWidth: "300px" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
-                <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
-                <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "1rem", fontFamily: "var(--font-heading)" }}>Our Vision</h2>
-              </div>
-              <h3 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", margin: "0 0 30px", fontFamily: "var(--font-heading)", lineHeight: 1.2, fontWeight: 800 }}>
-                "Engineering Sri Lanka's <span style={{ color: "var(--primary-red)" }}>Tomorrow.</span>"
-              </h3>
-              <p style={{ color: "var(--text-light)", fontSize: "1.2rem", lineHeight: 1.8, marginBottom: "20px", fontWeight: 500 }}>
-                We envision a future where robust, sustainable, and world-class infrastructure forms the backbone of Sri Lanka's socio-economic development. 
-              </p>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8 }}>
-                Our goal is to be the nation's premier engineering and construction organization—recognized internationally for our technical capability, unwavering safety standards, and commitment to long-term national progress.
-              </p>
-            </div>
-            <div style={{ flex: "1", minWidth: "300px", display: "flex", justifyContent: "center" }}>
-              <div style={{ background: "linear-gradient(135deg, #1f2937, #111827)", padding: "50px", borderRadius: "32px", width: "100%", textAlign: "center", boxShadow: "0 20px 50px rgba(0,0,0,0.15)", position: "relative", overflow: "hidden" }}>
-                <div style={{ position: "absolute", top: "-20px", right: "-20px", opacity: 0.05, transform: "scale(2)" }}>
-                  <Eye size={200} color="white" />
-                </div>
-                <Eye size={64} color="var(--primary-red)" style={{ margin: "0 auto 30px", position: "relative", zIndex: 2 }} />
-                <h4 style={{ color: "white", fontSize: "1.5rem", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px", position: "relative", zIndex: 2 }}>Vision Statement</h4>
-                <p style={{ color: "#94a3b8", fontSize: "1.1rem", lineHeight: 1.7, margin: 0, position: "relative", zIndex: 2 }}>
-                  To establish RR Construction as the definitive benchmark for civil engineering excellence and infrastructure development in Sri Lanka.
-                </p>
-              </div>
-            </div>
+      <section style={{ padding: isMobile ? "60px 10px" : "100px 20px" }}>
+        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", padding: "0 16px" }}>
+          
+          <div style={{ textAlign: "center", marginBottom: "40px" }}>
+            <Eye size={50} color="var(--primary-red)" style={{ margin: "0 auto 15px" }} />
+            <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, textTransform: "uppercase", letterSpacing: "2px" }}>Our Vision</h2>
+            <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto 0", borderRadius: "2px" }}></div>
           </div>
+
+          <div style={{ background: "var(--white)", padding: isMobile ? "30px 20px" : "50px", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.06)", border: "1px solid var(--border-soft)", textAlign: "center" }}>
+            <h3 style={{ fontSize: isMobile ? "1.4rem" : "1.8rem", color: "var(--text-dark)", margin: "0 0 30px", fontFamily: "var(--font-heading)", lineHeight: 1.5, fontWeight: 800 }}>
+              “To engineer a stronger, smarter, and more sustainable Sri Lanka — building infrastructure that connects communities, drives progress, and stands the test of time.”
+            </h3>
+            
+            <div style={{ width: "100%", height: "1px", background: "var(--border-soft)", margin: "30px 0" }}></div>
+            
+            <h4 style={{ color: "var(--primary-red)", fontSize: "1.1rem", fontWeight: 700, marginBottom: "15px", letterSpacing: "1px" }}>අපගේ දැක්ම:</h4>
+            <p style={{ color: "var(--text-light)", fontSize: isMobile ? "1.1rem" : "1.2rem", lineHeight: 1.8, margin: 0, fontWeight: 500 }}>
+              ශ්‍රී ලංකාව වඩාත් ශක්තිමත්, නවීන හා තිරසාර රටක් බවට පත් කරමින්, ජනතාව සම්බන්ධ කරන, ආර්ථික ප්‍රගතිය වේගවත් කරන සහ පරම්පරා ගණනාවක් පවතින යටිතල පහසුකම් නිර්මාණය කිරීම.
+            </p>
+          </div>
+
         </div>
       </section>
 
       {/* Mission Section */}
-      <section style={{ padding: isMobile ? "60px 10px" : "100px 20px", background: "var(--white)" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
+      <section style={{ padding: isMobile ? "60px 10px" : "100px 20px", background: "var(--bg-base)" }}>
+        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", padding: "0 16px" }}>
           
-          <div style={{ textAlign: "center", marginBottom: "60px" }}>
-            <Target size={40} color="var(--primary-red)" style={{ margin: "0 auto 15px" }} />
-            <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0 }}>Our Mission</h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "15px", maxWidth: "800px", margin: "15px auto 0" }}>
-              To deliver outstanding engineering solutions through continuous improvement, resource optimization, and a commitment to our core stakeholders.
+          <div style={{ textAlign: "center", marginBottom: "40px" }}>
+            <Target size={50} color="var(--primary-red)" style={{ margin: "0 auto 15px" }} />
+            <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, textTransform: "uppercase", letterSpacing: "2px" }}>Our Mission</h2>
+            <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto 0", borderRadius: "2px" }}></div>
+          </div>
+
+          <div style={{ background: "var(--white)", padding: isMobile ? "30px 20px" : "50px", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.06)", border: "1px solid var(--border-soft)", textAlign: "center" }}>
+            <h3 style={{ fontSize: isMobile ? "1.3rem" : "1.6rem", color: "var(--text-dark)", margin: "0 0 30px", fontFamily: "var(--font-heading)", lineHeight: 1.6, fontWeight: 800 }}>
+              “To deliver world-class construction and civil engineering solutions through engineering excellence, advanced technology, responsible resource management, uncompromising quality, and a relentless commitment to safety, sustainability, and client satisfaction.”
+            </h3>
+            
+            <div style={{ width: "100%", height: "1px", background: "var(--border-soft)", margin: "30px 0" }}></div>
+            
+            <h4 style={{ color: "var(--primary-red)", fontSize: "1.1rem", fontWeight: 700, marginBottom: "15px", letterSpacing: "1px" }}>අපගේ මෙහෙවර:</h4>
+            <p style={{ color: "var(--text-light)", fontSize: isMobile ? "1.1rem" : "1.2rem", lineHeight: 1.8, margin: 0, fontWeight: 500 }}>
+              ඉංජිනේරු විශිෂ්ටත්වය, නවීන තාක්ෂණය, වගකීම් සහගත සම්පත් කළමනාකරණය, උසස් තත්ත්ව ප්‍රමිතීන් සහ දැඩි ආරක්ෂක හා තිරසාර ප්‍රතිපත්ති මත පදනම්ව, අපගේ ගනුදෙනුකරුවන්ගේ අවශ්‍යතා හා අපේක්ෂාවන් ඉක්මවා යන ලෝක මට්ටමේ ඉදිකිරීම් හා සිවිල් ඉංජිනේරු විසඳුම් සැපයීම.
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "30px" }}>
-            {[
-              { title: "Engineering Excellence", desc: "Consistently delivering high-quality infrastructure that meets or exceeds global engineering and architectural standards.", icon: <HardHat size={32} color="var(--primary-red)" /> },
-              { title: "Timely Delivery", desc: "Optimizing our massive fleet and skilled workforce to execute complex projects strictly within scheduled timelines.", icon: <TrendingUp size={32} color="var(--primary-red)" /> },
-              { title: "Uncompromising Safety", desc: "Fostering a 'Zero Harm' culture by strictly adhering to ISO 45001 Occupational Health & Safety standards.", icon: <Shield size={32} color="var(--primary-red)" /> },
-              { title: "Environmental Responsibility", desc: "Minimizing ecological impact through sustainable material sourcing, waste reduction, and ISO 14001 compliance.", icon: <Globe size={32} color="var(--primary-red)" /> }
-            ].map((mission, idx) => (
-              <div key={idx}  style={{ background: "var(--bg-light)", padding: "40px 30px", borderRadius: "24px", border: "1px solid var(--border-soft)", transition: "transform 0.3s" }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
-                <div style={{ marginBottom: "20px" }}>{mission.icon}</div>
-                <h4 style={{ fontSize: "1.3rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>{mission.title}</h4>
-                <p style={{ color: "var(--text-light)", lineHeight: 1.7, margin: 0 }}>{mission.desc}</p>
-              </div>
-            ))}
-          </div>
-          
         </div>
       </section>
 
       {/* Our Commitment */}
-      <section style={{ padding: isMobile ? "60px 20px" : "80px 20px", background: "linear-gradient(135deg, #1f2937, #111827)", color: "white" }}>
-        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontSize: "2.5rem", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "30px" }}>Our Commitment</h2>
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px" }}>
-            {[
-              "Quality Construction",
-              "Client Partnerships",
-              "People Development",
-              "Continuous Improvement"
-            ].map((item, idx) => (
-              <div key={idx} style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(5px)", padding: "15px 30px", borderRadius: "30px", display: "flex", alignItems: "center", gap: "10px", fontWeight: 600 }}>
-                <CheckCircle2 size={20} color="var(--primary-red)" />
-                {item}
-              </div>
-            ))}
+      <section style={{ padding: isMobile ? "70px 20px" : "100px 20px", background: "linear-gradient(135deg, #1f2937, #111827)", color: "white", textAlign: "center" }}>
+        <div className="container" style={{ maxWidth: "900px", margin: "0 auto" }}>
+          
+          <Handshake size={60} color="var(--primary-red)" style={{ margin: "0 auto 20px" }} />
+          <h2 style={{ fontSize: isMobile ? "2.2rem" : "3rem", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 10px", letterSpacing: "2px", textTransform: "uppercase" }}>Our Commitment</h2>
+          <h3 style={{ fontSize: isMobile ? "1.4rem" : "1.8rem", color: "var(--primary-red)", fontWeight: 700, margin: "0 0 40px" }}>Engineering Excellence. Building Trust. Shaping Tomorrow.</h3>
+          
+          <div style={{ fontSize: isMobile ? "1.2rem" : "1.4rem", lineHeight: 1.8, fontWeight: 500, color: "#e2e8f0" }}>
+            <p style={{ marginBottom: "15px" }}>අපි ව්‍යාපෘති පමණක් ගොඩනඟන්නේ නැත.</p>
+            <p style={{ fontSize: isMobile ? "1.5rem" : "1.8rem", fontWeight: 800, color: "white", marginBottom: "30px", textShadow: "0 2px 10px rgba(0,0,0,0.5)" }}>අපි රටේ අනාගතය ගොඩනඟමු.</p>
+            <p style={{ marginBottom: "40px", fontSize: isMobile ? "1.1rem" : "1.3rem", lineHeight: 1.9, color: "#cbd5e1" }}>
+              අපගේ සෑම මාර්ගයකින්ම සම්බන්ධතාවයක්ද, සෑම පාලමකින්ම අවස්ථාවක්ද, සෑම වරායකින්ම ආර්ථික වර්ධනයක්ද, සෑම ව්‍යාපෘතියකින්ම ශ්‍රී ලංකාවේ අනාගතයට දායකත්වයක්ද නිර්මාණය කිරීමට අපි කැපවී සිටිමු.
+            </p>
+            <div style={{ background: "rgba(255,255,255,0.1)", padding: "20px", borderRadius: "16px", border: "1px solid rgba(255,255,255,0.2)", display: "inline-block" }}>
+              <p style={{ margin: 0, fontWeight: 800, fontSize: isMobile ? "1.2rem" : "1.4rem", color: "var(--primary-red)", letterSpacing: "1px" }}>
+                RR Construction — Engineering the Ground Beneath Tomorrow.
+              </p>
+            </div>
           </div>
+          
         </div>
       </section>
 
