@@ -6,9 +6,9 @@ export interface NewsItem {
   desc: string;
   date: string;
   img: string;
-  featured?: boolean;
-  crop?: 'center' | 'top' | 'bottom';
-  content?: string;
+  featured�: boolean;
+  crop�: 'center' | 'top' | 'bottom';
+  content�: string;
 }
 
 export const NEWS_DATA: NewsItem[] = [

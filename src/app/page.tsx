@@ -18,7 +18,7 @@ export default function Home() {
       heading1: 'Engineering',
       heading2: "Sri Lanka's",
       heading3: 'Tomorrow',
-      desc: "For three decades, RR Construction has turned ambitious blueprints into the roads, bridges, harbours, and water systems that keep Sri Lanka moving forward — built to last, delivered on time."
+      desc: "For three decades, RR Construction has turned ambitious blueprints into the roads, bridges, harbours, and water systems that keep Sri Lanka moving forward � built to last, delivered on time."
     },
     {
       img: '/images/home/slider/polished/road.jpg',
@@ -28,7 +28,7 @@ export default function Home() {
       heading1: 'Built on Every',
       heading2: 'Road We Pave',
       heading3: '',
-      desc: "From national highways to rural roads, RR Construction delivers precision road construction, rehabilitation, and asphalt paving across Sri Lanka — engineered for durability, safety, and long-term performance."
+      desc: "From national highways to rural roads, RR Construction delivers precision road construction, rehabilitation, and asphalt paving across Sri Lanka � engineered for durability, safety, and long-term performance."
     },
     {
       img: '/images/home/slider/polished/maritime.jpg',
@@ -78,7 +78,7 @@ export default function Home() {
   ];
 
   useEffect(() => {
-    const duration = slides[currentSlide].duration ?? 10000;
+    const duration = slides[currentSlide].duration �� 10000;
     const timer = setTimeout(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, duration);
@@ -96,7 +96,7 @@ export default function Home() {
             style={{ 
               position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', 
               transition: 'opacity 1s ease-in-out', 
-              opacity: index === currentSlide ? 1 : 0,
+              opacity: index === currentSlide � 1 : 0,
               zIndex: 1
             }}
           >
@@ -118,13 +118,13 @@ export default function Home() {
               <div 
                 key={index} 
                 style={{ 
-                  display: index === currentSlide ? 'flex' : 'none',
+                  display: index === currentSlide � 'flex' : 'none',
                   flexDirection: 'column',
                   alignItems: 'center',
                   animation: 'fadeInUp 0.8s ease forwards'
                 }}
               >
-                {index === 0 ? (
+                {index === 0 � (
                   <div 
                     key={`motto-0-${currentSlide}`}
                     style={{ 
@@ -158,9 +158,9 @@ export default function Home() {
                             style={{
                               display: "inline-block",
                               opacity: 0,
-                              animation: `${charIdx % 2 === 0 ? 'mottoLoopLeft' : 'mottoLoopRight'} 4.5s cubic-bezier(0.16, 1, 0.3, 1) infinite`,
+                              animation: `${charIdx % 2 === 0 � 'mottoLoopLeft' : 'mottoLoopRight'} 4.5s cubic-bezier(0.16, 1, 0.3, 1) infinite`,
                               animationDelay: `${charIdx * 0.04}s`,
-                              whiteSpace: char === " " ? "pre" : "normal"
+                              whiteSpace: char === " " � "pre" : "normal"
                             }}
                           >
                             {char}
@@ -175,9 +175,9 @@ export default function Home() {
                             style={{
                               display: "inline-block",
                               opacity: 0,
-                              animation: `${(charIdx + 11) % 2 === 0 ? 'mottoLoopLeft' : 'mottoLoopRight'} 4.5s cubic-bezier(0.16, 1, 0.3, 1) infinite`,
+                              animation: `${(charIdx + 11) % 2 === 0 � 'mottoLoopLeft' : 'mottoLoopRight'} 4.5s cubic-bezier(0.16, 1, 0.3, 1) infinite`,
                               animationDelay: `${(charIdx + 11) * 0.04}s`,
-                              whiteSpace: char === " " ? "pre" : "normal"
+                              whiteSpace: char === " " � "pre" : "normal"
                             }}
                           >
                             {char}
@@ -371,7 +371,7 @@ export default function Home() {
               { title: "Building Projects", img: "/images/wellamankara/building-projects.jpg", icon: <Building2 size={30} />, text: "Construction shaping commercial, industrial, and high-rise developments." },
               { title: "Maritime & Water", img: "/images/maritime-harbour-site.jpg", icon: <Waves size={30} />, text: "Dredging, reclamation, and water supply systems engineered to serve communities at scale." }
             ].map((srv, i) => (
-              <div key={i} className="modern-service-card glass-panel hover-lift" style={{ gridColumn: i === 0 || i === 3 ? "span 7" : "span 5", minHeight: "450px", position: "relative", overflow: "hidden", padding: 0 }}>
+              <div key={i} className="modern-service-card glass-panel hover-lift" style={{ gridColumn: i === 0 || i === 3 � "span 7" : "span 5", minHeight: "450px", position: "relative", overflow: "hidden", padding: 0 }}>
                 <img src={srv.img} alt={srv.title} className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.6 }} onMouseOver={(e) => { e.currentTarget.style.opacity = '0.8' }} onMouseOut={(e) => { e.currentTarget.style.opacity = '0.6' }} />
                 <div className="msc-content" style={{ position: "absolute", bottom: 0, left: 0, width: "100%", padding: "40px", background: "linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 70%, transparent)", color: "white", pointerEvents: "none" }}>
                   <div style={{ color: "white", marginBottom: "20px", display: "inline-block", padding: "15px", background: "var(--primary-red)", borderRadius: "20px", boxShadow: "0 10px 20px rgba(229,57,53,0.3)" }}>{srv.icon}</div>
@@ -434,7 +434,7 @@ export default function Home() {
                { icon: <MapPin color="white" size={24} />, title: "Central Expressway", text: "Section 2 Package-A", num: "02" },
                { icon: <Droplets color="white" size={24} />, title: "Ampara Water Treatment Plant", text: "172,000 cum/day capacity", num: "03" }
              ].map((proj, i) => (
-                <div key={i} className="glass-panel hover-lift" style={{ display: "flex", gap: "25px", padding: "30px", position: "relative", zIndex: 1, transform: i === 1 ? "translateX(-30px)" : "none", transition: "transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease", cursor: "pointer", background: "var(--white)", border: "1px solid var(--border-soft)" }} onMouseOver={(e) => { e.currentTarget.style.transform = i === 1 ? "translateX(-20px) translateY(-5px)" : "translateY(-5px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.05)" }} onMouseOut={(e) => { e.currentTarget.style.transform = i === 1 ? "translateX(-30px)" : "none"; e.currentTarget.style.boxShadow = "none" }}>
+                <div key={i} className="glass-panel hover-lift" style={{ display: "flex", gap: "25px", padding: "30px", position: "relative", zIndex: 1, transform: i === 1 � "translateX(-30px)" : "none", transition: "transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease", cursor: "pointer", background: "var(--white)", border: "1px solid var(--border-soft)" }} onMouseOver={(e) => { e.currentTarget.style.transform = i === 1 � "translateX(-20px) translateY(-5px)" : "translateY(-5px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.05)" }} onMouseOut={(e) => { e.currentTarget.style.transform = i === 1 � "translateX(-30px)" : "none"; e.currentTarget.style.boxShadow = "none" }}>
                   <div style={{ position: "absolute", right: "20px", top: "15px", fontSize: "3rem", fontWeight: 800, color: "var(--text-light)", opacity: 0.15, fontFamily: "var(--font-heading)", lineHeight: 1 }}>{proj.num}</div>
                   <div style={{ width: "60px", height: "60px", background: "var(--primary-red)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 10px 20px rgba(229,57,53,0.2)" }}>
                     {proj.icon}

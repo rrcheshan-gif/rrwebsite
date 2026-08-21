@@ -10,6 +10,7 @@ const projectsData = [
     duration: "270 Days",
     year: 2025,
     status: "Ongoing",
+    description: "This critical disaster management initiative focuses on stabilizing high-risk slopes across 7 vulnerable locations in the Badulla District. Executed on behalf of the Ministry of Defence, the project integrates advanced geotechnical engineering techniques including soil nailing, retaining wall construction, and improved surface drainage systems. By mitigating landslide risks, RR Construction is actively protecting local communities, vital infrastructure, and ensuring the long-term safety of the region's transport network.",
       heroImage: 'images/Badulla Landslide/Background image.jpeg',
       galleryImages: [
         'images/Badulla Landslide/Background image.jpeg',
@@ -27,7 +28,8 @@ const projectsData = [
     client: "Ministry of Defence, Disaster Management Division",
     duration: "270 Days",
     year: 2025,
-    status: "Ongoing"
+    status: "Ongoing",
+    description: "Targeting severe geological vulnerabilities in the Kegalle District, this project involves comprehensive landslide mitigation across 6 critical sites. Our engineering approach includes extensive geological surveys, earth retaining structures, rock-fall netting, and horizontal drains to reduce groundwater pressure. This 270-day operation demonstrates RR Construction's expertise in specialized geotechnical works in challenging, steep-terrain environments."
   },
   {
     id: 'project-rda-kurikadduvan-jetty',
@@ -37,7 +39,8 @@ const projectsData = [
     client: "Road Development Authority",
     duration: "553 Days",
     year: 2026,
-    status: "Ongoing"
+    status: "Ongoing",
+    description: "The Kurikadduvan Jetty rehabilitation is a major maritime infrastructure project aimed at drastically improving connectivity between the Jaffna peninsula and the surrounding islands. The scope of work encompasses structural reinforcements, underwater piling, and the construction of durable berthing facilities capable of handling increased passenger and cargo traffic. Engineered to withstand harsh coastal environments, this development will serve as a vital maritime hub."
   },
   {
     id: 'project-mod-landslide-10j',
@@ -53,11 +56,12 @@ const projectsData = [
     id: 'project-rda-northern-province-lot03',
     type: 'ongoing',
     category: "roads",
-    title: "Second Integrated Road Investment Program: Rehabilitation and Improvement of Rural Roads in the Northern Province – Lot/03",
+    title: "Second Integrated Road Investment Program: Rehabilitation and Improvement of Rural Roads in the Northern Province — Lot/03",
     client: "Road Development Authority",
     duration: "15 Months",
     year: 2026,
     status: "Ongoing",
+    description: "As part of the pivotal iRoad program, this project focuses on the extensive rehabilitation and upgrading of rural road networks across the Northern Province. RR Construction is executing comprehensive sub-base preparation, structural pavement enhancements, asphalt overlaying, and the installation of effective drainage infrastructure. This 15-month strategic development is designed to boost rural economic integration, reduce travel times, and provide all-weather access to local communities.",
     heroImage: "images/KRP/hero.jpeg",
     galleryImages: [
       "images/KRP/img-1.jpeg",
@@ -70,11 +74,12 @@ const projectsData = [
     id: 'project-rda-colombo-galle',
     type: 'ongoing',
     category: "roads",
-    title: "Improvement of Colombo – Galle – Hambantota - Wellawaya Road From 154 + 000 Km to 167+300km (a002)",
+    title: "Improvement of Colombo — Galle — Hambantota - Wellawaya Road From 154 + 000 Km to 167+300km (a002)",
     client: "Road Development Authority",
     duration: "18 Months",
     year: 2026,
-    status: "Ongoing"
+    status: "Ongoing",
+    description: "This major 18-month infrastructure upgrade spans a critical 13.3-kilometer stretch of the A002 coastal highway. The scope includes rigorous asphalt resurfacing, structural road widening, and the modernization of adjoining stormwater drainage systems. By enhancing this high-traffic arterial route, RR Construction is delivering superior ride quality, improved road safety, and ensuring the highway can accommodate future logistics and tourism traffic demands."
   },
   {
     id: 'project-1',
@@ -211,13 +216,13 @@ const projectsData = [
   },
   {
     id: 'project-10',
-    type: 'ongoing',
+    type: 'completed',
     category: "roads",
     title: "Reconstruction of Proposed Improvement and Rehabilitation of Kurikadduvan Jetty (Approach Road)",
     client: "Road Development Authority",
     duration: "12 Months",
     year: 2025,
-    status: "Ongoing"
+    status: "Completed"
   },
   {
     id: 'project-11',
