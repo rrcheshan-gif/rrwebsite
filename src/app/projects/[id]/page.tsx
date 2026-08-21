@@ -296,29 +296,31 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
               </div>
 
               {/* Location Maps */}
-              <div style={{ background: 'var(--white)', padding: '30px', borderRadius: '12px', boxShadow: '0 10px 40px rgba(0,0,0,0.05)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '15px' }}>
-                  <h3 style={{ color: 'var(--primary-red)', margin: 0, fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                    Location
-                  </h3>
-                  <a href={googleImagesUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 12px', background: 'var(--primary-red)', color: 'white', borderRadius: "30px", fontSize: '0.75rem', fontWeight: 'bold', textDecoration: 'none' }}>
-                    View Photos
-                  </a>
-                </div>
+              {project.type !== 'ongoing' && (
+                <div style={{ background: 'var(--white)', padding: '30px', borderRadius: '12px', boxShadow: '0 10px 40px rgba(0,0,0,0.05)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '15px' }}>
+                    <h3 style={{ color: 'var(--primary-red)', margin: 0, fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                      Location
+                    </h3>
+                    <a href={googleImagesUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 12px', background: 'var(--primary-red)', color: 'white', borderRadius: "30px", fontSize: '0.75rem', fontWeight: 'bold', textDecoration: 'none' }}>
+                      View Photos
+                    </a>
+                  </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '15px' }}>
-                  <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textDecoration: 'none', borderRadius: '10px', overflow: 'hidden', position: 'relative', cursor: 'pointer' }}>
-                    <iframe src={mapSrc} width="100%" height="200" style={{ border: 0, display: 'block', pointerEvents: 'none' }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                    <div style={{ position: 'absolute', bottom: '10px', left: '10px', background: 'rgba(0,0,0,0.7)', color: 'white', padding: '4px 10px', borderRadius: '12px', fontSize: '0.75rem', fontWeight: 'bold', letterSpacing: '0.5px' }}>MAP VIEW</div>
-                  </a>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '15px' }}>
+                    <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textDecoration: 'none', borderRadius: '10px', overflow: 'hidden', position: 'relative', cursor: 'pointer' }}>
+                      <iframe src={mapSrc} width="100%" height="200" style={{ border: 0, display: 'block', pointerEvents: 'none' }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                      <div style={{ position: 'absolute', bottom: '10px', left: '10px', background: 'rgba(0,0,0,0.7)', color: 'white', padding: '4px 10px', borderRadius: '12px', fontSize: '0.75rem', fontWeight: 'bold', letterSpacing: '0.5px' }}>MAP VIEW</div>
+                    </a>
 
-                  <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textDecoration: 'none', borderRadius: '10px', overflow: 'hidden', position: 'relative', cursor: 'pointer' }}>
-                    <iframe src={satelliteSrc} width="100%" height="200" style={{ border: 0, display: 'block', pointerEvents: 'none' }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                    <div style={{ position: 'absolute', bottom: '10px', left: '10px', background: 'rgba(0,0,0,0.7)', color: 'white', padding: '4px 10px', borderRadius: '12px', fontSize: '0.75rem', fontWeight: 'bold', letterSpacing: '0.5px' }}>SATELLITE</div>
-                  </a>
+                    <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textDecoration: 'none', borderRadius: '10px', overflow: 'hidden', position: 'relative', cursor: 'pointer' }}>
+                      <iframe src={satelliteSrc} width="100%" height="200" style={{ border: 0, display: 'block', pointerEvents: 'none' }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                      <div style={{ position: 'absolute', bottom: '10px', left: '10px', background: 'rgba(0,0,0,0.7)', color: 'white', padding: '4px 10px', borderRadius: '12px', fontSize: '0.75rem', fontWeight: 'bold', letterSpacing: '0.5px' }}>SATELLITE</div>
+                    </a>
+                  </div>
                 </div>
-              </div>
+              )}
 
             </div>
             
