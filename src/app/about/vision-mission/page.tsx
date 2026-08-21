@@ -172,7 +172,7 @@ export default function VisionMission() {
                   position: "relative", 
                   zIndex: 2 
                 }}>
-                  “To engineer a stronger, smarter, and more sustainable Sri Lanka — building infrastructure that connects communities, drives progress, and stands the test of time.”
+                  "To engineer a stronger, smarter, and more sustainable Sri Lanka - building infrastructure that connects communities, drives progress, and stands the test of time."
                 </h3>
                 
                 <div style={{ marginTop: "auto", paddingTop: "30px", borderTop: "1px solid var(--border-soft)", position: "relative", zIndex: 2 }}>

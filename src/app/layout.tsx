@@ -80,7 +80,7 @@ const jsonLd = {
     "telephone": "+94-11-2433427",
     "contactType": "customer service",
     "areaServed": "LK",
-    "availableLanguage": ["English", "Sinhala", "Tamil"]
+    "availableLanguage": ["English"]
   },
   "sameAs": [
     "https://www.facebook.com/rrconstruction",
