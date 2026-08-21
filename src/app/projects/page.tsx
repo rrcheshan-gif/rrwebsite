@@ -118,6 +118,8 @@ export default function Projects() {
                 }}
               >
                 {(() => {
+                  if (project.type === 'ongoing') return null;
+                  
                   const imgPath = project.heroImage || project.images?.[0];
                   if (!imgPath) return null;
                   const imgSrc = imgPath.startsWith('/') ? imgPath : `/${imgPath}`;

@@ -114,28 +114,7 @@ export default function OngoingProjects() {
                 onMouseOver={(e) => hasDetail && (e.currentTarget.style.transform = 'translateY(-15px)', e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.1)')}
                 onMouseOut={(e) => hasDetail && (e.currentTarget.style.transform = 'none', e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.04)')}
                 >
-                  {(() => {
-                    const imgPath = project.heroImage || project.images?.[0];
-                    if (!imgPath) return null;
-                    const imgSrc = imgPath.startsWith('/') ? imgPath : `/${imgPath}`;
-                    return (
-                      <div style={{ position: "relative", height: "220px", overflow: "hidden", background: "var(--bg-base)" }}>
-                        <img 
-                          src={imgSrc} 
-                          alt={`${project.title} - RR Construction Sri Lanka`} 
-                          className="img-polished img-hover-zoom" 
-                          style={{ width: "100%", height: "100%", objectFit: "cover" }} 
-                          onError={(e) => {
-                            (e.target as HTMLImageElement).style.display = 'none';
-                          }}
-                        />
-                        <div style={{ position: "absolute", top: "12px", left: "12px", display: "flex", gap: "6px", flexWrap: "wrap", zIndex: 2 }}>
-                          <span style={{ padding: '4px 10px', background: 'rgba(15, 23, 42, 0.75)', backdropFilter: 'blur(8px)', color: 'white', borderRadius: "30px", fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px', border: '1px solid rgba(255,255,255,0.2)' }}>{project.category}</span>
-                          <span style={{ padding: '4px 10px', background: 'rgba(217, 119, 6, 0.85)', backdropFilter: 'blur(8px)', color: 'white', borderRadius: "30px", fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.3px', border: '1px solid rgba(255,255,255,0.25)' }}>Ongoing</span>
-                        </div>
-                      </div>
-                    );
-                  })()}
+
                   <div style={{ padding: '25px', flex: 1, display: 'flex', flexDirection: 'column' }}>
                     <div style={{ color: 'var(--primary-red)', fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', marginBottom: '10px' }}>
                       {project.category}
