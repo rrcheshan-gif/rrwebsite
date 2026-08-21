@@ -60,7 +60,7 @@ export const NEWS_DATA: NewsItem[] = [
       id: 8,
       slug: 'pending-railway-project-contract',
       tag: 'Infrastructure',
-      title: 'Pending Railway Project ....................',
+      title: 'Pending Railway Project',
       desc: 'RR Construction has been officially awarded the contract for the construction of a new railway bridge infrastructure project.',
       date: 'July 21, 2026',
       img: '/images/news/railway-edited.jpg',
