@@ -210,7 +210,7 @@ export default function RoadConstructionPage() {
                 We operate our own asphalt mixing plants and possess a modern fleet of pavers and compactors. This vertical integration allows us to maintain strict quality control over ABC (Aggregate Base Course) laying and asphalt surfacing.
               </p>
               <Link 
-                href="/asphalt" 
+                href="/materials/asphalt" 
                 style={{ 
                   display: 'inline-flex', 
                   alignItems: 'center', 
@@ -457,3 +457,4 @@ export default function RoadConstructionPage() {
     </main>
   );
 }
+

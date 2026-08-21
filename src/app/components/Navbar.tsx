@@ -89,7 +89,7 @@ export default function Navbar() {
                 </div>
                 <ul className="dropdown-menu">
                   <li><Link href="/projects" onClick={() => setMobileMenuOpen(false)}>Completed Projects</Link></li>
-                  <li><Link href="/ongoing" onClick={() => setMobileMenuOpen(false)}>Ongoing Projects</Link></li>
+                  <li><Link href="/projects/ongoing" onClick={() => setMobileMenuOpen(false)}>Ongoing Projects</Link></li>
                 </ul>
               </li>
               
@@ -117,7 +117,7 @@ export default function Navbar() {
                 </div>
                 <ul className="dropdown-menu">
                   <li><Link href="/services" onClick={() => setMobileMenuOpen(false)}>Technology & Services</Link></li>
-                  <li><Link href="/quarries-aggregates" onClick={() => setMobileMenuOpen(false)}>Quarries & Aggregates</Link></li>
+                  <li><Link href="/facilities" onClick={() => setMobileMenuOpen(false)}>Quarries & Aggregates</Link></li>
                 </ul>
               </li>
               <li className={`dropdown ${activeDropdown === 'sustainability' ? 'open' : ''}`}>
@@ -165,3 +165,4 @@ export default function Navbar() {
     </>
   );
 }
+

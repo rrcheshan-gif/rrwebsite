@@ -62,7 +62,7 @@ export default function Projects() {
              <Link href="/projects" style={{ padding: '12px 40px', borderRadius: '50px', background: 'var(--primary-red)', color: 'white', fontWeight: 'bold', textDecoration: 'none', boxShadow: '0 4px 15px rgba(229,57,53,0.3)' }}>
                Completed Projects
              </Link>
-             <Link href="/ongoing" style={{ padding: '12px 40px', borderRadius: '50px', color: 'var(--text-dark)', fontWeight: 'bold', textDecoration: 'none' }}>
+             <Link href="/projects/ongoing" style={{ padding: '12px 40px', borderRadius: '50px', color: 'var(--text-dark)', fontWeight: 'bold', textDecoration: 'none' }}>
                Ongoing Projects
              </Link>
           </div>
@@ -173,5 +173,6 @@ export default function Projects() {
     </div>
   );
 }
+
 
 

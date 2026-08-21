@@ -30,6 +30,17 @@ const nextConfig: NextConfig = {
       // Old quarry/product URLs → New product canonical URLs
       { source: '/quarries-aggregates/aggregates',        destination: '/products/aggregates',           permanent: true },
       { source: '/quarries-aggregates/m-sand',            destination: '/products/m-sand',               permanent: true },
+      // SEO Phase 2 — Topical Silo Redirects (301 Permanent)
+      { source: '/asphalt',                               destination: '/materials/asphalt',             permanent: true },
+      { source: '/products/m-sand',                       destination: '/materials/m-sand',              permanent: true },
+      { source: '/products/aggregates',                   destination: '/materials/aggregates',          permanent: true },
+      { source: '/quarries-aggregates',                   destination: '/facilities',                    permanent: true },
+      { source: '/thudugala-plant',                       destination: '/facilities/thudugala-quarry',   permanent: true },
+      { source: '/veerapuram-plant',                      destination: '/facilities/veerapuram-asphalt-plant', permanent: true },
+      { source: '/omanthai-plant',                        destination: '/facilities/omanthai-quarry',    permanent: true },
+      { source: '/yakawewa-plant',                        destination: '/facilities/yakawewa-quarry',    permanent: true },
+      { source: '/ongoing',                               destination: '/projects/ongoing',              permanent: true },
+      { source: '/construction-companies-in-sri-lanka',   destination: '/about/company-overview',        permanent: true },
     ];
   },
 };

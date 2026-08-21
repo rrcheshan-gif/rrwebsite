@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import projectsData from '../projects/data';
+import projectsData from '../data';
 
 export default function OngoingProjects() {
   const [filter, setFilter] = useState('all');
