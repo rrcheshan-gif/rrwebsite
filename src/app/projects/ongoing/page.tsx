@@ -150,7 +150,7 @@ export default function OngoingProjects() {
                       
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '15px', paddingTop: '15px', borderTop: '1px solid #eee' }}>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-                          {project.duration && <span style={{ fontSize: '0.85rem', color: '#666' }}><strong>Duration:</strong> {project.duration}</span>}
+                          {/* Duration hidden for ongoing projects as requested */}
                         </div>
                       </div>
                       

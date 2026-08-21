@@ -49,8 +49,8 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
   // --- Description ---
   let description = project.description || '';
   if (!description) {
-    let timePhrase = project.year ? `The project operations are anchored around the year ${project.year}` : `The project was systematically undertaken`;
-    let durationPhrase = project.duration ? ` and executed across an intensive ${project.duration} timeframe` : ``;
+    let timePhrase = (project.year && project.type !== 'ongoing') ? `The project operations are anchored around the year ${project.year}` : `The project was systematically undertaken`;
+    let durationPhrase = (project.duration && project.type !== 'ongoing') ? ` and executed across an intensive ${project.duration} timeframe` : ``;
     let clientPhrase = project.client ? `This flagship development is being spearheaded on behalf of the <strong>${project.client}</strong>.` : `This development is managed by RR Construction's internal engineering divisions.`;
     
     let catDetails = "";
@@ -283,10 +283,12 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
                   </div>
                 )}
                 
-                <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
-                  <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '5px', letterSpacing: '1px' }}>Duration</h4>
-                  <p style={{ color: 'var(--text-dark)', fontSize: '1.1rem', fontWeight: 'bold' }}>{project.duration}</p>
-                </div>
+                {project.type !== 'ongoing' && (
+                  <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
+                    <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '5px', letterSpacing: '1px' }}>Duration</h4>
+                    <p style={{ color: 'var(--text-dark)', fontSize: '1.1rem', fontWeight: 'bold' }}>{project.duration}</p>
+                  </div>
+                )}
                 
                 {project.type !== 'ongoing' && (
                   <div>
