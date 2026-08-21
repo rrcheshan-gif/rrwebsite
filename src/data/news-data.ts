@@ -56,28 +56,28 @@ export const NEWS_DATA: NewsItem[] = [
       <p>The final phase will focus on onshore facilities, paving, and final structural touches before the official handover.</p>
     `
   },
-  {
-    id: 8,
-    slug: 'maggona-railway-bridge-contract-awarded',
-    tag: 'Infrastructure',
-    title: 'Contract Awarded for Maggona Double Line Railway Bridge',
-    desc: 'RR Construction has been officially awarded the contract for the construction of a double line railway bridge at Maggona on the Coastal Line by Sri Lanka Railways.',
-    date: 'July 21, 2026',
-    img: '/images/news/railway-edited.jpg',
-    featured: false,
-    content: `
-      <h2>New Contract Award: Maggona Railway Bridge</h2>
-      <p><strong>RR Construction (Pvt) Ltd has officially received the Letter of Acceptance from Sri Lanka Railways for the construction of a major double line railway bridge.</strong></p>
-
-      <p>On July 21, 2026, the Procurement Sub Department of Sri Lanka Railways formally awarded the contract (Procurement No. SRS/F. 8176) to RR Construction for the "CONSTRUCTION OF DOUBLE LINE RAILWAY BRIDGE AT 33M 43CH - COST LINE / MAGGONA".</p>
-
-      <h3>Project Scope and Investment</h3>
-      <p>The project marks another significant milestone in our ongoing efforts to modernize and enhance Sri Lanka's national railway network.</p>
-
-      <h3>Commencement and Execution</h3>
-      <p>Following the official acceptance, our engineering and project management teams are mobilizing for immediate deployment. The official commencement date is set for 14 days from the issuance of the Letter of Acceptance, with all preliminary material approvals and reinforcement planning already underway in strict accordance with the contract specifications and engineer's requirements.</p>
-
-      <p>We are fully committed to delivering this project with the highest standards of safety, quality, and structural integrity that RR Construction is known for.</p>
-    `
-  },
+    {
+      id: 8,
+      slug: 'pending-railway-project-contract',
+      tag: 'Infrastructure',
+      title: 'Pending Railway Project ....................',
+      desc: 'RR Construction has been officially awarded the contract for the construction of a new railway bridge infrastructure project.',
+      date: 'July 21, 2026',
+      img: '/images/news/railway-edited.jpg',
+      featured: false,
+      content: `
+        <h2>New Contract Award: Pending Railway Project</h2>
+        <p><strong>RR Construction (Pvt) Ltd has officially received the Letter of Acceptance for the construction of a major double line railway bridge.</strong></p>
+  
+        <p>On July 21, 2026, the contract was formally awarded to RR Construction for the construction of a new double line railway bridge.</p>
+  
+        <h3>Project Scope and Investment</h3>
+        <p>The project marks another significant milestone in our ongoing efforts to modernize and enhance the national railway network.</p>
+  
+        <h3>Commencement and Execution</h3>
+        <p>Following the official acceptance, our engineering and project management teams are mobilizing for immediate deployment. The official commencement date is set for 14 days from the issuance of the Letter of Acceptance, with all preliminary material approvals and reinforcement planning already underway in strict accordance with the contract specifications and engineer's requirements.</p>
+  
+        <p>We are fully committed to delivering this project with the highest standards of safety, quality, and structural integrity that RR Construction is known for.</p>
+      `
+    },
 ];
