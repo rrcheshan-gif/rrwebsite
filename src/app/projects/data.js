@@ -1174,6 +1174,12 @@ const projectsData = [
     title: "Oluvil Port Project Coastal Protection",
     status: "Completed",
     client: "Sri Lanka Ports Authority",
+      location: "Oluvil Port, Eastern Province, Sri Lanka",
+      images: [
+        "/images/projects/project-80/1.jpg",
+        "/images/projects/project-80/2.jpg"
+      ],
+
     
     duration: "06 Months",
     year: 2012
