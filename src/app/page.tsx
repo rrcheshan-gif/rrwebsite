@@ -11,7 +11,7 @@ export default function Home() {
 
   const slides = [
     {
-      img: '/images/home/slider/polished/coastal.jpg',
+      img: '/images/home/SLIDE_01.jpg',
       fallback: '/images/hero-road-roller.jpg',
       duration: 12000,
       tag: 'PASSION FOR ENGINEERING EXCELLENCE',
