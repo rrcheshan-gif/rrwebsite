@@ -59,7 +59,7 @@ export default function QualityManagement() {
                 Quality Assured from <span style={{ color: "var(--primary-red)" }}>The Ground Up</span>
               </h2>
               <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
-                True quality in civil engineering cannot be retrofitted; it must be engineered into every mix, every pour, and every weld. RR Construction's reputation as a top-tier infrastructure developer is built on an unwavering commitment to structural integrity.
+                True quality in heavy civil engineering cannot be retrofitted; it must be engineered into every mix, every pour, and every weld. RR Construction's reputation as a top-tier infrastructure developer is built on an unwavering commitment to structural integrity.
               </p>
               <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
                 Certified under <strong>ISO 9001:2015 (Quality Management Systems)</strong>, we execute massive public works with extreme precision.

@@ -398,7 +398,7 @@ export default function BridgeConstructionPage() {
                 Specialized Technical Resources
               </h2>
               <p style={{ fontSize: '16px', lineHeight: 1.8, opacity: 0.9, marginBottom: '24px' }}>
-                Successful bridge construction requires specialized heavy machinery and precision equipment. We maintain a comprehensive in-house fleet of construction plant tailored for heavy civil engineering.
+                Successful bridge construction requires specialized heavy machinery and precision equipment. We maintain a comprehensive in-house fleet of construction plant tailored for Heavy Civil Engineering.
               </p>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <li style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>

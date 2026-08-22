@@ -109,7 +109,7 @@ export default function SocialResponsibility() {
               <BookOpen size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Education & Youth</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
-                We actively hire youth from regions adjacent to our major sites (like the Central Expressway or Northern Railway), providing them with invaluable hands-on technical training and long-term career paths in civil engineering.
+                We actively hire youth from regions adjacent to our major sites (like the Central Expressway or Northern Railway), providing them with invaluable hands-on technical training and long-term career paths in heavy civil engineering.
               </p>
             </div>
 

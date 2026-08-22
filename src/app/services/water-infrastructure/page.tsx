@@ -38,7 +38,7 @@ export default function WaterInfrastructurePage() {
           </Link>
         </div>
         <h1 style={{ color: 'var(--white)', fontSize: isMobile ? '36px' : '48px', fontFamily: 'var(--font-heading)', margin: '0 0 20px 0' }}>
-          Water <span style={{ color: 'var(--primary-red)' }}>Infrastructure & Civil Engineering</span> in Sri Lanka
+          Water <span style={{ color: 'var(--primary-red)' }}>Infrastructure & Heavy Civil Engineering</span> in Sri Lanka
         </h1>
         <p style={{ color: 'var(--bg-light)', fontSize: '18px', maxWidth: '800px', lineHeight: 1.6, margin: 0 }}>
           Expert engineering solutions for water supply systems, treatment plants, drainage, and irrigation works across Sri Lanka.
@@ -89,7 +89,7 @@ export default function WaterInfrastructurePage() {
                 Water Treatment Plants
               </h3>
               <p style={{ color: 'var(--text-light)', fontSize: '16px', lineHeight: 1.8, marginBottom: '20px' }}>
-                Civil engineering and structural works for industrial and municipal water treatment facilities. We partner with process engineers to deliver complete facilities.
+                Heavy Civil engineering and structural works for industrial and municipal water treatment facilities. We partner with process engineers to deliver complete facilities.
               </p>
               <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
                 {['Clarifiers and filtration structures', 'Chemical dosing buildings', 'Intake structures', 'Civil works for M&E installations', 'Facility administrative buildings'].map((item, i) => (
@@ -175,7 +175,7 @@ export default function WaterInfrastructurePage() {
                 Ampara Water Treatment Plant
               </h3>
               <p style={{ color: 'var(--text-light)', fontSize: '16px', lineHeight: 1.8, marginBottom: '20px' }}>
-                A critical infrastructure project involving the construction and civil engineering works for the water treatment facility in Ampara, designed to improve the quality and reliability of the region's potable water supply.
+                A critical infrastructure project involving the construction and heavy civil engineering works for the water treatment facility in Ampara, designed to improve the quality and reliability of the region's potable water supply.
               </p>
               <ul style={{ listStyleType: 'none', padding: 0, margin: 0, marginBottom: '30px' }}>
                 <li style={{ marginBottom: '10px', color: 'var(--text-dark)', display: 'flex' }}>

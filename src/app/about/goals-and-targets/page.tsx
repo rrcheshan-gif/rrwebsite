@@ -18,7 +18,7 @@ export default function GoalsAndTargets() {
   const corporateGoals = [
     {
       title: "Operational Excellence",
-      desc: "Maintain our position as a top-tier civil engineering firm by consistently delivering projects that exceed national quality and safety standards.",
+      desc: "Maintain our position as a top-tier heavy civil engineering firm by consistently delivering projects that exceed national quality and safety standards.",
       icon: <ShieldCheck size={32} color="var(--primary-red)" />
     },
     {

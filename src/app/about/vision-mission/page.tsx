@@ -217,7 +217,7 @@ export default function VisionMission() {
                   position: "relative", 
                   zIndex: 2 
                 }}>
-                  “To deliver world-class construction and civil engineering solutions through engineering excellence, advanced technology, responsible resource management, uncompromising quality, and a relentless commitment to safety, sustainability, and client satisfaction.”
+                  “To deliver world-class construction and heavy civil engineering solutions through engineering excellence, advanced technology, responsible resource management, uncompromising quality, and a relentless commitment to safety, sustainability, and client satisfaction.”
                 </h3>
                 
                 <div style={{ marginTop: "auto", paddingTop: "30px", borderTop: "1px solid rgba(255,255,255,0.1)", position: "relative", zIndex: 2 }}>

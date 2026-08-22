@@ -82,7 +82,7 @@ export default function Navbar() {
               
               <li className={`dropdown ${activeDropdown === 'projects' ? 'open' : ''}`}>
                 <div className="dropdown-header">
-                  <Link href="/projects" title="Major Infrastructure & Civil Engineering Projects Sri Lanka" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
+                  <Link href="/projects" title="Major Infrastructure & Heavy Civil Engineering Projects Sri Lanka" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
                   <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('projects', e)} aria-label="Toggle Projects Submenu">
                     <ChevronDown size={14} />
                   </button>
@@ -95,7 +95,7 @@ export default function Navbar() {
               
               <li className={`dropdown ${activeDropdown === 'people' ? 'open' : ''}`}>
                 <div className="dropdown-header">
-                  <Link href="/people" title="Civil Engineering Workforce Sri Lanka" onClick={() => setMobileMenuOpen(false)}>People</Link>
+                  <Link href="/people" title="Heavy Civil Engineering Workforce Sri Lanka" onClick={() => setMobileMenuOpen(false)}>People</Link>
                   <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('people', e)} aria-label="Toggle People Submenu">
                     <ChevronDown size={14} />
                   </button>

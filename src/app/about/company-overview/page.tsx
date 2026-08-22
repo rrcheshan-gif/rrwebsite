@@ -62,7 +62,7 @@ export default function AboutStory() {
                 A Legacy of Engineering <br/><span style={{ color: "var(--text-light)" }}>Excellence.</span>
               </h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
-                {COMPANY_DATA.name} is a Sri Lankan civil engineering and construction company established in {COMPANY_DATA.established}. Over the last {COMPANY_DATA.yearsOfExcellence} years, the organization has progressed to establish a strong presence in the infrastructure development industry in {COMPANY_DATA.headquarters}.
+                {COMPANY_DATA.name} is a Sri Lankan heavy civil engineering and construction company established in {COMPANY_DATA.established}. Over the last {COMPANY_DATA.yearsOfExcellence} years, the organization has progressed to establish a strong presence in the infrastructure development industry in {COMPANY_DATA.headquarters}.
               </p>
               <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
                 <Link href="/about/history" style={{ color: "var(--primary-red)", fontWeight: 600, textDecoration: "none" }}>Read our full History & Milestones &rarr;</Link>
@@ -241,7 +241,7 @@ export default function AboutStory() {
             Engineering Sri Lanka's <span style={{ color: "var(--primary-red)" }}>Tomorrow</span>
           </h2>
           <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.7, marginBottom: "40px" }}>
-            Discover how our comprehensive civil engineering capabilities are building the nation's critical infrastructure.
+            Discover how our comprehensive heavy civil engineering capabilities are building the nation's critical infrastructure.
           </p>
           <div style={{ display: "flex", gap: "20px", justifyContent: "center", flexWrap: "wrap" }}>
             <Link href="/projects" className="btn btn-primary hover-glow" style={{ padding: "18px 40px", fontSize: "1.05rem", borderRadius: "30px", display: "inline-flex", alignItems: "center", gap: "10px" }}>

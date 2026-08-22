@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Dredging Company in Sri Lanka | Dredging & Reclamation Services | RR Construction',
-  description: 'RR Construction is a dredging company in Sri Lanka providing marine dredging, harbour dredging, land reclamation and coastal civil engineering services.',
+  description: 'RR Construction is a dredging company in Sri Lanka providing marine dredging, harbour dredging, land reclamation and coastal heavy civil engineering services.',
   alternates: { canonical: 'https://www.rrconstruction.lk/services/dredging-reclamation' },
   openGraph: {
     title: 'Dredging Company in Sri Lanka | RR Construction',

@@ -75,7 +75,7 @@ export default function AggregatesPage() {
               Aggregate Production Overview
             </h2>
             <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem' }}>
-              RR Construction operates four dedicated quarry plants across Sri Lanka, equipped with multi-stage crushing circuits. We produce comprehensive ranges of aggregates essential for road bases, concrete structures, and general civil engineering works.
+              RR Construction operates four dedicated quarry plants across Sri Lanka, equipped with multi-stage crushing circuits. We produce comprehensive ranges of aggregates essential for road bases, concrete structures, and general heavy civil engineering works.
             </p>
           </div>
 

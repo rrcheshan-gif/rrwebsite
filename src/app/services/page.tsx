@@ -29,8 +29,8 @@ const SERVICES = [
     slug: 'maritime-construction',
     num: '03',
     title: 'Maritime & Harbour Construction',
-    subtitle: 'Fishery Harbours · Breakwaters · Marine Civil Engineering',
-    desc: 'Specialised marine civil engineering across Sri Lanka\'s coastline — fishery harbours, commercial breakwaters, quay walls, jetties, and coastal protection structures from seabed to superstructure.',
+    subtitle: 'Fishery Harbours · Breakwaters · Marine Heavy Civil Engineering',
+    desc: 'Specialised marine heavy civil engineering across Sri Lanka\'s coastline — fishery harbours, commercial breakwaters, quay walls, jetties, and coastal protection structures from seabed to superstructure.',
     highlights: ['Gandara Fishery Harbour', 'Breakwaters & Rock Armour', 'Marine Pile Installation'],
     image: '/images/home/slider/polished/maritime.jpg',
     cta: '/services/maritime-construction',
@@ -201,7 +201,7 @@ export default function Services() {
           </h1>
 
           <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: isMobile ? '1rem' : '1.2rem', maxWidth: '640px', lineHeight: 1.75, margin: 0, fontWeight: 400 }}>
-            From national highways and river bridges to fishery harbours and hill-country landslide works — RR Construction covers the full spectrum of civil engineering infrastructure in Sri Lanka.
+            From national highways and river bridges to fishery harbours and hill-country landslide works — RR Construction covers the full spectrum of heavy civil engineering infrastructure in Sri Lanka.
           </p>
         </div>
       </section>

@@ -291,7 +291,7 @@ export default function Home() {
 
                   {/* Bottom Left - Square */}
                   <div style={{ gridColumn: "1 / 2", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
-                    <img src="/images/home/WhatsApp Image 2026-07-24 at 23.23.33.jpeg" alt="Civil Engineering and Earthworks Equipment Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    <img src="/images/home/WhatsApp Image 2026-07-24 at 23.23.33.jpeg" alt="Heavy Civil Engineering and Earthworks Equipment Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   </div>
 
                   {/* Bottom Right - Wide */}
@@ -347,11 +347,11 @@ export default function Home() {
             
             <h1 style={{ fontSize: "clamp(2.2rem, 3.5vw, 3.2rem)", lineHeight: 1.15, marginBottom: "25px", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800 }}>
               RR CONSTRUCTION<br />(PVT) LTD
-              <span style={{ color: "var(--primary-red)", fontWeight: 600, fontSize: "0.45em", letterSpacing: "2px", display: "block", marginTop: "15px", textTransform: "uppercase" }}>Construction & Civil Engineering In Sri Lanka</span>
+              <span style={{ color: "var(--primary-red)", fontWeight: 600, fontSize: "0.45em", letterSpacing: "2px", display: "block", marginTop: "15px", textTransform: "uppercase" }}>Construction & Heavy Civil Engineering In Sri Lanka</span>
             </h1>
             
             <p style={{ color: "var(--text-light)", marginBottom: "40px", lineHeight: 1.8, fontSize: "1.1rem" }}>
-              With a self-owned fleet of {COMPANY_DATA.machineryFleet} heavy construction machines, our capabilities go beyond earthworks and structural concrete. We execute large-scale highways, bridges, irrigation canals, maritime construction, dredging, and heavy steel fabrication. We bring the full strength of our civil engineering resources to every site, ensuring Sri Lanka's infrastructure is built with absolute reliability.
+              With a self-owned fleet of {COMPANY_DATA.machineryFleet} heavy construction machines, our capabilities go beyond earthworks and structural concrete. We execute large-scale highways, bridges, irrigation canals, maritime construction, dredging, and heavy steel fabrication. We bring the full strength of our heavy civil engineering resources to every site, ensuring Sri Lanka's infrastructure is built with absolute reliability.
             </p>
         
             <div>
@@ -372,7 +372,7 @@ export default function Home() {
           
           <div style={{ display: "grid", gridTemplateColumns: "repeat(12, 1fr)", gap: "30px" }}>
             {[
-              { title: "Highways & Roads", img: "/images/home/rathnapura.jpg", icon: <Map size={30} />, text: "Specialized civil engineering expertise carving expressways and national highways through every terrain." },
+              { title: "Highways & Roads", img: "/images/home/rathnapura.jpg", icon: <Map size={30} />, text: "Specialized heavy civil engineering expertise carving expressways and national highways through every terrain." },
               { title: "Bridge Construction", img: "/images/kilinochchi-bridge-feature.jpg", icon: <GitMerge size={30} />, text: "Structural steel and reinforced concrete bridges built to carry the load for generations." },
               { title: "Civil Structures", img: "/images/wellamankara/building-projects.jpg", icon: <Building2 size={30} />, text: "Specialized structural engineering encompassing water retaining facilities, towers, and heavy steel fabrication." },
               { title: "Maritime & Water", img: "/images/maritime-harbour-site.jpg", icon: <Waves size={30} />, text: "Dredging, reclamation, and water supply systems engineered to serve communities at scale." }
@@ -428,7 +428,7 @@ export default function Home() {
             </div>
             <h2 style={{ fontSize: "3.2rem", lineHeight: 1.1, marginBottom: "20px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>THREE DECADES OF<br/><span className="text-gradient" style={{ fontWeight: 300 }}>EXCELLENCE</span></h2>
             <p style={{ fontSize: "1.1rem", color: "var(--text-light)", marginBottom: "25px", lineHeight: 1.8 }}>
-              Since our establishment in {COMPANY_DATA.established}, we have evolved into a fully-fledged civil engineering contractor delivering multi-billion rupee projects for both local and international clients.
+              Since our establishment in {COMPANY_DATA.established}, we have evolved into a fully-fledged heavy civil engineering contractor delivering multi-billion rupee projects for both local and international clients.
             </p>
             <p style={{ fontSize: "1.1rem", color: "var(--text-light)", marginBottom: "30px", lineHeight: 1.8 }}>
               Backed by a proven track record of {COMPANY_DATA.yearsOfExcellence} years, we continue to build the critical infrastructure that keeps Sri Lanka moving forward. <Link href="/about/history" style={{ color: "var(--primary-red)", fontWeight: 600, textDecoration: "none" }}>Learn more about our history &rarr;</Link>

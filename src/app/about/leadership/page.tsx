@@ -44,7 +44,7 @@ export default function Leadership() {
             Board of <span style={{ color: "var(--primary-red)" }}>Directors</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
-            Guiding RR Construction through decades of civil engineering excellence.
+            Guiding RR Construction through decades of heavy civil engineering excellence.
           </p>
         </div>
       </section>

@@ -70,7 +70,7 @@ export default function MaritimeConstructionPage() {
             opacity: 0.9, 
             lineHeight: 1.6 
           }}>
-            Expert harbour development, marine civil engineering, and coastal infrastructure solutions.
+            Expert harbour development, marine heavy civil engineering, and coastal infrastructure solutions.
           </p>
         </div>
       </section>
@@ -263,7 +263,7 @@ export default function MaritimeConstructionPage() {
                 <PenTool size={30} color="var(--primary-red)" />
               </div>
               <h3 style={{ fontSize: '22px', color: 'var(--text-dark)', marginBottom: '16px', fontFamily: 'var(--font-heading)' }}>
-                Marine Civil Engineering
+                Marine Heavy Civil Engineering
               </h3>
               <p style={{ fontSize: '16px', color: 'var(--text-light)', lineHeight: 1.7, marginBottom: '20px' }}>
                 Specialized subsea engineering including seabed preparation, offshore pile installation, and submerged concrete pouring for marine foundations.
@@ -583,7 +583,7 @@ export default function MaritimeConstructionPage() {
                 <span style={{ color: 'var(--primary-red)' }}>+</span>
               </summary>
               <p style={{ fontSize: '16px', color: 'var(--text-light)', lineHeight: 1.7, marginTop: '15px', paddingTop: '15px', borderTop: '1px solid var(--border-soft)' }}>
-                Yes, our marine civil engineering teams are experienced in specialized concrete applications including tremie concrete placement for underwater foundations and structures.
+                Yes, our marine heavy civil engineering teams are experienced in specialized concrete applications including tremie concrete placement for underwater foundations and structures.
               </p>
             </details>
           </div>

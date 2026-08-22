@@ -25,7 +25,7 @@ export default function QualityPolicy() {
             </div>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", marginBottom: "30px" }}>Committed to ISO 9001:2015</h2>
             <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "var(--text-light)", marginBottom: "40px" }}>
-              Quality is the cornerstone of RR Construction's legacy. As A leading civil engineering enterprise, we operate under a rigorous Quality Management System certified to <strong>ISO 9001:2015</strong> standards. Our policy ensures that every cubic meter of concrete poured, every kilometer of asphalt laid, and every structural beam erected meets uncompromising national and international engineering benchmarks.
+              Quality is the cornerstone of RR Construction's legacy. As A leading heavy civil engineering enterprise, we operate under a rigorous Quality Management System certified to <strong>ISO 9001:2015</strong> standards. Our policy ensures that every cubic meter of concrete poured, every kilometer of asphalt laid, and every structural beam erected meets uncompromising national and international engineering benchmarks.
             </p>
           </div>
           

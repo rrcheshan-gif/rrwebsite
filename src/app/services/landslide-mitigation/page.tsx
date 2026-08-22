@@ -211,7 +211,7 @@ export default function LandslideMitigationPage() {
         <div style={styles.container}>
           <h2 style={styles.sectionTitle}>Geotechnical Capabilities Overview</h2>
           <p style={styles.sectionDesc}>
-            RR Construction provides specialized geotechnical engineering services to mitigate landslide risks across Sri Lanka's hill country. We work in strict adherence to National Building Research Organisation (NBRO) guidelines and regulations, executing complex civil engineering countermeasures to ensure long-term structural integrity and public safety.
+            RR Construction provides specialized geotechnical engineering services to mitigate landslide risks across Sri Lanka's hill country. We work in strict adherence to National Building Research Organisation (NBRO) guidelines and regulations, executing complex heavy civil engineering countermeasures to ensure long-term structural integrity and public safety.
           </p>
 
           <div style={styles.grid3}>

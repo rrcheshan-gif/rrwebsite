@@ -71,7 +71,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
     } else if (cat === 'water') {
         catDetails = "Ensuring access to clean water is critical. The engineering parameters for this project included the excavation and laying of extensive pipeline networks, the construction of high-capacity treatment units, and the integration of advanced pumping mechanisms. Stringent pressure testing and environmental safety audits we're conducted at every phase.";
     } else if (cat === 'buildings') {
-        catDetails = "This structural development required precise architectural coordination, deep foundation laying, and the erection of a multi-story framework. We utilized high-grade industrial materials and advanced civil engineering practices to deliver a modern, energy-efficient building that meets all stringent urban planning and safety regulations.";
+        catDetails = "This structural development required precise architectural coordination, deep foundation laying, and the erection of a multi-story framework. We utilized high-grade industrial materials and advanced heavy civil engineering practices to deliver a modern, energy-efficient building that meets all stringent urban planning and safety regulations.";
     } else {
         catDetails = "The infrastructure required a multidisciplinary engineering approach, involving extensive site preparation, structural integrity testing, and the deployment of our heavy-machinery fleet. Our highly skilled workforce ensured that all architectural and safety parameters we're met without compromising on the delivery timeline.";
     }
@@ -79,7 +79,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
     description = `<p style="margin-bottom: 20px;">The <strong>"${project.title || 'infrastructure development'}"</strong> project stands as a testament to modern engineering capabilities in the ${categoryDisplay.toLowerCase()} sector. ${clientPhrase}</p>
                    <p style="margin-bottom: 20px;">${timeAndDuration}, showcasing RR Construction's unwavering commitment to delivering large-scale infrastructure on schedule without sacrificing quality.</p>
                    <p style="margin-bottom: 20px;">${catDetails}</p>
-                   <p>By leveraging our decades of civil engineering expertise, a massive self-owned machinery fleet, and a dedicated workforce of over 1400 professionals, we ensured that this project strictly adhered to ISO 9001 quality, ISO 14001 environmental, and ISO 45001 safety standards from inception to completion.</p>`;
+                   <p>By leveraging our decades of heavy civil engineering expertise, a massive self-owned machinery fleet, and a dedicated workforce of over 1400 professionals, we ensured that this project strictly adhered to ISO 9001 quality, ISO 14001 environmental, and ISO 45001 safety standards from inception to completion.</p>`;
   }
 
   // --- Google Maps URLs ---

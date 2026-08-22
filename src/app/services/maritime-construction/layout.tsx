@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.rrconstruction.lk/services/maritime-construction' },
   openGraph: {
     title: 'Maritime Construction in Sri Lanka | RR Construction',
-    description: 'Expert maritime construction, harbour development, and marine civil engineering in Sri Lanka.',
+    description: 'Expert maritime construction, harbour development, and marine heavy civil engineering in Sri Lanka.',
     url: 'https://www.rrconstruction.lk/services/maritime-construction',
     type: 'website'
   }
@@ -17,7 +17,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     '@context': 'https://schema.org',
     '@type': 'Service',
     'name': 'Maritime Construction in Sri Lanka',
-    'description': 'Expert maritime construction, harbour development, and marine civil engineering in Sri Lanka.',
+    'description': 'Expert maritime construction, harbour development, and marine heavy civil engineering in Sri Lanka.',
     'provider': {
       '@type': 'Organization',
       'name': 'RR Construction (Pvt) Ltd',
