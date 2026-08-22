@@ -10,11 +10,11 @@ export const COMPANY_DATA = {
   sectors: [
     "Highways & Roads",
     "Bridge Construction",
-    "Building Projects",
     "Irrigation & Water Supply",
     "Harbour & Marine Construction",
     "Landslide Mitigation & Retaining Walls",
-    "Railway Civil Works"
+    "Railway Civil Works",
+    "Building Projects"
   ],
   cidaRegistration: "C-10171",
 

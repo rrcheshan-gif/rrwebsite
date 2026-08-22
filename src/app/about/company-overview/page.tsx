@@ -73,7 +73,6 @@ export default function AboutStory() {
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px" }}>
                   {[
                     "Earthworks & Structural Concrete",
-                    "Buildings & Facilities",
                     "Roads & Highways",
                     "Bridges & Overpasses",
                     "Irrigation & Drainage",
@@ -84,7 +83,8 @@ export default function AboutStory() {
                     "Water Towers & Treatment Plants",
                     "Heavy Steel Fabrication & Erection",
                     "Mechanical Maintenance",
-                    "Machine & Equipment Rental"
+                    "Machine & Equipment Rental",
+                    "Buildings & Facilities"
                   ].map((item, idx) => (
                     <div key={idx} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                       <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--primary-red)" }}></div>
