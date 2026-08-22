@@ -101,7 +101,7 @@ export default function SocialResponsibility() {
               <MapPin size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Rural Connectivity</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
-                Through projects like the iRoad program and rural bridge reconstructions, we directly stimulate local agrarian economies by drastically cutting transport times for farmers reaching urban markets.
+                Through strategic infrastructure developments such as the iRoad program and critical rural bridge reconstructions, we play a pivotal role in bridging the urban-rural divide. By systematically enhancing regional connectivity, we directly stimulate local agrarian economies, drastically reducing transport times for agricultural supply chains, and facilitating seamless access to urban markets and essential services for remote communities.
               </p>
             </div>
 
@@ -109,7 +109,7 @@ export default function SocialResponsibility() {
               <BookOpen size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Education & Youth</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
-                We actively hire youth from regions adjacent to our major sites (like the Central Expressway or Northern Railway), providing them with invaluable hands-on technical training and long-term career paths in heavy civil engineering.
+                We are deeply committed to community empowerment through localized workforce integration. By actively recruiting and mentoring youth from regions adjacent to our major infrastructure sites - such as the Central Expressway and large-scale maritime projects - we provide invaluable, hands-on technical training. This proactive knowledge transfer equips the next generation with specialized skills, creating sustainable, long-term career trajectories in the heavy civil engineering sector.
               </p>
             </div>
 
@@ -117,7 +117,7 @@ export default function SocialResponsibility() {
               <Building2 size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Minimizing Disruption</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
-                During urban water supply works or high-traffic road rehabilitation, we employ rigorous traffic management and night-time operation schedules to ensure the daily lives of citizens are not heavily hindered by our operations.
+                Executing complex projects in densely populated urban centers demands meticulous logistical planning. During critical water infrastructure upgrades and high-traffic road rehabilitations, we deploy advanced traffic management protocols and strategically phased night-time operations. Our uncompromising commitment to operational efficiency ensures that public safety is prioritized and the daily routines of citizens remain undisturbed, minimizing civic disruption while maximizing project momentum.
               </p>
             </div>
 
