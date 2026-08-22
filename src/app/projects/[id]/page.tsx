@@ -129,6 +129,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
 
   const galleryImages = project.images || project.galleryImages || [];
   const hasGallery = galleryImages.length > 0;
+  const heroImg = project.heroImage || (galleryImages.length > 0 ? (galleryImages.find((img) => img.toLowerCase().includes('background')) || galleryImages[0]) : null);
 
   return (
     <div style={{ backgroundColor: "var(--bg-light)", minHeight: "100vh" }}>
@@ -202,7 +203,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
         minHeight: '350px',
         display: 'flex',
         alignItems: 'flex-end',
-        background: project.heroImage ? `linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%), url('${project.heroImage.startsWith('/') ? project.heroImage : `/${project.heroImage}`}') center/cover` : 'linear-gradient(135deg, #B71C1C 0%, #E53935 100%)',
+        background: heroImg ? `linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 100%), url('${heroImg.startsWith('/') ? heroImg : `/${heroImg}`}') center/cover` : 'linear-gradient(135deg, #B71C1C 0%, #E53935 100%)',
         color: 'white',
         paddingBottom: '40px'
       }}>
