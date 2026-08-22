@@ -298,12 +298,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
                   </div>
                 )}
                 
-                {project.type !== 'ongoing' && (
-                  <div>
-                    <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '5px', letterSpacing: '1px' }}>Completion Year</h4>
-                    <p style={{ color: 'var(--text-dark)', fontSize: '1.1rem', fontWeight: 'bold' }}>{project.year}</p>
-                  </div>
-                )}
+                
 
               </div>
 
