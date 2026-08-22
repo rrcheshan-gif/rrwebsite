@@ -12,14 +12,14 @@ export default function People() {
             </Link>
           </div>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px", textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>Our Greatest Asset</h4>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem", textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>OUR PEOPLE</h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 8vw, 3.5rem)", textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>OUR PEOPLE</h1>
         </div>
       </section>
 
       {/* Intro */}
       <section style={{ padding: "50px 20px" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", marginBottom: "20px" }}>The Engine of RR Construction</h2>
+          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 5vw, 2.5rem)", color: "var(--text-dark)", marginBottom: "20px" }}>The Engine of RR Construction</h2>
           <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "0 auto 30px" }}></div>
           <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "var(--text-light)", marginBottom: "20px" }}>
             Infrastructure isn't built by machines; it's built by people. From our boardroom in Colombo to the furthest reaches of our highway projects, the RR Construction family consists of over <strong>1,400+ dedicated professionals</strong>. We cultivate an environment that rewards precision, promotes safety, and encourages lifelong learning.
@@ -61,7 +61,7 @@ export default function People() {
       {/* Join Us CTA */}
       <section style={{ padding: "50px 20px", background: "#1e293b", color: "white", textAlign: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "3rem", marginBottom: "20px", color: "white" }}>Build Your Career With Us</h2>
+          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 6vw, 3rem)", marginBottom: "20px", color: "white" }}>Build Your Career With Us</h2>
           <p style={{ color: "#cbd5e1", fontSize: "1.2rem", maxWidth: "800px", margin: "0 auto 40px", lineHeight: 1.6 }}>Ready to engineer tomorrow? We are always looking for passionate engineers, project managers, and skilled tradespeople to join our growing team.</p>
           <Link href="/career" className="btn btn-primary" style={{ display: "inline-block", padding: "15px 35px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", borderRadius: "30px", textDecoration: "none" }}>View Vacancies</Link>
         </div>

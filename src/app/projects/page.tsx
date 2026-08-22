@@ -123,7 +123,7 @@ export default function Projects() {
             <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
             </Link>
           </div>
-          <h1 className="hero-heading fade-in" style={{ color: "white", fontSize: "3.5rem", textAlign: "center", fontFamily: "var(--font-heading)", textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our Portfolio</h1>
+          <h1 className="hero-heading fade-in" style={{ color: "white", fontSize: "clamp(2.5rem, 8vw, 3.5rem)", textAlign: "center", fontFamily: "var(--font-heading)", textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our Portfolio</h1>
           <p style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto", color: "#f8fafc", fontSize: "1.1rem", textShadow: "0 2px 10px rgba(0,0,0,0.9)", fontWeight: 500 }}>
             Every project here is proof of work delivered, not just promised – road networks, water retaining structures, bridges, buildings, and dredging & reclamation works completed across Sri Lanka and beyond.
           </p>
@@ -173,7 +173,7 @@ export default function Projects() {
             <>
               <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '30px', marginTop: '20px' }}>
                 <div style={{ width: '4px', height: '35px', background: 'var(--primary-red)', borderRadius: '4px' }}></div>
-                <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2rem", color: "var(--text-dark)", margin: 0, textAlign: "left" }}>
+                <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.5rem, 5vw, 2rem)", color: "var(--text-dark)", margin: 0, textAlign: "left" }}>
                   Milestone Projects
                 </h2>
               </div>
@@ -183,7 +183,7 @@ export default function Projects() {
               
               <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '30px' }}>
                 <div style={{ width: '4px', height: '35px', background: 'var(--text-dark)', borderRadius: '4px' }}></div>
-                <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "1.8rem", color: "var(--text-dark)", margin: 0, textAlign: "left" }}>
+                <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.4rem, 4vw, 1.8rem)", color: "var(--text-dark)", margin: 0, textAlign: "left" }}>
                   All Completed Projects
                 </h2>
               </div>
