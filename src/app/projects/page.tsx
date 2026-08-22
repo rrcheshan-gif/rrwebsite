@@ -49,7 +49,7 @@ export default function Projects() {
           </div>
           <h1 className="hero-heading fade-in" style={{ color: "white", fontSize: "3.5rem", textAlign: "center", fontFamily: "var(--font-heading)", textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our Portfolio</h1>
           <p style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto", color: "#f8fafc", fontSize: "1.1rem", textShadow: "0 2px 10px rgba(0,0,0,0.9)", fontWeight: 500 }}>
-            Every project here is proof of work delivered, not just promised – road networks, water retaining structures, bridges, multi-storied buildings, and dredging & reclamation works completed across Sri Lanka and beyond.
+            Every project here is proof of work delivered, not just promised – road networks, water retaining structures, bridges, buildings, and dredging & reclamation works completed across Sri Lanka and beyond.
           </p>
         </div>
       </section>
