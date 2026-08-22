@@ -1240,6 +1240,30 @@ const projectsData = [
     title: "Matara Mahanama Bridge (116.4m)",
     status: "Completed",
     client: "Road Development Authority",
+      location: "Mahanama Bridge, Matara, Sri Lanka",
+      images: [
+        "/images/projects/project-86/Background image.jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 09.59.18.jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 09.59.19 (1).jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 09.59.19.jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 09.59.20 (1).jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 09.59.20 (2).jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 09.59.20 (3).jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 09.59.20.jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 10.00.01 (1).jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 10.00.01 (2).jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 10.00.01 (3).jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 10.00.01.jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 10.00.02 (1).jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 10.00.02 (2).jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 10.00.02.jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 10.00.21.jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 10.00.38 (1).jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 10.00.38 (2).jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 10.00.38 (3).jpeg",
+        "/images/projects/project-86/WhatsApp Image 2026-08-22 at 10.00.38.jpeg"
+      ],
+
     
     duration: "12 Months",
     year: 2007
