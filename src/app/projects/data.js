@@ -1104,6 +1104,24 @@ const projectsData = [
     title: "Navathkuli - Keraitivu - Mannar Road (Sangupitiy Bridge Approach)",
     status: "Completed",
     client: "Road Development Authority",
+      location: "Sangupiddy Bridge, Navatkuli - Mannar Road, Sri Lanka",
+      images: [
+        "/images/projects/project-75/Background image.jpeg",
+        "/images/projects/project-75/WhatsApp Image 2026-08-22 at 11.52.06 (2).jpeg",
+        "/images/projects/project-75/WhatsApp Image 2026-08-22 at 11.52.06 (7).jpeg",
+        "/images/projects/project-75/WhatsApp Image 2026-08-22 at 11.52.06.jpeg",
+        "/images/projects/project-75/WhatsApp Image 2026-08-22 at 11.52.07 (1).jpeg",
+        "/images/projects/project-75/WhatsApp Image 2026-08-22 at 11.52.07 (3).jpeg",
+        "/images/projects/project-75/WhatsApp Image 2026-08-22 at 11.52.07 (5).jpeg",
+        "/images/projects/project-75/WhatsApp Image 2026-08-22 at 11.52.07 (9).jpeg",
+        "/images/projects/project-75/WhatsApp Image 2026-08-22 at 11.52.07 (13).jpeg",
+        "/images/projects/project-75/WhatsApp Image 2026-08-22 at 11.52.07 (14).jpeg",
+        "/images/projects/project-75/WhatsApp Image 2026-08-22 at 11.52.07 (15).jpeg",
+        "/images/projects/project-75/WhatsApp Image 2026-08-22 at 11.52.07 (16).jpeg",
+        "/images/projects/project-75/WhatsApp Image 2026-08-22 at 11.52.07 (22).jpeg",
+        "/images/projects/project-75/WhatsApp Image 2026-08-22 at 11.52.07 (23).jpeg"
+      ],
+
     
     duration: "09 Months",
     year: 2015
