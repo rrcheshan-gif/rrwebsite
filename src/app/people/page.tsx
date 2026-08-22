@@ -52,7 +52,7 @@ export default function People() {
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
             </div>
             <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", marginBottom: "15px", color: "var(--text-dark)" }}>Training & Development</h3>
-            <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>We are profoundly committed to the continuous professional evolution of our workforce. We invest heavily in structured upskilling programs, ranging from rigorous ISO-certified occupational health and safety training to advanced workshops in modern structural technologies. By empowering our personnel with cutting-edge proficiencies, we foster a culture of perpetual innovation and operational excellence.</p>
+            <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>We are profoundly committed to the Continuous Professional Development (CPD) of our workforce. We invest heavily in structured upskilling programs, ranging from rigorous ISO-certified occupational health and safety training to advanced workshops in modern structural technologies. By empowering our personnel with cutting-edge proficiencies, we foster a culture of perpetual innovation and operational excellence.</p>
           </div>
           
         </div>
