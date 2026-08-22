@@ -18,7 +18,7 @@ export default function Home() {
       heading1: 'Engineering',
       heading2: "Sri Lanka's",
       heading3: 'Tomorrow',
-      desc: "For three decades, RR Construction has turned ambitious blueprints into the roads, bridges, harbours, and water systems that keep Sri Lanka moving forward � built to last, delivered on time."
+      desc: "For three decades, RR Construction has turned ambitious blueprints into the roads, bridges, harbours, and water systems that keep Sri Lanka moving forward - built to last, delivered on time."
     },
     {
       img: '/images/home/slider/polished/road.jpg',
