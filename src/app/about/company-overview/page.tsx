@@ -123,7 +123,7 @@ export default function AboutStory() {
                 <div style={{ width: "100%", height: isMobile ? "400px" : "500px", background: "var(--border-soft)", borderRadius: "24px", overflow: "hidden" }}>
                   <img 
                     src="/images/director_hd.jpg" 
-                    alt="Mr. Ranjith Senadheera - Managing Director" 
+                    alt="Mr. Ranjith Senadhera - Managing Director" 
                     style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} 
                   />
                 </div>
@@ -135,7 +135,7 @@ export default function AboutStory() {
                 <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
                 <h3 style={{ color: "var(--primary-red)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", margin: 0, fontWeight: 800, fontFamily: "var(--font-heading)" }}>Message from the Managing Director</h3>
               </div>
-              <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", marginBottom: "10px", fontFamily: "var(--font-heading)", fontWeight: 800 }}>Mr. Ranjith Senadheera</h2>
+              <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", marginBottom: "10px", fontFamily: "var(--font-heading)", fontWeight: 800 }}>Mr. Ranjith Senadhera</h2>
               <h4 style={{ color: "var(--text-light)", fontSize: "1.15rem", fontWeight: 500, marginBottom: "40px", borderBottom: "1px solid var(--border-soft)", paddingBottom: "30px" }}>
                 Managing Director, RR Construction (Pvt) Ltd
               </h4>
