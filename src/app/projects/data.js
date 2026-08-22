@@ -1307,6 +1307,29 @@ const projectsData = [
     
     duration: "12 Months",
     year: 2003
+  },
+  {
+    id: 'project-100',
+    type: 'completed',
+    category: 'maritime',
+    title: 'Harbour Basin Dredging up to -3m MSL Depth at Suduwella Anchorage',
+    status: 'Completed',
+    client: 'Ceylon Fishery Harbours Corporation (CFHC) / UNOPS',
+    location: 'Suduwella Anchorage, Matara, Sri Lanka',
+    duration: '10 Months',
+    value: 'LKR 77 Million',
+    year: 2013,
+    images: [
+      '/images/projects/project-100/1.jpg',
+      '/images/projects/project-100/3.jpg',
+      '/images/projects/project-100/4.jpg',
+      '/images/projects/project-100/5.jpg',
+      '/images/projects/project-100/6.jpg',
+      '/images/projects/project-100/7.jpg',
+      '/images/projects/project-100/8.jpg',
+      '/images/projects/project-100/9.jpg',
+      '/images/projects/project-100/Background image.jpg'
+    ]
   }
 ];
 
