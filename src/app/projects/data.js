@@ -211,6 +211,24 @@ const projectsData = [
     category: "roads",
     title: "Reconstruction of Proposed Improvement and Rehabilitation of Kurikadduvan Jetty (Approach Road)",
     client: "Road Development Authority",
+      location: "Kurikadduvan Jetty, Jaffna, Sri Lanka",
+      images: [
+        "/images/projects/project-10/Background image.jpeg",
+        "/images/projects/project-10/WhatsApp Image 2026-08-22 at 12.42.00 (2).jpeg",
+        "/images/projects/project-10/WhatsApp Image 2026-08-22 at 12.42.00.jpeg",
+        "/images/projects/project-10/WhatsApp Image 2026-08-22 at 12.42.01.jpeg",
+        "/images/projects/project-10/WhatsApp Image 2026-08-22 at 12.42.02 (1).jpeg",
+        "/images/projects/project-10/WhatsApp Image 2026-08-22 at 12.42.02.jpeg",
+        "/images/projects/project-10/WhatsApp Image 2026-08-22 at 12.42.03 (1).jpeg",
+        "/images/projects/project-10/WhatsApp Image 2026-08-22 at 12.42.03.jpeg",
+        "/images/projects/project-10/WhatsApp Image 2026-08-22 at 12.42.04 (1).jpeg",
+        "/images/projects/project-10/WhatsApp Image 2026-08-22 at 12.42.04 (2).jpeg",
+        "/images/projects/project-10/WhatsApp Image 2026-08-22 at 12.42.04.jpeg",
+        "/images/projects/project-10/WhatsApp Image 2026-08-22 at 12.42.06 (1).jpeg",
+        "/images/projects/project-10/WhatsApp Image 2026-08-22 at 12.42.06 (2).jpeg",
+        "/images/projects/project-10/WhatsApp Image 2026-08-22 at 12.42.06.jpeg"
+      ],
+
     duration: "12 Months",
     year: 2025,
     status: "Completed"
