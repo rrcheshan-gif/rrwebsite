@@ -102,7 +102,7 @@ export default function HealthAndSafety() {
               <AlertTriangle size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Hazard Identification</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
-                Before any major excavation or structural lift, our Safety Officers conduct exhaustive hazard assessments. In high-risk environments like deep maritime dredging or steep-gradient landslide mitigations, proactive monitoring is constant.
+                Risk mitigation begins long before ground is broken. Prior to any major excavation or complex structural lift, our certified Health and Safety (HSE) Professionals execute exhaustive, multi-tiered hazard assessments. In exceptionally high-risk environments - such as deep maritime dredging or steep-gradient landslide mitigations - we deploy advanced predictive analysis and continuous proactive monitoring to neutralize threats before they materialize.
               </p>
             </div>
 
@@ -110,7 +110,7 @@ export default function HealthAndSafety() {
               <HardHat size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Equipment Safety</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
-                With a massive internal fleet of {COMPANY_DATA.machineryFleet} machines, mechanical failure is a major safety risk. We enforce rigorous daily inspections and scheduled maintenance cycles to prevent catastrophic equipment failures on site.
+                Managing an extensive internal fleet of over {COMPANY_DATA.machineryFleet} heavy machines necessitates an uncompromising approach to mechanical integrity. We enforce rigorous, daily multipoint inspections and strict preventive maintenance cycles. This systematic approach eradicates the risk of catastrophic equipment failures on-site, ensuring both personnel safety and seamless operational continuity.
               </p>
             </div>
 
@@ -118,7 +118,7 @@ export default function HealthAndSafety() {
               <UserCheck size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Competency Training</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
-                PPE is useless without proper knowledge. We invest heavily in ongoing occupational health training, ensuring that our {COMPANY_DATA.workforce} workers understand the precise physics and dangers of the materials they handle.
+                Personal Protective Equipment (PPE) is only the first line of defense; true safety stems from profound technical competence. We invest heavily in continuous, specialized occupational health and safety training for our {COMPANY_DATA.workforce} personnel. By ensuring that every worker fundamentally understands the mechanics and latent hazards of their specific tasks, we foster an instinctual, proactive safety culture across all divisions.
               </p>
             </div>
 
@@ -126,7 +126,7 @@ export default function HealthAndSafety() {
               <HeartPulse size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Employee Wellbeing</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
-                We actively prevent work-related injuries and occupational ill health. By continuously monitoring site conditions and ensuring all workers use properly selected Personal Protective Equipment (PPE), we protect our workforce from preventable harm.
+                The holistic well-being of our workforce is a paramount corporate priority. Beyond standard accident prevention, we proactively combat occupational ill health through ergonomic assessments, continuous ambient site monitoring, and stringent health protocols. By equipping our personnel with meticulously selected, task-specific Personal Protective Equipment (PPE), we create a highly secure work environment free from preventable harm.
               </p>
             </div>
 

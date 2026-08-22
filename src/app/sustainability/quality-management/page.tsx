@@ -102,7 +102,7 @@ export default function QualityManagement() {
               <Factory size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Vertical Integration</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
-                By relying on our own heavy machinery fleet and self-operated crusher plants, we completely control the supply chain. This eliminates the risk of third-party delays or substandard aggregate materials entering our construction sites.
+                By leveraging our expansive, self-owned heavy machinery fleet and strategically operated crusher and asphalt plants, we maintain uncompromising command over our entire supply chain. This robust vertical integration effectively eradicates the risk of third-party logistical delays and ensures that only premium, rigorously tested aggregate materials are utilized across all our high-stakes construction sites.
               </p>
             </div>
 
@@ -110,7 +110,7 @@ export default function QualityManagement() {
               <ClipboardCheck size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Rigorous Testing</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
-                Before an asphalt layer is laid on the Central Expressway or concrete is poured for a bridge pier, it undergoes strict laboratory testing. Core sampling, compaction tests, and load-bearing verifications are standard operating procedures.
+                Quality assurance is embedded at the core of our operations. Before a single asphalt layer is applied to a major expressway or a structural concrete pour commences, materials undergo exhaustive laboratory analysis. Comprehensive core sampling, precision compaction tests, and stringent load-bearing verifications form the baseline of our non-negotiable standard operating procedures.
               </p>
             </div>
 
@@ -118,7 +118,7 @@ export default function QualityManagement() {
               <Target size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Expert Supervision</h3>
               <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
-                Our sites are monitored by highly experienced Chartered Engineers and Senior Quantity Surveyors. We catch deviations from technical specifications early, ensuring every milestone is achieved right the first time.
+                Every project site operates under the vigilant, hands-on oversight of highly seasoned Chartered Civil Engineers and Senior Quantity Surveyors. This elite technical supervision enables us to preemptively identify and rectify any deviations from critical engineering specifications, guaranteeing that every structural milestone is executed with absolute precision and strict adherence to international standards.
               </p>
             </div>
 
