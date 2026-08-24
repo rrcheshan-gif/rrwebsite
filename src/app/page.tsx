@@ -103,13 +103,13 @@ export default function Home() {
             <img className="img-polished" 
               src={slide.img} 
               alt={slide.tag} 
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', opacity: 0.65 }} 
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', opacity: 1 }} 
               onError={(e) => { if (slide.fallback) (e.target as HTMLImageElement).src = slide.fallback; }} 
             />
           </div>
         ))}
         {/* Balanced Cinematic Overlay for high text contrast */}
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(180deg, rgba(5, 10, 25, 0.65) 0%, rgba(0, 0, 0, 0.45) 45%, rgba(5, 10, 25, 0.8) 100%)', zIndex: 2 }}></div>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(180deg, rgba(5, 10, 25, 0.55) 0%, rgba(0, 0, 0, 0.3) 45%, rgba(5, 10, 25, 0.7) 100%)', zIndex: 2 }}></div>
 
         {/* Foreground Content */}
         <div className="container" style={{ position: "relative", zIndex: 3, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
@@ -378,7 +378,7 @@ export default function Home() {
               { title: "Maritime & Water", img: "/images/maritime-harbour-site.jpg", icon: <Waves size={30} />, text: "Dredging, reclamation, and water supply systems engineered to serve communities at scale." }
             ].map((srv, i) => (
               <div key={i} className="modern-service-card glass-panel hover-lift" style={{ gridColumn: i === 0 || i === 3 ? "span 7" : "span 5", minHeight: "450px", position: "relative", overflow: "hidden", padding: 0 }}>
-                <img src={srv.img} alt={srv.title} className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.6 }} onMouseOver={(e) => { e.currentTarget.style.opacity = '0.8' }} onMouseOut={(e) => { e.currentTarget.style.opacity = '0.6' }} />
+                <img src={srv.img} alt={srv.title} className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.9, transition: "opacity 0.5s ease" }} onMouseOver={(e) => { e.currentTarget.style.opacity = '1' }} onMouseOut={(e) => { e.currentTarget.style.opacity = '0.9' }} />
                 <div className="msc-content" style={{ position: "absolute", bottom: 0, left: 0, width: "100%", padding: "40px", background: "linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 70%, transparent)", color: "white", pointerEvents: "none" }}>
                   <div style={{ color: "white", marginBottom: "20px", display: "inline-block", padding: "15px", background: "var(--primary-red)", borderRadius: "20px", boxShadow: "0 10px 20px rgba(229,57,53,0.3)" }}>{srv.icon}</div>
                   <h3 style={{ fontSize: "clamp(1.6rem, 5vw, 2.2rem)", marginBottom: "15px", color: "white", fontFamily: "var(--font-heading)", letterSpacing: "1px" }}>{srv.title}</h3>

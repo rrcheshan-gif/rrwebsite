@@ -1310,16 +1310,16 @@ ul {
 
 /* Image Polishing Global Utilities */
 .img-polished {
-    filter: contrast(105%) saturate(110%);
+    /* Removed filters to preserve raw image detail */
+    filter: none;
 }
 
 .img-hover-zoom {
-    transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1), filter 0.8s ease;
+    transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1);
 }
 
 .img-hover-zoom:hover {
-    transform: scale(1.08);
-    filter: contrast(110%) saturate(115%) brightness(95%);
+    transform: scale(1.05);
 }
 
 .portrait-polished {
