@@ -40,7 +40,7 @@ export default function Home() {
       desc: "We deliver advanced maritime infrastructure, including dredging, breakwaters, and harbour facility development, ensuring robust connectivity for Sri Lanka's coastal trade and economic growth."
     },
     {
-      img: '/images/home/slider/polished/bridge.jpg',
+      img: '/images/home/bridge_mahanama.jpeg',
       duration: 8000,
       tag: '03 / BRIDGES & OVERPASSES',
       heading1: 'Structural Integrity',
