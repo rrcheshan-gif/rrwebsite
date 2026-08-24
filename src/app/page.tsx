@@ -11,7 +11,7 @@ export default function Home() {
 
   const slides = [
     {
-      img: '/images/home/SLIDE_01.jpg',
+      img: '/images/home/SLIDE_01_Fihladhoo.jpg',
       fallback: '/images/hero-road-roller.jpg',
       duration: 12000,
       tag: 'PASSION FOR ENGINEERING EXCELLENCE',
@@ -103,7 +103,7 @@ export default function Home() {
             <img className="img-polished" 
               src={slide.img} 
               alt={slide.tag} 
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', opacity: 0.58 }} 
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', opacity: 0.65 }} 
               onError={(e) => { if (slide.fallback) (e.target as HTMLImageElement).src = slide.fallback; }} 
             />
           </div>
