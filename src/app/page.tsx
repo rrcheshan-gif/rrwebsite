@@ -109,7 +109,7 @@ export default function Home() {
           </div>
         ))}
         {/* Balanced Cinematic Overlay for high text contrast */}
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(180deg, rgba(5, 10, 25, 0.55) 0%, rgba(0, 0, 0, 0.3) 45%, rgba(5, 10, 25, 0.7) 100%)', zIndex: 2 }}></div>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.5) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 80%, rgba(0,0,0,0.7) 100%)', zIndex: 2 }}></div>
 
         {/* Foreground Content */}
         <div className="container" style={{ position: "relative", zIndex: 3, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
@@ -236,12 +236,12 @@ export default function Home() {
                     </div>
                   </div>
                 )}
-                <h2 style={{ fontFamily: "var(--font-heading)", color: "#ffffff", fontSize: "clamp(2.5rem, 5vw + 1rem, 4.5rem)", lineHeight: 1.1, marginBottom: "clamp(10px, 2vh, 20px)", textTransform: "uppercase", WebkitTextStroke: "0.5px rgba(0,0,0,0.8)", textShadow: "2px 2px 0px rgba(0,0,0,1), 0 8px 30px rgba(0, 0, 0, 1), 0 4px 15px rgba(0, 0, 0, 0.9)", textAlign: "center" }}>
+                <h2 style={{ fontFamily: "var(--font-heading)", color: "#ffffff", fontSize: "clamp(2.5rem, 5vw + 1rem, 4.5rem)", lineHeight: 1.1, marginBottom: "clamp(10px, 2vh, 20px)", textTransform: "uppercase", WebkitTextStroke: "0.5px rgba(0,0,0,0.8)", textShadow: "2px 2px 0px rgba(0,0,0,1), 0 10px 40px rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,0.9)", textAlign: "center" }}>
                   {slide.heading1}<br/>
                   <span style={{ color: "#ff4d4d", WebkitTextStroke: "0.5px rgba(0,0,0,0.8)", textShadow: "2px 2px 0px rgba(0,0,0,1), 0 8px 30px rgba(0, 0, 0, 1)" }}>{slide.heading2}</span>
                   {slide.heading3 && <><br/>{slide.heading3}</>}
                 </h2>
-                <p style={{ fontSize: "clamp(1.05rem, 2vw, 1.3rem)", lineHeight: 1.8, marginBottom: "clamp(15px, 3vh, 30px)", color: "#ffffff", maxWidth: "780px", margin: "0 auto clamp(15px, 3vh, 30px)", fontWeight: 500, textShadow: "1px 1px 3px rgba(0,0,0,1), 0 4px 20px rgba(0,0,0,0.95)", textAlign: "center" }}>
+                <p style={{ fontSize: "clamp(1.05rem, 2vw, 1.3rem)", lineHeight: 1.8, marginBottom: "clamp(15px, 3vh, 30px)", color: "#ffffff", maxWidth: "780px", margin: "0 auto clamp(15px, 3vh, 30px)", fontWeight: 500, textShadow: "2px 2px 4px rgba(0,0,0,1), 0 8px 30px rgba(0,0,0,1)", textAlign: "center" }}>
                   {slide.desc}
                 </p>
                 <div className="hero-buttons" style={{ display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: "center" }}>
