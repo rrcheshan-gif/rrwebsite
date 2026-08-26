@@ -164,7 +164,7 @@ export default function GoalsAndTargets() {
           <div style={{ display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "center" }}>
             
             {/* Left side text */}
-            <div style={{ flex: "1 1 400px" }}>
+            <div style={{ flex: "1 1 min(100%, 400px)" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
                 <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
                 <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.95rem", fontFamily: "var(--font-heading)" }}>Measurable Outcomes</h2>

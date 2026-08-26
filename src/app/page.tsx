@@ -270,7 +270,7 @@ export default function Home() {
       <section className="bg-gradient-adaptive" style={{ padding: "70px 20px", position: "relative", overflow: 'hidden' }}>
         <div className="container" style={{ display: "flex", flexWrap: "wrap", alignItems: "stretch", gap: "60px", position: "relative", zIndex: 2 }}>
           
-          <div style={{ flex: "1 1 400px", position: "relative" }}>
+          <div style={{ flex: "1 1 min(100%, 400px)", position: "relative" }}>
             {/* Premium Picture Collage */}
             <div style={{ position: "relative", width: "100%", height: "calc(100% - 10px)", zIndex: 1, marginTop: "10px" }}>
               {/* Perfectly Aligned Red Dashed Outer Frame */}
@@ -332,7 +332,7 @@ export default function Home() {
             </div>
           </div>
           
-          <div style={{ flex: "1 1 500px", display: "flex", flexDirection: "column", justifyContent: "center", paddingLeft: "clamp(0px, 4vw, 40px)" }}>
+          <div style={{ flex: "1 1 min(100%, 500px)", display: "flex", flexDirection: "column", justifyContent: "center", paddingLeft: "clamp(0px, 4vw, 40px)" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "25px" }}>
               <div style={{ width: "50px", height: "4px", background: "var(--primary-red)", borderRadius: "2px" }}></div>
               <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.95rem" }}>Corporate Profile</h2>
@@ -437,7 +437,7 @@ export default function Home() {
                { icon: <MapPin color="white" size={24} />, title: "Central Expressway", text: "Section 2 Package-A", num: "02" },
                { icon: <Droplets color="white" size={24} />, title: "Ampara Water Treatment Plant", text: "172,000 cum/day capacity", num: "03" }
              ].map((proj, i) => (
-                <div key={i} className="glass-panel hover-lift" style={{ display: "flex", gap: "25px", padding: "30px", position: "relative", zIndex: 1, transform: i === 1 ? "translateX(-30px)" : "none", transition: "transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease", cursor: "pointer", background: "var(--white)", border: "1px solid var(--border-soft)" }} onMouseOver={(e) => { e.currentTarget.style.transform = i === 1 ? "translateX(-20px) translateY(-5px)" : "translateY(-5px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.05)" }} onMouseOut={(e) => { e.currentTarget.style.transform = i === 1 ? "translateX(-30px)" : "none"; e.currentTarget.style.boxShadow = "none" }}>
+                <div key={i} className="glass-panel hover-lift" style={{ display: "flex", gap: "25px", padding: "30px", position: "relative", zIndex: 1, transform: i === 1 ? "translateX(0)" : "none", transition: "transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease", cursor: "pointer", background: "var(--white)", border: "1px solid var(--border-soft)" }} onMouseOver={(e) => { e.currentTarget.style.transform = i === 1 ? "translateX(0) translateY(-5px)" : "translateY(-5px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.05)" }} onMouseOut={(e) => { e.currentTarget.style.transform = i === 1 ? "translateX(0)" : "none"; e.currentTarget.style.boxShadow = "none" }}>
                   <div style={{ position: "absolute", right: "20px", top: "15px", fontSize: "clamp(2rem, 6vw, 3rem)", fontWeight: 800, color: "var(--text-light)", opacity: 0.15, fontFamily: "var(--font-heading)", lineHeight: 1 }}>{proj.num}</div>
                   <div style={{ width: "60px", height: "60px", background: "var(--primary-red)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 10px 20px rgba(229,57,53,0.2)" }}>
                     {proj.icon}
