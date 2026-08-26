@@ -129,7 +129,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
 
   const galleryImages = project.images || project.galleryImages || [];
   const hasGallery = galleryImages.length > 0;
-  const heroImg = project.heroImage || (galleryImages.length > 0 ? (galleryImages.find((img) => img.toLowerCase().includes('background')) || galleryImages[0]) : null);
+  const heroImg = project.heroImage || (galleryImages.length > 0 ? (galleryImages.find((img: string) => img.toLowerCase().includes('background')) || galleryImages[0]) : null);
 
   return (
     <div style={{ backgroundColor: "var(--bg-light)", minHeight: "100vh" }}>
@@ -210,7 +210,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
         <div className="container" style={{ position: 'relative', zIndex: 10 }}>
           <button
             onClick={() => router.back()}
-            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '20px', color: '#ccc', textDecoration: 'none', borderBottom: '1px solid #ccc', paddingBottom: '2px', background: 'none', border: 'none', borderBottom: '1px solid #ccc', cursor: 'pointer', fontSize: '1rem', fontFamily: 'inherit' }}
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '20px', color: '#ccc', textDecoration: 'none', paddingBottom: '2px', background: 'none', border: 'none', borderBottom: '1px solid #ccc', cursor: 'pointer', fontSize: '1rem', fontFamily: 'inherit' }}
           >
             ← Back
           </button>
