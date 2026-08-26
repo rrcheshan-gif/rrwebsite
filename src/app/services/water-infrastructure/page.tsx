@@ -168,7 +168,7 @@ export default function WaterInfrastructurePage() {
             flexDirection: isMobile ? 'column' : 'row'
           }}>
             <div style={{ padding: '40px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              <div style={{ color: 'var(--primary-red)', fontWeight: 'bold', textTransform: 'uppercase', fontSize: '14px', letterSpacing: '1px', marginBottom: '10px' }}>
+              <div style={{ color: 'var(--primary-red)', fontWeight: 'bold',  fontSize: '14px', letterSpacing: '1px', marginBottom: '10px' }}>
                 Major Project
               </div>
               <h3 style={{ color: 'var(--text-dark)', fontSize: '28px', marginBottom: '20px', fontFamily: 'var(--font-heading)' }}>

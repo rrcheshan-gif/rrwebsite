@@ -140,7 +140,7 @@ export default function Home() {
                       style={{ 
                         fontWeight: 800, 
                         fontSize: "clamp(1.05rem, 2.2vw, 1.55rem)", 
-                        textTransform: "uppercase", 
+                         
                         letterSpacing: "clamp(3px, 0.8vw, 6px)",
                         lineHeight: 1.3,
                         display: "flex",
@@ -152,7 +152,7 @@ export default function Home() {
                     >
                       {/* PASSION FOR in crisp white */}
                       <span style={{ color: "#ffffff", display: "inline-flex" }}>
-                        {"PASSION FOR".split("").map((char, charIdx) => (
+                        {"Passion for".split("").map((char, charIdx) => (
                           <span
                             key={`p-${charIdx}-${currentSlide}`}
                             style={{
@@ -169,7 +169,7 @@ export default function Home() {
                       </span>
                       {/* ENGINEERING EXCELLENCE in glowing brand red */}
                       <span style={{ color: "#ff4d4d", textShadow: "2px 2px 0px rgba(0,0,0,1), 0 4px 20px rgba(0, 0, 0, 0.9)", display: "inline-flex" }}>
-                        {"ENGINEERING EXCELLENCE".split("").map((char, charIdx) => (
+                        {"Engineering Excellence".split("").map((char, charIdx) => (
                           <span
                             key={`e-${charIdx}-${currentSlide}`}
                             style={{
@@ -227,7 +227,7 @@ export default function Home() {
                         color: "rgba(255, 255, 255, 0.95)", 
                         fontWeight: 700, 
                         fontSize: "clamp(0.75rem, 1.4vw, 0.95rem)", 
-                        textTransform: "uppercase", 
+                         
                         letterSpacing: "3px",
                         textShadow: "0 2px 12px rgba(0,0,0,0.85)"
                       }}
@@ -236,7 +236,7 @@ export default function Home() {
                     </div>
                   </div>
                 )}
-                <h2 style={{ fontFamily: "var(--font-heading)", color: "#ffffff", fontSize: "clamp(2.5rem, 5vw + 1rem, 4.5rem)", lineHeight: 1.1, marginBottom: "clamp(10px, 2vh, 20px)", textTransform: "uppercase", WebkitTextStroke: "0.5px rgba(0,0,0,0.8)", textShadow: "2px 2px 0px rgba(0,0,0,1), 0 10px 40px rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,0.9)", textAlign: "center" }}>
+                <h2 style={{ fontFamily: "var(--font-heading)", color: "#ffffff", fontSize: "clamp(2.5rem, 5vw + 1rem, 4.5rem)", lineHeight: 1.1, marginBottom: "clamp(10px, 2vh, 20px)",  WebkitTextStroke: "0.5px rgba(0,0,0,0.8)", textShadow: "2px 2px 0px rgba(0,0,0,1), 0 10px 40px rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,0.9)", textAlign: "center" }}>
                   {slide.heading1}<br/>
                   <span style={{ color: "#ff4d4d", WebkitTextStroke: "0.5px rgba(0,0,0,0.8)", textShadow: "2px 2px 0px rgba(0,0,0,1), 0 8px 30px rgba(0, 0, 0, 1)" }}>{slide.heading2}</span>
                   {slide.heading3 && <><br/>{slide.heading3}</>}
@@ -322,8 +322,8 @@ export default function Home() {
                     <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
                       <div style={{ fontSize: "2.5rem", fontWeight: 800, fontFamily: "var(--font-heading)", lineHeight: 1, color: "var(--primary-red)" }}>{COMPANY_DATA.yearsOfExcellence}</div>
                       <div style={{ textAlign: "left" }}>
-                        <h4 style={{ margin: 0, fontSize: "0.9rem", fontFamily: "var(--font-heading)", textTransform: "uppercase", letterSpacing: "1px", color: "var(--primary-red)", fontWeight: 800 }}>Years of</h4>
-                        <p style={{ color: "var(--text-dark)", margin: 0, fontSize: "0.9rem", fontWeight: 700, textTransform: "uppercase" }}>Excellence</p>
+                        <h4 style={{ margin: 0, fontSize: "0.9rem", fontFamily: "var(--font-heading)",  letterSpacing: "1px", color: "var(--primary-red)", fontWeight: 800 }}>Years of</h4>
+                        <p style={{ color: "var(--text-dark)", margin: 0, fontSize: "0.9rem", fontWeight: 700,  }}>Excellence</p>
                       </div>
                     </div>
                     
@@ -335,12 +335,12 @@ export default function Home() {
           <div style={{ flex: "1 1 min(100%, 500px)", display: "flex", flexDirection: "column", justifyContent: "center", paddingLeft: "clamp(0px, 4vw, 40px)" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "25px" }}>
               <div style={{ width: "50px", height: "4px", background: "var(--primary-red)", borderRadius: "2px" }}></div>
-              <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.95rem" }}>Corporate Profile</h2>
+              <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "3px",  margin: 0, fontSize: "0.95rem" }}>Corporate Profile</h2>
             </div>
             
             <h1 style={{ fontSize: "clamp(2.2rem, 3.5vw, 3.2rem)", lineHeight: 1.15, marginBottom: "25px", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800 }}>
-              RR CONSTRUCTION<br />(PVT) LTD
-              <span style={{ color: "var(--primary-red)", fontWeight: 600, fontSize: "0.45em", letterSpacing: "2px", display: "block", marginTop: "15px", textTransform: "uppercase" }}>Construction & Heavy Civil Engineering In Sri Lanka</span>
+              RR Construction<br />(Pvt) Ltd
+              <span style={{ color: "var(--primary-red)", fontWeight: 600, fontSize: "0.45em", letterSpacing: "2px", display: "block", marginTop: "15px",  }}>Construction & Heavy Civil Engineering In Sri Lanka</span>
             </h1>
             
             <p style={{ color: "var(--text-light)", marginBottom: "40px", lineHeight: 1.8, fontSize: "1.1rem" }}>
@@ -358,8 +358,8 @@ export default function Home() {
       <section style={{ padding: "60px 20px", background: "var(--bg-light)", position: "relative" }}>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
-            <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px" }}>Sectors of Operation</h4>
-            <h2 className="text-gradient" style={{ fontSize: "clamp(2rem, 6vw, 3rem)", fontFamily: "var(--font-heading)" }}>OUR CORE EXPERTISE</h2>
+            <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px" }}>Sectors of Operation</h4>
+            <h2 className="text-gradient" style={{ fontSize: "clamp(2rem, 6vw, 3rem)", fontFamily: "var(--font-heading)" }}>Our Core Expertise</h2>
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
           
@@ -392,9 +392,9 @@ export default function Home() {
           <div style={{ flex: 1, minWidth: 'min(100%, 350px)', position: "relative", paddingTop: "20px" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
               <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Our Legacy</h4>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px",  margin: 0, fontSize: "0.9rem" }}>Our Legacy</h4>
             </div>
-            <h2 style={{ fontSize: "clamp(2.2rem, 6vw, 3.2rem)", lineHeight: 1.1, marginBottom: "20px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>THREE DECADES OF<br/><span className="text-gradient" style={{ fontWeight: 300 }}>EXCELLENCE</span></h2>
+            <h2 style={{ fontSize: "clamp(2.2rem, 6vw, 3.2rem)", lineHeight: 1.1, marginBottom: "20px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>Three Decades of<br/><span className="text-gradient" style={{ fontWeight: 300 }}>Excellence</span></h2>
             <p style={{ fontSize: "1.1rem", color: "var(--text-light)", marginBottom: "25px", lineHeight: 1.8 }}>
               Since our establishment in {COMPANY_DATA.established}, we have evolved into a fully-fledged heavy civil engineering contractor delivering multi-billion rupee projects for both local and international clients.
             </p>
@@ -443,7 +443,7 @@ export default function Home() {
           >
             <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
               <div style={{ width: "25px", height: "1px", background: "var(--primary-red)" }}></div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2.5px", textTransform: "uppercase", margin: 0, fontSize: "0.82rem" }}>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2.5px",  margin: 0, fontSize: "0.82rem" }}>
                 Trusted By Our Major Clients
               </h4>
               <div style={{ width: "25px", height: "1px", background: "var(--primary-red)" }}></div>

@@ -36,11 +36,11 @@ export default function AboutStory() {
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.85) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
-            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
+            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
               &larr; Back to Home
             </Link>
           </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2rem" : "2.8rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textTransform: "uppercase" }}>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2rem" : "2.8rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)",  }}>
             RR <span style={{ color: "var(--primary-red)" }}>Overview</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
@@ -56,7 +56,7 @@ export default function AboutStory() {
             <div style={{ flex: "1", minWidth: "300px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
                 <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
-                <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "1rem", fontFamily: "var(--font-heading)" }}>Introduction</h2>
+                <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px",  margin: 0, fontSize: "1rem", fontFamily: "var(--font-heading)" }}>Introduction</h2>
               </div>
               <h3 style={{ fontSize: isMobile ? "2rem" : "3rem", color: "var(--text-dark)", margin: "0 0 30px", fontFamily: "var(--font-heading)", lineHeight: 1.2, fontWeight: 800 }}>
                 A Legacy of Engineering <br/><span style={{ color: "var(--text-light)" }}>Excellence.</span>
@@ -101,7 +101,7 @@ export default function AboutStory() {
                 <img src="/images/overview-page.png" alt="RR Construction Project Site" style={{ width: "100%", height: "100%", display: "block", objectFit: "cover" }} />
                 <div style={{ position: "absolute", bottom: "30px", left: "-20px", background: "var(--primary-red)", color: "white", padding: "20px 30px", borderRadius: "12px", boxShadow: "0 10px 30px rgba(229, 57, 53, 0.4)" }}>
                   <h4 style={{ margin: 0, fontSize: "2rem", fontFamily: "var(--font-heading)", fontWeight: 800 }}>{COMPANY_DATA.established}</h4>
-                  <p style={{ margin: 0, fontSize: "0.9rem", textTransform: "uppercase", letterSpacing: "1px", fontWeight: 600 }}>Year Established</p>
+                  <p style={{ margin: 0, fontSize: "0.9rem",  letterSpacing: "1px", fontWeight: 600 }}>Year Established</p>
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function AboutStory() {
             <div style={{ flex: 1, minWidth: 'min(100%, 300px)', display: "flex", justifyContent: "center", position: "relative" }}>
               <div style={{ position: "absolute", bottom: "-20px", right: "20px", background: "var(--primary-red)", color: "white", padding: "15px 25px", borderRadius: "16px", zIndex: 3, boxShadow: "0 15px 30px rgba(229, 57, 53, 0.3)" }}>
                 <h4 style={{ margin: 0, fontSize: "1.2rem", fontFamily: "var(--font-heading)", color: "#ffffff", fontWeight: 800 }}>{COMPANY_DATA.yearsOfExcellence} Years</h4>
-                <p style={{ margin: 0, fontSize: "0.8rem", fontWeight: 600, color: "#ffffff", letterSpacing: "0.5px", textTransform: "uppercase" }}>Leadership</p>
+                <p style={{ margin: 0, fontSize: "0.8rem", fontWeight: 600, color: "#ffffff", letterSpacing: "0.5px",  }}>Leadership</p>
               </div>
               <div style={{ padding: "12px", background: "var(--white)", borderRadius: "32px", width: "100%", maxWidth: "450px", boxShadow: "0 20px 50px rgba(0,0,0,0.08)", position: "relative", zIndex: 2, border: "2px solid var(--border-soft)" }}>
                 <div style={{ width: "100%", height: isMobile ? "400px" : "500px", background: "var(--border-soft)", borderRadius: "24px", overflow: "hidden" }}>
@@ -133,7 +133,7 @@ export default function AboutStory() {
             <div style={{ flex: 1.5, minWidth: 'min(100%, 350px)' }}>
               <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
                 <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
-                <h3 style={{ color: "var(--primary-red)", fontSize: "1rem", textTransform: "uppercase", letterSpacing: "2px", margin: 0, fontWeight: 800, fontFamily: "var(--font-heading)" }}>Message from the Managing Director</h3>
+                <h3 style={{ color: "var(--primary-red)", fontSize: "1rem",  letterSpacing: "2px", margin: 0, fontWeight: 800, fontFamily: "var(--font-heading)" }}>Message from the Managing Director</h3>
               </div>
               <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", marginBottom: "10px", fontFamily: "var(--font-heading)", fontWeight: 800 }}>Mr. Ranjith Senadhera</h2>
               <h4 style={{ color: "var(--text-light)", fontSize: "1.15rem", fontWeight: 500, marginBottom: "40px", borderBottom: "1px solid var(--border-soft)", paddingBottom: "30px" }}>
@@ -195,11 +195,11 @@ export default function AboutStory() {
             <div style={{ flex: 1, minWidth: "300px", display: "flex", gap: "20px", flexDirection: "column" }}>
               <div style={{ background: "rgba(255,255,255,0.1)", padding: "30px", borderRadius: "20px", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.1)" }}>
                 <h4 style={{ fontSize: "3rem", color: "var(--primary-red)", margin: 0, fontFamily: "var(--font-heading)", fontWeight: 800, lineHeight: 1 }}>{COMPANY_DATA.workforce}</h4>
-                <p style={{ color: "white", margin: "10px 0 0", fontSize: "1rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "1px" }}>Dedicated Workforce</p>
+                <p style={{ color: "white", margin: "10px 0 0", fontSize: "1rem", fontWeight: 600,  letterSpacing: "1px" }}>Dedicated Workforce</p>
               </div>
               <div style={{ background: "rgba(255,255,255,0.1)", padding: "30px", borderRadius: "20px", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.1)" }}>
                 <h4 style={{ fontSize: "3rem", color: "var(--primary-red)", margin: 0, fontFamily: "var(--font-heading)", fontWeight: 800, lineHeight: 1 }}>{COMPANY_DATA.machineryFleet}</h4>
-                <p style={{ color: "white", margin: "10px 0 0", fontSize: "1rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "1px" }}>Heavy Machinery Fleet</p>
+                <p style={{ color: "white", margin: "10px 0 0", fontSize: "1rem", fontWeight: 600,  letterSpacing: "1px" }}>Heavy Machinery Fleet</p>
               </div>
             </div>
           </div>

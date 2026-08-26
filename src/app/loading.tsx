@@ -16,7 +16,7 @@ export default function Loading() {
             100% { transform: rotate(360deg); }
           }
         `}} />
-        <p style={{ color: "var(--text-light)", fontFamily: "var(--font-heading)", fontSize: "1.1rem", fontWeight: 600, letterSpacing: "2px", textTransform: "uppercase" }}>Loading...</p>
+        <p style={{ color: "var(--text-light)", fontFamily: "var(--font-heading)", fontSize: "1.1rem", fontWeight: 600, letterSpacing: "2px",  }}>Loading...</p>
       </div>
     </div>
   );

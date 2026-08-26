@@ -74,13 +74,13 @@ export default function SustainabilityHub() {
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.85) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
-            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
+            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
               &larr; Back to Home
             </Link>
           </div>
-          <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px", textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>Our Responsibility</h4>
+          <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px", textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>Our Responsibility</h4>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2rem" : "2.8rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", lineHeight: 1.2 }}>
-            Sustainability <br/><span style={{ color: "var(--primary-red)" }}>& HSE</span>
+            Sustainability <br/><span style={{ color: "var(--primary-red)" }}>& Hse</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "800px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Building the foundations of Sri Lanka demands an absolute commitment to environmental balance, uncompromising worker safety, and community empowerment.
@@ -132,7 +132,7 @@ export default function SustainabilityHub() {
                     <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.6, marginBottom: "30px", flexGrow: 1 }}>
                       {pillar.desc}
                     </p>
-                    <div style={{ display: "flex", alignItems: "center", gap: "10px", color: pillar.color, fontWeight: 700, fontSize: "1.05rem", textTransform: "uppercase", letterSpacing: "1px" }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: "10px", color: pillar.color, fontWeight: 700, fontSize: "1.05rem",  letterSpacing: "1px" }}>
                       Explore <ArrowRight size={20} />
                     </div>
                   </div>

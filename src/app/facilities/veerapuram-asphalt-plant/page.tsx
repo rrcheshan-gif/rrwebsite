@@ -86,15 +86,15 @@ export default function VeerapuramPlant() {
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
             <Link href="/facilities" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold" }}>← Back to Quarries & Aggregates</Link>
           </div>
-          <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px", textShadow: "0 2px 5px rgba(0,0,0,0.8)" }}>Sand Plant & M-Sand Facility</h4>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem", textTransform: "uppercase", textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}>VEERAPURAM PLANT</h1>
+          <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px", textShadow: "0 2px 5px rgba(0,0,0,0.8)" }}>Sand Plant & M-Sand Facility</h4>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem",  textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}>Veerapuram Plant</h1>
         </div>
       </section>
 
       {/* Intro Section */}
       <section style={{ padding: "50px 20px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
-          <h4 style={{ color: "var(--primary-red)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "2px", marginBottom: "10px" }}>Veerapuram M Sand Plant and Crusher Plant</h4>
+          <h4 style={{ color: "var(--primary-red)", fontWeight: 700,  letterSpacing: "2px", marginBottom: "10px" }}>Veerapuram M Sand Plant and Crusher Plant</h4>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>Choose M-SAND for your all kind of Constructions</h2>
           <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "40px" }}>The Modern Alternative to the River Sand.</p>
 
@@ -126,7 +126,7 @@ export default function VeerapuramPlant() {
       <section style={{ padding: "50px 20px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", textTransform: "uppercase" }}>Our Veerapuram Facility</h2>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Our Veerapuram Facility</h2>
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
 
@@ -144,7 +144,7 @@ export default function VeerapuramPlant() {
       <section style={{ padding: "50px 20px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", textTransform: "uppercase" }}>Why Switch to Our M-Sand?</h2>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Why Switch to Our M-Sand?</h2>
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "30px" }}>
@@ -215,7 +215,7 @@ export default function VeerapuramPlant() {
       <section style={{ padding: "50px 20px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", textTransform: "uppercase" }}>VEERAPURAM PLANT: Quality Assurance</h2>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>VEERAPURAM PLANT: Quality Assurance</h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px" }}>Our M-Sand is manufactured under strict quality control standards to ensure consistent performance.</p>
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
@@ -266,7 +266,7 @@ export default function VeerapuramPlant() {
       <section style={{ padding: "50px 20px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", textTransform: "uppercase" }}>VEERAPURAM PLANT: Our Products</h2>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>VEERAPURAM PLANT: Our Products</h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px" }}>High Quality Aggregates & M-Sand for Stronger Constructions</p>
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>

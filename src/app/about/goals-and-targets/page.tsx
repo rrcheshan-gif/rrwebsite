@@ -82,7 +82,7 @@ export default function GoalsAndTargets() {
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(15, 23, 42, 0.9) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
-            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
+            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
               &larr; Back to Home
             </Link>
           </div>
@@ -91,7 +91,7 @@ export default function GoalsAndTargets() {
               <Target size={32} color="white" />
             </div>
           </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2rem" : "2.8rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textTransform: "uppercase" }}>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2rem" : "2.8rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)",  }}>
             Goals & <span style={{ color: "var(--primary-red)" }}>Targets</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "20px", maxWidth: "750px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
@@ -104,7 +104,7 @@ export default function GoalsAndTargets() {
       <section style={{ padding: isMobile ? "30px 10px" : "40px 20px" }}>
         <div className="container" style={{ maxWidth: "900px", margin: "0 auto", padding: "0 16px" }}>
           <div style={{ background: "rgba(229, 57, 53, 0.05)", padding: "30px", borderRadius: "16px", borderLeft: "4px solid var(--primary-red)", textAlign: "center" }}>
-            <h4 style={{ color: "var(--primary-red)", fontSize: "1.1rem", fontWeight: 800, textTransform: "uppercase", marginBottom: "15px" }}>Primary Objective</h4>
+            <h4 style={{ color: "var(--primary-red)", fontSize: "1.1rem", fontWeight: 800,  marginBottom: "15px" }}>Primary Objective</h4>
             <p style={{ color: "var(--text-dark)", fontSize: "1.2rem", fontWeight: 600, margin: 0, fontStyle: "italic", lineHeight: 1.6 }}>
               "To achieve a high degree of customer satisfaction through appropriate technology, effective project delivery, cost-conscious execution and timely completion."
             </p>
@@ -167,7 +167,7 @@ export default function GoalsAndTargets() {
             <div style={{ flex: "1 1 min(100%, 400px)" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
                 <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
-                <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.95rem", fontFamily: "var(--font-heading)" }}>Measurable Outcomes</h2>
+                <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px",  margin: 0, fontSize: "0.95rem", fontFamily: "var(--font-heading)" }}>Measurable Outcomes</h2>
               </div>
               <h3 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", color: "var(--text-dark)", margin: "0 0 25px", fontFamily: "var(--font-heading)", lineHeight: 1.15, fontWeight: 800 }}>
                 Setting the Benchmark for <span style={{ color: "var(--primary-red)" }}>Performance</span>

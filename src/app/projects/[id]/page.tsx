@@ -215,7 +215,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
             ← Back
           </button>
           <div style={{ display: 'flex', gap: '8px', marginBottom: '15px' }}>
-            <span style={{ padding: '5px 14px', background: 'rgba(15, 23, 42, 0.8)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.25)', borderRadius: "30px", fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>{categoryDisplay}</span>
+            <span style={{ padding: '5px 14px', background: 'rgba(15, 23, 42, 0.8)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.25)', borderRadius: "30px", fontSize: '0.8rem', fontWeight: 700,  letterSpacing: '0.5px' }}>{categoryDisplay}</span>
             <span style={{ padding: '5px 14px', background: project.status.includes('Ongoing') ? 'rgba(217, 119, 6, 0.85)' : 'rgba(16, 185, 129, 0.85)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.3)', borderRadius: "30px", fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.3px' }}>{project.status}</span>
           </div>
           <h1 className="hero-heading" style={{ fontSize: 'clamp(1.5rem, 3.2vw, 2.4rem)', lineHeight: '1.3', marginBottom: '0', textShadow: '0 2px 8px rgba(0,0,0,0.5)', color: 'white' }}>{project.title}</h1>
@@ -274,27 +274,27 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
               <div style={{ background: 'var(--white)', padding: '30px', borderRadius: '12px', boxShadow: '0 10px 40px rgba(0,0,0,0.05)', marginBottom: '30px' }}>
                 
                 <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
-                  <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '5px', letterSpacing: '1px' }}>Client</h4>
+                  <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem',  marginBottom: '5px', letterSpacing: '1px' }}>Client</h4>
                   <p style={{ color: 'var(--text-dark)', fontSize: '1.1rem', fontWeight: 'bold' }}>{project.client}</p>
                 </div>
                 
                 {project.contractNo && (
                   <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
-                    <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '5px', letterSpacing: '1px' }}>Contract No</h4>
+                    <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem',  marginBottom: '5px', letterSpacing: '1px' }}>Contract No</h4>
                     <p style={{ color: 'var(--text-dark)', fontSize: '1.1rem', fontWeight: 'bold' }}>{project.contractNo}</p>
                   </div>
                 )}
                 
                 {project.value && (
                   <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
-                    <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '5px', letterSpacing: '1px' }}>Contract Value</h4>
+                    <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem',  marginBottom: '5px', letterSpacing: '1px' }}>Contract Value</h4>
                     <p style={{ color: 'var(--text-dark)', fontSize: '1.1rem', fontWeight: 'bold' }}>{project.value}</p>
                   </div>
                 )}
                 
                 {project.type !== 'ongoing' && (
                   <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
-                    <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '5px', letterSpacing: '1px' }}>Duration</h4>
+                    <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem',  marginBottom: '5px', letterSpacing: '1px' }}>Duration</h4>
                     <p style={{ color: 'var(--text-dark)', fontSize: '1.1rem', fontWeight: 'bold' }}>{project.duration}</p>
                   </div>
                 )}
@@ -319,12 +319,12 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '15px' }}>
                     <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textDecoration: 'none', borderRadius: '10px', overflow: 'hidden', position: 'relative', cursor: 'pointer' }}>
                       <iframe src={mapSrc} width="100%" height="200" style={{ border: 0, display: 'block', pointerEvents: 'none' }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                      <div style={{ position: 'absolute', bottom: '10px', left: '10px', background: 'rgba(0,0,0,0.7)', color: 'white', padding: '4px 10px', borderRadius: '12px', fontSize: '0.75rem', fontWeight: 'bold', letterSpacing: '0.5px' }}>MAP VIEW</div>
+                      <div style={{ position: 'absolute', bottom: '10px', left: '10px', background: 'rgba(0,0,0,0.7)', color: 'white', padding: '4px 10px', borderRadius: '12px', fontSize: '0.75rem', fontWeight: 'bold', letterSpacing: '0.5px' }}>Map View</div>
                     </a>
 
                     <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textDecoration: 'none', borderRadius: '10px', overflow: 'hidden', position: 'relative', cursor: 'pointer' }}>
                       <iframe src={satelliteSrc} width="100%" height="200" style={{ border: 0, display: 'block', pointerEvents: 'none' }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                      <div style={{ position: 'absolute', bottom: '10px', left: '10px', background: 'rgba(0,0,0,0.7)', color: 'white', padding: '4px 10px', borderRadius: '12px', fontSize: '0.75rem', fontWeight: 'bold', letterSpacing: '0.5px' }}>SATELLITE</div>
+                      <div style={{ position: 'absolute', bottom: '10px', left: '10px', background: 'rgba(0,0,0,0.7)', color: 'white', padding: '4px 10px', borderRadius: '12px', fontSize: '0.75rem', fontWeight: 'bold', letterSpacing: '0.5px' }}>Satellite</div>
                     </a>
                   </div>
                 </div>

@@ -187,13 +187,13 @@ export default function Services() {
         <div style={{ position: 'absolute', left: 0, top: 0, width: '5px', height: '100%', background: 'var(--primary-red)', borderRadius: '0 4px 4px 0' }} />
 
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <Link href="/" style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '28px' }}>
+          <Link href="/" style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', fontWeight: 600, letterSpacing: '1.5px',  textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '28px' }}>
             ← Home
           </Link>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '18px' }}>
             <div style={{ width: '36px', height: '2px', background: 'var(--primary-red)' }} />
-            <span style={{ color: 'var(--primary-red)', fontWeight: 800, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.82rem' }}>Engineering Capabilities</span>
+            <span style={{ color: 'var(--primary-red)', fontWeight: 800, letterSpacing: '3px',  fontSize: '0.82rem' }}>Engineering Capabilities</span>
           </div>
 
           <h1 style={{ fontFamily: 'var(--font-heading)', color: 'white', fontSize: isMobile ? '2.8rem' : '4.8rem', fontWeight: 900, margin: '0 0 20px', lineHeight: 1.05, letterSpacing: '-1px' }}>
@@ -214,7 +214,7 @@ export default function Services() {
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
             <div style={{ width: '36px', height: '2px', background: 'var(--primary-red)' }} />
-            <span style={{ color: 'var(--primary-red)', fontWeight: 800, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.82rem' }}>Our Services</span>
+            <span style={{ color: 'var(--primary-red)', fontWeight: 800, letterSpacing: '3px',  fontSize: '0.82rem' }}>Our Services</span>
           </div>
 
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '2rem' : '2.8rem', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 44px', lineHeight: 1.15 }}>
@@ -245,7 +245,7 @@ export default function Services() {
 
                 {/* Body */}
                 <div className="svc-card-body">
-                  <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--primary-red)', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: '8px' }}>{svc.subtitle}</div>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--primary-red)',  letterSpacing: '1.5px', marginBottom: '8px' }}>{svc.subtitle}</div>
                   <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.3rem' : '1.45rem', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 12px', lineHeight: 1.2 }}>{svc.title}</h3>
                   <p style={{ color: 'var(--text-light)', lineHeight: 1.75, fontSize: '0.93rem', margin: '0 0 20px', flex: 1 }}>{svc.desc}</p>
 
@@ -287,7 +287,7 @@ export default function Services() {
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
               <div style={{ width: '36px', height: '2px', background: 'var(--primary-red)' }} />
-              <span style={{ color: 'var(--primary-red)', fontWeight: 800, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.82rem' }}>Resource Management</span>
+              <span style={{ color: 'var(--primary-red)', fontWeight: 800, letterSpacing: '3px',  fontSize: '0.82rem' }}>Resource Management</span>
             </div>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '2rem' : '2.8rem', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 20px', lineHeight: 1.15 }}>
               Planned Before<br />Ground is Broken

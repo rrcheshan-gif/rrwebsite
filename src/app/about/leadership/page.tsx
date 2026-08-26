@@ -36,11 +36,11 @@ export default function Leadership() {
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.7) 0%, rgba(15, 23, 42, 0.9) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
-            <Link href="/about" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
+            <Link href="/about" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
               &larr; Back to About
             </Link>
           </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2rem" : "2.8rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textTransform: "uppercase" }}>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: isMobile ? "2rem" : "2.8rem", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)",  }}>
             Board of <span style={{ color: "var(--primary-red)" }}>Directors</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
@@ -72,7 +72,7 @@ export default function Leadership() {
                 )}
                 <div style={{ flex: 1 }}>
                   <h3 style={{ fontSize: isMobile ? "2rem" : "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 8px 0" }}>{leader.name}</h3>
-                  <p style={{ color: "var(--primary-red)", fontSize: "1.2rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", margin: "0 0 15px 0" }}>{leader.role}</p>
+                  <p style={{ color: "var(--primary-red)", fontSize: "1.2rem", fontWeight: 700,  letterSpacing: "1px", margin: "0 0 15px 0" }}>{leader.role}</p>
                   <p style={{ color: "var(--text-light)", fontSize: "1.1rem", margin: "0 0 20px 0", fontWeight: 600 }}>{leader.qual}</p>
                   {leader.bio && (
                     <div style={{ borderTop: "1px solid var(--border-soft)", paddingTop: "20px" }}>
@@ -105,7 +105,7 @@ export default function Leadership() {
                 )}
                 <div>
                   <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 5px 0" }}>{leader.name}</h3>
-                  <p style={{ color: "var(--primary-red)", fontSize: "1.1rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", margin: "0 0 10px 0" }}>{leader.role}</p>
+                  <p style={{ color: "var(--primary-red)", fontSize: "1.1rem", fontWeight: 700,  letterSpacing: "1px", margin: "0 0 10px 0" }}>{leader.role}</p>
                   <p style={{ color: "var(--text-light)", fontSize: "1.05rem", margin: 0 }}>{leader.qual}</p>
                 </div>
               </div>

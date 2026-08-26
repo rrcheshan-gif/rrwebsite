@@ -55,13 +55,13 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
         <div className="container" style={{ position: "relative", zIndex: 2, maxWidth: "900px" }}>
           
           <div style={{ textAlign: "left", marginBottom: "30px" }}>
-            <Link href="/news" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-flex", alignItems: "center", gap: "8px" }}>
+            <Link href="/news" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-flex", alignItems: "center", gap: "8px" }}>
               <ArrowLeft size={16} /> Back to News
             </Link>
           </div>
 
           <div style={{ display: "flex", justifyContent: "center", gap: "15px", marginBottom: "20px" }}>
-            <span style={{ background: "var(--primary-red)", color: "white", padding: "6px 16px", borderRadius: "30px", fontSize: "0.85rem", fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase" }}>
+            <span style={{ background: "var(--primary-red)", color: "white", padding: "6px 16px", borderRadius: "30px", fontSize: "0.85rem", fontWeight: 700, letterSpacing: "1px",  }}>
               {news.tag}
             </span>
           </div>

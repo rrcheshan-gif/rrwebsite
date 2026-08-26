@@ -45,7 +45,7 @@ export default function LandslideMitigationPage() {
       marginBottom: '20px',
       fontWeight: 'bold',
       fontSize: '14px',
-      textTransform: 'uppercase' as const,
+       as const,
       letterSpacing: '1px',
     },
     h1: {

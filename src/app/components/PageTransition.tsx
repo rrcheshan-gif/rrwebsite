@@ -94,7 +94,7 @@ export default function PageTransition() {
           fontSize: "clamp(0.85rem, 3.5vw, 1.1rem)", 
           fontWeight: 800, 
           letterSpacing: "2px", 
-          textTransform: "uppercase",
+          
           textAlign: "center",
           margin: "5px auto",
           width: "100%"

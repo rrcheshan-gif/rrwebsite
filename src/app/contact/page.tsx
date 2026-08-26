@@ -16,7 +16,7 @@ export default function Contact() {
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.65) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
-            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
+            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
             </Link>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "4.5rem", margin: 0 }}>Get In Touch</h1>
@@ -30,7 +30,7 @@ export default function Contact() {
           <div>
               <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
                 <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
-                <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Reach Out</h4>
+                <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px",  margin: 0, fontSize: "0.9rem" }}>Reach Out</h4>
               </div>
               <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "3rem", color: "var(--text-dark)", marginBottom: "40px" }}>Contact Information</h2>
               
@@ -82,19 +82,19 @@ export default function Contact() {
               
               <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "25px", position: "relative", zIndex: 2 }}>
                 <div>
-                  <label htmlFor="name" style={{ display: "block", marginBottom: "10px", color: "#94a3b8", fontSize: "0.95rem", textTransform: "uppercase", letterSpacing: "1px" }}>Full Name</label>
+                  <label htmlFor="name" style={{ display: "block", marginBottom: "10px", color: "#94a3b8", fontSize: "0.95rem",  letterSpacing: "1px" }}>Full Name</label>
                   <input type="text" id="name" name="name" style={{ width: "100%", padding: "16px", border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.02)", color: "white", borderRadius: "12px", fontSize: "1rem", outline: "none" }} required />
                 </div>
                 <div>
-                  <label htmlFor="email" style={{ display: "block", marginBottom: "10px", color: "#94a3b8", fontSize: "0.95rem", textTransform: "uppercase", letterSpacing: "1px" }}>Email Address</label>
+                  <label htmlFor="email" style={{ display: "block", marginBottom: "10px", color: "#94a3b8", fontSize: "0.95rem",  letterSpacing: "1px" }}>Email Address</label>
                   <input type="email" id="email" name="email" style={{ width: "100%", padding: "16px", border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.02)", color: "white", borderRadius: "12px", fontSize: "1rem", outline: "none" }} required />
                 </div>
                 <div>
-                  <label htmlFor="phone" style={{ display: "block", marginBottom: "10px", color: "#94a3b8", fontSize: "0.95rem", textTransform: "uppercase", letterSpacing: "1px" }}>Phone Number <span style={{ opacity: 0.5, textTransform: "none", letterSpacing: "normal" }}>(optional)</span></label>
+                  <label htmlFor="phone" style={{ display: "block", marginBottom: "10px", color: "#94a3b8", fontSize: "0.95rem",  letterSpacing: "1px" }}>Phone Number <span style={{ opacity: 0.5, textTransform: "none", letterSpacing: "normal" }}>(optional)</span></label>
                   <input type="tel" id="phone" name="phone" style={{ width: "100%", padding: "16px", border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.02)", color: "white", borderRadius: "12px", fontSize: "1rem", outline: "none" }} />
                 </div>
                 <div>
-                  <label htmlFor="subject" style={{ display: "block", marginBottom: "10px", color: "#94a3b8", fontSize: "0.95rem", textTransform: "uppercase", letterSpacing: "1px" }}>Subject / Inquiry Type</label>
+                  <label htmlFor="subject" style={{ display: "block", marginBottom: "10px", color: "#94a3b8", fontSize: "0.95rem",  letterSpacing: "1px" }}>Subject / Inquiry Type</label>
                   <select id="subject" name="subject" style={{ width: "100%", padding: "16px", border: "1px solid rgba(255,255,255,0.1)", background: "#111", color: "white", borderRadius: "12px", fontSize: "1rem", outline: "none", cursor: "pointer" }}>
                     <option>General Inquiry</option>
                     <option>Project Consultation</option>
@@ -103,7 +103,7 @@ export default function Contact() {
                   </select>
                 </div>
                 <div>
-                  <label htmlFor="message" style={{ display: "block", marginBottom: "10px", color: "#94a3b8", fontSize: "0.95rem", textTransform: "uppercase", letterSpacing: "1px" }}>Message</label>
+                  <label htmlFor="message" style={{ display: "block", marginBottom: "10px", color: "#94a3b8", fontSize: "0.95rem",  letterSpacing: "1px" }}>Message</label>
                   <textarea id="message" name="message" rows={5} style={{ width: "100%", padding: "16px", border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.02)", color: "white", borderRadius: "12px", fontSize: "1rem", resize: "vertical", fontFamily: "inherit", outline: "none" }} required></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary" style={{ width: "100%", marginTop: "15px", padding: "18px", fontSize: "1.1rem", borderRadius: "12px" }}>Send Message</button>
@@ -116,7 +116,7 @@ export default function Contact() {
         <div className="container" style={{ marginTop: "80px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
             <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
-            <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Our Location</h4>
+            <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px",  margin: 0, fontSize: "0.9rem" }}>Our Location</h4>
           </div>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", marginBottom: "30px" }}>Visit Our Head Office</h2>
           <div style={{ background: "var(--white)", padding: "15px", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.08)", border: "1px solid var(--border-soft)", display: "flex", flexWrap: "wrap", gap: "15px" }}>

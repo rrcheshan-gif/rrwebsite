@@ -91,18 +91,18 @@ export default function QuarriesAggregates() {
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.65) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "5px" }}>
-            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
+            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
             </Link>
           </div>
-          <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px", textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>Premium Aggregates Supply</h4>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem", textTransform: "uppercase", textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>QUARRIES & AGGREGATES</h1>
+          <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px", textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>Premium Aggregates Supply</h4>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem",  textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Quarries & Aggregates</h1>
         </div>
       </section>
 
       {/* Introduction Section */}
       <section style={{ padding: "50px 20px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", textTransform: "uppercase", textShadow: "0 2px 10px rgba(0,0,0,0.05)", marginBottom: "5px" }}>Industrial-Grade Aggregates for Construction Projects</h2>
+          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  textShadow: "0 2px 10px rgba(0,0,0,0.05)", marginBottom: "5px" }}>Industrial-Grade Aggregates for Construction Projects</h2>
           <p style={{ fontSize: "1.2rem", lineHeight: 1.8, color: "var(--text-light)", maxWidth: "800px", margin: "0 auto 30px" }}>
             RR Construction operates three high-capacity, fully automated quarries and processing plants strategically located across Sri Lanka. Catering to major B2B infrastructure developers, road contractors, and commercial builders, we guarantee consistent quality, massive stockpiles, and a direct transport fleet for on-time site delivery.
           </p>
@@ -130,7 +130,7 @@ export default function QuarriesAggregates() {
       <section style={{ padding: "50px 20px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", textTransform: "uppercase" }}>Our Strategic Plant Locations</h2>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Our Strategic Plant Locations</h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px" }}>Three crushing powerhouses placed strategically to cover the Western, North Central, and Northern Provinces.</p>
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
@@ -140,7 +140,7 @@ export default function QuarriesAggregates() {
             <div onClick={() => router.push('/thudugala-plant')} style={{ background: "var(--white)", borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", cursor: "pointer", transition: "transform 0.2s ease" }}>
               <div style={{ minWidth: 'min(100%, 300px)', cursor: "pointer", position: "relative" }} className="img-polish" >
                 <img className="img-polished img-hover-zoom" src="/images/thudugala-5.jpg" alt="Thudugala Plant" style={{ width: "100%", height: "300px", objectFit: "cover", display: "block" }} />
-                <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px", textTransform: "uppercase", letterSpacing: "1px" }}>Western Province</span>
+                <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px",  letterSpacing: "1px" }}>Western Province</span>
               </div>
               <div style={{ padding: "20px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <div>
@@ -158,7 +158,7 @@ export default function QuarriesAggregates() {
             <div onClick={() => router.push('/veerapuram-plant')} style={{ background: "var(--white)", borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", cursor: "pointer", transition: "transform 0.2s ease" }}>
               <div style={{ minWidth: 'min(100%, 300px)', cursor: "pointer", position: "relative" }} className="img-polish" >
                 <img className="img-polished img-hover-zoom" src="/images/omanthai-1.jpg" alt="Veerapuram Plant" style={{ width: "100%", height: "300px", objectFit: "cover", display: "block" }} />
-                <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px", textTransform: "uppercase", letterSpacing: "1px" }}>Northern Province</span>
+                <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px",  letterSpacing: "1px" }}>Northern Province</span>
               </div>
               <div style={{ padding: "20px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <div>
@@ -176,7 +176,7 @@ export default function QuarriesAggregates() {
             <div onClick={() => router.push('/omanthai-plant')} style={{ background: "var(--white)", borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", cursor: "pointer", transition: "transform 0.2s ease" }}>
               <div style={{ minWidth: 'min(100%, 300px)', cursor: "pointer", position: "relative" }} className="img-polish" >
                 <img className="img-polished img-hover-zoom" src="/images/omanthai/plant-1.jpg" alt="Omanthai Plant" style={{ width: "100%", height: "300px", objectFit: "cover", display: "block" }} />
-                <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px", textTransform: "uppercase", letterSpacing: "1px" }}>Northern Province</span>
+                <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px",  letterSpacing: "1px" }}>Northern Province</span>
               </div>
               <div style={{ padding: "20px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <div>
@@ -194,7 +194,7 @@ export default function QuarriesAggregates() {
             <div onClick={() => router.push('/yakawewa-plant')} style={{ background: "var(--white)", borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", cursor: "pointer", transition: "transform 0.2s ease" }}>
               <div style={{ minWidth: 'min(100%, 300px)', cursor: "pointer", position: "relative" }} className="img-polish" >
                 <img className="img-polished img-hover-zoom" src="/images/yakawewa-asphalt-2.jpg" alt="Yakawewa Asphalt Plant" style={{ width: "100%", height: "300px", objectFit: "cover", display: "block" }} />
-                <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px", textTransform: "uppercase", letterSpacing: "1px" }}>North Central Province</span>
+                <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px",  letterSpacing: "1px" }}>North Central Province</span>
               </div>
               <div style={{ padding: "20px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <div>
@@ -215,7 +215,7 @@ export default function QuarriesAggregates() {
       <section style={{ padding: "50px 20px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", textTransform: "uppercase" }}>Available Products & Specifications</h2>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Available Products & Specifications</h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px" }}>Select from our wide range of crushed rock aggregates to suit your exact engineering needs.</p>
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
@@ -225,42 +225,42 @@ export default function QuarriesAggregates() {
             <div style={{ background: "var(--white)", padding: "30px", borderRadius: "8px", boxShadow: "0 4px 15px rgba(0,0,0,0.03)", borderTop: "4px solid var(--primary-red)" }}>
               <h4 style={{ color: "var(--text-dark)", fontSize: "1.3rem", marginBottom: "12px", fontFamily: "var(--font-heading)" }}>3/4" (20mm) Aggregate</h4>
               <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "15px" }}>The standard coarse aggregate for structural concrete mixes, columns, beams, slabs, and general reinforced concrete works.</p>
-              <span style={{ background: "rgba(229, 57, 53, 0.08)", color: "var(--primary-red)", fontSize: "0.85rem", fontWeight: 700, padding: "4px 10px", borderRadius: "4px", textTransform: "uppercase" }}>Structural Concrete</span>
+              <span style={{ background: "rgba(229, 57, 53, 0.08)", color: "var(--primary-red)", fontSize: "0.85rem", fontWeight: 700, padding: "4px 10px", borderRadius: "4px",  }}>Structural Concrete</span>
             </div>
             
             {/* ABC Material */}
             <div style={{ background: "var(--white)", padding: "30px", borderRadius: "8px", boxShadow: "0 4px 15px rgba(0,0,0,0.03)", borderTop: "4px solid var(--primary-red)" }}>
               <h4 style={{ color: "var(--text-dark)", fontSize: "1.3rem", marginBottom: "12px", fontFamily: "var(--font-heading)" }}>Aggregate Base Course (ABC)</h4>
               <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "15px" }}>Perfectly graded mixture of coarse aggregates and quarry dust for premium sub-base and base compaction in roads and highways.</p>
-              <span style={{ background: "rgba(229, 57, 53, 0.08)", color: "var(--primary-red)", fontSize: "0.85rem", fontWeight: 700, padding: "4px 10px", borderRadius: "4px", textTransform: "uppercase" }}>Road Construction</span>
+              <span style={{ background: "rgba(229, 57, 53, 0.08)", color: "var(--primary-red)", fontSize: "0.85rem", fontWeight: 700, padding: "4px 10px", borderRadius: "4px",  }}>Road Construction</span>
             </div>
 
             {/* Manufactured Sand */}
             <div style={{ background: "var(--white)", padding: "30px", borderRadius: "8px", boxShadow: "0 4px 15px rgba(0,0,0,0.03)", borderTop: "4px solid var(--primary-red)" }}>
               <h4 style={{ color: "var(--text-dark)", fontSize: "1.3rem", marginBottom: "12px", fontFamily: "var(--font-heading)" }}>Manufactured Sand (M-Sand)</h4>
               <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "15px" }}>Premium fine aggregate alternative to river sand, double washed for high-strength concrete mixes and masonry plastering works.</p>
-              <span style={{ background: "rgba(229, 57, 53, 0.08)", color: "var(--primary-red)", fontSize: "0.85rem", fontWeight: 700, padding: "4px 10px", borderRadius: "4px", textTransform: "uppercase" }}>Eco Fine Aggregate</span>
+              <span style={{ background: "rgba(229, 57, 53, 0.08)", color: "var(--primary-red)", fontSize: "0.85rem", fontWeight: 700, padding: "4px 10px", borderRadius: "4px",  }}>Eco Fine Aggregate</span>
             </div>
 
             {/* Quarry Dust */}
             <div style={{ background: "var(--white)", padding: "30px", borderRadius: "8px", boxShadow: "0 4px 15px rgba(0,0,0,0.03)", borderTop: "4px solid var(--primary-red)" }}>
               <h4 style={{ color: "var(--text-dark)", fontSize: "1.3rem", marginBottom: "12px", fontFamily: "var(--font-heading)" }}>Quarry Dust</h4>
               <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "15px" }}>Finely crushed stone fractions under 5mm, ideal for concrete hollow block manufacturing and as filling material under paving stones.</p>
-              <span style={{ background: "rgba(229, 57, 53, 0.08)", color: "var(--primary-red)", fontSize: "0.85rem", fontWeight: 700, padding: "4px 10px", borderRadius: "4px", textTransform: "uppercase" }}>Blocks & Fillings</span>
+              <span style={{ background: "rgba(229, 57, 53, 0.08)", color: "var(--primary-red)", fontSize: "0.85rem", fontWeight: 700, padding: "4px 10px", borderRadius: "4px",  }}>Blocks & Fillings</span>
             </div>
             
             {/* Rubbles & Boulders */}
             <div style={{ background: "var(--white)", padding: "30px", borderRadius: "8px", boxShadow: "0 4px 15px rgba(0,0,0,0.03)", borderTop: "4px solid var(--primary-red)" }}>
               <h4 style={{ color: "var(--text-dark)", fontSize: "1.3rem", marginBottom: "12px", fontFamily: "var(--font-heading)" }}>6" x 9" Rubbles & Boulders</h4>
               <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "15px" }}>High-density boulders for gravity retaining walls, bridge abutments, foundation packing, and coastal bank protection structures.</p>
-              <span style={{ background: "rgba(229, 57, 53, 0.08)", color: "var(--primary-red)", fontSize: "0.85rem", fontWeight: 700, padding: "4px 10px", borderRadius: "4px", textTransform: "uppercase" }}>Retaining & Foundation</span>
+              <span style={{ background: "rgba(229, 57, 53, 0.08)", color: "var(--primary-red)", fontSize: "0.85rem", fontWeight: 700, padding: "4px 10px", borderRadius: "4px",  }}>Retaining & Foundation</span>
             </div>
             
             {/* 1/2" & 1" Metal */}
             <div style={{ background: "var(--white)", padding: "30px", borderRadius: "8px", boxShadow: "0 4px 15px rgba(0,0,0,0.03)", borderTop: "4px solid var(--primary-red)" }}>
               <h4 style={{ color: "var(--text-dark)", fontSize: "1.3rem", marginBottom: "12px", fontFamily: "var(--font-heading)" }}>1/2" (12mm) & 1" (25mm) Metal</h4>
               <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "15px" }}>Specific aggregate gradations for precast concrete, asphalt wearing courses, and specific grading criteria for industrial applications.</p>
-              <span style={{ background: "rgba(229, 57, 53, 0.08)", color: "var(--primary-red)", fontSize: "0.85rem", fontWeight: 700, padding: "4px 10px", borderRadius: "4px", textTransform: "uppercase" }}>Precast & Asphalt</span>
+              <span style={{ background: "rgba(229, 57, 53, 0.08)", color: "var(--primary-red)", fontSize: "0.85rem", fontWeight: 700, padding: "4px 10px", borderRadius: "4px",  }}>Precast & Asphalt</span>
             </div>
           </div>
         </div>

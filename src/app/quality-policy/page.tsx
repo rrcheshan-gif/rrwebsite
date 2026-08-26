@@ -8,11 +8,11 @@ export default function QualityPolicy() {
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.65) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
-            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
+            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
             </Link>
           </div>
-          <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px", textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>Our Standards</h4>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem", textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>QUALITY POLICY</h1>
+          <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px", textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>Our Standards</h4>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem", textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Quality Policy</h1>
         </div>
       </section>
 
@@ -25,7 +25,7 @@ export default function QualityPolicy() {
             </div>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", marginBottom: "30px" }}>Committed to ISO 9001:2015</h2>
             <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "var(--text-light)", marginBottom: "40px" }}>
-              Quality is the cornerstone of RR Construction's legacy. As A leading heavy civil engineering enterprise, we operate under a rigorous Quality Management System certified to <strong>ISO 9001:2015</strong> standards. Our policy ensures that every cubic meter of concrete poured, every kilometer of asphalt laid, and every structural beam erected meets uncompromising national and international engineering benchmarks.
+              Quality is the cornerstone of RR Construction's legacy. As A leading heavy civil engineering enterprise, we operate under a rigorous Quality Management System certified to <strong>Iso 9001:2015</strong> standards. Our policy ensures that every cubic meter of concrete poured, every kilometer of asphalt laid, and every structural beam erected meets uncompromising national and international engineering benchmarks.
             </p>
           </div>
           

@@ -81,7 +81,7 @@ export default function VisionMission() {
                 color: "var(--primary-red)", 
                 fontWeight: 700, 
                 letterSpacing: "4px", 
-                textTransform: "uppercase", 
+                 
                 fontSize: "0.9rem",
                 display: "flex",
                 alignItems: "center",
@@ -111,7 +111,7 @@ export default function VisionMission() {
                 color: "#94a3b8", 
                 textDecoration: "none", 
                 fontWeight: 600, 
-                textTransform: "uppercase", 
+                 
                 letterSpacing: "1px", 
                 fontSize: "0.85rem",
                 borderBottom: "1px solid rgba(255,255,255,0.2)",
@@ -159,7 +159,7 @@ export default function VisionMission() {
                   <div style={{ width: "50px", height: "50px", borderRadius: "12px", background: "rgba(211, 47, 47, 0.1)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <Eye size={24} color="var(--primary-red)" />
                   </div>
-                  <h2 style={{ margin: 0, fontSize: "1rem", color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px", textTransform: "uppercase" }}>Our Vision</h2>
+                  <h2 style={{ margin: 0, fontSize: "1rem", color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px",  }}>Our Vision</h2>
                 </div>
                 
                 <h3 style={{ 
@@ -204,7 +204,7 @@ export default function VisionMission() {
                   <div style={{ width: "50px", height: "50px", borderRadius: "12px", background: "rgba(255, 255, 255, 0.1)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <Target size={24} color="white" />
                   </div>
-                  <h2 style={{ margin: 0, fontSize: "1rem", color: "white", fontWeight: 800, letterSpacing: "2px", textTransform: "uppercase" }}>Our Mission</h2>
+                  <h2 style={{ margin: 0, fontSize: "1rem", color: "white", fontWeight: 800, letterSpacing: "2px",  }}>Our Mission</h2>
                 </div>
                 
                 <h3 style={{ 
