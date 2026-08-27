@@ -404,7 +404,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div style={{ flex: 1, minWidth: 'min(100%, 350px)', display: "grid", gap: "25px", position: "relative", marginTop: "60px" }}>
+          <div style={{ flex: 1, minWidth: 'min(100%, 350px)', display: "grid", gap: "15px", position: "relative", marginTop: "40px" }}>
              {/* Large background decorative number */}
              <div style={{ position: "absolute", right: "-50px", top: "-50px", fontSize: "15rem", fontWeight: 900, color: "rgba(0,0,0,0.02)", fontFamily: "var(--font-heading)", zIndex: 0, pointerEvents: "none", lineHeight: 1 }}>03</div>
              
@@ -413,13 +413,13 @@ export default function Home() {
                { icon: <MapPin color="white" size={24} />, title: "Central Expressway", text: "Section 2 Package-A", num: "02" },
                { icon: <Droplets color="white" size={24} />, title: "Ampara Water Treatment Plant", text: "172,000 cum/day capacity", num: "03" }
              ].map((proj, i) => (
-                <div key={i} className="glass-panel hover-lift" style={{ display: "flex", gap: "25px", padding: "30px", position: "relative", zIndex: 1, transform: i === 1 ? "translateX(0)" : "none", transition: "transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease", cursor: "pointer", background: "var(--white)", border: "1px solid var(--border-soft)" }} onMouseOver={(e) => { e.currentTarget.style.transform = i === 1 ? "translateX(0) translateY(-5px)" : "translateY(-5px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.05)" }} onMouseOut={(e) => { e.currentTarget.style.transform = i === 1 ? "translateX(0)" : "none"; e.currentTarget.style.boxShadow = "none" }}>
-                  <div style={{ position: "absolute", right: "20px", top: "15px", fontSize: "clamp(2rem, 6vw, 3rem)", fontWeight: 800, color: "var(--text-light)", opacity: 0.15, fontFamily: "var(--font-heading)", lineHeight: 1 }}>{proj.num}</div>
-                  <div style={{ width: "60px", height: "60px", background: "var(--primary-red)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 10px 20px rgba(229,57,53,0.2)" }}>
+                <div key={i} className="glass-panel hover-lift" style={{ display: "flex", gap: "20px", padding: "20px", position: "relative", zIndex: 1, transform: i === 1 ? "translateX(0)" : "none", transition: "transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease", cursor: "pointer", background: "var(--white)", border: "1px solid var(--border-soft)" }} onMouseOver={(e) => { e.currentTarget.style.transform = i === 1 ? "translateX(0) translateY(-5px)" : "translateY(-5px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.05)" }} onMouseOut={(e) => { e.currentTarget.style.transform = i === 1 ? "translateX(0)" : "none"; e.currentTarget.style.boxShadow = "none" }}>
+                  <div style={{ position: "absolute", right: "20px", top: "20px", fontSize: "clamp(1.5rem, 4vw, 2.2rem)", fontWeight: 800, color: "var(--text-light)", opacity: 0.15, fontFamily: "var(--font-heading)", lineHeight: 1 }}>{proj.num}</div>
+                  <div style={{ width: "50px", height: "50px", background: "var(--primary-red)", borderRadius: "14px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 10px 20px rgba(229,57,53,0.2)" }}>
                     {proj.icon}
                   </div>
                   <div style={{ position: "relative", zIndex: 2 }}>
-                    <h4 style={{ color: "var(--text-dark)", fontSize: "1.3rem", marginBottom: "8px", fontFamily: "var(--font-heading)" }}>{proj.title}</h4>
+                    <h4 style={{ color: "var(--text-dark)", fontSize: "1.1rem", marginBottom: "4px", fontFamily: "var(--font-heading)" }}>{proj.title}</h4>
                     <p style={{ color: "var(--text-light)", fontSize: "0.95rem", margin: 0 }}>{proj.text}</p>
                   </div>
                 </div>
