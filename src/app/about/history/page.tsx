@@ -85,114 +85,103 @@ export default function HistoryTimeline() {
         </div>
       </section>
 
-      {/* Modern Asymmetric Timeline */}
-      <section style={{ padding: isMobile ? "60px 15px" : "120px 20px", position: 'relative' }}>
-        <div className="container" style={{ maxWidth: "1100px", position: "relative" }}>
-          
-          <div style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', position: 'relative' }}>
+      {/* Staircase Ribbon Timeline */}
+        <section style={{ padding: isMobile ? '40px 0' : '80px 0', position: 'relative', background: '#f8fafc', overflow: 'hidden' }}>
+          <div className='container' style={{ maxWidth: '1200px', position: 'relative' }}>
             
-            {/* Left Track (Hidden on Mobile, serves as visual anchor on Desktop) */}
-            {!isMobile && (
-              <div style={{ width: '200px', flexShrink: 0, position: 'relative' }}>
-                <div style={{ 
-                  position: 'absolute', 
-                  top: '0', 
-                  bottom: '0', 
-                  right: '40px', 
-                  width: '3px', 
-                  background: 'linear-gradient(to bottom, rgba(229,57,53,0), rgba(229,57,53,0.3) 10%, rgba(229,57,53,0.3) 90%, rgba(229,57,53,0))'
-                }}></div>
-              </div>
-            )}
+            <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+              <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontFamily: 'var(--font-heading)', color: 'var(--text-dark)', fontWeight: 800 }}>Our Journey</h2>
+              <p style={{ color: 'var(--text-light)', fontSize: '1.1rem', maxWidth: '600px', margin: '10px auto 0' }}>Tracing our path from early foundations to becoming a heavy civil engineering powerhouse.</p>
+            </div>
 
-            {/* Mobile Track Line */}
-            {isMobile && (
-              <div style={{ 
-                position: 'absolute', 
-                top: '0', 
-                bottom: '0', 
-                left: '24px', 
-                width: '3px', 
-                background: 'linear-gradient(to bottom, rgba(229,57,53,0), rgba(229,57,53,0.3) 10%, rgba(229,57,53,0.3) 90%, rgba(229,57,53,0))',
-                zIndex: 1
-              }}></div>
-            )}
-
-            {/* Content Area */}
-            <div style={{ flex: 1, paddingBottom: '40px', position: 'relative', zIndex: 2 }}>
-              {timelineEvents.map((event, idx) => (
-                <div key={idx} style={{ 
-                  position: 'relative', 
-                  marginBottom: isMobile ? '60px' : '100px',
-                  display: 'flex',
-                  flexDirection: isMobile ? 'column' : 'row',
-                  alignItems: isMobile ? 'flex-start' : 'center',
-                  paddingLeft: isMobile ? '60px' : '0'
-                }}>
-                  
-                  {/* Node & Connecting Line (Desktop) */}
-                  {!isMobile && (
-                    <div style={{ position: 'absolute', left: '-40px', transform: 'translateX(-50%)', display: 'flex', alignItems: 'center' }}>
-                      <div style={{ width: '40px', height: '40px', background: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '3px solid var(--primary-red)', boxShadow: '0 0 20px rgba(229,57,53,0.3)', zIndex: 3 }}>
-                        {event.icon}
+            <div style={{ 
+               display: 'flex', 
+               width: '100%', 
+               paddingTop: '280px', 
+               paddingBottom: '40px',
+               overflowX: 'auto',
+               gap: '30px',
+               paddingLeft: '20px',
+               paddingRight: '20px',
+               scrollbarWidth: 'none', /* Firefox */
+               msOverflowStyle: 'none'  /* IE/Edge */
+            }} className='no-scrollbar'>
+              {timelineEvents.map((e, i) => {
+                 // Green to Blue gradient palette matching the requested image aesthetic
+                 const colors = ['#8bc34a', '#4caf50', '#009688', '#0288d1', '#3f51b5'];
+                 const color = colors[i];
+                 
+                 return (
+                   <div key={i} style={{ 
+                      flex: 1, 
+                      minWidth: '240px', 
+                      display: 'flex', 
+                      flexDirection: 'column', 
+                      transform: "translateY(-" + (i * 60) + "px)",
+                      position: 'relative'
+                   }}>
+                      
+                      {/* Flag & Epoch (floating above the step) */}
+                      <div style={{ 
+                         display: 'flex', 
+                         flexDirection: 'column', 
+                         alignItems: 'center', 
+                         marginBottom: '15px',
+                         position: 'relative',
+                         zIndex: 2
+                      }}>
+                         <div style={{ 
+                            background: color, 
+                            padding: '12px', 
+                            borderRadius: '12px', 
+                            borderBottomLeftRadius: '2px', // Flag shape hint
+                            color: 'white', 
+                            marginBottom: '12px', 
+                            boxShadow: '0 8px 16px rgba(0,0,0,0.15)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center'
+                         }}>
+                            <Flag size={24} color='white' />
+                         </div>
+                         <span style={{ fontWeight: '900', color: color, fontSize: '1.2rem', letterSpacing: '0.5px' }}>{e.epoch}</span>
                       </div>
-                      <div style={{ width: '40px', height: '2px', background: 'rgba(229,57,53,0.3)', zIndex: 2 }}></div>
-                    </div>
-                  )}
-
-                  {/* Node (Mobile) */}
-                  {isMobile && (
-                    <div style={{ position: 'absolute', left: '25.5px', top: '20px', transform: 'translate(-50%, -50%)', width: '32px', height: '32px', background: '#ffffff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '3px solid var(--primary-red)', boxShadow: '0 0 15px rgba(229,57,53,0.3)', zIndex: 3 }}>
-                      <div style={{ transform: 'scale(0.6)' }}>{event.icon}</div>
-                    </div>
-                  )}
-
-                  {/* Epoch label on Desktop (floats left) */}
-                  {!isMobile && (
-                    <div style={{ position: 'absolute', left: '-200px', top: '50%', transform: 'translateY(-50%)', width: '140px', textAlign: 'right', paddingRight: '20px' }}>
-                      <span style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--text-dark)', fontFamily: 'var(--font-heading)' }}>{event.epoch}</span>
-                    </div>
-                  )}
-
-                  {/* Main Card */}
-                  <div className="hover-lift" style={{ 
-                    background: '#ffffff', 
-                    padding: isMobile ? '30px 20px' : '50px', 
-                    borderRadius: '24px', 
-                    boxShadow: '0 20px 40px rgba(0,0,0,0.04)', 
-                    border: '1px solid rgba(0,0,0,0.03)',
-                    position: 'relative',
-                    overflow: 'hidden',
-                    width: '100%',
-                    transition: 'all 0.4s ease'
-                  }}>
-                    {/* Watermark */}
-                    <div style={{ position: 'absolute', right: '-5%', bottom: '-10%', fontSize: isMobile ? '6rem' : '10rem', fontWeight: 900, color: 'rgba(0,0,0,0.02)', fontFamily: 'var(--font-heading)', lineHeight: 1, pointerEvents: 'none', whiteSpace: 'nowrap', userSelect: 'none' }}>
-                      {event.epoch.includes(' ') ? event.epoch.split(' ')[0] : event.epoch}
-                    </div>
-
-                    {isMobile && (
-                      <span style={{ display: 'inline-block', padding: '6px 14px', background: 'rgba(229,57,53,0.1)', color: 'var(--primary-red)', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 700, marginBottom: '15px' }}>
-                        {event.epoch}
-                      </span>
-                    )}
-                    
-                    <h3 style={{ fontSize: isMobile ? '1.5rem' : '2rem', color: 'var(--text-dark)', fontFamily: 'var(--font-heading)', fontWeight: 800, marginBottom: '20px', position: 'relative', zIndex: 2 }}>
-                      {event.title}
-                    </h3>
-                    
-                    <div style={{ color: 'var(--text-light)', fontSize: isMobile ? '1rem' : '1.1rem', lineHeight: 1.8, position: 'relative', zIndex: 2, textAlign: 'justify' }}>
-                      {event.desc}
-                    </div>
-                  </div>
-
-                </div>
-              ))}
+            
+                      {/* The Flat Step Ribbon */}
+                      <div style={{ 
+                         width: '100%', 
+                         height: '40px', 
+                         backgroundColor: color, 
+                         position: 'relative',
+                         zIndex: 1,
+                         boxShadow: 'inset 0 -5px 10px rgba(0,0,0,0.1)',
+                         borderRadius: i === 0 ? '6px 0 0 6px' : (i === timelineEvents.length - 1 ? '0 6px 6px 0' : '0')
+                      }}>
+                         {/* The slanted connector to the next step */}
+                         {i < timelineEvents.length - 1 && (
+                            <svg 
+                               style={{ position: 'absolute', right: '-30px', top: '-60px', width: '30px', height: '100px', zIndex: 0 }}
+                               preserveAspectRatio='none'
+                            >
+                               {/* Points connect perfectly from right edge of this block to left edge of the next */}
+                               <polygon points='0,60 30,0 30,40 0,100' fill={color} style={{ filter: 'brightness(0.85)' }} />
+                            </svg>
+                         )}
+                      </div>
+            
+                      {/* Text Content */}
+                      <div style={{ marginTop: '25px', padding: '0 10px', textAlign: 'center' }}>
+                         <h4 style={{ color: 'var(--text-dark)', fontWeight: '800', marginBottom: '12px', fontSize: '1.15rem' }}>{e.title}</h4>
+                         <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', lineHeight: '1.6', textAlign: 'justify' }}>{e.desc}</p>
+                      </div>
+                   </div>
+                 )
+              })}
             </div>
           </div>
           
-        </div>
-      </section>
+          <style dangerouslySetInnerHTML={{__html: String.fromCharCode(96) + ".no-scrollbar::-webkit-scrollbar { display: none; }" + String.fromCharCode(96)}} />
+        </section>
 
       {/* Modern CTA */}
       <section style={{ padding: isMobile ? "60px 20px" : "100px 20px", background: "#ffffff", textAlign: "center", position: "relative", overflow: "hidden" }}>
