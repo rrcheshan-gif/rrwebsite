@@ -31,7 +31,7 @@ export default function Home() {
       desc: "From national highways to rural roads, RR Construction delivers precision road construction, rehabilitation, and asphalt paving across Sri Lanka — engineered for durability, safety, and long-term performance."
     },
     {
-      img: '/images/home/maritime_wellamankara.jpg',
+      img: '/images/home/slider-maritime-fihladhoo.jpg',
       duration: 8000,
       tag: '02 / MARITIME & HARBOUR CONSTRUCTION',
       heading1: "Building Sri Lanka's",
