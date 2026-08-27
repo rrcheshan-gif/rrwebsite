@@ -85,102 +85,90 @@ export default function HistoryTimeline() {
         </div>
       </section>
 
-      {/* Staircase Ribbon Timeline */}
-        <section style={{ padding: isMobile ? '40px 0' : '80px 0', position: 'relative', background: '#f8fafc', overflow: 'hidden' }}>
-          <div className='container' style={{ maxWidth: '1200px', position: 'relative' }}>
-            
-            <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-              <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontFamily: 'var(--font-heading)', color: 'var(--text-dark)', fontWeight: 800 }}>Our Journey</h2>
-              <p style={{ color: 'var(--text-light)', fontSize: '1.1rem', maxWidth: '600px', margin: '10px auto 0' }}>Tracing our path from early foundations to becoming a heavy civil engineering powerhouse.</p>
+      {/* Modern Vertical Timeline */}
+        <section style={{ padding: isMobile ? '60px 15px' : '100px 0', background: '#f8fafc', position: 'relative' }}>
+          <div className='container' style={{ maxWidth: '1000px', position: 'relative' }}>
+            <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+              <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontFamily: 'var(--font-heading)', color: 'var(--text-dark)', fontWeight: 800 }}>Our <span style={{color: 'var(--primary-red)'}}>History</span></h2>
+              <p style={{ color: 'var(--text-light)', fontSize: '1.1rem', maxWidth: '600px', margin: '15px auto 0', lineHeight: 1.6 }}>A legacy of engineering excellence, continuous growth, and nation-building.</p>
             </div>
 
-            <div style={{ 
-               display: 'flex', 
-               width: '100%', 
-               paddingTop: '280px', 
-               paddingBottom: '40px',
-               overflowX: 'auto',
-               gap: '30px',
-               paddingLeft: '20px',
-               paddingRight: '20px',
-               scrollbarWidth: 'none', /* Firefox */
-               msOverflowStyle: 'none'  /* IE/Edge */
-            }} className='no-scrollbar'>
+            <div style={{ position: 'relative' }}>
+              {/* Central Connecting Line */}
+              <div style={{ 
+                 position: 'absolute', 
+                 left: isMobile ? '24px' : '50%', 
+                 top: 0, 
+                 bottom: 0, 
+                 width: '2px', 
+                 background: 'linear-gradient(to bottom, transparent, var(--border-soft) 5%, var(--border-soft) 95%, transparent)',
+                 transform: isMobile ? 'none' : 'translateX(-50%)',
+                 zIndex: 0
+              }}></div>
+
               {timelineEvents.map((e, i) => {
-                 // Green to Blue gradient palette matching the requested image aesthetic
-                 const colors = ['#8bc34a', '#4caf50', '#009688', '#0288d1', '#3f51b5'];
-                 const color = colors[i];
-                 
+                 const isLeft = i % 2 === 0 && !isMobile;
                  return (
-                   <div key={i} style={{ 
-                      flex: 1, 
-                      minWidth: '240px', 
-                      display: 'flex', 
-                      flexDirection: 'column', 
-                      transform: "translateY(-" + (i * 60) + "px)",
-                      position: 'relative'
-                   }}>
-                      
-                      {/* Flag & Epoch (floating above the step) */}
-                      <div style={{ 
-                         display: 'flex', 
-                         flexDirection: 'column', 
-                         alignItems: 'center', 
-                         marginBottom: '15px',
-                         position: 'relative',
-                         zIndex: 2
-                      }}>
-                         <div style={{ 
-                            background: color, 
-                            padding: '12px', 
-                            borderRadius: '12px', 
-                            borderBottomLeftRadius: '2px', // Flag shape hint
-                            color: 'white', 
-                            marginBottom: '12px', 
-                            boxShadow: '0 8px 16px rgba(0,0,0,0.15)',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center'
-                         }}>
-                            <Flag size={24} color='white' />
-                         </div>
-                         <span style={{ fontWeight: '900', color: color, fontSize: '1.2rem', letterSpacing: '0.5px' }}>{e.epoch}</span>
-                      </div>
-            
-                      {/* The Flat Step Ribbon */}
-                      <div style={{ 
-                         width: '100%', 
-                         height: '40px', 
-                         backgroundColor: color, 
-                         position: 'relative',
-                         zIndex: 1,
-                         boxShadow: 'inset 0 -5px 10px rgba(0,0,0,0.1)',
-                         borderRadius: i === 0 ? '6px 0 0 6px' : (i === timelineEvents.length - 1 ? '0 6px 6px 0' : '0')
-                      }}>
-                         {/* The slanted connector to the next step */}
-                         {i < timelineEvents.length - 1 && (
-                            <svg 
-                               style={{ position: 'absolute', right: '-30px', top: '-60px', width: '30px', height: '100px', zIndex: 0 }}
-                               preserveAspectRatio='none'
-                            >
-                               {/* Points connect perfectly from right edge of this block to left edge of the next */}
-                               <polygon points='0,60 30,0 30,40 0,100' fill={color} style={{ filter: 'brightness(0.85)' }} />
-                            </svg>
-                         )}
-                      </div>
-            
-                      {/* Text Content */}
-                      <div style={{ marginTop: '25px', padding: '0 10px', textAlign: 'center' }}>
-                         <h4 style={{ color: 'var(--text-dark)', fontWeight: '800', marginBottom: '12px', fontSize: '1.15rem' }}>{e.title}</h4>
-                         <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', lineHeight: '1.6', textAlign: 'justify' }}>{e.desc}</p>
-                      </div>
-                   </div>
-                 )
+                    <div key={i} style={{ 
+                       display: 'flex', 
+                       justifyContent: isMobile ? 'flex-start' : (isLeft ? 'flex-start' : 'flex-end'),
+                       marginBottom: '50px',
+                       position: 'relative',
+                       width: '100%'
+                    }}>
+                       
+                       {/* Timeline Dot */}
+                       <div style={{
+                          position: 'absolute',
+                          left: isMobile ? '24px' : '50%',
+                          top: '40px',
+                          transform: 'translate(-50%, -50%)',
+                          width: '20px',
+                          height: '20px',
+                          borderRadius: '50%',
+                          background: 'var(--primary-red)',
+                          border: '4px solid #f8fafc',
+                          boxShadow: '0 0 0 6px rgba(229,57,53,0.1)',
+                          zIndex: 2
+                       }}></div>
+
+                       {/* Event Card */}
+                       <div className='glass-panel hover-lift' style={{ 
+                          width: isMobile ? 'calc(100% - 60px)' : '45%', 
+                          marginLeft: isMobile ? '60px' : 0,
+                          padding: '30px', 
+                          background: 'white', 
+                          borderRadius: '16px',
+                          border: '1px solid var(--border-soft)',
+                          boxShadow: '0 10px 40px rgba(0,0,0,0.03)',
+                          position: 'relative',
+                          zIndex: 1
+                       }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '20px' }}>
+                             <div style={{ 
+                                width: '55px', height: '55px', 
+                                borderRadius: '12px', 
+                                background: 'var(--bg-light)', 
+                                color: 'var(--primary-red)',
+                                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                flexShrink: 0
+                             }}>
+                                {e.icon}
+                             </div>
+                             <div>
+                                <span style={{ display: 'block', color: 'var(--primary-red)', fontWeight: 800, fontSize: '1.1rem', letterSpacing: '1px', fontFamily: 'var(--font-heading)', textTransform: 'uppercase' }}>{e.epoch}</span>
+                                <h4 style={{ color: 'var(--text-dark)', fontWeight: 800, fontSize: '1.2rem', margin: '4px 0 0', fontFamily: 'var(--font-heading)' }}>{e.title}</h4>
+                             </div>
+                          </div>
+                          <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', lineHeight: 1.7, textAlign: 'justify', margin: 0 }}>
+                             {e.desc}
+                          </p>
+                       </div>
+                    </div>
+                 );
               })}
             </div>
           </div>
-          
-          <style dangerouslySetInnerHTML={{__html: String.fromCharCode(96) + ".no-scrollbar::-webkit-scrollbar { display: none; }" + String.fromCharCode(96)}} />
         </section>
 
       {/* Modern CTA */}
