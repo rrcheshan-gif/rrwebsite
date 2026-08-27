@@ -95,7 +95,7 @@ export default function QuarriesAggregates() {
             </Link>
           </div>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px", textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>Premium Aggregates Supply</h4>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem",  textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Quarries & Aggregates</h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Quarries & <span style={{ color: "var(--primary-red)" }}>Aggregates</span></h1>
         </div>
       </section>
 

@@ -14,7 +14,7 @@ export default function ThudugalaPlant() {
             <Link href="/facilities" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold" }}>← Back to Quarries & Aggregates</Link>
           </div>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px", textShadow: "0 2px 5px rgba(0,0,0,0.8)" }}>High Capacity Crusher Plant</h4>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem",  textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}>Thudugala Plant</h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Thudugala <span style={{ color: "var(--primary-red)" }}>Plant</span></h1>
         </div>
       </section>
 

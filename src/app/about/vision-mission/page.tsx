@@ -93,18 +93,7 @@ export default function VisionMission() {
               </span>
             </div>
             
-            <h1 style={{ 
-              color: "white", 
-              fontFamily: "var(--font-heading)", 
-              fontSize: "clamp(2.5rem, 5vw, 4.5rem)", 
-              fontWeight: 800, 
-              lineHeight: 1.1, 
-              margin: "0 0 30px",
-              letterSpacing: "-1px"
-            }}>
-              Engineering the Future.<br/>
-              <span style={{ color: "#cbd5e1", fontWeight: 300 }}>Building What Matters.</span>
-            </h1>
+            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Vision & <span style={{ color: "var(--primary-red)" }}>Mission</span></h1>
             
             <div style={{ display: "flex", justifyContent: "center", gap: "20px", flexWrap: "wrap", marginTop: "40px" }}>
               <Link href="/about" style={{ 

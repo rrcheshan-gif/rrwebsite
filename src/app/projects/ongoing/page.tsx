@@ -48,7 +48,7 @@ export default function OngoingProjects() {
             <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
             </Link>
           </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem", marginBottom: "15px" }}>Ongoing Projects</h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Ongoing <span style={{ color: "var(--primary-red)" }}>Projects</span></h1>
           <p style={{ color: "#e2e8f0", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto" }}>Every project listed here is currently active and in progress, representing our commitment to expanding Sri Lanka's infrastructure network.</p>
         </div>
       </section>

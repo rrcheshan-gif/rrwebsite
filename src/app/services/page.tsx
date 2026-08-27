@@ -196,9 +196,7 @@ export default function Services() {
             <span style={{ color: 'var(--primary-red)', fontWeight: 800, letterSpacing: '3px',  fontSize: '0.82rem' }}>Engineering Capabilities</span>
           </div>
 
-          <h1 style={{ fontFamily: 'var(--font-heading)', color: 'white', fontSize: isMobile ? '2.8rem' : '4.8rem', fontWeight: 900, margin: '0 0 20px', lineHeight: 1.05, letterSpacing: '-1px' }}>
-            Technology & <span style={{ color: 'var(--primary-red)' }}>Services</span>
-          </h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Technology & <span style={{ color: "var(--primary-red)" }}>Services</span></h1>
 
           <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: isMobile ? '1rem' : '1.2rem', maxWidth: '640px', lineHeight: 1.75, margin: 0, fontWeight: 400 }}>
             From national highways and river bridges to fishery harbours and hill-country landslide works — RR Construction covers the full spectrum of heavy civil engineering infrastructure in Sri Lanka.
