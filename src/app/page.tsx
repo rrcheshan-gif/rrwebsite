@@ -462,32 +462,32 @@ export default function Home() {
               }}
             >
               {[
-                { name: "ROAD DEVELOPMENT AUTHORITY" },
-                { name: "NATIONAL WATER BOARD" },
-                { name: "U.D.A. SRI LANKA" },
-                { name: "MINISTRY OF IRRIGATION" },
-                { name: "IRCON INTERNATIONAL" }
-              ].map((client, idx) => (
-                <div 
-                  key={idx} 
-                  className="glass-panel hover-lift" 
-                  style={{ 
-                    padding: "9px 20px", 
-                    borderRadius: "14px", 
-                    background: "var(--white)", 
-                    border: "1px solid var(--border-soft)", 
-                    boxShadow: "0 4px 15px rgba(0,0,0,0.03)", 
-                    display: "flex", 
-                    alignItems: "center", 
-                    gap: "8px", 
-                    cursor: "default" 
-                  }}
-                >
-                  <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--primary-red)", boxShadow: "0 0 6px var(--primary-red)" }}></div>
-                  <span style={{ fontFamily: "var(--font-heading)", fontSize: "0.92rem", fontWeight: 800, color: "var(--text-dark)", letterSpacing: "0.5px" }}>
-                    {client.name}
-                  </span>
-                </div>
+  { name: 'ROAD DEVELOPMENT AUTHORITY', logo: '/images/clients/rda.png' },
+  { name: 'NATIONAL WATER BOARD', logo: '/images/clients/nwsdb.png' },
+  { name: 'U.D.A. SRI LANKA', logo: '/images/clients/uda.png' },
+  { name: 'MINISTRY OF IRRIGATION', logo: '/images/clients/irrigation.png' },
+  { name: 'IRCON INTERNATIONAL', logo: '/images/clients/ircon.png' }
+].map((client, idx) => (
+  <div 
+    key={idx} 
+    className='glass-panel hover-lift' 
+    style={{ 
+      padding: '8px 20px 8px 10px', 
+      borderRadius: '50px', 
+      border: '1px solid var(--border-soft)', 
+      background: 'white',
+      display: 'flex', 
+      alignItems: 'center', 
+      gap: '10px' 
+    }}
+  >
+    <div style={{ width: '24px', height: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <img src={client.logo} alt={client.name} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+    </div>
+    <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-dark)', letterSpacing: '0.5px' }}>
+      {client.name}
+    </span>
+  </div>
               ))}
             </div>
 
