@@ -483,8 +483,8 @@ export default function Home() {
                       width: "min(100%, 340px)"
                     }}
                   >
-                    <div style={{ width: "50px", height: "50px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                      <img src={client.logo} alt={client.name} style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }} />
+                    <div style={{ width: "75px", height: "75px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                      <img src={client.logo} alt={client.name} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
                     </div>
                     <span style={{ fontSize: "1rem", fontWeight: 800, color: "var(--text-dark)", letterSpacing: "0.5px", lineHeight: 1.3 }}>
                       {client.name}
