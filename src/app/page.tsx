@@ -277,32 +277,32 @@ export default function Home() {
               <div style={{ position: "absolute", top: "-15px", bottom: "-15px", left: "-15px", right: "-15px", border: "2px dashed rgba(229, 57, 53, 0.5)", borderRadius: "48px", zIndex: 0, pointerEvents: "none" }}></div>
               
               <div style={{ position: "relative", width: "100%", height: "100%", padding: "15px", background: "var(--white)", borderRadius: "40px", boxShadow: "0 25px 70px rgba(0,0,0,0.06)", border: "1px solid rgba(0,0,0,0.04)", zIndex: 2, display: "flex", flexDirection: "column" }}>
-                <div className="collage-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridTemplateRows: "repeat(2, 1fr)", flex: 1, minHeight: "380px", gap: "12px", position: "relative", zIndex: 1 }}>
-                  
-                  {/* Top Left - Wide */}
-                  <div style={{ gridColumn: "1 / 3", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
-                    <img src="/images/home/IMG_3025.jpg" alt="Major Highway and Road Construction by RR Construction Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                <div className="collage-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gridTemplateRows: "repeat(2, 220px)", flex: 1, gap: "15px", position: "relative", zIndex: 1 }}>
+                    
+                    {/* Top Left */}
+                    <div style={{ borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}>
+                      <img src="/images/home/IMG_3025.jpg" alt="Major Highway and Road Construction by RR Construction Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    </div>
+                    
+                    {/* Top Right */}
+                    <div style={{ borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}>
+                      <img src="/images/home/WhatsApp Image 2026-07-18 at 10.24.03.jpeg" alt="Heavy Construction Machinery Fleet in Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    </div>
+  
+                    {/* Bottom Left */}
+                    <div style={{ borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}>
+                      <img src="/images/home/WhatsApp Image 2026-07-24 at 23.23.33.jpeg" alt="Heavy Civil Engineering and Earthworks Equipment Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    </div>
+  
+                    {/* Bottom Right */}
+                    <div style={{ borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}>
+                      <img src="/images/kandy-landslide/kandy-5.jpg" alt="Landslide Mitigation and Geotechnical Engineering in Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    </div>
+                    
                   </div>
-                  
-                  {/* Top Right - Square */}
-                  <div style={{ gridColumn: "3 / 4", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
-                    <img src="/images/home/WhatsApp Image 2026-07-18 at 10.24.03.jpeg" alt="Heavy Construction Machinery Fleet in Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                  </div>
-
-                  {/* Bottom Left - Square */}
-                  <div style={{ gridColumn: "1 / 2", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
-                    <img src="/images/home/WhatsApp Image 2026-07-24 at 23.23.33.jpeg" alt="Heavy Civil Engineering and Earthworks Equipment Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                  </div>
-
-                  {/* Bottom Right - Wide */}
-                  <div style={{ gridColumn: "2 / 4", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)" }}>
-                    <img src="/images/kandy-landslide/kandy-5.jpg" alt="Landslide Mitigation and Geotechnical Engineering in Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                  </div>
-                  
                 </div>
-              </div>
-              
-              {/* Floating 30+ Years Box Attached to Pictures */}
+                
+                {/* Floating 30+ Years Box Attached to Pictures */ Attached to Pictures */}
               <div className="glass-panel hover-lift" style={{ 
                 position: "absolute", 
                 bottom: "20px", 
