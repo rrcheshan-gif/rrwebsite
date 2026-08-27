@@ -302,7 +302,7 @@ export default function Home() {
                   </div>
                 </div>
                 
-                {/* Floating 30+ Years Box Attached to Pictures */ Attached to Pictures */}
+                {/* Floating 30+ Years Box Attached to Pictures */}
               <div className="glass-panel hover-lift" style={{ 
                 position: "absolute", 
                 bottom: "20px", 
