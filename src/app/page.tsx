@@ -460,7 +460,7 @@ export default function Home() {
               >
                 {[
                   { name: "ROAD DEVELOPMENT AUTHORITY", logo: "/images/clients/rda.png" },
-                  { name: "NATIONAL WATER BOARD", logo: "/images/clients/nwsdb.png" },
+                  { name: "NATIONAL WATER BOARD", logo: "/images/clients/nwsdb-correct.png" },
                   { name: "U.D.A. SRI LANKA", logo: "/images/clients/uda.png" },
                   { name: "MINISTRY OF IRRIGATION", logo: "/images/clients/irrigation.png" },
                   { name: "IRCON INTERNATIONAL", logo: "/images/clients/ircon-correct.svg" }
