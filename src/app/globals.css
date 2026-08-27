@@ -2002,3 +2002,8 @@ ul {
     transform: translateY(0);
   }
 }
+
+/* Global Typography Adjustments */
+p {
+  text-align: justify;
+}
