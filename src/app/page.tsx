@@ -461,8 +461,8 @@ export default function Home() {
                 {[
                   { name: "ROAD DEVELOPMENT AUTHORITY", logo: "/images/clients/rda.png" },
                   { name: "NATIONAL WATER BOARD", logo: "/images/clients/nwsdb-correct.png" },
-                  { name: "U.D.A. SRI LANKA", logo: "/images/clients/uda.png" },
-                  { name: "MINISTRY OF IRRIGATION", logo: "/images/clients/irrigation.png" },
+                  { name: "U.D.A. SRI LANKA", logo: "/images/clients/uda-correct.jpg" },
+                  { name: "MINISTRY OF IRRIGATION", logo: "/images/clients/irrigation-correct.svg" },
                   { name: "IRCON INTERNATIONAL", logo: "/images/clients/ircon-correct.svg" }
                 ].map((client, idx) => (
                   <div 
