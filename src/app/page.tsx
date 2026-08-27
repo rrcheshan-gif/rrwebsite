@@ -369,7 +369,7 @@ export default function Home() {
               { title: "Bridge Construction", img: "/images/kilinochchi-bridge-feature.jpg", icon: <GitMerge size={30} />, text: "Structural steel and reinforced concrete bridges built to carry the load for generations." },
               { title: "Civil Structures", img: "/images/wellamankara/building-projects.jpg", icon: <Building2 size={30} />, text: "Specialized structural engineering encompassing water retaining facilities, towers, and heavy steel fabrication." },
               { title: "Maritime & Water", img: "/images/maritime-harbour-site.jpg", icon: <Waves size={30} />, text: "Dredging, reclamation, and water supply systems engineered to serve communities at scale." },
-              { title: "Landslide Mitigation", img: "/images/kandy-landslide/kandy-5.jpg", icon: <Mountain size={30} />, text: "Expert slope stabilization and rock-fall protection systems in critical hill-country zones." }
+              { title: "Landslide Mitigation", img: "/images/home/landslide-mitigation-new.jpeg", icon: <Mountain size={30} />, text: "Expert slope stabilization and rock-fall protection systems in critical hill-country zones." }
             ].map((srv, i) => (
               <div key={i} className="modern-service-card glass-panel hover-lift" style={{ width: "min(100%, 340px)", minHeight: "280px", position: "relative", overflow: "hidden", padding: 0, borderRadius: "20px" }}>
                 <img src={srv.img} alt={srv.title} className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.9, transition: "opacity 0.5s ease" }} onMouseOver={(e) => { e.currentTarget.style.opacity = '1' }} onMouseOut={(e) => { e.currentTarget.style.opacity = '0.9' }} />
