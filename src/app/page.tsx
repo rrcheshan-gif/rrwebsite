@@ -348,7 +348,7 @@ export default function Home() {
             </p>
         
             <div>
-              <Link href="/about" className="btn btn-primary hover-glow" style={{ padding: "16px 36px", fontSize: "1rem" }}>Discover Our Legacy</Link>
+              <Link href="/about" className="btn btn-primary hover-glow" style={{ padding: "16px 36px", fontSize: "1.0rem" }}>Discover Our Legacy</Link>
             </div>
           </div>
         </div>
@@ -363,7 +363,7 @@ export default function Home() {
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
           
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))", gap: "25px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "25px" }}>
             {[
               { title: "Highways & Roads", img: "/images/home/rathnapura.jpg", icon: <Map size={30} />, text: "Specialized heavy civil engineering expertise carving expressways and national highways through every terrain." },
               { title: "Bridge Construction", img: "/images/kilinochchi-bridge-feature.jpg", icon: <GitMerge size={30} />, text: "Structural steel and reinforced concrete bridges built to carry the load for generations." },
@@ -371,12 +371,12 @@ export default function Home() {
               { title: "Maritime & Water", img: "/images/maritime-harbour-site.jpg", icon: <Waves size={30} />, text: "Dredging, reclamation, and water supply systems engineered to serve communities at scale." },
               { title: "Landslide Mitigation", img: "/images/kandy-landslide/kandy-5.jpg", icon: <Mountain size={30} />, text: "Expert slope stabilization and rock-fall protection systems in critical hill-country zones." }
             ].map((srv, i) => (
-              <div key={i} className="modern-service-card glass-panel hover-lift" style={{ gridColumn: i === 4 ? "1 / -1" : "auto", minHeight: "300px", position: "relative", overflow: "hidden", padding: 0, borderRadius: "20px" }}>
+              <div key={i} className="modern-service-card glass-panel hover-lift" style={{ minHeight: "260px", position: "relative", overflow: "hidden", padding: 0, borderRadius: "20px" }}>
                 <img src={srv.img} alt={srv.title} className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.9, transition: "opacity 0.5s ease" }} onMouseOver={(e) => { e.currentTarget.style.opacity = '1' }} onMouseOut={(e) => { e.currentTarget.style.opacity = '0.9' }} />
-                <div className="msc-content" style={{ position: "absolute", bottom: 0, left: 0, width: "100%", padding: "30px", background: "linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.2) 80%, transparent)", color: "white", pointerEvents: "none" }}>
+                <div className="msc-content" style={{ position: "absolute", bottom: 0, left: 0, width: "100%", padding: "25px", background: "linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.3) 80%, transparent)", color: "white", pointerEvents: "none" }}>
                   <div style={{ color: "white", marginBottom: "20px", display: "inline-block", padding: "15px", background: "var(--primary-red)", borderRadius: "20px", boxShadow: "0 10px 20px rgba(229,57,53,0.3)" }}>{srv.icon}</div>
-                  <h3 style={{ fontSize: "clamp(1.6rem, 5vw, 2.2rem)", marginBottom: "15px", color: "white", fontFamily: "var(--font-heading)", letterSpacing: "1px" }}>{srv.title}</h3>
-                  <p className="msc-text" style={{ fontSize: "1rem", color: "#e2e8f0", margin: 0, lineHeight: 1.6 }}>{srv.text}</p>
+                  <h3 style={{ fontSize: "clamp(1.2rem, 3vw, 1.5rem)", marginBottom: "15px", color: "white", fontFamily: "var(--font-heading)", letterSpacing: "1px" }}>{srv.title}</h3>
+                  <p className="msc-text" style={{ fontSize: "0.9rem", color: "#e2e8f0", margin: 0, lineHeight: 1.5 }}>{srv.text}</p>
                 </div>
               </div>
             ))}
