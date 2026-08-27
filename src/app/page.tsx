@@ -343,7 +343,7 @@ export default function Home() {
               <span style={{ color: "var(--primary-red)", fontWeight: 600, fontSize: "0.45em", letterSpacing: "2px", display: "block", marginTop: "15px",  }}>Construction & Heavy Civil Engineering In Sri Lanka</span>
             </h1>
             
-            <p style={{ color: "var(--text-light)", marginBottom: "40px", lineHeight: 1.8, fontSize: "1.1rem" }}>
+            <p style={{ textAlign: "justify", color: "var(--text-light)", marginBottom: "40px", lineHeight: 1.8, fontSize: "1.1rem" }}>
               With a self-owned fleet of {COMPANY_DATA.machineryFleet} heavy construction machines, our capabilities go beyond earthworks and structural concrete. We execute large-scale highways, bridges, irrigation canals, maritime construction, dredging, and heavy steel fabrication. We bring the full strength of our heavy civil engineering resources to every site, ensuring Sri Lanka's infrastructure is built with absolute reliability.
             </p>
         
@@ -396,10 +396,10 @@ export default function Home() {
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px",  margin: 0, fontSize: "0.9rem" }}>Our Legacy</h4>
             </div>
             <h2 style={{ fontSize: "clamp(2.2rem, 6vw, 3.2rem)", lineHeight: 1.1, marginBottom: "20px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>Three Decades of<br/><span className="text-gradient" style={{ fontWeight: 300 }}>Excellence</span></h2>
-            <p style={{ fontSize: "1.1rem", color: "var(--text-light)", marginBottom: "25px", lineHeight: 1.8 }}>
+            <p style={{ textAlign: "justify", fontSize: "1.1rem", color: "var(--text-light)", marginBottom: "25px", lineHeight: 1.8 }}>
               Since our establishment in {COMPANY_DATA.established}, we have evolved into a fully-fledged heavy civil engineering contractor delivering multi-billion rupee projects for both local and international clients.
             </p>
-            <p style={{ fontSize: "1.1rem", color: "var(--text-light)", marginBottom: "30px", lineHeight: 1.8 }}>
+            <p style={{ textAlign: "justify", fontSize: "1.1rem", color: "var(--text-light)", marginBottom: "30px", lineHeight: 1.8 }}>
               Backed by a proven track record of {COMPANY_DATA.yearsOfExcellence} years, we continue to build the critical infrastructure that keeps Sri Lanka moving forward. <Link href="/about/history" style={{ color: "var(--primary-red)", fontWeight: 600, textDecoration: "none" }}>Learn more about our history &rarr;</Link>
             </p>
           </div>
