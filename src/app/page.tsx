@@ -466,7 +466,7 @@ export default function Home() {
                   { name: "NATIONAL WATER BOARD", logo: "/images/clients/nwsdb.png" },
                   { name: "U.D.A. SRI LANKA", logo: "/images/clients/uda.png" },
                   { name: "MINISTRY OF IRRIGATION", logo: "/images/clients/irrigation.png" },
-                  { name: "IRCON INTERNATIONAL", logo: "/images/clients/ircon.png" }
+                  { name: "IRCON INTERNATIONAL", logo: "/images/clients/ircon-custom.svg" }
                 ].map((client, idx) => (
                   <div 
                     key={idx} 
