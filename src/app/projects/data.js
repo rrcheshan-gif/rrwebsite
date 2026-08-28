@@ -1036,6 +1036,19 @@ const projectsData = [
     id: 'project-67',
     type: 'completed', category: "overseas",
     title: "Coastal Protection Structures in Seenu Hulhudhoo (Maldives)",
+    heroImage: '/images/IMAGES/hulhudo/1.jpg',
+    galleryImages: [
+      '/images/IMAGES/hulhudo/1.jpg',
+      '/images/IMAGES/hulhudo/2.jpg',
+      '/images/IMAGES/hulhudo/3.jpg',
+      '/images/IMAGES/hulhudo/4.jpg',
+      '/images/IMAGES/hulhudo/5.jpg',
+      '/images/IMAGES/hulhudo/6.jpg',
+      '/images/IMAGES/hulhudo/7.jpg',
+      '/images/IMAGES/hulhudo/8.jpg',
+      '/images/IMAGES/hulhudo/9.jpg',
+      '/images/IMAGES/hulhudo/10.jpg'
+    ],
     status: "Completed",
     client: "Ministry of Environment (Maldives)",
     
