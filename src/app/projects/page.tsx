@@ -73,7 +73,7 @@ export default function Projects() {
                   return (
                     <div style={{ position: "relative", height: "220px", overflow: "hidden", background: "var(--bg-base)" }}>
                       <img 
-                        src={imgSrc} 
+                        src={encodeURI(imgSrc)} 
                         alt={`${project.title} - RR Construction Sri Lanka`} 
                         className="img-polished img-hover-zoom" 
                         style={{ width: "100%", height: "100%", objectFit: "cover" }} 
