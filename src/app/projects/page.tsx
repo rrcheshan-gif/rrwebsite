@@ -67,8 +67,8 @@ export default function Projects() {
                 }}
               >
                 {(() => {
-                  const imgPath = project.heroImage || project.images?.[0];
-                  if (!imgPath) return null;
+                  const imgPath = project.heroImage || project.images?.[0] || project.galleryImages?.[0] || '/images/page-headers/projects-portfolio.jpg';
+                  
                   const imgSrc = imgPath.startsWith('/') ? imgPath : `/${imgPath}`;
                   return (
                     <div style={{ position: "relative", height: "220px", overflow: "hidden", background: "var(--bg-base)" }}>
