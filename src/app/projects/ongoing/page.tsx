@@ -4,9 +4,9 @@ import { ArrowRight } from 'lucide-react';
 
 export default function OngoingProjects() {
   return (
-    <div style={{ minHeight: '70vh', display: 'flex', alignItems: 'center' }}>
+    <div style={{ minHeight: '70vh', background: '#f8fafc' }}>
       {/* Hero Section */}
-      <section style={{ padding: '80px 20px 100px', textAlign: 'center', width: '100%' }}>
+      <section style={{ padding: '180px 20px 100px', textAlign: 'center', width: '100%' }}>
         <div className='container' style={{ maxWidth: '1000px' }}>
           <h1 style={{ 
             fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', 
