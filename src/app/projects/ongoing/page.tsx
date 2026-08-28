@@ -1,172 +1,86 @@
-"use client";
-
-import { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import projectsData from '../data';
+import { ArrowRight, HardHat, Cog, ShieldCheck, TrendingUp } from 'lucide-react';
 
 export default function OngoingProjects() {
-  const [filter, setFilter] = useState('all');
-
-  const ongoingProjects = projectsData.filter((p: any) => p.type === 'ongoing');
-  
-  // Sort projects: 1) Base Year Desc, 2) Has Custom Image, 3) Full Date Desc
-  const sortedProjects = [...ongoingProjects].sort((a: any, b: any) => {
-    const getImage = (p: any) => p.heroImage || (p.images && p.images[0]) || (p.galleryImages && p.galleryImages[0]);
-    const imgA = getImage(a);
-    const imgB = getImage(b);
-    
-    const hasCustomImageA = imgA && imgA !== '/images/page-headers/projects-portfolio.jpg' ? 1 : 0;
-    const hasCustomImageB = imgB && imgB !== '/images/page-headers/projects-portfolio.jpg' ? 1 : 0;
-    
-    if (hasCustomImageA !== hasCustomImageB) {
-      return hasCustomImageB - hasCustomImageA;
-    }
-
-    const baseYearA = String(a.year || "").substring(0, 4);
-    const baseYearB = String(b.year || "").substring(0, 4);
-    
-    if (baseYearA !== baseYearB) {
-      return baseYearB.localeCompare(baseYearA);
-    }
-
-    const valA = String(a.year || "");
-    const valB = String(b.year || "");
-    return valB.localeCompare(valA);
-  });
-
-  const filteredProjects = sortedProjects.filter((p: any) => 
-    filter === 'all' ? true : p.category === filter
-  );
-
   return (
-    <div style={{ paddingTop: "110px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
-      {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/completed-hero.jpg')", padding: "50px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4))", zIndex: 1 }}></div>
-        <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <div style={{ textAlign: "left", marginBottom: "20px" }}>
-            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
-            </Link>
+    <div>
+      {/* Hero Section */}
+      <section style={{ padding: '80px 20px 40px', textAlign: 'center' }}>
+        <div className='container' style={{ maxWidth: '900px' }}>
+          <h1 style={{ 
+            fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', 
+            fontFamily: 'var(--font-heading)', 
+            fontWeight: 900, 
+            color: 'var(--text-dark)', 
+            marginBottom: '30px',
+            lineHeight: 1.1
+          }}>
+            Ongoing <span style={{ color: 'var(--primary-red)' }}>Projects</span>
+          </h1>
+          <p style={{ 
+            color: 'var(--text-light)', 
+            fontSize: '1.15rem', 
+            lineHeight: 1.9, 
+            textAlign: 'justify',
+            marginBottom: '40px'
+          }}>
+            RR Construction is currently executing a diverse and expansive portfolio of large-scale infrastructure projects across Sri Lanka. Our ongoing commitments span across critical sectors, including national road networks, major maritime developments, comprehensive water supply systems, and complex structural engineering works. Equipped with our expansive proprietary machinery fleet and unmatched technical expertise, we are continuously driving the nation's infrastructure development forward. Our dedicated engineering and project management teams ensure that every ongoing site progresses seamlessly, consistently delivering high-quality results while adhering to the strictest international standards for occupational health, safety, and environmental sustainability.
+          </p>
+          
+          <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '40px' }}>
+             <Link href='/projects' className='btn btn-primary hover-lift hover-glow' style={{ padding: '16px 32px', borderRadius: '50px', display: 'inline-flex', alignItems: 'center', gap: '10px', fontSize: '1.05rem' }}>
+                View Completed Projects <ArrowRight size={20} />
+             </Link>
+             <Link href='/services' className='btn hover-lift' style={{ padding: '16px 32px', borderRadius: '50px', display: 'inline-flex', alignItems: 'center', gap: '10px', fontSize: '1.05rem', background: 'white', color: 'var(--text-dark)', border: '1px solid var(--border-soft)', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
+                Explore Our Services
+             </Link>
           </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Ongoing <span style={{ color: "var(--primary-red)" }}>Projects</span></h1>
-          <p style={{ color: "#e2e8f0", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto" }}>Every project listed here is currently active and in progress, representing our commitment to expanding Sri Lanka's infrastructure network.</p>
         </div>
       </section>
 
-      <div className="container" style={{ padding: "60px 20px" }}>
-        {/* Status Toggle Tabs */}
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '30px' }}>
-          <div style={{ display: 'flex', background: 'var(--bg-base)', borderRadius: '50px', padding: '6px', border: '1px solid var(--border-soft)' }}>
-             <Link href="/projects" style={{ padding: '12px 40px', borderRadius: '50px', color: 'var(--text-dark)', fontWeight: 'bold', textDecoration: 'none' }}>
-               Completed Projects
-             </Link>
-             <Link href="/projects/ongoing" style={{ padding: '12px 40px', borderRadius: '50px', background: 'var(--primary-red)', color: 'white', fontWeight: 'bold', textDecoration: 'none', boxShadow: '0 4px 15px rgba(229,57,53,0.3)' }}>
-               Ongoing Projects
-             </Link>
-          </div>
-        </div>
-
-        {/* Filter Tabs */}
-        <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '15px', marginBottom: '50px' }}>
-          {['all', 'roads', 'bridges', 'water', 'maritime', 'buildings', 'irrigation', 'disaster', 'railway', 'overseas'].map(f => (
-            <button 
-              key={f}
-              onClick={() => setFilter(f)}
-              style={{
-                padding: '10px 20px',
-                borderRadius: '50px',
-                border: `1px solid ${filter === f ? 'var(--primary-red)' : 'var(--border-soft)'}`,
-                background: filter === f ? 'var(--primary-red)' : 'var(--white)',
-                color: filter === f ? '#fff' : 'var(--text-dark)',
-                cursor: 'pointer',
-                textTransform: 'capitalize',
-                transition: 'all 0.3s ease',
-                fontWeight: filter === f ? '700' : '500',
-                boxShadow: filter === f ? '0 10px 20px rgba(229,57,53,0.2)' : '0 4px 10px rgba(0,0,0,0.02)'
-              }}
-            >
-              {f === 'all' ? 'All Projects' : f === 'disaster' ? 'Disaster Mgmt' : f}
-            </button>
-          ))}
-        </div>
-
-        {/* Project Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: '30px', marginBottom: '60px' }}>
-          {filteredProjects.map((project: any, index: number) => {
-            const hasDetail = !!project.id;
-            const CardWrapper: any = hasDetail ? Link : 'div';
-            const wrapperProps: any = hasDetail ? { href: `/projects/${project.id}`, style: { textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', height: '100%' } } : { style: { display: 'flex', flexDirection: 'column', height: '100%' } };
-
-            return (
-              <CardWrapper key={index} {...wrapperProps}>
-                <div style={{
-                  background: 'var(--white)',
-                  borderRadius: '24px',
-                  overflow: 'hidden',
-                  boxShadow: '0 10px 30px rgba(0,0,0,0.04)',
-                  border: '1px solid var(--border-soft)',
-                  transition: 'transform 0.4s ease, box-shadow 0.4s ease',
-                  flex: 1,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  cursor: hasDetail ? 'pointer' : 'default'
-                }}
-                onMouseOver={(e) => hasDetail && (e.currentTarget.style.transform = 'translateY(-15px)', e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.1)')}
-                onMouseOut={(e) => hasDetail && (e.currentTarget.style.transform = 'none', e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.04)')}
-                >
-                  {(() => {
-                    const imgPath = project.heroImage || project.images?.[0];
-                    if (!imgPath) return null;
-                    const imgSrc = imgPath.startsWith('/') ? imgPath : `/${imgPath}`;
-                    return (
-                      <div style={{ position: "relative", height: "220px", overflow: "hidden", background: "var(--bg-base)" }}>
-                        <img 
-                          src={imgSrc} 
-                          alt={`${project.title} - RR Construction Sri Lanka`} 
-                          className="img-polished img-hover-zoom" 
-                          style={{ width: "100%", height: "100%", objectFit: "cover" }} 
-                          onError={(e) => {
-                            (e.target as HTMLImageElement).style.display = 'none';
-                          }}
-                        />
-                        <div style={{ position: "absolute", top: "12px", left: "12px", display: "flex", gap: "6px", flexWrap: "wrap", zIndex: 2 }}>
-                          <span style={{ padding: '4px 10px', background: 'rgba(15, 23, 42, 0.75)', backdropFilter: 'blur(8px)', color: 'white', borderRadius: "30px", fontSize: '0.7rem', fontWeight: 700,  letterSpacing: '0.5px', border: '1px solid rgba(255,255,255,0.2)' }}>{project.category}</span>
-                          <span style={{ padding: '4px 10px', background: 'rgba(217, 119, 6, 0.85)', backdropFilter: 'blur(8px)', color: 'white', borderRadius: "30px", fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.3px', border: '1px solid rgba(255,255,255,0.25)' }}>Ongoing</span>
-                        </div>
-                      </div>
-                    );
-                  })()}
-                  <div style={{ padding: '25px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    <div style={{ color: 'var(--primary-red)', fontSize: '0.8rem', fontWeight: 700,  marginBottom: '10px' }}>
-                      {project.category}
+      {/* Decorative Stats/Features */}
+      <section style={{ padding: '40px 20px 100px' }}>
+         <div className='container' style={{ maxWidth: '1100px' }}>
+            <div style={{ 
+               display: 'grid', 
+               gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', 
+               gap: '30px' 
+            }}>
+               {[
+                 { icon: <HardHat size={32} />, title: 'Active Work Sites', desc: 'Operating simultaneously across multiple provinces in Sri Lanka.' },
+                 { icon: <Cog size={32} />, title: 'Heavy Machinery', desc: 'Deploying our fully self-owned proprietary fleet for maximum efficiency.' },
+                 { icon: <ShieldCheck size={32} />, title: 'Quality Assured', desc: 'Strict adherence to ISO 9001, ISO 14001, and ISO 45001.' },
+                 { icon: <TrendingUp size={32} />, title: 'Nation Building', desc: "Empowering Sri Lanka's socio-economic growth through critical infrastructure." },
+               ].map((item, idx) => (
+                 <div key={idx} className='glass-panel hover-lift' style={{ 
+                    padding: '30px', 
+                    borderRadius: '16px', 
+                    textAlign: 'center',
+                    background: 'white',
+                    border: '1px solid var(--border-soft)',
+                    boxShadow: '0 10px 30px rgba(0,0,0,0.03)'
+                 }}>
+                    <div style={{ 
+                       width: '70px', 
+                       height: '70px', 
+                       margin: '0 auto 20px', 
+                       background: 'rgba(229,57,53,0.08)', 
+                       color: 'var(--primary-red)',
+                       borderRadius: '50%',
+                       display: 'flex',
+                       alignItems: 'center',
+                       justifyContent: 'center'
+                    }}>
+                       {item.icon}
                     </div>
-                    <h3 style={{ color: 'var(--text-dark)', fontSize: '1.2rem', marginBottom: '15px', lineHeight: 1.4 }}>
-                      {project.title}
-                    </h3>
-                    <div style={{ marginTop: 'auto' }}>
-                      <p style={{ color: "var(--text-light)", fontSize: '0.95rem', marginBottom: '15px', lineHeight: '1.5' }}>
-                        A comprehensive {project.category} project executed for {project.client}, emphasizing modern engineering standards and timely delivery.
-                      </p>
-                      
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '15px', paddingTop: '15px', borderTop: '1px solid #eee' }}>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-                          {/* Duration hidden for ongoing projects as requested */}
-                        </div>
-                      </div>
-                      
-                      <div style={{ marginTop: '20px', textAlign: 'center' }}>
-                        <span className="btn-glass-red">View Details &rarr;</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </CardWrapper>
-            );
-          })}
-        </div>
-      </div>
+                    <h4 style={{ color: 'var(--text-dark)', fontWeight: 800, marginBottom: '12px', fontFamily: 'var(--font-heading)' }}>{item.title}</h4>
+                    <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', margin: 0, lineHeight: 1.6 }}>{item.desc}</p>
+                 </div>
+               ))}
+            </div>
+         </div>
+      </section>
     </div>
   );
 }
-
-
