@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
@@ -30,7 +30,6 @@ export default function OngoingProjects() {
                color: 'var(--text-dark)', 
                fontSize: '1.15rem', 
                lineHeight: 1.9, 
-               textAlign: 'justify',
                margin: 0
              }}>
                RR Construction is currently executing a diverse and expansive portfolio of large-scale infrastructure projects. Our ongoing commitments span across all critical engineering sectors, including national road networks, complex bridges, comprehensive water supply and irrigation systems, major maritime developments, multi-storey buildings, railway infrastructure, disaster management and landslide mitigation, as well as specialized overseas construction projects. Operating simultaneously across multiple provinces in Sri Lanka, we strategically deploy our fully self-owned proprietary fleet of heavy machinery to guarantee maximum efficiency, rapid mobilization, and uncompromised structural integrity on every site. Our dedicated engineering and project management teams ensure that every ongoing operation progresses seamlessly from groundbreaking to final handover. By strictly adhering to internationally recognized ISO 9001, ISO 14001, and ISO 45001 standards, we consistently deliver high-quality results that empower the nation's socio-economic growth, all while maintaining the highest levels of occupational health, safety, and environmental stewardship.
@@ -50,3 +49,4 @@ export default function OngoingProjects() {
     </div>
   );
 }
+
