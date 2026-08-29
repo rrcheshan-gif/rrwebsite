@@ -66,19 +66,19 @@ export default function HistoryTimeline() {
         {/* Grid pattern overlay */}
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundImage: 'linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)', backgroundSize: '30px 30px', zIndex: 2 }}></div>
 
-        <div className="container" style={{ position: 'relative', zIndex: 3 }}>
+        <div className="container" style={{ position: 'relative', zIndex: 3, display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 16px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '30px', marginBottom: '24px' }}>
             <Link href="/about" style={{ color: '#94a3b8', fontSize: '0.85rem', fontWeight: 600, textDecoration: 'none', transition: 'color 0.2s' }}>About Us</Link>
             <ChevronRight size={14} color="#64748b" />
             <span style={{ color: 'var(--primary-red)', fontSize: '0.85rem', fontWeight: 600 }}>History & Milestones</span>
           </div>
 
-          <div style={{ maxWidth: '800px' }}>
+          <div style={{ maxWidth: '800px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <h1 style={{ color: '#ffffff', fontSize: isMobile ? '2.5rem' : '4.5rem', fontWeight: 800, fontFamily: 'var(--font-heading)', lineHeight: 1.1, marginBottom: '24px', letterSpacing: '-1px' }}>
               Our Journey of <br/>
               <span style={{ background: 'linear-gradient(90deg, #ff4d4d, #b91c1c)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Excellence.</span>
             </h1>
-            <p style={{ color: '#94a3b8', fontSize: isMobile ? '1.1rem' : '1.3rem', lineHeight: 1.7, fontWeight: 400, maxWidth: '650px' }}>
+            <p style={{ color: '#94a3b8', fontSize: isMobile ? '1.1rem' : '1.3rem', lineHeight: 1.7, fontWeight: 400, maxWidth: '650px', margin: '0 auto' }}>
               Three decades of steady growth, technical evolution, and nation-building. Discover how we evolved from a regional contractor to Sri Lanka's leading heavy civil engineering powerhouse.
             </p>
           </div>
