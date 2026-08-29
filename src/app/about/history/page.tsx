@@ -166,22 +166,6 @@ export default function HistoryTimeline() {
           </div>
         </section>
 
-      {/* Modern CTA */}
-      <section style={{ padding: isMobile ? "60px 20px" : "100px 20px", background: "#ffffff", textAlign: "center", position: "relative", overflow: "hidden" }}>
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '1px', background: 'linear-gradient(90deg, transparent, rgba(0,0,0,0.1), transparent)' }}></div>
-        <div className="container" style={{ maxWidth: "800px", position: 'relative', zIndex: 2 }}>
-          <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "24px", letterSpacing: '-0.5px' }}>
-            Built on a Foundation of <span style={{ color: "var(--primary-red)" }}>Trust.</span>
-          </h2>
-          <p style={{ color: "var(--text-light)", fontSize: isMobile ? "1.1rem" : "1.2rem", lineHeight: 1.8, marginBottom: "40px" }}>
-            Our history is written in the roads, bridges, and ports we've built. Discover the awards and recognition that validate our commitment to excellence.
-          </p>
-          <Link href="/about/awards" className="btn btn-primary hover-glow" style={{ padding: "18px 40px", fontSize: "1.05rem", borderRadius: "30px", display: "inline-flex", alignItems: "center", gap: "10px" }}>
-            View Awards & Recognition <ArrowRight size={20} />
-          </Link>
-        </div>
-      </section>
-
     </div>
   );
 }
