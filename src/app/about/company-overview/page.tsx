@@ -147,24 +147,6 @@ export default function AboutStory() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section style={{ padding: isMobile ? "40px 20px" : "60px 20px", textAlign: "center" }}>
-        <div className="container" style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <ShieldCheck size={48} color="var(--primary-red)" style={{ margin: "0 auto 20px" }} />
-          <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>
-            Engineering Sri Lanka's <span style={{ color: "var(--primary-red)" }}>Tomorrow</span>
-          </h2>
-          <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.7, marginrottom: "40px" }}>
-            Discover how our comprehensive heavy civil engineering capabilities are building the nation's critical infrastructure.
-          </p>
-          <div style={{ display: "flex", gap: "20px", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/projects" className="btn btn-primary hover-glow" style={{ padding: "18px 40px", fontSize: "1.05rem", borderRadius: "30px", display: "inline-flex", alignItems: "center", gap: "10px" }}>
-              Explore Our Capabilities <ArrowRight size={20} />
-            </Link>
-          </div>
-        </div>
-      </section>
-
     </div>
   );
 }
