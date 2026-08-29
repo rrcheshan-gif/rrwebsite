@@ -58,17 +58,17 @@ export default function Leadership() {
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "30px", marginBottom: "60px" }}>
             {COMPANY_DATA.leadership.filter(l => l.role.includes('Director')).map((leader, idx) => (
-              <div key={idx} style={{ display: "flex", gap: isMobile ? "20px" : "40px", background: "var(--white)", padding: isMobile ? "30px 20px" : "50px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: isMobile ? "center" : "flex-start", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left", boxShadow: "0 15px 40px rgba(0,0,0,0.06)" }}>
+              <div key={idx} style={{ display: "flex", gap: isMobile ? "20px" : "40px", background: "var(--white)", padding: isMobile ? "30px 20px" : "50px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: isMobile ? "center" : "stretch", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left", boxShadow: "0 15px 40px rgba(0,0,0,0.06)" }}>
                 {leader.image ? (
-                  <div style={{ width: isMobile ? "180px" : "250px", height: isMobile ? "180px" : "250px", borderRadius: "50%", overflow: "hidden", flexShrink: 0, boxShadow: "0 15px 30px rgba(0,0,0,0.15)", border: "6px solid var(--white)" }}>
-                    <img src={leader.image} alt={leader.name} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  <div style={{ width: isMobile ? "100%" : "330px", height: isMobile ? "330px" : "auto", borderRadius: "16px", overflow: "hidden", flexShrink: 0, boxShadow: "0 15px 30px rgba(0,0,0,0.15)" }}>
+                    <img src={leader.image} alt={leader.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
                   </div>
                 ) : (
-                  <div style={{ width: isMobile ? "180px" : "250px", height: isMobile ? "180px" : "250px", background: "rgba(229, 57, 53, 0.1)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 15px 30px rgba(0,0,0,0.15)", border: "6px solid var(--white)" }}>
+                  <div style={{ width: isMobile ? "100%" : "330px", height: isMobile ? "330px" : "auto", background: "rgba(229, 57, 53, 0.1)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 15px 30px rgba(0,0,0,0.15)" }}>
                     <User size={80} color="var(--primary-red)" />
                   </div>
                 )}
-                <div style={{ flex: 1 }}>
+                <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center" }}>
                   <h3 style={{ fontSize: isMobile ? "2rem" : "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 8px 0" }}>{leader.name}</h3>
                   <p style={{ color: "var(--primary-red)", fontSize: "1.2rem", fontWeight: 700,  letterSpacing: "1px", margin: "0 0 15px 0" }}>{leader.role}</p>
                   <p style={{ color: "var(--text-light)", fontSize: "1.1rem", margin: "0 0 20px 0", fontWeight: 600 }}>{leader.qual}</p>
@@ -91,20 +91,27 @@ export default function Leadership() {
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "30px" }}>
             {COMPANY_DATA.leadership.filter(l => !l.role.includes('Director')).map((leader, idx) => (
-              <div key={idx} style={{ display: "flex", gap: "30px", background: "var(--white)", padding: isMobile ? "30px 20px" : "40px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: "center", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left" }}>
+              <div key={idx} style={{ display: "flex", gap: "30px", background: "var(--white)", padding: isMobile ? "30px 20px" : "40px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: "stretch", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left" }}>
                 {leader.image ? (
-                  <div style={{ width: "120px", height: "120px", borderRadius: "50%", overflow: "hidden", flexShrink: 0, boxShadow: "0 10px 20px rgba(0,0,0,0.1)", border: "4px solid var(--white)" }}>
-                    <img src={leader.image} alt={leader.name} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  <div style={{ width: "isMobile ? '100%' : '160px'", height: "isMobile ? '200px' : 'auto'", borderRadius: "12px", overflow: "hidden", flexShrink: 0, boxShadow: "0 10px 20px rgba(0,0,0,0.1)" }}>
+                    <img src={leader.image} alt={leader.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
                   </div>
                 ) : (
-                  <div style={{ width: "120px", height: "120px", background: "rgba(229, 57, 53, 0.1)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 10px 20px rgba(0,0,0,0.1)", border: "4px solid var(--white)" }}>
-                    <User size={50} color="var(--primary-red)" />
+                  <div style={{ width: "isMobile ? '100%' : '160px'", height: "isMobile ? '200px' : 'auto'", background: "rgba(229, 57, 53, 0.1)", borderRadius: "12px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 10px 20px rgba(0,0,0,0.1)" }}>
+                    <User size={60} color="var(--primary-red)" />
                   </div>
                 )}
-                <div>
-                  <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 5px 0" }}>{leader.name}</h3>
-                  <p style={{ color: "var(--primary-red)", fontSize: "1.1rem", fontWeight: 700,  letterSpacing: "1px", margin: "0 0 10px 0" }}>{leader.role}</p>
-                  <p style={{ color: "var(--text-light)", fontSize: "1.05rem", margin: 0 }}>{leader.qual}</p>
+                <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                  <h3 style={{ fontSize: "isMobile ? '1.5rem' : '1.8rem'", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 5px 0" }}>{leader.name}</h3>
+                  <p style={{ color: "var(--primary-red)", fontSize: "1kzem", fontWeight: 700, margin: "0 0 10px 0" }}>{leader.role}</p>
+                  <p style={{ color: "var(--text-light)", fontSize: "1rem", margin: 0, fontWeight: 600 }}>{leader.qual}</p>
+                  {leader.bio && (
+                    <div style={{ borderTop: "1px solid var(--border-soft)", paddingTop: "15px", marginTop: "15px" }}>
+                      <p style={{ color: "var(--text-dark)", fontSize: "1kzem", lineHeight: 1.6, margin: 0 }}>
+                        {leader.bio}
+                      </p>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
@@ -112,24 +119,6 @@ export default function Leadership() {
 
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section style={{ padding: isMobile ? "40px 20px" : "60px 20px", textAlign: "center", background: "var(--white)", borderTop: "1px solid var(--border-soft)" }}>
-        <div className="container" style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>
-            Join Our <span style={{ color: "var(--primary-red)" }}>Team</span>
-          </h2>
-          <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.7, marginBottom: "40px" }}>
-            With a massive workforce of over {COMPANY_DATA.workforce}, we are always looking for the brightest engineering minds.
-          </p>
-          <div style={{ display: "flex", gap: "20px", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/people" className="btn btn-primary hover-glow" style={{ padding: "18px 40px", fontSize: "1.05rem", borderRadius: "30px", display: "inline-flex", alignItems: "center", gap: "10px" }}>
-              Our People <ArrowRight size={20} />
-            </Link>
-          </div>
-        </div>
-      </section>
-
     </div>
   );
 }
