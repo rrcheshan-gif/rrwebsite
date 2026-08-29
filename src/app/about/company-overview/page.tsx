@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { ArrowRight, CheckCircle2, ShieldCheck, HardHat, Building2, Droplets, MapPin, Trophy, Users, Globe2 } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ShieldCheck, HardHat, Building2, Droplets, MapPin } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
 export default function AboutStory() {
@@ -47,107 +47,61 @@ export default function AboutStory() {
         </div>
       </section>
 
-      {/* Introduction */}
+      {/* Unified Introduction & Vision */}
       <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "stretch" }}>
-            <div style={{ flex: "1", minWidth: "300px" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
-                <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
-                <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px",  margin: 0, fontSize: "1rem", fontFamily: "var(--font-heading)" }}>Introduction</h2>
-              </div>
-              <h3 style={{ fontSize: isMobile ? "2rem" : "3rem", color: "var(--text-dark)", margin: "0 0 30px", fontFamily: "var(--font-heading)", lineHeight: 1.2, fontWeight: 800 }}>
-                A Legacy of Engineering <br/><span style={{ color: "var(--text-light)" }}>Excellence.</span>
-              </h3>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", textAlign: "justify" }}>
-                Founded in {COMPANY_DATA.established}, {COMPANY_DATA.name} stands at the forefront of Sri Lanka's heavy civil engineering and infrastructure development sector. Over the past {COMPANY_DATA.yearsOfExcellence} years, we have systematically expanded our operational capabilities to deliver complex, large-scale engineering solutions that drive national progress. By integrating an expansive, self-owned fleet of specialized heavy machinery with the technical acumen of our elite engineering divisions, we consistently execute high-stakes projects across maritime, highway, bridge, and water infrastructure domains. Our unwavering commitment to precision, health and safety, and international quality standards has cemented our reputation as a trusted, uncompromising leader in shaping the nation's most critical infrastructure.
-              </p>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", textAlign: "justify" }}>
-                <Link href="/about/history" style={{ color: "var(--primary-red)", fontWeight: 600, textDecoration: "none" }}>Read our full History & Milestones &rarr;</Link>
-              </p>
-              
-              <div style={{ marginBottom: "30px" }}>
-                <h4 style={{ color: "var(--text-dark)", fontSize: "1.1rem", fontWeight: 700, marginBottom: "15px" }}>Comprehensive Engineering Scope:</h4>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px" }}>
-                  {[
-                    "Earthworks & Structural Concrete",
-                    "Roads & Highways",
-                    "Bridges & Overpasses",
-                    "Irrigation & Drainage",
-                    "Water Supply & Sewerage",
-                    "Water Retaining Structures",
-                    "Maritime Construction",
-                    "Dredging & Reclamation",
-                    "Water Towers & Treatment Plants",
-                    "Heavy Steel Fabrication & Erection",
-                    "Mechanical Maintenance",
-                    "Machine & Equipment Rental",
-                    "Buildings & Facilities"
-                  ].map((item, idx) => (
-                    <div key={idx} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                      <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--primary-red)" }}></div>
-                      <span style={{ color: "var(--text-light)", fontSize: "0.95rem" }}>{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div style={{ paddingBottom: "20px" }}></div>
-            </div>
-            <div style={{ flex: "1", minWidth: "300px" }}>
-              <div style={{ borderRadius: "24px", overflow: "hidden", position: "relative", boxShadow: "0 20px 50px rgba(0,0,0,0.1)", height: "100%" }}>
-                <img src="/images/overview-page.png" alt="RR Construction Project Site" style={{ width: "100%", height: "100%", display: "block", objectFit: "cover" }} />
-                <div style={{ position: "absolute", bottom: "30px", left: "-20px", background: "var(--primary-red)", color: "white", padding: "20px 30px", borderRadius: "12px", boxShadow: "0 10px 30px rgba(229, 57, 53, 0.4)" }}>
-                  <h4 style={{ margin: 0, fontSize: "2rem", fontFamily: "var(--font-heading)", fontWeight: 800 }}>{COMPANY_DATA.established}</h4>
-                  <p style={{ margin: 0, fontSize: "0.9rem",  letterSpacing: "1px", fontWeight: 600 }}>Year Established</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* MD Message */}
-      <section style={{ padding: isMobile ? "60px 10px" : "100px 20px", background: "var(--white)" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "80px", alignItems: "center" }}>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "center" }}>
             
-            <div style={{ flex: 1, minWidth: 'min(100%, 300px)', display: "flex", justifyContent: "center", position: "relative" }}>
-              <div style={{ position: "absolute", bottom: "-20px", right: "20px", background: "var(--primary-red)", color: "white", padding: "15px 25px", borderRadius: "16px", zIndex: 3, boxShadow: "0 15px 30px rgba(229, 57, 53, 0.3)" }}>
-                <h4 style={{ margin: 0, fontSize: "1.2rem", fontFamily: "var(--font-heading)", color: "#ffffff", fontWeight: 800 }}>{COMPANY_DATA.yearsOfExcellence} Years</h4>
-                <p style={{ margin: 0, fontSize: "0.8rem", fontWeight: 600, color: "#ffffff", letterSpacing: "0.5px",  }}>Leadership</p>
+            <div style={{ flex: "1.2", minWidth: "300px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
+                <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
+                <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px",  margin: 0, fontSize: "1rem", fontFamily: "var(--font-heading)", textTransform: "uppercase" }}>Introduction & Vision</h2>
               </div>
-              <div style={{ padding: "12px", background: "var(--white)", borderRadius: "32px", width: "100%", maxWidth: "450px", boxShadow: "0 20px 50px rgba(0,0,0,0.08)", position: "relative", zIndex: 2, border: "2px solid var(--border-soft)" }}>
-                <div style={{ width: "100%", height: isMobile ? "400px" : "500px", background: "var(--border-soft)", borderRadius: "24px", overflow: "hidden" }}>
-                  <img 
-                    src="/images/director_hd.jpg" 
-                    alt="Mr. Ranjith Senadhera - Managing Director" 
-                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} 
-                  />
-                </div>
+              <h3 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", margin: "0 0 20px", fontFamily: "var(--font-heading)", lineHeight: 1.2, fontWeight: 800 }}>
+                A Legacy of Engineering <span style={{ color: "var(--primary-red)" }}>Excellence.</span>
+              </h3>
+              
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "30px", textAlign: "justify" }}>
+                Founded in {COMPANY_DATA.established}, {COMPANY_DATA.name} stands at the forefront of Sri Lanka's heavy civil engineering sector. Over the past {COMPANY_DATA.yearsOfExcellence} years, we have systematically expanded our capabilities to deliver complex, large-scale infrastructure solutions that drive national progress. By integrating an expansive, self-owned fleet of heavy machinery with the technical acumen of our elite engineering divisions, we consistently execute high-stakes projects across maritime, highway, bridge, and water infrastructure domains.
+              </p>
+
+              <div style={{ background: "rgba(229, 57, 53, 0.05)", padding: "35px 30px", borderRadius: "20px", borderLeft: "4px solid var(--primary-red)", position: "relative", marginBottom: "30px" }}>
+                  <span style={{ position: "absolute", top: "10px", left: "15px", fontSize: "5rem", color: "rgba(229, 57, 53, 0.1)", fontFamily: "Georgia, serif", lineHeight: 1, zIndex: 0 }}>"</span>
+                  <p style={{ color: "var(--text-dark)", lineHeight: 1.8, fontSize: "1.1rem", position: "relative", zIndex: 1, fontStyle: "italic", fontWeight: 500, margin: 0 }}>
+                    By continuously developing new capabilities to overcome emerging challenges, introducing structural changes to the organization, and creating a strong culture of teamwork combined with professional methodologies, we have grown into one of the country's leading infrastructure developers. Our unwavering commitment to precision, health and safety, and international quality standards allows us to execute complex engineering projects efficiently, maintaining our reputation as a trusted, uncompromising leader.
+                  </p>
+                  
+                  <div style={{ marginTop: "25px", display: "flex", alignItems: "center", gap: "15px", position: "relative", zIndex: 1 }}>
+                    <div>
+                      <h4 style={{ color: "var(--text-dark)", fontSize: "1.3rem", fontWeight: 800, margin: "0 0 5px", fontFamily: "var(--font-heading)" }}>Mr. Ranjith Senadhera</h4>
+                      <p style={{ color: "var(--primary-red)", margin: 0, fontWeight: 600, fontSize: "0.95rem" }}>Managing Director, RR Construction (Pvt) Ltd</p>
+                    </div>
+                  </div>
+              </div>
+              
+              <div>
+                <Link href="/about/history" style={{ color: "var(--text-dark)", fontWeight: 700, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "8px", borderBottom: "2px solid var(--primary-red)", paddingBottom: "5px", transition: "color 0.3s" }} onMouseOver={(e) => e.currentTarget.style.color = "var(--primary-red)"} onMouseOut={(e) => e.currentTarget.style.color = "var(--text-dark)"}>
+                  Read our full History & Milestones <ArrowRight size={18} color="var(--primary-red)"/>
+                </Link>
               </div>
             </div>
 
-            <div style={{ flex: 1.5, minWidth: 'min(100%, 350px)' }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
-                <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
-                <h3 style={{ color: "var(--primary-red)", fontSize: "1rem",  letterSpacing: "2px", margin: 0, fontWeight: 800, fontFamily: "var(--font-heading)" }}>Message from the Managing Director</h3>
-              </div>
-              <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", marginBottom: "10px", fontFamily: "var(--font-heading)", fontWeight: 800 }}>Mr. Ranjith Senadhera</h2>
-              <h4 style={{ color: "var(--text-light)", fontSize: "1.15rem", fontWeight: 500, marginBottom: "40px", borderBottom: "1px solid var(--border-soft)", paddingBottom: "30px" }}>
-                Managing Director, RR Construction (Pvt) Ltd
-              </h4>
-              
-              <div style={{ position: "relative" }}>
-                <span style={{ position: "absolute", top: "-20px", left: "-20px", fontSize: "5rem", color: "var(--border-soft)", fontFamily: "Georgia, serif", lineHeight: 1, zIndex: 0 }}>"</span>
-                <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.05rem", marginBottom: "25px", position: "relative", zIndex: 1 }}>
-                  By continuously developing new capabilities to overcome emerging challenges, introducing structural changes to the organization, and creating a strong culture of teamwork combined with professional methodologies, we have grown into one of the country's leading infrastructure developers.
-                </p>
-                <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.05rem", position: "relative", zIndex: 1 }}>
-                  Our highly experienced workforce and massive fleet of self-owned heavy machinery allow us to execute complex road, bridge, maritime, and structural engineering projects efficiently, maintaining the highest standards of safety and quality.
-                </p>
-              </div>
+            <div style={{ flex: 1, minWidth: 'min(100%, 350px)', position: "relative" }}>
+                <div style={{ position: "absolute", bottom: "-20px", left: "-20px", background: "var(--primary-red)", color: "white", padding: "20px 30px", borderRadius: "20px", zIndex: 3, boxShadow: "0 15px 30px rgba(229, 57, 53, 0.3)" }}>
+                  <h4 style={{ margin: 0, fontSize: "1.8rem", fontFamily: "var(--font-heading)", color: "#ffffff", fontWeight: 800 }}>{COMPANY_DATA.yearsOfExcellence}+ Years</h4>
+                  <p style={{ margin: 0, fontSize: "1rem", fontWeight: 600, color: "rgba(255,255,255,0.9)", letterSpacing: "1px" }}>Of Leadership</p>
+                </div>
+                <div style={{ padding: "15px", background: "var(--white)", borderRadius: "32px", width: "100%", boxShadow: "0 20px 50px rgba(0,0,0,0.08)", position: "relative", zIndex: 2, border: "1px solid var(--border-soft)" }}>
+                  <div style={{ width: "100%", height: isMobile ? "450px" : "600px", background: "var(--bg-light)", borderRadius: "24px", overflow: "hidden" }}>
+                    <img 
+                      src="/images/director_hd.jpg" 
+                      alt="Mr. Ranjith Senadhera - Managing Director" 
+                      style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} 
+                    />
+                  </div>
+                </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -184,7 +138,7 @@ export default function AboutStory() {
             <div style={{ flex: 1, minWidth: "300px" }}>
               <h3 style={{ fontSize: "2rem", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px" }}>Unmatched Internal Strength</h3>
               <p style={{ color: "#cbd5e1", lineHeight: 1.8, fontSize: "1.1rem", marginBottom: "20px" }}>
-                We rely on our own resources rather than third-party dependencies. Our operations are powe'red by a highly skilled workforce of experienced engineers and construction professionals.
+                We rely on our own resources rather than third-party dependencies. Our operations are powered by a highly skilled workforce of experienced engineers and construction professionals.
               </p>
               <p style={{ color: "#cbd5e1", lineHeight: 1.8, fontSize: "1.1rem" }}>
                 Combined with a self-owned fleet of heavy construction machines and proprietary aggregate production plants, we maintain total control over project timelines and quality parameters.
