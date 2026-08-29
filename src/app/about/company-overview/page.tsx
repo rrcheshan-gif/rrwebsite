@@ -47,7 +47,7 @@ export default function AboutStory() {
         </div>
       </section>
 
-      {/* Unified Introduction & Vision */}
+      {/* Unified Company Overview */}
       <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "center" }}>
