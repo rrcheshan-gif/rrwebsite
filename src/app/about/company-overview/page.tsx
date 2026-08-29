@@ -50,9 +50,7 @@ export default function AboutStory() {
       {/* Unified Company Overview */}
       <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "center" }}>
-            
-            <div style={{ flex: "1.2", minWidth: "300px" }}>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "flex-start" }}>\n            \n            <div style={{ flex: "1.2", minWidth: "300px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
                 <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
                 <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px",  margin: 0, fontSize: "1rem", fontFamily: "var(--font-heading)", textTransform: "uppercase" }}>Introduction & Vision</h2>
@@ -90,7 +88,7 @@ export default function AboutStory() {
                   <p style={{ margin: 0, fontSize: "1rem", fontWeight: 600, color: "rgba(255,255,255,0.9)", letterSpacing: "1px" }}>Of Leadership</p>
                 </div>
                 <div style={{ padding: "15px", background: "var(--white)", borderRadius: "32px", width: "100%", boxShadow: "0 20px 50px rgba(0,0,0,0.08)", position: "relative", zIndex: 2, border: "1px solid var(--border-soft)" }}>
-                  <div style={{ width: "100%", height: isMobile ? "450px" : "600px", background: "var(--bg-light)", borderRadius: "24px", overflow: "hidden" }}>
+                  <div style={{ width: "100%", height: isMobile ? "450px" : "650px", background: "var(--bg-light)", borderRadius: "24px", overflow: "hidden" }}>
                     <img 
                       src="/images/director_hd.jpg" 
                       alt="Mr. Ranjith Senadhera - Managing Director" 
