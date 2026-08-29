@@ -135,32 +135,6 @@ export default function AboutStory() {
         </div>
       </section>
 
-      {/* Engineering With Responsibility */}
-      <section style={{ padding: isMobile ? "60px 10px" : "80px 20px", background: "var(--white)" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px", textAlign: "center" }}>
-          <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px" }}>Engineering With Responsibility</h2>
-          <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.7, maxWidth: "800px", margin: "0 auto 50px" }}>
-            We strictly adhere to global standards, ensuring that every project satisfies the highest technical requirements while minimizing environmental impact and protecting the health and safety of everyone involved.
-          </p>
-          
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px" }}>
-            {[
-              "ISO 9001 - Quality Management",
-              "ISO 14001 - Environmental Management",
-              "ISO 45001 - Occupational Health & Safety",
-              "Timely Project Delivery",
-              "Sustainable Construction Practices",
-              "Client Satisfaction"
-            ].map((item, idx) => (
-              <div key={idx} style={{ background: "var(--bg-light)", padding: "15px 25px", borderRadius: "30px", display: "inline-flex", alignItems: "center", gap: "10px", fontWeight: 600, color: "var(--text-dark)", border: "1px solid var(--border-soft)" }}>
-                <CheckCircle2 size={18} color="var(--primary-red)" />
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section style={{ padding: isMobile ? "40px 20px" : "60px 20px", textAlign: "center" }}>
         <div className="container" style={{ maxWidth: "800px", margin: "0 auto" }}>
