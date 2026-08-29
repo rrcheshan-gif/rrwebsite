@@ -106,33 +106,9 @@ export default function AboutStory() {
         </div>
       </section>
 
-      {/* Our Journey & Strength */}
+      {/* Internal Strength */}
       <section style={{ padding: isMobile ? "60px 10px" : "100px 20px" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
-          
-          <div style={{ textAlign: "center", marginBottom: "60px", maxWidth: "800px", margin: "0 auto 60px" }}>
-            <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px" }}>Our Journey & Capabilities</h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.7 }}>
-              Today, RR Construction is a fully integrated engineering firm capable of managing all aspects of large-scale civil infrastructure development from the ground up.
-            </p>
-          </div>
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "30px", marginBottom: "60px" }}>
-            {[
-              { title: "Roads & Highways", desc: "Expertise in national highway construction, asphalt paving, and rural road rehabilitation.", icon: <MapPin size={32} color="var(--primary-red)" /> },
-              { title: "Bridges & Structures", desc: "Advanced concrete and steel structural engineering for overpasses and waterway bridges.", icon: <Building2 size={32} color="var(--primary-red)" /> },
-              { title: "Maritime Infrastructure", desc: "Deep-water dredging, breakwater construction, and fishery harbour development.", icon: <Droplets size={32} color="var(--primary-red)" /> },
-              { title: "Geotechnical Engineering", desc: "Specialized landslide mitigation, soil stabilization, and retaining structures.", icon: <HardHat size={32} color="var(--primary-red)" /> }
-            ].map((item, idx) => (
-              <div key={idx}  style={{ padding: "40px 30px", background: "var(--white)", borderRadius: "24px", border: "1px solid var(--border-soft)", transition: "transform 0.3s, box-shadow 0.3s" }} onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-10px)'; e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.06)' }} onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none' }}>
-                <div style={{ marginBottom: "25px", background: "rgba(229, 57, 53, 0.1)", display: "inline-block", padding: "15px", borderRadius: "16px" }}>
-                  {item.icon}
-                </div>
-                <h3 style={{ fontSize: "1.3rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>{item.title}</h3>
-                <p style={{ color: "var(--text-light)", lineHeight: 1.7, fontSize: "1rem" }}>{item.desc}</p>
-              </div>
-            ))}
-          </div>
           
           <div style={{ background: "linear-gradient(135deg, #1f2937, #111827)", borderRadius: "32px", padding: isMobile ? "40px 20px" : "60px", color: "white", display: "flex", flexWrap: "wrap", gap: "40px", alignItems: "center" }}>
             <div style={{ flex: 1, minWidth: "300px" }}>
