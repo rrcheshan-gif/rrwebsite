@@ -1,4 +1,4 @@
-﻿export const COMPANY_DATA = {
+export const COMPANY_DATA = {
   name: "RR Construction (Pvt) Ltd",
   established: 1995,
   yearsOfExcellence: "30+",
@@ -23,7 +23,7 @@
       name: "Mr. Ranjith Senadhera S.D.", 
       role: "Managing Director", 
       qual: "B.Sc. Engineering (Hons), M.Eng. (IEM)", 
-      image: "/images/director.jpg", 
+      image: "/images/director_hd.jpg", 
       bio: "As the founder and Managing Director of RR Construction, Mr. Ranjith Senadhera has been the cornerstone of the company's technical and operational evolution since 1995. With a robust academic foundation holding a B.Sc. in Engineering (Hons) and a Master's in Industrial Engineering & Management, he combines deep technical acumen with astute corporate strategy. Over his extensive career, he has personally spearheaded the transition of the company from a specialized regional contractor into a fully integrated national infrastructure developer. Mr. Senadhera's leadership philosophy centers on total resource independence, which drove the strategic acquisition of the company's massive proprietary machinery fleet, ensuring uncompromising quality across all major projects." 
     },
     { 

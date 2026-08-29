@@ -58,9 +58,9 @@ export default function Leadership() {
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "30px", marginBottom: "60px" }}>
             {COMPANY_DATA.leadership.filter(l => l.role.includes('Director')).map((leader, idx) => (
-              <div key={idx} style={{ display: "flex", gap: isMobile ? "20px" : "40px", background: "var(--white)", padding: isMobile ? "30px 20px" : "50px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: isMobile ? "center" : "flex-start", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left", boxShadow: "0 15px 40px rgba(0,0,0,0.06)" }}>
+              <div key={idx} style={{ display: "flex", gap: isMobile ? "20px" : "40px", background: "var(--white)", padding: isMobile ? "30px 20px" : "50px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: "stretch", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left", boxShadow: "0 15px 40px rgba(0,0,0,0.06)" }}>
                 {leader.image ? (
-                  <div style={{ width: isMobile ? "100%" : "280px", height: isMobile ? "300px" : "350px", borderRadius: "16px", overflow: "hidden", flexShrink: 0, boxShadow: "0 15px 30px rgba(0,0,0,0.15)" }}>
+                  <div style={{ width: isMobile ? "100%" : "350px", height: isMobile ? "300px" : "auto", borderRadius: "16px", overflow: "hidden", flexShrink: 0, boxShadow: "0 15px 30px rgba(0,0,0,0.15)" }}>
                     <img src={leader.image} alt={leader.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
                   </div>
                 ) : (
