@@ -49,11 +49,11 @@ export default function AboutStory() {
 
       {/* Unified Company Overview */}
       <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 0auto", padding: "0 16px" }}>
           
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "flex-start", marginBottom: "50px" }}>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "stretch", marginBottom: "50px" }}>
             
-            <div style={{ flex: "1.2", minWidth: "300px" }}>
+            <div style={{ flex: "1.2", minWidth: "300px", display: "flex", flexDirection: "column" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
                 <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
                 <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px",  margin: 0, fontSize: "1rem", fontFamily: "var(--font-heading)", textTransform: "uppercase" }}>Company Overview</h2>
@@ -62,7 +62,7 @@ export default function AboutStory() {
                 A Legacy of Engineering <span style={{ color: "var(--primary-red)" }}>Excellence.</span>
               </h3>
               
-              <div style={{ background: "rgba(229, 57, 53, 0.05)", padding: "35px 30px", borderRadius: "20px", borderLeft: "4px solid var(--primary-red)", position: "relative" }}>
+              <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", background: "rgba(229, 57, 53, 0.05)", padding: "35px 30px", borderRadius: "20px", borderLeft: "4px solid var(--primary-red)", position: "relative" }}>
                   <span style={{ position: "absolute", top: "10px", left: "15px", fontSize: "5rem", color: "rgba(229, 57, 53, 0.1)", fontFamily: "Georgia, serif", lineHeight: 1, zIndex: 0 }}>"</span>
                   <p style={{ color: "var(--text-dark)", lineHeight: 1.8, fontSize: "1.1rem", position: "relative", zIndex: 1, fontStyle: "italic", fontWeight: 500, margin: 0 }}>
                     By continuously developing new capabilities to overcome emerging challenges, introducing structural changes to the organization, and creating a strong culture of teamwork combined with professional methodologies, we have grown into one of the country's leading infrastructure developers. Our unwavering commitment to precision, health and safety, and international quality standards allows us to execute complex engineering projects efficiently, maintaining our reputation as a trusted, uncompromising leader.
@@ -77,13 +77,13 @@ export default function AboutStory() {
               </div>
             </div>
 
-            <div style={{ flex: 1, minWidth: 'min(100%, 350px)', position: "relative" }}>
+            <div style={{ flex: 1, minWidth: 'min(100%, 350px)', position: "relative", display: "flex", flexDirection: "column" }}>
                 <div style={{ position: "absolute", bottom: "-20px", left: "-20px", background: "var(--primary-red)", color: "white", padding: "20px 30px", borderRadius: "20px", zIndex: 3, boxShadow: "0 15px 30px rgba(229, 57, 53, 0.3)" }}>
                   <h4 style={{ margin: 0, fontSize: "1.8rem", fontFamily: "var(--font-heading)", color: "#ffffff", fontWeight: 800 }}>{COMPANY_DATA.yearsOfExcellence} Years</h4>
                   <p style={{ margin: 0, fontSize: "1rem", fontWeight: 600, color: "rgba(255,255,255,0.9)", letterSpacing: "1px" }}>Of Leadership</p>
                 </div>
-                <div style={{ padding: "15px", background: "var(--white)", borderRadius: "32px", width: "100%", boxShadow: "0 20px 50px rgba(0,0,0,0.08)", position: "relative", zIndex: 2, border: "1px solid var(--border-soft)" }}>
-                  <div style={{ width: "100%", height: isMobile ? "450px" : "650px", background: "var(--bg-light)", borderRadius: "24px", overflow: "hidden" }}>
+                <div style={{ padding: "15px", background: "var(--white)", borderRadius: "32px", width: "100%", flex: 1, boxShadow: "0 20px 50px rgba(0,0,0,0.08)", position: "relative", zIndex: 2, border: "1px solid var(--border-soft)" }}>
+                  <div style={{ width: "100%", height: "100%", minHeight: isMobile ? "350px" : "450px", background: "var(--bg-light)", borderRadius: "24px", overflow: "hidden" }}>
                     <img 
                       src="/images/director_hd.jpg" 
                       alt="Mr. Ranjith Senadhera - Managing Director" 
@@ -148,7 +148,7 @@ export default function AboutStory() {
           <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>
             Engineering Sri Lanka's <span style={{ color: "var(--primary-red)" }}>Tomorrow</span>
           </h2>
-          <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.7, marginBottom: "40px" }}>
+          <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.7, marginrottom: "40px" }}>
             Discover how our comprehensive heavy civil engineering capabilities are building the nation's critical infrastructure.
           </p>
           <div style={{ display: "flex", gap: "20px", justifyContent: "center", flexWrap: "wrap" }}>
