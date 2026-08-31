@@ -159,7 +159,7 @@ export default function GoalsAndTargets() {
       <section style={{ padding: isMobile ? "60px 10px" : "100px 20px", background: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
           
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "center" }}>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "flex-start" }}>
             
             {/* Left side text */}
             <div style={{ flex: "1 1 min(100%, 400px)" }}>
@@ -170,10 +170,10 @@ export default function GoalsAndTargets() {
               <h3 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", color: "var(--text-dark)", margin: "0 0 25px", fontFamily: "var(--font-heading)", lineHeight: 1.15, fontWeight: 800 }}>
                 Setting the Benchmark for <span style={{ color: "var(--primary-red)" }}>Performance</span>
               </h3>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "25px" }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "25px", textAlign: "justify" }}>
                 At RR Construction, we don't just set goals; we establish concrete, measurable targets. These targets keep our teams accountable and ensure we continuously deliver the highest standard of infrastructure to the nation.
               </p>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8 }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, textAlign: "justify" }}>
                 Whether it's accelerating project timelines through our internal machinery fleet or upholding flawless safety records on complex marine and bridge projects, our targets define our success.
               </p>
             </div>
@@ -199,7 +199,7 @@ export default function GoalsAndTargets() {
                       <h4 style={{ color: "var(--text-dark)", fontSize: "1.15rem", fontWeight: 800, margin: "0 0 6px", fontFamily: "var(--font-heading)" }}>
                         {st.label}
                       </h4>
-                      <p style={{ color: "var(--text-light)", fontSize: "0.95rem", margin: 0, lineHeight: 1.5 }}>
+                      <p style={{ color: "var(--text-light)", fontSize: "0.95rem", margin: 0, lineHeight: 1.5, textAlign: "justify" }}>
                         {st.target}
                       </p>
                     </div>
@@ -215,3 +215,4 @@ export default function GoalsAndTargets() {
     </div>
   );
 }
+
