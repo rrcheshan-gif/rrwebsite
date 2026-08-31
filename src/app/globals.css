@@ -2006,3 +2006,10 @@ ul {
 /* Global Typography Adjustments */
 
 
+
+
+/* Global Typography Adjustments */
+p {
+  text-align: justify;
+}
+
