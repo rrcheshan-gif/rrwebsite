@@ -58,7 +58,7 @@ export default function Leadership() {
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "30px", marginBottom: "60px" }}>
             {COMPANY_DATA.leadership.filter(l => l.role.includes('Director')).map((leader, idx) => (
-              <div key={idx} style={{ display: "flex", gap: isMobile ? "20px" : "40px", background: "var(--white)", padding: isMobile ? "30px 20px" : "50px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: isMobile ? "center" : "center", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left", boxShadow: "0 15px 40px rgba(0,0,0,0.06)" }}>
+              <div key={idx} style={{ display: "flex", gap: isMobile ? "20px" : "40px", background: "var(--white)", padding: isMobile ? "30px 20px" : "50px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: isMobile ? "center" : "flex-start", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left", boxShadow: "0 15px 40px rgba(0,0,0,0.06)" }}>
                 {leader.image ? (
                   <div style={{ width: isMobile ? "100%" : "320px", height: isMobile ? "350px" : "420px", borderRadius: "16px", padding: "8px", background: "var(--bg-light)", border: "1px solid var(--border-soft)", flexShrink: 0, boxShadow: "0 15px 35px rgba(0,0,0,0.1)" }}>
                     <img src={leader.image} alt={leader.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 15%", borderRadius: "10px" }} />
@@ -91,7 +91,7 @@ export default function Leadership() {
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "30px" }}>
             {COMPANY_DATA.leadership.filter(l => !l.role.includes('Director')).map((leader, idx) => (
-              <div key={idx} style={{ display: "flex", gap: "30px", background: "var(--white)", padding: isMobile ? "30px 20px" : "40px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: "center", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left" }}>
+              <div key={idx} style={{ display: "flex", gap: "30px", background: "var(--white)", padding: isMobile ? "30px 20px" : "40px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: isMobile ? "center" : "flex-start", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left" }}>
                 {leader.image ? (
                   <div style={{ width: isMobile ? "100%" : "200px", height: isMobile ? "250px" : "250px", borderRadius: "16px", padding: "6px", background: "var(--bg-light)", border: "1px solid var(--border-soft)", flexShrink: 0, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" }}>
                     <img src={leader.image} alt={leader.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 15%", borderRadius: "10px" }} />
@@ -122,3 +122,4 @@ export default function Leadership() {
     </div>
   );
 }
+
