@@ -80,50 +80,102 @@ export default function HistoryTimeline() {
         </div>
       </section>
 
-      {/* Ultra-Modern Left-Aligned Timeline */}
-      <section style={{ padding: isMobile ? '40px 10px' : '100px 0', background: '#f8fafc', position: 'relative' }}>
-        <div className="container" style={{ maxWidth: '900px', position: 'relative' }}>
-          <div style={{ textAlign: 'right', marginBottom: '80px' }}>
-            <h2 style={{ fontSize: 'clamp(8rem, 12vw, 12rem)', fontFamily: 'var(--font-heading)', color: 'rgba(229,57,53,0.05)', fontWeight: 900, lineHeight: 0.7, marginBottom: '-20px' }}>HISTORY</h2>
+      {/* Alternating Modern Timeline */}
+      <section style={{ padding: isMobile ? '60px 10px' : '120px 0', background: '#f8fafc', position: 'relative', overflow: 'hidden' }}>
+        
+        {/* Background Decorative elements */}
+        <div style={{ position: 'absolute', top: '-10%', left: '-10%', width: '40%', height: '40%', background: 'radial-gradient(circle, rgba(229,57,53,0.05) 0%, rgba(248,250,252,0) 70%)', zIndex: 0 }}></div>
+        <div style={{ position: 'absolute', bottom: '-10%', right: '-10%', width: '40%', height: '40%', background: 'radial-gradient(circle, rgba(15,23,42,0.05) 0%, rgba(248,250,252,0) 70%)', zIndex: 0 }}></div>
+
+        <div className="container" style={{ maxWidth: '1100px', position: 'relative', zIndex: 1 }}>
+          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+            <h2 style={{ fontSize: 'clamp(3rem, 6vw, 4rem)', fontFamily: 'var(--font-heading)', color: 'var(--text-dark)', fontWeight: 900, marginBottom: '20px' }}>
+              Our <span style={{ color: 'var(--primary-red)' }}>Milestones</span>
+            </h2>
+            <p style={{ color: 'var(--text-light)', fontSize: '1.2rem', maxWidth: '600px', margin: '0 auto' }}>A legacy of engineering excellence built year by year.</p>
           </div>
 
-          <div style={{ position: 'relative' }}>
-            {timelineEvents.map((e, i) => (
-              <div key={i} style={{ display: 'flex', gap: '30px', marginBottom: '80px', position: 'relative' }}>
-                
-                {/* Left Column: Icon & Line */}
-                <div style={{ width: isMobile ? '50px' : '105px', flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }}>
-                   {i !== timelineEvents.length - 1 && (
-                     <div style={{ position: 'absolute', top: '60px', bottom: '-80px', width: '2px', background: 'linear-gradient(180deg, var(--primary-red) 0%, rgba(229,57,53,0.1) 100%)' }}></div>
-                   )}
-                   <div style={{ width: isMobile ? '40px' : '60px', height: isMobile ? '40px' : '60px', borderRadius: '50%', background: 'white', border: '2px solid var(--primary-red)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 25px rgba(229,57,53,0.2)', zIndex: 2, position: 'relative' }}>
-                     {e.icon}
-                   </div>
+          <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            {/* Center Line for Desktop, Left Line for Mobile */}
+            <div style={{ position: 'absolute', top: 0, bottom: 0, left: isMobile ? '30px' : '50%', width: '2px', background: 'var(--border-soft)', transform: isMobile ? 'none' : 'translateX(-50%)' }}></div>
+
+            {timelineEvents.map((e, i) => {
+              const isEven = i % 2 === 0;
+              return (
+                <div key={i} style={{ 
+                  display: 'flex', 
+                  flexDirection: isMobile ? 'row' : (isEven ? 'row' : 'row-reverse'),
+                  width: '100%', 
+                  marginBottom: '80px', 
+                  position: 'relative' 
+                }}>
+                  
+                  {/* Timeline Dot */}
+                  <div style={{ 
+                    position: 'absolute', 
+                    left: isMobile ? '30px' : '50%', 
+                    top: '30px', 
+                    transform: isMobile ? 'translateX(-50%)' : 'translate(-50%, -50%)', 
+                    width: '60px', 
+                    height: '60px', 
+                    borderRadius: '50%', 
+                    background: 'white', 
+                    border: '4px solid var(--primary-red)', 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    justifyContent: 'center', 
+                    boxShadow: '0 0 0 10px rgba(229,57,53,0.1)', 
+                    zIndex: 2 
+                  }}>
+                    {e.icon}
+                  </div>
+
+                  {/* Spacer for empty side (Desktop only) */}
+                  {!isMobile && <div style={{ width: '50%', padding: '0 50px' }}></div>}
+                  
+                  {/* Content Card */}
+                  <div style={{ 
+                    width: isMobile ? '100%' : '50%', 
+                    padding: isMobile ? '0 0 0 80px' : (isEven ? '0 50px 0 0' : '0 0 0 50px'),
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: isMobile ? 'flex-start' : (isEven ? 'flex-end' : 'flex-start'),
+                    textAlign: isMobile ? 'left' : (isEven ? 'right' : 'left')
+                  }}>
+                    
+                    <div className="hover-lift" style={{ 
+                      background: 'white', 
+                      padding: '40px', 
+                      borderRadius: '24px', 
+                      boxShadow: '0 20px 40px rgba(0,0,0,0.06)', 
+                      border: '1px solid rgba(0,0,0,0.03)',
+                      position: 'relative',
+                      overflow: 'hidden',
+                      width: '100%',
+                      textAlign: 'left' // Keep text inside card left-aligned/justified
+                    }}>
+                      
+                      {/* Decorative Epoch Number inside card */}
+                      <div style={{ position: 'absolute', top: '-10px', right: '-10px', fontSize: '6rem', fontFamily: 'var(--font-heading)', fontWeight: 900, color: 'rgba(229,57,53,0.04)', zIndex: 0, pointerEvents: 'none', lineHeight: 1 }}>
+                        {e.epoch === "Present" ? "NOW" : e.epoch}
+                      </div>
+
+                      <div style={{ display: 'inline-block', background: 'var(--primary-red)', color: 'white', padding: '8px 20px', borderRadius: '30px', fontSize: '1rem', fontWeight: 800, marginBottom: '20px', position: 'relative', zIndex: 1, boxShadow: '0 10px 20px rgba(229,57,53,0.3)' }}>
+                        {e.epoch}
+                      </div>
+
+                      <h3 style={{ fontSize: '1.8rem', fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'var(--text-dark)', marginBottom: '20px', position: 'relative', zIndex: 1 }}>{e.title}</h3>
+                      
+                      <p style={{ color: 'var(--text-light)', fontSize: '1.05rem', lineHeight: 1.8, position: 'relative', zIndex: 1, margin: 0, textAlign: 'justify' }}>
+                        {e.desc}
+                      </p>
+                    </div>
+
+                  </div>
+
                 </div>
-
-                {/* Right Column: Content Card */}
-                <div style={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-                   <div className="hover-lift" style={{ background: 'white', padding: isMobile ? '20px' : '40px', borderRadius: '24px', boxShadow: '0 20px 40px rgba(0,0,0,0.04)', position: 'relative', overflow: 'hidden', border: '1px solid rgba(0,0,0,0.02)' }}>
-                     
-                     {/* Year Badge */}
-                     <div style={{ display: 'inline-block', background: 'rgba(229,57,53,0.1)', color: 'var(--primary-red)', padding: '6px 16px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 800, marginBottom: '15px' }}>
-                       {e.epoch}
-                     </div>
-
-                     <h3 style={{ fontSize: isMobile ? '1.5rem' : '1.8rem', fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'var(--text-dark)', marginBottom: '15px', position: 'relative', zIndex: 2 }}>{e.title}</h3>
-                     
-                     <div style={{ color: 'var(--text-light)', fontSize: '1.05rem', lineHeight: 1.8, position: 'relative', zIndex: 2 }}>
-                       {e.desc}
-                     </div>
-
-                     {/* Large abstract watermark number inside the card */}
-                     <div style={{ position: 'absolute', bottom: '-25px', right: '-20px', fontSize: 'clamp(8rem, 15vw, 11rem)', fontFamily: 'var(--font-heading)', fontWeight: 900, color: 'rgba(229,57,53,0.03)', zIndex: 1, pointerEvents: 'none', lineHeight: 1 }}>
-                       {e.epoch === "Present" ? "NOW" : e.epoch}
-                     </div>
-                   </div>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
