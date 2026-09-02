@@ -85,30 +85,6 @@ export default function HealthAndSafety() {
         </div>
       </section>
 
-            {/* HSE KPIs Section */}
-      <section style={{ padding: "40px 20px", background: "var(--primary-red)", color: "white" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "30px", textAlign: "center" }}>
-            <div>
-              <h2 style={{ fontSize: "3rem", fontWeight: 800, margin: "0 0 10px 0", fontFamily: "var(--font-heading)" }}>0</h2>
-              <p style={{ fontSize: "1.1rem", fontWeight: 600, margin: 0, opacity: 0.9 }}>Fatalities across all major projects</p>
-            </div>
-            <div>
-              <h2 style={{ fontSize: "3rem", fontWeight: 800, margin: "0 0 10px 0", fontFamily: "var(--font-heading)" }}>100%</h2>
-              <p style={{ fontSize: "1.1rem", fontWeight: 600, margin: 0, opacity: 0.9 }}>PPE Compliance on active sites</p>
-            </div>
-            <div>
-              <h2 style={{ fontSize: "3rem", fontWeight: 800, margin: "0 0 10px 0", fontFamily: "var(--font-heading)" }}>ISO</h2>
-              <p style={{ fontSize: "1.1rem", fontWeight: 600, margin: 0, opacity: 0.9 }}>45001:2018 Certified Standards</p>
-            </div>
-            <div>
-              <h2 style={{ fontSize: "3rem", fontWeight: 800, margin: "0 0 10px 0", fontFamily: "var(--font-heading)" }}>{COMPANY_DATA.workforce}</h2>
-              <p style={{ fontSize: "1.1rem", fontWeight: 600, margin: 0, opacity: 0.9 }}>Safety-Trained Personnel</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Action Areas Grid */}
       <section style={{ padding: "50px 20px", background: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
