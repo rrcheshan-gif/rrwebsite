@@ -159,56 +159,50 @@ export default function GoalsAndTargets() {
       <section style={{ padding: isMobile ? "60px 10px" : "100px 20px", background: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
           
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "flex-start" }}>
-            
-            {/* Left side text */}
-            <div style={{ flex: "1 1 min(100%, 400px)" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
-                <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
-                <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px",  margin: 0, fontSize: "0.95rem", fontFamily: "var(--font-heading)" }}>Measurable Outcomes</h2>
-              </div>
-              <h3 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", color: "var(--text-dark)", margin: "0 0 25px", fontFamily: "var(--font-heading)", lineHeight: 1.15, fontWeight: 800 }}>
-                Setting the Benchmark for <span style={{ color: "var(--primary-red)" }}>Performance</span>
-              </h3>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "25px", textAlign: "justify" }}>
-                At RR Construction, we don't just set goals; we establish concrete, measurable targets. These targets keep our teams accountable and ensure we continuously deliver the highest standard of infrastructure to the nation.
-              </p>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, textAlign: "justify" }}>
-                Whether it's accelerating project timelines through our internal machinery fleet or upholding flawless safety records on complex marine and bridge projects, our targets define our success.
-              </p>
+          <div style={{ textAlign: "center", marginBottom: "60px" }}>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "15px", marginBottom: "20px" }}>
+              <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
+              <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px",  margin: 0, fontSize: "0.95rem", fontFamily: "var(--font-heading)" }}>Measurable Outcomes</h2>
+              <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
             </div>
-
-            {/* Right side targets list */}
-            <div style={{ flex: "1 1 450px" }}>
-              <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                {strategicTargets.map((st, idx) => (
-                  <div key={idx} style={{ 
-                    display: "flex", 
-                    alignItems: "center", 
-                    gap: "20px", 
-                    background: "var(--bg-light)", 
-                    padding: "25px", 
-                    borderRadius: "20px",
-                    borderLeft: "4px solid var(--primary-red)",
-                    boxShadow: "0 10px 25px rgba(0,0,0,0.03)"
-                  }}>
-                    <div style={{ background: "linear-gradient(135deg, var(--primary-red), #b71c1c)", minWidth: "50px", height: "50px", borderRadius: "12px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 5px 15px rgba(229, 57, 53, 0.3)" }}>
-                      {st.icon}
-                    </div>
-                    <div>
-                      <h4 style={{ color: "var(--text-dark)", fontSize: "1.15rem", fontWeight: 800, margin: "0 0 6px", fontFamily: "var(--font-heading)" }}>
-                        {st.label}
-                      </h4>
-                      <p style={{ color: "var(--text-light)", fontSize: "0.95rem", margin: 0, lineHeight: 1.5, textAlign: "justify" }}>
-                        {st.target}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
+            <h3 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", color: "var(--text-dark)", margin: "0 0 25px", fontFamily: "var(--font-heading)", lineHeight: 1.15, fontWeight: 800 }}>
+              Setting the Benchmark for <span style={{ color: "var(--primary-red)" }}>Performance</span>
+            </h3>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, maxWidth: "850px", margin: "0 auto 25px", textAlign: "justify" }}>
+              At RR Construction, we don't just set goals; we establish concrete, measurable targets. These targets keep our teams accountable and ensure we continuously deliver the highest standard of infrastructure to the nation.
+            </p>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, maxWidth: "850px", margin: "0 auto", textAlign: "justify" }}>
+              Whether it's accelerating project timelines through our internal machinery fleet or upholding flawless safety records on complex marine and bridge projects, our targets define our success.
+            </p>
           </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "25px" }}>
+            {strategicTargets.map((st, idx) => (
+              <div key={idx} style={{ 
+                display: "flex", 
+                alignItems: "flex-start", 
+                gap: "20px", 
+                background: "var(--bg-light)", 
+                padding: "30px", 
+                borderRadius: "20px",
+                borderLeft: "4px solid var(--primary-red)",
+                boxShadow: "0 10px 25px rgba(0,0,0,0.03)"
+              }}>
+                <div style={{ background: "linear-gradient(135deg, var(--primary-red), #b71c1c)", minWidth: "50px", height: "50px", borderRadius: "12px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 5px 15px rgba(229, 57, 53, 0.3)", color: "white" }}>
+                  {st.icon}
+                </div>
+                <div>
+                  <h4 style={{ color: "var(--text-dark)", fontSize: "1.15rem", fontWeight: 800, margin: "0 0 10px", fontFamily: "var(--font-heading)" }}>
+                    {st.label}
+                  </h4>
+                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", margin: 0, lineHeight: 1.6, textAlign: "justify" }}>
+                    {st.target}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
         </div>
       </section>
 
