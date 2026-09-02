@@ -116,7 +116,7 @@ export default function ThudugalaPlant() {
               </div>
             </div>
             <div style={{ position: "relative", minHeight: "350px", background: "#eee" }}>
-              <iframe src="https://maps.google.com/maps?q=Thudugala,+Sri+Lanka&t=k&output=embed" width="100%" height="100%" style={{ border: 0, position: "absolute", top: 0, left: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://maps.google.com/maps?q=6.567102,80.0623541&t=k&z=17&output=embed" width="100%" height="100%" style={{ border: 0, position: "absolute", top: 0, left: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -124,5 +124,6 @@ export default function ThudugalaPlant() {
     </div>
   );
 }
+
 
 
