@@ -72,15 +72,13 @@ export default function ThudugalaPlant() {
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>THUDUGALA PLANT: Our Products</h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px" }}>High Quality Aggregates & M-Sand for Stronger Constructions</p>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px" }}>High Quality Metal & Aggregates for Stronger Constructions</p>
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "20px", textAlign: "center" }}>
             {[
-              "M-Sand", "12-19 mm (Concrete Agg)", "10-16 mm Aggregates", "16-19 mm Aggregates", 
-              "5-19 mm (Concrete Agg)", "5-10 mm Aggregates (Chips)", "0-5mm (Quarry Dust)", 
-              "ABC", "C1", "6 x 9", "Boulders", "37.5 mm Aggregates", "50mm Aggregates", "VSI Aggregates (Cubical)"
+              '3/4" Metal', 'Chip', 'ABC', 'Mix', 'Dust', '1.5'
             ].map((prod, idx) => (
               <div key={idx} style={{ background: "var(--white)", padding: "20px", borderRadius: "8px", border: "1px solid var(--border-soft)", boxShadow: "0 2px 10px rgba(0,0,0,0.02)" }}>
                 <h4 style={{ color: "var(--text-dark)", fontSize: "1.1rem", margin: 0 }}>{prod}</h4>
@@ -96,7 +94,7 @@ export default function ThudugalaPlant() {
           <div style={{ background: "var(--white)", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", overflow: "hidden", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
             <div style={{ padding: "40px" }}>
               <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2rem", color: "var(--text-dark)", marginBottom: "20px" }}>Contact THUDUGALA PLANT</h2>
-              <p style={{ color: "var(--text-light)", marginBottom: "30px" }}>For bulk orders, M-Sand inquiries, and ready-mix concrete supplies.</p>
+              <p style={{ color: "var(--text-light)", marginBottom: "30px" }}>For bulk orders and material inquiries.</p>
               
               <div style={{ marginBottom: "20px" }}>
                 <h4 style={{ color: "var(--primary-red)", marginBottom: "10px" }}>Direct Lines</h4>
