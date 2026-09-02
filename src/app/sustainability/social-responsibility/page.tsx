@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Users, BookOpen, Building2, MapPin, CheckCircle2 } from 'lucide-react';
+import { Users, BookOpen, Building2, MapPin, CheckCircle2, X } from 'lucide-react';
 
 export default function SocialResponsibility() {
   const [isMobile, setIsMobile] = useState(false);
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth <= 768);
@@ -157,16 +158,26 @@ export default function SocialResponsibility() {
                 </p>
               </div>
               <div style={{ flex: 1, display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", gap: "2px", background: "var(--border-soft)" }}>
-                <img src="/CSR/csr-first-employee-1.jpg" alt="CSR Initiative 1" style={{ width: "100%", height: "100%", objectFit: "cover", minHeight: isMobile ? "150px" : "250px" }} />
-                <img src="/CSR/csr-first-employee-2.jpg" alt="CSR Initiative 2" style={{ width: "100%", height: "100%", objectFit: "cover", minHeight: isMobile ? "150px" : "250px" }} />
-                <img src="/CSR/csr-first-employee-3.jpg" alt="CSR Initiative 3" style={{ width: "100%", height: "100%", objectFit: "cover", minHeight: isMobile ? "150px" : "250px" }} />
-                <img src="/CSR/csr-first-employee-4.jpg" alt="CSR Initiative 4" style={{ width: "100%", height: "100%", objectFit: "cover", minHeight: isMobile ? "150px" : "250px" }} />
+                <img src="/CSR/csr-first-employee-1.jpg" alt="CSR Initiative 1" onClick={() => setLightboxImage('/CSR/csr-first-employee-1.jpg')} style={{ width: "100%", height: "100%", objectFit: "cover", minHeight: isMobile ? "150px" : "250px", cursor: "pointer", transition: "transform 0.3s ease" }} onMouseOver={(e) => e.currentTarget.style.transform="scale(1.02)"} onMouseOut={(e) => e.currentTarget.style.transform="scale(1)"} />
+                <img src="/CSR/csr-first-employee-2.jpg" alt="CSR Initiative 2" onClick={() => setLightboxImage('/CSR/csr-first-employee-2.jpg')} style={{ width: "100%", height: "100%", objectFit: "cover", minHeight: isMobile ? "150px" : "250px", cursor: "pointer", transition: "transform 0.3s ease" }} onMouseOver={(e) => e.currentTarget.style.transform="scale(1.02)"} onMouseOut={(e) => e.currentTarget.style.transform="scale(1)"} />
+                <img src="/CSR/csr-first-employee-3.jpg" alt="CSR Initiative 3" onClick={() => setLightboxImage('/CSR/csr-first-employee-3.jpg')} style={{ width: "100%", height: "100%", objectFit: "cover", minHeight: isMobile ? "150px" : "250px", cursor: "pointer", transition: "transform 0.3s ease" }} onMouseOver={(e) => e.currentTarget.style.transform="scale(1.02)"} onMouseOut={(e) => e.currentTarget.style.transform="scale(1)"} />
+                <img src="/CSR/csr-first-employee-4.jpg" alt="CSR Initiative 4" onClick={() => setLightboxImage('/CSR/csr-first-employee-4.jpg')} style={{ width: "100%", height: "100%", objectFit: "cover", minHeight: isMobile ? "150px" : "250px", cursor: "pointer", transition: "transform 0.3s ease" }} onMouseOver={(e) => e.currentTarget.style.transform="scale(1.02)"} onMouseOut={(e) => e.currentTarget.style.transform="scale(1)"} />
               </div>
             </div>
           </div>
           
         </div>
       </section>
+
+      {/* Lightbox Modal */}
+      {lightboxImage && (
+        <div style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,0.9)", zIndex: 9999, display: "flex", justifyContent: "center", alignItems: "center", padding: "20px" }} onClick={() => setLightboxImage(null)}>
+          <button onClick={() => setLightboxImage(null)} style={{ position: "absolute", top: "20px", right: "20px", background: "none", border: "none", color: "white", cursor: "pointer", padding: "10px" }}>
+            <X size={40} />
+          </button>
+          <img src={lightboxImage} alt="Enlarged CSR image" style={{ maxWidth: "100%", maxHeight: "90vh", objectFit: "contain", borderRadius: "8px", boxShadow: "0 10px 30px rgba(0,0,0,0.5)" }} onClick={(e) => e.stopPropagation()} />
+        </div>
+      )}
 
     </div>
   );
