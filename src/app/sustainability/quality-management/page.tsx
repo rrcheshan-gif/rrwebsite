@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -99,7 +99,7 @@ export default function QualityManagement() {
             <div className="glass-panel hover-lift" style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)" }}>
               <Factory size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Vertical Integration</h3>
-              <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0, textAlign: "left" }}>
                 By leveraging our expansive, self-owned heavy machinery fleet and strategically operated crusher and asphalt plants, we maintain uncompromising command over our entire supply chain. This robust vertical integration effectively eradicates the risk of third-party logistical delays and ensures that only premium, rigorously tested aggregate materials are utilized across all our high-stakes construction sites.
               </p>
             </div>
@@ -107,7 +107,7 @@ export default function QualityManagement() {
             <div className="glass-panel hover-lift" style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)" }}>
               <ClipboardCheck size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Rigorous Testing</h3>
-              <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0, textAlign: "left" }}>
                 Quality assurance is embedded at the core of our operations. Before a single asphalt layer is applied to a major expressway or a structural concrete pour commences, materials undergo exhaustive laboratory analysis. Comprehensive core sampling, precision compaction tests, and stringent load-bearing verifications form the baseline of our non-negotiable standard operating procedures.
               </p>
             </div>
@@ -115,7 +115,7 @@ export default function QualityManagement() {
             <div className="glass-panel hover-lift" style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)" }}>
               <Target size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Expert Supervision</h3>
-              <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0 }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0, textAlign: "left" }}>
                 Every project site operates under the vigilant, hands-on oversight of highly seasoned Chartered Civil Engineers and Senior Quantity Surveyors. This elite technical supervision enables us to preemptively identify and rectify any deviations from critical engineering specifications, guaranteeing that every structural milestone is executed with absolute precision and strict adherence to international standards.
               </p>
             </div>
@@ -127,3 +127,4 @@ export default function QualityManagement() {
     </div>
   );
 }
+
