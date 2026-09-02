@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -49,17 +49,23 @@ export default function SocialResponsibility() {
       {/* Intro Section */}
       <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "50px", alignItems: "center" }}>
+          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "50px", alignItems: "flex-start" }}>
             <div>
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px" }}>Community First</h4>
               <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.2 }}>
                 Engineering for <span style={{ color: "var(--primary-red)" }}>The People</span>
               </h2>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", textAlign: "justify" }}>
                 Large-scale construction inherently impacts local communities. Whether we are driving a new expressway through the heart of the country or mitigating dangerous landslides in the central hills, RR Construction views the local community as a primary stakeholder.
               </p>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8 }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", textAlign: "justify" }}>
                 Our Corporate Social Responsibility (CSR) initiatives are deeply integrated into our project planning. We aim to leave every community vastly improved not just by the final infrastructure, but by the economic and social opportunities generated during the construction phase.
+              </p>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", textAlign: "justify" }}>
+                We strictly adhere to a policy of transparent communication, conducting comprehensive environmental and social impact assessments before breaking ground. By keeping community leaders informed and actively seeking their input, we ensure that our operational footprint causes zero undue disruption to their daily lives and livelihoods.
+              </p>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, textAlign: "justify" }}>
+                Furthermore, our commitment to sustainable development means that a portion of our project budget is reinvested directly into the local economy. From sourcing raw materials locally to empowering grassroots vendors, our operations serve as a catalyst for immediate socio-economic upliftment.
               </p>
             </div>
             <div style={{ background: "var(--white)", padding: isMobile ? "30px" : "50px", borderRadius: "24px", border: "1px solid rgba(229, 57, 53, 0.2)", boxShadow: "0 20px 40px rgba(229, 57, 53, 0.05)" }}>
@@ -126,3 +132,5 @@ export default function SocialResponsibility() {
     </div>
   );
 }
+
+
