@@ -97,15 +97,8 @@ export default function ThudugalaPlant() {
               <p style={{ color: "var(--text-light)", marginBottom: "30px" }}>For bulk orders and material inquiries.</p>
               
               <div style={{ marginBottom: "20px" }}>
-                <h4 style={{ color: "var(--primary-red)", marginBottom: "10px" }}>Direct Lines</h4>
-                <p style={{ color: "var(--text-dark)", fontSize: "1.2rem", fontWeight: 600, marginBottom: "5px" }}>076 048 7418</p>
-                <p style={{ color: "var(--text-dark)", fontSize: "1.2rem", fontWeight: 600, marginBottom: "5px" }}>077 294 1668</p>
-              </div>
-
-              <div>
-                <h4 style={{ color: "var(--primary-red)", marginBottom: "10px", marginTop: "30px" }}>Hotlines</h4>
-                <p style={{ color: "var(--text-dark)", fontSize: "1.1rem", fontWeight: 600 }}>077 345 6789</p>
-                <p style={{ color: "var(--text-dark)", fontSize: "1.1rem", fontWeight: 600 }}>071 234 5678</p>
+                <h4 style={{ color: "var(--primary-red)", marginBottom: "10px" }}>Hotline</h4>
+                <p style={{ color: "var(--text-dark)", fontSize: "1.2rem", fontWeight: 600, marginBottom: "5px" }}>076 237 8799</p>
               </div>
               
               <div style={{ marginTop: "30px" }}>
