@@ -50,20 +50,20 @@ export default function HealthAndSafety() {
       {/* Intro Section */}
       <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "50px", alignItems: "center" }}>
-            <div>
+          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "50px", alignItems: "flex-start" }}>
+            <div style={{ paddingTop: isMobile ? 0 : "20px" }}>
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px" }}>Iso 45001:2018</h4>
               <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.2 }}>
                 Safety is Not Optional. <span style={{ color: "var(--primary-red)" }}>It is Mandatory.</span>
               </h2>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", textAlign: "justify" }}>
                 Operating heavy machinery, handling controlled rock blasting, and mitigating volatile landslides naturally involves massive risk. At RR Construction, we do not compromise on safety. Our <strong>"Zero Harm"</strong> philosophy guarantees that the physical wellbeing of our employees and the surrounding community supersedes operational speed or cost.
               </p>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8 }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, textAlign: "justify" }}>
                 Certified under the rigorous <strong>ISO 45001:2018 Occupational Health and Safety Management System</strong>, we enforce safety protocols that often exceed standard regulatory requirements.
               </p>
             </div>
-            <div style={{ background: "var(--white)", padding: isMobile ? "30px" : "50px", borderRadius: "24px", border: "1px solid rgba(229, 57, 53, 0.2)", boxShadow: "0 20px 40px rgba(229, 57, 53, 0.05)" }}>
+            <div style={{ background: "var(--white)", padding: isMobile ? "30px" : "50px", borderRadius: "24px", border: "1px solid rgba(229, 57, 53, 0.2)", boxShadow: "0 20px 40px rgba(229, 57, 53, 0.05)", height: "100%" }}>
               <ShieldCheck size={50} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
               <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "25px" }}>The Zero Harm Framework</h3>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
