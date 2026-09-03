@@ -12,7 +12,7 @@ export default function Footer() {
                 <img src="/images/logo.png" alt="RR Construction Logo" />
               </div>
               <div className="footer-logo-text">
-                <span className="logo-title">Construction</span>
+                <span className="logo-title">RR Construction</span>
                 <span className="logo-sub">(Pvt) Ltd</span>
               </div>
             </div>
