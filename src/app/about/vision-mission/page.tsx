@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
@@ -170,7 +170,7 @@ export default function VisionMission() {
             </div>
           </Reveal>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 260px), 1fr))", gap: "30px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))", gap: "30px" }}>
             {[
               { title: "QUALITY", subtitle: "Built to Perform", desc: "Exceeding international standards in every pour, weld, and structural element.", icon: <ShieldCheck size={32} /> },
               { title: "INNOVATION", subtitle: "Engineered for Tomorrow", desc: "Adopting advanced methodologies to solve the most complex civil engineering challenges.", icon: <Lightbulb size={32} /> },
@@ -206,9 +206,9 @@ export default function VisionMission() {
                   <h3 style={{ fontSize: "0.95rem", color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px", margin: "0 0 10px" }}>
                     {val.title}
                   </h3>
-                  <p style={{ color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontSize: "1.5rem", fontWeight: 800, margin: "0 0 15px", lineHeight: 1.2 }}>
+                  <h4 style={{ color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontSize: "1.5rem", fontWeight: 800, margin: "0 0 15px", lineHeight: 1.2 }}>
                     {val.subtitle}
-                  </p>
+                  </h4>
                   <p style={{ color: "var(--text-light)", fontSize: "1rem", lineHeight: 1.6, margin: 0, fontWeight: 500 }}>
                     {val.desc}
                   </p>
