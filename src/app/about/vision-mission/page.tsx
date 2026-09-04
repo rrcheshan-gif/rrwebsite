@@ -219,29 +219,7 @@ export default function VisionMission() {
         </div>
       </section>
 
-      {/* Corporate CTA */}
-      <section style={{ padding: "100px 20px", backgroundColor: "var(--white)", borderTop: "1px solid var(--border-soft)", textAlign: "center" }}>
-        <Reveal>
-          <h2 style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 40px", letterSpacing: "-1px" }}>
-            Let's Build What's Next.
-          </h2>
-          <Link href="/contact" style={{ 
-            background: "var(--primary-red)", 
-            color: "white", 
-            padding: "18px 45px", 
-            borderRadius: "50px",
-            fontSize: "1.1rem", 
-            fontWeight: 700, 
-            display: "inline-flex", 
-            alignItems: "center", 
-            gap: "10px",
-            boxShadow: "0 10px 20px rgba(229, 57, 53, 0.2)",
-            textDecoration: "none"
-          }}>
-            Contact Our Team <ArrowRight size={20} />
-          </Link>
-        </Reveal>
-      </section>
+
 
     </div>
   );
