@@ -23,7 +23,7 @@ export default function WaterInfrastructurePage() {
         position: 'relative',
         padding: isMobile ? '40px 20px' : '70px 20px',
         backgroundColor: 'var(--text-dark)',
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/services/water-hero.jpg")',
+        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/service-water-hero.jpeg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',

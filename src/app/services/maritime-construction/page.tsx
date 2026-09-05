@@ -26,7 +26,7 @@ export default function MaritimeConstructionPage() {
         style={{
           position: 'relative',
           padding: isMobile ? '40px 20px' : '70px 20px',
-          backgroundImage: 'url("/images/page-headers/services-build.jpg")',
+          backgroundImage: "url('/images/gandara/gandara-3.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'var(--white)',

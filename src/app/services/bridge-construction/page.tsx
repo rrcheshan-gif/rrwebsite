@@ -22,7 +22,7 @@ export default function BridgeConstructionPage() {
         style={{
           position: 'relative',
           padding: isMobile ? '40px 20px' : '70px 20px',
-          backgroundImage: 'url("/images/page-headers/services-build.jpg")',
+          backgroundImage: "url('/images/service-bridge-hero.jpeg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'var(--white)',

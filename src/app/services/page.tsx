@@ -173,7 +173,7 @@ export default function Services() {
 
       {/* ── HERO ── */}
       <section style={{
-        backgroundImage: "linear-gradient(rgba(10,18,35,0.72), rgba(10,18,35,0.84)), url('/images/page-headers/services-build.jpg')",
+        backgroundImage: "linear-gradient(rgba(10,18,35,0.72), rgba(10,18,35,0.84)), url('/images/puttalam/puttalam-2.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center 35%',
         padding: isMobile ? '40px 20px' : '70px 20px',
@@ -264,8 +264,8 @@ export default function Services() {
       <section style={{ padding: isMobile ? '60px 12px' : '100px 20px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? '40px' : '80px', alignItems: 'center' }}>
           <div style={{ borderRadius: '28px', overflow: 'hidden', minHeight: isMobile ? '260px' : '460px', position: 'relative', boxShadow: '0 28px 60px rgba(0,0,0,0.14)' }}>
-            <img src="/images/machinery-combined.jpg" alt="RR Construction heavy machinery fleet" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }}
-              onError={e => { (e.currentTarget as HTMLImageElement).src = '/images/page-headers/services-build.jpg'; }} />
+            <img src="/images/machinery/plant-6.jpg" alt="RR Construction heavy machinery fleet" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }}
+              onError={e => { (e.currentTarget as HTMLImageElement).src = '/images/puttalam/puttalam-3.jpg'; }} />
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(10,18,35,0.92) 0%, rgba(10,18,35,0.2) 60%, transparent)' }} />
             <div style={{ position: 'absolute', bottom: 0, left: 0, padding: isMobile ? '28px' : '44px' }}>
               <div style={{ fontFamily: 'var(--font-heading)', color: 'white', fontSize: isMobile ? '1.5rem' : '2.2rem', fontWeight: 900, marginBottom: '6px' }}>Self-Reliant Fleet</div>

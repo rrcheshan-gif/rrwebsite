@@ -16,7 +16,7 @@ export default function LandslideMitigationPage() {
   const styles = {
     hero: {
       position: 'relative' as const,
-      backgroundImage: "url('/images/home/slider/polished/hatton.jpg')",
+      backgroundImage: "url('/images/service-landslide-hero.jpeg')",
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       padding: isMobile ? '40px 20px' : '70px 20px',
