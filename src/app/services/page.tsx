@@ -293,17 +293,9 @@ export default function Services() {
             <p style={{ color: 'var(--text-light)', lineHeight: 1.85, fontSize: '1rem', marginBottom: '18px' }}>
               Every project begins with a meticulous pre-construction resource plan — construction schedule, organisation chart, plant allocation, and materials schedule — mapped to the master programme before mobilisation.
             </p>
-            <p style={{ color: 'var(--text-light)', lineHeight: 1.85, fontSize: '1rem', marginBottom: '36px' }}>
+            <p style={{ color: 'var(--text-light)', lineHeight: 1.85, fontSize: '1rem', marginBottom: 0 }}>
               With a self-owned fleet of {COMPANY_DATA.machineryFleet} machines and {COMPANY_DATA.workforce} personnel, we eliminate third-party dependency and deliver on schedule.
             </p>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
-              <Link href="/projects" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--primary-red)', color: 'white', padding: '13px 28px', borderRadius: '50px', fontWeight: 700, textDecoration: 'none', fontSize: '0.92rem', boxShadow: '0 8px 24px rgba(229,57,53,0.3)' }}>
-                View Our Projects →
-              </Link>
-              <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', border: '2px solid var(--border-soft)', color: 'var(--text-dark)', padding: '13px 28px', borderRadius: '50px', fontWeight: 700, textDecoration: 'none', fontSize: '0.92rem' }}>
-                Contact Us
-              </Link>
-            </div>
           </div>
         </div>
       </section>
