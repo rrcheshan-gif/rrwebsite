@@ -300,31 +300,6 @@ export default function Services() {
         </div>
       </section>
 
-      {/* ── CTA BANNER ── */}
-      <section style={{ padding: isMobile ? '0 12px 60px' : '0 20px 100px' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <div style={{ backgroundImage: "linear-gradient(135deg, rgba(10,18,35,0.94), rgba(30,10,10,0.97)), url('/images/home/slider/polished/bridge.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', borderRadius: '28px', padding: isMobile ? '50px 28px' : '80px', display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: 'center', justifyContent: 'space-between', gap: '40px', position: 'relative', overflow: 'hidden' }}>
-            <div style={{ position: 'absolute', left: 0, top: 0, width: '5px', height: '100%', background: 'var(--primary-red)' }} />
-            <div>
-              <h2 style={{ fontFamily: 'var(--font-heading)', color: 'white', fontSize: isMobile ? '1.8rem' : '2.6rem', fontWeight: 900, margin: '0 0 12px', lineHeight: 1.15 }}>
-                Ready to Start Your Project?
-              </h2>
-              <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1rem', margin: 0, maxWidth: '480px' }}>
-                Discuss your infrastructure requirement with our engineering team. We handle projects of every scale across Sri Lanka.
-              </p>
-            </div>
-            <div style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', gap: '14px', flexShrink: 0 }}>
-              <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '8px', background: 'var(--primary-red)', color: 'white', padding: '15px 36px', borderRadius: '50px', fontWeight: 700, textDecoration: 'none', fontSize: '1rem', boxShadow: '0 8px 24px rgba(229,57,53,0.4)', whiteSpace: 'nowrap' }}>
-                Get in Touch →
-              </Link>
-              <Link href="/projects" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '8px', border: '2px solid rgba(255,255,255,0.3)', color: 'white', padding: '15px 36px', borderRadius: '50px', fontWeight: 700, textDecoration: 'none', fontSize: '1rem', whiteSpace: 'nowrap' }}>
-                Our Projects
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
     </div>
   );
 }
