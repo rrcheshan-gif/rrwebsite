@@ -1173,6 +1173,7 @@ const projectsData = [
 
     {
     id: 'project-ldpp-package-02',
+      hideMap: true,
     type: 'completed',
     category: 'disaster',
     title: 'Landslide Disaster Protection Project - Package 02 (Countermeasures at Six Locations in Sabaragamuwa and Uva Provinces)',

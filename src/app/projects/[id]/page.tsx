@@ -292,7 +292,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
                   </div>
                 )}
                 
-                {project.type !== 'ongoing' && (
+                {project.type !== 'ongoing' && !project.hideMap && (
                   <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
                     <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem',  marginBottom: '5px', letterSpacing: '1px' }}>Duration</h4>
                     <p style={{ color: 'var(--text-dark)', fontSize: '1.1rem', fontWeight: 'bold' }}>{project.duration}</p>
