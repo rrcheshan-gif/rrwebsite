@@ -94,30 +94,42 @@ export default function EnvironmentalStewardship() {
             </h2>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "30px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "30px", maxWidth: "900px", margin: "0 auto" }}>
             
-            <div className="glass-panel hover-lift" style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)" }}>
-              <Wind size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
-              <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Emissions & Air Quality</h3>
-              <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0, textAlign: "left" }}>
-                Operating an expansive fleet of over {COMPANY_DATA.machineryFleet} heavy machines demands rigorous emissions oversight. We enforce stringent, data-driven fleet maintenance protocols to aggressively optimize fuel efficiency and reduce our carbon footprint. Furthermore, advanced high-pressure water suppression systems and state-of-the-art industrial dust collectors are integrated into our concrete and asphalt batching plants across Thudugala, Veerapuram, Omanthai, and Yakawewa, effectively neutralizing airborne particulate matter and preserving local air quality.
-              </p>
+            <div className="glass-panel hover-lift" style={{ background: "var(--white)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)", display: "flex", flexWrap: "wrap", gap: "30px", alignItems: "flex-start", boxShadow: "0 10px 30px rgba(0,0,0,0.04)" }}>
+              <div style={{ width: "80px", height: "80px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                <Wind size={40} color="var(--primary-red)" />
+              </div>
+              <div style={{ flex: "1 1 300px" }}>
+                <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Emissions & Air Quality</h3>
+                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0 }}>
+                  Operating an expansive fleet of over {COMPANY_DATA.machineryFleet} heavy machines demands rigorous emissions oversight. We enforce stringent, data-driven fleet maintenance protocols to aggressively optimize fuel efficiency and reduce our carbon footprint. Furthermore, advanced high-pressure water suppression systems and state-of-the-art industrial dust collectors are integrated into our concrete and asphalt batching plants across Thudugala, Veerapuram, Omanthai, and Yakawewa, effectively neutralizing airborne particulate matter and preserving local air quality.
+                </p>
+              </div>
             </div>
 
-            <div className="glass-panel hover-lift" style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)" }}>
-              <Droplets size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
-              <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Water Resource Protection</h3>
-              <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0, textAlign: "left" }}>
-                Preserving aquatic ecosystems is a cornerstone of our heavy civil engineering methodology. During massive hydraulic and irrigation operations - such as the Kalmadu Scheme - and deep maritime dredging projects in Negombo and Gandara, we deploy industrial-grade silt screens and advanced sediment containment traps. These rigorous hydrological safeguards guarantee that our earthworks never contaminate fragile local water tables or disrupt vulnerable coastal marine habitats.
-              </p>
+            <div className="glass-panel hover-lift" style={{ background: "var(--white)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)", display: "flex", flexWrap: "wrap", gap: "30px", alignItems: "flex-start", boxShadow: "0 10px 30px rgba(0,0,0,0.04)" }}>
+              <div style={{ width: "80px", height: "80px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                <Droplets size={40} color="var(--primary-red)" />
+              </div>
+              <div style={{ flex: "1 1 300px" }}>
+                <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Water Resource Protection</h3>
+                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0 }}>
+                  Preserving aquatic ecosystems is a cornerstone of our heavy civil engineering methodology. During massive hydraulic and irrigation operations - such as the Kalmadu Scheme - and deep maritime dredging projects in Negombo and Gandara, we deploy industrial-grade silt screens and advanced sediment containment traps. These rigorous hydrological safeguards guarantee that our earthworks never contaminate fragile local water tables or disrupt vulnerable coastal marine habitats.
+                </p>
+              </div>
             </div>
 
-            <div className="glass-panel hover-lift" style={{ background: "var(--bg-light)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)" }}>
-              <RefreshCw size={40} color="var(--primary-red)" style={{ marginBottom: "20px" }} />
-              <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Material Optimization</h3>
-              <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0, textAlign: "left" }}>
-                We pioneer sustainable resource engineering by operating proprietary crusher plants and manufacturing high-strength Manufactured Sand (M-Sand), systematically bypassing environmentally destructive river sand mining. We aggressively integrate Reclaimed Asphalt Pavement (RAP) into our supply chains and execute precision-controlled rock blasting techniques. This methodology maximizes structural material yields while drastically minimizing topographical scarring and ecological degradation.
-              </p>
+            <div className="glass-panel hover-lift" style={{ background: "var(--white)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)", display: "flex", flexWrap: "wrap", gap: "30px", alignItems: "flex-start", boxShadow: "0 10px 30px rgba(0,0,0,0.04)" }}>
+              <div style={{ width: "80px", height: "80px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                <RefreshCw size={40} color="var(--primary-red)" />
+              </div>
+              <div style={{ flex: "1 1 300px" }}>
+                <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Material Optimization</h3>
+                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0 }}>
+                  We pioneer sustainable resource engineering by operating proprietary crusher plants and manufacturing high-strength Manufactured Sand (M-Sand), systematically bypassing environmentally destructive river sand mining. We aggressively integrate Reclaimed Asphalt Pavement (RAP) into our supply chains and execute precision-controlled rock blasting techniques. This methodology maximizes structural material yields while drastically minimizing topographical scarring and ecological degradation.
+                </p>
+              </div>
             </div>
 
           </div>
