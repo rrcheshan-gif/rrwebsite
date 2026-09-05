@@ -99,38 +99,7 @@ export default function Awards() {
         </div>
       </section>
 
-      {/* Operational Milestones - Advanced Stats Counter */}
-      <section style={{ padding: isMobile ? "40px 10px" : "80px 20px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
-          
-          <div style={{ textAlign: "center", marginBottom: "60px" }}>
-            <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0 }}>Operational Milestones</h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "15px", maxWidth: "800px", margin: "15px auto 0" }}>
-              Our true achievements are measured by the scale of our capabilities, the strength of our workforce, and the physical infrastructure we have built across Sri Lanka.
-            </p>
-          </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "40px", borderTop: "1px solid var(--border-soft)", paddingTop: "60px" }}>
-            {[
-              { stat: "100+", label: "Major Projects Completed", icon: <CheckCircle2 size={32} color="var(--primary-red)" /> },
-              { stat: "1,000+", label: "Heavy Machinery Units", icon: <Cog size={32} color="var(--primary-red)" /> },
-              { stat: "30+", label: "Years of Engineering", icon: <Trophy size={32} color="var(--primary-red)" /> },
-              { stat: "1,400+", label: "Skilled Professionals", icon: <HardHat size={32} color="var(--primary-red)" /> }
-            ].map((item, idx) => (
-              <div key={idx} style={{ textAlign: "center", padding: "20px" }}>
-                <div style={{ display: "flex", justifyContent: "center", marginBottom: "25px" }}>
-                  <div style={{ background: "rgba(229, 57, 53, 0.08)", padding: "20px", borderRadius: "50%", color: "var(--primary-red)" }}>
-                    {item.icon}
-                  </div>
-                </div>
-                <h3 style={{ fontSize: "3.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 10px", lineHeight: 1 }}>{item.stat}</h3>
-                <h4 style={{ fontSize: "1.05rem", color: "var(--text-light)", fontWeight: 700, letterSpacing: "1.5px", margin: 0, textTransform: "uppercase" }}>{item.label}</h4>
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
 
       
 
