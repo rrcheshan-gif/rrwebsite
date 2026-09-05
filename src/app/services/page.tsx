@@ -22,7 +22,7 @@ const SERVICES = [
     subtitle: 'River Crossings • Overpasses • Causeways',
     desc: 'RR Construction builds PSC girder bridges, T-beam spans, box culverts, and complex overpasses engineered to carry extreme traffic loads.',
     highlights: ['PSC Girder & T-Beam', 'Mahanama Bridge', 'Padiyathalawa Bridges'],
-    image: '/images/BBP/hero.jpeg',
+    image: '/images/IMAGES/Mahanama Bridge/Background image.jpeg',
     cta: '/services/bridge-construction',
   },
   {
@@ -32,7 +32,7 @@ const SERVICES = [
     subtitle: 'Fishery Harbours • Breakwaters • Marine Heavy Civil Engineering',
     desc: 'Specialised marine heavy civil engineering across Sri Lanka\'s coastline — fishery harbours, commercial breakwaters, quay walls, jetties, and coastal protection structures from seabed to superstructure.',
     highlights: ['Gandara Fishery Harbour', 'Breakwaters & Rock Armour', 'Marine Pile Installation'],
-    image: '/images/gandara/gandara-1.jpg',
+    image: '/images/wellamankara/background image.png',
     cta: '/services/maritime-construction',
   },
   {
