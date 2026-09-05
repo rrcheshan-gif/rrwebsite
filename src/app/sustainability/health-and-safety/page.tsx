@@ -168,38 +168,38 @@ export default function HealthAndSafety() {
             
             <div style={{ background: "var(--white)", padding: "30px", borderRadius: "16px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
               <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Worker Consultation & Participation</h3>
-              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px" }}>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px", textAlign: "left" }}>
                 Effective HSE performance requires active engagement from every employee. We guarantee reasonable time, information, and resources for workers to participate in:
               </p>
-              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "20px", margin: 0 }}>
-                <li>Hazard identification and risk assessments.</li>
-                <li>Toolbox meetings and safety briefings.</li>
-                <li>Reporting hazards or stopping work where immediate danger exists - without fear of retaliation.</li>
+              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "25px", margin: 0, listStyleType: "disc", textAlign: "left" }}>
+                <li style={{ marginBottom: "10px" }}>Hazard identification and risk assessments.</li>
+                <li style={{ marginBottom: "10px" }}>Toolbox meetings and safety briefings.</li>
+                <li style={{ marginBottom: "10px" }}>Reporting hazards or stopping work where immediate danger exists - without fear of retaliation.</li>
               </ul>
             </div>
 
             <div style={{ background: "var(--white)", padding: "30px", borderRadius: "16px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
               <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Emergency Preparedness</h3>
-              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px" }}>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px", textAlign: "left" }}>
                 Our sites are high-stakes environments. We maintain rigorous emergency response procedures to handle foreseeable situations instantly, including:
               </p>
-              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "20px", margin: 0 }}>
-                <li>Fire, explosion, and natural disasters.</li>
-                <li>Serious injuries or medical emergencies.</li>
-                <li>Chemical and fuel spills.</li>
-                <li>Working-at-height and confined-space emergencies.</li>
+              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "25px", margin: 0, listStyleType: "disc", textAlign: "left" }}>
+                <li style={{ marginBottom: "10px" }}>Fire, explosion, and natural disasters.</li>
+                <li style={{ marginBottom: "10px" }}>Serious injuries or medical emergencies.</li>
+                <li style={{ marginBottom: "10px" }}>Chemical and fuel spills.</li>
+                <li style={{ marginBottom: "10px" }}>Working-at-height and confined-space emergencies.</li>
               </ul>
             </div>
 
             <div style={{ background: "var(--white)", padding: "30px", borderRadius: "16px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
               <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Incident & Nonconformity Actions</h3>
-              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px" }}>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px", textAlign: "left" }}>
                 All near-misses, accidents, and significant unsafe conditions are systematically reported and investigated. We actively:
               </p>
-              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "20px", margin: 0 }}>
-                <li>Identify immediate and underlying root causes.</li>
-                <li>Implement corrective actions within agreed timeframes.</li>
-                <li>Communicate lessons learned across all operational teams to prevent recurrence.</li>
+              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "25px", margin: 0, listStyleType: "disc", textAlign: "left" }}>
+                <li style={{ marginBottom: "10px" }}>Identify immediate and underlying root causes.</li>
+                <li style={{ marginBottom: "10px" }}>Implement corrective actions within agreed timeframes.</li>
+                <li style={{ marginBottom: "10px" }}>Communicate lessons learned across all operational teams to prevent recurrence.</li>
               </ul>
             </div>
 
