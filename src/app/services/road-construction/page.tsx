@@ -209,19 +209,7 @@ export default function RoadConstructionPage() {
               <p style={{ color: 'var(--text-light)', lineHeight: 1.6, marginBottom: '24px' }}>
                 We operate our own asphalt mixing plants and possess a modern fleet of pavers and compactors. This vertical integration allows us to maintain strict quality control over ABC (Aggregate Base Course) laying and asphalt surfacing.
               </p>
-              <Link 
-                href="/materials/asphalt" 
-                style={{ 
-                  display: 'inline-flex', 
-                  alignItems: 'center', 
-                  gap: '8px',
-                  color: 'var(--primary-red)',
-                  textDecoration: 'none',
-                  fontWeight: 600
-                }}
-              >
-                Explore Asphalt Manufacturing <ArrowRight size={18} />
-              </Link>
+              
             </div>
           </div>
         </div>
@@ -280,23 +268,7 @@ export default function RoadConstructionPage() {
             ))}
           </div>
 
-          <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <Link 
-              href="/projects" 
-              style={{
-                display: 'inline-block',
-                padding: '16px 32px',
-                backgroundColor: 'var(--white)',
-                color: 'var(--text-dark)',
-                textDecoration: 'none',
-                borderRadius: '8px',
-                fontWeight: 600,
-                border: '1px solid var(--border-soft)'
-              }}
-            >
-              View All Projects
-            </Link>
-          </div>
+          
         </div>
       </section>
 

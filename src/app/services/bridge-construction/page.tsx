@@ -358,22 +358,7 @@ export default function BridgeConstructionPage() {
             ))}
           </div>
           
-          <div style={{ textAlign: 'center', marginTop: '48px' }}>
-             <Link
-              href="/projects"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '8px',
-                color: 'var(--primary-red)',
-                fontWeight: 600,
-                textDecoration: 'none',
-                fontSize: '18px',
-              }}
-            >
-              View Full Project Portfolio <ArrowRight size={20} />
-            </Link>
-          </div>
+          
         </div>
       </section>
 

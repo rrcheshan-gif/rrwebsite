@@ -292,17 +292,7 @@ export default function MaritimeConstructionPage() {
                 Demonstrating our capability in marine environments.
               </p>
             </div>
-            <Link href="/projects" style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '8px',
-              color: 'var(--primary-red)',
-              textDecoration: 'none',
-              fontWeight: 600,
-              fontSize: '16px'
-            }}>
-              View all projects <ArrowRight size={20} />
-            </Link>
+            
           </div>
 
           <div style={{ 
@@ -406,9 +396,7 @@ export default function MaritimeConstructionPage() {
                 <p style={{ fontSize: '15px', color: 'var(--text-light)', lineHeight: 1.6, marginBottom: '20px' }}>
                   Installation of coastal defence mechanisms including rock armouring and revetments for various infrastructure developments across the coastline.
                 </p>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--primary-red)', fontWeight: 600, fontSize: '15px' }}>
-                  View Project Category <ArrowRight size={16} />
-                </div>
+                
               </div>
             </div>
           </div>
