@@ -99,7 +99,7 @@ export default function Awards() {
         </div>
       </section>
 
-      {/* Organizational Achievements */}
+      {/* Operational Milestones - Advanced Stats Counter */}
       <section style={{ padding: isMobile ? "40px 10px" : "80px 20px" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
           
@@ -110,27 +110,21 @@ export default function Awards() {
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "30px" }}>
-            {achievements.map((item, idx) => (
-              <div 
-                key={idx} 
-                 
-                style={{ 
-                  background: "var(--white)", 
-                  padding: "40px 30px", 
-                  borderRadius: "24px", 
-                  border: "1px solid var(--border-soft)", 
-                  boxShadow: "0 10px 30px rgba(0,0,0,0.03)",
-                  transition: "transform 0.4s ease, box-shadow 0.4s ease"
-                }}
-                onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-10px)'; e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.08)' }} 
-                onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none' }}
-              >
-                <div style={{ marginBottom: "25px", background: "var(--bg-light)", display: "inline-block", padding: "16px", borderRadius: "20px" }}>
-                  {item.icon}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "40px", borderTop: "1px solid var(--border-soft)", paddingTop: "60px" }}>
+            {[
+              { stat: "100+", label: "Major Projects Completed", icon: <CheckCircle2 size={32} color="var(--primary-red)" /> },
+              { stat: "1,000+", label: "Heavy Machinery Units", icon: <Cog size={32} color="var(--primary-red)" /> },
+              { stat: "30+", label: "Years of Engineering", icon: <Trophy size={32} color="var(--primary-red)" /> },
+              { stat: "1,400+", label: "Skilled Professionals", icon: <HardHat size={32} color="var(--primary-red)" /> }
+            ].map((item, idx) => (
+              <div key={idx} style={{ textAlign: "center", padding: "20px" }}>
+                <div style={{ display: "flex", justifyContent: "center", marginBottom: "25px" }}>
+                  <div style={{ background: "rgba(229, 57, 53, 0.08)", padding: "20px", borderRadius: "50%", color: "var(--primary-red)" }}>
+                    {item.icon}
+                  </div>
                 </div>
-                <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>{item.title}</h3>
-                <p style={{ color: "var(--text-light)", lineHeight: 1.7, fontSize: "1rem", margin: 0 }}>{item.desc}</p>
+                <h3 style={{ fontSize: "3.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 10px", lineHeight: 1 }}>{item.stat}</h3>
+                <h4 style={{ fontSize: "1.05rem", color: "var(--text-light)", fontWeight: 700, letterSpacing: "1.5px", margin: 0, textTransform: "uppercase" }}>{item.label}</h4>
               </div>
             ))}
           </div>
