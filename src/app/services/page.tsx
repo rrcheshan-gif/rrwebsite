@@ -22,7 +22,7 @@ const SERVICES = [
     subtitle: 'River Crossings • Overpasses • Causeways',
     desc: 'RR Construction builds PSC girder bridges, T-beam spans, box culverts, and complex overpasses engineered to carry extreme traffic loads.',
     highlights: ['PSC Girder & T-Beam', 'Mahanama Bridge', 'Padiyathalawa Bridges'],
-    image: '/images/IMAGES/Mahanama Bridge/WhatsApp Image 2026-08-22 at 09.59.18.jpeg',
+    image: '/images/service-bridge.jpeg',
     cta: '/services/bridge-construction',
   },
   {
@@ -62,7 +62,7 @@ const SERVICES = [
     subtitle: 'Geotechnical Engineering • Retaining Structures • Rock-fall Protection',
     desc: 'Specialist geotechnical works across Sri Lanka\'s critical hill-country zones — soil nailing, shotcrete, gabion retaining walls, reinforced earth structures, and rock-fall net systems protecting national roads.',
     highlights: ['Nuwara Eliya & Hatton Corridor', 'NBRO-Compliant Design', 'Rock-fall Protection Systems', 'Emergency Slope Repair'],
-    image: '/images/IMAGES/LDPP/WhatsApp Image 2026-09-04 at 16.38.40.jpeg',
+    image: '/images/service-ldpp.jpeg',
     cta: '/services/landslide-mitigation',
   },
   {
