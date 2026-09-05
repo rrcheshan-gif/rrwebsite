@@ -153,37 +153,37 @@ export default function EnvironmentalStewardship() {
             
             <div style={{ background: "var(--white)", padding: "30px", borderRadius: "16px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
               <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Waste & Pollution Control</h3>
-              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px" }}>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px", textAlign: "left" }}>
                 We apply the principle of prevention before protection. Our site operations are mandated to:
               </p>
-              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "20px", margin: 0 }}>
-                <li>Ensure proper collection, storage, and disposal of all project waste.</li>
-                <li>Prevent contamination of soil, surface water, and groundwater from hazardous substances.</li>
-                <li>Minimize waste generation and heavily promote reduction, reuse, and recycling.</li>
+              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "25px", margin: 0, listStyleType: "disc", textAlign: "left" }}>
+                <li style={{ marginBottom: "10px" }}>Ensure proper collection, storage, and disposal of all project waste.</li>
+                <li style={{ marginBottom: "10px" }}>Prevent contamination of soil, surface water, and groundwater from hazardous substances.</li>
+                <li style={{ marginBottom: "10px" }}>Minimize waste generation and heavily promote reduction, reuse, and recycling.</li>
               </ul>
             </div>
 
             <div style={{ background: "var(--white)", padding: "30px", borderRadius: "16px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
               <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Strict Legal Compliance</h3>
-              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px" }}>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px", textAlign: "left" }}>
                 Operating at scale requires absolute adherence to the law. Our management continuously identifies and complies with:
               </p>
-              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "20px", margin: 0 }}>
-                <li>National environmental and labor legislation.</li>
-                <li>Construction and project-specific client requirements.</li>
-                <li>Strict permit and licence conditions for all manufacturing plants.</li>
+              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "25px", margin: 0, listStyleType: "disc", textAlign: "left" }}>
+                <li style={{ marginBottom: "10px" }}>National environmental and labor legislation.</li>
+                <li style={{ marginBottom: "10px" }}>Construction and project-specific client requirements.</li>
+                <li style={{ marginBottom: "10px" }}>Strict permit and licence conditions for all manufacturing plants.</li>
               </ul>
             </div>
 
             <div style={{ background: "var(--white)", padding: "30px", borderRadius: "16px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
               <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Continual Auditing & Improvement</h3>
-              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px" }}>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7, marginBottom: "10px", textAlign: "left" }}>
                 We conduct internal HSE audits at planned intervals to guarantee our management systems achieve their intended outcomes. Top Management periodically reviews:
               </p>
-              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "20px", margin: 0 }}>
-                <li>Environmental performance metrics and compliance status.</li>
-                <li>System suitability, adequacy, and overall effectiveness.</li>
-                <li>Changes in risks and opportunities for ecological improvement.</li>
+              <ul style={{ color: "var(--text-light)", lineHeight: 1.7, paddingLeft: "25px", margin: 0, listStyleType: "disc", textAlign: "left" }}>
+                <li style={{ marginBottom: "10px" }}>Environmental performance metrics and compliance status.</li>
+                <li style={{ marginBottom: "10px" }}>System suitability, adequacy, and overall effectiveness.</li>
+                <li style={{ marginBottom: "10px" }}>Changes in risks and opportunities for ecological improvement.</li>
               </ul>
             </div>
 
