@@ -224,7 +224,7 @@ export default function Services() {
                 {svc.image && (
                   <div style={{ overflow: 'hidden', position: 'relative' }}>
                     <img
-                      src={svc.image}
+                      src={encodeURI(svc.image)}
                       alt={svc.title}
                       className="svc-card-img"
                       onError={e => {
