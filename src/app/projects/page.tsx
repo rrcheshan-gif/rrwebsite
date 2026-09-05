@@ -39,7 +39,7 @@ export default function Projects() {
   );
 
   
-  const milestoneIds = ['project-47', 'project-32', 'project-86'];
+  const milestoneIds = ['project-ldpp-package-02', 'project-47', 'project-32', 'project-86'];
   const milestoneProjects = filteredProjects.filter((p: any) => milestoneIds.includes(p.id)).sort((a: any, b: any) => milestoneIds.indexOf(a.id) - milestoneIds.indexOf(b.id));
   const regularProjects = filteredProjects.filter((p: any) => !milestoneIds.includes(p.id));
 
