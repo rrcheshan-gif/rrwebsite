@@ -247,13 +247,6 @@ export default function Services() {
                   <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.3rem' : '1.45rem', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 12px', lineHeight: 1.2 }}>{svc.title}</h3>
                   <p style={{ color: 'var(--text-light)', lineHeight: 1.75, fontSize: '0.93rem', margin: '0 0 20px', flex: 1 }}>{svc.desc}</p>
 
-                  {/* Highlights */}
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '7px', marginBottom: '22px' }}>
-                    {svc.highlights.map((h, i) => (
-                      <span key={i} className="highlight-tag">{h}</span>
-                    ))}
-                  </div>
-
                   {/* Arrow CTA */}
                   <div style={{ display: 'flex', alignItems: 'center', gap: '7px', color: 'var(--primary-red)', fontWeight: 700, fontSize: '0.88rem', marginTop: 'auto' }}>
                     Learn more
