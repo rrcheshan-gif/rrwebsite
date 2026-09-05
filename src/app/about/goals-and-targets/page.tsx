@@ -176,7 +176,7 @@ export default function GoalsAndTargets() {
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "25px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(450px, 1fr))", gap: "25px" }}>
             {strategicTargets.map((st, idx) => (
               <div key={idx} style={{ 
                 display: "flex", 
