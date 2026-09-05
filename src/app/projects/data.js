@@ -1181,9 +1181,13 @@ const projectsData = [
     duration: 'Contract Awarded 2017',
     year: 2017,
     heroImage: '/images/IMAGES/LDPP/DJI_0087.jpg',
-    galleryImages: [
-      '/images/IMAGES/LDPP/DJI_0087.jpg'
-    ]
+          galleryImages: [
+        '/images/IMAGES/LDPP/DJI_0087.jpg',
+        '/images/IMAGES/LDPP/IMG_0655.JPG',
+        '/images/IMAGES/LDPP/IMG_2426.JPG',
+        '/images/IMAGES/LDPP/IMG_2535.JPG',
+        '/images/IMAGES/LDPP/ldpp-1.jpeg'
+      ]
   },
 
   // 2016
