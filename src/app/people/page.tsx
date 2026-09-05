@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 
 export default function People() {
   return (
@@ -29,30 +29,36 @@ export default function People() {
 
       {/* Workforce Categories */}
       <section style={{ padding: "0 20px 100px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px" }}>
+        <div className="container" style={{ maxWidth: "900px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "30px" }}>
           
-          <div style={{ background: "var(--white)", padding: "40px", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", textAlign: "center" }}>
-            <div style={{ width: "80px", height: "80px", background: "rgba(37, 99, 235, 0.1)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px" }}>
+          <div style={{ background: "var(--white)", padding: "40px", borderRadius: "16px", boxShadow: "0 10px 30px rgba(0,0,0,0.04)", display: "flex", flexWrap: "wrap", gap: "30px", alignItems: "flex-start", border: "1px solid var(--border-soft)" }}>
+            <div style={{ width: "80px", height: "80px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 18h20"></path><path d="M12 2v7"></path><path d="M7 21v-3a5 5 0 0 1 10 0v3"></path><path d="M4 11h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2z"></path></svg>
             </div>
-            <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", marginBottom: "15px", color: "var(--text-dark)" }}>Engineering & Technical</h3>
-            <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>Our core strength lies in our formidable, multidisciplinary team of industry veterans. This includes highly qualified Chartered Civil Engineers, precision-focused Quantity Surveyors, Geotechnical Experts, dedicated Health & Safety Professionals, and meticulous QA/QC Specialists. Together, they deploy advanced engineering methodologies and innovative problem-solving to ensure that every infrastructure project not only meets but consistently exceeds rigorous global engineering benchmarks.</p>
+            <div style={{ flex: "1 1 300px" }}>
+              <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.8rem", marginBottom: "15px", color: "var(--text-dark)", fontWeight: 800 }}>Engineering & Technical</h3>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.1rem", margin: 0 }}>Our core strength lies in our formidable, multidisciplinary team of industry veterans. This includes highly qualified Chartered Civil Engineers, precision-focused Quantity Surveyors, Geotechnical Experts, dedicated Health & Safety Professionals, and meticulous QA/QC Specialists. Together, they deploy advanced engineering methodologies and innovative problem-solving to ensure that every infrastructure project not only meets but consistently exceeds rigorous global engineering benchmarks.</p>
+            </div>
           </div>
 
-          <div style={{ background: "var(--white)", padding: "40px", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", textAlign: "center" }}>
-            <div style={{ width: "80px", height: "80px", background: "rgba(37, 99, 235, 0.1)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px" }}>
+          <div style={{ background: "var(--white)", padding: "40px", borderRadius: "16px", boxShadow: "0 10px 30px rgba(0,0,0,0.04)", display: "flex", flexWrap: "wrap", gap: "30px", alignItems: "flex-start", border: "1px solid var(--border-soft)" }}>
+            <div style={{ width: "80px", height: "80px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
             </div>
-            <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", marginBottom: "15px", color: "var(--text-dark)" }}>Skilled Trades & Operators</h3>
-            <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>Recognized as the resilient backbone of our field operations, our direct workforce comprises highly trained, certified heavy machinery operators, master masons, specialized steel fixers, and expert asphalt technicians. We take immense pride in our long-term employee retention, with many of our seasoned tradespeople having been with us since the company's inception. By maintaining this loyal and extensive in-house roster, we guarantee uncompromising build quality, strict adherence to aggressive timelines, and the seamless execution of complex structural blueprints on every site.</p>
+            <div style={{ flex: "1 1 300px" }}>
+              <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.8rem", marginBottom: "15px", color: "var(--text-dark)", fontWeight: 800 }}>Skilled Trades & Operators</h3>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.1rem", margin: 0 }}>Recognized as the resilient backbone of our field operations, our direct workforce comprises highly trained, certified heavy machinery operators, master masons, specialized steel fixers, and expert asphalt technicians. We take immense pride in our long-term employee retention, with many of our seasoned tradespeople having been with us since the company's inception. By maintaining this loyal and extensive in-house roster, we guarantee uncompromising build quality, strict adherence to aggressive timelines, and the seamless execution of complex structural blueprints on every site.</p>
+            </div>
           </div>
 
-          <div style={{ background: "var(--white)", padding: "40px", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", textAlign: "center" }}>
-            <div style={{ width: "80px", height: "80px", background: "rgba(37, 99, 235, 0.1)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px" }}>
+          <div style={{ background: "var(--white)", padding: "40px", borderRadius: "16px", boxShadow: "0 10px 30px rgba(0,0,0,0.04)", display: "flex", flexWrap: "wrap", gap: "30px", alignItems: "flex-start", border: "1px solid var(--border-soft)" }}>
+            <div style={{ width: "80px", height: "80px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
             </div>
-            <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", marginBottom: "15px", color: "var(--text-dark)" }}>Training & Development</h3>
-            <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>We are profoundly committed to the Continuous Professional Development (CPD) of our workforce. We invest heavily in structured upskilling programs, ranging from rigorous ISO-certified occupational health and safety training to advanced workshops in modern structural technologies. By empowering our personnel with cutting-edge proficiencies, we foster a culture of perpetual innovation and operational excellence.</p>
+            <div style={{ flex: "1 1 300px" }}>
+              <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.8rem", marginBottom: "15px", color: "var(--text-dark)", fontWeight: 800 }}>Training & Development</h3>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.1rem", margin: 0 }}>We are profoundly committed to the Continuous Professional Development (CPD) of our workforce. We invest heavily in structured upskilling programs, ranging from rigorous ISO-certified occupational health and safety training to advanced workshops in modern structural technologies. By empowering our personnel with cutting-edge proficiencies, we foster a culture of perpetual innovation and operational excellence.</p>
+            </div>
           </div>
           
         </div>
