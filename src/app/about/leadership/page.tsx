@@ -58,13 +58,13 @@ export default function Leadership() {
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "30px", marginBottom: "60px" }}>
             {COMPANY_DATA.leadership.filter(l => l.role.includes('Director')).map((leader, idx) => (
-              <div key={idx} style={{ display: "flex", gap: isMobile ? "20px" : "40px", background: "var(--white)", padding: isMobile ? "30px 20px" : "50px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: isMobile ? "center" : "stretch", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left", boxShadow: "0 15px 40px rgba(0,0,0,0.06)" }}>
+              <div key={idx} style={{ display: "flex", gap: isMobile ? "20px" : "40px", background: "var(--white)", padding: isMobile ? "30px 20px" : "50px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: isMobile ? "center" : "flex-start", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left", boxShadow: "0 15px 40px rgba(0,0,0,0.06)" }}>
                 {leader.image ? (
-                  <div style={{ width: isMobile ? "100%" : "320px", height: isMobile ? "350px" : "auto", borderRadius: "16px", padding: "8px", background: "var(--bg-light)", border: "1px solid var(--border-soft)", flexShrink: 0, boxShadow: "0 15px 35px rgba(0,0,0,0.1)" }}>
-                    <img src={leader.image} alt={leader.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 15%", borderRadius: "10px" }} />
+                  <div style={{ width: isMobile ? "100%" : "320px", borderRadius: "16px", padding: "8px", background: "var(--bg-light)", border: "1px solid var(--border-soft)", flexShrink: 0, boxShadow: "0 15px 35px rgba(0,0,0,0.1)" }}>
+                    <img src={leader.image} alt={leader.name} style={{ width: "100%", height: "auto", display: "block", borderRadius: "10px" }} />
                   </div>
                 ) : (
-                  <div style={{ width: isMobile ? "100%" : "330px", height: isMobile ? "330px" : "auto", background: "rgba(229, 57, 53, 0.1)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 15px 30px rgba(0,0,0,0.15)" }}>
+                  <div style={{ width: isMobile ? "100%" : "330px", height: "330px", background: "rgba(229, 57, 53, 0.1)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 15px 30px rgba(0,0,0,0.15)" }}>
                     <User size={80} color="var(--primary-red)" />
                   </div>
                 )}
@@ -74,7 +74,7 @@ export default function Leadership() {
                   <p style={{ color: "var(--text-light)", fontSize: "1.1rem", margin: "0 0 20px 0", fontWeight: 600 }}>{leader.qual}</p>
                   {leader.bio && (
                     <div style={{ borderTop: "1px solid var(--border-soft)", paddingTop: "20px" }}>
-                      <p style={{ color: "var(--text-dark)", fontSize: "1.1rem", lineHeight: 1.7, margin: 0 }}>
+                      <p style={{ color: "var(--text-dark)", fontSize: "1.1rem", lineHeight: 1.7, margin: 0, textAlign: "justify" }}>
                         {leader.bio}
                       </p>
                     </div>
@@ -91,13 +91,13 @@ export default function Leadership() {
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "30px" }}>
             {COMPANY_DATA.leadership.filter(l => !l.role.includes('Director')).map((leader, idx) => (
-              <div key={idx} style={{ display: "flex", gap: "30px", background: "var(--white)", padding: isMobile ? "30px 20px" : "40px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: isMobile ? "center" : "stretch", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left" }}>
+              <div key={idx} style={{ display: "flex", gap: "30px", background: "var(--white)", padding: isMobile ? "30px 20px" : "40px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: isMobile ? "center" : "flex-start", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left" }}>
                 {leader.image ? (
-                  <div style={{ width: isMobile ? "100%" : "200px", height: isMobile ? "250px" : "auto", borderRadius: "16px", padding: "6px", background: "var(--bg-light)", border: "1px solid var(--border-soft)", flexShrink: 0, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" }}>
-                    <img src={leader.image} alt={leader.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 15%", borderRadius: "10px" }} />
+                  <div style={{ width: isMobile ? "100%" : "200px", borderRadius: "16px", padding: "6px", background: "var(--bg-light)", border: "1px solid var(--border-soft)", flexShrink: 0, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" }}>
+                    <img src={leader.image} alt={leader.name} style={{ width: "100%", height: "auto", display: "block", borderRadius: "10px" }} />
                   </div>
                 ) : (
-                  <div style={{ width: isMobile ? "100%" : "200px", height: isMobile ? "250px" : "auto", background: "rgba(229, 57, 53, 0.1)", borderRadius: "12px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 10px 20px rgba(0,0,0,0.1)" }}>
+                  <div style={{ width: isMobile ? "100%" : "200px", height: "200px", background: "rgba(229, 57, 53, 0.1)", borderRadius: "12px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 10px 20px rgba(0,0,0,0.1)" }}>
                     <User size={60} color="var(--primary-red)" />
                   </div>
                 )}
