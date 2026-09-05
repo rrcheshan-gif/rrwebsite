@@ -109,11 +109,7 @@ export default function AboutStory() {
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "30px", }}>
               Beyond just building physical structures, we are deeply committed to sustainable construction practices and community empowerment. Every project we undertake is guided by a profound responsibility to protect the environment and prioritize the health and safety of everyone involved. As we look to the future, {COMPANY_DATA.name} remains dedicated to pioneering innovative engineering methodologies and delivering resilient infrastructure that will empower Sri Lanka's economic growth for generations to come.
             </p>
-            <div>
-              <Link href="/about/history" style={{ color: "var(--text-dark)", fontWeight: 700, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "8px", borderBottom: "2px solid var(--primary-red)", paddingBottom: "5px", transition: "color 0.3s" }} onMouseOver={(e) => e.currentTarget.style.color = "var(--primary-red)"} onMouseOut={(e) => e.currentTarget.style.color = "var(--text-dark)"}>
-                Read our full History & Milestones <ArrowRight size={18} color="var(--primary-red)"/>
-              </Link>
-            </div>
+            
           </div>
         </div>
       </section>
