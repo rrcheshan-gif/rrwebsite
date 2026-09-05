@@ -273,71 +273,7 @@ export default function MaritimeConstructionPage() {
         </div>
       </section>
 
-      {/* Dredging & Reclamation Callout */}
-      <section style={{ padding: isMobile ? '60px 20px' : '100px 40px', backgroundColor: 'var(--white)' }}>
-        <div style={{ 
-          maxWidth: '1200px', 
-          margin: '0 auto',
-          backgroundColor: 'var(--bg-light)',
-          borderRadius: '24px',
-          padding: isMobile ? '40px 20px' : '60px',
-          display: 'flex',
-          flexDirection: isMobile ? 'column' : 'row',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          gap: '40px'
-        }}>
-          <div style={{ maxWidth: '600px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
-              <Droplets size={32} color="var(--primary-red)" />
-              <h2 style={{ fontSize: isMobile ? '28px' : '36px', color: 'var(--text-dark)', fontFamily: 'var(--font-heading)', margin: 0 }}>
-                Dredging & Reclamation
-              </h2>
-            </div>
-            <p style={{ fontSize: '16px', color: 'var(--text-light)', lineHeight: 1.8, marginBottom: '20px' }}>
-              We offer comprehensive dredging services for navigational channels, harbour basins, and land reclamation projects using specialized marine fleets.
-            </p>
-            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 30px 0', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-              <li style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <CheckCircle2 size={18} color="var(--primary-red)" />
-                <span style={{ fontSize: '15px', color: 'var(--text-dark)' }}>Capital & Maintenance Dredging</span>
-              </li>
-              <li style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <CheckCircle2 size={18} color="var(--primary-red)" />
-                <span style={{ fontSize: '15px', color: 'var(--text-dark)' }}>Land Reclamation & Sand Bypassing</span>
-              </li>
-            </ul>
-            <Link href="/services/dredging-reclamation" style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '10px',
-              backgroundColor: 'var(--primary-red)',
-              color: 'var(--white)',
-              padding: '16px 32px',
-              borderRadius: '8px',
-              textDecoration: 'none',
-              fontWeight: 600,
-              fontSize: '16px',
-              transition: 'background-color 0.3s ease'
-            }}>
-              View Dredging Services <ArrowRight size={20} />
-            </Link>
-          </div>
-          <div style={{ 
-            flexShrink: 0,
-            width: isMobile ? '100%' : '400px',
-            height: isMobile ? '250px' : '300px',
-            backgroundColor: '#e2e8f0',
-            borderRadius: '16px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: 'var(--text-light)'
-          }}>
-            [Dredging Image]
-          </div>
-        </div>
-      </section>
+      
 
       {/* Selected Projects */}
       <section style={{ padding: isMobile ? '60px 20px' : '100px 40px', backgroundColor: 'var(--bg-light)' }}>
