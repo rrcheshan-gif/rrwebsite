@@ -12,7 +12,7 @@ const SERVICES = [
     subtitle: 'National Highways • Rural Roads • Rehabilitation',
     desc: 'Three decades of road-building experience across every province in Sri Lanka. From high-speed expressway packages to rural connectivity roads under the iRoad Programme, our highway division operates with a self-owned asphalt plant fleet and 500+ dedicated personnel.',
     highlights: ['Self-owned Asphalt Plants', 'iRoad Programme', 'Central Expressway Package'],
-    image: '/images/kilinochchi-iroad/kilinochchi-hero.jpg',
+    image: '/images/kilinochchi-iroad/kilinochchi-2.jpg',
     cta: '/services/road-construction',
   },
   {
@@ -22,7 +22,7 @@ const SERVICES = [
     subtitle: 'River Crossings • Overpasses • Causeways',
     desc: 'RR Construction builds PSC girder bridges, T-beam spans, box culverts, and complex overpasses engineered to carry extreme traffic loads.',
     highlights: ['PSC Girder & T-Beam', 'Mahanama Bridge', 'Padiyathalawa Bridges'],
-    image: '/images/IMAGES/Mahanama Bridge/Background image.jpeg',
+    image: '/images/IMAGES/Mahanama Bridge/WhatsApp Image 2026-08-22 at 09.59.18.jpeg',
     cta: '/services/bridge-construction',
   },
   {
@@ -32,7 +32,7 @@ const SERVICES = [
     subtitle: 'Fishery Harbours • Breakwaters • Marine Heavy Civil Engineering',
     desc: 'Specialised marine heavy civil engineering across Sri Lanka\'s coastline — fishery harbours, commercial breakwaters, quay walls, jetties, and coastal protection structures from seabed to superstructure.',
     highlights: ['Gandara Fishery Harbour', 'Breakwaters & Rock Armour', 'Marine Pile Installation'],
-    image: '/images/wellamankara/background image.png',
+    image: '/images/wellamankara/IMG_20220124_083315_232.jpg',
     cta: '/services/maritime-construction',
   },
   {
@@ -42,7 +42,7 @@ const SERVICES = [
     subtitle: 'Capital Dredging • Land Reclamation • Coastal Works',
     desc: 'Capital and maintenance dredging for ports, harbours, and navigational channels. Our self-owned marine fleet enables efficient deep-water dredging and coastal land reclamation to ISO 14001 standards.',
     highlights: ['Self-Owned Marine Fleet', 'ISO 14001 Compliance', 'Coastal Reclamation'],
-    image: '/images/projects/filadhoo/img1.jpg',
+    image: '/images/projects/filadhoo/img2.jpg',
     cta: '/services/dredging-reclamation',
   },
   {
@@ -52,7 +52,7 @@ const SERVICES = [
     subtitle: 'Water Supply • Treatment Plants • Irrigation',
     desc: 'End-to-end water infrastructure construction across Sri Lanka. Treatment plants, transmission mains, distribution networks, and large-scale irrigation schemes.',
     highlights: ['Ampara Water Treatment Plant', 'NWSDB Contractor', 'Large-Scale Irrigation'],
-    image: '/images/KALMADU/BACKGROUND IMAGE.jpeg',
+    image: '/images/KALMADU/WhatsApp Image 2026-08-01 at 11.46.27.jpeg',
     cta: '/services/water-infrastructure',
   },
   {
@@ -62,7 +62,7 @@ const SERVICES = [
     subtitle: 'Geotechnical Engineering • Retaining Structures • Rock-fall Protection',
     desc: 'Specialist geotechnical works across Sri Lanka\'s critical hill-country zones — soil nailing, shotcrete, gabion retaining walls, reinforced earth structures, and rock-fall net systems protecting national roads.',
     highlights: ['Nuwara Eliya & Hatton Corridor', 'NBRO-Compliant Design', 'Rock-fall Protection Systems', 'Emergency Slope Repair'],
-    image: '/images/IMAGES/LDPP/DJI_0087.jpg',
+    image: '/images/IMAGES/LDPP/WhatsApp Image 2026-09-04 at 16.38.40.jpeg',
     cta: '/services/landslide-mitigation',
   },
   {
@@ -72,7 +72,7 @@ const SERVICES = [
     subtitle: 'Water Retaining Structures • Water Towers • Steel Fabrication',
     desc: 'Reinforced concrete structures, water retaining structures, elevated water towers, and complex steel fabrication.',
     highlights: ['Complex RC Structures', 'Elevated Water Towers', 'Heavy Steel Fabrication'],
-    image: '/images/BADULLA/BACKGROUND IMAGE.jpeg',
+    image: '/images/BADULLA/WhatsApp Image 2026-07-28 at 14.03.18.jpeg',
     cta: '/projects',
   },
   {
@@ -82,7 +82,7 @@ const SERVICES = [
     subtitle: 'Formation • Civil Infrastructure • Track Upgradation',
     desc: 'Civil and formation works in connection with railway line upgradation projects — earthworks, drainage, retaining structures, and ancillary civil works supporting Sri Lanka\'s national rail network modernisation.',
     highlights: ['Railway Formation Works', 'Maho—Anuradhapura Line', 'Earthworks & Drainage', 'Ancillary Civil Structures'],
-    image: '/images/IRCON-MANNAR/Background image.jpeg',
+    image: '/images/IRCON-MANNAR/WhatsApp Image 2026-08-01 at 12.32.07.jpeg',
     cta: '/projects',
   },
 ];
