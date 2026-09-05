@@ -93,25 +93,25 @@ export default function Awards() {
       {/* ISO Certifications */}
       <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
-          <div style={{ background: "linear-gradient(135deg, #1f2937, #111827)", borderRadius: "32px", padding: isMobile ? "40px 20px" : "60px", color: "white" }}>
+          <div style={{ background: "var(--white)", borderRadius: "32px", padding: isMobile ? "40px 20px" : "60px", border: "1px solid var(--border-soft)", boxShadow: "0 20px 40px rgba(0,0,0,0.04)" }}>
             <div style={{ textAlign: "center", marginBottom: "50px" }}>
               <Award size={40} color="var(--primary-red)" style={{ margin: "0 auto 15px" }} />
-              <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0 }}>International Certifications</h2>
-              <p style={{ color: "#cbd5e1", fontSize: "1.1rem", marginTop: "15px", maxWidth: "800px", margin: "15px auto 0" }}>
+              <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0 }}>International Certifications</h2>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "15px", maxWidth: "800px", margin: "15px auto 0" }}>
                 Our commitment to quality, safety, and environmental responsibility is independently verified by global standards.
               </p>
             </div>
             
             <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "30px" }}>
               {certifications.map((cert, idx) => (
-                <div key={idx} style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: "30px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", padding: isMobile ? "30px 20px" : "40px", borderRadius: "20px", alignItems: isMobile ? "center" : "flex-start", textAlign: isMobile ? "center" : "left", transition: "transform 0.3s" }} className="hover-lift">
+                <div key={idx} style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: "30px", background: "var(--bg-light)", border: "1px solid var(--border-soft)", padding: isMobile ? "30px 20px" : "40px", borderRadius: "20px", alignItems: isMobile ? "center" : "flex-start", textAlign: isMobile ? "center" : "left", transition: "transform 0.3s" }} className="hover-lift">
                   <div style={{ flexShrink: 0, background: "rgba(229, 57, 53, 0.1)", padding: "20px", borderRadius: "20px" }}>
                     {cert.icon}
                   </div>
                   <div>
                     <h3 style={{ fontSize: "2rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--primary-red)", margin: "0 0 5px" }}>{cert.title}</h3>
-                    <h4 style={{ fontSize: "1.2rem", fontWeight: 700, color: "white", margin: "0 0 15px", letterSpacing: "1px" }}>{cert.subtitle}</h4>
-                    <p style={{ color: "#cbd5e1", margin: 0, fontSize: "1.1rem", lineHeight: 1.7, textAlign: isMobile ? "center" : "justify" }}>{cert.desc}</p>
+                    <h4 style={{ fontSize: "1.2rem", fontWeight: 700, color: "var(--text-dark)", margin: "0 0 15px", letterSpacing: "1px" }}>{cert.subtitle}</h4>
+                    <p style={{ color: "var(--text-light)", margin: 0, fontSize: "1.1rem", lineHeight: 1.7, textAlign: isMobile ? "center" : "justify" }}>{cert.desc}</p>
                   </div>
                 </div>
               ))}
