@@ -52,7 +52,7 @@ const SERVICES = [
     subtitle: 'Water Supply • Treatment Plants • Irrigation',
     desc: 'End-to-end water infrastructure construction across Sri Lanka. Treatment plants, transmission mains, distribution networks, and large-scale irrigation schemes.',
     highlights: ['Ampara Water Treatment Plant', 'NWSDB Contractor', 'Large-Scale Irrigation'],
-    image: '/images/POINT PEDRO/Background image.jpeg',
+    image: '/images/KALMADU/BACKGROUND IMAGE.jpeg',
     cta: '/services/water-infrastructure',
   },
   {
