@@ -590,59 +590,7 @@ export default function MaritimeConstructionPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section style={{ padding: isMobile ? '60px 20px' : '100px 40px', backgroundColor: 'var(--white)' }}>
-        <div style={{ 
-          maxWidth: '800px', 
-          margin: '0 auto', 
-          textAlign: 'center',
-          backgroundColor: 'var(--bg-light)',
-          padding: isMobile ? '40px 20px' : '60px',
-          borderRadius: '24px',
-          border: '1px solid var(--border-soft)'
-        }}>
-          <h2 style={{ 
-            fontSize: isMobile ? '32px' : '42px', 
-            color: 'var(--text-dark)', 
-            marginBottom: '20px',
-            fontFamily: 'var(--font-heading)'
-          }}>
-            Discuss Your Maritime Project
-          </h2>
-          <p style={{ fontSize: '18px', color: 'var(--text-light)', lineHeight: 1.6, marginBottom: '40px' }}>
-            Contact our marine engineering team to discuss your harbour, coastal, or dredging requirements.
-          </p>
-          <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexDirection: isMobile ? 'column' : 'row' }}>
-            <Link href="/contact" style={{
-              display: 'inline-block',
-              backgroundColor: 'var(--primary-red)',
-              color: 'var(--white)',
-              padding: '16px 32px',
-              borderRadius: '8px',
-              textDecoration: 'none',
-              fontWeight: 600,
-              fontSize: '16px',
-              transition: 'background-color 0.3s ease'
-            }}>
-              Contact Us
-            </Link>
-            <Link href="/projects" style={{
-              display: 'inline-block',
-              backgroundColor: 'transparent',
-              color: 'var(--text-dark)',
-              border: '1px solid var(--border-soft)',
-              padding: '16px 32px',
-              borderRadius: '8px',
-              textDecoration: 'none',
-              fontWeight: 600,
-              fontSize: '16px',
-              transition: 'all 0.3s ease'
-            }}>
-              View Projects
-            </Link>
-          </div>
-        </div>
-      </section>
+      
     </main>
   );
 }

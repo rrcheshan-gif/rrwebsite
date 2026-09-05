@@ -406,54 +406,7 @@ export default function RoadConstructionPage() {
         </div>
       </section>
 
-      {/* 11. CTA Section */}
-      <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)', textAlign: 'center' }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '2rem' : '2.5rem', color: 'var(--text-dark)', marginBottom: '24px' }}>
-            Ready to Start Your Infrastructure Project?
-          </h2>
-          <p style={{ color: 'var(--text-light)', fontSize: '1.1rem', marginBottom: '40px' }}>
-            Contact our engineering team to discuss your road and highway construction requirements.
-          </p>
-          <div style={{ 
-            display: 'flex', 
-            gap: '16px', 
-            justifyContent: 'center',
-            flexDirection: isMobile ? 'column' : 'row'
-          }}>
-            <Link 
-              href="/contact" 
-              style={{
-                display: 'inline-block',
-                padding: '16px 32px',
-                backgroundColor: 'var(--primary-red)',
-                color: 'var(--white)',
-                textDecoration: 'none',
-                borderRadius: '8px',
-                fontWeight: 600,
-                transition: 'background-color 0.3s ease'
-              }}
-            >
-              Contact Us
-            </Link>
-            <Link 
-              href="/projects" 
-              style={{
-                display: 'inline-block',
-                padding: '16px 32px',
-                backgroundColor: 'var(--bg-light)',
-                color: 'var(--text-dark)',
-                textDecoration: 'none',
-                borderRadius: '8px',
-                fontWeight: 600,
-                border: '1px solid var(--border-soft)'
-              }}
-            >
-              View Our Portfolio
-            </Link>
-          </div>
-        </div>
-      </section>
+      
     </main>
   );
 }

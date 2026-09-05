@@ -325,23 +325,7 @@ export default function LandslideMitigationPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section style={{ ...styles.section, ...styles.bgLight, textAlign: 'center' }}>
-        <div style={styles.container}>
-          <h2 style={styles.sectionTitle}>Require Geotechnical Expertise?</h2>
-          <p style={styles.sectionDesc}>
-            Contact our engineering team to discuss customized landslide mitigation solutions and slope stabilization strategies for your infrastructure projects.
-          </p>
-          <div style={styles.ctaWrap}>
-            <Link href="/projects" style={styles.btnOutline}>
-              View Our Projects
-            </Link>
-            <Link href="/contact" style={styles.btnPrimary}>
-              Contact Our Engineers
-            </Link>
-          </div>
-        </div>
-      </section>
+      
     </main>
   );
 }

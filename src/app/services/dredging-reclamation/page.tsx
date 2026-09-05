@@ -199,64 +199,7 @@ export default function DredgingReclamationPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section style={{ padding: sectionPadding, backgroundColor: 'var(--bg-light)' }}>
-        <div style={{
-          maxWidth: '800px',
-          margin: '0 auto',
-          textAlign: 'center',
-          backgroundColor: 'var(--white)',
-          padding: isMobile ? '40px 20px' : '60px',
-          borderRadius: '24px',
-          border: '1px solid var(--border-soft)'
-        }}>
-          <h2 style={{
-            fontSize: isMobile ? '2rem' : '2.5rem',
-            fontFamily: 'var(--font-heading)',
-            color: 'var(--text-dark)',
-            marginBottom: '20px'
-          }}>Explore Related Services</h2>
-          <p style={{
-            fontSize: '1.1rem',
-            color: 'var(--text-light)',
-            marginBottom: '40px',
-            lineHeight: 1.6
-          }}>
-            Discover our broader maritime construction capabilities or contact us to discuss your specific dredging requirements.
-          </p>
-          <div style={{
-            display: 'flex',
-            gap: '20px',
-            justifyContent: 'center',
-            flexDirection: isMobile ? 'column' : 'row'
-          }}>
-            <Link href="/services/maritime-construction" className="btn btn-outline" style={{
-              padding: '15px 30px',
-              borderRadius: '30px',
-              textDecoration: 'none',
-              fontWeight: 600,
-              display: 'inline-block',
-              border: '2px solid var(--text-dark)',
-              color: 'var(--text-dark)',
-              transition: 'all 0.3s ease'
-            }}>
-              Maritime Construction
-            </Link>
-            <Link href="/contact" className="btn btn-primary" style={{
-              padding: '15px 30px',
-              borderRadius: '30px',
-              backgroundColor: 'var(--primary-red)',
-              color: 'var(--white)',
-              textDecoration: 'none',
-              fontWeight: 600,
-              display: 'inline-block',
-              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
-            }}>
-              Contact Us
-            </Link>
-          </div>
-        </div>
-      </section>
+      
     </main>
   );
 }

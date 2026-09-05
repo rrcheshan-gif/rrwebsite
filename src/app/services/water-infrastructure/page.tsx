@@ -274,45 +274,7 @@ export default function WaterInfrastructurePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section style={{ padding: isMobile ? "60px 20px" : "100px 40px", backgroundColor: 'var(--bg-light)', textAlign: 'center' }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <h2 style={{ color: 'var(--text-dark)', fontSize: '32px', fontFamily: 'var(--font-heading)', marginBottom: '20px' }}>
-            Discuss Your Infrastructure Project
-          </h2>
-          <p style={{ color: 'var(--text-light)', fontSize: '18px', lineHeight: 1.6, marginBottom: '40px' }}>
-            Contact our engineering team to learn how we can deliver your water supply, treatment, or irrigation project to the highest standards.
-          </p>
-          <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexDirection: isMobile ? 'column' : 'row' }}>
-            <Link href="/contact" style={{
-              display: 'inline-block',
-              padding: '16px 32px',
-              backgroundColor: 'var(--primary-red)',
-              color: 'var(--white)',
-              textDecoration: 'none',
-              fontWeight: 'bold',
-              borderRadius: '8px',
-              border: '2px solid var(--primary-red)',
-              transition: 'all 0.3s ease'
-            }}>
-              Contact Us
-            </Link>
-            <Link href="/projects" style={{
-              display: 'inline-block',
-              padding: '16px 32px',
-              backgroundColor: 'transparent',
-              color: 'var(--primary-red)',
-              textDecoration: 'none',
-              fontWeight: 'bold',
-              borderRadius: '8px',
-              border: '2px solid var(--primary-red)',
-              transition: 'all 0.3s ease'
-            }}>
-              View Our Projects
-            </Link>
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 }
