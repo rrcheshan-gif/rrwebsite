@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { CheckCircle2, ArrowRight, Anchor, Shield, Droplets, Waves, PenTool } from 'lucide-react';
+import {  CheckCircle2, ArrowRight, Anchor, Shield, Droplets, Waves, PenTool , ArrowLeft } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
 export default function MaritimeConstructionPage() {
