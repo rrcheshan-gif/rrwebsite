@@ -84,8 +84,18 @@ const SERVICES = [
     highlights: ['Railway Formation Works', 'Maho—Anuradhapura Line', 'Earthworks & Drainage', 'Ancillary Civil Structures'],
     image: '/images/IRCON-MANNAR/WhatsApp Image 2026-08-01 at 12.32.07.jpeg',
     cta: '/services/railway-civil-works',
-  },
-];
+    },
+    {
+      slug: 'research-development',
+      num: '09',
+      title: 'Research & Development',
+      subtitle: 'Innovation ? Lean Production ? ERP Systems',
+      desc: 'Advancing heavy civil engineering through technological innovation, lean production techniques, and integrated enterprise resource planning.',
+      highlights: ['Lean Production', 'AI-assisted ERP Integration', 'Performance Management'],
+      image: '/images/research-development.jpg',
+      cta: '/services/research-development',
+    },
+  ];
 
 export default function Services() {
   const [isMobile, setIsMobile] = useState(false);
