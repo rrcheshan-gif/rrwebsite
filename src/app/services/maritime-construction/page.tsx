@@ -34,6 +34,13 @@ export default function MaritimeConstructionPage() {
           overflow: 'hidden'
         }}
       >
+        {/* Absolute Back Button */}
+        <div style={{ position: 'absolute', top: isMobile ? '20px' : '40px', left: isMobile ? '20px' : '40px', zIndex: 10 }}>
+          <Link href="/services" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
+            &larr; Back to Services
+          </Link>
+        </div>
+
         <div style={{
           position: 'absolute',
           top: 0,
@@ -53,11 +60,7 @@ export default function MaritimeConstructionPage() {
             fontSize: isMobile ? '14px' : '16px'
           }}>
             
-          <div style={{ textAlign: "center", marginBottom: "30px" }}>
-            <Link href="/services" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
-              &larr; Back to Services
-            </Link>
-          </div>
+          
 
             <span style={{ opacity: 0.8 }}>/</span>
             <span style={{ color: 'var(--primary-red)' }}>Maritime Construction</span>

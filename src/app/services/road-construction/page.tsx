@@ -25,7 +25,7 @@ export default function RoadConstructionPage() {
       {/* 1. Hero Section */}
       <section 
         className="page-header" 
-        style={{
+        style={{ position: 'relative', 
           backgroundImage: "linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('/images/hambantota-iroad/hambantota-2.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -34,16 +34,15 @@ export default function RoadConstructionPage() {
           textAlign: 'center'
         }}
       >
-        <div style={containerStyle}>
-          <div style={{ marginBottom: '20px' }}>
-            
-          <div style={{ textAlign: "center", marginBottom: "30px" }}>
-            <Link href="/services" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
-              &larr; Back to Services
-            </Link>
-          </div>
+        {/* Absolute Back Button */}
+        <div style={{ position: 'absolute', top: isMobile ? '20px' : '40px', left: isMobile ? '20px' : '40px', zIndex: 10 }}>
+          <Link href="/services" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
+            &larr; Back to Services
+          </Link>
+        </div>
 
-          </div>
+        <div style={containerStyle}>
+          
           <h1 style={{ 
             fontFamily: 'var(--font-heading)', 
             fontSize: isMobile ? '2.5rem' : '4rem', 
