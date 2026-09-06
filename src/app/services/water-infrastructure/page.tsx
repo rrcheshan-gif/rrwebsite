@@ -195,11 +195,11 @@ export default function WaterInfrastructurePage() {
               flex: 1, 
               minHeight: '300px', 
               backgroundColor: '#e0e0e0',
-              backgroundImage: 'url("/images/projects/ampara-water.jpg")',
+              backgroundImage: 'url("/images/home/slider/polished/machinery-enhanced.jpg")',
               backgroundSize: 'cover',
               backgroundPosition: 'center'
             }}>
-              {/* Image placeholder */}
+              
             </div>
           </div>
         </div>

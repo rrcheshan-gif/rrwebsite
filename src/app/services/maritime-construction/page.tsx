@@ -126,20 +126,18 @@ export default function MaritimeConstructionPage() {
               position: 'relative',
               aspectRatio: '4/3'
             }}>
-              <div style={{ 
-                position: 'absolute', 
-                top: 0, 
-                left: 0, 
-                width: '100%', 
-                height: '100%', 
-                backgroundColor: 'var(--bg-light)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: 'var(--text-light)'
-              }}>
-                [Maritime Image placeholder]
-              </div>
+              <img 
+                src="/images/gandara/gandara-hero.jpg" 
+                alt="Maritime Construction Works" 
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover'
+                }} 
+              />
             </div>
           </div>
         </div>
