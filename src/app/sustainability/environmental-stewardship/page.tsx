@@ -22,7 +22,7 @@ export default function EnvironmentalStewardship() {
       <section 
         className="page-header" 
         style={{ 
-          backgroundImage: "url('/images/page-headers/sustainability-green.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
+          backgroundImage: "url('/images/page-headers/sustainability-road.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
           padding: isMobile ? "40px 20px" : "70px 20px", 
           textAlign: "center", 
           position: "relative", 
