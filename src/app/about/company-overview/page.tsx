@@ -115,33 +115,7 @@ export default function AboutStory() {
       </section>
 
       {/* Internal Strength */}
-      <section style={{ padding: isMobile ? "60px 10px" : "100px 20px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
-          
-          <div style={{ background: "linear-gradient(135deg, #1f2937, #111827)", borderRadius: "32px", padding: isMobile ? "40px 20px" : "60px", color: "white", display: "flex", flexWrap: "wrap", gap: "40px", alignItems: "center" }}>
-            <div style={{ flex: 1, minWidth: "300px" }}>
-              <h3 style={{ fontSize: "2rem", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px" }}>Unmatched Internal Strength</h3>
-              <p style={{ color: "#cbd5e1", lineHeight: 1.8, fontSize: "1.1rem", marginBottom: "20px" }}>
-                We rely on our own resources rather than third-party dependencies. Our operations are powered by a highly skilled workforce of experienced engineers and construction professionals.
-              </p>
-              <p style={{ color: "#cbd5e1", lineHeight: 1.8, fontSize: "1.1rem" }}>
-                Combined with a self-owned fleet of heavy construction machines and proprietary aggregate production plants, we maintain total control over project timelines and quality parameters.
-              </p>
-            </div>
-            <div style={{ flex: 1, minWidth: "300px", display: "flex", gap: "20px", flexDirection: "column" }}>
-              <div style={{ background: "rgba(255,255,255,0.1)", padding: "30px", borderRadius: "20px", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.1)" }}>
-                <h4 style={{ fontSize: "3rem", color: "var(--primary-red)", margin: 0, fontFamily: "var(--font-heading)", fontWeight: 800, lineHeight: 1 }}>{COMPANY_DATA.workforce}</h4>
-                <p style={{ color: "white", margin: "10px 0 0", fontSize: "1rem", fontWeight: 600,  letterSpacing: "1px" }}>Dedicated Workforce</p>
-              </div>
-              <div style={{ background: "rgba(255,255,255,0.1)", padding: "30px", borderRadius: "20px", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.1)" }}>
-                <h4 style={{ fontSize: "3rem", color: "var(--primary-red)", margin: 0, fontFamily: "var(--font-heading)", fontWeight: 800, lineHeight: 1 }}>{COMPANY_DATA.machineryFleet}</h4>
-                <p style={{ color: "white", margin: "10px 0 0", fontSize: "1rem", fontWeight: 600,  letterSpacing: "1px" }}>Heavy Machinery Fleet</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
+      
 
     </div>
   );
