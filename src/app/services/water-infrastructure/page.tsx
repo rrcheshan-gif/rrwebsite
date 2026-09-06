@@ -34,9 +34,13 @@ export default function WaterInfrastructurePage() {
         textAlign: 'center'
       }}>
         <div style={{ marginBottom: "20px" }}>
-          <Link href="/services" style={{ color: 'var(--white)', textDecoration: 'none', fontSize: '14px', opacity: 0.8 }}>
-            ← Back to Services
-          </Link>
+          
+          <div style={{ textAlign: "left", marginBottom: "20px" }}>
+            <Link href="/services" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
+              &larr; Back to Services
+            </Link>
+          </div>
+
         </div>
         <h1 style={{ color: 'var(--white)', fontSize: isMobile ? '36px' : '48px', fontFamily: 'var(--font-heading)', margin: '0 0 20px 0' }}>
           Water <span style={{ color: 'var(--primary-red)' }}>Infrastructure & Heavy Civil Engineering</span> in Sri Lanka

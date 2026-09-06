@@ -36,20 +36,13 @@ export default function RoadConstructionPage() {
       >
         <div style={containerStyle}>
           <div style={{ marginBottom: '20px' }}>
-            <Link 
-              href="/services" 
-              style={{ 
-                color: 'var(--white)', 
-                textDecoration: 'none', 
-                opacity: 0.8,
-                fontSize: '0.9rem',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '8px'
-              }}
-            >
-              <span>←</span> Back to Services
+            
+          <div style={{ textAlign: "left", marginBottom: "20px" }}>
+            <Link href="/services" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
+              &larr; Back to Services
             </Link>
+          </div>
+
           </div>
           <h1 style={{ 
             fontFamily: 'var(--font-heading)', 

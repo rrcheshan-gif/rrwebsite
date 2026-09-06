@@ -22,7 +22,7 @@ export default function BridgeConstructionPage() {
         style={{
           position: 'relative',
           padding: isMobile ? '40px 20px' : '70px 20px',
-          backgroundImage: "url('/images/service-bridge-hero.jpeg')",
+          backgroundImage: "url('/images/home/bridge_mahanama-enhanced.jpeg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'var(--white)',
@@ -41,24 +41,13 @@ export default function BridgeConstructionPage() {
           }}
         />
         <div style={{ position: 'relative', zIndex: 2, maxWidth: '800px', margin: '0 auto' }}>
-          <Link
-            href="/services"
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '8px',
-              color: 'var(--white)',
-              textDecoration: 'none',
-              marginBottom: '24px',
-              fontSize: '16px',
-              opacity: 0.8,
-              transition: 'opacity 0.3s',
-            }}
-            onMouseOver={(e) => (e.currentTarget.style.opacity = '1')}
-            onMouseOut={(e) => (e.currentTarget.style.opacity = '0.8')}
-          >
-            <ArrowLeft size={16} /> Back to Services
-          </Link>
+          
+          <div style={{ textAlign: "left", marginBottom: "20px" }}>
+            <Link href="/services" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
+              &larr; Back to Services
+            </Link>
+          </div>
+
           <h1
             style={{
               fontSize: isMobile ? '36px' : '56px',

@@ -69,18 +69,13 @@ export default function DredgingReclamationPage() {
         textAlign: 'center'
       }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <Link href="/services" style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            color: 'var(--white)',
-            textDecoration: 'none',
-            fontSize: '0.9rem',
-            marginBottom: '20px',
-            opacity: 0.8,
-            transition: 'opacity 0.3s ease'
-          }}>
-            ← Back to Services
-          </Link>
+          
+          <div style={{ textAlign: "left", marginBottom: "20px" }}>
+            <Link href="/services" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
+              &larr; Back to Services
+            </Link>
+          </div>
+
           <h1 style={{
             fontSize: isMobile ? '2.5rem' : '4rem',
             fontFamily: 'var(--font-heading)',
