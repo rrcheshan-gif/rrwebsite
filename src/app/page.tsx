@@ -58,7 +58,7 @@ export default function Home() {
       desc: 'In critical hillside zones (Nuwara Eliya, Hatton, Kandy), we deploy state-of-the-art geotechnical engineering. Soil retaining structures and rock-fall nets keep national roadways secure.'
     },
     {
-      img: '/images/home/slider/polished/omanthai-enhanced.jpg',
+      img: '/images/home/veerapuram-plant-enhanced.jpg',
       duration: 8000,
       tag: '05 / AGGREGATES & MATERIAL PRODUCTION',
       heading1: 'Sustainable Aggregate',
