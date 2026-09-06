@@ -89,15 +89,6 @@ export default function KeyDataPage() {
 
             <div>
               <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
-                CIDA Registration No
-              </h3>
-              <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
-                C-10171
-              </p>
-            </div>
-
-            <div>
-              <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
                 Managing Director
               </h3>
               <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
@@ -110,7 +101,7 @@ export default function KeyDataPage() {
                 Workforce
               </h3>
               <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
-                1,800+ Employees
+                1,400+ Employees
               </p>
             </div>
             
