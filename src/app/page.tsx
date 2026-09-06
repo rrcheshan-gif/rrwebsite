@@ -15,6 +15,7 @@ export default function Home() {
       fallback: '/images/hero-road-roller.jpg',
       duration: 12000,
       tag: 'PASSION FOR ENGINEERING EXCELLENCE',
+      video: '/videos/GFH.mp4',
       heading1: 'Engineering',
       heading2: "Sri Lanka's",
       heading3: 'Tomorrow',
@@ -34,7 +35,6 @@ export default function Home() {
       img: '/images/home/slider-maritime-gandara.jpeg',
       duration: 8000,
       tag: '02 / MARITIME & HARBOUR CONSTRUCTION',
-      video: '/videos/GFH.mp4',
       heading1: "Building Sri Lanka's",
       heading2: 'Maritime Heritage',
       heading3: '',
@@ -103,7 +103,8 @@ export default function Home() {
           >
             {slide.video ? (
                 <video 
-                  src={slide.video} 
+                  src={slide.video}
+                  poster={slide.img} 
                   autoPlay 
                   loop 
                   muted 
