@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -15,7 +15,7 @@ export default function Home() {
       fallback: '/images/hero-road-roller.jpg',
       duration: 12000,
       tag: 'PASSION FOR ENGINEERING EXCELLENCE',
-      video: '/videos/home-slider.mp4',
+      video: '/videos/GFH.mp4',
       heading1: 'Engineering',
       heading2: "Sri Lanka's",
       heading3: 'Tomorrow',
