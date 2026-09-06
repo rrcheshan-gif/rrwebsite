@@ -12,7 +12,7 @@ const SERVICES = [
     subtitle: 'National Highways • Rural Roads • Rehabilitation',
     desc: 'Three decades of road-building experience across every province in Sri Lanka. From high-speed expressway packages to rural connectivity roads under the iRoad Programme, our highway division operates with a self-owned asphalt plant fleet and 500+ dedicated personnel.',
     highlights: ['Self-owned Asphalt Plants', 'iRoad Programme', 'Central Expressway Package'],
-    image: '/images/kilinochchi-iroad/kilinochchi-2.jpg',
+    image: '/images/page-headers/sustainability-road-hq.jpg',
     cta: '/services/road-construction',
   },
   {
