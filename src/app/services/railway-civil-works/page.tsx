@@ -57,7 +57,7 @@ export default function RailwayCivilWorksPage() {
             opacity: 0.9,
             lineHeight: 1.6
           }}>
-            Spearheading civil and formation works for Sri Lanka's national rail network upgradation�including massive earthworks, intricate drainage, and robust track formations.
+            Spearheading civil and formation works for Sri Lanka's national rail network upgradation"including massive earthworks, intricate drainage, and robust track formations.
           </p>
         </div>
       </section>
@@ -126,7 +126,7 @@ export default function RailwayCivilWorksPage() {
                 Geotechnical Stabilization
               </h2>
               <p style={{ color: 'var(--text-light)', lineHeight: 1.7 }}>
-                Railways traverse highly diverse geological terrains. Our geotechnical engineers employ advanced stabilization techniques�such as deep soil compaction, geogrid installation, and retaining structures�to ensure the tracks remain perfectly aligned under constant dynamic loading.
+                Railways traverse highly diverse geological terrains. Our geotechnical engineers employ advanced stabilization techniques"such as deep soil compaction, geogrid installation, and retaining structures"to ensure the tracks remain perfectly aligned under constant dynamic loading.
               </p>
             </div>
             

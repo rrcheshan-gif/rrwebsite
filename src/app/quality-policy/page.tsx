@@ -33,7 +33,7 @@ export default function QualityPolicy() {
             <div style={{ background: "var(--white)", padding: "40px", borderRadius: "8px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: "15px" }}><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
               <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "15px" }}>Material Testing</h3>
-              <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>All construction materials—from aggregate and soil to steel and asphalt—undergo strict laboratory testing before site application to guarantee durability and compliance with standard engineering specifications.</p>
+              <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>All construction materials - from aggregate and soil to steel and asphalt - undergo strict laboratory testing before site application to guarantee durability and compliance with standard engineering specifications.</p>
             </div>
             
             <div style={{ background: "var(--white)", padding: "40px", borderRadius: "8px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>

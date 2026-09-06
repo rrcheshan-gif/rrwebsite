@@ -28,7 +28,7 @@ export default function GoalsAndTargets() {
     },
     {
       title: "Resource Independence",
-      desc: "Further scale our internal capabilities—from machinery to raw materials (Asphalt, ABC, M-Sand)—to ensure 100% self-reliance in project execution.",
+      desc: "Further scale our internal capabilities - from machinery to raw materials (Asphalt, ABC, M-Sand) - to ensure 100% self-reliance in project execution.",
       icon: <Construction size={32} color="var(--primary-red)" />
     },
     {

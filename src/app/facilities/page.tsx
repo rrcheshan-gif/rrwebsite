@@ -82,7 +82,7 @@ export default function QuarriesAggregates() {
             }}
             style={{ position: 'absolute', right: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
-            â†’
+            â†'
           </button>
         </div>
       )}

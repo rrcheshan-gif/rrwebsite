@@ -30,7 +30,7 @@ const SERVICES = [
     num: '03',
     title: 'Maritime & Harbour Construction',
     subtitle: 'Fishery Harbours • Breakwaters • Marine Heavy Civil Engineering',
-    desc: 'Specialised marine heavy civil engineering across Sri Lanka\'s coastline — fishery harbours, commercial breakwaters, quay walls, jetties, and coastal protection structures from seabed to superstructure.',
+    desc: 'Specialised marine heavy civil engineering across Sri Lanka\'s coastline  -  fishery harbours, commercial breakwaters, quay walls, jetties, and coastal protection structures from seabed to superstructure.',
     highlights: ['Gandara Fishery Harbour', 'Breakwaters & Rock Armour', 'Marine Pile Installation'],
     image: '/images/service-maritime-card.jpg',
     cta: '/services/maritime-construction',
@@ -60,7 +60,7 @@ const SERVICES = [
     num: '06',
     title: 'Landslide Mitigation & Slope Stabilisation',
     subtitle: 'Geotechnical Engineering • Retaining Structures • Rock-fall Protection',
-    desc: 'Specialist geotechnical works across Sri Lanka\'s critical hill-country zones — soil nailing, shotcrete, gabion retaining walls, reinforced earth structures, and rock-fall net systems protecting national roads.',
+    desc: 'Specialist geotechnical works across Sri Lanka\'s critical hill-country zones  -  soil nailing, shotcrete, gabion retaining walls, reinforced earth structures, and rock-fall net systems protecting national roads.',
     highlights: ['Nuwara Eliya & Hatton Corridor', 'NBRO-Compliant Design', 'Rock-fall Protection Systems', 'Emergency Slope Repair'],
     image: '/images/service-ldpp.jpeg',
     cta: '/services/landslide-mitigation',
@@ -80,8 +80,8 @@ const SERVICES = [
     num: '08',
     title: 'Railway Civil Works',
     subtitle: 'Formation • Civil Infrastructure • Track Upgradation',
-    desc: 'Civil and formation works in connection with railway line upgradation projects — earthworks, drainage, retaining structures, and ancillary civil works supporting Sri Lanka\'s national rail network modernisation.',
-    highlights: ['Railway Formation Works', 'Maho—Anuradhapura Line', 'Earthworks & Drainage', 'Ancillary Civil Structures'],
+    desc: 'Civil and formation works in connection with railway line upgradation projects  -  earthworks, drainage, retaining structures, and ancillary civil works supporting Sri Lanka\'s national rail network modernisation.',
+    highlights: ['Railway Formation Works', 'Maho - Anuradhapura Line', 'Earthworks & Drainage', 'Ancillary Civil Structures'],
     image: '/images/IRCON-MANNAR/WhatsApp Image 2026-08-01 at 12.32.07.jpeg',
     cta: '/services/railway-civil-works',
     },
@@ -198,7 +198,7 @@ export default function Services() {
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Technology & <span style={{ color: "var(--primary-red)" }}>Services</span></h1>
 
           <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: isMobile ? '1rem' : '1.2rem', maxWidth: '640px', lineHeight: 1.75, margin: 0, fontWeight: 400 }}>
-            From national highways and river bridges to fishery harbours and hill-country landslide works — RR Construction covers the full spectrum of heavy civil engineering infrastructure in Sri Lanka.
+            From national highways and river bridges to fishery harbours and hill-country landslide works  -  RR Construction covers the full spectrum of heavy civil engineering infrastructure in Sri Lanka.
           </p>
         </div>
       </section>
@@ -281,7 +281,7 @@ export default function Services() {
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(10,18,35,0.92) 0%, rgba(10,18,35,0.2) 60%, transparent)' }} />
             <div style={{ position: 'absolute', bottom: 0, left: 0, padding: isMobile ? '28px' : '44px' }}>
               <div style={{ fontFamily: 'var(--font-heading)', color: 'white', fontSize: isMobile ? '1.5rem' : '2.2rem', fontWeight: 900, marginBottom: '6px' }}>Self-Reliant Fleet</div>
-              <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.95rem' }}>{COMPANY_DATA.machineryFleet} heavy machines — owned & operated</div>
+              <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.95rem' }}>{COMPANY_DATA.machineryFleet} heavy machines  -  owned & operated</div>
             </div>
           </div>
 
@@ -294,7 +294,7 @@ export default function Services() {
               Planned Before<br />Ground is Broken
             </h2>
             <p style={{ color: 'var(--text-light)', lineHeight: 1.85, fontSize: '1rem', marginBottom: '18px' }}>
-              Every project begins with a meticulous pre-construction resource plan — construction schedule, organisation chart, plant allocation, and materials schedule — mapped to the master programme before mobilisation.
+              Every project begins with a meticulous pre-construction resource plan  -  construction schedule, organisation chart, plant allocation, and materials schedule  -  mapped to the master programme before mobilisation.
             </p>
             <p style={{ color: 'var(--text-light)', lineHeight: 1.85, fontSize: '1rem', marginBottom: 0 }}>
               With a self-owned fleet of {COMPANY_DATA.machineryFleet} machines and {COMPANY_DATA.workforce} personnel, we eliminate third-party dependency and deliver on schedule.

@@ -126,7 +126,7 @@ export default function Projects() {
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our <span style={{ color: "var(--primary-red)" }}>Portfolio</span></h1>
           <p style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto", color: "#f8fafc", fontSize: "1.1rem", textShadow: "0 2px 10px rgba(0,0,0,0.9)", fontWeight: 500 }}>
-            Every project here is proof of work delivered, not just promised – road networks, water retaining structures, bridges, buildings, and dredging & reclamation works completed across Sri Lanka and beyond.
+            Every project here is proof of work delivered, not just promised  -  road networks, water retaining structures, bridges, buildings, and dredging & reclamation works completed across Sri Lanka and beyond.
           </p>
         </div>
       </section>

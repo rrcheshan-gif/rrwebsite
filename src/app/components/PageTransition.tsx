@@ -20,7 +20,7 @@ export default function PageTransition() {
       }, 1200);
       return () => clearTimeout(timer);
     } else {
-      // Route change: fast 200ms fade — no blocking overlay
+      // Route change: fast 200ms fade  -  no blocking overlay
       setIsTransitioning(true);
       setShowSplash(false);
       const timer = setTimeout(() => {

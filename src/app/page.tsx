@@ -28,7 +28,7 @@ export default function Home() {
       heading1: 'Built on Every',
       heading2: 'Road We Pave',
       heading3: '',
-      desc: "From national highways to rural roads, RR Construction delivers precision road construction, rehabilitation, and asphalt paving across Sri Lanka â€” engineered for durability, safety, and long-term performance."
+      desc: "From national highways to rural roads, RR Construction delivers precision road construction, rehabilitation, and asphalt paving across Sri Lanka - engineered for durability, safety, and long-term performance."
     },
     {
       img: '/images/home/slider-maritime-gandara.jpeg',
@@ -38,7 +38,7 @@ export default function Home() {
       heading1: "Building Sri Lanka's",
       heading2: 'Maritime Heritage',
       heading3: '',
-      desc: "We deliver advanced maritime infrastructure, including dredging, breakwaters, and harbour facility development, ensuring robust connectivity for Sri Lanka's coastal trade and economic growth."
+      desc: "We deliver advanced maritime infrastructure - including dredging, breakwaters, and harbour facility development, ensuring robust connectivity for Sri Lanka's coastal trade and economic growth."
     },
     {
       img: '/images/home/bridge_mahanama-enhanced.jpeg',

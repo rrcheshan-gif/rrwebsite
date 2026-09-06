@@ -25,12 +25,12 @@ export const NEWS_DATA: NewsItem[] = [
       <h2>The Country is Being Steered Towards Development</h2>
       <p><strong>The country is being steered towards development through a structured programme that identifies economic potential and expands economic opportunities to rural areas - President</strong></p>
       
-      <p>President Anura Kumara Dissanayake stated that the current government’s objective is to drive national development through a structured plan that recognizes economic strengths and brings economic growth to rural areas. He further affirmed his administration’s commitment to lifting rural communities out of poverty during his address at the inauguration of the Vadduvakal Bridge construction project in the Mullaitivu District today (02).</p>
+      <p>President Anura Kumara Dissanayake stated that the current government's objective is to drive national development through a structured plan that recognizes economic strengths and brings economic growth to rural areas. He further affirmed his administration's commitment to lifting rural communities out of poverty during his address at the inauguration of the Vadduvakal Bridge construction project in the Mullaitivu District today (02).</p>
 
       <p>The President noted that a series of new development projects are set to begin across the country this September. He emphasized that the government will put an end to the long-standing practice of delaying projects beyond their deadlines and spending beyond allocated budgets. Instead, all projects will be completed within the scheduled timeframe to ensure their benefits reach the people without delay.</p>
 
       <h3>Project Details and Investment</h3>
-      <p>The Vadduvakal Bridge, located near the Nandikadal Lagoon along the Paranthan – Karachchi - Mullaitivu road, accommodates more than 3,000 vehicles daily. Due to the lack of maintenance over an extended period, the bridge has become severely unsafe. The Road Development Authority has planned to construct a new two-lane bridge, with completion targeted for September 2, 2027.</p>
+      <p>The Vadduvakal Bridge, located near the Nandikadal Lagoon along the Paranthan  -  Karachchi - Mullaitivu road, accommodates more than 3,000 vehicles daily. Due to the lack of maintenance over an extended period, the bridge has become severely unsafe. The Road Development Authority has planned to construct a new two-lane bridge, with completion targeted for September 2, 2027.</p>
 
       <p>Minister of Transport, Highways, Ports and Civil Aviation Bimal Rathnayake, speaking at the event, highlighted the government's commitment to transparent administration and efficient project execution. He further stated that substantial provisions have been allocated for the construction of bridges and highways in the North this year, with further development expected in the coming year.</p>
 
