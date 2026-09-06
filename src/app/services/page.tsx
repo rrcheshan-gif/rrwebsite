@@ -73,7 +73,7 @@ const SERVICES = [
     desc: 'Reinforced concrete structures, water retaining structures, elevated water towers, and complex steel fabrication.',
     highlights: ['Complex RC Structures', 'Elevated Water Towers', 'Heavy Steel Fabrication'],
     image: '/images/BADULLA/WhatsApp Image 2026-07-28 at 14.03.18.jpeg',
-    cta: '/projects',
+    cta: '/services/buildings-structures',
   },
   {
     slug: 'railway-civil-works',
@@ -83,7 +83,7 @@ const SERVICES = [
     desc: 'Civil and formation works in connection with railway line upgradation projects — earthworks, drainage, retaining structures, and ancillary civil works supporting Sri Lanka\'s national rail network modernisation.',
     highlights: ['Railway Formation Works', 'Maho—Anuradhapura Line', 'Earthworks & Drainage', 'Ancillary Civil Structures'],
     image: '/images/IRCON-MANNAR/WhatsApp Image 2026-08-01 at 12.32.07.jpeg',
-    cta: '/projects',
+    cta: '/services/railway-civil-works',
   },
 ];
 
