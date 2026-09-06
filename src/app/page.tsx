@@ -34,7 +34,7 @@ export default function Home() {
       img: '/images/home/slider-maritime-gandara.jpeg',
       duration: 8000,
       tag: '02 / MARITIME & HARBOUR CONSTRUCTION',
-      video: '/VIDEOS/GFH.mp4',
+      video: '/videos/GFH.mp4',
       heading1: "Building Sri Lanka's",
       heading2: 'Maritime Heritage',
       heading3: '',
