@@ -74,7 +74,7 @@ export default function Leadership() {
                   <p style={{ color: "var(--text-light)", fontSize: "1.1rem", margin: "0 0 20px 0", fontWeight: 600 }}>{leader.qual}</p>
                   {leader.bio && (
                     <div style={{ borderTop: "1px solid var(--border-soft)", paddingTop: "20px", marginTop: "20px" }}>
-                      <p style={{ color: "var(--text-dark)", fontSize: "1.1rem", lineHeight: 1.7, margin: 0, textAlign: "justify" }}>
+                      <p style={{ color: "var(--text-dark)", fontSize: "1.1rem", lineHeight: 1.7, margin: 0,  }}>
                         {leader.bio}
                       </p>
                     </div>

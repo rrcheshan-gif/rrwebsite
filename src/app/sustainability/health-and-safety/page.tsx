@@ -56,13 +56,13 @@ export default function HealthAndSafety() {
               <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.2 }}>
                 Safety is Not Optional. <span style={{ color: "var(--primary-red)" }}>It is Mandatory.</span>
               </h2>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", textAlign: "justify" }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px",  }}>
                 Operating heavy machinery, handling controlled rock blasting, and mitigating volatile landslides naturally involves massive risk. At RR Construction, we do not compromise on safety. Our <strong>"Zero Harm"</strong> philosophy guarantees that the physical wellbeing of our employees and the surrounding community supersedes operational speed or cost.
               </p>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", textAlign: "justify" }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px",  }}>
                 Certified under the rigorous <strong>ISO 45001:2018 Occupational Health and Safety Management System</strong>, we enforce safety protocols that often exceed standard regulatory requirements. We believe that every workplace accident is preventable, and our safety officers conduct continuous risk assessments across all active sites.
               </p>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, textAlign: "justify" }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8,  }}>
                 From comprehensive emergency response planning to rigorous subcontractor vetting, our safety framework is deeply embedded into every phase of the construction lifecycle. We continuously invest in advanced safety training, empowering our entire workforce to take proactive measures against potential hazards.
               </p>
             </div>
@@ -105,7 +105,7 @@ export default function HealthAndSafety() {
               </div>
               <div>
                 <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Hazard Identification</h3>
-                <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0, textAlign: "justify" }}>
+                <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0,  }}>
                   Risk mitigation begins long before ground is broken. Prior to any major excavation or complex structural lift, our certified Health and Safety (HSE) Professionals execute exhaustive, multi-tiered hazard assessments. In exceptionally high-risk environments - such as deep maritime dredging or steep-gradient landslide mitigations - we deploy advanced predictive analysis and continuous proactive monitoring to neutralize threats before they materialize.
                 </p>
               </div>
@@ -117,7 +117,7 @@ export default function HealthAndSafety() {
               </div>
               <div>
                 <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Equipment Safety</h3>
-                <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0, textAlign: "justify" }}>
+                <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0,  }}>
                   Managing an extensive internal fleet of over {COMPANY_DATA.machineryFleet} heavy machines necessitates an uncompromising approach to mechanical integrity. We enforce rigorous, daily multipoint inspections and strict preventive maintenance cycles. This systematic approach eradicates the risk of catastrophic equipment failures on-site, ensuring both personnel safety and seamless operational continuity.
                 </p>
               </div>
@@ -129,7 +129,7 @@ export default function HealthAndSafety() {
               </div>
               <div>
                 <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Competency Training</h3>
-                <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0, textAlign: "justify" }}>
+                <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0,  }}>
                   Personal Protective Equipment (PPE) is only the first line of defense; true safety stems from profound technical competence. We invest heavily in continuous, specialized occupational health and safety training for our {COMPANY_DATA.workforce} personnel. By ensuring that every worker fundamentally understands the mechanics and latent hazards of their specific tasks, we foster an instinctual, proactive safety culture across all divisions.
                 </p>
               </div>
@@ -141,7 +141,7 @@ export default function HealthAndSafety() {
               </div>
               <div>
                 <h3 style={{ fontSize: "1.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Employee Wellbeing</h3>
-                <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0, textAlign: "justify" }}>
+                <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, margin: 0,  }}>
                   The holistic well-being of our workforce is a paramount corporate priority. Beyond standard accident prevention, we proactively combat occupational ill health through ergonomic assessments, continuous ambient site monitoring, and stringent health protocols. By equipping our personnel with meticulously selected, task-specific Personal Protective Equipment (PPE), we create a highly secure work environment free from preventable harm.
                 </p>
               </div>

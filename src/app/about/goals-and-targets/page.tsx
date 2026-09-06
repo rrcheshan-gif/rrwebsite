@@ -168,10 +168,10 @@ export default function GoalsAndTargets() {
             <h3 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", color: "var(--text-dark)", margin: "0 0 25px", fontFamily: "var(--font-heading)", lineHeight: 1.15, fontWeight: 800 }}>
               Setting the Benchmark for <span style={{ color: "var(--primary-red)" }}>Performance</span>
             </h3>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, maxWidth: "850px", margin: "0 auto 25px", textAlign: "justify" }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, maxWidth: "850px", margin: "0 auto 25px",  }}>
               At RR Construction, we don't just set goals; we establish concrete, measurable targets. These targets keep our teams accountable and ensure we continuously deliver the highest standard of infrastructure to the nation.
             </p>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, maxWidth: "850px", margin: "0 auto", textAlign: "justify" }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, maxWidth: "850px", margin: "0 auto",  }}>
               Whether it's accelerating project timelines through our internal machinery fleet or upholding flawless safety records on complex marine and bridge projects, our targets define our success.
             </p>
           </div>
@@ -195,7 +195,7 @@ export default function GoalsAndTargets() {
                   <h4 style={{ color: "var(--text-dark)", fontSize: "1.15rem", fontWeight: 800, margin: "0 0 10px", fontFamily: "var(--font-heading)" }}>
                     {st.label}
                   </h4>
-                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", margin: 0, lineHeight: 1.6, textAlign: "justify" }}>
+                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", margin: 0, lineHeight: 1.6,  }}>
                     {st.target}
                   </p>
                 </div>

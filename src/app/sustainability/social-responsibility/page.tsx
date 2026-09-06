@@ -56,16 +56,16 @@ export default function SocialResponsibility() {
               <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.2 }}>
                 Engineering for <span style={{ color: "var(--primary-red)" }}>The People</span>
               </h2>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", textAlign: "justify" }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px",  }}>
                 Large-scale construction inherently impacts local communities. Whether we are driving a new expressway through the heart of the country or mitigating dangerous landslides in the central hills, RR Construction views the local community as a primary stakeholder.
               </p>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", textAlign: "justify" }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px",  }}>
                 Our Corporate Social Responsibility (CSR) initiatives are deeply integrated into our project planning. We aim to leave every community vastly improved not just by the final infrastructure, but by the economic and social opportunities generated during the construction phase.
               </p>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", textAlign: "justify" }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px",  }}>
                 We strictly adhere to a policy of transparent communication, conducting comprehensive environmental and social impact assessments before breaking ground. By keeping community leaders informed and actively seeking their input, we ensure that our operational footprint causes zero undue disruption to their daily lives and livelihoods.
               </p>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, textAlign: "justify" }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8,  }}>
                 Furthermore, our commitment to sustainable development means that a portion of our project budget is reinvested directly into the local economy. From sourcing raw materials locally to empowering grassroots vendors, our operations serve as a catalyst for immediate socio-economic upliftment.
               </p>
             </div>
@@ -108,7 +108,7 @@ export default function SocialResponsibility() {
               </div>
               <div>
                 <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Rural Connectivity</h3>
-                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0, textAlign: "justify" }}>
+                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0,  }}>
                   Through strategic infrastructure developments such as the iRoad program and critical rural bridge reconstructions, we play a pivotal role in bridging the urban-rural divide. By systematically enhancing regional connectivity, we directly stimulate local agrarian economies, drastically reducing transport times for agricultural supply chains, and facilitating seamless access to urban markets and essential services for remote communities.
                 </p>
               </div>
@@ -120,7 +120,7 @@ export default function SocialResponsibility() {
               </div>
               <div>
                 <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Education & Youth</h3>
-                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0, textAlign: "justify" }}>
+                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0,  }}>
                   We are deeply committed to community empowerment through localized workforce integration. By actively recruiting and mentoring youth from regions adjacent to our major infrastructure sites - such as the Central Expressway and large-scale maritime projects - we provide invaluable, hands-on technical training. This proactive knowledge transfer equips the next generation with specialized skills, creating sustainable, long-term career trajectories in the heavy civil engineering sector.
                 </p>
               </div>
@@ -132,7 +132,7 @@ export default function SocialResponsibility() {
               </div>
               <div>
                 <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Minimizing Disruption</h3>
-                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0, textAlign: "justify" }}>
+                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0,  }}>
                   Executing complex projects in densely populated urban centers demands meticulous logistical planning. During critical water infrastructure upgrades and high-traffic road rehabilitations, we deploy advanced traffic management protocols and strategically phased night-time operations. Our uncompromising commitment to operational efficiency ensures that public safety is prioritized and the daily routines of citizens remain undisturbed, minimizing civic disruption while maximizing project momentum.
                 </p>
               </div>
@@ -162,10 +162,10 @@ export default function SocialResponsibility() {
                 <h3 style={{ fontSize: "2rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>
                   Honoring Our Foundation: A Gift to Our First Employee
                 </h3>
-                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", textAlign: "justify" }}>
+                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px",  }}>
                   At RR Construction, our extraordinary growth over the past three decades is built entirely upon the dedication and hard work of our people. As a company that values loyalty and long-term commitment, we firmly believe that our employees are our greatest asset.
                 </p>
-                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, textAlign: "justify" }}>
+                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8,  }}>
                   As part of our ongoing social responsibility and employee welfare initiatives, we recently had the profound honor of presenting a special token of gratitude to our very first employee. This gift serves as a symbol of our deep appreciation for their unwavering dedication, reflecting our core belief that the people who laid the foundation of this company will always remain at the heart of its success.
                 </p>
               </div>
@@ -186,10 +186,10 @@ export default function SocialResponsibility() {
                 <h3 style={{ fontSize: "2rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>
                   Construction of Muddaragama Chethiyaramaya Temple
                 </h3>
-                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", textAlign: "justify" }}>
+                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px",  }}>
                   As part of our continuous commitment to uplifting local communities and preserving cultural heritage, RR Construction proudly contributed to the structural development of the Muddaragama Chethiyaramaya Temple. We recognize that spiritual centers form the heart of rural communities, fostering unity and peace.
                 </p>
-                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, textAlign: "justify" }}>
+                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8,  }}>
                   By dedicating our engineering expertise and resources to this sacred project, we ensured the delivery of a robust, beautifully crafted space for religious observances. This initiative reflects our core philosophy of giving back to the communities that host our operations, building not just commercial infrastructure, but landmarks of cultural significance.
                 </p>
               </div>

@@ -9,8 +9,8 @@
   --white: #ffffff;
   
   /* Typography */
-  --font-heading: var(--font-heading), sans-serif;
-  --font-body: var(--font-body), sans-serif;
+  
+  
   
   /* Layout */
   --nav-height: 80px;
@@ -2010,7 +2010,8 @@ ul {
 
 /* Global Typography Adjustments */
 p {
-  text-align: justify;
+  text-align: left;
+  line-height: 1.75;
 }
 
 
@@ -2028,4 +2029,81 @@ body {
 
 .page-header h1 {
   letter-spacing: -0.04em; /* Ultra modern tight tracking on huge headers */
+}
+
+/* ============================================
+   COMPREHENSIVE MOBILE RESPONSIVENESS FIX
+   ============================================ */
+@media (max-width: 768px) {
+  /* Prevent horizontal scroll */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+
+  /* Containers should not overflow */
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Typography scaling */
+  h2 { font-size: clamp(1.5rem, 6vw, 2rem) !important; }
+  h3 { font-size: clamp(1.2rem, 5vw, 1.5rem) !important; }
+  p  { font-size: 1rem !important; line-height: 1.7 !important; text-align: left !important; }
+
+  /* Hero / Page header */
+  .page-header {
+    margin: 0 10px 24px !important;
+    padding: 36px 16px !important;
+    border-radius: 20px !important;
+  }
+  .page-header h1 {
+    font-size: clamp(1.8rem, 7vw, 2.5rem) !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  /* Stat numbers */
+  .stat-number {
+    font-size: 2.2rem !important;
+  }
+
+  /* Prevent images from overflowing */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 12px 24px !important;
+    font-size: 0.95rem !important;
+  }
+
+  /* Glass panels */
+  .glass-panel {
+    padding: 20px 16px !important;
+  }
+
+  /* Table / Key Data */
+  table {
+    font-size: 0.9rem !important;
+  }
+  td, th {
+    padding: 10px 12px !important;
+  }
+}
+
+/* Extra-small screens (< 480px) */
+@media (max-width: 480px) {
+  h1 { font-size: clamp(1.6rem, 8vw, 2rem) !important; }
+  h2 { font-size: clamp(1.3rem, 7vw, 1.7rem) !important; }
+
+  .page-header {
+    margin: 0 8px 20px !important;
+    padding: 28px 14px !important;
+  }
 }
