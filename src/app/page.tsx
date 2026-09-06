@@ -109,7 +109,7 @@ export default function Home() {
                   loop 
                   muted 
                   playsInline
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', opacity: 0.9 }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', filter: 'brightness(1.05) contrast(1.05)' }} 
                 />
               ) : (
                 <img className="img-polished" 
