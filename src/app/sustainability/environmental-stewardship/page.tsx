@@ -22,12 +22,12 @@ export default function EnvironmentalStewardship() {
       <section 
         className="page-header" 
         style={{ 
-          backgroundImage: "url('/images/page-headers/sustainability-road.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
+          backgroundImage: "url('/images/page-headers/sustainability-road-hq.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
           padding: isMobile ? "40px 20px" : "70px 20px", 
           textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 
-          backgroundPosition: "center 40%", 
+          backgroundPosition: "center center", 
           borderRadius: isMobile ? "24px" : "32px", 
           margin: isMobile ? "0 12px 30px" : "0 20px 50px", 
           overflow: "hidden" 
