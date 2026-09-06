@@ -1,13 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
+import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
+const montserrat = Montserrat({
   variable: "--font-heading",
   subsets: ["latin"],
 });
 
-const jakarta = Plus_Jakarta_Sans({
+const inter = Inter({
   variable: "--font-body",
   subsets: ["latin"],
 });
@@ -107,7 +107,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${jakarta.variable}`}
+      className={`${montserrat.variable} ${inter.variable}`}
       suppressHydrationWarning
     >
       <head>
