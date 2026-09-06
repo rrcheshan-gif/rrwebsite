@@ -2071,10 +2071,28 @@ body {
     font-size: 2.2rem !important;
   }
 
-  /* Prevent images from overflowing */
-  img {
+  /* Prevent images from overflowing - only standalone images, NOT cover images */
+  img:not([style*="height: \"100%\""]):not([style*='height: "100%"']):not([class*="logo"]) {
     max-width: 100% !important;
-    height: auto !important;
+  }
+
+  /* Collage / photo grid — keep 2 cols but smaller rows on mobile */
+  .collage-grid {
+    grid-template-rows: repeat(2, clamp(120px, 25vw, 180px)) !important;
+    gap: 10px !important;
+  }
+
+  /* Service cards — allow full width */
+  .modern-service-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 220px !important;
+  }
+
+  /* Make flex-wrapped sections not clip images */
+  div[style*="flex: \"1 1 min(100%"] {
+    min-width: 100% !important;
+    width: 100% !important;
   }
 
   /* Buttons */

@@ -290,7 +290,7 @@ export default function Home() {
               <div style={{ position: "absolute", top: "-15px", bottom: "-15px", left: "-15px", right: "-15px", border: "2px dashed rgba(229, 57, 53, 0.5)", borderRadius: "48px", zIndex: 0, pointerEvents: "none" }}></div>
               
               <div style={{ position: "relative", width: "100%", height: "100%", padding: "15px", background: "var(--white)", borderRadius: "40px", boxShadow: "0 25px 70px rgba(0,0,0,0.06)", border: "1px solid rgba(0,0,0,0.04)", zIndex: 2, display: "flex", flexDirection: "column" }}>
-                <div className="collage-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gridTemplateRows: "repeat(2, 220px)", flex: 1, gap: "15px", position: "relative", zIndex: 1 }}>
+                <div className="collage-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gridTemplateRows: "repeat(2, clamp(140px, 20vw, 220px))", flex: 1, gap: "15px", position: "relative", zIndex: 1 }}>
                     
                     {/* Top Left */}
                     <div style={{ borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}>
