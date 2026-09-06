@@ -75,7 +75,7 @@ export default function CivilStructuresPage() {
               Comprehensive Structural Engineering
             </h2>
             <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
-              With over three decades of experience, RR Construction�s civil division handles highly specialized structural concrete and steel works, ensuring safety, durability, and compliance with the most stringent global standards.
+              With over three decades of experience, RR Construction's civil division handles highly specialized structural concrete and steel works, ensuring safety, durability, and compliance with the most stringent global standards.
             </p>
           </div>
 
