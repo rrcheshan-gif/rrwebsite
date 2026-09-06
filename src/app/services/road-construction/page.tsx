@@ -215,62 +215,7 @@ export default function RoadConstructionPage() {
         </div>
       </section>
 
-      {/* 7. Selected Road Projects */}
-      <section style={{ padding: sectionPadding, backgroundColor: 'var(--bg-light)' }}>
-        <div style={containerStyle}>
-          <h2 style={{ 
-            fontFamily: 'var(--font-heading)', 
-            fontSize: isMobile ? '2rem' : '2.5rem', 
-            color: 'var(--text-dark)',
-            textAlign: 'center',
-            marginBottom: '40px'
-          }}>
-            Selected Road Projects
-          </h2>
-          
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: isMobile ? '1fr' : 'repeat(2, 1fr)', 
-            gap: '24px'
-          }}>
-            {[
-              "Central Expressway Section 2 Package A",
-              "iRoad Programme - Kalutara Rural Roads",
-              "iRoad Programme - Mannar Rural Roads",
-              "iRoad Programme - Kilinochchi Rural Roads",
-              "iRoad Programme - Kurunegala Rural Roads"
-            ].map((project, i) => (
-              <div key={i} style={{
-                backgroundColor: 'var(--white)',
-                padding: '24px 30px',
-                borderRadius: '16px',
-                border: '1px solid var(--border-soft)',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '16px'
-              }}>
-                <div style={{
-                  width: '40px',
-                  height: '40px',
-                  borderRadius: '50%',
-                  backgroundColor: 'var(--bg-light)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0
-                }}>
-                  <CheckCircle2 size={20} color="var(--primary-red)" />
-                </div>
-                <span style={{ color: 'var(--text-dark)', fontWeight: 500, fontSize: '1.1rem' }}>
-                  {project}
-                </span>
-              </div>
-            ))}
-          </div>
-
-          
-        </div>
-      </section>
+      
 
       {/* 8. Equipment & Resources & 9. Quality & Safety */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>
