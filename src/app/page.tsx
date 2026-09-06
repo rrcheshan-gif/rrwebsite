@@ -15,7 +15,7 @@ export default function Home() {
       fallback: '/images/hero-road-roller.jpg',
       duration: 12000,
       tag: 'PASSION FOR ENGINEERING EXCELLENCE',
-      video: '/videos/GFH.mp4',
+      video: '/videos/home-slider.mp4',
       heading1: 'Engineering',
       heading2: "Sri Lanka's",
       heading3: 'Tomorrow',
