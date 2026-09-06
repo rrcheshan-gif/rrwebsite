@@ -11,7 +11,7 @@ export default function Home() {
 
   const slides = [
     {
-      img: '/images/home/SLIDE_01_NOTEXT.jpg',
+      img: '/images/home/SLIDE_01_NOTEXT-enhanced.jpg',
       fallback: '/images/hero-road-roller.jpg',
       duration: 12000,
       tag: 'PASSION FOR ENGINEERING EXCELLENCE',
@@ -21,7 +21,7 @@ export default function Home() {
       desc: "For three decades, RR Construction has turned ambitious blueprints into the roads, bridges, harbours, and water systems that keep Sri Lanka moving forward - built to last, delivered on time."
     },
     {
-      img: '/images/home/slider/polished/road.jpg',
+      img: '/images/home/slider/polished/road-enhanced.jpg',
       fallback: '/images/hero-road-roller.jpg',
       duration: 8000,
       tag: '01 / ROAD CONSTRUCTION & REHABILITATION',
@@ -40,7 +40,7 @@ export default function Home() {
       desc: "We deliver advanced maritime infrastructure, including dredging, breakwaters, and harbour facility development, ensuring robust connectivity for Sri Lanka's coastal trade and economic growth."
     },
     {
-      img: '/images/home/bridge_mahanama.jpeg',
+      img: '/images/home/bridge_mahanama-enhanced.jpeg',
       duration: 8000,
       tag: '03 / BRIDGES & OVERPASSES',
       heading1: 'Structural Integrity',
@@ -49,7 +49,7 @@ export default function Home() {
       desc: 'Using high-strength concrete and advanced structural steel fabrication, we build river crossings, heavy overpasses, and causeways designed to carry extreme traffic loads safely.'
     },
     {
-      img: '/images/home/slider/polished/hatton.jpg',
+      img: '/images/home/slider/polished/hatton-enhanced.jpg',
       duration: 8000,
       tag: '04 / LANDSLIDE & SOIL MITIGATION',
       heading1: 'Stabilizing Communities',
@@ -58,7 +58,7 @@ export default function Home() {
       desc: 'In critical hillside zones (Nuwara Eliya, Hatton, Kandy), we deploy state-of-the-art geotechnical engineering. Soil retaining structures and rock-fall nets keep national roadways secure.'
     },
     {
-      img: '/images/home/slider/polished/omanthai.jpg',
+      img: '/images/home/slider/polished/omanthai-enhanced.jpg',
       duration: 8000,
       tag: '05 / AGGREGATES & MATERIAL PRODUCTION',
       heading1: 'Sustainable Aggregate',
@@ -67,7 +67,7 @@ export default function Home() {
       desc: 'We operate large-scale, eco-friendly M-Sand and crusher facilities to supply high-quality, continuous aggregates. Our self-reliant production ensures superior concrete strength for major infrastructure projects nationwide.'
     },
     {
-      img: '/images/home/slider/polished/machinery.jpg',
+      img: '/images/home/slider/polished/machinery-enhanced.jpg',
       duration: 8000,
       tag: '06 / HEAVY RESOURCE FLEET',
       heading1: 'Self-Owned Assets',
