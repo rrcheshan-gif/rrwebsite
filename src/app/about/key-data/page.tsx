@@ -53,16 +53,16 @@ export default function KeyDataPage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
             <div>
               <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
-                Head Office
+                Company Name
               </h3>
               <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
-                No. 865, Dr. Danister de Silva MW, Baseline Road, Colombo 09
+                RR Construction (Pvt) Ltd
               </p>
             </div>
 
             <div>
               <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
-                Year Established
+                Registered / Established
               </h3>
               <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
                 1995
@@ -71,10 +71,28 @@ export default function KeyDataPage() {
 
             <div>
               <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
-                Ownership
+                Head Office
+              </h3>
+              <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem', lineHeight: 1.6 }}>
+                No. 865, Dr. Danister De Silva Mawatha, Baseline Road, Colombo 9, Orugodawatta.
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
+                Company Registration No
               </h3>
               <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
-                Private Limited Liability Company
+                PV 11346
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
+                CIDA Registration No
+              </h3>
+              <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
+                C-10171
               </p>
             </div>
 
@@ -83,16 +101,7 @@ export default function KeyDataPage() {
                 Managing Director
               </h3>
               <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
-                Mr. Ranjith Senadhera S.D.
-              </p>
-            </div>
-
-            <div>
-              <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
-                CIDA Registration
-              </h3>
-              <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
-                CS2 (Highest Grade)
+                Mr. Ranjith Senadeera S. D.
               </p>
             </div>
 
@@ -101,31 +110,22 @@ export default function KeyDataPage() {
                 Workforce
               </h3>
               <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
-                1,400+ Employees
+                1,800+ Employees
               </p>
             </div>
             
             <div>
               <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
-                Self-Owned Machinery Fleet
+                Machinery & Equipment
               </h3>
               <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
-                1,000+ Heavy Machinery Units (One of the largest in Sri Lanka)
+                1,000+ Self-Owned Heavy Machinery Units
               </p>
             </div>
 
             <div>
               <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
-                Asphalt & Quarry Facilities
-              </h3>
-              <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
-                Veerapuram, Thudugala, Omanthai, Yakawewa
-              </p>
-            </div>
-
-            <div>
-              <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
-                Accreditations
+                ISO Certificates
               </h3>
               <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
                 ISO 9001:2015, ISO 14001:2015, ISO 45001:2018
@@ -134,25 +134,26 @@ export default function KeyDataPage() {
 
             <div>
               <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
-                Annual Reporting
+                Company Auditor
               </h3>
-              <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
-                Sustainability Reporting Guidelines
+              <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem', lineHeight: 1.6 }}>
+                P. Wijayawardana & Co.<br />
+                No. 22/2, Pepiliyana Road, Gansabha Junction, Gangodawila, Nugegoda.
               </p>
             </div>
 
             <div>
               <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
-                Auditors
+                Company Bankers
               </h3>
-              <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
-                HLB Edirisinghe & Co
+              <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem', lineHeight: 1.6 }}>
+                Hatton National Bank, DFCC Bank, Sampath Bank, National Development Bank, Commercial Bank, Peoples Bank & Nations Trust Bank.
               </p>
             </div>
 
             <div>
               <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
-                No of Projects
+                Completed Projects
               </h3>
               <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
                 100+ Major National Projects
