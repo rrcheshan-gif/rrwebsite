@@ -34,6 +34,7 @@ export default function Home() {
       img: '/images/home/slider-maritime-gandara.jpeg',
       duration: 8000,
       tag: '02 / MARITIME & HARBOUR CONSTRUCTION',
+      video: '/VIDEOS/GFH.mp4',
       heading1: "Building Sri Lanka's",
       heading2: 'Maritime Heritage',
       heading3: '',
@@ -100,12 +101,23 @@ export default function Home() {
               zIndex: 1
             }}
           >
-            <img className="img-polished" 
-              src={slide.img} 
-              alt={slide.tag} 
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', opacity: 0.8, filter: 'contrast(1.1) saturate(1.05)' }} 
-              onError={(e) => { if (slide.fallback) (e.target as HTMLImageElement).src = slide.fallback; }} 
-            />
+            {slide.video ? (
+                <video 
+                  src={slide.video} 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', opacity: 0.9 }} 
+                />
+              ) : (
+                <img className="img-polished" 
+                  src={slide.img} 
+                  alt={slide.tag} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', opacity: 0.8, filter: 'contrast(1.1) saturate(1.05)' }} 
+                  onError={(e) => { if (slide.fallback) (e.target as HTMLImageElement).src = slide.fallback; }} 
+                />
+              )}
           </div>
         ))}
         {/* Balanced Cinematic Overlay for high text contrast */}
