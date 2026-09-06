@@ -104,6 +104,24 @@ export default function KeyDataPage() {
                 1,400+ Employees
               </p>
             </div>
+            
+            <div>
+              <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
+                Self-Owned Machinery Fleet
+              </h3>
+              <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
+                1,000+ Heavy Machinery Units (One of the largest in Sri Lanka)
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
+                Asphalt & Quarry Facilities
+              </h3>
+              <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
+                Veerapuram, Thudugala, Omanthai, Yakawewa
+              </p>
+            </div>
 
             <div>
               <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
@@ -137,7 +155,7 @@ export default function KeyDataPage() {
                 No of Projects
               </h3>
               <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
-                100+ Major Projects
+                100+ Major National Projects
               </p>
             </div>
 </div>
