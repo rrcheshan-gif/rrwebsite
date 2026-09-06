@@ -160,53 +160,7 @@ export default function WaterInfrastructurePage() {
         </div>
       </section>
 
-      {/* Selected Projects */}
-      <section style={{ padding: isMobile ? "60px 20px" : "100px 40px", backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 style={{ color: 'var(--text-dark)', fontSize: '32px', fontFamily: 'var(--font-heading)', textAlign: 'center', marginBottom: '50px' }}>
-            Featured Water Projects
-          </h2>
-          
-          <div style={{
-            backgroundColor: 'var(--bg-light)',
-            borderRadius: '24px',
-            border: '1px solid var(--border-soft)',
-            overflow: 'hidden',
-            display: 'flex',
-            flexDirection: isMobile ? 'column' : 'row'
-          }}>
-            <div style={{ padding: '40px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              <div style={{ color: 'var(--primary-red)', fontWeight: 'bold',  fontSize: '14px', letterSpacing: '1px', marginBottom: '10px' }}>
-                Major Project
-              </div>
-              <h3 style={{ color: 'var(--text-dark)', fontSize: '28px', marginBottom: '20px', fontFamily: 'var(--font-heading)' }}>
-                Ampara Water Treatment Plant
-              </h3>
-              <p style={{ color: 'var(--text-light)', fontSize: '16px', lineHeight: 1.8, marginBottom: '20px' }}>
-                A critical infrastructure project involving the construction and heavy civil engineering works for the water treatment facility in Ampara, designed to improve the quality and reliability of the region's potable water supply.
-              </p>
-              <ul style={{ listStyleType: 'none', padding: 0, margin: 0, marginBottom: '30px' }}>
-                <li style={{ marginBottom: '10px', color: 'var(--text-dark)', display: 'flex' }}>
-                  <strong style={{ width: '120px' }}>Client:</strong> NWSDB (National Water Supply & Drainage Board)
-                </li>
-                <li style={{ marginBottom: '10px', color: 'var(--text-dark)', display: 'flex' }}>
-                  <strong style={{ width: '120px' }}>Sector:</strong> Water Treatment
-                </li>
-              </ul>
-            </div>
-            <div style={{ 
-              flex: 1, 
-              minHeight: '300px', 
-              backgroundColor: '#e0e0e0',
-              backgroundImage: 'url("/images/home/slider/polished/machinery-enhanced.jpg")',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center'
-            }}>
-              
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Clients & Quality */}
       <section style={{ padding: isMobile ? "60px 20px" : "100px 40px", backgroundColor: 'var(--bg-light)' }}>
