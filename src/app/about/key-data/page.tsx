@@ -51,7 +51,6 @@ export default function KeyDataPage() {
           boxShadow: '0 4px 6px rgba(0,0,0,0.02)'
         }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
-            
             <div>
               <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
                 Head Office
@@ -99,14 +98,49 @@ export default function KeyDataPage() {
 
             <div>
               <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
-                Quality Certifications
+                Workforce
+              </h3>
+              <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
+                1,400+ Employees
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
+                Accreditations
               </h3>
               <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
                 ISO 9001:2015, ISO 14001:2015, ISO 45001:2018
               </p>
             </div>
 
-          </div>
+            <div>
+              <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
+                Annual Reporting
+              </h3>
+              <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
+                Sustainability Reporting Guidelines
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
+                Auditors
+              </h3>
+              <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
+                HLB Edirisinghe & Co
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ fontSize: '1rem', color: '#1a202c', fontWeight: 800, margin: '0 0 8px', fontFamily: 'var(--font-heading)' }}>
+                No of Projects
+              </h3>
+              <p style={{ color: '#4a5568', margin: 0, fontSize: '1.05rem' }}>
+                100+ Major Projects
+              </p>
+            </div>
+</div>
         </div>
 
       </div>
