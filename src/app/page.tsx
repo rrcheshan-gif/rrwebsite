@@ -98,17 +98,18 @@ export default function Home() {
               position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', 
               transition: 'opacity 1s ease-in-out', 
               opacity: index === currentSlide ? 1 : 0,
+              background: '#0f172a',
               zIndex: 1
             }}
           >
             {slide.video ? (
                 <video 
                   src={slide.video}
-                  poster={slide.img} 
                   autoPlay 
                   loop 
                   muted 
                   playsInline
+                  preload="auto"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', filter: 'brightness(1.05) contrast(1.05)' }} 
                 />
               ) : (
