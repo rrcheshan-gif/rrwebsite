@@ -1,17 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Sora, Inter } from "next/font/google";
+import { Rajdhani, Roboto } from "next/font/google";
 import "./globals.css";
 
-const sora = Sora({
+const rajdhani = Rajdhani({
   variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["500", "600", "700"],
 });
 
-const inter = Inter({
+const roboto = Roboto({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -109,7 +109,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${sora.variable} ${inter.variable}`}
+      className={`${rajdhani.variable} ${roboto.variable}`}
       suppressHydrationWarning
     >
       <head>
