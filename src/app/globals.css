@@ -543,8 +543,25 @@ ul {
     display: flex;
     gap: clamp(15px, 2vw, 32px);
     align-items: center;
-    margin-left: auto;
+    flex: 1;
+    justify-content: center;
   }
+
+/* Desktop actions: theme toggle + Contact Us — always at the far right */
+.nav-desktop-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+@media (max-width: 1200px) {
+  .nav-desktop-actions {
+    display: none;
+  }
+}
+
 
 .nav-links a,
 .dropdown-header a {
