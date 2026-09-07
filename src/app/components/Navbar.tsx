@@ -139,11 +139,17 @@ export default function Navbar() {
               <li><Link href="/news" title="Sri Lanka Construction Industry News" onClick={() => setMobileMenuOpen(false)}>News & Updates</Link></li>
               
               <li className="nav-extra-actions">
+                <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
+                  {theme === 'light' ? '🌙' : '☀️'}
+                </button>
                 <Link href="/contact" title="Contact Top Construction Contractors in Sri Lanka" className="nav-contact-btn" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
               </li>
             </ul>
 
             <div className="nav-right-mobile flex items-center gap-3">
+              <button onClick={toggleTheme} className="theme-toggle mobile-only-toggle" aria-label="Toggle Dark Mode">
+                {theme === 'light' ? '🌙' : '☀️'}
+              </button>
               <button 
                 className="mobile-menu-btn" 
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
