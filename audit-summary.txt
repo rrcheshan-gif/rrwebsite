@@ -1,0 +1,283 @@
+
+--- src/app/page.tsx ---
+{slide.heading1}
+                  {slide.heading2}
+                  {slide.heading3 && <>{slide.heading3}}
+RR CONSTRUCTION(PVT) LTD
+              Construction & Civil Engineering In Sri Lanka
+SustainableEngineering
+THREE DECADES OFEXCELLENCE
+Trusted By Our Major Clients
+Our main objective is to achieve the highest degree of customer satisfaction at correct time & correct cost using appropriate technology.
+With a self-owned fleet of {COMPANY_DATA.machineryFleet} heavy construction machines, our capabilities go beyond earthworks and structural concrete. We execute large-scale highways, bridges, irrigation canals, maritime construction, dredging, and heavy steel fabrication. We bring the full strength of our civil engineering resources to every site, ensuring Sri Lanka's infrastructure is built with absolute reliability.
+We recognize our responsibility to the environment. Through efficient resource management, sustainable material sourcing, and strict adherence to ISO 14001 Environmental Management Systems, we minimize our ecological footprint while building infrastructure that lasts.
+Zero harm is our ultimate goal. We maintain a rigorous Health & Safety culture on every site, backed by our ISO 45001 certification. Our {COMPANY_DATA.workforce} workforce is continuously trained to operate under the highest global safety standards, ensuring everyone goes home safely.
+The company started its operations in {COMPANY_DATA.established} to cater to the growing demand for quality constructions. We primarily started civil construction with ED Zublin AG in the Central Bank extension project as a sub-contractor.
+Since then, we have evolved into a fully-fledged civil engineering contractor delivering multi-billion rupee projects for both local and international clients, backed by a proven track record of 27 years of history.
+
+--- src/app/about/company-overview/page.tsx ---
+A Legacy of Engineering Excellence.
+Comprehensive Engineering Scope:
+{COMPANY_DATA.established}
+{COMPANY_DATA.yearsOfExcellence} Years
+Message from the Managing Director
+Mr. Ranjith Senadheera
+Managing Director, RR Construction (Pvt) Ltd
+Our Journey & Capabilities
+Unmatched Internal Strength
+{COMPANY_DATA.workforce}
+{COMPANY_DATA.machineryFleet}
+Engineering With Responsibility
+Engineering Sri Lanka's Tomorrow
+Building the Foundations of a Stronger Sri Lanka since {COMPANY_DATA.established} through dependable engineering and uncompromising quality.
+{COMPANY_DATA.name} is a Sri Lankan civil engineering and construction company established in {COMPANY_DATA.established}. The company commenced its operations through civil construction work undertaken with ED Zublin AG on the Central Bank extension project and subsequently developed experience through projects for local and international clients.
+"To achieve a high degree of customer satisfaction through appropriate technology, effective project delivery, cost-conscious execution and timely completion."
+{COMPANY_DATA.name} traces its roots back to {COMPANY_DATA.established}. Over the last {parseInt(COMPANY_DATA.yearsOfExcellence.replace('+', ''))} years, the organization has progressed and established its strong presence in the construction industry in {COMPANY_DATA.headquarters}.
+By continuously developing new capabilities to overcome emerging challenges, introducing structural changes to the organization, and creating a strong culture of teamwork combined with professional methodologies, we have grown into one of the country's leading infrastructure developers.
+Our highly experienced workforce and massive fleet of self-owned heavy machinery allow us to execute complex road, bridge, maritime, and structural engineering projects efficiently, maintaining the highest standards of safety and quality.
+Today, RR Construction is a fully integrated engineering firm capable of managing all aspects of large-scale civil infrastructure development from the ground up.
+We rely on our own resources rather than third-party dependencies. Our operations are powe'red by a highly skilled workforce of experienced engineers and construction professionals.
+Combined with a self-owned fleet of heavy construction machines and proprietary aggregate production plants, we maintain total control over project timelines and quality parameters.
+We strictly adhere to global standards, ensuring that every project satisfies the highest technical requirements while minimizing environmental impact and protecting the health and safety of everyone involved.
+Discover how our comprehensive civil engineering capabilities are building the nation's critical infrastructure.
+
+--- src/app/about/history/page.tsx ---
+View Our Achievements
+Three decades of steady growth, technical evolution, and nation-building.
+From a regional contractor in {COMPANY_DATA.established} to a national civil engineering powerhouse today.
+Decades of experience has resulted in widespread recognition for our engineering capabilities.
+
+--- src/app/about/leadership/page.tsx ---
+
+Guiding RR Construction through decades of civil engineering excellence.
+With a massive workforce of over {COMPANY_DATA.workforce}, we are always looking for the brightest engineering minds.
+
+--- src/app/about/vision-mission/page.tsx ---
+Engineering the Future.
+              Building What Matters.
+"To engineer a stronger, smarter, and more sustainable Sri Lanka - building infrastructure that connects communities, drives progress, and stands the test of time."
+“To deliver world-class construction and civil engineering solutions through engineering excellence, advanced technology, responsible resource management, uncompromising quality, and a relentless commitment to safety, sustainability, and client satisfaction.”
+Engineering Excellence.
+              Building Trust.
+              Shaping Tomorrow.
+Let’s Build What’s Next.
+We envision a future where robust, sustainable, and world-class infrastructure forms the backbone of national socio-economic development.
+Our mission drives every decision, ensuring we remain the nation's premier engineering and construction organization.
+Engineering Excellence.
+              Building Trust.
+              Shaping Tomorrow.
+            
+            
+              “We don't simply build projects. We build the infrastructure that shapes Sri Lanka's future.”
+
+--- src/app/about/goals-and-targets/page.tsx ---
+Setting the Benchmark for Performance
+Driving Sri Lanka's infrastructure forward through measurable objectives, operational excellence, and an unwavering commitment to sustainable progress.
+These foundational pillars guide our daily operations and long-term strategic decisions across all our construction divisions.
+At RR Construction, we don't just set goals; we establish concrete, measurable targets. These targets keep our teams accountable and ensure we continuously deliver the highest standard of infrastructure to the nation.
+Whether it's accelerating project timelines through our internal machinery fleet or upholding flawless safety records on complex marine and bridge projects, our targets define our success.
+
+--- src/app/about/awards/page.tsx ---
+International Certifications
+Operational Milestones
+Recognized milestones and certifications in our pursuit of engineering excellence.
+Our commitment to quality, safety, and environmental responsibility is independently verified by global standards.
+Our true achievements are measured by the scale of our capabilities, the strength of our workforce, and the physical infrastructure we have built across Sri Lanka.
+The best proof of our capability is the infrastructure we have built.
+
+--- src/app/services/page.tsx ---
+Technology & Services
+All Engineering Disciplines
+Planned BeforeGround is Broken
+Ready to Start Your Project?
+From national highways and river bridges to fishery harbours and hill-country landslide works — RR Construction covers the full spectrum of civil engineering infrastructure in Sri Lanka.
+))}
+          
+        
+      
+
+
+      {/* ── RESOURCE PLANNING ── */}
+      
+        
+          
+             { (e.currentTarget as HTMLImageElement).src = '/images/page-headers/services-build.jpg'; }} />
+            
+            
+              Self-Reliant Fleet
+              {COMPANY_DATA.machineryFleet} heavy machines — owned & operated
+            
+          
+
+          
+            
+              
+              Resource Management
+            
+            
+              Planned BeforeGround is Broken
+            
+            
+              Every project begins with a meticulous pre-construction resource plan — construction schedule, organisation chart, plant allocation, and materials schedule — mapped to the master programme before mobilisation.
+With a self-owned fleet of {COMPANY_DATA.machineryFleet} machines and {COMPANY_DATA.workforce} personnel, we eliminate third-party dependency and deliver on schedule.
+Discuss your infrastructure requirement with our engineering team. We handle projects of every scale across Sri Lanka.
+
+--- src/app/services/bridge-construction/page.tsx ---
+Bridge Construction & Rehabilitation in Sri Lanka
+Premier Bridge Engineering Capabilities
+Unlimited Engineering Capacity
+Specialized Bridge Construction Services
+Concrete Bridge Construction
+Steel Bridge Construction
+Bridge Rehabilitation
+Major National Bridge Works
+Specialized Technical Resources
+International Quality Standards
+Frequently Asked Questions
+Ready to Build the Future?
+Building vital connections across the island since 1995. Top-tier bridge engineering contractors.
+RR Construction is a leading force in Sri Lankan infrastructure development. With decades of structural engineering expertise, we design, construct, and rehabilitate complex bridge structures that serve communities and economies for generations.
+We hold the highest capabilities for Bridge Construction, authorizing us to execute projects of unlimited financial value and technical complexity.
+From initial foundation works in challenging terrain to final deck surfacing, our technical capabilities cover every aspect of bridge building and structural intervention.
+Expert execution of complex concrete structures, specializing in Pre-Stressed Concrete (PSC) girder bridges, traditional RC T-beam bridges, and extensive box culvert systems for major roadways.
+Comprehensive services for steel and composite bridge structures, from precision structural fabrication in our facilities to complex heavy-lifting and on-site erection.
+Extending the lifecycle of critical infrastructure through advanced structural repair techniques, redecking, structural strengthening, and lane capacity widening without full replacement.
+Our capabilities allow us to undertake the nation's most demanding bridge construction contracts. Below are key highlights from our portfolio of critical river crossings and highway bridges.
+Successful bridge construction requires specialized heavy machinery and precision equipment. We maintain a comprehensive in-house fleet of construction plant tailored for heavy civil engineering.
+Safety and structural integrity are paramount in bridge engineering. All our operations are governed by integrated management systems certified to international standards.
+Contact our structural engineering team to discuss your next bridge construction or infrastructure project.
+
+--- src/app/services/dredging-reclamation/page.tsx ---
+Dredging & Reclamation Services in Sri Lanka
+Expertise in Marine Environments
+Our Dredging Capabilities
+Frequently Asked Questions
+Explore Related Services
+Advanced marine dredging, harbour development, and land reclamation solutions.
+RR Construction provides specialized dredging and reclamation services for ports, harbours, and coastal developments across Sri Lanka. Utilizing our own fleet of marine equipment and adhering to ISO 14001:2015 environmental management systems, we deliver complex marine engineering projects with a focus on efficiency and sustainability.
+Discover our broader maritime construction capabilities or contact us to discuss your specific dredging requirements.
+
+--- src/app/services/landslide-mitigation/page.tsx ---
+Landslide Mitigation &amp; Geotechnical Engineering in Sri Lanka
+Geotechnical Capabilities Overview
+Road Disaster Countermeasures
+Landslide Vulnerability Assessment
+Quality &amp; Safety Compliance
+Frequently Asked Questions
+Do you handle NBRO approvals?
+What techniques do you use for slope stabilization?
+Have you worked on foreign-funded mitigation projects?
+Require Geotechnical Expertise?
+);
+
+  return (
+    
+      {/* Hero Section */}
+      
+        
+        
+          
+            ← Back to Services
+          
+          Landslide Mitigation &amp; Geotechnical Engineering in Sri Lanka
+          
+            Comprehensive slope stabilization, retaining structures, and geotechnical solutions to protect infrastructure and communities in vulnerable regions.
+RR Construction provides specialized geotechnical engineering services to mitigate landslide risks across Sri Lanka's hill country. We work in strict adherence to National Building Research Organisation (NBRO) guidelines and regulations, executing complex civil engineering countermeasures to ensure long-term structural integrity and public safety.
+We implement comprehensive slope stabilization measures including soil nailing, shotcreting, and surface/subsurface drainage systems to prevent deep-seated and shallow slope failures.
+Our teams construct robust gabion walls, gravity retaining walls, and reinforced earth walls designed to withstand significant lateral earth pressures and provide critical toe support to unstable slopes.
+Installation of high-tensile rock-fall nets and catch fences to protect transport corridors and critical infrastructure from unpredictable rock mass detachments.
+A significant portion of our geotechnical work involves emergency slope repair and preventative landslide mitigation on national roads. We have extensive experience executing road disaster countermeasures, ensuring that critical transport links remain open and safe.
+Our expertise in this sector is backed by works carried out under Japanese JICA technical assistance programs, bringing international best practices to local landslide mitigation efforts.
+We have successfully executed complex landslide mitigation projects across highly vulnerable regions in Sri Lanka's central highlands:
+Before initiating structural interventions, we conduct detailed site assessments guided by the National Building Research Organisation (NBRO) parameters. This ensures our mitigation designs address the specific geological and hydrological characteristics of the site, providing optimal, long-lasting solutions.
+Geotechnical engineering in hazardous terrain demands uncompromising safety standards. Our operations adhere strictly to ISO-certified safety protocols, mitigating risks to both our workforce and the surrounding environment while delivering structural solutions that meet all regulatory compliance requirements.
+Common queries about our geotechnical and landslide mitigation services.
+While NBRO is the statutory authority issuing guidelines and approvals, we work closely within their regulatory framework. Our mitigation designs and execution methods comply entirely with NBRO standards, facilitating smooth project progression.
+We employ a range of techniques tailored to the specific site conditions, including soil nailing, shotcrete application, installation of horizontal gravity drains, surface drainage improvements, and various retaining wall structures.
+Yes, RR Construction has substantial experience executing specialized landslide mitigation works under Japanese JICA technical assistance programs, adhering to stringent international quality and safety benchmarks.
+Contact our engineering team to discuss customized landslide mitigation solutions and slope stabilization strategies for your infrastructure projects.
+
+--- src/app/services/maritime-construction/page.tsx ---
+Maritime & Marine Construction in Sri Lanka
+Sri Lanka's Premier Maritime Constructor
+Core Marine Capabilities
+Harbour & Port Infrastructure
+Breakwaters & Coastal Protection
+Marine Civil Engineering
+Dredging & Reclamation
+Selected Maritime Projects
+Gandara Fishery Harbour
+Coastal Protection Systems
+Specialized Marine Equipment
+Quality & Marine Safety
+Frequently Asked Questions
+Discuss Your Maritime Project
+Expert harbour development, marine civil engineering, and coastal infrastructure solutions.
+RR Construction possesses the specialized equipment, technical expertise, and engineering capabilities required for complex marine environments.
+Our maritime division undertakes technically challenging projects from commercial ports and fishery harbours to coastal protection structures, delivering resilient infrastructure designed to withstand harsh marine conditions.
+Comprehensive engineering and construction services for all types of coastal and marine infrastructure.
+Design and construction of commercial ports, fishery harbours, jetties, and quay walls utilizing robust marine piling and reinforced concrete structures.
+Construction of rock armour breakwaters, groynes, seawalls, and revetments to manage coastal erosion and protect marine assets from wave action.
+Specialized subsea engineering including seabed preparation, offshore pile installation, and submerged concrete pouring for marine foundations.
+We offer comprehensive dredging services for navigational channels, harbour basins, and land reclamation projects using specialized marine fleets.
+Demonstrating our capability in marine environments.
+Comprehensive construction of harbour facilities including breakwaters, quay walls, and dredging works to support the local fishing industry.
+Installation of coastal defence mechanisms including rock armouring and revetments for various infrastructure developments across the coastline.
+Executing marine works requires highly specialized plant and machinery. Our internal fleet gives us operational control and reliability on the water.
+Working over water presents unique hazards. Our ISO 45001:2018 certified occupational health and safety protocols include stringent marine-specific safety measures, weather monitoring, and emergency response planning for all maritime operations.
+Yes, we construct various coastal protection structures including rock armour breakwaters, groynes, seawalls, and revetments to manage coastal erosion.
+Yes, our marine civil engineering teams are experienced in specialized concrete applications including tremie concrete placement for underwater foundations and structures.
+Contact our marine engineering team to discuss your harbour, coastal, or dredging requirements.
+
+--- src/app/services/road-construction/page.tsx ---
+Road & Highway Construction in Sri Lanka
+Comprehensive Road Construction Capabilities
+Major Highway Construction
+National Road Rehabilitation
+Key Technical Strengths
+Earthworks & Drainage
+Asphalt & Pavement Works
+Selected Road Projects
+Equipment & Resources
+Quality & Safety Standards
+Frequently Asked Questions
+Ready to Start Your Infrastructure Project?
+Since {COMPANY_DATA.established}, RR Construction has been a cornerstone of Sri Lanka's infrastructure development. With extensive experience, we deliver expert road construction, rehabilitation, and asphalt paving services across all provinces.
+Our dedicated highway division operates with a massive workforce of over {COMPANY_DATA.workforce} professionals and a self-owned fleet of {COMPANY_DATA.machineryFleet} machinery units, ensuring we can tackle national-scale projects efficiently.
+We possess the technical capability and machinery to execute major highway and expressway projects. Our involvement as a key subcontractor for the Central Expressway Section 2 (Package A) demonstrates our capacity to deliver complex infrastructure elements to international standards.
+RR Construction is extensively involved in the iRoad Programme initiated by the Road Development Authority (RDA). We have successfully rehabilitated hundreds of kilometers of rural roads, improving transport efficiency and connectivity in districts across Sri Lanka.
+Stable roads begin with solid foundations. Our heavy machinery division handles massive earthmoving, subgrade preparation, and embankment construction. We also construct complex drainage systems, including concrete culverts and side drains, critical for the longevity of roads in Sri Lanka's tropical climate.
+We operate our own asphalt mixing plants and possess a modern fleet of pavers and compactors. This vertical integration allows us to maintain strict quality control over ABC (Aggregate Base Course) laying and asphalt surfacing.
+A successful road construction project depends on reliable machinery. RR Construction owns and maintains a vast fleet of over {COMPANY_DATA.machineryFleet} units, including excavators, motor graders, rollers, asphalt pavers, and dump trucks. This extensive self-owned resource base ensures zero downtime waiting for equipment rentals and keeps projects strictly on schedule.
+We operate under strict international standards to ensure the durability of our roads and the safety of our workforce and the public.
+Contact our engineering team to discuss your road and highway construction requirements.
+
+--- src/app/services/water-infrastructure/page.tsx ---
+Water Infrastructure & Civil Engineering in Sri Lanka
+Our Water Infrastructure Services
+Water Treatment Plants
+Irrigation & Drainage
+Storm Water & Land Drainage
+Featured Water Projects
+Ampara Water Treatment Plant
+Key Client organization's
+Quality & Safety Standards
+Material Testing & Concrete Quality
+Environmental Controls
+Frequently Asked Questions
+Do you provide mechanical and electrical (M&E) installation for treatment plants?
+What types of irrigation projects do you handle?
+Discuss Your Infrastructure Project
+Expert engineering solutions for water supply systems, treatment plants, drainage, and irrigation works across Sri Lanka.
+Extensive experience in constructing municipal and regional water supply networks to deliver clean drinking water to communities across Sri Lanka.
+Civil engineering and structural works for industrial and municipal water treatment facilities. We partner with process engineers to deliver complete facilities.
+We handle large-scale irrigation projects essential for Sri Lanka's agricultural sector and rural development.
+Urban and regional storm water management solutions to prevent flooding and ensure proper land drainage.
+A critical infrastructure project involving the construction and civil engineering works for the water treatment facility in Ampara, designed to improve the quality and reliability of the region's potable water supply.
+We are a trusted partner and registered contractor for major government bodies and authorities responsible for water infrastructure in Sri Lanka:
+Water infrastructure projects demand stringent quality controls to ensure structural integrity and hygienic conditions.
+Rigorous testing of aggregates, cement, and concrete mixes to ensure water-tight structures for reservoirs and treatment facilities.
+Strict adherence to environmental regulations during construction, particularly for projects near existing waterways and irrigation tanks.
+Our core expertise lies in the extensive civil and structural engineering requirements of treatment plants. We typically collaborate with specialized M&E contractors or act as the main contractor managing M&E subcontractors.
+We construct major irrigation canals, structures such as anicuts and spillways, and undertake rehabilitation of tanks and reservoirs for agricultural zones.
+Contact our engineering team to learn how we can deliver your water supply, treatment, or irrigation project to the highest standards.
