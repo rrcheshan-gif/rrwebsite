@@ -12,8 +12,10 @@ export default function Footer() {
                 <img src="/images/logo.png" alt="RR Construction Logo" />
               </div>
               <div className="footer-logo-text">
-                <span className="logo-title">RR Construction</span>
-                <span className="logo-sub">(Pvt) Ltd</span>
+                <span className="logo-title" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
+                  <span style={{ color: 'var(--primary-red)', fontWeight: 900 }}>RR </span>Construction
+                </span>
+                <span className="logo-sub" style={{ fontFamily: "'Times New Roman', Times, serif" }}>(Pvt) Ltd</span>
               </div>
             </div>
             <p className="footer-bio">
