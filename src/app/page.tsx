@@ -15,7 +15,7 @@ export default function Home() {
       fallback: '/images/hero-road-roller.jpg',
       duration: 999999,
       tag: 'PASSION FOR ENGINEERING EXCELLENCE',
-      video: '/videos/home-slider.mp4',
+      video: '/videos/home-slider-new.mp4',
       heading1: 'Engineering',
       heading2: "Sri Lanka's",
       heading3: 'Tomorrow',
@@ -110,7 +110,7 @@ export default function Home() {
                   playsInline
                   preload="auto"
                   onEnded={() => setCurrentSlide((prev) => (prev + 1) % slides.length)}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', filter: 'brightness(1.05) contrast(1.05)' }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', filter: 'brightness(1.08) contrast(1.1) saturate(1.1)' }} 
                 />
               ) : (
                 <img className="img-polished" 
