@@ -2142,3 +2142,168 @@ body {
     padding: 28px 14px !important;
   }
 }
+
+/* ============================================
+   TARGETED MOBILE FIXES — DOES NOT AFFECT DESKTOP
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  /* ── HERO SLIDER ── */
+  .hero-fullscreen {
+    height: 100svh !important; /* safe viewport on mobile */
+  }
+
+  /* Hero heading — prevent overflow */
+  .hero-fullscreen h2 {
+    font-size: clamp(2rem, 9vw, 3rem) !important;
+    word-break: break-word !important;
+    padding: 0 8px !important;
+  }
+
+  /* Hero paragraph */
+  .hero-fullscreen p {
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem) !important;
+    padding: 0 8px !important;
+  }
+
+  /* Hero buttons — stack on tiny phones */
+  .hero-buttons {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 0 20px !important;
+  }
+  .hero-buttons a {
+    width: 100% !important;
+    max-width: 280px !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  /* ── CORPORATE PROFILE COLLAGE ── */
+  .collage-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(2, clamp(110px, 28vw, 160px)) !important;
+    gap: 8px !important;
+  }
+
+  /* Hide the decorative dashed red border on mobile (overflows) */
+  /* Targeting via the border-radius & dashed combo */
+  div[style*="border: \"2px dashed rgba(229"] {
+    display: none !important;
+  }
+
+  /* ── SERVICES GRID ── */
+  .modern-service-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 220px !important;
+  }
+
+  /* services scroll row — allow wrap on mobile */
+  div[style*="scroll-snap-type"] {
+    flex-wrap: wrap !important;
+    overflow-x: visible !important;
+  }
+
+  /* ── STATS / KEY FIGURES ── */
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+    margin-top: 0 !important;
+  }
+  .stat-card {
+    padding: 20px 12px !important;
+  }
+  .stat-number {
+    font-size: 2rem !important;
+  }
+
+  /* ── SECTION PADDING ── */
+  section {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  section[style*="padding: \"100px"] {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+  section[style*="padding: \"70px"] {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+  section[style*="padding: \"80px"] {
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+  }
+  section[style*="padding: \"50px"] {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+
+  /* ── FLEX ROW → COLUMN for two-column layouts ── */
+  div[style*="display: \"flex\""][style*="flexWrap: \"wrap\""] {
+    flex-direction: column !important;
+  }
+
+  /* ── NEWS CARDS grid ── */
+  .news-card {
+    width: 100% !important;
+    min-width: unset !important;
+  }
+
+  /* ── PROJECT HIGHLIGHT cards ── */
+  div[style*="minWidth: 'min(100%, 350px)'"] {
+    min-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* ── CLIENT LOGO row ── */
+  div[style*="min(100%, 340px)"] {
+    width: 100% !important;
+    min-width: unset !important;
+  }
+
+  /* ── FOOTER — stack columns ── */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+
+  /* ── TABLE ── */
+  table {
+    display: block !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+  }
+
+  /* ── Dropdown menus: don't render off-screen ── */
+  .dropdown-menu {
+    position: static !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  /* Ken Burns zoom — reduce on mobile to avoid content clip */
+  img[style*="scale(1.1)"] {
+    transform: scale(1.04) !important;
+  }
+}
+
+/* Extra-small: phones under 400px */
+@media (max-width: 400px) {
+  .hero-fullscreen h2 {
+    font-size: clamp(1.7rem, 8vw, 2.2rem) !important;
+  }
+  .collage-grid {
+    grid-template-rows: repeat(2, 100px) !important;
+  }
+  .hero-buttons a {
+    font-size: 0.88rem !important;
+    padding: 12px 20px !important;
+  }
+}
