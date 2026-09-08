@@ -54,7 +54,9 @@ export default function Navbar() {
             <a href="/" className="logo" onClick={() => setMobileMenuOpen(false)}>
               <img src="/images/logo.png" alt="RR Construction Logo" className="nav-logo-img" />
               <div className="logo-text">
-                <span className="logo-title">Construction</span>
+                <span className="logo-title">
+                  <span style={{ color: 'var(--primary-red)', fontWeight: 900 }}>RR </span>Construction
+                </span>
                 <span className="logo-sub">(Pvt) Ltd</span>
               </div>
             </a>
