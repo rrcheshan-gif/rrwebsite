@@ -498,14 +498,17 @@ ul {
 .logo-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 1px;
 }
 
 .logo-title {
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1.5rem;
-  line-height: 1;
+  font-family: 'Times New Roman', Times, serif !important;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.1;
   color: var(--text-dark);
+  letter-spacing: 0.3px;
 }
 
 .navbar-wrapper.default-nav {
@@ -534,9 +537,11 @@ ul {
 }
 
 .logo-sub {
+  font-family: 'Times New Roman', Times, serif !important;
   font-size: 0.75rem;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   color: var(--primary-red);
+  font-weight: 600;
 }
 
 .nav-links {
