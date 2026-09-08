@@ -114,11 +114,21 @@ export default function Home() {
                 />
               ) : (
                 <img className="img-polished" 
-                  src={slide.img} 
-                  alt={slide.tag} 
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', opacity: 0.8, filter: 'contrast(1.1) saturate(1.05)' }} 
-                  onError={(e) => { if (slide.fallback) (e.target as HTMLImageElement).src = slide.fallback; }} 
-                />
+                    src={slide.img} 
+                    alt={slide.tag} 
+                    style={{ 
+                      width: '100%', 
+                      height: '100%', 
+                      objectFit: 'cover', 
+                      objectPosition: 'center', 
+                      opacity: 0.8, 
+                      filter: 'contrast(1.1) saturate(1.05)',
+                      transform: index === currentSlide ? 'scale(1.1)' : 'scale(1)',
+                      transition: index === currentSlide ? 'transform 10s ease-out' : 'none',
+                      willChange: 'transform'
+                    }} 
+                    onError={(e) => { if (slide.fallback) (e.target as HTMLImageElement).src = slide.fallback; }} 
+                  />
               )}
           </div>
         ))}
