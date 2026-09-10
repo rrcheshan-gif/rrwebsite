@@ -593,7 +593,7 @@ const projectsData = [
     client: "Ministry of Fisheries",
     contractNo: "MFARD/PIMU/2019/CAPC/003",
     duration: "36 Months",
-    year: 2025
+    year: 2026
   },
   
   // 2024
