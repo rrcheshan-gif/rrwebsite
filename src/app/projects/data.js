@@ -683,6 +683,13 @@ const projectsData = [
     id: 'project-37',
     type: 'completed', category: "disaster",
     title: "Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)",
+    heroImage: "/images/projects/New folder/Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)/1.jpg",
+    galleryImages: [
+      "/images/projects/New folder/Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)/1.jpg",
+      "/images/projects/New folder/Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)/2.jpg",
+      "/images/projects/New folder/Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)/3.jpg",
+      "/images/projects/New folder/Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)/4.jpg"
+    ],
     status: "Completed",
     client: "Ministry of Defence",
     
