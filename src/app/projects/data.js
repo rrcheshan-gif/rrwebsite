@@ -1403,6 +1403,20 @@ const projectsData = [
     year: 2013
   },
   {
+    id: 'project-101',
+    type: 'completed', category: "maritime",
+    title: "Dredging of Fishery Anchorage in Passiyoor in Jaffna District.",
+    heroImage: "/images/projects/New folder/passiyoor-anchorage/1.jpg",
+    galleryImages: [
+      "/images/projects/New folder/passiyoor-anchorage/1.jpg",
+      "/images/projects/New folder/passiyoor-anchorage/2.jpg"
+    ],
+    status: "Completed",
+    client: "International Organization for Migration (IOM)",
+    duration: "4 months",
+    year: 2013
+  },
+  {
     id: 'project-80',
     type: 'completed', category: "maritime",
     title: "Oluvil Port Project Coastal Protection",
