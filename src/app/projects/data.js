@@ -1457,6 +1457,12 @@ const projectsData = [
     id: 'project-84',
     type: 'completed', category: "bridges",
     title: "Four Steel Bridges (Hirana, Molkawa, Lathpadura)",
+    heroImage: "/images/projects/New folder/Construction of Hirana, Molkawa,  Lathpadura 45 & 102 (Kaluthara District)/1.jpg",
+    galleryImages: [
+      "/images/projects/New folder/Construction of Hirana, Molkawa,  Lathpadura 45 & 102 (Kaluthara District)/1.jpg",
+      "/images/projects/New folder/Construction of Hirana, Molkawa,  Lathpadura 45 & 102 (Kaluthara District)/2.jpg",
+      "/images/projects/New folder/Construction of Hirana, Molkawa,  Lathpadura 45 & 102 (Kaluthara District)/3.jpg"
+    ],
     status: "Completed",
     client: "MCE Austria",
     
