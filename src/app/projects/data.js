@@ -1537,6 +1537,10 @@ const projectsData = [
     id: 'project-89',
     type: 'completed', category: "maritime",
     title: "Rock Revetment at Beruwala",
+    heroImage: "/images/projects/New folder/Construction of Rock revetment at Beruwala/1.jpg",
+    galleryImages: [
+      "/images/projects/New folder/Construction of Rock revetment at Beruwala/1.jpg"
+    ],
     status: "Completed",
     client: "Kundanmals group",
     
