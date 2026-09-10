@@ -1487,6 +1487,10 @@ const projectsData = [
     id: 'project-85',
     type: 'completed', category: "buildings",
     title: "Matara - Kamburugamuwa Hospital",
+    heroImage: "/images/projects/New folder/kamburugamuwa-hospital/1.jpg",
+    galleryImages: [
+      "/images/projects/New folder/kamburugamuwa-hospital/1.jpg"
+    ],
     status: "Completed",
     client: "Sam Hee Construction Korea",
     
