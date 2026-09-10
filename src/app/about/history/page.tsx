@@ -19,7 +19,7 @@ export default function HistoryTimeline() {
     {
       epoch: "1995",
       title: "Foundation & First Projects",
-      desc: <>{COMPANY_DATA.name} was officially established in {COMPANY_DATA.established}, marking the beginning of a three-decade journey in Sri Lanka's heavy civil engineering sector. The company commenced its early operations through critical civil construction work undertaken in collaboration with ED Zublin AG on the Central Bank extension project. This foundational project served as a vital stepping stone, allowing the newly formed organization to demonstrate its technical competence on a major national site. By working alongside established international contractors, RR Construction absorbed rigorous project execution methodologies and laid the groundwork for a robust engineering culture. This initial success established the company's reputation for dependable delivery, providing the practical construction experience necessary to bid for increasingly complex infrastructure developments in the years that followed.</>,
+      desc: <>Established in <strong>1995</strong>, <strong>RR Construction (Pvt) Ltd</strong> began its journey in Sri Lanka’s <strong>heavy civil engineering and construction sector</strong>, laying the foundation for more than three decades of engineering and infrastructure development. One of the company’s earliest significant assignments was civil construction work undertaken in collaboration with <strong>ED Zublin AG</strong> for the <strong>Central Bank Extension Project</strong>. Working alongside an established international contractor provided RR Construction with valuable exposure to disciplined project management, advanced construction practices, stringent quality requirements, and professional standards of project execution. This early experience played a significant role in developing the company’s technical capabilities and engineering culture, while establishing a strong reputation for reliability, quality workmanship, and dependable project delivery. The successful completion of these early construction activities provided RR Construction with the practical expertise and confidence to progressively undertake more complex <strong>civil engineering, infrastructure, building, and large-scale construction projects in Sri Lanka</strong>, forming the foundation for the company’s continued growth and development.</>,
       icon: <Flag size={24} color="var(--primary-red)" />
     },
     {
@@ -131,7 +131,7 @@ export default function HistoryTimeline() {
                   <h3 style={{ fontSize: '1.8rem', fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'var(--primary-red)', marginBottom: '15px' }}>
                     {e.title}
                   </h3>
-                  <p style={{ color: 'var(--text-light)', fontSize: '1.05rem', lineHeight: 1.8, margin: 0,  }}>
+                  <p style={{ color: 'var(--text-light)', fontSize: '1.05rem', lineHeight: 1.8, margin: 0, textAlign: 'justify' }}>
                     {e.desc}
                   </p>
                 </div>
