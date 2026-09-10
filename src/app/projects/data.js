@@ -1352,6 +1352,20 @@ const projectsData = [
 
   // 2015
   {
+    id: 'project-104',
+    type: 'completed', category: "water",
+    title: "Laying of DI/uPVC Pipes & Fittings for Embilipitiya - Middeniya Road.",
+    heroImage: "/images/projects/New folder/embilipitiya-middeniya-road/1.jpg",
+    galleryImages: [
+      "/images/projects/New folder/embilipitiya-middeniya-road/1.jpg",
+      "/images/projects/New folder/embilipitiya-middeniya-road/2.jpg"
+    ],
+    status: "Completed",
+    client: "National Water Supply & Drainage Board.",
+    duration: "04 months.",
+    year: 2015
+  },
+  {
     id: 'project-73',
     type: 'completed', category: "roads",
     title: "Hendala - Hunupitiya Road (4+020Km)",
