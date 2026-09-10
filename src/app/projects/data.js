@@ -546,6 +546,11 @@ const projectsData = [
     id: 'project-29',
     type: 'completed', category: "roads",
     title: "Central Expressway Project Section 3 (Pothuhera to Galagedara)",
+    heroImage: "/images/projects/New folder/CEP03/1.jpg",
+    galleryImages: [
+      "/images/projects/New folder/CEP03/1.jpg",
+      "/images/projects/New folder/CEP03/2.jpg"
+    ],
     status: "Completed",
     client: "Road Development Authority",
     
