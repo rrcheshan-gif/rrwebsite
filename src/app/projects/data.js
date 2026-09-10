@@ -789,6 +789,11 @@ const projectsData = [
     id: 'project-44',
     type: 'completed', category: "water",
     title: "Matara Stage IV Water Supply Project - Raw Water Intake",
+    heroImage: "/images/projects/New folder/matara-stage-iv/1.jpg",
+    galleryImages: [
+      "/images/projects/New folder/matara-stage-iv/1.jpg",
+      "/images/projects/New folder/matara-stage-iv/2.jpg"
+    ],
     status: "Completed",
     client: "NWSDB",
     
