@@ -1371,6 +1371,13 @@ const projectsData = [
     id: 'project-77',
     type: 'completed', category: "buildings",
     title: "Sama Vihara Building Project (Havelock City)",
+    heroImage: "/images/projects/New folder/sama-vihara/1.jpg",
+    galleryImages: [
+      "/images/projects/New folder/sama-vihara/1.jpg",
+      "/images/projects/New folder/sama-vihara/2.jpg",
+      "/images/projects/New folder/sama-vihara/3.jpg",
+      "/images/projects/New folder/sama-vihara/4.png"
+    ],
     status: "Completed",
     client: "Mireka Capital Land",
     
