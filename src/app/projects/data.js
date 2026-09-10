@@ -665,7 +665,12 @@ const projectsData = [
     title: "Anuradhapura to Vavuniya Railway Track Rehabilitation",
     status: "Completed",
     client: "IRCON International Limited",
-    
+    heroImage: "/images/projects/Anuradhapura-Vauniya/1.jpg",
+    galleryImages: [
+      "/images/projects/Anuradhapura-Vauniya/1.jpg",
+      "/images/projects/Anuradhapura-Vauniya/2.jpg",
+      "/images/projects/Anuradhapura-Vauniya/3.jpg"
+    ],
     duration: "6 Months",
     year: 2023
   },
