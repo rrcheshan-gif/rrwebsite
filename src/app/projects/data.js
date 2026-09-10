@@ -1232,6 +1232,15 @@ const projectsData = [
     id: 'project-66',
     type: 'completed', category: "irrigation",
     title: "Remedial Works at Ulhitiya - Rathkinda Dams",
+    heroImage: "/images/projects/new-folder/Remedial Works at Ulhitiya - Rathkinda Dams/1.jpg",
+    galleryImages: [
+      "/images/projects/new-folder/Remedial Works at Ulhitiya - Rathkinda Dams/1.jpg",
+      "/images/projects/new-folder/Remedial Works at Ulhitiya - Rathkinda Dams/2.jpg",
+      "/images/projects/new-folder/Remedial Works at Ulhitiya - Rathkinda Dams/3.jpg",
+      "/images/projects/new-folder/Remedial Works at Ulhitiya - Rathkinda Dams/4.jpg",
+      "/images/projects/new-folder/Remedial Works at Ulhitiya - Rathkinda Dams/5.jpg",
+      "/images/projects/new-folder/Remedial Works at Ulhitiya - Rathkinda Dams/6.jpg"
+    ],
     status: "Completed",
     client: "Mahaweli Authority",
     
