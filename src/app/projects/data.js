@@ -1185,6 +1185,11 @@ const projectsData = [
     id: 'project-62',
     type: 'completed', category: "maritime",
     title: "Anchorage Facility at Peraliya Landing Site",
+    heroImage: "/images/projects/new-folder/Proposed Anchorage Facility at Peraliya Landing Site in Galle District/1.jpg",
+    galleryImages: [
+      "/images/projects/new-folder/Proposed Anchorage Facility at Peraliya Landing Site in Galle District/1.jpg",
+      "/images/projects/new-folder/Proposed Anchorage Facility at Peraliya Landing Site in Galle District/2.jpg"
+    ],
     status: "Completed",
     client: "Ministry of Fisheries",
     
