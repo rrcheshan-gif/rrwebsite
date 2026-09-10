@@ -799,6 +799,12 @@ const projectsData = [
     id: 'project-45',
     type: 'completed', category: "water",
     title: "Pipe Laying Distribution Main in Katana Central Zone",
+    heroImage: "/images/projects/New folder/katana-central-zone/1.jpg",
+    galleryImages: [
+      "/images/projects/New folder/katana-central-zone/1.jpg",
+      "/images/projects/New folder/katana-central-zone/2.jpg",
+      "/images/projects/New folder/katana-central-zone/3.jpg"
+    ],
     status: "Completed",
     client: "NWSDB",
     
