@@ -1391,10 +1391,10 @@ const projectsData = [
     id: 'project-79',
     type: 'completed', category: "bridges",
     title: "Padawkema Udamaththala Bridge",
-    heroImage: "/images/projects/New folder/Construction of Bridge at 12+200 Km on Padawkema Udamaththala and Andarawewa Road/1.jpg",
+    heroImage: "/images/projects/New folder/padawkema-bridge/1.jpg",
     galleryImages: [
-      "/images/projects/New folder/Construction of Bridge at 12+200 Km on Padawkema Udamaththala and Andarawewa Road/1.jpg",
-      "/images/projects/New folder/Construction of Bridge at 12+200 Km on Padawkema Udamaththala and Andarawewa Road/2.jpg"
+      "/images/projects/New folder/padawkema-bridge/1.jpg",
+      "/images/projects/New folder/padawkema-bridge/2.jpg"
     ],
     status: "Completed",
     client: "Road Development Authority",
@@ -1457,11 +1457,11 @@ const projectsData = [
     id: 'project-84',
     type: 'completed', category: "bridges",
     title: "Four Steel Bridges (Hirana, Molkawa, Lathpadura)",
-    heroImage: "/images/projects/New folder/Construction of Hirana, Molkawa,  Lathpadura 45 & 102 (Kaluthara District)/1.jpg",
+    heroImage: "/images/projects/New folder/hirana-bridges/1.jpg",
     galleryImages: [
-      "/images/projects/New folder/Construction of Hirana, Molkawa,  Lathpadura 45 & 102 (Kaluthara District)/1.jpg",
-      "/images/projects/New folder/Construction of Hirana, Molkawa,  Lathpadura 45 & 102 (Kaluthara District)/2.jpg",
-      "/images/projects/New folder/Construction of Hirana, Molkawa,  Lathpadura 45 & 102 (Kaluthara District)/3.jpg"
+      "/images/projects/New folder/hirana-bridges/1.jpg",
+      "/images/projects/New folder/hirana-bridges/2.jpg",
+      "/images/projects/New folder/hirana-bridges/3.jpg"
     ],
     status: "Completed",
     client: "MCE Austria",
