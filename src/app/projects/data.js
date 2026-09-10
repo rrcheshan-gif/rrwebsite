@@ -957,6 +957,20 @@ const projectsData = [
 
   // 2019
   {
+    id: 'project-105',
+    type: 'completed', category: "maritime",
+    title: "Negombo Lagoon development Project Stage I, Package III Dredging of Lagoon- Near Regina Road.",
+    heroImage: "/images/projects/new-folder/negombo-lagoon-stage-1/1.jpg",
+    galleryImages: [
+      "/images/projects/new-folder/negombo-lagoon-stage-1/1.jpg",
+      "/images/projects/new-folder/negombo-lagoon-stage-1/2.jpg"
+    ],
+    status: "Completed",
+    client: "Ministry of Fisheries & Aquatic Resources Development.",
+    duration: "09 Months",
+    year: 2019
+  },
+  {
     id: 'project-53',
     type: 'completed', category: "roads",
     title: "Improvement of A009 Kandy Jaffna Road (Rambewa to Medawachchiya)",
