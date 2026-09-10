@@ -2,23 +2,6 @@
 const projectsData = [
   // ONGOING PROJECTS
   {
-    id: 'project-103',
-    type: 'completed', category: "railway",
-    title: "Formation, Civil & other Ancillary works between Maho to Anuradhapura in Connection with up gradation of Railway Line from Maho to Omanthai under Indian Line of Credit - Track Rehabilitation & Ancillary Works.",
-    heroImage: "/images/projects/new-folder/maho-railway/Background image.jpg",
-    galleryImages: [
-      "/images/projects/new-folder/maho-railway/Background image.jpg",
-      "/images/projects/new-folder/maho-railway/1.jpg",
-      "/images/projects/new-folder/maho-railway/2.jpg",
-      "/images/projects/new-folder/maho-railway/3.jpg",
-      "/images/projects/new-folder/maho-railway/5.jpg"
-    ],
-    status: "Completed",
-    client: "IRCON International Limited.",
-    duration: "6 Months",
-    year: 2024
-  },
-  {
     id: 'project-mod-landslide-10d',
     type: 'ongoing',
     category: "disaster",
@@ -398,6 +381,14 @@ const projectsData = [
     type: 'completed',
     category: "railway",
     title: "Maho to Anuradhapura Railway Line Track Rehabilitation & Ancillary Works",
+    heroImage: "/images/projects/new-folder/maho-railway/Background image.jpg",
+    galleryImages: [
+      "/images/projects/new-folder/maho-railway/Background image.jpg",
+      "/images/projects/new-folder/maho-railway/1.jpg",
+      "/images/projects/new-folder/maho-railway/2.jpg",
+      "/images/projects/new-folder/maho-railway/3.jpg",
+      "/images/projects/new-folder/maho-railway/5.jpg"
+    ],
     client: "IRCON International Limited",
     duration: "6 Months",
     year: 2023,
