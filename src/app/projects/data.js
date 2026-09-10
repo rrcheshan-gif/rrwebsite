@@ -1391,6 +1391,11 @@ const projectsData = [
     id: 'project-79',
     type: 'completed', category: "bridges",
     title: "Padawkema Udamaththala Bridge",
+    heroImage: "/images/projects/New folder/Construction of Bridge at 12+200 Km on Padawkema Udamaththala and Andarawewa Road/1.jpg",
+    galleryImages: [
+      "/images/projects/New folder/Construction of Bridge at 12+200 Km on Padawkema Udamaththala and Andarawewa Road/1.jpg",
+      "/images/projects/New folder/Construction of Bridge at 12+200 Km on Padawkema Udamaththala and Andarawewa Road/2.jpg"
+    ],
     status: "Completed",
     client: "Road Development Authority",
     
