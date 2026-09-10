@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -98,16 +98,25 @@ export default function AboutStory() {
           {/* Full Width Introduction Text */}
           <div style={{ width: "100%" }}>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", }}>
-              Founded in {COMPANY_DATA.established}, {COMPANY_DATA.name} stands at the forefront of Sri Lanka's heavy civil engineering and infrastructure development sector. Over the past {COMPANY_DATA.yearsOfExcellence} years, we have evolved from a specialized regional contractor into a fully integrated national engineering powerhouse. Our journey is defined by a systematic expansion of our capabilities, allowing us to deliver complex, large-scale infrastructure solutions that serve as the backbone of national progress.
+              Founded in 1995, <strong>RR Construction (Pvt) Ltd</strong> is a leading <strong>construction and civil engineering company in Sri Lanka</strong>, specializing in heavy civil engineering, infrastructure development, and large-scale construction projects. With more than three decades of industry experience, we have continuously expanded our technical expertise, resources, and operational capabilities to become a trusted Sri Lankan engineering and construction organization.
             </p>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", }}>
-              By integrating an expansive, self-owned fleet of state-of-the-art heavy machinery with the technical acumen of our elite engineering divisions, we consistently execute high-stakes projects across diverse domains - including maritime structures, national highways, complex bridges, geotechnical mitigation, and major water infrastructure. As a 100% Sri Lankan-owned enterprise, we pride ourselves on our end-to-end project management capabilities, ensuring that every phase is executed with uncompromising precision, rigorous safety standards, and adherence to international quality protocols.
+              Our expertise covers a wide range of infrastructure development services, including <strong>road construction in Sri Lanka, highway construction, bridge construction, maritime and marine construction, geotechnical engineering, water infrastructure, and major civil engineering projects</strong>. Through our experienced engineering teams, skilled workforce, modern construction technology, and extensive equipment resources, we deliver complex projects with a strong focus on quality, safety, efficiency, and timely completion.
             </p>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", }}>
-              Our success is built upon the dedication of a highly skilled workforce of over {COMPANY_DATA.workforce} professionals who share a unified vision for engineering excellence. Unlike many in the industry, our reliance on third-party dependencies is minimal; our massive proprietary fleet of {COMPANY_DATA.machineryFleet} heavy machines, alongside in-house aggregate production plants, guarantees that we maintain total control over project timelines, material quality, and operational efficiency.
+              As a <strong>100% Sri Lankan-owned construction company</strong>, RR Construction provides integrated project delivery capabilities covering planning, engineering, construction, resource management, quality control, and project execution. Our in-house resources allow us to maintain greater control over construction schedules, material quality, equipment availability, and overall project performance, helping us deliver reliable and cost-effective infrastructure solutions.
+            </p>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", }}>
+              With a workforce of <strong>over 1,400 skilled professionals</strong> and a proprietary fleet of <strong>more than 1,000 heavy construction machines</strong>, RR Construction has the capacity to undertake major infrastructure and civil engineering projects across Sri Lanka. Our operational capabilities are further strengthened by <strong>in-house aggregate production facilities</strong>, supporting efficient material supply and greater consistency in construction quality.
+            </p>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", }}>
+              Our capabilities extend beyond conventional construction. We undertake <strong>maritime construction and marine infrastructure projects</strong>, road and highway development, bridge construction, geotechnical and earthwork solutions, water infrastructure, and other specialized civil engineering works. Our integrated approach enables us to manage demanding projects while maintaining high standards of engineering quality, occupational health and safety, environmental responsibility, and project efficiency.
+            </p>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", }}>
+              At RR Construction, we believe that sustainable infrastructure development is essential to the long-term growth of Sri Lanka. We are committed to responsible construction practices that protect the environment, promote safe working conditions, support local communities, and create infrastructure that delivers lasting value.
             </p>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "30px", }}>
-              Beyond just building physical structures, we are deeply committed to sustainable construction practices and community empowerment. Every project we undertake is guided by a profound responsibility to protect the environment and prioritize the health and safety of everyone involved. As we look to the future, {COMPANY_DATA.name} remains dedicated to pioneering innovative engineering methodologies and delivering resilient infrastructure that will empower Sri Lanka's economic growth for generations to come.
+              With a strong foundation built over more than 30 years, RR Construction (Pvt) Ltd continues to pursue <strong>engineering excellence, innovation, sustainable construction, and infrastructure development in Sri Lanka</strong>. Our goal is to remain a trusted partner for clients seeking reliable construction, civil engineering, road development, maritime construction, and infrastructure solutions across the country.
             </p>
             
           </div>
