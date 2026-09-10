@@ -1417,6 +1417,11 @@ const projectsData = [
     id: 'project-81',
     type: 'completed', category: "buildings",
     title: "Colombo Port Expansion Project - 45m Control Tower",
+    heroImage: "/images/projects/New folder/Colombo Port Expansion Project/background image.jpg",
+    galleryImages: [
+      "/images/projects/New folder/Colombo Port Expansion Project/background image.jpg",
+      "/images/projects/New folder/Colombo Port Expansion Project/1.jpg"
+    ],
     status: "Completed",
     client: "Sri Lanka Ports Authority",
     
