@@ -876,6 +876,22 @@ const projectsData = [
 
   // 2020
   {
+    id: 'project-102',
+    type: 'completed', category: "water",
+    title: "Kolonnawa Canal Diversion Scheme - Stage I.",
+    heroImage: "/images/projects/New folder/kolonnawa-canal/background image.jpg",
+    galleryImages: [
+      "/images/projects/New folder/kolonnawa-canal/background image.jpg",
+      "/images/projects/New folder/kolonnawa-canal/1.jpg",
+      "/images/projects/New folder/kolonnawa-canal/3.jpg",
+      "/images/projects/New folder/kolonnawa-canal/4.jpg"
+    ],
+    status: "Completed",
+    client: "Ministry of Megapolis & Western Development.",
+    duration: "15 Months",
+    year: 2020
+  },
+  {
     id: 'project-48',
     type: 'completed', category: "roads",
     title: "Central Expressway Project Section - 2 (Package-A)",
