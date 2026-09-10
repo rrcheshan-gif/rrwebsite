@@ -381,13 +381,13 @@ const projectsData = [
     type: 'completed',
     category: "railway",
     title: "Maho to Anuradhapura Railway Line Track Rehabilitation & Ancillary Works",
-    heroImage: "/images/projects/new-folder/maho-railway/Background image.jpg",
+    heroImage: "/images/projects/New folder/maho-railway/Background image.jpg",
     galleryImages: [
-      "/images/projects/new-folder/maho-railway/Background image.jpg",
-      "/images/projects/new-folder/maho-railway/1.jpg",
-      "/images/projects/new-folder/maho-railway/2.jpg",
-      "/images/projects/new-folder/maho-railway/3.jpg",
-      "/images/projects/new-folder/maho-railway/5.jpg"
+      "/images/projects/New folder/maho-railway/Background image.jpg",
+      "/images/projects/New folder/maho-railway/1.jpg",
+      "/images/projects/New folder/maho-railway/2.jpg",
+      "/images/projects/New folder/maho-railway/3.jpg",
+      "/images/projects/New folder/maho-railway/5.jpg"
     ],
     client: "IRCON International Limited",
     duration: "6 Months",
@@ -554,10 +554,10 @@ const projectsData = [
     id: 'project-29',
     type: 'completed', category: "roads",
     title: "Central Expressway Project Section 3 (Pothuhera to Galagedara)",
-    heroImage: "/images/projects/new-folder/CEP03/1.jpg",
+    heroImage: "/images/projects/New folder/CEP03/1.jpg",
     galleryImages: [
-      "/images/projects/new-folder/CEP03/1.jpg",
-      "/images/projects/new-folder/CEP03/2.jpg"
+      "/images/projects/New folder/CEP03/1.jpg",
+      "/images/projects/New folder/CEP03/2.jpg"
     ],
     status: "Completed",
     client: "Road Development Authority",
@@ -691,12 +691,12 @@ const projectsData = [
     id: 'project-37',
     type: 'completed', category: "disaster",
     title: "Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)",
-    heroImage: "/images/projects/new-folder/Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)/1.jpg",
+    heroImage: "/images/projects/New folder/Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)/1.jpg",
     galleryImages: [
-      "/images/projects/new-folder/Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)/1.jpg",
-      "/images/projects/new-folder/Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)/2.jpg",
-      "/images/projects/new-folder/Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)/3.jpg",
-      "/images/projects/new-folder/Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)/4.jpg"
+      "/images/projects/New folder/Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)/1.jpg",
+      "/images/projects/New folder/Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)/2.jpg",
+      "/images/projects/New folder/Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)/3.jpg",
+      "/images/projects/New folder/Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)/4.jpg"
     ],
     status: "Completed",
     client: "Ministry of Defence",
@@ -797,10 +797,10 @@ const projectsData = [
     id: 'project-44',
     type: 'completed', category: "water",
     title: "Matara Stage IV Water Supply Project - Raw Water Intake",
-    heroImage: "/images/projects/new-folder/matara-stage-iv/1.jpg",
+    heroImage: "/images/projects/New folder/matara-stage-iv/1.jpg",
     galleryImages: [
-      "/images/projects/new-folder/matara-stage-iv/1.jpg",
-      "/images/projects/new-folder/matara-stage-iv/2.jpg"
+      "/images/projects/New folder/matara-stage-iv/1.jpg",
+      "/images/projects/New folder/matara-stage-iv/2.jpg"
     ],
     status: "Completed",
     client: "NWSDB",
@@ -812,11 +812,11 @@ const projectsData = [
     id: 'project-45',
     type: 'completed', category: "water",
     title: "Pipe Laying Distribution Main in Katana Central Zone",
-    heroImage: "/images/projects/new-folder/katana-central-zone/1.jpg",
+    heroImage: "/images/projects/New folder/katana-central-zone/1.jpg",
     galleryImages: [
-      "/images/projects/new-folder/katana-central-zone/1.jpg",
-      "/images/projects/new-folder/katana-central-zone/2.jpg",
-      "/images/projects/new-folder/katana-central-zone/3.jpg"
+      "/images/projects/New folder/katana-central-zone/1.jpg",
+      "/images/projects/New folder/katana-central-zone/2.jpg",
+      "/images/projects/New folder/katana-central-zone/3.jpg"
     ],
     status: "Completed",
     client: "NWSDB",
@@ -892,12 +892,12 @@ const projectsData = [
     id: 'project-102',
     type: 'completed', category: "water",
     title: "Kolonnawa Canal Diversion Scheme - Stage I.",
-    heroImage: "/images/projects/new-folder/kolonnawa-canal/background image.jpg",
+    heroImage: "/images/projects/New folder/kolonnawa-canal/background image.jpg",
     galleryImages: [
-      "/images/projects/new-folder/kolonnawa-canal/background image.jpg",
-      "/images/projects/new-folder/kolonnawa-canal/1.jpg",
-      "/images/projects/new-folder/kolonnawa-canal/3.jpg",
-      "/images/projects/new-folder/kolonnawa-canal/4.jpg"
+      "/images/projects/New folder/kolonnawa-canal/background image.jpg",
+      "/images/projects/New folder/kolonnawa-canal/1.jpg",
+      "/images/projects/New folder/kolonnawa-canal/3.jpg",
+      "/images/projects/New folder/kolonnawa-canal/4.jpg"
     ],
     status: "Completed",
     client: "Ministry of Megapolis & Western Development.",
@@ -960,10 +960,10 @@ const projectsData = [
     id: 'project-105',
     type: 'completed', category: "maritime",
     title: "Negombo Lagoon development Project Stage I, Package III Dredging of Lagoon- Near Regina Road.",
-    heroImage: "/images/projects/new-folder/negombo-lagoon-stage-1/1.jpg",
+    heroImage: "/images/projects/New folder/negombo-lagoon-stage-1/1.jpg",
     galleryImages: [
-      "/images/projects/new-folder/negombo-lagoon-stage-1/1.jpg",
-      "/images/projects/new-folder/negombo-lagoon-stage-1/2.jpg"
+      "/images/projects/New folder/negombo-lagoon-stage-1/1.jpg",
+      "/images/projects/New folder/negombo-lagoon-stage-1/2.jpg"
     ],
     status: "Completed",
     client: "Ministry of Fisheries & Aquatic Resources Development.",
@@ -1014,10 +1014,10 @@ const projectsData = [
     id: 'project-57',
     type: 'completed', category: "maritime",
     title: "Bank Protection Works of St.Sebestian North Canal",
-    heroImage: "/images/projects/new-folder/Bank Protection Works of St.Sebestian North Canal/1.jpg",
+    heroImage: "/images/projects/New folder/Bank Protection Works of St.Sebestian North Canal/1.jpg",
     galleryImages: [
-      "/images/projects/new-folder/Bank Protection Works of St.Sebestian North Canal/1.jpg",
-      "/images/projects/new-folder/Bank Protection Works of St.Sebestian North Canal/2.jpg"
+      "/images/projects/New folder/Bank Protection Works of St.Sebestian North Canal/1.jpg",
+      "/images/projects/New folder/Bank Protection Works of St.Sebestian North Canal/2.jpg"
     ],
     status: "Completed",
     client: "Metro Colombo Urban Dev.",
@@ -1360,10 +1360,10 @@ const projectsData = [
     id: 'project-104',
     type: 'completed', category: "water",
     title: "Laying of DI/uPVC Pipes & Fittings for Embilipitiya - Middeniya Road.",
-    heroImage: "/images/projects/new-folder/embilipitiya-middeniya-road/1.jpg",
+    heroImage: "/images/projects/New folder/embilipitiya-middeniya-road/1.jpg",
     galleryImages: [
-      "/images/projects/new-folder/embilipitiya-middeniya-road/1.jpg",
-      "/images/projects/new-folder/embilipitiya-middeniya-road/2.jpg"
+      "/images/projects/New folder/embilipitiya-middeniya-road/1.jpg",
+      "/images/projects/New folder/embilipitiya-middeniya-road/2.jpg"
     ],
     status: "Completed",
     client: "National Water Supply & Drainage Board.",
@@ -1434,12 +1434,12 @@ const projectsData = [
     id: 'project-77',
     type: 'completed', category: "buildings",
     title: "Sama Vihara Building Project (Havelock City)",
-    heroImage: "/images/projects/new-folder/sama-vihara/1.jpg",
+    heroImage: "/images/projects/New folder/sama-vihara/1.jpg",
     galleryImages: [
-      "/images/projects/new-folder/sama-vihara/1.jpg",
-      "/images/projects/new-folder/sama-vihara/2.jpg",
-      "/images/projects/new-folder/sama-vihara/3.jpg",
-      "/images/projects/new-folder/sama-vihara/4.png"
+      "/images/projects/New folder/sama-vihara/1.jpg",
+      "/images/projects/New folder/sama-vihara/2.jpg",
+      "/images/projects/New folder/sama-vihara/3.jpg",
+      "/images/projects/New folder/sama-vihara/4.png"
     ],
     status: "Completed",
     client: "Mireka Capital Land",
@@ -1461,10 +1461,10 @@ const projectsData = [
     id: 'project-79',
     type: 'completed', category: "bridges",
     title: "Padawkema Udamaththala Bridge",
-    heroImage: "/images/projects/new-folder/padawkema-bridge/1.jpg",
+    heroImage: "/images/projects/New folder/padawkema-bridge/1.jpg",
     galleryImages: [
-      "/images/projects/new-folder/padawkema-bridge/1.jpg",
-      "/images/projects/new-folder/padawkema-bridge/2.jpg"
+      "/images/projects/New folder/padawkema-bridge/1.jpg",
+      "/images/projects/New folder/padawkema-bridge/2.jpg"
     ],
     status: "Completed",
     client: "Road Development Authority",
@@ -1476,10 +1476,10 @@ const projectsData = [
     id: 'project-101',
     type: 'completed', category: "maritime",
     title: "Dredging of Fishery Anchorage in Passiyoor in Jaffna District.",
-    heroImage: "/images/projects/new-folder/passiyoor-anchorage/1.jpg",
+    heroImage: "/images/projects/New folder/passiyoor-anchorage/1.jpg",
     galleryImages: [
-      "/images/projects/new-folder/passiyoor-anchorage/1.jpg",
-      "/images/projects/new-folder/passiyoor-anchorage/2.jpg"
+      "/images/projects/New folder/passiyoor-anchorage/1.jpg",
+      "/images/projects/New folder/passiyoor-anchorage/2.jpg"
     ],
     status: "Completed",
     client: "International Organization for Migration (IOM)",
@@ -1506,10 +1506,10 @@ const projectsData = [
     id: 'project-81',
     type: 'completed', category: "buildings",
     title: "Colombo Port Expansion Project - 45m Control Tower",
-    heroImage: "/images/projects/new-folder/Colombo Port Expansion Project/background image.jpg",
+    heroImage: "/images/projects/New folder/Colombo Port Expansion Project/background image.jpg",
     galleryImages: [
-      "/images/projects/new-folder/Colombo Port Expansion Project/background image.jpg",
-      "/images/projects/new-folder/Colombo Port Expansion Project/1.jpg"
+      "/images/projects/New folder/Colombo Port Expansion Project/background image.jpg",
+      "/images/projects/New folder/Colombo Port Expansion Project/1.jpg"
     ],
     status: "Completed",
     client: "Sri Lanka Ports Authority",
@@ -1541,11 +1541,11 @@ const projectsData = [
     id: 'project-84',
     type: 'completed', category: "bridges",
     title: "Four Steel Bridges (Hirana, Molkawa, Lathpadura)",
-    heroImage: "/images/projects/new-folder/hirana-bridges/1.jpg",
+    heroImage: "/images/projects/New folder/hirana-bridges/1.jpg",
     galleryImages: [
-      "/images/projects/new-folder/hirana-bridges/1.jpg",
-      "/images/projects/new-folder/hirana-bridges/2.jpg",
-      "/images/projects/new-folder/hirana-bridges/3.jpg"
+      "/images/projects/New folder/hirana-bridges/1.jpg",
+      "/images/projects/New folder/hirana-bridges/2.jpg",
+      "/images/projects/New folder/hirana-bridges/3.jpg"
     ],
     status: "Completed",
     client: "MCE Austria",
@@ -1557,9 +1557,9 @@ const projectsData = [
     id: 'project-85',
     type: 'completed', category: "buildings",
     title: "Matara - Kamburugamuwa Hospital",
-    heroImage: "/images/projects/new-folder/kamburugamuwa-hospital/1.jpg",
+    heroImage: "/images/projects/New folder/kamburugamuwa-hospital/1.jpg",
     galleryImages: [
-      "/images/projects/new-folder/kamburugamuwa-hospital/1.jpg"
+      "/images/projects/New folder/kamburugamuwa-hospital/1.jpg"
     ],
     status: "Completed",
     client: "Sam Hee Construction Korea",
@@ -1615,11 +1615,11 @@ const projectsData = [
     id: 'project-88',
     type: 'completed', category: "water",
     title: "Water Treatment Plant - Ampara (172,000 Cum/day)",
-    heroImage: "/images/projects/new-folder/CONSTRUCTION OF WATER TREATMENT PLANT -AMPARA/1.jpg",
+    heroImage: "/images/projects/New folder/CONSTRUCTION OF WATER TREATMENT PLANT -AMPARA/1.jpg",
     galleryImages: [
-      "/images/projects/new-folder/CONSTRUCTION OF WATER TREATMENT PLANT -AMPARA/1.jpg",
-      "/images/projects/new-folder/CONSTRUCTION OF WATER TREATMENT PLANT -AMPARA/2.jpg",
-      "/images/projects/new-folder/CONSTRUCTION OF WATER TREATMENT PLANT -AMPARA/3.jpg"
+      "/images/projects/New folder/CONSTRUCTION OF WATER TREATMENT PLANT -AMPARA/1.jpg",
+      "/images/projects/New folder/CONSTRUCTION OF WATER TREATMENT PLANT -AMPARA/2.jpg",
+      "/images/projects/New folder/CONSTRUCTION OF WATER TREATMENT PLANT -AMPARA/3.jpg"
     ],
     status: "Completed",
     client: "NWSDB",
@@ -1631,9 +1631,9 @@ const projectsData = [
     id: 'project-89',
     type: 'completed', category: "maritime",
     title: "Rock Revetment at Beruwala",
-    heroImage: "/images/projects/new-folder/Construction of Rock revetment at Beruwala/1.jpg",
+    heroImage: "/images/projects/New folder/Construction of Rock revetment at Beruwala/1.jpg",
     galleryImages: [
-      "/images/projects/new-folder/Construction of Rock revetment at Beruwala/1.jpg"
+      "/images/projects/New folder/Construction of Rock revetment at Beruwala/1.jpg"
     ],
     status: "Completed",
     client: "Kundanmals group",
