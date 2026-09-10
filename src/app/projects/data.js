@@ -953,6 +953,11 @@ const projectsData = [
     id: 'project-57',
     type: 'completed', category: "maritime",
     title: "Bank Protection Works of St.Sebestian North Canal",
+    heroImage: "/images/projects/New folder/Bank Protection Works of St.Sebestian North Canal/1.jpg",
+    galleryImages: [
+      "/images/projects/New folder/Bank Protection Works of St.Sebestian North Canal/1.jpg",
+      "/images/projects/New folder/Bank Protection Works of St.Sebestian North Canal/2.jpg"
+    ],
     status: "Completed",
     client: "Metro Colombo Urban Dev.",
     
