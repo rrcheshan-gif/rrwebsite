@@ -1527,6 +1527,12 @@ const projectsData = [
     id: 'project-88',
     type: 'completed', category: "water",
     title: "Water Treatment Plant - Ampara (172,000 Cum/day)",
+    heroImage: "/images/projects/New folder/CONSTRUCTION OF WATER TREATMENT PLANT -AMPARA/1.jpg",
+    galleryImages: [
+      "/images/projects/New folder/CONSTRUCTION OF WATER TREATMENT PLANT -AMPARA/1.jpg",
+      "/images/projects/New folder/CONSTRUCTION OF WATER TREATMENT PLANT -AMPARA/2.jpg",
+      "/images/projects/New folder/CONSTRUCTION OF WATER TREATMENT PLANT -AMPARA/3.jpg"
+    ],
     status: "Completed",
     client: "NWSDB",
     
