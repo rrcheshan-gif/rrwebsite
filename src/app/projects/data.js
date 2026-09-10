@@ -796,7 +796,12 @@ const projectsData = [
   {
     id: 'project-46',
     type: 'completed', category: "maritime",
-    title: "Negombo Lagoon Dredging - Lellama Site II",
+    title: "Negombo Lagoon development Project, Dredging of Lagoon- Lellama Site II (Stage I, Package IV).",
+    heroImage: "/images/projects/Negombo Lagoon development Project, Dredging of Lagoon- Lellama Site II/1.jpg",
+    galleryImages: [
+      "/images/projects/Negombo Lagoon development Project, Dredging of Lagoon- Lellama Site II/1.jpg",
+      "/images/projects/Negombo Lagoon development Project, Dredging of Lagoon- Lellama Site II/2.jpg"
+    ],
     status: "Completed",
     client: "Ministry of Fisheries",
     
