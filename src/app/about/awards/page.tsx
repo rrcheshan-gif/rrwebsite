@@ -92,7 +92,7 @@ export default function Awards() {
 
       {/* ISO Certifications */}
       <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
+        <div className="container" style={{ maxWidth: "1440px", margin: "0 auto", padding: "0 16px" }}>
           <div style={{ background: "var(--white)", borderRadius: "32px", padding: isMobile ? "40px 20px" : "60px", border: "1px solid var(--border-soft)", boxShadow: "0 20px 40px rgba(0,0,0,0.04)" }}>
             <div style={{ textAlign: "center", marginBottom: "50px" }}>
               <Award size={40} color="var(--primary-red)" style={{ margin: "0 auto 15px" }} />

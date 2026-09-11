@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { ArrowLeft } from 'lucide-react';
 
 import React, { useState, useEffect } from 'react';
@@ -55,7 +55,7 @@ export default function WaterInfrastructurePage() {
 
       {/* Services Grid */}
       <section style={{ padding: isMobile ? "60px 20px" : "100px 40px", backgroundColor: 'var(--bg-light)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
           <h2 style={{ color: 'var(--text-dark)', fontSize: '32px', fontFamily: 'var(--font-heading)', textAlign: 'center', marginBottom: '60px' }}>
             Our Water Infrastructure Services
           </h2>
@@ -164,7 +164,7 @@ export default function WaterInfrastructurePage() {
 
       {/* Clients & Quality */}
       <section style={{ padding: isMobile ? "60px 20px" : "100px 40px", backgroundColor: 'var(--bg-light)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '50px' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '50px' }}>
           <div>
             <h2 style={{ color: 'var(--text-dark)', fontSize: '28px', fontFamily: 'var(--font-heading)', marginBottom: '30px' }}>
               Key Client organization's

@@ -207,7 +207,7 @@ export default function Services() {
 
       {/* ── ALL SERVICES GRID ── */}
       <section className="page-header" style={{ padding: isMobile ? '0 12px 60px' : '0 20px 100px' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
             <div style={{ width: '36px', height: '2px', background: 'var(--primary-red)' }} />
@@ -274,7 +274,7 @@ export default function Services() {
 
       {/* ── RESOURCE PLANNING ── */}
       <section className="page-header" style={{ padding: isMobile ? '60px 12px' : '100px 20px' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? '40px' : '80px', alignItems: 'center' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? '40px' : '80px', alignItems: 'center' }}>
           <div style={{ borderRadius: '28px', overflow: 'hidden', minHeight: isMobile ? '260px' : '460px', position: 'relative', boxShadow: '0 28px 60px rgba(0,0,0,0.14)' }}>
             <img src="/images/machinery/plant-6.jpg" alt="RR Construction heavy machinery fleet" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }}
               onError={e => { (e.currentTarget as HTMLImageElement).src = '/images/puttalam/puttalam-3.jpg'; }} />

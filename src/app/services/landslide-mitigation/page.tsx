@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { ArrowLeft } from 'lucide-react';
 
 import React, { useState, useEffect } from 'react';
@@ -70,7 +70,7 @@ export default function LandslideMitigationPage() {
       backgroundColor: 'var(--white)',
     },
     container: {
-      maxWidth: '1200px',
+      maxWidth: '1440px',
       margin: '0 auto',
     },
     sectionTitle: {

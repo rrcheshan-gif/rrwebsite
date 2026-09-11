@@ -1,4 +1,4 @@
-
+﻿
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -17,7 +17,7 @@ export default function RailwayCivilWorksPage() {
   }, []);
 
   const sectionPadding = isMobile ? "60px 10px" : "100px 20px";
-  const containerStyle = { maxWidth: '1200px', margin: '0 auto' };
+  const containerStyle = { maxWidth: '1440px', margin: '0 auto' };
 
   return (
     <main style={{ backgroundColor: 'var(--white)', minHeight: '100vh' }}>

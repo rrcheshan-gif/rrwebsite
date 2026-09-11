@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { ArrowLeft } from 'lucide-react';
 
 import React, { useState, useEffect } from 'react';
@@ -100,7 +100,7 @@ export default function DredgingReclamationPage() {
 
       {/* Overview Section */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto', textAlign: 'center' }}>
           <h2 style={{
             fontSize: isMobile ? '2rem' : '2.5rem',
             fontFamily: 'var(--font-heading)',
@@ -121,7 +121,7 @@ export default function DredgingReclamationPage() {
 
       {/* Services Grid */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--bg-light)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
           <h2 style={{
             fontSize: isMobile ? '2rem' : '2.5rem',
             fontFamily: 'var(--font-heading)',

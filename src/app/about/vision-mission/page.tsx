@@ -87,7 +87,7 @@ export default function VisionMission() {
       </section>
 
       <section style={{ position: "relative", padding: isMobile ? "20px 20px 60px" : "20px 20px 80px" }}>
-        <div className="container" style={{ position: "relative", zIndex: 2, maxWidth: "1200px" }}>
+        <div className="container" style={{ position: "relative", zIndex: 2, maxWidth: "1440px" }}>
           {/* V & M Split Layout - Light Theme */}
           <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: "40px", alignItems: "stretch" }}>
             
@@ -156,7 +156,7 @@ export default function VisionMission() {
 
       {/* Modern Core Values Grid */}
       <section style={{ padding: "100px 20px", background: "var(--bg-light)", position: "relative" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
           <Reveal>
             <div style={{ textAlign: "center", marginBottom: "80px" }}>
               <h2 style={{ fontSize: "clamp(2rem, 4vw, 3rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px" }}>

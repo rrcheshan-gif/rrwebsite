@@ -427,7 +427,7 @@ ul {
 /* Layout Utilities */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -2314,7 +2314,7 @@ body {
 
 /* Global Page Header Widen Fix */
 .page-header p { 
-  max-width: 1000px !important; 
+  max-width: 1200px !important; 
   text-align: center !important;
   margin-left: auto !important;
   margin-right: auto !important;

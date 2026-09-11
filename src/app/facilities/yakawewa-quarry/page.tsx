@@ -50,7 +50,7 @@ export default function YakawewaPlant() {
 
       {/* Photo Gallery */}
       <section style={{ padding: "50px 20px", background: "var(--bg-base)" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Our Yakawewa Facility</h2>
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
@@ -64,7 +64,7 @@ export default function YakawewaPlant() {
 
       {/* Products List */}
       <section style={{ padding: "50px 20px", background: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>YAKAWEWA ASPHALT PLANT: Our Products</h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px" }}>High Quality Aggregates & M-Sand for Stronger Constructions</p>

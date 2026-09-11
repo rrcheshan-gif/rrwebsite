@@ -49,7 +49,7 @@ export default function AboutStory() {
 
       {/* Unified Company Overview */}
       <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 0auto", padding: "0 16px" }}>
+        <div className="container" style={{ maxWidth: "1440px", margin: "0 0auto", padding: "0 16px" }}>
           
           <div style={{ display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "stretch", marginBottom: "50px" }}>
             

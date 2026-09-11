@@ -128,7 +128,7 @@ export default function QuarriesAggregates() {
 
       {/* Our Plants Section */}
       <section style={{ padding: "50px 20px", background: "var(--bg-base)" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Our Strategic Plant Locations</h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px" }}>Three crushing powerhouses placed strategically to cover the Western, North Central, and Northern Provinces.</p>
@@ -213,7 +213,7 @@ export default function QuarriesAggregates() {
 
       {/* Product Catalog Section */}
       <section style={{ padding: "50px 20px", background: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Available Products & Specifications</h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px" }}>Select from our wide range of crushed rock aggregates to suit your exact engineering needs.</p>
