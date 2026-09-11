@@ -1593,6 +1593,20 @@ const projectsData = [
       "/images/projects/new-folder/sagt-road/1.jpg"
     ]
   },
+    {
+      id: 'project-pudavkattu-yan-oya',
+      type: 'completed', category: "roads",
+      title: "Construction of Approach Road works at Pudavkattu Bridge & Yan Oya Project",
+      status: "Completed",
+      client: "UNOPS - Golden Relief Resources Lanka (Pvt) Ltd.",
+      duration: "3 months",
+      year: 2010,
+      heroImage: "/images/projects/new-folder/pudavkattu-yan-oya/1.jpg",
+      galleryImages: [
+        "/images/projects/new-folder/pudavkattu-yan-oya/1.jpg"
+      ]
+    },
+
   {
     id: 'project-84',
     type: 'completed', category: "bridges",
