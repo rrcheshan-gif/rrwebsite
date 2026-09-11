@@ -952,13 +952,17 @@ const projectsData = [
   },
   {
     id: 'project-52',
-    type: 'completed', category: "maritime",
-    title: "Kolonnawa Canal Diversion Scheme - Stage III & IV",
+    type: 'completed', category: "water",
+    title: "Kolonnawa Canal Diversion Scheme - Stage III",
     status: "Completed",
-    client: "Ministry of Megapolis",
-    
+    client: "Ministry of Megapolis & Western Development.",
     duration: "15 Months",
-    year: 2020
+    year: 2020,
+    heroImage: "/images/projects/new-folder/kolonnawa-canal-stage3/1.png",
+    galleryImages: [
+      "/images/projects/new-folder/kolonnawa-canal-stage3/1.png",
+      "/images/projects/new-folder/kolonnawa-canal-stage3/2.png"
+    ]
   },
 
   // 2019
