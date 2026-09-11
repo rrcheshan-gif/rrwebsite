@@ -1586,9 +1586,12 @@ const projectsData = [
     title: "SAGT Harbour Access Road",
     status: "Completed",
     client: "Hyundai Engineering",
-    
     duration: "06 Months",
-    year: 2010
+    year: 2010,
+    heroImage: "/images/projects/new-folder/sagt-road/1.jpg",
+    galleryImages: [
+      "/images/projects/new-folder/sagt-road/1.jpg"
+    ]
   },
   {
     id: 'project-84',
