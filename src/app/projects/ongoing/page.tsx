@@ -1,109 +1,90 @@
 ﻿"use client";
 import React from 'react';
 import Link from 'next/link';
-import projectsData from '../data';
+import { ArrowRight, HardHat, Cog, ShieldCheck, TrendingUp } from 'lucide-react';
 
 export default function OngoingProjects() {
-  const ongoingProjects = (projectsData as any[]).filter((p: any) => p.type === 'ongoing');
-
-  const renderProjectCard = (project: any) => (
-    <Link href={`/projects/${project.id}`} key={project.id} className="fade-in" style={{ display: 'flex', flexDirection: 'column', height: '100%', textDecoration: 'none' }}>
-      <div 
-        style={{ 
-          background: "var(--white)", 
-          borderRadius: "24px", 
-          boxShadow: "0 10px 30px rgba(0,0,0,0.05)", 
-          border: '1px solid var(--border-soft)',
-          display: 'flex', 
-          flexDirection: 'column',
-          flex: 1,
-          transition: "transform 0.4s ease, box-shadow 0.4s ease",
-          overflow: "hidden"
-        }}
-        onMouseOver={(e) => {
-          e.currentTarget.style.transform = 'translateY(-10px)';
-          e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
-        }}
-        onMouseOut={(e) => {
-          e.currentTarget.style.transform = 'translateY(0)';
-          e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.05)';
-        }}
-      >
-        {(() => {
-          const imgPath = project.heroImage || project.images?.[0] || project.galleryImages?.[0];
-          if (!imgPath) return null;
-          const imgSrc = imgPath.startsWith('/') ? imgPath : `/${imgPath}`;
-          return (
-            <div style={{ position: "relative", height: "220px", overflow: "hidden", background: "var(--bg-base)" }}>
-              <img 
-                src={encodeURI(imgSrc)} 
-                alt={`${project.title} - RR Construction Sri Lanka`} 
-                className="img-polished img-hover-zoom" 
-                style={{ width: "100%", height: "100%", objectFit: "cover" }} 
-                onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = 'none';
-                }}
-              />
-              <div style={{ position: "absolute", top: "12px", left: "12px", display: "flex", gap: "6px", flexWrap: "wrap", zIndex: 2 }}>
-                <span style={{ padding: '4px 10px', background: 'rgba(15, 23, 42, 0.75)', backdropFilter: 'blur(8px)', color: 'white', borderRadius: "30px", fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.5px', border: '1px solid rgba(255,255,255,0.2)' }}>{project.category}</span>
-                <span style={{ padding: '4px 10px', background: 'rgba(217, 119, 6, 0.85)', backdropFilter: 'blur(8px)', color: 'white', borderRadius: "30px", fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.3px', border: '1px solid rgba(255,255,255,0.25)' }}>{project.status}</span>
-              </div>
-            </div>
-          );
-        })()}
-        
-        <div style={{ padding: '25px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-          <div style={{ color: 'var(--primary-red)', fontSize: '0.8rem', fontWeight: 700, marginBottom: '10px' }}>
-            {project.category}
-          </div>
-          <h3 style={{ fontFamily: "var(--font-heading)", fontSize: '1.25rem', color: 'var(--text-dark)', marginBottom: '15px', lineHeight: 1.4, flex: 1 }}>
-            {project.title}
-          </h3>
-          <div style={{ marginTop: '20px', textAlign: 'center' }}>
-            <span className="btn-glass-red">View Details &rarr;</span>
-          </div>
-        </div>
-      </div>
-    </Link>
-  );
-
   return (
-    <div style={{ minHeight: '70vh', background: '#f8fafc' }}>
-      <section style={{ padding: '180px 20px 100px', textAlign: 'center', width: '100%' }}>
+    <div style={{ minHeight: '70vh', background: 'var(--bg-light)' }}>
+      {/* Hero Section */}
+      <section style={{ padding: '180px 20px 40px', textAlign: 'center' }}>
         <div className='container' style={{ maxWidth: '1440px' }}>
-          <h1 style={{ 
-            fontSize: 'clamp(1.8rem, 6vw, 4.2rem)', 
-            fontFamily: 'var(--font-heading)', 
-            fontWeight: 900, 
-            color: 'var(--text-dark)', 
-            marginBottom: '40px',
-            lineHeight: 1.1
-          }}>
-            Ongoing <span style={{ color: 'var(--primary-red)' }}>Projects</span>
-          </h1>
-          
-          <div className='glass-panel' style={{ 
-             padding: '40px', 
-             borderRadius: '16px', 
-             background: 'white', 
-             border: '1px solid var(--border-soft)',
-             boxShadow: '0 10px 40px rgba(0,0,0,0.03)',
-             marginBottom: '60px'
-          }}>
-             <p style={{ 
-               color: 'var(--text-dark)', 
-               fontSize: '1.15rem', 
-               lineHeight: 1.9, 
-               margin: 0
-             }}>
-               RR Construction is currently executing a diverse and expansive portfolio of large-scale infrastructure projects. Our ongoing commitments span across all critical engineering sectors, including national road networks, complex bridges, comprehensive water supply and irrigation systems, major maritime developments, multi-storey buildings, railway infrastructure, disaster management and landslide mitigation, as well as specialized overseas construction projects.
-             </p>
-          </div>
-          
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 300px), 1fr))", gap: "30px", paddingBottom: "50px", textAlign: "left" }}>
-            {ongoingProjects.map(renderProjectCard)}
+          <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+            <h1 style={{ 
+              fontSize: 'clamp(1.8rem, 6vw, 4.2rem)', 
+              fontFamily: 'var(--font-heading)', 
+              fontWeight: 900, 
+              color: 'var(--text-dark)', 
+              marginBottom: '30px',
+              lineHeight: 1.1
+            }}>
+              Ongoing <span style={{ color: 'var(--primary-red)' }}>Projects</span>
+            </h1>
+            <p style={{ 
+              color: 'var(--text-dark)', 
+              fontSize: '1.15rem', 
+              lineHeight: 1.9, 
+              textAlign: 'justify',
+              marginBottom: '40px'
+            }}>
+              RR Construction is currently executing a diverse and expansive portfolio of large-scale infrastructure projects. Our ongoing commitments span across all critical engineering sectors, including national road networks, complex bridges, comprehensive water supply and irrigation systems, major maritime developments, multi-storey buildings, railway infrastructure, disaster management and landslide mitigation, as well as specialized overseas construction projects. Equipped with our expansive proprietary machinery fleet and unmatched technical expertise, we are continuously driving infrastructure development forward. Our dedicated engineering and project management teams ensure that every ongoing site progresses seamlessly, consistently delivering high-quality results while adhering to the strictest international standards for occupational health, safety, and environmental sustainability.
+            </p>
+            
+            <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '40px' }}>
+               <Link href='/projects' className='btn btn-primary hover-lift hover-glow' style={{ padding: '16px 32px', borderRadius: '50px', display: 'inline-flex', alignItems: 'center', gap: '10px', fontSize: '1.05rem', textDecoration: 'none' }}>
+                  View Completed Projects <ArrowRight size={20} />
+               </Link>
+               <Link href='/services' className='btn hover-lift' style={{ padding: '16px 32px', borderRadius: '50px', display: 'inline-flex', alignItems: 'center', gap: '10px', fontSize: '1.05rem', background: 'white', color: 'var(--text-dark)', border: '1px solid var(--border-soft)', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', textDecoration: 'none' }}>
+                  Explore Our Services
+               </Link>
+            </div>
           </div>
         </div>
+      </section>
+
+      {/* Decorative Stats/Features */}
+      <section style={{ padding: '40px 20px 100px' }}>
+         <div className='container' style={{ maxWidth: '1440px' }}>
+            <div style={{ 
+               display: 'grid', 
+               gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
+               gap: '30px',
+               maxWidth: '1200px',
+               margin: '0 auto'
+            }}>
+               {[
+                 { icon: <HardHat size={32} />, title: 'Active Work Sites', desc: 'Operating simultaneously across multiple provinces in Sri Lanka.' },
+                 { icon: <Cog size={32} />, title: 'Heavy Machinery', desc: 'Deploying our fully self-owned proprietary fleet for maximum efficiency.' },
+                 { icon: <ShieldCheck size={32} />, title: 'Quality Assured', desc: 'Strict adherence to ISO 9001, ISO 14001, and ISO 45001.' },
+                 { icon: <TrendingUp size={32} />, title: 'Nation Building', desc: "Empowering Sri Lanka's socio-economic growth through critical infrastructure." },
+               ].map((item, idx) => (
+                 <div key={idx} className='glass-panel hover-lift' style={{ 
+                    padding: '30px', 
+                    borderRadius: '16px', 
+                    textAlign: 'center',
+                    background: 'white',
+                    border: '1px solid var(--border-soft)',
+                    boxShadow: '0 10px 30px rgba(0,0,0,0.03)'
+                 }}>
+                    <div style={{ 
+                       width: '70px', 
+                       height: '70px', 
+                       margin: '0 auto 20px', 
+                       background: 'rgba(229,57,53,0.08)', 
+                       color: 'var(--primary-red)',
+                       borderRadius: '50%',
+                       display: 'flex',
+                       alignItems: 'center',
+                       justifyContent: 'center'
+                    }}>
+                       {item.icon}
+                    </div>
+                    <h4 style={{ color: 'var(--text-dark)', fontWeight: 800, marginBottom: '12px', fontFamily: 'var(--font-heading)' }}>{item.title}</h4>
+                    <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', margin: 0, lineHeight: 1.6 }}>{item.desc}</p>
+                 </div>
+               ))}
+            </div>
+         </div>
       </section>
     </div>
   );
