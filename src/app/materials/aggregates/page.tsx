@@ -46,7 +46,7 @@ export default function AggregatesPage() {
           top: 0, left: 0, right: 0, bottom: 0,
           backgroundColor: 'rgba(0, 0, 0, 0.6)'
         }} />
-        <div style={{ position: 'relative', zIndex: 1, padding: '0 20px', maxWidth: '800px' }}>
+        <div style={{ position: 'relative', zIndex: 1, padding: '0 20px', maxWidth: "1200px" }}>
           <div style={{ marginBottom: '20px' }}>
             <Link href="/" style={{ color: 'var(--white)', textDecoration: 'none', opacity: 0.8 }}>Home</Link>
             <span style={{ margin: '0 10px', opacity: 0.8 }}>/</span>
@@ -74,7 +74,7 @@ export default function AggregatesPage() {
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '20px', color: 'var(--text-dark)' }}>
               Aggregate Production Overview
             </h2>
-            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem' }}>
+            <p style={{ color: 'var(--text-light)', maxWidth: "1200px", margin: '0 auto', fontSize: '1.1rem' }}>
               RR Construction operates four dedicated quarry plants across Sri Lanka, equipped with multi-stage crushing circuits. We produce comprehensive ranges of aggregates essential for road bases, concrete structures, and general heavy civil engineering works.
             </p>
           </div>

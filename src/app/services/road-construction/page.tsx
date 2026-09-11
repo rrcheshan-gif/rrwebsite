@@ -53,7 +53,7 @@ export default function RoadConstructionPage() {
           </h1>
           <p style={{ 
             fontSize: isMobile ? '1.1rem' : '1.25rem', 
-            maxWidth: '800px', 
+            maxWidth: "1200px", 
             margin: '0 auto', 
             opacity: 0.9,
             lineHeight: 1.6
@@ -75,7 +75,7 @@ export default function RoadConstructionPage() {
             }}>
               Comprehensive Road Construction Capabilities
             </h2>
-            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
+            <p style={{ color: 'var(--text-light)', maxWidth: "1200px", margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
               Our dedicated highway division operates with a massive workforce of over {COMPANY_DATA.workforce} professionals and a self-owned fleet of {COMPANY_DATA.machineryFleet} machinery units, ensuring we can tackle national-scale projects efficiently.
             </p>
           </div>
@@ -255,7 +255,7 @@ export default function RoadConstructionPage() {
 
       {/* 10. FAQ Section */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--bg-light)' }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <div style={{ maxWidth: "1200px", margin: '0 auto' }}>
           <h2 style={{ 
             fontFamily: 'var(--font-heading)', 
             fontSize: isMobile ? '2rem' : '2.5rem', 

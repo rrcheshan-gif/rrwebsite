@@ -137,7 +137,7 @@ export default function Home() {
 
         {/* Foreground Content */}
         <div className="container" style={{ position: "relative", zIndex: 3, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
-          <div style={{ width: '100%', maxWidth: '900px', paddingTop: '60px', margin: '0 auto' }}>
+          <div style={{ width: '100%', maxWidth: "1200px", paddingTop: '60px', margin: '0 auto' }}>
             {slides.map((slide, index) => (
               <div 
                 key={index} 
@@ -588,5 +588,4 @@ export default function Home() {
     </>
   );
 }
-
 

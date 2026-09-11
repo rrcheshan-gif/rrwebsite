@@ -12,7 +12,7 @@ export default function People() {
             </Link>
           </div>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px", textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>Our Greatest Asset</h4>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our <span style={{ color: "var(--primary-red)" }}>People</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our <span style={{ color: "var(--primary-red)" }}>People</span></h1>
         </div>
       </section>
 
@@ -29,7 +29,7 @@ export default function People() {
 
       {/* Workforce Categories */}
       <section style={{ padding: "0 20px 100px" }}>
-        <div className="container" style={{ maxWidth: "900px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "30px" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "30px" }}>
           
           <div style={{ background: "var(--white)", padding: "40px", borderRadius: "16px", boxShadow: "0 10px 30px rgba(0,0,0,0.04)", display: "flex", flexWrap: "wrap", gap: "30px", alignItems: "flex-start", border: "1px solid var(--border-soft)" }}>
             <div style={{ width: "80px", height: "80px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
@@ -66,12 +66,11 @@ export default function People() {
 
       {/* Join Us CTA */}
       <section style={{ padding: "50px 20px", background: "#1e293b", color: "white", textAlign: "center" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 6vw, 3rem)", marginBottom: "20px", color: "white" }}>Build Your Career With Us</h2>
-          <p style={{ color: "#cbd5e1", fontSize: "1.2rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.6 }}>Ready to engineer tomorrow? We are always looking for passionate engineers, project managers, and skilled tradespeople to join our growing team.</p>
+          <p style={{ color: "#cbd5e1", fontSize: "1.2rem", maxWidth: "1200px", margin: "0 auto", lineHeight: 1.6 }}>Ready to engineer tomorrow? We are always looking for passionate engineers, project managers, and skilled tradespeople to join our growing team.</p>
         </div>
       </section>
     </div>
   );
 }
-

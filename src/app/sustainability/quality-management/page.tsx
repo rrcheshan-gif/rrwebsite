@@ -40,8 +40,8 @@ export default function QualityManagement() {
               &larr; Back to Sustainability
             </Link>
           </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Quality <span style={{ color: "var(--primary-red)" }}>Management</span></h1>
-          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "800px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Quality <span style={{ color: "var(--primary-red)" }}>Management</span></h1>
+          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "1200px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Delivering structural integrity that outlasts generations, governed by ISO 9001:2015 standards.
           </p>
         </div>
@@ -97,7 +97,7 @@ export default function QualityManagement() {
             </h2>
           </div>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: "30px", maxWidth: "900px", margin: "0 auto" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "30px", maxWidth: "1200px", margin: "0 auto" }}>
             
             <div className="glass-panel hover-lift" style={{ background: "var(--white)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)", display: "flex", flexWrap: "wrap", gap: "30px", alignItems: "flex-start", boxShadow: "0 10px 30px rgba(0,0,0,0.04)" }}>
               <div style={{ width: "80px", height: "80px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
@@ -142,4 +142,3 @@ export default function QualityManagement() {
     </div>
   );
 }
-

@@ -48,7 +48,7 @@ export default function WaterInfrastructurePage() {
         <h1 style={{ color: 'var(--white)', fontSize: isMobile ? '36px' : '48px', fontFamily: 'var(--font-heading)', margin: '0 0 20px 0' }}>
           Water <span style={{ color: 'var(--primary-red)' }}>Infrastructure & Heavy Civil Engineering</span> in Sri Lanka
         </h1>
-        <p style={{ color: 'var(--bg-light)', fontSize: '18px', maxWidth: '800px', lineHeight: 1.6, margin: 0 }}>
+        <p style={{ color: 'var(--bg-light)', fontSize: '18px', maxWidth: "1200px", lineHeight: 1.6, margin: 0 }}>
           Expert engineering solutions for water supply systems, treatment plants, drainage, and irrigation works across Sri Lanka.
         </p>
       </section>
@@ -78,7 +78,7 @@ export default function WaterInfrastructurePage() {
               <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
                 {['Pipe networks and transmission mains', 'Distribution systems', 'Pumping stations', 'Elevated water towers', 'Ground reservoirs'].map((item, i) => (
                   <li key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: '12px', color: 'var(--text-dark)' }}>
-                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>â€¢</span>
+                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>Ã¢â‚¬Â¢</span>
                     {item}
                   </li>
                 ))}
@@ -102,7 +102,7 @@ export default function WaterInfrastructurePage() {
               <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
                 {['Clarifiers and filtration structures', 'Chemical dosing buildings', 'Intake structures', 'Civil works for M&E installations', 'Facility administrative buildings'].map((item, i) => (
                   <li key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: '12px', color: 'var(--text-dark)' }}>
-                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>â€¢</span>
+                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>Ã¢â‚¬Â¢</span>
                     {item}
                   </li>
                 ))}
@@ -126,7 +126,7 @@ export default function WaterInfrastructurePage() {
               <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
                 {['Irrigation canals and channels', 'Spillways and weirs', 'Anicuts and sluice structures', 'Tank (wewa) rehabilitation', 'Agricultural drainage systems'].map((item, i) => (
                   <li key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: '12px', color: 'var(--text-dark)' }}>
-                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>â€¢</span>
+                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>Ã¢â‚¬Â¢</span>
                     {item}
                   </li>
                 ))}
@@ -150,7 +150,7 @@ export default function WaterInfrastructurePage() {
               <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
                 {['Urban drainage networks', 'Culverts and cross drainage', 'Retention basins', 'Flood protection structures', 'Land reclamation drainage'].map((item, i) => (
                   <li key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: '12px', color: 'var(--text-dark)' }}>
-                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>â€¢</span>
+                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>Ã¢â‚¬Â¢</span>
                     {item}
                   </li>
                 ))}
@@ -174,15 +174,15 @@ export default function WaterInfrastructurePage() {
             </p>
             <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
               <li style={{ display: 'flex', alignItems: 'center', marginBottom: '15px', color: 'var(--text-dark)', padding: '15px', backgroundColor: 'var(--white)', borderRadius: '12px', border: '1px solid var(--border-soft)' }}>
-                <span style={{ color: 'var(--primary-red)', marginRight: '15px', fontSize: '20px' }}>âœ“</span>
+                <span style={{ color: 'var(--primary-red)', marginRight: '15px', fontSize: '20px' }}>Ã¢Å“â€œ</span>
                 <strong>National Water Supply & Drainage Board (NWSDB)</strong>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', marginBottom: '15px', color: 'var(--text-dark)', padding: '15px', backgroundColor: 'var(--white)', borderRadius: '12px', border: '1px solid var(--border-soft)' }}>
-                <span style={{ color: 'var(--primary-red)', marginRight: '15px', fontSize: '20px' }}>âœ“</span>
+                <span style={{ color: 'var(--primary-red)', marginRight: '15px', fontSize: '20px' }}>Ã¢Å“â€œ</span>
                 <strong>Department of Irrigation</strong>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', marginBottom: '15px', color: 'var(--text-dark)', padding: '15px', backgroundColor: 'var(--white)', borderRadius: '12px', border: '1px solid var(--border-soft)' }}>
-                <span style={{ color: 'var(--primary-red)', marginRight: '15px', fontSize: '20px' }}>âœ“</span>
+                <span style={{ color: 'var(--primary-red)', marginRight: '15px', fontSize: '20px' }}>Ã¢Å“â€œ</span>
                 <strong>Provincial Councils and Local Authorities</strong>
               </li>
             </ul>
@@ -213,7 +213,7 @@ export default function WaterInfrastructurePage() {
 
       {/* FAQ Section */}
       <section style={{ padding: isMobile ? "60px 20px" : "100px 40px", backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <div style={{ maxWidth: "1200px", margin: '0 auto' }}>
           <h2 style={{ color: 'var(--text-dark)', fontSize: '32px', fontFamily: 'var(--font-heading)', textAlign: 'center', marginBottom: '50px' }}>
             Frequently Asked Questions
           </h2>

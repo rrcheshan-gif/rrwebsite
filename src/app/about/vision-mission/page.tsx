@@ -77,10 +77,10 @@ export default function VisionMission() {
               &larr; Back to About Us
             </Link>
           </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>
             Vision & <span style={{ color: "var(--primary-red)" }}>Mission</span>
           </h1>
-          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
+          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "1200px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Building the nation with engineering excellence and a sustainable future.
           </p>
         </div>
@@ -163,7 +163,7 @@ export default function VisionMission() {
                 Pillars of Excellence
               </h2>
               <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto 20px", borderRadius: "2px" }}></div>
-              <p style={{ color: "var(--text-light)", fontSize: "1.15rem", maxWidth: "600px", margin: "0 auto", fontWeight: 500 }}>The fundamental principles that guide our projects, protect our people, and ensure we always deliver on our promises.</p>
+              <p style={{ color: "var(--text-light)", fontSize: "1.15rem", maxWidth: "1200px", margin: "0 auto", fontWeight: 500 }}>The fundamental principles that guide our projects, protect our people, and ensure we always deliver on our promises.</p>
             </div>
           </Reveal>
 

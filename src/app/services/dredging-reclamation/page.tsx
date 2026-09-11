@@ -21,22 +21,22 @@ export default function DredgingReclamationPage() {
     {
       title: "Marine & Harbour Dredging",
       desc: "Capital and maintenance dredging for ports, harbours, and navigational channels to ensure safe vessel passage.",
-      icon: "ðŸš¢"
+      icon: "Ã°Å¸Å¡Â¢"
     },
     {
       title: "Land Reclamation",
       desc: "Coastal reclamation, fill placement, and compaction to create new land for port expansion and coastal development.",
-      icon: "ðŸ–ï¸"
+      icon: "Ã°Å¸Ââ€“Ã¯Â¸Â"
     },
     {
       title: "Coastal Civil Works",
       desc: "Construction of seawalls, breakwaters, and coastal protection structures to safeguard marine infrastructure.",
-      icon: "ðŸŒŠ"
+      icon: "Ã°Å¸Å’Å "
     },
     {
       title: "Dredging Equipment Fleet",
       desc: "Self-owned and operated marine equipment fleet enabling efficient execution of complex dredging projects.",
-      icon: "ðŸ—ï¸"
+      icon: "Ã°Å¸Ââ€”Ã¯Â¸Â"
     }
   ];
 
@@ -75,7 +75,7 @@ export default function DredgingReclamationPage() {
           </Link>
         </div>
 
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <div style={{ maxWidth: "1200px", margin: '0 auto' }}>
           
           
 
@@ -91,7 +91,7 @@ export default function DredgingReclamationPage() {
             fontSize: isMobile ? '1.1rem' : '1.2rem',
             opacity: 0.9,
             lineHeight: 1.6,
-            maxWidth: '600px',
+            maxWidth: "1200px",
           }}>
             Advanced marine dredging, harbour development, and land reclamation solutions.
           </p>
@@ -111,7 +111,7 @@ export default function DredgingReclamationPage() {
             fontSize: '1.1rem',
             color: 'var(--text-light)',
             lineHeight: 1.8,
-            maxWidth: '800px',
+            maxWidth: "1200px",
             margin: '0 auto'
           }}>
             RR Construction provides specialized dredging and reclamation services for ports, harbours, and coastal developments across Sri Lanka. Utilizing our own fleet of marine equipment and adhering to ISO 14001:2015 environmental management systems, we deliver complex marine engineering projects with a focus on efficiency and sustainability.
@@ -168,7 +168,7 @@ export default function DredgingReclamationPage() {
 
       {/* FAQ Section */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <div style={{ maxWidth: "1200px", margin: '0 auto' }}>
           <h2 style={{
             fontSize: isMobile ? '2rem' : '2.5rem',
             fontFamily: 'var(--font-heading)',

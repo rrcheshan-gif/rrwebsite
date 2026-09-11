@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from 'next/link';
 import { useState } from 'react';
@@ -42,14 +42,14 @@ export default function Career() {
             <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
             </Link>
           </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Build Your <span style={{ color: "var(--primary-red)" }}>Career</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Build Your <span style={{ color: "var(--primary-red)" }}>Career</span></h1>
         </div>
       </section>
 
       {/* Careers Content */}
       <section style={{ padding: "60px 20px", background: "var(--bg-light)" }}>
         <div className="container">
-          <div style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto 50px" }}>
+          <div style={{ textAlign: "center", maxWidth: "1200px", margin: "0 auto 50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 5vw, 2.5rem)", color: "var(--primary-red)", marginBottom: "20px" }}>Build Your Future With Us</h2>
             <p style={{ fontSize: "clamp(1rem, 2.5vw, 1.15rem)", color: "var(--text-light)", lineHeight: 1.8 }}>Our 1,400-strong team is made up of people who take pride in getting it right  -  technically sound, hands-on, and committed to the work. If that sounds like you, we're always looking for passionate professionals ready to help shape Sri Lanka's infrastructure.</p>
           </div>
@@ -152,4 +152,3 @@ export default function Career() {
     </div>
   );
 }
-

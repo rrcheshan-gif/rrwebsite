@@ -12,7 +12,7 @@ export default function QualityPolicy() {
             </Link>
           </div>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px", textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>Our Standards</h4>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Quality <span style={{ color: "var(--primary-red)" }}>Policy</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Quality <span style={{ color: "var(--primary-red)" }}>Policy</span></h1>
         </div>
       </section>
 
@@ -59,7 +59,7 @@ export default function QualityPolicy() {
             <h2 style={{ fontSize: "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0" }}>
               Management Commitment & Responsibilities
             </h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.8 }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "1200px", margin: "0 auto", lineHeight: 1.8 }}>
               Our Top Management demonstrates absolute leadership and commitment to the continual improvement of our Health, Safety, and Environmental (HSE) Management Systems.
             </p>
           </div>

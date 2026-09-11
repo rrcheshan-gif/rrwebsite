@@ -36,7 +36,7 @@ export default function LandslideMitigationPage() {
     heroContent: {
       position: 'relative' as const,
       zIndex: 2,
-      maxWidth: '800px',
+      maxWidth: "1200px",
       margin: '0 auto',
     },
     breadcrumb: {
@@ -84,7 +84,7 @@ export default function LandslideMitigationPage() {
       fontSize: '1.1rem',
       color: 'var(--text-light)',
       textAlign: 'center' as const,
-      maxWidth: '800px',
+      maxWidth: "1200px",
       margin: '0 auto 50px',
       lineHeight: 1.8,
     },
@@ -316,7 +316,7 @@ export default function LandslideMitigationPage() {
           <h2 style={styles.sectionTitle}>Frequently Asked Questions</h2>
           <p style={styles.sectionDesc}>Common queries about our geotechnical and landslide mitigation services.</p>
           
-          <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+          <div style={{ maxWidth: "1200px", margin: '0 auto' }}>
             <div style={styles.faqItem}>
               <h4 style={styles.faqQ}>Do you handle NBRO approvals?</h4>
               <p style={styles.faqA}>While NBRO is the statutory authority issuing guidelines and approvals, we work closely within their regulatory framework. Our mitigation designs and execution methods comply entirely with NBRO standards, facilitating smooth project progression.</p>

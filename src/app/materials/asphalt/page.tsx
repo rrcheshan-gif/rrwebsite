@@ -47,7 +47,7 @@ export default function AsphaltPage() {
           top: 0, left: 0, right: 0, bottom: 0,
           backgroundColor: 'rgba(0, 0, 0, 0.6)'
         }} />
-        <div style={{ position: 'relative', zIndex: 1, padding: '0 20px', maxWidth: '800px' }}>
+        <div style={{ position: 'relative', zIndex: 1, padding: '0 20px', maxWidth: "1200px" }}>
           <div style={{ marginBottom: '20px' }}>
             <Link href="/" style={{ color: 'var(--white)', textDecoration: 'none', opacity: 0.8 }}>Home</Link>
             <span style={{ margin: '0 10px', opacity: 0.8 }}>/</span>
@@ -74,7 +74,7 @@ export default function AsphaltPage() {
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '20px', color: 'var(--text-dark)' }}>
             Asphalt Plant Operations
           </h2>
-          <p style={{ color: 'var(--text-light)', fontSize: '1.1rem', maxWidth: '800px', margin: '0 auto 40px' }}>
+          <p style={{ color: 'var(--text-light)', fontSize: '1.1rem', maxWidth: "1200px", margin: '0 auto 40px' }}>
             RR Construction operates strategically located asphalt plants to support our extensive road construction projects across Sri Lanka. Our facilities are equipped with modern technology to ensure the continuous production of high-quality hot mix asphalt.
           </p>
           <div style={{

@@ -52,7 +52,7 @@ export default function CivilStructuresPage() {
           </h1>
           <p style={{ 
             fontSize: isMobile ? '1.1rem' : '1.25rem', 
-            maxWidth: '800px', 
+            maxWidth: "1200px", 
             margin: '0 auto', 
             opacity: 0.9,
             lineHeight: 1.6
@@ -74,7 +74,7 @@ export default function CivilStructuresPage() {
             }}>
               Comprehensive Structural Engineering
             </h2>
-            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
+            <p style={{ color: 'var(--text-light)', maxWidth: "1200px", margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
               With over three decades of experience, RR Construction's civil division handles highly specialized structural concrete and steel works, ensuring safety, durability, and compliance with the most stringent global standards.
             </p>
           </div>
