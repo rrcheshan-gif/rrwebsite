@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -74,7 +74,6 @@ export default function Navbar() {
                   <li><Link href="/about/key-data" onClick={() => setMobileMenuOpen(false)}>Key Data</Link></li>
                   <li><Link href="/about/history" onClick={() => setMobileMenuOpen(false)}>History &amp; Milestones</Link></li>
                   <li><Link href="/about/board-of-directors" onClick={() => setMobileMenuOpen(false)}>Board of Directors</Link></li>
-                  <li><Link href="/about/leadership" onClick={() => setMobileMenuOpen(false)}>Leadership</Link></li>
                   <li><Link href="/about/vision-mission" onClick={() => setMobileMenuOpen(false)}>Vision &amp; Mission</Link></li>
                   <li><Link href="/about/goals-and-targets" onClick={() => setMobileMenuOpen(false)}>Goals &amp; Targets</Link></li>
                   <li><Link href="/about/awards" onClick={() => setMobileMenuOpen(false)}>Awards &amp; Achievements</Link></li>
