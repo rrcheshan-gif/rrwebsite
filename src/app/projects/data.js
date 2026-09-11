@@ -1526,6 +1526,21 @@ const projectsData = [
     duration: "06 Months",
     year: 2012
   },
+    {
+      id: 'project-colombo-port-harbour-infra',
+      type: 'completed', category: "maritime",
+      title: "Colombo Port Expansion Project - Harbour Infrastructure works - Service Road and Paving Works",
+      status: "Completed",
+      client: "Sri Lanka Port Authority",
+      duration: "15 months",
+      year: 2012,
+      heroImage: "/images/projects/new-folder/colombo-port-expansion/1.jpg",
+      galleryImages: [
+        "/images/projects/new-folder/colombo-port-expansion/1.jpg",
+        "/images/projects/new-folder/colombo-port-expansion/2.jpg"
+      ]
+    },
+
   {
     id: 'project-81',
     type: 'completed', category: "buildings",
