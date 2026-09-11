@@ -136,7 +136,7 @@ export default function GoalsAndTargets() {
             </div>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Goals & <span style={{ color: "var(--primary-red)" }}>Targets</span></h1>
-          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "20px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
+          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "20px", display: "inline-block", lineHeight: 1.6, fontWeight: 500, textAlign: "center", maxWidth: "900px" }}>
             Driving Sri Lanka's infrastructure development through effective project delivery, engineering excellence, resource efficiency and sustainable business growth.
           </p>
         </div>
@@ -150,7 +150,7 @@ export default function GoalsAndTargets() {
             <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px", lineHeight: 1.2 }}>
               Strategic <span style={{ color: "var(--primary-red)" }}>Goals</span>
             </h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.7 }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.7, textAlign: "center" }}>
               Our operational and strategic objectives are designed to continuously improve our performance across all phases of <Link href="/services" style={{ color: "var(--primary-red)", textDecoration: "none" }}>construction and engineering</Link>.
             </p>
           </div>
@@ -243,7 +243,7 @@ export default function GoalsAndTargets() {
           <h2 style={{ fontSize: isMobile ? "2rem" : "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 25px 0" }}>
             Looking Ahead
           </h2>
-          <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, margin: 0 }}>
+          <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, margin: 0, textAlign: "center" }}>
             RR Construction (Pvt) Ltd continues to strengthen its capabilities with a clear focus on effective project delivery, engineering advancement, infrastructure development and operational excellence. By continuously improving its people, processes, resources and technical capabilities, the company aims to respond effectively to the evolving requirements of Sri Lanka's infrastructure sector and create lasting value through reliable construction and civil engineering solutions.
           </p>
           <div style={{ marginTop: "40px", display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "15px" }}>
