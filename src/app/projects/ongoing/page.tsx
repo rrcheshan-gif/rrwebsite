@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React from 'react';
 import Link from 'next/link';
 import projectsData from '../data';
@@ -70,7 +70,7 @@ export default function OngoingProjects() {
   return (
     <div style={{ minHeight: '70vh', background: '#f8fafc' }}>
       <section style={{ padding: '180px 20px 100px', textAlign: 'center', width: '100%' }}>
-        <div className='container' style={{ maxWidth: '1440px' }}>
+        <div className='container' style={{ maxWidth: '1200px' }}>
           <h1 style={{ 
             fontSize: 'clamp(1.8rem, 6vw, 4.2rem)', 
             fontFamily: 'var(--font-heading)', 

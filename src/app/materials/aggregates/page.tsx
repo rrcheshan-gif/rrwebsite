@@ -69,7 +69,7 @@ export default function AggregatesPage() {
 
       {/* Overview & Products */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '60px' }}>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '20px', color: 'var(--text-dark)' }}>
               Aggregate Production Overview
@@ -108,7 +108,7 @@ export default function AggregatesPage() {
 
       {/* Locations & Standards */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 20px' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '40px' }}>
             <div style={{ backgroundColor: 'var(--white)', padding: '40px', borderRadius: '24px', border: '1px solid var(--border-soft)' }}>
               <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.5rem', marginBottom: '20px', color: 'var(--text-dark)' }}>Quarry Locations</h3>
@@ -146,7 +146,7 @@ export default function AggregatesPage() {
 
       {/* Applications & Inquiry */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', gap: '50px' }}>
             <div style={{ flex: 1 }}>
               <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '30px', color: 'var(--text-dark)' }}>Key Applications</h2>
@@ -196,3 +196,4 @@ export default function AggregatesPage() {
     </main>
   );
 }
+

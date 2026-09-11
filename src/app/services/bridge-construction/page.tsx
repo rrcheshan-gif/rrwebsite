@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -76,8 +76,8 @@ export default function BridgeConstructionPage() {
       </section>
 
       {/* 2. Bridge Construction Capabilities */}
-      <section style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+      <section className="page-header" style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--white)' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div
             style={{
               display: 'grid',
@@ -163,8 +163,8 @@ export default function BridgeConstructionPage() {
       </section>
 
       {/* 3 & 4 & 5. Core Services Grid */}
-      <section style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--bg-light)' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+      <section className="page-header" style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--bg-light)' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '60px', maxWidth: '800px', margin: '0 auto 60px' }}>
             <h2
               style={{
@@ -276,8 +276,8 @@ export default function BridgeConstructionPage() {
       </section>
 
       {/* 6. Selected Bridge Projects */}
-      <section style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+      <section className="page-header" style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--white)' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h2
             style={{
               fontSize: isMobile ? '32px' : '40px',
@@ -355,8 +355,8 @@ export default function BridgeConstructionPage() {
       </section>
 
       {/* 7 & 8. Technical Equipment and Quality */}
-      <section style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--text-dark)', color: 'var(--white)' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+      <section className="page-header" style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--text-dark)', color: 'var(--white)' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div
             style={{
               display: 'grid',
@@ -434,7 +434,7 @@ export default function BridgeConstructionPage() {
       </section>
 
       {/* 9. FAQ Section */}
-      <section style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--bg-light)' }}>
+      <section className="page-header" style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--bg-light)' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <h2
             style={{

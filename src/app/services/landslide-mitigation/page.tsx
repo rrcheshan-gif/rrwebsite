@@ -70,7 +70,7 @@ export default function LandslideMitigationPage() {
       backgroundColor: 'var(--white)',
     },
     container: {
-      maxWidth: '1440px',
+      maxWidth: '1200px',
       margin: '0 auto',
     },
     sectionTitle: {

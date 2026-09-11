@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 
 export default function People() {
   return (
@@ -74,3 +74,4 @@ export default function People() {
     </div>
   );
 }
+

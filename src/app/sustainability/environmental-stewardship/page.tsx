@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -49,7 +49,7 @@ export default function EnvironmentalStewardship() {
 
       {/* Intro Section */}
       <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
-        <div className="container" style={{ maxWidth: '1440px', margin: "0 auto", padding: "0 16px" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "50px", alignItems: "center" }}>
             <div>
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px" }}>Iso 14001:2015</h4>
@@ -87,7 +87,7 @@ export default function EnvironmentalStewardship() {
 
       {/* Strategic Areas Grid */}
       <section style={{ padding: "50px 20px", background: "var(--white)" }}>
-        <div className="container" style={{ maxWidth: '1440px', margin: "0 auto", padding: "0 16px" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontSize: isMobile ? "2.2rem" : "3rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0" }}>
               Mitigation in Action
@@ -138,7 +138,7 @@ export default function EnvironmentalStewardship() {
 
       {/* HSE Environmental Policy Integration Section */}
       <section style={{ padding: "80px 20px", background: "var(--bg-base)" }}>
-        <div className="container" style={{ maxWidth: '1440px', margin: "0 auto", padding: "0 16px" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
           
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontSize: "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0" }}>
@@ -194,3 +194,5 @@ export default function EnvironmentalStewardship() {
     </div>
   );
 }
+
+

@@ -1,4 +1,4 @@
-/* Premium Design System for RR Construction Clone */
+﻿/* Premium Design System for RR Construction Clone */
 :root {
   /* Colors */
   --primary-red: #D32F2F;
@@ -51,7 +51,7 @@
 }
 
 /* =================================================
-   LIGHT MODE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â body baseline
+   LIGHT MODE â€” body baseline
    ================================================= */
 [data-theme="light"] body,
 :root:not([data-theme="dark"]) body {
@@ -61,14 +61,14 @@
 }
 
 /* =================================================
-   DARK MODE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â body & base text
+   DARK MODE â€” body & base text
    ================================================= */
 [data-theme="dark"] body {
   background-color: #0f172a;
   color: #f8fafc;
 }
 
-/* Dark mode base heading colours ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â only apply when NOT already
+/* Dark mode base heading colours â€” only apply when NOT already
    overridden by an inline style (CSS specificity: attribute selector
    beats tag selector, but inline style wins over all).
    We rely on inline style={{ color: "var(--text-dark)" }} propagating
@@ -176,17 +176,17 @@
 }
 
 /* ===================================================
-   COMPREHENSIVE DARK MODE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ABOUT US & GENERAL PAGES
+   COMPREHENSIVE DARK MODE â€” ABOUT US & GENERAL PAGES
    =================================================== */
 
 /* =================================================
-   DARK MODE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â CARD & CONTAINER BACKGROUNDS
+   DARK MODE â€” CARD & CONTAINER BACKGROUNDS
    CSS variables (--white, --bg-light, --border-soft) already
    adapt automatically via the [data-theme="dark"] block above.
    Only add overrides here for elements that DON'T use CSS variables.
    ================================================= */
 
-/* hover-lift cards adapt via var(--white) background ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â border only */
+/* hover-lift cards adapt via var(--white) background â€” border only */
 [data-theme="dark"] .hover-lift {
   border-color: rgba(255, 255, 255, 0.1) !important;
 }
@@ -427,7 +427,7 @@ ul {
 /* Layout Utilities */
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -443,7 +443,7 @@ ul {
   left: 50%;
   transform: translateX(-50%);
   width: 98%;
-  max-width: 1440px;
+    max-width: 1500px;
   z-index: 1000;
   transition: var(--transition);
   border-radius: 50px;
@@ -552,7 +552,7 @@ ul {
     justify-content: center;
   }
 
-/* Desktop actions: theme toggle + Contact Us Ã¢â‚¬â€ always at the far right */
+/* Desktop actions: theme toggle + Contact Us — always at the far right */
 .nav-desktop-actions {
   display: flex;
   align-items: center;
@@ -898,7 +898,7 @@ ul {
     left: 50% !important;
     transform: translateX(-50%) !important;
     width: 94% !important;
-    max-width: 900px !important;
+    max-width: 500px !important;
     padding: 8px 16px !important;
     background: rgba(15, 23, 42, 0.95) !important;
     backdrop-filter: blur(20px) !important;
@@ -996,8 +996,6 @@ ul {
     margin-left: auto !important;
     margin-right: auto !important;
   }
-
-
 
   .section-title,
   .section-title h2,
@@ -2099,13 +2097,13 @@ body {
     max-width: 100% !important;
   }
 
-  /* Collage / photo grid Ã¢â‚¬â€ keep 2 cols but smaller rows on mobile */
+  /* Collage / photo grid — keep 2 cols but smaller rows on mobile */
   .collage-grid {
     grid-template-rows: repeat(2, clamp(120px, 25vw, 180px)) !important;
     gap: 10px !important;
   }
 
-  /* Service cards Ã¢â‚¬â€ allow full width */
+  /* Service cards — allow full width */
   .modern-service-card {
     width: 100% !important;
     max-width: 100% !important;
@@ -2150,17 +2148,17 @@ body {
 }
 
 /* ============================================
-   TARGETED MOBILE FIXES Ã¢â‚¬â€ DOES NOT AFFECT DESKTOP
+   TARGETED MOBILE FIXES — DOES NOT AFFECT DESKTOP
    ============================================ */
 
 @media (max-width: 768px) {
 
-  /* Ã¢â€â‚¬Ã¢â€â‚¬ HERO SLIDER Ã¢â€â‚¬Ã¢â€â‚¬ */
+  /* ── HERO SLIDER ── */
   .hero-fullscreen {
     height: 100svh !important; /* safe viewport on mobile */
   }
 
-  /* Hero heading Ã¢â‚¬â€ prevent overflow */
+  /* Hero heading — prevent overflow */
   .hero-fullscreen h2 {
     font-size: clamp(2rem, 9vw, 3rem) !important;
     word-break: break-word !important;
@@ -2173,7 +2171,7 @@ body {
     padding: 0 8px !important;
   }
 
-  /* Hero buttons Ã¢â‚¬â€ stack on tiny phones */
+  /* Hero buttons — stack on tiny phones */
   .hero-buttons {
     flex-direction: column !important;
     align-items: center !important;
@@ -2187,7 +2185,7 @@ body {
     justify-content: center !important;
   }
 
-  /* Ã¢â€â‚¬Ã¢â€â‚¬ CORPORATE PROFILE COLLAGE Ã¢â€â‚¬Ã¢â€â‚¬ */
+  /* ── CORPORATE PROFILE COLLAGE ── */
   .collage-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     grid-template-rows: repeat(2, clamp(110px, 28vw, 160px)) !important;
@@ -2200,20 +2198,20 @@ body {
     display: none !important;
   }
 
-  /* Ã¢â€â‚¬Ã¢â€â‚¬ SERVICES GRID Ã¢â€â‚¬Ã¢â€â‚¬ */
+  /* ── SERVICES GRID ── */
   .modern-service-card {
     width: 100% !important;
     max-width: 100% !important;
     min-height: 220px !important;
   }
 
-  /* services scroll row Ã¢â‚¬â€ allow wrap on mobile */
+  /* services scroll row — allow wrap on mobile */
   div[style*="scroll-snap-type"] {
     flex-wrap: wrap !important;
     overflow-x: visible !important;
   }
 
-  /* Ã¢â€â‚¬Ã¢â€â‚¬ STATS / KEY FIGURES Ã¢â€â‚¬Ã¢â€â‚¬ */
+  /* ── STATS / KEY FIGURES ── */
   .stats-container {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 16px !important;
@@ -2226,7 +2224,7 @@ body {
     font-size: 2rem !important;
   }
 
-  /* Ã¢â€â‚¬Ã¢â€â‚¬ SECTION PADDING Ã¢â€â‚¬Ã¢â€â‚¬ */
+  /* ── SECTION PADDING ── */
   section {
     padding-left: 16px !important;
     padding-right: 16px !important;
@@ -2248,43 +2246,43 @@ body {
     padding-bottom: 35px !important;
   }
 
-  /* Ã¢â€â‚¬Ã¢â€â‚¬ FLEX ROW Ã¢â€ â€™ COLUMN for two-column layouts Ã¢â€â‚¬Ã¢â€â‚¬ */
+  /* ── FLEX ROW → COLUMN for two-column layouts ── */
   div[style*="display: \"flex\""][style*="flexWrap: \"wrap\""] {
     flex-direction: column !important;
   }
 
-  /* Ã¢â€â‚¬Ã¢â€â‚¬ NEWS CARDS grid Ã¢â€â‚¬Ã¢â€â‚¬ */
+  /* ── NEWS CARDS grid ── */
   .news-card {
     width: 100% !important;
     min-width: unset !important;
   }
 
-  /* Ã¢â€â‚¬Ã¢â€â‚¬ PROJECT HIGHLIGHT cards Ã¢â€â‚¬Ã¢â€â‚¬ */
+  /* ── PROJECT HIGHLIGHT cards ── */
   div[style*="minWidth: 'min(100%, 350px)'"] {
     min-width: 100% !important;
     width: 100% !important;
   }
 
-  /* Ã¢â€â‚¬Ã¢â€â‚¬ CLIENT LOGO row Ã¢â€â‚¬Ã¢â€â‚¬ */
+  /* ── CLIENT LOGO row ── */
   div[style*="min(100%, 340px)"] {
     width: 100% !important;
     min-width: unset !important;
   }
 
-  /* Ã¢â€â‚¬Ã¢â€â‚¬ FOOTER Ã¢â‚¬â€ stack columns Ã¢â€â‚¬Ã¢â€â‚¬ */
+  /* ── FOOTER — stack columns ── */
   .footer-grid {
     grid-template-columns: 1fr !important;
     gap: 30px !important;
   }
 
-  /* Ã¢â€â‚¬Ã¢â€â‚¬ TABLE Ã¢â€â‚¬Ã¢â€â‚¬ */
+  /* ── TABLE ── */
   table {
     display: block !important;
     overflow-x: auto !important;
     white-space: nowrap !important;
   }
 
-  /* Ã¢â€â‚¬Ã¢â€â‚¬ Dropdown menus: don't render off-screen Ã¢â€â‚¬Ã¢â€â‚¬ */
+  /* ── Dropdown menus: don't render off-screen ── */
   .dropdown-menu {
     position: static !important;
     opacity: 1 !important;
@@ -2294,7 +2292,7 @@ body {
     padding: 0 !important;
   }
 
-  /* Ken Burns zoom Ã¢â‚¬â€ reduce on mobile to avoid content clip */
+  /* Ken Burns zoom — reduce on mobile to avoid content clip */
   img[style*="scale(1.1)"] {
     transform: scale(1.04) !important;
   }

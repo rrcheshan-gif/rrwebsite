@@ -21,22 +21,22 @@ export default function DredgingReclamationPage() {
     {
       title: "Marine & Harbour Dredging",
       desc: "Capital and maintenance dredging for ports, harbours, and navigational channels to ensure safe vessel passage.",
-      icon: "ðŸš¢"
+      icon: "🚢"
     },
     {
       title: "Land Reclamation",
       desc: "Coastal reclamation, fill placement, and compaction to create new land for port expansion and coastal development.",
-      icon: "ðŸ–ï¸"
+      icon: "🏖️"
     },
     {
       title: "Coastal Civil Works",
       desc: "Construction of seawalls, breakwaters, and coastal protection structures to safeguard marine infrastructure.",
-      icon: "ðŸŒŠ"
+      icon: "🌊"
     },
     {
       title: "Dredging Equipment Fleet",
       desc: "Self-owned and operated marine equipment fleet enabling efficient execution of complex dredging projects.",
-      icon: "ðŸ—ï¸"
+      icon: "🏗️"
     }
   ];
 
@@ -100,7 +100,7 @@ export default function DredgingReclamationPage() {
 
       {/* Overview Section */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto', textAlign: 'center' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
           <h2 style={{
             fontSize: isMobile ? '2rem' : '2.5rem',
             fontFamily: 'var(--font-heading)',
@@ -121,7 +121,7 @@ export default function DredgingReclamationPage() {
 
       {/* Services Grid */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--bg-light)' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h2 style={{
             fontSize: isMobile ? '2rem' : '2.5rem',
             fontFamily: 'var(--font-heading)',

@@ -69,7 +69,7 @@ export default function MSandPage() {
 
       {/* What is M-Sand */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{
             display: 'flex',
             flexDirection: isMobile ? 'column' : 'row',
@@ -106,7 +106,7 @@ export default function MSandPage() {
 
       {/* Production & Locations */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 20px' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto', textAlign: 'center' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '20px', color: 'var(--text-dark)' }}>
             M-Sand Production Plants
           </h2>
@@ -132,7 +132,7 @@ export default function MSandPage() {
 
       {/* Tech Specs & Advantages */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '40px' }}>
             <div>
               <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.5rem', marginBottom: '20px', color: 'var(--text-dark)' }}>Technical Specifications</h3>
@@ -172,7 +172,7 @@ export default function MSandPage() {
 
       {/* Applications & Inquiry */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 20px' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', gap: '50px' }}>
             <div style={{ flex: 1 }}>
               <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '20px', color: 'var(--text-dark)' }}>Primary Applications</h2>
@@ -222,3 +222,4 @@ export default function MSandPage() {
     </main>
   );
 }
+

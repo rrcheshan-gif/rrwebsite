@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -68,7 +68,7 @@ export default function QuarriesAggregates() {
             }}
             style={{ position: 'absolute', left: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
-            Ã¢â€ Â
+            â†
           </button>
 
           <img src={`/${lightboxImg.replace(/^\//, '')}`} alt="Fullscreen view" style={{ maxWidth: '90%', maxHeight: '90vh', borderRadius: '8px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', objectFit: 'contain', position: 'relative', zIndex: 10000 }} />
@@ -82,7 +82,7 @@ export default function QuarriesAggregates() {
             }}
             style={{ position: 'absolute', right: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
-            Ã¢â€ '
+            â†'
           </button>
         </div>
       )}
@@ -128,7 +128,7 @@ export default function QuarriesAggregates() {
 
       {/* Our Plants Section */}
       <section style={{ padding: "50px 20px", background: "var(--bg-base)" }}>
-        <div className="container" style={{ maxWidth: '1440px', margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Our Strategic Plant Locations</h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px" }}>Three crushing powerhouses placed strategically to cover the Western, North Central, and Northern Provinces.</p>
@@ -213,7 +213,7 @@ export default function QuarriesAggregates() {
 
       {/* Product Catalog Section */}
       <section style={{ padding: "50px 20px", background: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: '1440px', margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Available Products & Specifications</h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px" }}>Select from our wide range of crushed rock aggregates to suit your exact engineering needs.</p>
@@ -349,4 +349,6 @@ export default function QuarriesAggregates() {
     </div>
   );
 }
+
+
 

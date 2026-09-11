@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -14,7 +14,7 @@ const timelineEvents = [
     icon: <Flag size={24} color="var(--primary-red)" />
   },
   {
-    epoch: "2003â€“2006",
+    epoch: "2003–2006",
     title: "Expanding Infrastructure Experience",
     image: "/images/projects/new-folder/CONSTRUCTION OF WATER TREATMENT PLANT -AMPARA/1.jpg",
     imageAlt: "Ampara Water Treatment Plant - water infrastructure project in Sri Lanka",
@@ -22,7 +22,7 @@ const timelineEvents = [
     icon: <Map size={24} color="var(--primary-red)" />
   },
   {
-    epoch: "2007â€“2009",
+    epoch: "2007–2009",
     title: "Construction Capability Growth",
     image: "/images/projects/new-folder/hirana-bridges/1.jpg",
     imageAlt: "Steel bridge construction in Sri Lanka - Hirana bridge by RR Construction",
@@ -46,15 +46,15 @@ const timelineEvents = [
     icon: <Globe size={24} color="var(--primary-red)" />
   },
   {
-    epoch: "2019â€“2023",
+    epoch: "2019–2023",
     title: "Expanding Railway & Infrastructure Capabilities",
     image: "/images/projects/Anuradhapura-Vauniya/1.jpg",
     imageAlt: "Anuradhapura Vavuniya railway track rehabilitation project in Sri Lanka",
-    desc: <>RR Construction continued to diversify its infrastructure portfolio across Sri Lanka, undertaking major road, bridge, maritime, water, geotechnical, and railway infrastructure projects. Railway capabilities were strengthened through projects including the <strong>Anuradhapuraâ€“Vavuniya Railway Track Rehabilitation</strong> and <strong>Mahoâ€“Anuradhapura Railway Line Track Rehabilitation &amp; Ancillary Works</strong>, expanding the company's role in Sri Lanka's <Link href="/services/railway-civil-works" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>railway construction</Link> and civil engineering sectors.</>,
+    desc: <>RR Construction continued to diversify its infrastructure portfolio across Sri Lanka, undertaking major road, bridge, maritime, water, geotechnical, and railway infrastructure projects. Railway capabilities were strengthened through projects including the <strong>Anuradhapura–Vavuniya Railway Track Rehabilitation</strong> and <strong>Maho–Anuradhapura Railway Line Track Rehabilitation &amp; Ancillary Works</strong>, expanding the company's role in Sri Lanka's <Link href="/services/railway-civil-works" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>railway construction</Link> and civil engineering sectors.</>,
     icon: <Train size={24} color="var(--primary-red)" />
   },
   {
-    epoch: "2024â€“2026",
+    epoch: "2024–2026",
     title: "Integrated Infrastructure Delivery",
     image: "/images/projects/new-folder/maho-railway/Background image.jpg",
     imageAlt: "Railway infrastructure construction in Sri Lanka - Maho to Anuradhapura line",
@@ -115,7 +115,7 @@ export default function HistoryTimeline() {
 
       {/* Timeline */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 0', background: 'var(--bg-light)' }}>
-        <div className="container" style={{ margin: '0 auto' }}>
+        <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
           
           <div style={{ textAlign: 'center', marginBottom: '80px' }}>
             <h2 style={{ fontSize: 'clamp(1.8rem, 6vw, 4.2rem)', fontFamily: 'var(--font-heading)', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 20px 0', letterSpacing: '-0.5px' }}>

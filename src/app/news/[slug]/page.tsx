@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+﻿import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Clock, ArrowLeft, Share2 } from 'lucide-react';
 import { NEWS_DATA } from '@/data/news-data';

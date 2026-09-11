@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 
 export default function QualityPolicy() {
   return (
@@ -29,7 +29,7 @@ export default function QualityPolicy() {
             </p>
           </div>
           
-          <div style={{ maxWidth: '1440px', margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px" }}>
+          <div style={{ maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px" }}>
             <div style={{ background: "var(--white)", padding: "40px", borderRadius: "8px", borderTop: "4px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: "15px" }}><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
               <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "15px" }}>Material Testing</h3>
@@ -53,7 +53,7 @@ export default function QualityPolicy() {
 
       {/* HSE Management Commitment Section */}
       <section style={{ padding: "80px 20px", background: "var(--bg-base)" }}>
-        <div className="container" style={{ maxWidth: '1440px', margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontSize: "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0" }}>
@@ -93,3 +93,4 @@ export default function QualityPolicy() {
     </div>
   );
 }
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -52,7 +52,7 @@ export default function News() {
 
       {/* Featured News Section */}
       <section style={{ padding: isMobile ? "20px 10px 40px" : "40px 20px 60px" }}>
-        <div className="container" style={{ maxWidth: '1440px', margin: "0 auto", padding: "0 16px" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
           
           <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "30px" }}>
             <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
@@ -116,7 +116,7 @@ export default function News() {
 
       {/* Latest News Grid */}
       <section style={{ padding: isMobile ? "20px 10px 80px" : "40px 20px 100px" }}>
-        <div className="container" style={{ maxWidth: '1440px', margin: "0 auto", padding: "0 16px" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
           
           <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "30px" }}>
             <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>

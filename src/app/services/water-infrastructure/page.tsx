@@ -55,7 +55,7 @@ export default function WaterInfrastructurePage() {
 
       {/* Services Grid */}
       <section style={{ padding: isMobile ? "60px 20px" : "100px 40px", backgroundColor: 'var(--bg-light)' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h2 style={{ color: 'var(--text-dark)', fontSize: '32px', fontFamily: 'var(--font-heading)', textAlign: 'center', marginBottom: '60px' }}>
             Our Water Infrastructure Services
           </h2>
@@ -78,7 +78,7 @@ export default function WaterInfrastructurePage() {
               <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
                 {['Pipe networks and transmission mains', 'Distribution systems', 'Pumping stations', 'Elevated water towers', 'Ground reservoirs'].map((item, i) => (
                   <li key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: '12px', color: 'var(--text-dark)' }}>
-                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>â€¢</span>
+                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>•</span>
                     {item}
                   </li>
                 ))}
@@ -102,7 +102,7 @@ export default function WaterInfrastructurePage() {
               <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
                 {['Clarifiers and filtration structures', 'Chemical dosing buildings', 'Intake structures', 'Civil works for M&E installations', 'Facility administrative buildings'].map((item, i) => (
                   <li key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: '12px', color: 'var(--text-dark)' }}>
-                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>â€¢</span>
+                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>•</span>
                     {item}
                   </li>
                 ))}
@@ -126,7 +126,7 @@ export default function WaterInfrastructurePage() {
               <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
                 {['Irrigation canals and channels', 'Spillways and weirs', 'Anicuts and sluice structures', 'Tank (wewa) rehabilitation', 'Agricultural drainage systems'].map((item, i) => (
                   <li key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: '12px', color: 'var(--text-dark)' }}>
-                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>â€¢</span>
+                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>•</span>
                     {item}
                   </li>
                 ))}
@@ -150,7 +150,7 @@ export default function WaterInfrastructurePage() {
               <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
                 {['Urban drainage networks', 'Culverts and cross drainage', 'Retention basins', 'Flood protection structures', 'Land reclamation drainage'].map((item, i) => (
                   <li key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: '12px', color: 'var(--text-dark)' }}>
-                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>â€¢</span>
+                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>•</span>
                     {item}
                   </li>
                 ))}
@@ -164,7 +164,7 @@ export default function WaterInfrastructurePage() {
 
       {/* Clients & Quality */}
       <section style={{ padding: isMobile ? "60px 20px" : "100px 40px", backgroundColor: 'var(--bg-light)' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '50px' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '50px' }}>
           <div>
             <h2 style={{ color: 'var(--text-dark)', fontSize: '28px', fontFamily: 'var(--font-heading)', marginBottom: '30px' }}>
               Key Client organization's
@@ -174,15 +174,15 @@ export default function WaterInfrastructurePage() {
             </p>
             <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
               <li style={{ display: 'flex', alignItems: 'center', marginBottom: '15px', color: 'var(--text-dark)', padding: '15px', backgroundColor: 'var(--white)', borderRadius: '12px', border: '1px solid var(--border-soft)' }}>
-                <span style={{ color: 'var(--primary-red)', marginRight: '15px', fontSize: '20px' }}>âœ“</span>
+                <span style={{ color: 'var(--primary-red)', marginRight: '15px', fontSize: '20px' }}>✓</span>
                 <strong>National Water Supply & Drainage Board (NWSDB)</strong>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', marginBottom: '15px', color: 'var(--text-dark)', padding: '15px', backgroundColor: 'var(--white)', borderRadius: '12px', border: '1px solid var(--border-soft)' }}>
-                <span style={{ color: 'var(--primary-red)', marginRight: '15px', fontSize: '20px' }}>âœ“</span>
+                <span style={{ color: 'var(--primary-red)', marginRight: '15px', fontSize: '20px' }}>✓</span>
                 <strong>Department of Irrigation</strong>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', marginBottom: '15px', color: 'var(--text-dark)', padding: '15px', backgroundColor: 'var(--white)', borderRadius: '12px', border: '1px solid var(--border-soft)' }}>
-                <span style={{ color: 'var(--primary-red)', marginRight: '15px', fontSize: '20px' }}>âœ“</span>
+                <span style={{ color: 'var(--primary-red)', marginRight: '15px', fontSize: '20px' }}>✓</span>
                 <strong>Provincial Councils and Local Authorities</strong>
               </li>
             </ul>
