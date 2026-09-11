@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -488,7 +488,7 @@ export default function Home() {
                   { name: "U.D.A. SRI LANKA", logo: "/images/clients/uda-correct.jpg" },
                   { name: "MINISTRY OF IRRIGATION", logo: "/images/clients/irrigation-correct.svg" },
                   { name: "IRCON INTERNATIONAL", logo: "/images/clients/ircon-correct.svg" },
-                  { name: "NBRO", logo: "/images/clients/nbro.svg" },
+                  { name: "NATIONAL BUILDING RESEARCH ORGANISATION", logo: "/images/clients/nbro.svg" },
                   { name: "MINISTRY OF FISHERIES", logo: "/images/clients/fisheries.svg" }
                 ].map((client, idx) => (
                   <div 
