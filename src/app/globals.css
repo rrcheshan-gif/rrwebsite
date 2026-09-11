@@ -51,7 +51,7 @@
 }
 
 /* =================================================
-   LIGHT MODE â€” body baseline
+   LIGHT MODE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â body baseline
    ================================================= */
 [data-theme="light"] body,
 :root:not([data-theme="dark"]) body {
@@ -61,14 +61,14 @@
 }
 
 /* =================================================
-   DARK MODE â€” body & base text
+   DARK MODE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â body & base text
    ================================================= */
 [data-theme="dark"] body {
   background-color: #0f172a;
   color: #f8fafc;
 }
 
-/* Dark mode base heading colours â€” only apply when NOT already
+/* Dark mode base heading colours ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â only apply when NOT already
    overridden by an inline style (CSS specificity: attribute selector
    beats tag selector, but inline style wins over all).
    We rely on inline style={{ color: "var(--text-dark)" }} propagating
@@ -176,17 +176,17 @@
 }
 
 /* ===================================================
-   COMPREHENSIVE DARK MODE â€” ABOUT US & GENERAL PAGES
+   COMPREHENSIVE DARK MODE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ABOUT US & GENERAL PAGES
    =================================================== */
 
 /* =================================================
-   DARK MODE â€” CARD & CONTAINER BACKGROUNDS
+   DARK MODE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â CARD & CONTAINER BACKGROUNDS
    CSS variables (--white, --bg-light, --border-soft) already
    adapt automatically via the [data-theme="dark"] block above.
    Only add overrides here for elements that DON'T use CSS variables.
    ================================================= */
 
-/* hover-lift cards adapt via var(--white) background â€” border only */
+/* hover-lift cards adapt via var(--white) background ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â border only */
 [data-theme="dark"] .hover-lift {
   border-color: rgba(255, 255, 255, 0.1) !important;
 }
@@ -552,7 +552,7 @@ ul {
     justify-content: center;
   }
 
-/* Desktop actions: theme toggle + Contact Us — always at the far right */
+/* Desktop actions: theme toggle + Contact Us Ã¢â‚¬â€ always at the far right */
 .nav-desktop-actions {
   display: flex;
   align-items: center;
@@ -996,6 +996,8 @@ ul {
     margin-left: auto !important;
     margin-right: auto !important;
   }
+
+
 
   .section-title,
   .section-title h2,
@@ -2098,13 +2100,13 @@ body {
     max-width: 100% !important;
   }
 
-  /* Collage / photo grid — keep 2 cols but smaller rows on mobile */
+  /* Collage / photo grid Ã¢â‚¬â€ keep 2 cols but smaller rows on mobile */
   .collage-grid {
     grid-template-rows: repeat(2, clamp(120px, 25vw, 180px)) !important;
     gap: 10px !important;
   }
 
-  /* Service cards — allow full width */
+  /* Service cards Ã¢â‚¬â€ allow full width */
   .modern-service-card {
     width: 100% !important;
     max-width: 100% !important;
@@ -2149,17 +2151,17 @@ body {
 }
 
 /* ============================================
-   TARGETED MOBILE FIXES — DOES NOT AFFECT DESKTOP
+   TARGETED MOBILE FIXES Ã¢â‚¬â€ DOES NOT AFFECT DESKTOP
    ============================================ */
 
 @media (max-width: 768px) {
 
-  /* ── HERO SLIDER ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ HERO SLIDER Ã¢â€â‚¬Ã¢â€â‚¬ */
   .hero-fullscreen {
     height: 100svh !important; /* safe viewport on mobile */
   }
 
-  /* Hero heading — prevent overflow */
+  /* Hero heading Ã¢â‚¬â€ prevent overflow */
   .hero-fullscreen h2 {
     font-size: clamp(2rem, 9vw, 3rem) !important;
     word-break: break-word !important;
@@ -2172,7 +2174,7 @@ body {
     padding: 0 8px !important;
   }
 
-  /* Hero buttons — stack on tiny phones */
+  /* Hero buttons Ã¢â‚¬â€ stack on tiny phones */
   .hero-buttons {
     flex-direction: column !important;
     align-items: center !important;
@@ -2186,7 +2188,7 @@ body {
     justify-content: center !important;
   }
 
-  /* ── CORPORATE PROFILE COLLAGE ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ CORPORATE PROFILE COLLAGE Ã¢â€â‚¬Ã¢â€â‚¬ */
   .collage-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     grid-template-rows: repeat(2, clamp(110px, 28vw, 160px)) !important;
@@ -2199,20 +2201,20 @@ body {
     display: none !important;
   }
 
-  /* ── SERVICES GRID ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ SERVICES GRID Ã¢â€â‚¬Ã¢â€â‚¬ */
   .modern-service-card {
     width: 100% !important;
     max-width: 100% !important;
     min-height: 220px !important;
   }
 
-  /* services scroll row — allow wrap on mobile */
+  /* services scroll row Ã¢â‚¬â€ allow wrap on mobile */
   div[style*="scroll-snap-type"] {
     flex-wrap: wrap !important;
     overflow-x: visible !important;
   }
 
-  /* ── STATS / KEY FIGURES ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ STATS / KEY FIGURES Ã¢â€â‚¬Ã¢â€â‚¬ */
   .stats-container {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 16px !important;
@@ -2225,7 +2227,7 @@ body {
     font-size: 2rem !important;
   }
 
-  /* ── SECTION PADDING ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ SECTION PADDING Ã¢â€â‚¬Ã¢â€â‚¬ */
   section {
     padding-left: 16px !important;
     padding-right: 16px !important;
@@ -2247,43 +2249,43 @@ body {
     padding-bottom: 35px !important;
   }
 
-  /* ── FLEX ROW → COLUMN for two-column layouts ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ FLEX ROW Ã¢â€ â€™ COLUMN for two-column layouts Ã¢â€â‚¬Ã¢â€â‚¬ */
   div[style*="display: \"flex\""][style*="flexWrap: \"wrap\""] {
     flex-direction: column !important;
   }
 
-  /* ── NEWS CARDS grid ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ NEWS CARDS grid Ã¢â€â‚¬Ã¢â€â‚¬ */
   .news-card {
     width: 100% !important;
     min-width: unset !important;
   }
 
-  /* ── PROJECT HIGHLIGHT cards ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ PROJECT HIGHLIGHT cards Ã¢â€â‚¬Ã¢â€â‚¬ */
   div[style*="minWidth: 'min(100%, 350px)'"] {
     min-width: 100% !important;
     width: 100% !important;
   }
 
-  /* ── CLIENT LOGO row ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ CLIENT LOGO row Ã¢â€â‚¬Ã¢â€â‚¬ */
   div[style*="min(100%, 340px)"] {
     width: 100% !important;
     min-width: unset !important;
   }
 
-  /* ── FOOTER — stack columns ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ FOOTER Ã¢â‚¬â€ stack columns Ã¢â€â‚¬Ã¢â€â‚¬ */
   .footer-grid {
     grid-template-columns: 1fr !important;
     gap: 30px !important;
   }
 
-  /* ── TABLE ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ TABLE Ã¢â€â‚¬Ã¢â€â‚¬ */
   table {
     display: block !important;
     overflow-x: auto !important;
     white-space: nowrap !important;
   }
 
-  /* ── Dropdown menus: don't render off-screen ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ Dropdown menus: don't render off-screen Ã¢â€â‚¬Ã¢â€â‚¬ */
   .dropdown-menu {
     position: static !important;
     opacity: 1 !important;
@@ -2293,7 +2295,7 @@ body {
     padding: 0 !important;
   }
 
-  /* Ken Burns zoom — reduce on mobile to avoid content clip */
+  /* Ken Burns zoom Ã¢â‚¬â€ reduce on mobile to avoid content clip */
   img[style*="scale(1.1)"] {
     transform: scale(1.04) !important;
   }
@@ -2312,3 +2314,8 @@ body {
     padding: 12px 20px !important;
   }
 }
+
+/* Global Page Header Widen Fix */
+.page-header p { max-width: 1000px !important; }
+
+.page-header h1 { font-size: clamp(2.5rem, 6vw, 4.2rem) !important; letter-spacing: -0.02em; }
