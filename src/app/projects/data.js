@@ -1606,6 +1606,20 @@ const projectsData = [
         "/images/projects/new-folder/pudavkattu-yan-oya/1.jpg"
       ]
     },
+    {
+      id: 'project-sellakatharagama-bridge',
+      type: 'completed', category: "bridges",
+      title: "Construction of Sellakatharagama 6/2 Bridge",
+      status: "Completed",
+      client: "Road Development Authority",
+      duration: "18 months",
+      year: 2010,
+      heroImage: "/images/projects/new-folder/sellakatharagama-bridge/1.jpg",
+      galleryImages: [
+        "/images/projects/new-folder/sellakatharagama-bridge/1.jpg"
+      ]
+    },
+
 
   {
     id: 'project-84',
