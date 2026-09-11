@@ -142,7 +142,7 @@ export default function HistoryTimeline() {
                 
                 {/* Left: Image with Overlay Year */}
                 <div style={{ 
-                  width: isMobile ? '100%' : '50%', 
+                  width: isMobile ? '100%' : '35%', 
                   position: 'relative',
                   minHeight: isMobile ? '300px' : 'auto'
                 }}>
@@ -187,7 +187,7 @@ export default function HistoryTimeline() {
 
                 {/* Right: Content Area */}
                 <div style={{ 
-                  width: isMobile ? '100%' : '50%', 
+                  width: isMobile ? '100%' : '65%', 
                   padding: isMobile ? '40px 20px' : '50px 60px', 
                   display: 'flex', 
                   flexDirection: 'column', 
