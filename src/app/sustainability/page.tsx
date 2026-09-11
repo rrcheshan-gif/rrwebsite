@@ -80,7 +80,7 @@ export default function SustainabilityHub() {
           </div>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px", textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>Our Responsibility</h4>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Sustainability <span style={{ color: "var(--primary-red)" }}>& HSE</span></h1>
-          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "1200px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
+          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "800px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Building the foundations of Sri Lanka demands an absolute commitment to environmental balance, uncompromising worker safety, and community empowerment.
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function SustainabilityHub() {
             <h2 style={{ fontSize: isMobile ? "2.2rem" : "3rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0" }}>
               Our Four Pillars
             </h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "1200px", margin: "0 auto" }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "700px", margin: "0 auto" }}>
               Explore how our certified management systems translate into real-world impact across every infrastructure project we undertake.
             </p>
           </div>
@@ -149,7 +149,7 @@ export default function SustainabilityHub() {
             <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0" }}>
               Corporate Governance
             </h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "1200px", margin: "0 auto" }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto" }}>
               Our operational excellence is governed by strict ethical standards and proactive risk mitigation.
             </p>
           </div>

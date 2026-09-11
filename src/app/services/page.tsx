@@ -172,7 +172,7 @@ export default function Services() {
       `}</style>
 
       {/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ HERO ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */}
-      <section style={{
+      <section className="page-header" style={{
         backgroundImage: "linear-gradient(rgba(10,18,35,0.72), rgba(10,18,35,0.84)), url('/images/puttalam/puttalam-2.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center 35%',
@@ -206,7 +206,7 @@ export default function Services() {
 
 
       {/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ ALL SERVICES GRID ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */}
-      <section style={{ padding: isMobile ? '0 12px 60px' : '0 20px 100px' }}>
+      <section className="page-header" style={{ padding: isMobile ? '0 12px 60px' : '0 20px 100px' }}>
         <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
@@ -273,7 +273,7 @@ export default function Services() {
 
 
       {/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ RESOURCE PLANNING ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */}
-      <section style={{ padding: isMobile ? '60px 12px' : '100px 20px' }}>
+      <section className="page-header" style={{ padding: isMobile ? '60px 12px' : '100px 20px' }}>
         <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? '40px' : '80px', alignItems: 'center' }}>
           <div style={{ borderRadius: '28px', overflow: 'hidden', minHeight: isMobile ? '260px' : '460px', position: 'relative', boxShadow: '0 28px 60px rgba(0,0,0,0.14)' }}>
             <img src="/images/machinery/plant-6.jpg" alt="RR Construction heavy machinery fleet" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }}

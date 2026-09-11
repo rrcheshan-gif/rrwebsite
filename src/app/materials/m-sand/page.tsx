@@ -46,7 +46,7 @@ export default function MSandPage() {
           top: 0, left: 0, right: 0, bottom: 0,
           backgroundColor: 'rgba(0, 0, 0, 0.6)'
         }} />
-        <div style={{ position: 'relative', zIndex: 1, padding: '0 20px', maxWidth: "1200px" }}>
+        <div style={{ position: 'relative', zIndex: 1, padding: '0 20px', maxWidth: '800px' }}>
           <div style={{ marginBottom: '20px' }}>
             <Link href="/" style={{ color: 'var(--white)', textDecoration: 'none', opacity: 0.8 }}>Home</Link>
             <span style={{ margin: '0 10px', opacity: 0.8 }}>/</span>
@@ -110,7 +110,7 @@ export default function MSandPage() {
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '20px', color: 'var(--text-dark)' }}>
             M-Sand Production Plants
           </h2>
-          <p style={{ color: 'var(--text-light)', maxWidth: "1200px", margin: '0 auto 40px' }}>
+          <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto 40px' }}>
             Our M-Sand is available from our specialized quarry plants equipped with washing and screening facilities to ensure a silt-free, precisely graded final product.
           </p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>

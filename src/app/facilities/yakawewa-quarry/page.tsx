@@ -10,7 +10,7 @@ export default function YakawewaPlant() {
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0,0,0,0.4)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
-            <Link href="/facilities" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold" }}>ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Ãƒâ€šÃ‚Â Back to Quarries & Aggregates</Link>
+            <Link href="/facilities" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold" }}>Ã¢â€ Â Back to Quarries & Aggregates</Link>
           </div>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px", textShadow: "0 2px 5px rgba(0,0,0,0.8)" }}>State-of-the-Art Asphalt Batching Plant</h4>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Yakawewa <span style={{ color: "var(--primary-red)" }}>Plant</span></h1>
@@ -56,7 +56,7 @@ export default function YakawewaPlant() {
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
 
-          <div className="img-polish glass-panel" style={{ maxWidth: "1200px", margin: "0 auto", borderRadius: "16px", overflow: "hidden" }}>
+          <div className="img-polish glass-panel" style={{ maxWidth: "900px", margin: "0 auto", borderRadius: "16px", overflow: "hidden" }}>
             <img className="img-polished img-hover-zoom" src="/images/yakawewa-asphalt-2.jpg" alt="Yakawewa Asphalt Plant" style={{ width: "100%", height: "auto", maxHeight: "500px", objectFit: "cover" }} />
           </div>
         </div>

@@ -41,7 +41,7 @@ export default function HealthAndSafety() {
             </Link>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Occupational <span style={{ color: "var(--primary-red)" }}>Health & Safety</span></h1>
-          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "1200px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
+          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "800px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Protecting our {COMPANY_DATA.workforce} workers with a rigid 'Zero Harm' policy and absolute compliance to ISO 45001:2018.
           </p>
         </div>
@@ -159,7 +159,7 @@ export default function HealthAndSafety() {
             <h2 style={{ fontSize: "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0" }}>
               Comprehensive HSE Policy Integration
             </h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "1200px", margin: "0 auto", lineHeight: 1.8 }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.8 }}>
               Our commitment to Occupational Health and Safety extends beyond basic compliance. We have integrated strict protocols covering worker participation, emergency response, and continuous hazard management.
             </p>
           </div>
@@ -210,3 +210,5 @@ export default function HealthAndSafety() {
     </div>
   );
 }
+
+

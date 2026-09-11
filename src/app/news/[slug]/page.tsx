@@ -77,7 +77,7 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
       </section>
 
       {/* Article Content */}
-      <section style={{ padding: "20px 20px 100px" }}>
+      <section className="page-header" style={{ padding: "20px 20px 100px" }}>
         <div className="container" style={{ maxWidth: "800px", margin: "0 auto" }}>
           
           <div 

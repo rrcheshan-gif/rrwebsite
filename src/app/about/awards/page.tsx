@@ -84,7 +84,7 @@ export default function Awards() {
             </Link>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Project <span style={{ color: "var(--primary-red)" }}>Achievements</span></h1>
-          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "1200px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
+          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Recognized milestones and certifications in our pursuit of engineering excellence.
           </p>
         </div>
@@ -97,7 +97,7 @@ export default function Awards() {
             <div style={{ textAlign: "center", marginBottom: "50px" }}>
               <Award size={40} color="var(--primary-red)" style={{ margin: "0 auto 15px" }} />
               <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0 }}>International Certifications</h2>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "15px", maxWidth: "1200px", margin: "15px auto 0" }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "15px", maxWidth: "800px", margin: "15px auto 0" }}>
                 Our commitment to quality, safety, and environmental responsibility is independently verified by global standards.
               </p>
             </div>

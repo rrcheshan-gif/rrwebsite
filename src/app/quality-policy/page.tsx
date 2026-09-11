@@ -59,7 +59,7 @@ export default function QualityPolicy() {
             <h2 style={{ fontSize: "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0" }}>
               Management Commitment & Responsibilities
             </h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "1200px", margin: "0 auto", lineHeight: 1.8 }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.8 }}>
               Our Top Management demonstrates absolute leadership and commitment to the continual improvement of our Health, Safety, and Environmental (HSE) Management Systems.
             </p>
           </div>

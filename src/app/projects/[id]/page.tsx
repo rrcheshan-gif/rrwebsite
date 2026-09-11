@@ -160,7 +160,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
             }}
             style={{ position: 'absolute', left: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
-            ←
+            â†
           </button>
 
           <div style={{ position: 'relative', zIndex: 10000, maxWidth: '90%', maxHeight: '90vh' }} onClick={(e) => e.stopPropagation()}>
@@ -191,7 +191,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
             }}
             style={{ position: 'absolute', right: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
-            →
+            â†’
           </button>
         </div>
       )}
@@ -212,7 +212,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
             onClick={() => router.back()}
             style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '20px', color: '#ccc', textDecoration: 'none', paddingBottom: '2px', background: 'none', border: 'none', borderBottom: '1px solid #ccc', cursor: 'pointer', fontSize: '1rem', fontFamily: 'inherit' }}
           >
-            ← Back
+            â† Back
           </button>
           <div style={{ display: 'flex', gap: '8px', marginBottom: '15px' }}>
             <span style={{ padding: '5px 14px', background: 'rgba(15, 23, 42, 0.8)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.25)', borderRadius: "30px", fontSize: '0.8rem', fontWeight: 700,  letterSpacing: '0.5px' }}>{categoryDisplay}</span>

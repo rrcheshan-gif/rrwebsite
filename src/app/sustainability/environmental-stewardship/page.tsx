@@ -41,7 +41,7 @@ export default function EnvironmentalStewardship() {
             </Link>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Environmental <span style={{ color: "var(--primary-red)" }}>Stewardship</span></h1>
-          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "1200px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
+          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "800px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Building Sri Lanka's future infrastructure in harmony with its natural heritage, strictly guided by ISO 14001:2015.
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function EnvironmentalStewardship() {
             </h2>
           </div>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: "30px", maxWidth: "1200px", margin: "0 auto" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "30px", maxWidth: "900px", margin: "0 auto" }}>
             
             <div className="glass-panel hover-lift" style={{ background: "var(--white)", padding: "40px", borderRadius: "20px", border: "1px solid var(--border-soft)", display: "flex", flexWrap: "wrap", gap: "30px", alignItems: "flex-start", boxShadow: "0 10px 30px rgba(0,0,0,0.04)" }}>
               <div style={{ width: "80px", height: "80px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
@@ -144,7 +144,7 @@ export default function EnvironmentalStewardship() {
             <h2 style={{ fontSize: "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0" }}>
               Comprehensive Environmental Policy
             </h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "1200px", margin: "0 auto", lineHeight: 1.8 }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.8 }}>
               Our operations are strictly governed by our overarching Health, Safety, and Environment (HSE) Policy, ensuring we go beyond compliance to actively improve our ecological footprint.
             </p>
           </div>

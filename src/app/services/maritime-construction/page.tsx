@@ -50,7 +50,7 @@ export default function MaritimeConstructionPage() {
           backgroundColor: 'rgba(10, 15, 26, 0.75)',
           zIndex: 1
         }}></div>
-        <div style={{ position: 'relative', zIndex: 2, maxWidth: "1200px", margin: '0 auto' }}>
+        <div style={{ position: 'relative', zIndex: 2, maxWidth: '800px', margin: '0 auto' }}>
           <div style={{ 
             display: 'flex', 
             alignItems: 'center', 
@@ -149,7 +149,7 @@ export default function MaritimeConstructionPage() {
       {/* Core Services Grid */}
       <section style={{ padding: isMobile ? '60px 20px' : '100px 40px', backgroundColor: 'var(--bg-light)' }}>
         <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: isMobile ? '40px' : '60px', maxWidth: "1200px", margin: '0 auto 60px' }}>
+          <div style={{ textAlign: 'center', marginBottom: isMobile ? '40px' : '60px', maxWidth: '800px', margin: '0 auto 60px' }}>
             <h2 style={{ 
               fontSize: isMobile ? '32px' : '42px', 
               color: 'var(--text-dark)', 
@@ -473,7 +473,7 @@ export default function MaritimeConstructionPage() {
 
       {/* FAQ Section */}
       <section style={{ padding: isMobile ? '60px 20px' : '100px 40px', backgroundColor: 'var(--bg-light)' }}>
-        <div style={{ maxWidth: "1200px", margin: '0 auto' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '40px' }}>
             <h2 style={{ 
               fontSize: isMobile ? '32px' : '42px', 

@@ -47,7 +47,7 @@ export default function BridgeConstructionPage() {
             zIndex: 1,
           }}
         />
-        <div style={{ position: 'relative', zIndex: 2, maxWidth: "1200px", margin: '0 auto' }}>
+        <div style={{ position: 'relative', zIndex: 2, maxWidth: '800px', margin: '0 auto' }}>
           
           
 
@@ -165,7 +165,7 @@ export default function BridgeConstructionPage() {
       {/* 3 & 4 & 5. Core Services Grid */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--bg-light)' }}>
         <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: '60px', maxWidth: "1200px", margin: '0 auto 60px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '60px', maxWidth: '800px', margin: '0 auto 60px' }}>
             <h2
               style={{
                 fontSize: isMobile ? '32px' : '40px',
@@ -289,7 +289,7 @@ export default function BridgeConstructionPage() {
           >
             Major National Bridge Works
           </h2>
-          <p style={{ textAlign: 'center', fontSize: '18px', color: 'var(--text-light)', maxWidth: "1200px", margin: '0 auto 60px' }}>
+          <p style={{ textAlign: 'center', fontSize: '18px', color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto 60px' }}>
             Our capabilities allow us to undertake the nation's most demanding bridge construction contracts. Below are key highlights from our portfolio of critical river crossings and highway bridges.
           </p>
           
@@ -435,7 +435,7 @@ export default function BridgeConstructionPage() {
 
       {/* 9. FAQ Section */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--bg-light)' }}>
-        <div style={{ maxWidth: "1200px", margin: '0 auto' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <h2
             style={{
               fontSize: isMobile ? '32px' : '40px',

@@ -92,7 +92,7 @@ export default function GoalsAndTargets() {
             </div>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Goals & <span style={{ color: "var(--primary-red)" }}>Targets</span></h1>
-          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "20px", maxWidth: "1200px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
+          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "20px", maxWidth: "750px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Driving Sri Lanka's infrastructure forward through measurable objectives, operational excellence, and an unwavering commitment to sustainable progress.
           </p>
         </div>
@@ -100,7 +100,7 @@ export default function GoalsAndTargets() {
 
       {/* Main Objective */}
       <section style={{ padding: isMobile ? "30px 10px" : "40px 20px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
+        <div className="container" style={{ maxWidth: "900px", margin: "0 auto", padding: "0 16px" }}>
           <div style={{ background: "rgba(229, 57, 53, 0.05)", padding: "30px", borderRadius: "16px", borderLeft: "4px solid var(--primary-red)", textAlign: "center" }}>
             <h4 style={{ color: "var(--primary-red)", fontSize: "1.1rem", fontWeight: 800,  marginBottom: "15px" }}>Primary Objective</h4>
             <p style={{ color: "var(--text-dark)", fontSize: "1.2rem", fontWeight: 600, margin: 0, fontStyle: "italic", lineHeight: 1.6 }}>
@@ -118,7 +118,7 @@ export default function GoalsAndTargets() {
             <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px", lineHeight: 1.2 }}>
               Our Strategic <span style={{ color: "var(--primary-red)" }}>Goals</span>
             </h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "1200px", margin: "0 auto", lineHeight: 1.7 }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "700px", margin: "0 auto", lineHeight: 1.7 }}>
               These foundational pillars guide our daily operations and long-term strategic decisions across all our construction divisions.
             </p>
           </div>
