@@ -1,4 +1,4 @@
-// Sorted array of all RR Construction completed & ongoing projects by Year (Descending)
+﻿// Sorted array of all RR Construction completed & ongoing projects by Year (Descending)
 const projectsData = [
   // ONGOING PROJECTS
   {
@@ -920,9 +920,15 @@ const projectsData = [
     title: "Countermeasures at Six Locations in Sabaragamuwa & Uva",
     status: "Completed",
     client: "Road Development Authority",
-    
     duration: "24 Months",
-    year: 2020
+    year: 2020,
+    heroImage: "/images/projects/new-folder/sabaragamuwa-uva/1.jpg",
+    galleryImages: [
+      "/images/projects/new-folder/sabaragamuwa-uva/1.jpg",
+      "/images/projects/new-folder/sabaragamuwa-uva/2.jpg",
+      "/images/projects/new-folder/sabaragamuwa-uva/3.jpg",
+      "/images/projects/new-folder/sabaragamuwa-uva/4.jpg"
+    ]
   },
   {
     id: 'project-50',
