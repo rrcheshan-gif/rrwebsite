@@ -58,10 +58,10 @@ export default function BoardOfDirectors() {
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "30px", marginBottom: "60px" }}>
             {COMPANY_DATA.leadership.filter(l => l.role.includes('Director')).map((leader, idx) => (
-              <div key={idx} style={{ display: "flex", flexDirection: isMobile ? "column" : "row", alignItems: isMobile ? "center" : "flex-start", gap: "40px", background: "var(--white)", padding: isMobile ? "30px 20px" : "50px", borderRadius: "24px", border: "1px solid var(--border-soft)", textAlign: isMobile ? "center" : "left", boxShadow: "0 15px 40px rgba(0,0,0,0.06)", overflow: "hidden" }}>
+              <div key={idx} style={{ display: "flex", flexDirection: isMobile ? "column" : "row", alignItems: isMobile ? "center" : "stretch", gap: "40px", background: "var(--white)", padding: isMobile ? "30px 20px" : "50px", borderRadius: "24px", border: "1px solid var(--border-soft)", textAlign: isMobile ? "center" : "left", boxShadow: "0 15px 40px rgba(0,0,0,0.06)", overflow: "hidden" }}>
                 {leader.image ? (
-                  <div style={{ flexShrink: 0, width: isMobile ? "100%" : "320px", margin: isMobile ? "0 0 20px 0" : "0", borderRadius: "16px", padding: "8px", background: "var(--bg-light)", border: "1px solid var(--border-soft)", boxShadow: "0 15px 35px rgba(0,0,0,0.1)" }}>
-                    <img src={leader.image} alt={leader.name} style={{ width: "100%", height: "auto", display: "block", borderRadius: "10px" }} />
+                  <div style={{ display: "flex", flexShrink: 0, width: isMobile ? "100%" : "320px", margin: isMobile ? "0 0 20px 0" : "0", borderRadius: "16px", padding: "8px", background: "var(--bg-light)", border: "1px solid var(--border-soft)", boxShadow: "0 15px 35px rgba(0,0,0,0.1)" }}>
+                    <img src={leader.image} alt={leader.name} style={{ width: "100%", height: isMobile ? "auto" : "100%", objectFit: "cover", display: "block", borderRadius: "10px" }} />
                   </div>
                 ) : (
                   <div style={{ flexShrink: 0, width: isMobile ? "100%" : "330px", height: "330px", margin: isMobile ? "0 0 20px 0" : "0", background: "rgba(229, 57, 53, 0.1)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 15px 30px rgba(0,0,0,0.15)" }}>
@@ -92,10 +92,10 @@ export default function BoardOfDirectors() {
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "30px" }}>
             {COMPANY_DATA.leadership.filter(l => !l.role.includes('Director')).map((leader, idx) => (
-              <div key={idx} style={{ display: "flex", gap: "30px", background: "var(--white)", padding: isMobile ? "30px 20px" : "40px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: isMobile ? "center" : "flex-start", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left" }}>
+              <div key={idx} style={{ display: "flex", gap: "30px", background: "var(--white)", padding: isMobile ? "30px 20px" : "40px", borderRadius: "24px", border: "1px solid var(--border-soft)", alignItems: isMobile ? "center" : "stretch", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "center" : "left" }}>
                 {leader.image ? (
-                  <div style={{ width: isMobile ? "100%" : "200px", borderRadius: "16px", padding: "6px", background: "var(--bg-light)", border: "1px solid var(--border-soft)", flexShrink: 0, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" }}>
-                    <img src={leader.image} alt={leader.name} style={{ width: "100%", height: "auto", display: "block", borderRadius: "10px" }} />
+                  <div style={{ display: "flex", width: isMobile ? "100%" : "200px", borderRadius: "16px", padding: "6px", background: "var(--bg-light)", border: "1px solid var(--border-soft)", flexShrink: 0, boxShadow: "0 10px 25px rgba(0,0,0,0.08)" }}>
+                    <img src={leader.image} alt={leader.name} style={{ width: "100%", height: isMobile ? "auto" : "100%", objectFit: "cover", display: "block", borderRadius: "10px" }} />
                   </div>
                 ) : (
                   <div style={{ width: isMobile ? "100%" : "200px", height: "200px", background: "rgba(229, 57, 53, 0.1)", borderRadius: "12px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 10px 20px rgba(0,0,0,0.1)" }}>
