@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { ArrowRight, Flag, Construction, ShieldCheck, Map, Factory, ChevronRight } from 'lucide-react';
-import { COMPANY_DATA } from '@/data/company-data';
+import { Flag, Construction, ShieldCheck, Map, Factory, Anchor, Train, Globe } from 'lucide-react';
 
 export default function HistoryTimeline() {
   const [isMobile, setIsMobile] = useState(false);
@@ -19,31 +18,49 @@ export default function HistoryTimeline() {
     {
       epoch: "1995",
       title: "Foundation & First Projects",
-      desc: <>Established in <strong>1995</strong>, <strong>RR Construction (Pvt) Ltd</strong> began its journey in Sri Lanka's <strong>heavy civil engineering and construction industry</strong> with early civil works carried out in collaboration with <strong>ED Zublin AG</strong> on the <strong>Central Bank Extension Project</strong>. This landmark experience strengthened the company's engineering expertise, project management capabilities, and commitment to quality construction standards, while providing a strong foundation for its growth into <strong>civil engineering, infrastructure development, building construction, and large-scale construction projects in Sri Lanka</strong>. The successful delivery of these early works established RR Construction as a reliable construction partner and laid the foundation for its continued expansion into increasingly complex infrastructure projects.</>,
+      desc: <>Established in <strong>1995</strong>, <strong>RR Construction (Pvt) Ltd</strong> began its journey in Sri Lanka's heavy civil engineering and construction industry through early civil works carried out in collaboration with <strong>ED Zublin AG</strong> on the <strong>Central Bank Extension Project</strong>. This experience established a strong foundation in engineering, project execution, quality, and professional construction practices that would underpin the company's growth as a <strong>civil engineering company in Sri Lanka</strong>.</>,
       icon: <Flag size={24} color="var(--primary-red)" />
     },
     {
-      epoch: "2003",
-      title: "Building Experience",
-      desc: <>Following its early success, <strong>RR Construction (Pvt) Ltd</strong> expanded its technical expertise and workforce, undertaking diverse <strong>civil engineering and infrastructure projects in Sri Lanka</strong> for local and international clients. A key milestone was the <strong>Queen Elizabeth Quay Project at the Port of Colombo in 2003</strong>, which strengthened the company's experience in <strong>maritime and heavy civil engineering</strong>. In 2006, RR Construction further expanded its infrastructure portfolio through the <strong>Ampara Water Treatment Plant</strong>, developing its capabilities in <strong>water infrastructure and specialized civil construction</strong>. These projects strengthened the company's reputation for quality, technical competence, and reliable project delivery, creating a strong foundation for its continued growth in Sri Lanka's <strong>construction and infrastructure development sector</strong>.</>,
+      epoch: "2003–2006",
+      title: "Expanding Infrastructure Experience",
+      desc: <>RR Construction expanded its technical capabilities through major infrastructure projects for local and international clients. The <strong>Queen Elizabeth Quay Project at the Port of Colombo in 2003</strong> strengthened the company's expertise in <Link href="/services/maritime-construction" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>maritime and heavy civil engineering</Link>, followed by the <strong>Ampara Water Treatment Plant in 2006</strong>, which further developed its capabilities in <Link href="/services/water-infrastructure" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>water infrastructure</Link> and specialized civil construction.</>,
       icon: <Map size={24} color="var(--primary-red)" />
     },
     {
-      epoch: "2007",
-      title: "Construction Capability",
-      desc: <>As <strong>RR Construction (Pvt) Ltd</strong> continued to grow, the company expanded its <strong>construction and civil engineering capabilities</strong> across key infrastructure sectors, including <strong>road and highway construction, bridge construction, irrigation, drainage, water supply, and major civil engineering works</strong>. Major milestones included the successful completion of the <strong>Matara Mahanama Bridge in 2007</strong> and the installation of <strong>four steel bridges across Sri Lanka in 2009</strong>, strengthening the company's expertise in structural and bridge engineering. RR Construction also developed capabilities in <strong>multi-storey buildings, water-retaining structures, and complex infrastructure projects</strong>, supported by skilled professionals, technical expertise, construction resources, and integrated project management. This period marked the company's growth into a capable <strong>infrastructure and construction contractor in Sri Lanka</strong>, with the ability to independently deliver complex <strong>heavy civil engineering and infrastructure projects</strong> from planning and engineering through to completion.</>,
+      epoch: "2007–2009",
+      title: "Construction Capability Growth",
+      desc: <>The company expanded into key infrastructure sectors including <Link href="/services/road-construction" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>road and highway construction</Link>, <Link href="/services/bridge-construction" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>bridge construction</Link>, irrigation, drainage, water supply, buildings, and structural works. Major milestones included the <strong>Matara Mahanama Bridge in 2007</strong> and four steel bridges across Sri Lanka in <strong>2009</strong>, strengthening RR Construction's expertise in structural and bridge engineering as a capable <strong>infrastructure development</strong> contractor.<br /><br />The company also developed capabilities in multi-storey buildings, water-retaining structures, and complex infrastructure projects, supported by skilled professionals, technical expertise, and integrated project management.</>,
       icon: <Construction size={24} color="var(--primary-red)" />
     },
     {
       epoch: "2012",
-      title: "Infrastructure Specialist",
-      desc: <>Building on its expanding capabilities, <strong>RR Construction (Pvt) Ltd</strong> developed into a specialized <strong>infrastructure and heavy civil engineering contractor in Sri Lanka</strong>, undertaking complex projects across challenging environments. The company strengthened its expertise in <strong>maritime and marine construction</strong>, including dredging, breakwater construction, coastal protection, and reclamation, with notable experience such as the <strong>Oluvil Port Coastal Protection Project in 2012</strong> and works at the <strong>Gandara Fishery Harbour</strong>. Its capabilities also expanded into <strong>heavy steel fabrication, construction equipment rental, landslide mitigation, and rock-fall protection systems</strong>, supporting infrastructure development in Sri Lanka's hill-country regions. International project experience, including the <strong>R. Vandhoo Harbour Seawall Project in the Maldives</strong>, further strengthened the company's technical expertise and ability to deliver specialized <strong>maritime, coastal, geotechnical, structural, and heavy civil engineering projects</strong>.</>,
+      title: "Maritime & Infrastructure Specialization",
+      desc: <>RR Construction further developed its expertise in specialized infrastructure, including <Link href="/services/maritime-construction" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>maritime and marine construction</Link>, dredging, coastal protection, breakwater construction, and reclamation. The <strong>Oluvil Port Coastal Protection Project in 2012</strong>, executed for the Sri Lanka Ports Authority, marked an important milestone in the company's maritime construction experience. Capabilities also expanded into steel fabrication, construction equipment resources, and <Link href="/services/landslide-mitigation" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>geotechnical works</Link> including landslide mitigation and slope protection in Sri Lanka's hill-country regions.</>,
+      icon: <Anchor size={24} color="var(--primary-red)" />
+    },
+    {
+      epoch: "2016",
+      title: "International Infrastructure Experience",
+      desc: <>The company expanded its international project experience through overseas infrastructure developments, including the <strong>Upgrading of the Harbour Seawall in R. Vandhoo, Maldives</strong>, completed in 2016 for the Ministry of Environment and Energy. This strengthened RR Construction's capabilities in coastal protection, marine infrastructure, and specialized construction in challenging environments, building on its experience as a <Link href="/services/dredging-reclamation" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>marine and dredging contractor</Link>.</>,
+      icon: <Globe size={24} color="var(--primary-red)" />
+    },
+    {
+      epoch: "2019–2023",
+      title: "Expanding Railway & Infrastructure Capabilities",
+      desc: <>RR Construction continued to diversify its infrastructure portfolio across Sri Lanka, undertaking major road, bridge, maritime, water, geotechnical, and railway infrastructure projects. Railway capabilities were strengthened through projects including the <strong>Anuradhapura–Vavuniya Railway Track Rehabilitation</strong> and <strong>Maho–Anuradhapura Railway Line Track Rehabilitation &amp; Ancillary Works</strong>, expanding the company's role in Sri Lanka's <Link href="/services/railway-civil-works" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>railway construction</Link> and civil engineering sectors.</>,
+      icon: <Train size={24} color="var(--primary-red)" />
+    },
+    {
+      epoch: "2024–2026",
+      title: "Integrated Infrastructure Delivery",
+      desc: <>RR Construction continues to deliver complex <Link href="/projects" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>infrastructure projects</Link> across Sri Lanka, with capabilities spanning <Link href="/services/road-construction" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>road and highway construction</Link>, <Link href="/services/bridge-construction" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>bridges</Link>, <Link href="/services/railway-civil-works" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>railway infrastructure</Link>, <Link href="/services/maritime-construction" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>maritime and harbour construction</Link>, <Link href="/services/water-infrastructure" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>water infrastructure</Link>, irrigation, <Link href="/services/landslide-mitigation" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>geotechnical and landslide mitigation</Link>, and other heavy civil engineering works across all provinces of Sri Lanka.</>,
       icon: <Factory size={24} color="var(--primary-red)" />
     },
     {
       epoch: "Present",
-      title: "Current Capability",
-      desc: <>Today, <strong>RR Construction (Pvt) Ltd</strong> is a leading <strong>heavy civil engineering and infrastructure contractor in Sri Lanka</strong>, supported by extensive in-house resources and integrated project capabilities. The company maintains internationally recognized <Link href="/about/awards" style={{color: "var(--primary-red)", textDecoration: "none", fontWeight: 600}}><strong>ISO 9001, ISO 14001, and ISO 45001</strong></Link> management system certifications covering quality, environmental management, and occupational health and safety. With a self-owned fleet of <strong>1,000+ heavy construction machines</strong>, proprietary <strong>asphalt and aggregate production facilities</strong>, and a skilled workforce of <strong>1,400+ professionals</strong>, RR Construction has the resources to efficiently deliver complex infrastructure projects while reducing reliance on third-party resources. With <Link href="/projects" style={{color: "var(--primary-red)", textDecoration: "none", fontWeight: 600}}><strong>100+ completed projects</strong></Link>, the company continues to contribute to Sri Lanka's infrastructure development through expertise in <strong>road and highway construction, bridge construction, railway construction, maritime and marine construction, water infrastructure, and other major heavy civil engineering works</strong>.</>,
+      title: "Engineering Excellence & National Infrastructure",
+      desc: <>Today, <strong>RR Construction (Pvt) Ltd</strong> operates as an integrated <strong>heavy civil engineering and infrastructure contractor in Sri Lanka</strong>, supported by extensive construction resources, heavy machinery, asphalt and aggregate production capabilities, skilled professionals, and internationally recognized management systems including <Link href="/about/awards" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>ISO 9001, ISO 14001, and ISO 45001</Link> certifications. With experience across roads, highways, bridges, railways, maritime infrastructure, water systems, <Link href="/services/landslide-mitigation" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>geotechnical works</Link>, and other specialized construction sectors, RR Construction continues to contribute to resilient <strong>infrastructure development in Sri Lanka</strong>.</>,
       icon: <ShieldCheck size={24} color="var(--primary-red)" />
     }
   ];
@@ -69,13 +86,13 @@ export default function HistoryTimeline() {
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.85) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
-            <Link href="/about" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
+            <Link href="/about" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
                &larr; Back to About Us
             </Link>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our Journey of <span style={{ color: "var(--primary-red)" }}>Excellence.</span></h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
-            Three decades of steady growth, technical evolution, and nation-building. Discover how we evolved into Sri Lanka's leading heavy civil engineering powererhouse.
+            Three decades of steady growth, technical evolution, and nation-building. Discover how we evolved into Sri Lanka's leading heavy civil engineering company.
           </p>
         </div>
       </section>
@@ -86,11 +103,11 @@ export default function HistoryTimeline() {
           
           <div style={{ textAlign: 'center', marginBottom: '80px' }}>
             <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', fontFamily: 'var(--font-heading)', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 20px 0', letterSpacing: '-0.5px' }}>
-              Our History & <span style={{ color: 'var(--primary-red)' }}>Milestones</span>
+              Our History &amp; <span style={{ color: 'var(--primary-red)' }}>Milestones</span>
             </h2>
             <div style={{ width: '60px', height: '4px', background: 'var(--primary-red)', margin: '0 auto 20px' }}></div>
             <p style={{ color: 'var(--text-light)', fontSize: '1.15rem', maxWidth: '700px', margin: '0 auto' }}>
-              A legacy of engineering excellence, built on decades of trust, capability expansion, and successful project delivery.
+              A legacy of engineering excellence, built on decades of trust, capability expansion, and successful project delivery across Sri Lanka.
             </p>
           </div>
 
@@ -106,7 +123,7 @@ export default function HistoryTimeline() {
                 overflow: 'hidden'
               }}>
                 
-                {/* Left: Year & Icon (Distinct Corporate Block) */}
+                {/* Left: Year & Icon */}
                 <div style={{ 
                   width: isMobile ? '100%' : '260px', 
                   background: 'var(--bg-base)', 
