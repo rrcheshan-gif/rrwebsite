@@ -1566,6 +1566,20 @@ const projectsData = [
     duration: "03 Months",
     year: 2012
   },
+    {
+      id: 'project-badulla-buttala',
+      type: 'completed', category: "roads",
+      title: "Improvement to Badalkumbura - Buttala - Sellakataragama Road (52+000 - 56+800 Km)",
+      status: "Completed",
+      client: "Road Development Authority",
+      duration: "3 months",
+      year: 2011,
+      heroImage: "/images/projects/new-folder/badulla-buttala/1.jpg",
+      galleryImages: [
+        "/images/projects/new-folder/badulla-buttala/1.jpg"
+      ]
+    },
+
   {
     id: 'project-83',
     type: 'completed', category: "maritime",
