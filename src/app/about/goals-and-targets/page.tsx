@@ -1,9 +1,8 @@
 "use client";
 
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { Target, Flag, TrendingUp, ShieldCheck, Leaf, Users, Construction, Clock } from 'lucide-react';
-import { COMPANY_DATA } from '@/data/company-data';
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { Target, TrendingUp, CheckCircle, ArrowRight } from "lucide-react";
 
 export default function GoalsAndTargets() {
   const [isMobile, setIsMobile] = useState(false);
@@ -11,60 +10,105 @@ export default function GoalsAndTargets() {
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth <= 768);
     check();
-    window.addEventListener('resize', check);
-    return () => window.removeEventListener('resize', check);
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
   }, []);
 
-  const corporateGoals = [
+  const strategicGoals = [
     {
-      title: "Operational Excellence",
-      desc: "Maintain our position as a top-tier heavy civil engineering firm by consistently delivering projects that exceed national quality and safety standards.",
-      icon: <ShieldCheck size={32} color="var(--primary-red)" />
+      num: "01",
+      title: "Project Delivery & Performance",
+      desc: "Strengthen project planning, coordination and execution to deliver complex infrastructure projects efficiently and reliably.",
+      bullets: [
+        "Improve project planning and monitoring",
+        "Strengthen engineering and construction coordination",
+        "Reduce avoidable delays and rework",
+        "Improve overall project performance"
+      ]
     },
     {
-      title: "Sustainable Growth",
-      desc: "Expand our infrastructure portfolio responsibly while minimizing our carbon footprint and integrating green engineering practices across all operations.",
-      icon: <Leaf size={32} color="var(--primary-red)" />
+      num: "02",
+      title: "Infrastructure Capability Expansion",
+      desc: "Expand RR Construction's capability to undertake increasingly complex and technically demanding infrastructure projects.",
+      bullets: [
+        "Strengthen major infrastructure capabilities",
+        "Build capacity for complex engineering environments",
+        "Improve integrated project execution",
+        "Develop suitable regional and international opportunities"
+      ]
     },
     {
-      title: "Resource Independence",
-      desc: "Further scale our internal capabilities - from machinery to raw materials (Asphalt, ABC, M-Sand) - to ensure 100% self-reliance in project execution.",
-      icon: <Construction size={32} color="var(--primary-red)" />
+      num: "03",
+      title: "Engineering & Technical Advancement",
+      desc: "Advance engineering expertise and construction methodologies to respond effectively to complex project requirements.",
+      bullets: [
+        "Strengthen technical expertise",
+        "Improve engineering planning and methods",
+        "Develop practical solutions for challenging conditions",
+        "Apply lessons learned to future projects"
+      ]
     },
     {
-      title: "Workforce Development",
-      desc: "Empower our 1,400+ employees through continuous training, prioritizing their health, safety, and professional advancement in the engineering sector.",
-      icon: <Users size={32} color="var(--primary-red)" />
-    }
-  ];
-
-  const strategicTargets = [
-    {
-      label: "Zero-Harm Safety Record",
-      target: "Maintain 0 Lost Time Injuries (LTI) across all major highway and bridge projects annually.",
-      icon: <Target size={24} color="var(--white)" />
+      num: "04",
+      title: "Operational & Resource Efficiency",
+      desc: "Maximize the effective use of equipment, materials and internal resources to improve productivity and project efficiency.",
+      bullets: [
+        "Improve equipment planning and utilization",
+        "Strengthen material and resource planning",
+        "Reduce avoidable equipment downtime",
+        "Improve project resource allocation"
+      ]
     },
     {
-      label: "On-Time Project Delivery",
-      target: "Achieve 100% on-time completion for critical national infrastructure contracts.",
-      icon: <Clock size={24} color="var(--white)" />
+      num: "05",
+      title: "Client & Stakeholder Value",
+      desc: "Create long-term value through dependable delivery, professional communication and strong stakeholder relationships.",
+      bullets: [
+        "Understand client requirements",
+        "Improve project communication",
+        "Respond effectively to stakeholder needs",
+        "Build long-term professional relationships"
+      ]
     },
     {
-      label: "Fleet Modernization",
-      target: "Upgrade 20% of our heavy machinery fleet to more fuel-efficient models by the next fiscal year.",
-      icon: <TrendingUp size={24} color="var(--white)" />
+      num: "06",
+      title: "Market & Business Development",
+      desc: "Strengthen RR Construction's position in Sri Lanka's construction and infrastructure sector through strategic growth and suitable project opportunities.",
+      bullets: [
+        "Strengthen participation in major infrastructure projects",
+        "Diversify the project portfolio",
+        "Develop specialized construction opportunities",
+        "Explore suitable regional and international opportunities"
+      ]
     },
     {
-      label: "Material Quality Benchmark",
-      target: "Sustain ISO 9001 compliance with a 99.9% pass rate in aggregate and asphalt laboratory testing.",
-      icon: <Flag size={24} color="var(--white)" />
+      num: "07",
+      title: "Digital Transformation & Innovation",
+      desc: "Use appropriate digital technologies and modern management practices to improve project visibility, decision-making and operational efficiency.",
+      bullets: [
+        "Improve digital project monitoring",
+        "Strengthen data-based decision-making",
+        "Improve information flow",
+        "Evaluate practical construction technologies"
+      ]
+    },
+    {
+      num: "08",
+      title: "Organizational Strength & Governance",
+      desc: "Strengthen management systems, coordination and professional practices required for long-term organizational growth.",
+      bullets: [
+        "Improve internal coordination",
+        "Strengthen management processes",
+        "Support effective decision-making",
+        "Maintain accountability and professional conduct"
+      ]
     }
   ];
 
   return (
     <div style={{ paddingTop: isMobile ? "90px" : "110px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       
-      {/* Hero Section */}
+      {/* 1. Hero Section */}
       <section 
         className="page-header" 
         style={{ 
@@ -82,8 +126,8 @@ export default function GoalsAndTargets() {
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(15, 23, 42, 0.9) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
-            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
-              &larr; Back to Home
+            <Link href="/about" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
+              &larr; Back to About Us
             </Link>
           </div>
           <div style={{ display: "flex", justifyContent: "center", marginBottom: "20px" }}>
@@ -92,39 +136,27 @@ export default function GoalsAndTargets() {
             </div>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Goals & <span style={{ color: "var(--primary-red)" }}>Targets</span></h1>
-          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "20px", maxWidth: "750px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
-            Driving Sri Lanka's infrastructure forward through measurable objectives, operational excellence, and an unwavering commitment to sustainable progress.
+          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "20px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
+            Driving Sri Lanka's infrastructure development through effective project delivery, engineering excellence, resource efficiency and sustainable business growth.
           </p>
         </div>
       </section>
 
-      {/* Main Objective */}
-      <section style={{ padding: isMobile ? "30px 10px" : "40px 20px" }}>
-        <div className="container" style={{ maxWidth: "900px", margin: "0 auto", padding: "0 16px" }}>
-          <div style={{ background: "rgba(229, 57, 53, 0.05)", padding: "30px", borderRadius: "16px", borderLeft: "4px solid var(--primary-red)", textAlign: "center" }}>
-            <h4 style={{ color: "var(--primary-red)", fontSize: "1.1rem", fontWeight: 800,  marginBottom: "15px" }}>Primary Objective</h4>
-            <p style={{ color: "var(--text-dark)", fontSize: "1.2rem", fontWeight: 600, margin: 0, fontStyle: "italic", lineHeight: 1.6 }}>
-              "To achieve a high degree of customer satisfaction through appropriate technology, effective project delivery, cost-conscious execution and timely completion."
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Corporate Goals Section */}
+      {/* 2. Strategic Goals Grid */}
       <section style={{ padding: isMobile ? "20px 10px" : "40px 20px" }}>
-        <div className="container" style={{ maxWidth: '1440px', margin: "0 auto", padding: "0 16px" }}>
+        <div className="container" style={{ margin: "0 auto", padding: "0 16px" }}>
           
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px", lineHeight: 1.2 }}>
-              Our Strategic <span style={{ color: "var(--primary-red)" }}>Goals</span>
+              Strategic <span style={{ color: "var(--primary-red)" }}>Goals</span>
             </h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "700px", margin: "0 auto", lineHeight: 1.7 }}>
-              These foundational pillars guide our daily operations and long-term strategic decisions across all our construction divisions.
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.7 }}>
+              Our operational and strategic objectives are designed to continuously improve our performance across all phases of <Link href="/services" style={{ color: "var(--primary-red)", textDecoration: "none" }}>construction and engineering</Link>.
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))", gap: "30px" }}>
-            {corporateGoals.map((goal, idx) => (
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "30px" }}>
+            {strategicGoals.map((goal, idx) => (
               <div 
                 key={idx} 
                 style={{ 
@@ -140,69 +172,88 @@ export default function GoalsAndTargets() {
                 onMouseEnter={(e) => e.currentTarget.style.transform = "translateY(-5px)"}
                 onMouseLeave={(e) => e.currentTarget.style.transform = "translateY(0)"}
               >
-                <div style={{ background: "rgba(229, 57, 53, 0.08)", width: "70px", height: "70px", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "25px" }}>
-                  {goal.icon}
+                <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
+                  <div style={{ fontSize: "2rem", fontWeight: 900, color: "rgba(229, 57, 53, 0.15)", fontFamily: "var(--font-heading)", lineHeight: 1 }}>
+                    {goal.num}
+                  </div>
+                  <h3 style={{ fontSize: "1.3rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, lineHeight: 1.3 }}>
+                    {goal.title}
+                  </h3>
                 </div>
-                <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>
-                  {goal.title}
-                </h3>
-                <p style={{ color: "var(--text-light)", lineHeight: 1.7, margin: 0, fontSize: "1.05rem" }}>
+                <p style={{ color: "var(--text-light)", lineHeight: 1.6, margin: "0 0 20px 0", fontSize: "1.05rem" }}>
                   {goal.desc}
                 </p>
+                <ul style={{ listStyle: "none", padding: 0, margin: "auto 0 0 0" }}>
+                  {goal.bullets.map((bullet, bIdx) => (
+                    <li key={bIdx} style={{ display: "flex", alignItems: "flex-start", gap: "10px", marginBottom: "12px", color: "var(--text-dark)", fontSize: "0.95rem", lineHeight: 1.5, fontWeight: 500 }}>
+                      <CheckCircle size={18} color="var(--primary-red)" style={{ flexShrink: 0, marginTop: "2px" }} />
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Measurable Targets Section */}
-      <section style={{ padding: isMobile ? "60px 10px" : "100px 20px", background: "var(--white)" }}>
-        <div className="container" style={{ maxWidth: '1440px', margin: "0 auto", padding: "0 16px" }}>
-          
-          <div style={{ textAlign: "center", marginBottom: "60px" }}>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "15px", marginBottom: "20px" }}>
-              <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
-              <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px",  margin: 0, fontSize: "0.95rem", fontFamily: "var(--font-heading)" }}>Measurable Outcomes</h2>
-              <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
+      {/* 3. Strategic Priorities */}
+      <section style={{ padding: isMobile ? "50px 10px" : "80px 20px", background: "var(--white)", borderTop: "1px solid var(--border-soft)" }}>
+        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", padding: "0 16px" }}>
+          <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: "40px", alignItems: "center" }}>
+            <div style={{ flex: 1 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                <TrendingUp size={28} color="var(--primary-red)" />
+                <h2 style={{ fontSize: isMobile ? "2rem" : "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0 }}>
+                  Strategic Priorities
+                </h2>
+              </div>
+              <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", borderRadius: "2px", marginBottom: "30px" }}></div>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "15px" }}>
+                {[
+                  "Effective delivery of complex infrastructure projects",
+                  "Expansion of technical and project capabilities",
+                  "Efficient use of internal resources",
+                  "Strong client and stakeholder relationships",
+                  "Long-term organizational and business growth"
+                ].map((priority, idx) => (
+                  <li key={idx} style={{ display: "flex", alignItems: "center", gap: "15px", background: "var(--bg-light)", padding: "15px 20px", borderRadius: "12px", borderLeft: "4px solid var(--primary-red)", color: "var(--text-dark)", fontSize: "1.1rem", fontWeight: 600 }}>
+                    <span>{priority}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <h3 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", color: "var(--text-dark)", margin: "0 0 25px", fontFamily: "var(--font-heading)", lineHeight: 1.15, fontWeight: 800 }}>
-              Setting the Benchmark for <span style={{ color: "var(--primary-red)" }}>Performance</span>
-            </h3>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, maxWidth: "850px", margin: "0 auto 25px",  }}>
-              At RR Construction, we don't just set goals; we establish concrete, measurable targets. These targets keep our teams accountable and ensure we continuously deliver the highest standard of infrastructure to the nation.
-            </p>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, maxWidth: "850px", margin: "0 auto",  }}>
-              Whether it's accelerating project timelines through our internal machinery fleet or upholding flawless safety records on complex marine and bridge projects, our targets define our success.
-            </p>
-          </div>
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(450px, 1fr))", gap: "25px" }}>
-            {strategicTargets.map((st, idx) => (
-              <div key={idx} style={{ 
-                display: "flex", 
-                alignItems: "flex-start", 
-                gap: "20px", 
-                background: "var(--bg-light)", 
-                padding: "30px", 
-                borderRadius: "20px",
-                borderLeft: "4px solid var(--primary-red)",
-                boxShadow: "0 10px 25px rgba(0,0,0,0.03)"
-              }}>
-                <div style={{ background: "linear-gradient(135deg, var(--primary-red), #b71c1c)", minWidth: "50px", height: "50px", borderRadius: "12px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 5px 15px rgba(229, 57, 53, 0.3)", color: "white" }}>
-                  {st.icon}
-                </div>
-                <div>
-                  <h4 style={{ color: "var(--text-dark)", fontSize: "1.15rem", fontWeight: 800, margin: "0 0 10px", fontFamily: "var(--font-heading)" }}>
-                    {st.label}
-                  </h4>
-                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", margin: 0, lineHeight: 1.6,  }}>
-                    {st.target}
-                  </p>
+            
+            {!isMobile && (
+              <div style={{ flex: 1, position: "relative" }}>
+                <div style={{ background: "linear-gradient(135deg, rgba(229,57,53,0.1) 0%, rgba(229,57,53,0.02) 100%)", borderRadius: "24px", padding: "40px", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                   <p style={{ fontSize: "1.3rem", fontWeight: 700, color: "var(--text-dark)", lineHeight: 1.6, margin: 0, fontStyle: "italic" }}>
+                     "By aligning our resources, capabilities, and goals, we ensure that every project contributes directly to Sri Lanka's national development footprint."
+                   </p>
                 </div>
               </div>
-            ))}
+            )}
           </div>
+        </div>
+      </section>
 
+      {/* 4. Looking Ahead */}
+      <section style={{ padding: isMobile ? "50px 10px" : "80px 20px", backgroundColor: "var(--bg-light)" }}>
+        <div className="container" style={{ maxWidth: "850px", margin: "0 auto", padding: "0 16px", textAlign: "center" }}>
+          <h2 style={{ fontSize: isMobile ? "2rem" : "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 25px 0" }}>
+            Looking Ahead
+          </h2>
+          <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, margin: 0 }}>
+            RR Construction (Pvt) Ltd continues to strengthen its capabilities with a clear focus on effective project delivery, engineering advancement, infrastructure development and operational excellence. By continuously improving its people, processes, resources and technical capabilities, the company aims to respond effectively to the evolving requirements of Sri Lanka's infrastructure sector and create lasting value through reliable construction and civil engineering solutions.
+          </p>
+          <div style={{ marginTop: "40px", display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "15px" }}>
+            <Link href="/projects" className="btn-glass-red" style={{ padding: "12px 30px", fontSize: "1rem", borderRadius: "8px", color: "white", textDecoration: "none", fontWeight: 600, display: "inline-flex", alignItems: "center", gap: "10px" }}>
+              Explore Our Projects <ArrowRight size={18} />
+            </Link>
+            <Link href="/about/history" style={{ padding: "12px 30px", fontSize: "1rem", borderRadius: "8px", color: "var(--primary-red)", border: "2px solid var(--primary-red)", textDecoration: "none", fontWeight: 600, display: "inline-block" }}>
+              Our History
+            </Link>
+          </div>
         </div>
       </section>
 
