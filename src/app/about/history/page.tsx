@@ -133,57 +133,67 @@ export default function HistoryTimeline() {
                 display: 'flex', 
                 flexDirection: isMobile ? 'column' : 'row', 
                 background: 'var(--white)', 
-                borderRadius: '12px', 
+                borderRadius: '16px', 
                 border: '1px solid var(--border-soft)',
                 boxShadow: '0 4px 20px rgba(0,0,0,0.04)',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                minHeight: isMobile ? 'auto' : '380px'
               }}>
                 
-                {/* Left: Year, Icon & Project Image */}
+                {/* Left: Image with Overlay Year */}
                 <div style={{ 
-                  width: isMobile ? '100%' : '450px', 
-                  background: 'var(--bg-base)', 
-                  display: 'flex', 
-                  flexDirection: 'column', 
-                  justifyContent: 'flex-start', 
-                  alignItems: isMobile ? 'flex-start' : 'center',
-                  borderRight: isMobile ? 'none' : '1px solid var(--border-soft)',
-                  borderBottom: isMobile ? '1px solid var(--border-soft)' : 'none',
-                  flexShrink: 0
+                  width: isMobile ? '100%' : '50%', 
+                  position: 'relative',
+                  minHeight: isMobile ? '300px' : 'auto'
                 }}>
-                  {/* Year & Icon block */}
-                  <div style={{ padding: '40px 30px 24px', display: 'flex', flexDirection: 'column', alignItems: isMobile ? 'flex-start' : 'center', width: '100%' }}>
-                    <div style={{ background: 'rgba(229,57,53,0.1)', padding: '16px', borderRadius: '50%', marginBottom: '20px', color: 'var(--primary-red)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <img
+                    src={encodeURI(e.image)}
+                    alt={e.imageAlt}
+                    style={{ 
+                      width: '100%', 
+                      height: '100%', 
+                      objectFit: 'cover',
+                      display: 'block',
+                      position: 'absolute',
+                      top: 0, left: 0,
+                      transition: 'transform 0.5s ease'
+                    }}
+                    onError={(ev) => { (ev.target as HTMLImageElement).style.display = 'none'; }}
+                    className="img-hover-zoom"
+                  />
+                  {/* Overlay Badge for Year */}
+                  <div style={{ 
+                    position: 'absolute', 
+                    top: '30px', 
+                    left: '30px', 
+                    background: 'rgba(255,255,255,0.95)', 
+                    backdropFilter: 'blur(10px)',
+                    padding: '12px 24px', 
+                    borderRadius: '12px', 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    gap: '15px', 
+                    boxShadow: '0 10px 30px rgba(0,0,0,0.15)',
+                    zIndex: 2
+                  }}>
+                    <div style={{ background: 'rgba(229,57,53,0.1)', padding: '10px', borderRadius: '50%', color: 'var(--primary-red)', display: 'flex' }}>
                       {e.icon}
                     </div>
-                    <h2 style={{ fontSize: '2.5rem', fontFamily: 'var(--font-heading)', fontWeight: 900, color: 'var(--text-dark)', margin: 0, lineHeight: 1, textAlign: isMobile ? 'left' : 'center' }}>
+                    <h2 style={{ fontSize: '2rem', fontFamily: 'var(--font-heading)', fontWeight: 900, color: 'var(--text-dark)', margin: 0, lineHeight: 1 }}>
                       {e.epoch}
                     </h2>
-                  </div>
-
-                  {/* Project Image */}
-                  <div style={{ width: '100%', flex: isMobile ? 'none' : 1, minHeight: isMobile ? '250px' : '300px', overflow: 'hidden', position: 'relative' }}>
-                    <img
-                      src={encodeURI(e.image)}
-                      alt={e.imageAlt}
-                      style={{ 
-                        width: '100%', 
-                        height: '100%', 
-                        objectFit: 'cover',
-                        display: 'block',
-                        transition: 'transform 0.5s ease',
-                        minHeight: isMobile ? '250px' : '300px'
-                      }}
-                      onError={(ev) => { (ev.target as HTMLImageElement).style.display = 'none'; }}
-                      className="img-hover-zoom"
-                    />
-                    {/* Subtle red overlay at bottom */}
-                    <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '40px', background: 'linear-gradient(to top, rgba(229,57,53,0.18), transparent)' }} />
                   </div>
                 </div>
 
                 {/* Right: Content Area */}
-                <div style={{ flex: 1, padding: isMobile ? '30px 20px' : '60px 80px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <div style={{ 
+                  width: isMobile ? '100%' : '50%', 
+                  padding: isMobile ? '40px 20px' : '50px 60px', 
+                  display: 'flex', 
+                  flexDirection: 'column', 
+                  justifyContent: 'center',
+                  zIndex: 1
+                }}>
                   <h3 style={{ fontSize: '2rem', fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'var(--primary-red)', marginBottom: '20px' }}>
                     {e.title}
                   </h3>
