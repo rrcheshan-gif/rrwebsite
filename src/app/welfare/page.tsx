@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 
 export default function Welfare() {
   return (
@@ -29,7 +29,7 @@ export default function Welfare() {
       </section>
 
       <section style={{ padding: "0 20px 100px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", flexWrap: "wrap", gap: "50px" }}>
+        <div className="container" style={{ maxWidth: '1440px', margin: "0 auto", display: "flex", flexWrap: "wrap", gap: "50px" }}>
           <div style={{ flex: 1, minWidth: 'min(100%, 300px)' }}>
             <img className="img-polished img-hover-zoom" src="/images/page-headers/bg-6.jpg" alt="Health Benefits" style={{ width: "100%", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }} />
           </div>
@@ -52,7 +52,7 @@ export default function Welfare() {
           </div>
         </div>
         
-        <div className="container" style={{ maxWidth: "1200px", margin: "80px auto 0", display: "flex", flexWrap: "wrap-reverse", gap: "50px" }}>
+        <div className="container" style={{ maxWidth: '1440px', margin: "80px auto 0", display: "flex", flexWrap: "wrap-reverse", gap: "50px" }}>
           <div style={{ flex: 1, minWidth: 'min(100%, 300px)', display: "flex", flexDirection: "column", justifyContent: "center" }}>
             <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "2rem", marginBottom: "20px", color: "var(--text-dark)" }}>Financial & Social Support</h3>
             <ul style={{ listStyle: "none", padding: 0 }}>
@@ -78,4 +78,3 @@ export default function Welfare() {
     </div>
   );
 }
-

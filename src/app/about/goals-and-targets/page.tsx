@@ -112,7 +112,7 @@ export default function GoalsAndTargets() {
 
       {/* Corporate Goals Section */}
       <section style={{ padding: isMobile ? "20px 10px" : "40px 20px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
+        <div className="container" style={{ maxWidth: '1440px', margin: "0 auto", padding: "0 16px" }}>
           
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px", lineHeight: 1.2 }}>
@@ -157,7 +157,7 @@ export default function GoalsAndTargets() {
 
       {/* Measurable Targets Section */}
       <section style={{ padding: isMobile ? "60px 10px" : "100px 20px", background: "var(--white)" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
+        <div className="container" style={{ maxWidth: '1440px', margin: "0 auto", padding: "0 16px" }}>
           
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "15px", marginBottom: "20px" }}>
@@ -209,4 +209,3 @@ export default function GoalsAndTargets() {
     </div>
   );
 }
-

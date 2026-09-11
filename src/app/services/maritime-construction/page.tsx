@@ -86,7 +86,7 @@ export default function MaritimeConstructionPage() {
 
       {/* Maritime Construction Capabilities */}
       <section style={{ padding: isMobile ? '60px 20px' : '100px 40px', backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
           <div style={{ 
             display: 'grid', 
             gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', 
@@ -148,7 +148,7 @@ export default function MaritimeConstructionPage() {
 
       {/* Core Services Grid */}
       <section style={{ padding: isMobile ? '60px 20px' : '100px 40px', backgroundColor: 'var(--bg-light)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: isMobile ? '40px' : '60px', maxWidth: '800px', margin: '0 auto 60px' }}>
             <h2 style={{ 
               fontSize: isMobile ? '32px' : '42px', 
@@ -284,7 +284,7 @@ export default function MaritimeConstructionPage() {
 
       {/* Selected Projects */}
       <section style={{ padding: isMobile ? '60px 20px' : '100px 40px', backgroundColor: 'var(--bg-light)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '40px', flexDirection: isMobile ? 'column' : 'row', gap: '20px' }}>
             <div>
               <h2 style={{ 
@@ -412,7 +412,7 @@ export default function MaritimeConstructionPage() {
 
       {/* Marine Equipment & Safety */}
       <section style={{ padding: isMobile ? '60px 20px' : '100px 40px', backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
           <div style={{ 
             display: 'grid', 
             gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', 

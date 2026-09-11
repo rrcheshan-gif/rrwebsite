@@ -70,7 +70,7 @@ export default function AsphaltPage() {
 
       {/* Asphalt Plant Operations */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '20px', color: 'var(--text-dark)' }}>
             Asphalt Plant Operations
           </h2>
@@ -99,7 +99,7 @@ export default function AsphaltPage() {
 
       {/* Hot Mix Asphalt Production */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 20px' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
           <div style={{
             display: 'flex',
             flexDirection: isMobile ? 'column' : 'row',
@@ -138,7 +138,7 @@ export default function AsphaltPage() {
 
       {/* Asphalt Pavement Works */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '40px', color: 'var(--text-dark)' }}>
             Asphalt Pavement Works
           </h2>
@@ -168,7 +168,7 @@ export default function AsphaltPage() {
 
       {/* Specifications & QA */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 20px' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '40px' }}>
             <div style={{ backgroundColor: 'var(--white)', padding: '40px', borderRadius: '24px', border: '1px solid var(--border-soft)' }}>
               <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.5rem', marginBottom: '20px', color: 'var(--text-dark)' }}>Plant Specifications</h3>
@@ -191,7 +191,7 @@ export default function AsphaltPage() {
 
       {/* Road Projects & Inquiry */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
           <div style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', gap: '50px' }}>
             <div style={{ flex: 1 }}>
               <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '20px', color: 'var(--text-dark)' }}>Road Projects Using Our Asphalt</h2>

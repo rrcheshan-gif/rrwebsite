@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 
 export default function Training() {
   return (
@@ -29,7 +29,7 @@ export default function Training() {
       </section>
 
       <section style={{ padding: "0 20px 100px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))", gap: "40px" }}>
+        <div className="container" style={{ maxWidth: '1440px', margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))", gap: "40px" }}>
           <div style={{ background: "var(--white)", padding: "40px", borderRadius: "12px", borderLeft: "5px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
             <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", marginBottom: "15px", color: "var(--text-dark)" }}>Technical Skills Enhancement</h3>
             <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>We conduct regular workshops for our engineers on advanced BIM (Building Information Modeling) software, modern structural design analysis, and GPS-guided machinery operation to maintain our edge as a leading engineering contractor.</p>
@@ -47,4 +47,3 @@ export default function Training() {
     </div>
   );
 }
-

@@ -115,7 +115,7 @@ export default function HistoryTimeline() {
 
       {/* Timeline */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 0', background: 'var(--bg-light)' }}>
-        <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
+        <div className="container" style={{ margin: '0 auto' }}>
           
           <div style={{ textAlign: 'center', marginBottom: '80px' }}>
             <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', fontFamily: 'var(--font-heading)', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 20px 0', letterSpacing: '-0.5px' }}>

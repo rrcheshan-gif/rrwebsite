@@ -88,7 +88,7 @@ export default function SustainabilityHub() {
 
       {/* Grid Section */}
       <section style={{ padding: isMobile ? "20px 10px 80px" : "40px 20px 100px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
+        <div className="container" style={{ maxWidth: '1440px', margin: "0 auto", padding: "0 16px" }}>
           
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontSize: isMobile ? "2.2rem" : "3rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0" }}>
@@ -144,7 +144,7 @@ export default function SustainabilityHub() {
 
       {/* Corporate Governance & Risk Section */}
       <section style={{ padding: isMobile ? "40px 10px 80px" : "60px 20px 100px", background: "var(--white)", borderTop: "1px solid var(--border-soft)" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
+        <div className="container" style={{ maxWidth: '1440px', margin: "0 auto", padding: "0 16px" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0" }}>
               Corporate Governance
@@ -203,5 +203,4 @@ export default function SustainabilityHub() {
     </div>
   );
 }
-
 
