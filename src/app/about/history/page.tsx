@@ -115,7 +115,7 @@ export default function HistoryTimeline() {
 
       {/* Timeline */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 0', background: 'var(--bg-light)' }}>
-        <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
+        <div className="container" style={{ maxWidth: '1440px', margin: '0 auto' }}>
           
           <div style={{ textAlign: 'center', marginBottom: '80px' }}>
             <h2 style={{ fontSize: 'clamp(1.8rem, 6vw, 4.2rem)', fontFamily: 'var(--font-heading)', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 20px 0', letterSpacing: '-0.5px' }}>
@@ -141,7 +141,7 @@ export default function HistoryTimeline() {
                 
                 {/* Left: Year, Icon & Project Image */}
                 <div style={{ 
-                  width: isMobile ? '100%' : '260px', 
+                  width: isMobile ? '100%' : '450px', 
                   background: 'var(--bg-base)', 
                   display: 'flex', 
                   flexDirection: 'column', 
@@ -162,7 +162,7 @@ export default function HistoryTimeline() {
                   </div>
 
                   {/* Project Image */}
-                  <div style={{ width: '100%', flex: isMobile ? 'none' : 1, minHeight: isMobile ? '180px' : '160px', overflow: 'hidden', position: 'relative' }}>
+                  <div style={{ width: '100%', flex: isMobile ? 'none' : 1, minHeight: isMobile ? '250px' : '300px', overflow: 'hidden', position: 'relative' }}>
                     <img
                       src={encodeURI(e.image)}
                       alt={e.imageAlt}
@@ -172,7 +172,7 @@ export default function HistoryTimeline() {
                         objectFit: 'cover',
                         display: 'block',
                         transition: 'transform 0.5s ease',
-                        minHeight: isMobile ? '180px' : '160px'
+                        minHeight: isMobile ? '250px' : '300px'
                       }}
                       onError={(ev) => { (ev.target as HTMLImageElement).style.display = 'none'; }}
                       className="img-hover-zoom"
@@ -183,11 +183,11 @@ export default function HistoryTimeline() {
                 </div>
 
                 {/* Right: Content Area */}
-                <div style={{ flex: 1, padding: isMobile ? '30px 20px' : '50px 40px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                  <h3 style={{ fontSize: '1.8rem', fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'var(--primary-red)', marginBottom: '15px' }}>
+                <div style={{ flex: 1, padding: isMobile ? '30px 20px' : '60px 80px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                  <h3 style={{ fontSize: '2rem', fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'var(--primary-red)', marginBottom: '20px' }}>
                     {e.title}
                   </h3>
-                  <p style={{ color: 'var(--text-light)', fontSize: '1.05rem', lineHeight: 1.8, margin: 0, textAlign: 'justify' }}>
+                  <p style={{ color: 'var(--text-light)', fontSize: '1.15rem', lineHeight: 1.8, margin: 0, textAlign: 'justify' }}>
                     {e.desc}
                   </p>
                 </div>
