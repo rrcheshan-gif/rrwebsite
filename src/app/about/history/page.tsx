@@ -14,7 +14,7 @@ const timelineEvents = [
     icon: <Flag size={24} color="var(--primary-red)" />
   },
   {
-    epoch: "2003Ã¢â‚¬â€œ2006",
+    epoch: "2003ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“2006",
     title: "Expanding Infrastructure Experience",
     image: "/images/projects/new-folder/CONSTRUCTION OF WATER TREATMENT PLANT -AMPARA/1.jpg",
     imageAlt: "Ampara Water Treatment Plant - water infrastructure project in Sri Lanka",
@@ -22,7 +22,7 @@ const timelineEvents = [
     icon: <Map size={24} color="var(--primary-red)" />
   },
   {
-    epoch: "2007Ã¢â‚¬â€œ2009",
+    epoch: "2007ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“2009",
     title: "Construction Capability Growth",
     image: "/images/projects/new-folder/hirana-bridges/1.jpg",
     imageAlt: "Steel bridge construction in Sri Lanka - Hirana bridge by RR Construction",
@@ -46,15 +46,15 @@ const timelineEvents = [
     icon: <Globe size={24} color="var(--primary-red)" />
   },
   {
-    epoch: "2019Ã¢â‚¬â€œ2023",
+    epoch: "2019ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“2023",
     title: "Expanding Railway & Infrastructure Capabilities",
     image: "/images/projects/Anuradhapura-Vauniya/1.jpg",
     imageAlt: "Anuradhapura Vavuniya railway track rehabilitation project in Sri Lanka",
-    desc: <>RR Construction continued to diversify its infrastructure portfolio across Sri Lanka, undertaking major road, bridge, maritime, water, geotechnical, and railway infrastructure projects. Railway capabilities were strengthened through projects including the <strong>AnuradhapuraÃ¢â‚¬â€œVavuniya Railway Track Rehabilitation</strong> and <strong>MahoÃ¢â‚¬â€œAnuradhapura Railway Line Track Rehabilitation &amp; Ancillary Works</strong>, expanding the company's role in Sri Lanka's <Link href="/services/railway-civil-works" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>railway construction</Link> and civil engineering sectors.</>,
+    desc: <>RR Construction continued to diversify its infrastructure portfolio across Sri Lanka, undertaking major road, bridge, maritime, water, geotechnical, and railway infrastructure projects. Railway capabilities were strengthened through projects including the <strong>AnuradhapuraÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Vavuniya Railway Track Rehabilitation</strong> and <strong>MahoÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Anuradhapura Railway Line Track Rehabilitation &amp; Ancillary Works</strong>, expanding the company's role in Sri Lanka's <Link href="/services/railway-civil-works" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>railway construction</Link> and civil engineering sectors.</>,
     icon: <Train size={24} color="var(--primary-red)" />
   },
   {
-    epoch: "2024Ã¢â‚¬â€œ2026",
+    epoch: "2024ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“2026",
     title: "Integrated Infrastructure Delivery",
     image: "/images/projects/new-folder/maho-railway/Background image.jpg",
     imageAlt: "Railway infrastructure construction in Sri Lanka - Maho to Anuradhapura line",
@@ -106,7 +106,7 @@ export default function HistoryTimeline() {
                &larr; Back to About Us
             </Link>
           </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our Journey of <span style={{ color: "var(--primary-red)" }}>Excellence.</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our Journey of <span style={{ color: "var(--primary-red)" }}>Excellence.</span></h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "1200px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Three decades of steady growth, technical evolution, and nation-building. Discover how we evolved into Sri Lanka's leading heavy civil engineering company.
           </p>
@@ -118,7 +118,7 @@ export default function HistoryTimeline() {
         <div className="container" style={{ margin: '0 auto' }}>
           
           <div style={{ textAlign: 'center', marginBottom: '80px' }}>
-            <h2 style={{ fontSize: 'clamp(2.5rem, 6vw, 4.2rem)', fontFamily: 'var(--font-heading)', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 20px 0', letterSpacing: '-0.5px' }}>
+            <h2 style={{ fontSize: 'clamp(1.8rem, 6vw, 4.2rem)', fontFamily: 'var(--font-heading)', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 20px 0', letterSpacing: '-0.5px' }}>
               Our History &amp; <span style={{ color: 'var(--primary-red)' }}>Milestones</span>
             </h2>
             <div style={{ width: '60px', height: '4px', background: 'var(--primary-red)', margin: '0 auto 20px' }}></div>

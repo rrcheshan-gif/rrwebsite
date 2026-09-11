@@ -68,7 +68,7 @@ export default function QuarriesAggregates() {
             }}
             style={{ position: 'absolute', left: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
-            ÃƒÂ¢Ã¢â‚¬Â Ã‚Â
+            ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Ãƒâ€šÃ‚Â
           </button>
 
           <img src={`/${lightboxImg.replace(/^\//, '')}`} alt="Fullscreen view" style={{ maxWidth: '90%', maxHeight: '90vh', borderRadius: '8px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', objectFit: 'contain', position: 'relative', zIndex: 10000 }} />
@@ -82,7 +82,7 @@ export default function QuarriesAggregates() {
             }}
             style={{ position: 'absolute', right: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
-            ÃƒÂ¢Ã¢â‚¬Â '
+            ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â '
           </button>
         </div>
       )}
@@ -95,7 +95,7 @@ export default function QuarriesAggregates() {
             </Link>
           </div>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px", textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>Premium Aggregates Supply</h4>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Quarries & <span style={{ color: "var(--primary-red)" }}>Aggregates</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Quarries & <span style={{ color: "var(--primary-red)" }}>Aggregates</span></h1>
         </div>
       </section>
 

@@ -40,7 +40,7 @@ export default function EnvironmentalStewardship() {
               &larr; Back to Sustainability
             </Link>
           </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Environmental <span style={{ color: "var(--primary-red)" }}>Stewardship</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Environmental <span style={{ color: "var(--primary-red)" }}>Stewardship</span></h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "1200px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Building Sri Lanka's future infrastructure in harmony with its natural heritage, strictly guided by ISO 14001:2015.
           </p>

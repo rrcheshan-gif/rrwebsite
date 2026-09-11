@@ -40,7 +40,7 @@ export default function SocialResponsibility() {
               &larr; Back to Sustainability
             </Link>
           </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Social <span style={{ color: "var(--primary-red)" }}>Responsibility</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Social <span style={{ color: "var(--primary-red)" }}>Responsibility</span></h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "1200px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             We do not just construct infrastructure; we build communities, empower local economies, and minimize disruption.
           </p>
@@ -215,5 +215,4 @@ export default function SocialResponsibility() {
     </div>
   );
 }
-
 

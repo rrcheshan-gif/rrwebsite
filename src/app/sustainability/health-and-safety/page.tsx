@@ -40,7 +40,7 @@ export default function HealthAndSafety() {
               &larr; Back to Sustainability
             </Link>
           </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Occupational <span style={{ color: "var(--primary-red)" }}>Health & Safety</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Occupational <span style={{ color: "var(--primary-red)" }}>Health & Safety</span></h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.05rem" : "1.3rem", marginTop: "20px", maxWidth: "1200px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Protecting our {COMPANY_DATA.workforce} workers with a rigid 'Zero Harm' policy and absolute compliance to ISO 45001:2018.
           </p>
@@ -210,4 +210,3 @@ export default function HealthAndSafety() {
     </div>
   );
 }
-

@@ -9,7 +9,7 @@ const SERVICES = [
     slug: 'road-construction',
     num: '01',
     title: 'Road & Highway Construction',
-    subtitle: 'National Highways Ã¢â‚¬Â¢ Rural Roads Ã¢â‚¬Â¢ Rehabilitation',
+    subtitle: 'National Highways ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Rural Roads ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Rehabilitation',
     desc: 'Three decades of road-building experience across every province in Sri Lanka. From high-speed expressway packages to rural connectivity roads under the iRoad Programme, our highway division operates with a self-owned asphalt plant fleet and 500+ dedicated personnel.',
     highlights: ['Self-owned Asphalt Plants', 'iRoad Programme', 'Central Expressway Package'],
     image: '/images/page-headers/sustainability-road-hq.jpg',
@@ -19,7 +19,7 @@ const SERVICES = [
     slug: 'bridge-construction',
     num: '02',
     title: 'Bridge Construction & Rehabilitation',
-    subtitle: 'River Crossings Ã¢â‚¬Â¢ Overpasses Ã¢â‚¬Â¢ Causeways',
+    subtitle: 'River Crossings ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Overpasses ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Causeways',
     desc: 'RR Construction builds PSC girder bridges, T-beam spans, box culverts, and complex overpasses engineered to carry extreme traffic loads.',
     highlights: ['PSC Girder & T-Beam', 'Mahanama Bridge', 'Padiyathalawa Bridges'],
     image: '/images/service-bridge-card.jpeg',
@@ -29,7 +29,7 @@ const SERVICES = [
     slug: 'maritime-construction',
     num: '03',
     title: 'Maritime & Harbour Construction',
-    subtitle: 'Fishery Harbours Ã¢â‚¬Â¢ Breakwaters Ã¢â‚¬Â¢ Marine Heavy Civil Engineering',
+    subtitle: 'Fishery Harbours ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Breakwaters ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Marine Heavy Civil Engineering',
     desc: 'Specialised marine heavy civil engineering across Sri Lanka\'s coastline  -  fishery harbours, commercial breakwaters, quay walls, jetties, and coastal protection structures from seabed to superstructure.',
     highlights: ['Gandara Fishery Harbour', 'Breakwaters & Rock Armour', 'Marine Pile Installation'],
     image: '/images/service-maritime-card.jpg',
@@ -39,7 +39,7 @@ const SERVICES = [
     slug: 'dredging-reclamation',
     num: '04',
     title: 'Dredging & Reclamation',
-    subtitle: 'Capital Dredging Ã¢â‚¬Â¢ Land Reclamation Ã¢â‚¬Â¢ Coastal Works',
+    subtitle: 'Capital Dredging ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Land Reclamation ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Coastal Works',
     desc: 'Capital and maintenance dredging for ports, harbours, and navigational channels. Our self-owned marine fleet enables efficient deep-water dredging and coastal land reclamation to ISO 14001 standards.',
     highlights: ['Self-Owned Marine Fleet', 'ISO 14001 Compliance', 'Coastal Reclamation'],
     image: '/images/projects/filadhoo/img2.jpg',
@@ -49,7 +49,7 @@ const SERVICES = [
     slug: 'water-infrastructure',
     num: '05',
     title: 'Water Infrastructure',
-    subtitle: 'Water Supply Ã¢â‚¬Â¢ Treatment Plants Ã¢â‚¬Â¢ Irrigation',
+    subtitle: 'Water Supply ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Treatment Plants ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Irrigation',
     desc: 'End-to-end water infrastructure construction across Sri Lanka. Treatment plants, transmission mains, distribution networks, and large-scale irrigation schemes.',
     highlights: ['Ampara Water Treatment Plant', 'NWSDB Contractor', 'Large-Scale Irrigation'],
     image: '/images/KALMADU/WhatsApp Image 2026-08-01 at 11.46.27.jpeg',
@@ -59,7 +59,7 @@ const SERVICES = [
     slug: 'landslide-mitigation',
     num: '06',
     title: 'Landslide Mitigation & Slope Stabilisation',
-    subtitle: 'Geotechnical Engineering Ã¢â‚¬Â¢ Retaining Structures Ã¢â‚¬Â¢ Rock-fall Protection',
+    subtitle: 'Geotechnical Engineering ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Retaining Structures ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Rock-fall Protection',
     desc: 'Specialist geotechnical works across Sri Lanka\'s critical hill-country zones  -  soil nailing, shotcrete, gabion retaining walls, reinforced earth structures, and rock-fall net systems protecting national roads.',
     highlights: ['Nuwara Eliya & Hatton Corridor', 'NBRO-Compliant Design', 'Rock-fall Protection Systems', 'Emergency Slope Repair'],
     image: '/images/service-ldpp.jpeg',
@@ -69,7 +69,7 @@ const SERVICES = [
     slug: 'buildings-structures',
     num: '07',
     title: 'Civil Structures',
-    subtitle: 'Water Retaining Structures Ã¢â‚¬Â¢ Water Towers Ã¢â‚¬Â¢ Steel Fabrication',
+    subtitle: 'Water Retaining Structures ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Water Towers ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Steel Fabrication',
     desc: 'Reinforced concrete structures, water retaining structures, elevated water towers, and complex steel fabrication.',
     highlights: ['Complex RC Structures', 'Elevated Water Towers', 'Heavy Steel Fabrication'],
     image: '/images/BADULLA/WhatsApp Image 2026-07-28 at 14.03.18.jpeg',
@@ -79,7 +79,7 @@ const SERVICES = [
     slug: 'railway-civil-works',
     num: '08',
     title: 'Railway Civil Works',
-    subtitle: 'Formation Ã¢â‚¬Â¢ Civil Infrastructure Ã¢â‚¬Â¢ Track Upgradation',
+    subtitle: 'Formation ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Civil Infrastructure ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Track Upgradation',
     desc: 'Civil and formation works in connection with railway line upgradation projects  -  earthworks, drainage, retaining structures, and ancillary civil works supporting Sri Lanka\'s national rail network modernisation.',
     highlights: ['Railway Formation Works', 'Maho - Anuradhapura Line', 'Earthworks & Drainage', 'Ancillary Civil Structures'],
     image: '/images/IRCON-MANNAR/WhatsApp Image 2026-08-01 at 12.32.07.jpeg',
@@ -171,7 +171,7 @@ export default function Services() {
         }
       `}</style>
 
-      {/* Ã¢â€â‚¬Ã¢â€â‚¬ HERO Ã¢â€â‚¬Ã¢â€â‚¬ */}
+      {/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ HERO ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */}
       <section style={{
         backgroundImage: "linear-gradient(rgba(10,18,35,0.72), rgba(10,18,35,0.84)), url('/images/puttalam/puttalam-2.jpg')",
         backgroundSize: 'cover',
@@ -186,7 +186,7 @@ export default function Services() {
 
         <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
           <Link href="/" style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', fontWeight: 600, letterSpacing: '1.5px',  textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '28px' }}>
-            Ã¢â€ Â Home
+            ÃƒÂ¢Ã¢â‚¬Â Ã‚Â Home
           </Link>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '18px' }}>
@@ -195,7 +195,7 @@ export default function Services() {
             <div style={{ width: '36px', height: '2px', background: 'var(--primary-red)' }} />
           </div>
 
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Technology & <span style={{ color: "var(--primary-red)" }}>Services</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Technology & <span style={{ color: "var(--primary-red)" }}>Services</span></h1>
 
           <p style={{ color: 'rgba(255,255,255,0.78)', fontSize: isMobile ? '1rem' : '1.2rem', maxWidth: '640px', lineHeight: 1.75, margin: 0, fontWeight: 400 }}>
             From national highways and river bridges to fishery harbours and hill-country landslide works  -  RR Construction covers the full spectrum of heavy civil engineering infrastructure in Sri Lanka.
@@ -205,7 +205,7 @@ export default function Services() {
 
 
 
-      {/* Ã¢â€â‚¬Ã¢â€â‚¬ ALL SERVICES GRID Ã¢â€â‚¬Ã¢â€â‚¬ */}
+      {/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ ALL SERVICES GRID ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */}
       <section style={{ padding: isMobile ? '0 12px 60px' : '0 20px 100px' }}>
         <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
 
@@ -272,7 +272,7 @@ export default function Services() {
       </section>
 
 
-      {/* Ã¢â€â‚¬Ã¢â€â‚¬ RESOURCE PLANNING Ã¢â€â‚¬Ã¢â€â‚¬ */}
+      {/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ RESOURCE PLANNING ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */}
       <section style={{ padding: isMobile ? '60px 12px' : '100px 20px' }}>
         <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? '40px' : '80px', alignItems: 'center' }}>
           <div style={{ borderRadius: '28px', overflow: 'hidden', minHeight: isMobile ? '260px' : '460px', position: 'relative', boxShadow: '0 28px 60px rgba(0,0,0,0.14)' }}>

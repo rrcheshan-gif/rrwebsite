@@ -72,7 +72,7 @@ export default function OngoingProjects() {
       <section style={{ padding: '180px 20px 100px', textAlign: 'center', width: '100%' }}>
         <div className='container' style={{ maxWidth: '1440px' }}>
           <h1 style={{ 
-            fontSize: 'clamp(2.5rem, 6vw, 4.2rem)', 
+            fontSize: 'clamp(1.8rem, 6vw, 4.2rem)', 
             fontFamily: 'var(--font-heading)', 
             fontWeight: 900, 
             color: 'var(--text-dark)', 
