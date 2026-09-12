@@ -32,7 +32,7 @@ const timelineEvents = [
   {
     epoch: "2012",
     title: "Maritime & Infrastructure Specialization",
-    image: "/images/projects/new-folder/Colombo Port Expansion Project 1/background image.jpg",
+    image: "/images/projects/new-folder/colombo-port-expansion-bg.jpg",
     imageAlt: "Maritime dredging and lagoon development project in Sri Lanka",
     desc: <>RR Construction further developed its expertise in specialized infrastructure, including <Link href="/services/maritime-construction" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>maritime and marine construction</Link>, dredging, coastal protection, breakwater construction, and reclamation. The <strong style={{ fontWeight: 'normal' }}>Oluvil Port Coastal Protection Project in 2012</strong>, executed for the Sri Lanka Ports Authority, marked an important milestone in the company's maritime construction experience. Capabilities also expanded into steel fabrication, construction equipment resources, and <Link href="/services/landslide-mitigation" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>geotechnical works</Link> including landslide mitigation and slope protection in Sri Lanka's hill-country regions.</>,
     icon: <Anchor size={24} color="var(--primary-red)" />
