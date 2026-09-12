@@ -22,7 +22,7 @@ export default function AboutStory() {
       <section 
         className="page-header" 
         style={{ 
-          backgroundImage: "url('/images/projects/new-folder/maho-railway/Background image.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
+          backgroundImage: "url('/images/page-headers/overview-logo.jpg')", 
           padding: isMobile ? "40px 20px" : "70px 20px", 
           textAlign: "center", 
           position: "relative", 
