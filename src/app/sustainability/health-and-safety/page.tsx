@@ -27,7 +27,7 @@ export default function HealthAndSafety() {
           textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 
-          backgroundPosition: "center", 
+          backgroundPosition: "center 25%", 
           borderRadius: isMobile ? "24px" : "32px", 
           margin: isMobile ? "0 12px 30px" : "0 20px 50px", 
           overflow: "hidden" 
