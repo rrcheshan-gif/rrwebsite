@@ -18,12 +18,13 @@ export default function People() {
 
       {/* Intro */}
       <section style={{ padding: "50px 20px" }}>
-        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
+        <div className="container" style={{ margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 5vw, 2.5rem)", color: "var(--text-dark)", marginBottom: "20px" }}>The Engine of RR Construction</h2>
           <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "0 auto 30px" }}></div>
-          <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "var(--text-light)", marginBottom: "20px" }}>
+          <div style={{ width: "100%" }}><p style={{ fontSize: "1.1rem", lineHeight: 1.8, color: "var(--text-light)", margin: 0, textAlign: "justify", textAlignLast: "center" }}>
             Infrastructure isn't built by machines; it's built by people. From our boardroom in Colombo to the furthest reaches of our highway projects, the RR Construction family consists of over <strong>1,400+ dedicated professionals</strong>. We cultivate an environment that rewards precision, promotes safety, and encourages lifelong learning.
           </p>
+          </div>
         </div>
       </section>
 
