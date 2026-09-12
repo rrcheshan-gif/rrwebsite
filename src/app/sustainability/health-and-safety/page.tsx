@@ -23,11 +23,11 @@ export default function HealthAndSafety() {
         className="page-header" 
         style={{ 
           backgroundImage: "url('/images/page-headers/health-safety-hero.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
-          padding: isMobile ? "40px 20px" : "70px 20px", 
+          padding: isMobile ? "60px 20px" : "100px 20px", 
           textAlign: "center", 
           position: "relative", 
-          backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundColor: "#0f172a", 
-          backgroundPosition: "center", 
+          backgroundSize: "cover", 
+          backgroundPosition: "center 10%", 
           borderRadius: isMobile ? "24px" : "32px", 
           margin: isMobile ? "0 12px 30px" : "0 20px 50px", 
           overflow: "hidden" 
