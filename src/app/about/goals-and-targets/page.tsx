@@ -239,21 +239,13 @@ export default function GoalsAndTargets() {
 
       {/* 4. Looking Ahead */}
       <section style={{ padding: isMobile ? "50px 10px" : "80px 20px", backgroundColor: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "850px", margin: "0 auto", padding: "0 16px", textAlign: "center" }}>
+        <div className="container" style={{ maxWidth: "800px", margin: "0 auto", padding: "0 16px", textAlign: "center" }}>
           <h2 style={{ fontSize: isMobile ? "2rem" : "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 25px 0" }}>
             Looking Ahead
           </h2>
-          <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, margin: 0, textAlign: "center" }}>
+          <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, margin: "0 auto", textAlign: "center", maxWidth: "800px" }}>
             RR Construction (Pvt) Ltd continues to strengthen its capabilities with a clear focus on effective project delivery, engineering advancement, infrastructure development and operational excellence. By continuously improving its people, processes, resources and technical capabilities, the company aims to respond effectively to the evolving requirements of Sri Lanka's infrastructure sector and create lasting value through reliable construction and civil engineering solutions.
           </p>
-          <div style={{ marginTop: "40px", display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "15px" }}>
-            <Link href="/projects" className="btn-glass-red" style={{ padding: "12px 30px", fontSize: "1rem", borderRadius: "8px", color: "white", textDecoration: "none", fontWeight: 600, display: "inline-flex", alignItems: "center", gap: "10px" }}>
-              Explore Our Projects <ArrowRight size={18} />
-            </Link>
-            <Link href="/about/history" style={{ padding: "12px 30px", fontSize: "1rem", borderRadius: "8px", color: "var(--primary-red)", border: "2px solid var(--primary-red)", textDecoration: "none", fontWeight: 600, display: "inline-block" }}>
-              Our History
-            </Link>
-          </div>
         </div>
       </section>
 
