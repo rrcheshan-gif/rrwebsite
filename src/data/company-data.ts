@@ -1,4 +1,4 @@
-export const COMPANY_DATA = {
+﻿export const COMPANY_DATA = {
   name: "RR Construction (Pvt) Ltd",
   established: 1995,
   yearsOfExcellence: "30+",
@@ -28,14 +28,14 @@ export const COMPANY_DATA = {
     },
     { 
       name: "Mr. Ajith Priyantha Galahitiyawa", 
-      role: "General Manager - Contracts", 
+      role: "General Manager - Contract", 
       qual: "B.Sc. Engineering, Chartered Engineer", 
       image: "", 
       bio: "Mr. Galahitiyawa oversees the intricate commercial and contractual frameworks that underpin RR Construction's large-scale infrastructure projects. As a Chartered Engineer with a B.Sc. in Engineering, he brings a rigorous analytical approach to project estimation, tendering, and risk management. His expertise ensures that all contracts are executed with strict adherence to legal, financial, and technical specifications, playing a vital role in negotiating complex agreements with government bodies and joint venture partners." 
     },
     { 
       name: "Mr. S.R. Gamage", 
-      role: "General Manager - Operations", 
+      role: "General Manager - Operation", 
       qual: "Diploma in Engineering (NDT), CEI Part 1 & 2, London, MIEDSL, MNFET", 
       image: "/images/gamage.jpg", 
       bio: "Directing the day-to-day execution of RR Construction's most demanding sites, Mr. Gamage is the driving force behind the company's operational excellence. Holding multiple professional engineering credentials, he possesses unparalleled hands-on experience in heavy civil engineering. Mr. Gamage coordinates the seamless deployment of the company's 1400-strong workforce and extensive machinery fleet, ensuring that complex maritime, highway, and bridge projects are delivered efficiently while strictly enforcing ISO-certified safety protocols."
