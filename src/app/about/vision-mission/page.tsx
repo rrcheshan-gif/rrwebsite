@@ -160,7 +160,7 @@ export default function VisionMission() {
       </section>
 
       {/* Brand Statement Banner */}
-      <section style={{ padding: "60px 20px", background: "var(--primary-red)", position: "relative" }}>
+      <section style={{ padding: "80px 20px", background: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)", position: "relative", borderTop: "4px solid var(--primary-red)", borderBottom: "4px solid var(--primary-red)" }}>
         <Reveal>
           <div className="container" style={{ textAlign: "center", maxWidth: "1000px" }}>
             <h2 style={{ fontSize: "clamp(1.5rem, 4vw, 2.5rem)", color: "white", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, letterSpacing: "1px", lineHeight: 1.3 }}>
