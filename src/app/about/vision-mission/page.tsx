@@ -2,8 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import { ArrowRight, Target, Eye, ShieldCheck, HardHat, Lightbulb, Leaf } from 'lucide-react';
-import { COMPANY_DATA } from '@/data/company-data';
+import { Target, Eye, ShieldCheck, HardHat, Lightbulb, Leaf, Award, Handshake } from 'lucide-react';
 
 function Reveal({ children, delay = 0, className = "", direction = "up" }: { children: React.ReactNode, delay?: number, className?: string, direction?: "up"|"left"|"right" }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,7 +33,7 @@ function Reveal({ children, delay = 0, className = "", direction = "up" }: { chi
       style={{
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? 'translate(0,0)' : transformStart,
-        transition: `opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`,
+        transition: "opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) $delayms, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) $delayms",
       }}
     >
       {children}
@@ -81,18 +80,18 @@ export default function VisionMission() {
             Vision & <span style={{ color: "var(--primary-red)" }}>Mission</span>
           </h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
-            Building the nation with engineering excellence and a sustainable future.
+            Our Vision & Mission define the direction behind everything we build. They reflect RR Construction’s commitment to engineering excellence, responsible infrastructure development, innovation, safety and lasting value for Sri Lanka and the communities we serve.
           </p>
         </div>
       </section>
 
+      {/* Vision & Mission Cards */}
       <section style={{ position: "relative", padding: isMobile ? "20px 20px 60px" : "20px 20px 80px" }}>
         <div className="container" style={{ position: "relative", zIndex: 2, maxWidth: "1440px" }}>
-          {/* V & M Split Layout - Light Theme */}
-          <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: "40px", alignItems: "stretch" }}>
+          <div style={{ display: "flex", gap: "30px", flexDirection: isMobile ? "column" : "row" }}>
             
             {/* Vision Card */}
-            <Reveal direction="left" delay={200} style={{ flex: 1 }}>
+            <Reveal direction="left" style={{ flex: 1 }}>
               <div style={{ 
                 height: "100%", 
                 background: "var(--white)", 
@@ -113,8 +112,11 @@ export default function VisionMission() {
                     <Eye size={40} />
                   </div>
                   <h2 style={{ fontSize: "2.5rem", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 25px 0", color: "var(--text-dark)" }}>Our Vision</h2>
-                  <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, fontWeight: 500, margin: 0 }}>
-                    To be the leading engineering and construction organization in Sri Lanka, continuously developing new capabilities to overcome emerging challenges while empowering the nation through sustainable infrastructure.
+                  <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, fontWeight: 500, margin: "0 0 15px 0" }}>
+                    “To be a leading force in Sri Lanka’s infrastructure development, delivering world-class engineering solutions that connect communities, enable progress, and build a stronger, more resilient future.”
+                  </p>
+                  <p style={{ color: "var(--primary-red)", fontSize: "1.05rem", fontWeight: 700, margin: 0 }}>
+                    Building the infrastructure that enables tomorrow’s opportunities.
                   </p>
                 </div>
               </div>
@@ -142,8 +144,11 @@ export default function VisionMission() {
                     <Target size={40} />
                   </div>
                   <h2 style={{ fontSize: "2.5rem", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 25px 0", color: "var(--text-dark)" }}>Our Mission</h2>
-                  <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, fontWeight: 500, margin: 0 }}>
-                    To deliver uncompromising engineering excellence through a highly skilled workforce, massive proprietary machinery fleet, and robust technological methodologies. We are committed to achieving total customer satisfaction, adhering to stringent quality and safety standards, and contributing to the sustainable development of Sri Lanka.
+                  <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, fontWeight: 500, margin: "0 0 15px 0" }}>
+                    “To deliver complex infrastructure and heavy civil engineering projects with excellence, innovation, and integrity—combining experienced people, advanced technology, integrated resources, uncompromising quality, and a strong commitment to safety, sustainability, and client satisfaction.”
+                  </p>
+                  <p style={{ color: "var(--primary-red)", fontSize: "1.05rem", fontWeight: 700, margin: 0 }}>
+                    Delivering dependable engineering solutions through people, technology and responsible execution.
                   </p>
                 </div>
               </div>
@@ -154,25 +159,37 @@ export default function VisionMission() {
         </div>
       </section>
 
+      {/* Brand Statement Banner */}
+      <section style={{ padding: "60px 20px", background: "var(--primary-red)", position: "relative" }}>
+        <Reveal>
+          <div className="container" style={{ textAlign: "center", maxWidth: "1000px" }}>
+            <h2 style={{ fontSize: "clamp(1.5rem, 4vw, 2.5rem)", color: "white", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, letterSpacing: "1px", lineHeight: 1.3 }}>
+              Engineering Excellence. Building Infrastructure. Shaping the Future.
+            </h2>
+          </div>
+        </Reveal>
+      </section>
+
       {/* Modern Core Values Grid */}
       <section style={{ padding: "100px 20px", background: "var(--bg-light)", position: "relative" }}>
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
           <Reveal>
             <div style={{ textAlign: "center", marginBottom: "80px" }}>
               <h2 style={{ fontSize: "clamp(2rem, 4vw, 3rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px" }}>
-                Pillars of Excellence
+                Our Core Values
               </h2>
               <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto 20px", borderRadius: "2px" }}></div>
-              <p style={{ color: "var(--text-light)", fontSize: "1.15rem", maxWidth: "600px", margin: "0 auto", fontWeight: 500 }}>The fundamental principles that guide our projects, protect our people, and ensure we always deliver on our promises.</p>
             </div>
           </Reveal>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))", gap: "30px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))", gap: "30px" }}>
             {[
-              { title: "QUALITY", subtitle: "Built to Perform", desc: "Exceeding international standards in every pour, weld, and structural element.", icon: <ShieldCheck size={32} /> },
-              { title: "INNOVATION", subtitle: "Engineered for Tomorrow", desc: "Adopting advanced methodologies to solve the most complex civil engineering challenges.", icon: <Lightbulb size={32} /> },
-              { title: "SAFETY", subtitle: "Zero Harm", desc: "Rigorous ISO-certified protocols prioritizing the well-being of every worker on site.", icon: <HardHat size={32} /> },
-              { title: "SUSTAINABILITY", subtitle: "Building Responsibly", desc: "Minimizing ecological impact while building resilient infrastructure for future generations.", icon: <Leaf size={32} /> }
+              { title: "EXCELLENCE", subtitle: "Built to Perform", desc: "Delivering every project with technical expertise, precision and a consistent commitment to quality.", icon: <Award size={32} /> },
+              { title: "INNOVATION", subtitle: "Engineered for Tomorrow", desc: "Applying modern engineering methods, technology and practical solutions to address complex infrastructure challenges.", icon: <Lightbulb size={32} /> },
+              { title: "INTEGRITY", subtitle: "Trust & Transparency", desc: "Building lasting relationships through accountability, transparency and professional conduct.", icon: <ShieldCheck size={32} /> },
+              { title: "SAFETY", subtitle: "Zero Harm", desc: "Protecting our people, communities and environment through responsible and disciplined construction practices.", icon: <HardHat size={32} /> },
+              { title: "SUSTAINABILITY", subtitle: "Responsible Execution", desc: "Creating long-term infrastructure value while respecting environmental and social responsibilities.", icon: <Leaf size={32} /> },
+              { title: "PARTNERSHIP", subtitle: "Shared Success", desc: "Working collaboratively with clients, professionals, communities and stakeholders to achieve shared success.", icon: <Handshake size={32} /> }
             ].map((val, idx) => (
               <Reveal key={idx} delay={idx * 150} direction="up">
                 <div style={{ 
@@ -216,7 +233,22 @@ export default function VisionMission() {
         </div>
       </section>
 
-
+      {/* Our Direction Section */}
+      <section style={{ padding: "80px 20px 120px", background: "var(--white)", position: "relative" }}>
+        <div className="container" style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
+          <Reveal>
+            <h2 style={{ fontSize: "clamp(2rem, 4vw, 3rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 30px" }}>
+              Our Direction
+            </h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, marginBottom: "30px", fontWeight: 500 }}>
+              RR Construction (Pvt) Ltd continues to strengthen its position in Sri Lanka’s infrastructure sector through integrated heavy civil engineering capabilities covering <Link href="/services/road-construction" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>roads and highways</Link>, <Link href="/services/bridge-construction" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>bridges</Link>, <Link href="/services/railway-civil-works" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>railway construction</Link>, <Link href="/services/maritime-construction" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>maritime and marine infrastructure</Link>, <Link href="/services/water-infrastructure" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>water infrastructure</Link>, <Link href="/services/landslide-mitigation" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: 600 }}>geotechnical works</Link> and other major civil engineering projects.
+            </p>
+            <p style={{ color: "var(--text-dark)", fontSize: "1.25rem", fontWeight: 800, fontFamily: "var(--font-heading)" }}>
+              Our vision guides where we are going, while our mission defines how we deliver value along the way.
+            </p>
+          </Reveal>
+        </div>
+      </section>
 
     </div>
   );
