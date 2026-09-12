@@ -4,7 +4,7 @@ export default function People() {
   return (
     <div style={{ paddingTop: "100px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/our-people-hero.jpg')", padding: "120px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center 15%", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
+      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/our-people-hero.jpg')", padding: "60px 20px", textAlign: "center", position: "relative", backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundColor: "#0f172a", backgroundPosition: "center", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
