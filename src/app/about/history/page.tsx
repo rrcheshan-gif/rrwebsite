@@ -8,7 +8,7 @@ const timelineEvents = [
   {
     epoch: "1995",
     title: "Foundation & First Projects",
-    images: ["/images/projects/new-folder/Construction of Rock revetment at Beruwala/1.jpg"],
+    image: "/images/projects/new-folder/Construction of Rock revetment at Beruwala/1.jpg",
     imageAlt: "Early civil construction works by RR Construction in Sri Lanka",
     desc: <>Established in <strong style={{ fontWeight: 'normal' }}>1995</strong>, <strong style={{ fontWeight: 'normal' }}>RR Construction (Pvt) Ltd</strong> began its journey in Sri Lanka's heavy civil engineering and construction industry through early civil works carried out in collaboration with <strong style={{ fontWeight: 'normal' }}>ED Zublin AG</strong> on the <strong style={{ fontWeight: 'normal' }}>Central Bank Extension Project</strong>. This experience established a strong foundation in engineering, project execution, quality, and professional construction practices that would underpin the company's growth as a <strong style={{ fontWeight: 'normal' }}>civil engineering company in Sri Lanka</strong>.</>,
     icon: <Flag size={24} color="var(--primary-red)" />
@@ -16,7 +16,7 @@ const timelineEvents = [
   {
     epoch: "2003–2006",
     title: "Expanding Infrastructure Experience",
-    images: ["/images/projects/new-folder/CONSTRUCTION OF WATER TREATMENT PLANT -AMPARA/1.jpg"],
+    image: "/images/projects/new-folder/CONSTRUCTION OF WATER TREATMENT PLANT -AMPARA/1.jpg",
     imageAlt: "Ampara Water Treatment Plant - water infrastructure project in Sri Lanka",
     desc: <>RR Construction expanded its technical capabilities through major infrastructure projects for local and international clients. The <strong style={{ fontWeight: 'normal' }}>Queen Elizabeth Quay Project at the Port of Colombo in 2003</strong> strengthened the company's expertise in <Link href="/services/maritime-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>maritime and heavy civil engineering</Link>, followed by the <strong style={{ fontWeight: 'normal' }}>Ampara Water Treatment Plant in 2006</strong>, which further developed its capabilities in <Link href="/services/water-infrastructure" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>water infrastructure</Link> and specialized civil construction.</>,
     icon: <Map size={24} color="var(--primary-red)" />
@@ -24,7 +24,7 @@ const timelineEvents = [
   {
     epoch: "2007–2009",
     title: "Construction Capability Growth",
-    images: ["/images/projects/new-folder/hirana-bridges/3.jpg", "/images/projects/new-folder/kamburugamuwa-hospital/1.jpg", "/images/projects/project-86/Background image.jpeg"],
+    image: "/images/projects/new-folder/hirana-bridges/3.jpg",
     imageAlt: "Steel bridge construction in Sri Lanka - Hirana bridge by RR Construction",
     desc: <>The company expanded into key infrastructure sectors including <Link href="/services/road-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>road and highway construction</Link>, <Link href="/services/bridge-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>bridge construction</Link>, irrigation, drainage, water supply, buildings, and structural works. Major milestones included the <strong style={{ fontWeight: 'normal' }}>Matara Mahanama Bridge in 2007</strong> and four steel bridges across Sri Lanka in <strong style={{ fontWeight: 'normal' }}>2009</strong>, strengthening RR Construction's expertise in structural and bridge engineering as a capable <strong style={{ fontWeight: 'normal' }}>infrastructure development</strong> contractor.<br /><br />The company also developed capabilities in multi-storey buildings, water-retaining structures, and complex infrastructure projects, supported by skilled professionals, technical expertise, and integrated project management.</>,
     icon: <Construction size={24} color="var(--primary-red)" />
@@ -32,7 +32,7 @@ const timelineEvents = [
   {
     epoch: "2012",
     title: "Maritime & Infrastructure Specialization",
-    images: ["/images/projects/new-folder/colombo-port-expansion-bg.jpg", "/images/projects/new-folder/colombo-port-expansion/1.jpg"],
+    image: "/images/projects/new-folder/colombo-port-expansion-bg.jpg",
     imageAlt: "Maritime dredging and lagoon development project in Sri Lanka",
     desc: <>RR Construction further developed its expertise in specialized infrastructure, including <Link href="/services/maritime-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>maritime and marine construction</Link>, dredging, coastal protection, breakwater construction, and reclamation. The <strong style={{ fontWeight: 'normal' }}>Oluvil Port Coastal Protection Project in 2012</strong>, executed for the Sri Lanka Ports Authority, marked an important milestone in the company's maritime construction experience. Capabilities also expanded into steel fabrication, construction equipment resources, and <Link href="/services/landslide-mitigation" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>geotechnical works</Link> including landslide mitigation and slope protection in Sri Lanka's hill-country regions.</>,
     icon: <Anchor size={24} color="var(--primary-red)" />
@@ -40,7 +40,7 @@ const timelineEvents = [
   {
     epoch: "2016",
     title: "International Infrastructure Experience",
-    images: ["/images/projects/hulhudhoo/img1.jpg", "/images/projects/new-folder/embilipitiya-middeniya-road/1.jpg"],
+    image: "/images/projects/hulhudhoo/img1.jpg",
     imageAlt: "Overseas maritime infrastructure project in the Maldives by RR Construction",
     desc: <>The company expanded its international project experience through overseas infrastructure developments, including the <strong style={{ fontWeight: 'normal' }}>Upgrading of the Harbour Seawall in R. Vandhoo, Maldives</strong>, completed in 2016 for the Ministry of Environment and Energy. This strengthened RR Construction's capabilities in coastal protection, marine infrastructure, and specialized construction in challenging environments, building on its experience as a <Link href="/services/dredging-reclamation" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>marine and dredging contractor</Link>.</>,
     icon: <Globe size={24} color="var(--primary-red)" />
@@ -48,7 +48,7 @@ const timelineEvents = [
   {
     epoch: "2017",
     title: "Pioneering Landslide Mitigation",
-    images: ["/images/IMAGES/LDPP/DJI_0087.jpg", "/images/projects/new-folder/Remedial Works at Ulhitiya - Rathkinda Dams/1.jpg"],
+    image: "/images/IMAGES/LDPP/DJI_0087.jpg",
     imageAlt: "Landslide Disaster Protection Project in Sabaragamuwa and Uva Provinces",
     desc: <>RR Construction marked a major milestone by initiating its first specialized <Link href="/services/landslide-mitigation" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>landslide mitigation and disaster protection</Link> project. The <strong style={{ fontWeight: 'normal' }}>Landslide Disaster Protection Project - Package 02</strong>, executed for the Road Development Authority across Sabaragamuwa and Uva Provinces, established a strong foundation in complex geotechnical engineering, slope stabilization, and public safety infrastructure.</>,
     icon: <Mountain size={24} color="var(--primary-red)" />
@@ -56,7 +56,7 @@ const timelineEvents = [
   {
     epoch: "2019–2023",
     title: "Expanding Railway & Infrastructure Capabilities",
-    images: ["/images/projects/Anuradhapura-Vauniya/1.jpg", "/images/wellamankara/background image.png", "/images/projects/new-folder/kolonnawa-canal-stage3/1.png"],
+    image: "/images/projects/Anuradhapura-Vauniya/1.jpg",
     imageAlt: "Anuradhapura Vavuniya railway track rehabilitation project in Sri Lanka",
     desc: <>RR Construction continued to diversify its infrastructure portfolio across Sri Lanka, undertaking major road, bridge, maritime, water, geotechnical, and railway infrastructure projects. Railway capabilities were strengthened through projects including the <strong style={{ fontWeight: 'normal' }}>Anuradhapura–Vavuniya Railway Track Rehabilitation</strong> and <strong style={{ fontWeight: 'normal' }}>Maho–Anuradhapura Railway Line Track Rehabilitation &amp; Ancillary Works</strong>, expanding the company's role in Sri Lanka's <Link href="/services/railway-civil-works" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>railway construction</Link> and civil engineering sectors.</>,
     icon: <Train size={24} color="var(--primary-red)" />
@@ -64,7 +64,7 @@ const timelineEvents = [
   {
     epoch: "2024–2026",
     title: "Integrated Infrastructure Delivery",
-    images: ["/images/projects/new-folder/maho-railway/Background image.jpg", "/images/projects/new-folder/matara-stage-iv/1.jpg"],
+    image: "/images/projects/new-folder/maho-railway/Background image.jpg",
     imageAlt: "Railway infrastructure construction in Sri Lanka - Maho to Anuradhapura line",
     desc: <>RR Construction continues to deliver complex <Link href="/projects" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>infrastructure projects</Link> across Sri Lanka, with capabilities spanning <Link href="/services/road-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>road and highway construction</Link>, <Link href="/services/bridge-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>bridges</Link>, <Link href="/services/railway-civil-works" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>railway infrastructure</Link>, <Link href="/services/maritime-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>maritime and harbour construction</Link>, <Link href="/services/water-infrastructure" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>water infrastructure</Link>, irrigation, <Link href="/services/landslide-mitigation" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>geotechnical and landslide mitigation</Link>, and other heavy civil engineering works across all provinces of Sri Lanka.</>,
     icon: <Factory size={24} color="var(--primary-red)" />
@@ -72,51 +72,12 @@ const timelineEvents = [
   {
     epoch: "Present",
     title: "Engineering Excellence & National Infrastructure",
-    images: ["/images/IMAGES/Gandara/gandara-bg.jpeg", "/images/hatton-landslide/hatton-1.jpg", "/images/kandy-landslide/kandy-5.jpg"],
+    image: "/images/IMAGES/Gandara/gandara-bg.jpeg",
     imageAlt: "Gandara Fishery Harbour construction - ongoing maritime project by RR Construction",
     desc: <>Today, <strong style={{ fontWeight: 'normal' }}>RR Construction (Pvt) Ltd</strong> operates as an integrated <strong style={{ fontWeight: 'normal' }}>heavy civil engineering and infrastructure contractor in Sri Lanka</strong>, supported by extensive construction resources, heavy machinery, asphalt and aggregate production capabilities, skilled professionals, and internationally recognized management systems including <Link href="/about/awards" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>ISO 9001, ISO 14001, and ISO 45001</Link> certifications. With experience across roads, highways, bridges, railways, maritime infrastructure, water systems, <Link href="/services/landslide-mitigation" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>geotechnical works</Link>, and other specialized construction sectors, RR Construction continues to contribute to resilient <strong style={{ fontWeight: 'normal' }}>infrastructure development in Sri Lanka</strong>.</>,
     icon: <ShieldCheck size={24} color="var(--primary-red)" />
   }
 ];
-
-const ImageSlider = ({ images, imageAlt }: { images: string[], imageAlt: string }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    if (!images || images.length <= 1) return;
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, [images]);
-
-  return (
-    <>
-      {images.map((src, idx) => {
-        const safeSrc = src.startsWith('/') ? encodeURI(src) : encodeURI('/' + src);
-        return (
-          <img
-            key={idx}
-            src={safeSrc}
-            alt={imageAlt}
-            style={{ 
-              width: '100%', 
-              height: '100%', 
-              objectFit: 'cover',
-              display: 'block',
-              position: 'absolute',
-              top: 0, left: 0,
-              opacity: idx === currentIndex ? 1 : 0,
-              transition: 'opacity 1s ease, transform 0.5s ease',
-            }}
-            onError={(ev) => { (ev.target as HTMLImageElement).style.display = 'none'; }}
-            className={idx === currentIndex ? "img-hover-zoom" : ""}
-          />
-        );
-      })}
-    </>
-  );
-};
 
 export default function HistoryTimeline() {
   const [isMobile, setIsMobile] = useState(false);
@@ -193,7 +154,21 @@ export default function HistoryTimeline() {
                   position: 'relative',
                   minHeight: isMobile ? '300px' : 'auto'
                 }}>
-                                    <ImageSlider images={e.images} imageAlt={e.imageAlt} />
+                  <img
+                    src={encodeURI(e.image)}
+                    alt={e.imageAlt}
+                    style={{ 
+                      width: '100%', 
+                      height: '100%', 
+                      objectFit: 'cover',
+                      display: 'block',
+                      position: 'absolute',
+                      top: 0, left: 0,
+                      transition: 'transform 0.5s ease'
+                    }}
+                    onError={(ev) => { (ev.target as HTMLImageElement).style.display = 'none'; }}
+                    className="img-hover-zoom"
+                  />
                   {/* Overlay Badge for Year */}
                   <div style={{ 
                     position: 'absolute', 
