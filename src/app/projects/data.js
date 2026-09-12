@@ -1625,11 +1625,11 @@ const projectsData = [
     id: 'project-84',
     type: 'completed', category: "bridges",
     title: "Four Steel Bridges (Hirana, Molkawa, Lathpadura)",
-    heroImage: "/images/projects/new-folder/hirana-bridges/1-cropped.jpg",
+    heroImage: "/images/projects/new-folder/hirana-bridges/2-cropped.jpg",
     galleryImages: [
-      "/images/projects/new-folder/hirana-bridges/1-cropped.jpg",
       "/images/projects/new-folder/hirana-bridges/2-cropped.jpg",
-      "/images/projects/new-folder/hirana-bridges/1-cropped.jpg"
+      "/images/projects/new-folder/hirana-bridges/2-cropped.jpg",
+      "/images/projects/new-folder/hirana-bridges/2-cropped.jpg"
     ],
     status: "Completed",
     client: "MCE Austria",
