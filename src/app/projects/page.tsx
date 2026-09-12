@@ -122,8 +122,33 @@ export default function Projects() {
 
   return (
     <div style={{ paddingTop: "110px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
-      <section className="page-header" style={{ backgroundImage: "url('/images/BADULLA/completed_project_background.jpeg')", padding: "70px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.65) 100%)", zIndex: 1 }}></div>
+            <section className="page-header" style={{ padding: "90px 20px", textAlign: "center", position: "relative", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden", backgroundColor: "#0f172a" }}>
+        
+        {/* Collage Background */}
+        <div style={{ 
+          position: "absolute", top: 0, left: 0, width: "100%", height: "100%", 
+          display: "grid", 
+          gridTemplateColumns: "repeat(4, 1fr)", 
+          gridTemplateRows: "repeat(2, 1fr)", 
+          gap: "4px",
+          zIndex: 0,
+          opacity: 0.8
+        }}>
+          <div style={{ gridColumn: "span 2", gridRow: "span 2" }}>
+            <img src="/images/IMAGES/Gandara/gandara-bg.jpeg" alt="Gandara Fishery Harbour" style={{width:"100%", height:"100%", objectFit:"cover"}} />
+          </div>
+          <div style={{ gridColumn: "span 1", gridRow: "span 1" }}>
+            <img src="/images/wellamankara/background image.png" alt="Wellamankara Harbour" style={{width:"100%", height:"100%", objectFit:"cover"}} />
+          </div>
+          <div style={{ gridColumn: "span 1", gridRow: "span 2" }}>
+            <img src="/images/IMAGES/LDPP/DJI_0087.jpg" alt="LDPP Sabaragamuwa" style={{width:"100%", height:"100%", objectFit:"cover"}} />
+          </div>
+          <div style={{ gridColumn: "span 1", gridRow: "span 1" }}>
+            <img src="/images/projects/project-86/Background image.jpeg" alt="Matara Mahanama Bridge" style={{width:"100%", height:"100%", objectFit:"cover"}} />
+          </div>
+        </div>
+
+        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.95) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
             <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
