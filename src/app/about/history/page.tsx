@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Flag, Construction, ShieldCheck, Map, Factory, Anchor, Train, Globe } from 'lucide-react';
+import { Flag, Construction, ShieldCheck, Map, Factory, Anchor, Train, Globe, Mountain } from 'lucide-react';
 
 const timelineEvents = [
   {
@@ -44,6 +44,14 @@ const timelineEvents = [
     imageAlt: "Overseas maritime infrastructure project in the Maldives by RR Construction",
     desc: <>The company expanded its international project experience through overseas infrastructure developments, including the <strong style={{ fontWeight: 'normal' }}>Upgrading of the Harbour Seawall in R. Vandhoo, Maldives</strong>, completed in 2016 for the Ministry of Environment and Energy. This strengthened RR Construction's capabilities in coastal protection, marine infrastructure, and specialized construction in challenging environments, building on its experience as a <Link href="/services/dredging-reclamation" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: "normal" }}>marine and dredging contractor</Link>.</>,
     icon: <Globe size={24} color="var(--primary-red)" />
+  },
+  {
+    epoch: "2017",
+    title: "Pioneering Landslide Mitigation",
+    image: "/images/IMAGES/LDPP/DJI_0087.jpg",
+    imageAlt: "Landslide Disaster Protection Project in Sabaragamuwa and Uva Provinces",
+    desc: <>RR Construction marked a major milestone by initiating its first specialized <Link href="/services/landslide-mitigation" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: "normal" }}>landslide mitigation and disaster protection</Link> project. The <strong style={{ fontWeight: 'normal' }}>Landslide Disaster Protection Project - Package 02</strong>, executed for the Road Development Authority across Sabaragamuwa and Uva Provinces, established a strong foundation in complex geotechnical engineering, slope stabilization, and public safety infrastructure.</>,
+    icon: <Mountain size={24} color="var(--primary-red)" />
   },
   {
     epoch: "2019–2023",
