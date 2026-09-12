@@ -56,13 +56,13 @@ export default function QualityManagement() {
               <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.2 }}>
                 Quality Assured from <span style={{ color: "var(--primary-red)" }}>The Ground Up</span>
               </h2>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", textAlign: isMobile ? "justify" : "left" }}>
                 True quality in heavy civil engineering cannot be retrofitted; it must be engineered into every mix, every pour, and every weld. RR Construction's reputation as a top-tier infrastructure developer is built on an unwavering commitment to structural integrity.
               </p>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px", textAlign: isMobile ? "justify" : "left" }}>
                 Certified under <strong>ISO 9001:2015 (Quality Management Systems)</strong>, we execute massive public works with extreme precision.
               </p>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0 }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0, textAlign: isMobile ? "justify" : "left" }}>
                 Our proactive quality control frameworks span the entire project lifecycle. From rigorous geotechnical evaluations during pre-construction to comprehensive load-testing of finished structures, this holistic approach mitigates risk and guarantees the long-term durability of national infrastructure.
               </p>
             </div>
@@ -105,7 +105,7 @@ export default function QualityManagement() {
               </div>
               <div style={{ flex: "1 1 300px" }}>
                 <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Vertical Integration</h3>
-                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0 }}>
+                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0, textAlign: isMobile ? "justify" : "left" }}>
                   By leveraging our expansive, self-owned heavy machinery fleet and strategically operated crusher and asphalt plants, we maintain uncompromising command over our entire supply chain. This robust vertical integration effectively eradicates the risk of third-party logistical delays and ensures that only premium, rigorously tested aggregate materials are utilized across all our high-stakes construction sites.
                 </p>
               </div>
@@ -117,7 +117,7 @@ export default function QualityManagement() {
               </div>
               <div style={{ flex: "1 1 300px" }}>
                 <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Rigorous Testing</h3>
-                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0 }}>
+                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0, textAlign: isMobile ? "justify" : "left" }}>
                   Quality assurance is embedded at the core of our operations. Before a single asphalt layer is applied to a major expressway or a structural concrete pour commences, materials undergo exhaustive laboratory analysis. Comprehensive core sampling, precision compaction tests, and stringent load-bearing verifications form the baseline of our non-negotiable standard operating procedures.
                 </p>
               </div>
@@ -129,7 +129,7 @@ export default function QualityManagement() {
               </div>
               <div style={{ flex: "1 1 300px" }}>
                 <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "15px" }}>Expert Supervision</h3>
-                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0 }}>
+                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0, textAlign: isMobile ? "justify" : "left" }}>
                   Every project site operates under the vigilant, hands-on oversight of highly seasoned Chartered Civil Engineers and Senior Quantity Surveyors. This elite technical supervision enables us to preemptively identify and rectify any deviations from critical engineering specifications, guaranteeing that every structural milestone is executed with absolute precision and strict adherence to international standards.
                 </p>
               </div>
