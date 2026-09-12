@@ -235,17 +235,19 @@ export default function VisionMission() {
 
       {/* Our Direction Section */}
       <section style={{ padding: "80px 20px 120px", background: "var(--white)", position: "relative" }}>
-        <div className="container" style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
+        <div className="container" style={{ margin: "0 auto" }}>
           <Reveal>
-            <h2 style={{ fontSize: "clamp(2rem, 4vw, 3rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 30px" }}>
+            <h2 style={{ fontSize: "clamp(2rem, 4vw, 3rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 30px", textAlign: "center" }}>
               Our Direction
             </h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, marginBottom: "30px", fontWeight: 500, textAlign: "center", maxWidth: "650px", margin: "0 auto 30px" }}>
-              RR Construction (Pvt) Ltd continues to strengthen its position in Sri Lanka’s infrastructure sector through integrated heavy civil engineering capabilities covering <Link href="/services/road-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>roads and highways</Link>, <Link href="/services/bridge-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>bridges</Link>, <Link href="/services/railway-civil-works" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>railway construction</Link>, <Link href="/services/maritime-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>maritime and marine infrastructure</Link>, <Link href="/services/water-infrastructure" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>water infrastructure</Link>, <Link href="/services/landslide-mitigation" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>geotechnical works</Link> and other major civil engineering projects.
-            </p>
-            <p style={{ color: "var(--text-dark)", fontSize: "1.25rem", fontWeight: 800, fontFamily: "var(--font-heading)", textAlign: "center" }}>
-              Our vision guides where we are going, while our mission defines how we deliver value along the way.
-            </p>
+            <div style={{ width: "100%" }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "30px", textAlign: "justify" }}>
+                RR Construction (Pvt) Ltd continues to strengthen its position in Sri Lanka’s infrastructure sector through integrated heavy civil engineering capabilities covering <Link href="/services/road-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>roads and highways</Link>, <Link href="/services/bridge-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>bridges</Link>, <Link href="/services/railway-civil-works" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>railway construction</Link>, <Link href="/services/maritime-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>maritime and marine infrastructure</Link>, <Link href="/services/water-infrastructure" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>water infrastructure</Link>, <Link href="/services/landslide-mitigation" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>geotechnical works</Link> and other major civil engineering projects.
+              </p>
+              <p style={{ color: "var(--text-dark)", fontSize: "1.25rem", fontWeight: 800, fontFamily: "var(--font-heading)", textAlign: "center", margin: 0 }}>
+                Our vision guides where we are going, while our mission defines how we deliver value along the way.
+              </p>
+            </div>
           </Reveal>
         </div>
       </section>
