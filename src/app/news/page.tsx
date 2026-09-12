@@ -26,7 +26,7 @@ export default function News() {
       <section 
         className="page-header" 
         style={{ 
-          backgroundImage: "url('/images/page-headers/news-header.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
+          backgroundImage: "url('/images/projects/hulhudhoo/img1.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
           padding: isMobile ? "40px 20px" : "70px 20px", 
           textAlign: "center", 
           position: "relative", 

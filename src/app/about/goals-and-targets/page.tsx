@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -112,7 +112,7 @@ export default function GoalsAndTargets() {
       <section 
         className="page-header" 
         style={{ 
-          backgroundImage: "url('/images/page-headers/services-build.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
+          backgroundImage: "url('/images/projects/new-folder/sagt-road/1.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
           padding: isMobile ? "40px 20px" : "70px 20px", 
           textAlign: "center", 
           position: "relative", 
