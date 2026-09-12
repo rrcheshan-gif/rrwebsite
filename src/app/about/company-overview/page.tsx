@@ -22,18 +22,16 @@ export default function AboutStory() {
       <section 
         className="page-header" 
         style={{ 
-          backgroundImage: "url('/images/page-headers/overview-logo.jpg')", 
+          background: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)",
           padding: isMobile ? "40px 20px" : "70px 20px", 
           textAlign: "center", 
           position: "relative", 
-          backgroundSize: "cover", 
-          backgroundPosition: "center", 
           borderRadius: isMobile ? "24px" : "32px", 
           margin: isMobile ? "0 12px 30px" : "0 20px 50px", 
-          overflow: "hidden" 
+          overflow: "hidden",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.05)"
         }}
       >
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
             <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
