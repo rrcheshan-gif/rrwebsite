@@ -1629,7 +1629,7 @@ const projectsData = [
     galleryImages: [
       "/images/projects/new-folder/hirana-bridges/1.jpg",
       "/images/projects/new-folder/hirana-bridges/2.jpg",
-      "/images/projects/new-folder/hirana-bridges/3.jpg"
+      "/images/projects/new-folder/hirana-bridges/3-cropped.jpg"
     ],
     status: "Completed",
     client: "MCE Austria",

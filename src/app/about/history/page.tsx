@@ -24,7 +24,7 @@ const timelineEvents = [
   {
     epoch: "2007–2009",
     title: "Construction Capability Growth",
-    image: "/images/projects/new-folder/hirana-bridges/3.jpg",
+    image: "/images/projects/new-folder/hirana-bridges/3-cropped.jpg",
     imageAlt: "Steel bridge construction in Sri Lanka - Hirana bridge by RR Construction",
     desc: <>The company expanded into key infrastructure sectors including <Link href="/services/road-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>road and highway construction</Link>, <Link href="/services/bridge-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>bridge construction</Link>, irrigation, drainage, water supply, buildings, and structural works. Major milestones included the <strong style={{ fontWeight: 'normal' }}>Matara Mahanama Bridge in 2007</strong> and four steel bridges across Sri Lanka in <strong style={{ fontWeight: 'normal' }}>2009</strong>, strengthening RR Construction's expertise in structural and bridge engineering as a capable <strong style={{ fontWeight: 'normal' }}>infrastructure development</strong> contractor.<br /><br />The company also developed capabilities in multi-storey buildings, water-retaining structures, and complex infrastructure projects, supported by skilled professionals, technical expertise, and integrated project management.</>,
     icon: <Construction size={24} color="var(--primary-red)" />
