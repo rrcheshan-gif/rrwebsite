@@ -79,7 +79,7 @@ export default function VisionMission() {
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>
             Vision & <span style={{ color: "var(--primary-red)" }}>Mission</span>
           </h1>
-          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500, textAlign: isMobile ? "justify" : "left" }}>
+          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500, textAlign: "justify" }}>
             Our Vision & Mission define the direction behind everything we build. They reflect RR Construction’s commitment to engineering excellence, responsible infrastructure development, innovation, safety and lasting value for Sri Lanka and the communities we serve.
           </p>
         </div>
@@ -112,7 +112,7 @@ export default function VisionMission() {
                     <Eye size={40} />
                   </div>
                   <h2 style={{ fontSize: "2.5rem", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 25px 0", color: "var(--text-dark)" }}>Our Vision</h2>
-                  <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, fontWeight: 500, margin: "0 0 15px 0", textAlign: isMobile ? "justify" : "left" }}>
+                  <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, fontWeight: 500, margin: "0 0 15px 0", textAlign: "justify" }}>
                     “To be a leading force in Sri Lanka’s infrastructure development, delivering world-class engineering solutions that connect communities, enable progress, and build a stronger, more resilient future.”
                   </p>
                   <p style={{ color: "var(--primary-red)", fontSize: "1.05rem", fontWeight: 700, margin: 0 }}>
@@ -144,7 +144,7 @@ export default function VisionMission() {
                     <Target size={40} />
                   </div>
                   <h2 style={{ fontSize: "2.5rem", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 25px 0", color: "var(--text-dark)" }}>Our Mission</h2>
-                  <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, fontWeight: 500, margin: "0 0 15px 0", textAlign: isMobile ? "justify" : "left" }}>
+                  <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, fontWeight: 500, margin: "0 0 15px 0", textAlign: "justify" }}>
                     “To deliver complex infrastructure and heavy civil engineering projects with excellence, innovation, and integrity—combining experienced people, advanced technology, integrated resources, uncompromising quality, and a strong commitment to safety, sustainability, and client satisfaction.”
                   </p>
                   <p style={{ color: "var(--primary-red)", fontSize: "1.05rem", fontWeight: 700, margin: 0 }}>
@@ -223,7 +223,7 @@ export default function VisionMission() {
                   <h4 style={{ color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontSize: "1.5rem", fontWeight: 800, margin: "0 0 15px", lineHeight: 1.2 }}>
                     {val.subtitle}
                   </h4>
-                  <p style={{ color: "var(--text-light)", fontSize: "1rem", lineHeight: 1.6, margin: 0, fontWeight: 500, textAlign: isMobile ? "justify" : "left" }}>
+                  <p style={{ color: "var(--text-light)", fontSize: "1rem", lineHeight: 1.6, margin: 0, fontWeight: 500, textAlign: "justify" }}>
                     {val.desc}
                   </p>
                 </div>
