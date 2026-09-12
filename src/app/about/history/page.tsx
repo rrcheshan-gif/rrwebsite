@@ -114,7 +114,7 @@ export default function HistoryTimeline() {
                &larr; Back to About Us
             </Link>
           </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our Journey of <span style={{ color: "var(--primary-red)" }}>Excellence.</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our History &amp; <span style={{ color: "var(--primary-red)" }}>Milestones</span></h1>
           <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500 }}>
             Three decades of steady growth, technical evolution, and nation-building. Discover how we evolved into Sri Lanka's leading heavy civil engineering company.
           </p>
@@ -125,15 +125,7 @@ export default function HistoryTimeline() {
       <section style={{ padding: isMobile ? '60px 10px' : '100px 0', background: 'var(--bg-light)' }}>
         <div className="container" style={{ maxWidth: '1440px', margin: '0 auto' }}>
           
-          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
-            <h2 style={{ fontSize: 'clamp(1.8rem, 6vw, 4.2rem)', fontFamily: 'var(--font-heading)', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 20px 0', letterSpacing: '-0.5px' }}>
-              Our History &amp; <span style={{ color: 'var(--primary-red)' }}>Milestones</span>
-            </h2>
-            <div style={{ width: '60px', height: '4px', background: 'var(--primary-red)', margin: '0 auto 20px' }}></div>
-            <p style={{ color: 'var(--text-light)', fontSize: '1.15rem', maxWidth: '700px', margin: '0 auto' }}>
-              A legacy of engineering excellence, built on decades of trust, capability expansion, and successful project delivery across Sri Lanka.
-            </p>
-          </div>
+
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
             {timelineEvents.map((e, i) => (
