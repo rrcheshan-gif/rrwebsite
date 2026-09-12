@@ -64,7 +64,7 @@ const timelineEvents = [
   {
     epoch: "2024–2026",
     title: "Integrated Infrastructure Delivery",
-    image: "/images/projects/Anuradhapura-Vauniya/1.jpg",
+    image: "/images/IMAGES/RRP/rrp-5.jpg",
     imageAlt: "Railway infrastructure construction in Sri Lanka - Maho to Anuradhapura line",
     desc: <>RR Construction continues to deliver complex <Link href="/projects" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>infrastructure projects</Link> across Sri Lanka, with capabilities spanning <Link href="/services/road-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>road and highway construction</Link>, <Link href="/services/bridge-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>bridges</Link>, <Link href="/services/railway-civil-works" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>railway infrastructure</Link>, <Link href="/services/maritime-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>maritime and harbour construction</Link>, <Link href="/services/water-infrastructure" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>water infrastructure</Link>, irrigation, <Link href="/services/landslide-mitigation" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>geotechnical and landslide mitigation</Link>, and other heavy civil engineering works across all provinces of Sri Lanka.</>,
     icon: <Factory size={24} color="var(--primary-red)" />
