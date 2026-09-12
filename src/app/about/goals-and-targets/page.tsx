@@ -150,7 +150,7 @@ export default function GoalsAndTargets() {
             <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px", lineHeight: 1.2 }}>
               Strategic <span style={{ color: "var(--primary-red)" }}>Goals</span>
             </h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.7, textAlign: "center" }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "650px", margin: "0 auto", lineHeight: 1.7, textAlign: "center" }}>
               Our operational and strategic objectives are designed to continuously improve our performance across all phases of <Link href="/services" style={{ color: "var(--primary-red)", textDecoration: "none" }}>construction and engineering</Link>.
             </p>
           </div>
@@ -239,11 +239,11 @@ export default function GoalsAndTargets() {
 
       {/* 4. Looking Ahead */}
       <section style={{ padding: isMobile ? "50px 10px" : "80px 20px", backgroundColor: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "800px", margin: "0 auto", padding: "0 16px", textAlign: "center" }}>
+        <div className="container" style={{ maxWidth: "650px", margin: "0 auto", padding: "0 16px", textAlign: "center" }}>
           <h2 style={{ fontSize: isMobile ? "2rem" : "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 25px 0" }}>
             Looking Ahead
           </h2>
-          <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, margin: "0 auto", textAlign: "center", maxWidth: "800px" }}>
+          <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, margin: "0 auto", textAlign: "center", maxWidth: "650px" }}>
             RR Construction (Pvt) Ltd continues to strengthen its capabilities with a clear focus on effective project delivery, engineering advancement, infrastructure development and operational excellence. By continuously improving its people, processes, resources and technical capabilities, the company aims to respond effectively to the evolving requirements of Sri Lanka's infrastructure sector and create lasting value through reliable construction and civil engineering solutions.
           </p>
         </div>
