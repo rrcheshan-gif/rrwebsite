@@ -244,7 +244,7 @@ export default function GoalsAndTargets() {
             Looking Ahead
           </h2>
           <div style={{ width: "100%" }}>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0, textAlign: "justify" }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0, textAlign: "justify", textAlignLast: "center" }}>
               RR Construction (Pvt) Ltd continues to strengthen its capabilities with a clear focus on effective project delivery, engineering advancement, infrastructure development and operational excellence. By continuously improving its people, processes, resources and technical capabilities, the company aims to respond effectively to the evolving requirements of Sri Lanka's infrastructure sector and create lasting value through reliable construction and civil engineering solutions.
             </p>
           </div>
