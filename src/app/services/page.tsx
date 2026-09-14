@@ -172,7 +172,7 @@ export default function Services() {
       `}</style>
 
       {/* ── HERO ── */}
-      <section style={{
+      <section className="page-header" style={{
         backgroundImage: "linear-gradient(rgba(10,18,35,0.72), rgba(10,18,35,0.84)), url('/images/puttalam/puttalam-2.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center 35%',
