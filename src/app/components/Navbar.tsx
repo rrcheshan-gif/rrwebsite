@@ -37,7 +37,7 @@ export default function Navbar() {
     return () => { document.body.style.overflow = ''; };
   }, [mobileMenuOpen]);
 
-  const isHomePage = pathname === '/';
+  const isHomePage = true; // Always apply home-nav style (liquid glass) to all pages
 
   const toggleDropdown = (name: string, e: React.MouseEvent) => {
     if (window.innerWidth <= 1200) {
@@ -48,7 +48,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className={`navbar-wrapper ${scrolled ? "scrolled" : ""} ${isHomePage ? "home-nav" : "default-nav"}`}>
+      <header className={`navbar-wrapper ${scrolled ? "scrolled" : ""} home-nav`}>
         <div className="container">
           <nav className="navbar">
             <a href="/" className="logo" onClick={() => setMobileMenuOpen(false)}>
