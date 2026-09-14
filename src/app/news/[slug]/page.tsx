@@ -55,7 +55,7 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.6) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2, maxWidth: "900px" }}>
           
-          <div style={{ textAlign: "left", marginBottom: "40px" }}>
+          <div style={{ textAlign: "center", marginBottom: "24px" }}>
             <Link href="/news" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,1)", display: "inline-flex", alignItems: "center", gap: "8px" }}>
               <ArrowLeft size={16} /> Back to News
             </Link>
