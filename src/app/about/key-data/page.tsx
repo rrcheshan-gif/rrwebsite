@@ -23,13 +23,13 @@ export default function KeyDataPage() {
         className="page-header" 
         style={{ 
           backgroundImage: "url('/images/IMAGES/RRP/rrp-5.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
-          padding: isMobile ? "120px 20px 40px" : "160px 20px 70px", 
+          padding: isMobile ? "110px 20px 30px" : "140px 20px 40px", 
           textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 
           backgroundPosition: "center", 
-          borderRadius: isMobile ? "24px" : "32px", 
-          margin: isMobile ? "0 12px 30px" : "0 20px 50px", 
+           
+          margin: "0 0 40px",  
           overflow: "hidden" 
         }}
       >

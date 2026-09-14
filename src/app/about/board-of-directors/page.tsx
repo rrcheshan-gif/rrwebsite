@@ -23,13 +23,13 @@ export default function BoardOfDirectors() {
         className="page-header" 
         style={{ 
           backgroundImage: "url('/images/projects/new-folder/hirana-bridges/3-cropped.jpg'), linear-gradient(180deg, rgba(31, 41, 55, 0.9), rgba(17, 24, 39, 0.95))", 
-          padding: isMobile ? "120px 20px 40px" : "160px 20px 70px", 
+          padding: isMobile ? "110px 20px 30px" : "140px 20px 40px", 
           textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 
           backgroundPosition: "center", 
-          borderRadius: isMobile ? "24px" : "32px", 
-          margin: isMobile ? "0 12px 30px" : "0 20px 50px", 
+           
+          margin: "0 0 40px",  
           overflow: "hidden" 
         }}
       >
