@@ -23,7 +23,7 @@ export default function AboutStory() {
         className="page-header" 
         style={{ 
           background: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)",
-          padding: isMobile ? "110px 20px 30px" : "140px 20px 40px", 
+          padding: isMobile ? "80px 20px 30px" : "90px 20px 40px", 
           textAlign: "center", 
           position: "relative", 
            

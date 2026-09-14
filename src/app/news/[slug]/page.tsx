@@ -41,7 +41,7 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
         className="page-header" 
         style={{ 
           backgroundImage: `url('${news.img}')`, 
-          padding: "140px 20px 40px", 
+          padding: "90px 20px 40px", 
           textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 

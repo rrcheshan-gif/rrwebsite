@@ -176,7 +176,7 @@ export default function Services() {
         backgroundImage: "linear-gradient(rgba(10,18,35,0.72), rgba(10,18,35,0.84)), url('/images/puttalam/puttalam-2.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center 35%',
-        padding: isMobile ? '110px 20px 30px' : '140px 20px 40px',
+        padding: isMobile ? "80px 20px 30px" : "90px 20px 40px",
         
         borderRadius: isMobile ? '24px' : '32px',
         margin: isMobile ? '0 12px 30px' : '0 20px 40px',

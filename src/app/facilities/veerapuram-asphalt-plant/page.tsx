@@ -80,7 +80,7 @@ export default function VeerapuramPlant() {
         </div>
       )}
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/veerapuram-plant-header.jpg')", padding: "140px 20px 40px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/veerapuram-plant-header.jpg')", padding: "90px 20px 40px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0,0,0,0.4)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "center", marginBottom: "24px" }}>
