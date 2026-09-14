@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -17,7 +17,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="footer-bio">
-              <strong>Passion for Engineering Excellence.</strong> A leading heavy civil engineering enterprise engineering the roads, bridges, and infrastructure that move Sri Lanka forward.
+              <strong>Passion for Engineering Excellence.</strong>
             </p>
             <div className="footer-social-pills">
               <a href="#" aria-label="Facebook">FB</a>
