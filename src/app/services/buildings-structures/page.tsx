@@ -50,15 +50,7 @@ export default function CivilStructuresPage() {
           }}>
             Civil <span style={{ color: 'var(--primary-red)' }}>Structures</span>
           </h1>
-          <p style={{ 
-            fontSize: isMobile ? '1.1rem' : '1.25rem', 
-            maxWidth: '800px', 
-            margin: '0 auto', 
-            opacity: 0.9,
-            lineHeight: 1.6
-          }}>
-            Delivering robust reinforced concrete structures, complex water retaining towers, and heavy steel fabrication that form the backbone of modern industrial and municipal developments in Sri Lanka.
-          </p>
+          
         </div>
       </section>
 

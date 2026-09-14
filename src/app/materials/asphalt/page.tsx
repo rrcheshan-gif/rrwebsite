@@ -62,9 +62,7 @@ export default function AsphaltPage() {
           }}>
             Asphalt Production & <span style={{ color: 'var(--primary-red)' }}>Road Construction</span> in Sri Lanka
           </h1>
-          <p style={{ fontSize: isMobile ? '1rem' : '1.25rem', opacity: 0.9 }}>
-            High-capacity asphalt plants supporting national highway development.
-          </p>
+          
         </div>
       </section>
 

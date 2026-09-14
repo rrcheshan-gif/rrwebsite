@@ -61,9 +61,7 @@ export default function MSandPage() {
           }}>
             M-Sand & <span style={{ color: 'var(--primary-red)' }}>Manufactured Sand</span> in Sri Lanka
           </h1>
-          <p style={{ fontSize: isMobile ? '1rem' : '1.25rem', opacity: 0.9 }}>
-            High-quality manufactured sand production from advanced VSI crushers.
-          </p>
+          
         </div>
       </section>
 

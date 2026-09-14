@@ -137,9 +137,7 @@ export default function GoalsAndTargets() {
             </div>
           </div>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Goals & <span style={{ color: "var(--primary-red)" }}>Targets</span></h1>
-          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "20px", display: "inline-block", lineHeight: 1.6, fontWeight: 500, textAlign: "center", maxWidth: "900px" }}>
-            Driving Sri Lanka's infrastructure development through effective project delivery, engineering excellence, resource efficiency and sustainable business growth.
-          </p>
+          
         </div>
       </section>
 

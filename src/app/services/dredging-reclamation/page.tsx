@@ -87,14 +87,7 @@ export default function DredgingReclamationPage() {
           }}>
             Dredging & <span style={{ color: 'var(--primary-red)' }}>Reclamation</span> Services in Sri Lanka
           </h1>
-          <p style={{
-            fontSize: isMobile ? '1.1rem' : '1.2rem',
-            opacity: 0.9,
-            lineHeight: 1.6,
-            maxWidth: '600px',
-          }}>
-            Advanced marine dredging, harbour development, and land reclamation solutions.
-          </p>
+          
         </div>
       </section>
 

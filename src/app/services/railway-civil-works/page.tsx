@@ -50,15 +50,7 @@ export default function RailwayCivilWorksPage() {
           }}>
             Railway <span style={{ color: 'var(--primary-red)' }}>Civil Works</span>
           </h1>
-          <p style={{ 
-            fontSize: isMobile ? '1.1rem' : '1.25rem', 
-            maxWidth: '800px', 
-            margin: '0 auto', 
-            opacity: 0.9,
-            lineHeight: 1.6
-          }}>
-            Spearheading civil and formation works for Sri Lanka's national rail network upgradation"including massive earthworks, intricate drainage, and robust track formations.
-          </p>
+          
         </div>
       </section>
 

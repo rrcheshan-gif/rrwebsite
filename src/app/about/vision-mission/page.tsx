@@ -80,9 +80,7 @@ export default function VisionMission() {
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>
             Vision & <span style={{ color: "var(--primary-red)" }}>Mission</span>
           </h1>
-          <p style={{ color: "#cbd5e1", fontSize: isMobile ? "1.1rem" : "1.3rem", marginTop: "15px", maxWidth: "700px", display: "inline-block", lineHeight: 1.6, fontWeight: 500, textAlign: "justify", textAlignLast: "center" }}>
-            Our Vision & Mission define the direction behind everything we build. They reflect RR Construction’s commitment to engineering excellence, responsible infrastructure development, innovation, safety and lasting value for Sri Lanka and the communities we serve.
-          </p>
+          
         </div>
       </section>
 

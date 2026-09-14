@@ -207,9 +207,7 @@ export default function LandslideMitigationPage() {
           
 
           <h1 style={styles.h1}>Landslide Mitigation &amp; <span style={{ color: 'var(--primary-red)' }}>Geotechnical Engineering</span> in Sri Lanka</h1>
-          <p style={styles.heroDesc}>
-            Comprehensive slope stabilization, retaining structures, and geotechnical solutions to protect infrastructure and communities in vulnerable regions.
-          </p>
+          
         </div>
       </section>
 

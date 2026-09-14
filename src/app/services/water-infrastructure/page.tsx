@@ -48,9 +48,7 @@ export default function WaterInfrastructurePage() {
         <h1 style={{ color: 'var(--white)', fontSize: isMobile ? '36px' : '48px', fontFamily: 'var(--font-heading)', margin: '0 0 20px 0' }}>
           Water <span style={{ color: 'var(--primary-red)' }}>Infrastructure & Heavy Civil Engineering</span> in Sri Lanka
         </h1>
-        <p style={{ color: 'var(--bg-light)', fontSize: '18px', maxWidth: '800px', lineHeight: 1.6, margin: 0 }}>
-          Expert engineering solutions for water supply systems, treatment plants, drainage, and irrigation works across Sri Lanka.
-        </p>
+        
       </section>
 
       {/* Services Grid */}

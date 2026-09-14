@@ -63,15 +63,7 @@ export default function BridgeConstructionPage() {
           >
             Bridge Construction & <span style={{ color: 'var(--primary-red)' }}>Rehabilitation in Sri Lanka</span>
           </h1>
-          <p
-            style={{
-              fontSize: isMobile ? '18px' : '20px',
-              lineHeight: 1.6,
-              opacity: 0.9,
-            }}
-          >
-            Building vital connections across the island since 1995. Top-tier bridge engineering contractors.
-          </p>
+          
         </div>
       </section>
 

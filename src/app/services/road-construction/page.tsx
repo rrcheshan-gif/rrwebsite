@@ -51,15 +51,7 @@ export default function RoadConstructionPage() {
           }}>
             Road & Highway <span style={{ color: 'var(--primary-red)' }}>Construction in Sri Lanka</span>
           </h1>
-          <p style={{ 
-            fontSize: isMobile ? '1.1rem' : '1.25rem', 
-            maxWidth: '800px', 
-            margin: '0 auto', 
-            opacity: 0.9,
-            lineHeight: 1.6
-          }}>
-            Since {COMPANY_DATA.established}, RR Construction has been a cornerstone of Sri Lanka's infrastructure development. With extensive experience, we deliver expert road construction, rehabilitation, and asphalt paving services across all provinces.
-          </p>
+          
         </div>
       </section>
 

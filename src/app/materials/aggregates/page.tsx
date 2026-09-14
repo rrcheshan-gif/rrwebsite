@@ -61,9 +61,7 @@ export default function AggregatesPage() {
           }}>
             Construction Aggregates & <span style={{ color: 'var(--primary-red)' }}>Quarry Products</span> in Sri Lanka
           </h1>
-          <p style={{ fontSize: isMobile ? '1rem' : '1.25rem', opacity: 0.9 }}>
-            High-grade crushed stone materials for robust civil infrastructure.
-          </p>
+          
         </div>
       </section>
 
