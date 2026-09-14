@@ -27,7 +27,7 @@ export default function News() {
         className="page-header" 
         style={{ 
           backgroundImage: "url('/images/projects/hulhudhoo/img1.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
-          padding: isMobile ? "40px 20px" : "70px 20px", 
+          padding: isMobile ? "120px 20px 40px" : "160px 20px 70px", 
           textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 

@@ -23,7 +23,7 @@ export default function QualityManagement() {
         className="page-header" 
         style={{ 
           backgroundImage: "url('/images/health-safety-site.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
-          padding: isMobile ? "40px 20px" : "70px 20px", 
+          padding: isMobile ? "120px 20px 40px" : "160px 20px 70px", 
           textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 
@@ -89,7 +89,7 @@ export default function QualityManagement() {
       </section>
 
       {/* Action Areas Grid */}
-      <section style={{ padding: "50px 20px", background: "var(--white)" }}>
+      <section style={{ padding: "130px 20px 50px", background: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto", padding: "0 16px" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontSize: isMobile ? "2.2rem" : "3rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0" }}>

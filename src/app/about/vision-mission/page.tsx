@@ -59,7 +59,7 @@ export default function VisionMission() {
         className="page-header" 
         style={{ 
           backgroundImage: "url('/images/IMAGES/Gandara/gandara-bg.jpeg'), linear-gradient(180deg, #1f2937, #111827)", 
-          padding: isMobile ? "40px 20px" : "70px 20px", 
+          padding: isMobile ? "120px 20px 40px" : "160px 20px 70px", 
           textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 
@@ -171,7 +171,7 @@ export default function VisionMission() {
       </section>
 
       {/* Modern Core Values Grid */}
-      <section style={{ padding: "100px 20px", background: "var(--bg-light)", position: "relative" }}>
+      <section style={{ padding: "160px 20px 80px", background: "var(--bg-light)", position: "relative" }}>
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
           <Reveal>
             <div style={{ textAlign: "center", marginBottom: "80px" }}>

@@ -2,9 +2,9 @@
 
 export default function QualityPolicy() {
   return (
-    <div style={{ paddingTop: "100px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/quality-policy.jpg')", padding: "60px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center 30%", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
+      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/quality-policy.jpg')", padding: "140px 20px 60px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center 30%", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
@@ -17,7 +17,7 @@ export default function QualityPolicy() {
       </section>
 
       {/* ISO 9001 Section */}
-      <section style={{ padding: "50px 20px" }}>
+      <section style={{ padding: "130px 20px 50px" }}>
         <div className="container">
           <div style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
             <div style={{ marginBottom: "20px", display: "inline-block", padding: "20px", background: "rgba(229, 57, 53, 0.1)", borderRadius: "50%" }}>

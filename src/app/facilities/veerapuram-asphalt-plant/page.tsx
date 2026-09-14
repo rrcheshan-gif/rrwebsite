@@ -34,7 +34,7 @@ export default function VeerapuramPlant() {
   }, [lightboxImg]);
 
   return (
-    <div style={{ paddingTop: "100px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Lightbox Modal */}
       {lightboxImg && (
         <div 
@@ -80,7 +80,7 @@ export default function VeerapuramPlant() {
         </div>
       )}
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/veerapuram-plant-header.jpg')", padding: "50px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/veerapuram-plant-header.jpg')", padding: "130px 20px 50px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0,0,0,0.4)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
@@ -92,7 +92,7 @@ export default function VeerapuramPlant() {
       </section>
 
       {/* Intro Section */}
-      <section style={{ padding: "50px 20px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "130px 20px 50px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700,  letterSpacing: "2px", marginBottom: "10px" }}>Veerapuram M Sand Plant and Crusher Plant</h4>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>Choose M-SAND for your all kind of Constructions</h2>
@@ -123,7 +123,7 @@ export default function VeerapuramPlant() {
       </section>
 
       {/* Photo Gallery */}
-      <section style={{ padding: "50px 20px", background: "var(--bg-base)" }}>
+      <section style={{ padding: "130px 20px 50px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Our Veerapuram Facility</h2>
@@ -141,7 +141,7 @@ export default function VeerapuramPlant() {
       </section>
 
       {/* Why Switch to M-Sand */}
-      <section style={{ padding: "50px 20px", background: "var(--bg-base)" }}>
+      <section style={{ padding: "130px 20px 50px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Why Switch to Our M-Sand?</h2>
@@ -212,7 +212,7 @@ export default function VeerapuramPlant() {
       </section>
 
       {/* Quality Assurance Table */}
-      <section style={{ padding: "50px 20px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "130px 20px 50px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>VEERAPURAM PLANT: Quality Assurance</h2>
@@ -263,7 +263,7 @@ export default function VeerapuramPlant() {
       </section>
 
       {/* Products List */}
-      <section style={{ padding: "50px 20px", background: "var(--bg-base)" }}>
+      <section style={{ padding: "130px 20px 50px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>VEERAPURAM PLANT: Our Products</h2>
@@ -286,7 +286,7 @@ export default function VeerapuramPlant() {
       </section>
 
       {/* Contact Section */}
-      <section style={{ padding: "50px 20px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "130px 20px 50px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto" }}>
           <div style={{ background: "var(--white)", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", overflow: "hidden", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
             <div style={{ padding: "40px" }}>

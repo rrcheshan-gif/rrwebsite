@@ -10,9 +10,9 @@ export default function Contact() {
   };
 
   return (
-    <div style={{ paddingTop: "110px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/projects/new-folder/badulla-buttala/1.jpg')", padding: "60px 20px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
+      <section className="page-header" style={{ backgroundImage: "url('/images/projects/new-folder/badulla-buttala/1.jpg')", padding: "140px 20px 60px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center", borderRadius: "32px", margin: "0 20px 40px", overflow: "hidden" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "20px" }}>
@@ -24,7 +24,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Info & Form */}
-      <section style={{ padding: "60px 20px", backgroundColor: "var(--bg-base)" }}>
+      <section style={{ padding: "140px 20px 60px", backgroundColor: "var(--bg-base)" }}>
         <div className="container" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "50px", alignItems: "start" }}>
           
           <div>
