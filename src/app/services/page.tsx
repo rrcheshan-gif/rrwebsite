@@ -186,9 +186,7 @@ export default function Services() {
         <div style={{ position: 'absolute', left: 0, top: 0, width: '5px', height: '100%', background: 'var(--primary-red)', borderRadius: '0 4px 4px 0' }} />
 
         <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-          <Link href="/" style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', fontWeight: 600, letterSpacing: '1.5px',  textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '28px' }}>
-            ← Home
-          </Link>
+          <div style={{ width: "100%", textAlign: "left", marginBottom: "24px" }}><Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home</Link></div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '18px' }}>
             <div style={{ width: '36px', height: '2px', background: 'var(--primary-red)' }} />
