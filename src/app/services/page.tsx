@@ -98,7 +98,7 @@ export default function Services() {
   }, []);
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: 'var(--bg-light)', paddingTop: isMobile ? '85px' : '130px' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: 'var(--bg-light)', paddingTop: '0px' }}>
 
       <style>{`
         @keyframes fadeSlideUp {
@@ -176,9 +176,9 @@ export default function Services() {
         backgroundImage: "linear-gradient(rgba(10,18,35,0.72), rgba(10,18,35,0.84)), url('/images/puttalam/puttalam-2.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center 35%',
-        padding: isMobile ? '40px 20px' : '70px 20px',
-        borderRadius: isMobile ? '20px' : '28px',
-        margin: isMobile ? '0 12px 36px' : '0 20px 52px',
+        padding: isMobile ? '110px 20px 30px' : '140px 20px 40px',
+        
+        margin: '0 0 40px',
         position: 'relative',
         overflow: 'hidden',
       }}>
