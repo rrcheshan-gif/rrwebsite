@@ -947,7 +947,7 @@ const projectsData = [
   },
   {
     id: 'project-51',
-    type: 'completed', category: "bridges",
+      type: 'completed', category: "irrigation",
     title: "Construction of Flood Gate With Culvert Near Thalangama Tank",
     status: "Completed",
     client: "Ministry of Megapolis",
@@ -1478,7 +1478,7 @@ const projectsData = [
   },
   {
     id: 'project-78',
-    type: 'completed', category: "bridges",
+      type: 'completed', category: "roads",
     title: "Kotamulla - Karangoda - Dimiyawa Road",
     status: "Completed",
     client: "Road Development Authority",
@@ -1763,7 +1763,7 @@ const projectsData = [
       '/images/projects/project-100/Background image.jpg'
     ]  },
   {
-    id: 'project-101',
+    id: 'project-106',
     type: 'completed',
     category: 'roads',
     title: 'Improvement of Udawalava - Thanamalwila Road (5+000 - 11+500 Km)',
@@ -1778,7 +1778,7 @@ const projectsData = [
       '/images/projects/new-folder/tanamalvila-road/1.jpg'
     ]  },
   {
-    id: 'project-102',
+    id: 'project-107',
     type: 'completed',
     category: 'bridges',
     title: 'Widening of Hartal Bridge in Ports of Colombo',
