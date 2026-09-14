@@ -214,7 +214,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
         <div className="container" style={{ position: 'relative', zIndex: 10 }}>
           <button
             onClick={() => router.back()}
-            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '20px', color: '#ccc', textDecoration: 'none', paddingBottom: '2px', background: 'none', border: 'none', borderBottom: '1px solid #ccc', cursor: 'pointer', fontSize: '1rem', fontFamily: 'inherit' }}
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '24px', color: '#ccc', textDecoration: 'none', paddingBottom: '2px', background: 'none', border: 'none', borderBottom: '1px solid #ccc', cursor: 'pointer', fontSize: '1rem', fontFamily: 'inherit' }}
           >
             ← Back
           </button>
@@ -244,7 +244,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
             {/* Main Content (Left) */}
             <div style={{ flex: '2', minWidth: '300px' }}>
               <div style={{ background: 'var(--white)', padding: '40px', borderRadius: '12px', boxShadow: '0 10px 40px rgba(0,0,0,0.05)', marginBottom: '40px' }}>
-                <h3 style={{ color: 'var(--primary-red)', marginBottom: '20px', fontSize: '1.5rem' }}>Project Overview</h3>
+                <h3 style={{ color: 'var(--primary-red)', marginBottom: '24px', fontSize: '1.5rem' }}>Project Overview</h3>
                 <div style={{ fontSize: '1.05rem', lineHeight: 1.8, color: 'var(--text-dark)' }} dangerouslySetInnerHTML={{ __html: description }}></div>
               </div>
 
@@ -280,27 +280,27 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
             <div style={{ flex: '1', minWidth: '300px' }}>
               <div style={{ background: 'var(--white)', padding: '30px', borderRadius: '12px', boxShadow: '0 10px 40px rgba(0,0,0,0.05)', marginBottom: '30px' }}>
                 
-                <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
+                <div style={{ marginBottom: '24px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
                   <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem',  marginBottom: '5px', letterSpacing: '1px' }}>Client</h4>
                   <p style={{ color: 'var(--text-dark)', fontSize: '1.1rem', fontWeight: 'bold' }}>{project.client}</p>
                 </div>
                 
                 {project.contractNo && (
-                  <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
+                  <div style={{ marginBottom: '24px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
                     <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem',  marginBottom: '5px', letterSpacing: '1px' }}>Contract No</h4>
                     <p style={{ color: 'var(--text-dark)', fontSize: '1.1rem', fontWeight: 'bold' }}>{project.contractNo}</p>
                   </div>
                 )}
                 
                 {project.value && (
-                  <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
+                  <div style={{ marginBottom: '24px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
                     <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem',  marginBottom: '5px', letterSpacing: '1px' }}>Contract Value</h4>
                     <p style={{ color: 'var(--text-dark)', fontSize: '1.1rem', fontWeight: 'bold' }}>{project.value}</p>
                   </div>
                 )}
                 
                 {project.type !== 'ongoing' && (
-                  <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
+                  <div style={{ marginBottom: '24px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>
                     <h4 style={{ color: 'var(--text-light)', fontSize: '0.85rem',  marginBottom: '5px', letterSpacing: '1px' }}>Duration</h4>
                     <p style={{ color: 'var(--text-dark)', fontSize: '1.1rem', fontWeight: 'bold' }}>{project.duration}</p>
                   </div>

@@ -10,7 +10,7 @@ export default function ThudugalaPlant() {
       <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/thudugala-plant-header.jpg')", padding: "90px 20px 40px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0,0,0,0.4)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <div style={{ textAlign: "center", marginBottom: "24px" }}>
+          <div style={{ textAlign: "left", marginBottom: "24px" }}>
             <Link href="/facilities" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold" }}>← Back to Quarries & Aggregates</Link>
           </div>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px", textShadow: "0 2px 5px rgba(0,0,0,0.8)" }}>High Capacity Crusher Plant</h4>
