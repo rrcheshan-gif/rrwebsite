@@ -1776,6 +1776,22 @@ const projectsData = [
     heroImage: '/images/projects/new-folder/tanamalvila-road/1.jpg',
     galleryImages: [
       '/images/projects/new-folder/tanamalvila-road/1.jpg'
+    ]  },
+  {
+    id: 'project-102',
+    type: 'completed',
+    category: 'bridges',
+    title: 'Widening of Hartal Bridge in Ports of Colombo',
+    description: 'Contract includes sub structural works, super structural works and Renovation of existing Bridge in ports of Colombo.',
+    status: 'Completed',
+    client: 'Sri Lanka Ports Authority',
+    duration: '18 Months',
+    value: 'LKR 216,288,022.85',
+    year: 2012,
+    heroImage: '/images/projects/new-folder/widening-of-hartal-bridge/background-image.jpg',
+    galleryImages: [
+      '/images/projects/new-folder/widening-of-hartal-bridge/1.jpg',
+      '/images/projects/new-folder/widening-of-hartal-bridge/background-image.jpg'
     ]
   }
 ];
