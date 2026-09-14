@@ -53,6 +53,70 @@ export default function OngoingProjects() {
           </div>
         </div>
       </section>
+      {/* Photo Gallery Section */}
+      <section style={{ padding: '40px 20px 100px', textAlign: 'center' }}>
+        <div className='container' style={{ maxWidth: '1440px' }}>
+          <h2 style={{ 
+            fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
+            fontFamily: 'var(--font-heading)', 
+            fontWeight: 800, 
+            color: 'var(--text-dark)', 
+            marginBottom: '50px'
+          }}>
+            Gallery of <span style={{ color: 'var(--primary-red)' }}>Ongoing Works</span>
+          </h2>
+          
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+            gap: '24px',
+            padding: '20px'
+          }}>
+            {[
+              { src: '/images/Badulla Landslide/Background image.jpeg', title: 'Landslide Mitigation Project' },
+              { src: '/images/KRP/img-1.jpeg', title: 'Road Construction Project' },
+              { src: '/images/BBP/img-1.jpeg', title: 'Bridge Construction Project' },
+              { src: '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.28.jpeg', title: 'Irrigation & Water Supply' },
+              { src: '/images/puttalam/puttalam-1.jpg', title: 'Bridge Construction Project' },
+              { src: '/images/VBP/img-1.jpeg', title: 'Bridge Construction Project' },
+              { src: '/images/WBP/img-1.jpeg', title: 'Bridge Construction Project' },
+              { src: '/images/mayilvakanapuram/mayil-1.jpg', title: 'Road Construction Project' }
+            ].map((img, idx) => (
+              <div key={idx} style={{
+                position: 'relative',
+                borderRadius: '16px',
+                overflow: 'hidden',
+                aspectRatio: '4/3',
+                boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
+                border: '1px solid var(--border-soft)'
+              }}>
+                <img 
+                  src={img.src} 
+                  alt={img.title}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    transition: 'transform 0.5s ease'
+                  }}
+                  onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+                  onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                />
+                <div style={{
+                  position: 'absolute',
+                  bottom: 0, left: 0, right: 0,
+                  background: 'linear-gradient(transparent, rgba(15,23,42,0.9))',
+                  padding: '30px 20px 15px',
+                  color: 'white',
+                  textAlign: 'left'
+                }}>
+                  <h4 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 600 }}>{img.title}</h4>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
