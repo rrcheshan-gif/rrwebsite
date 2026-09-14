@@ -1761,6 +1761,21 @@ const projectsData = [
       '/images/projects/project-100/8.jpg',
       '/images/projects/project-100/9.jpg',
       '/images/projects/project-100/Background image.jpg'
+    ]  },
+  {
+    id: 'project-101',
+    type: 'completed',
+    category: 'roads',
+    title: 'Improvement of Udawalava - Thanamalwila Road (5+000 - 11+500 Km)',
+    description: 'Contract included Widening, over laying ABC, Shoulder preparation, Laying Asphalt of Udawalawa - Thanamalwila Road (5.00-11.50Km). This work was funded by Sri Lankan government.',
+    status: 'Completed',
+    client: 'Road Development Authority',
+    duration: '05 Months',
+    value: 'LKR 110,358,649.54 (With variations: LKR 146M)',
+    year: 2011,
+    heroImage: '/images/projects/new-folder/tanamalvila-road/1.jpg',
+    galleryImages: [
+      '/images/projects/new-folder/tanamalvila-road/1.jpg'
     ]
   }
 ];
