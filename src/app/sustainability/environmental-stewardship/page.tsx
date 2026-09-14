@@ -16,7 +16,7 @@ export default function EnvironmentalStewardship() {
   }, []);
 
   return (
-    <div style={{ paddingTop: isMobile ? "90px" : "110px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       
       {/* Hero Section */}
       <section 

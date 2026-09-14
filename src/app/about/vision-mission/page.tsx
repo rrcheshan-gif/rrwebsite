@@ -52,7 +52,7 @@ export default function VisionMission() {
   }, []);
 
   return (
-    <div style={{ paddingTop: isMobile ? "90px" : "110px", backgroundColor: "var(--bg-light)", minHeight: "100vh", overflowX: "hidden" }}>
+    <div style={{ paddingTop: "0px", backgroundColor: "var(--bg-light)", minHeight: "100vh", overflowX: "hidden" }}>
       
       {/* Hero Section */}
       <section 

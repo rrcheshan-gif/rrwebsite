@@ -106,7 +106,7 @@ export default function GoalsAndTargets() {
   ];
 
   return (
-    <div style={{ paddingTop: isMobile ? "90px" : "110px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       
       {/* 1. Hero Section */}
       <section 
