@@ -908,10 +908,10 @@ const projectsData = [
     id: 'project-48',
     type: 'completed', category: "roads",
     title: "Central Expressway Project Section - 2 (Package-A)",
-    heroImage: "/images/projects/new-folder/CEP 02/1.jpg",
+    heroImage: "/images/projects/new-folder/CEP-02/1.jpg",
     galleryImages: [
-      "/images/projects/new-folder/CEP 02/1.jpg",
-      "/images/projects/new-folder/CEP 02/2.jpg"
+      "/images/projects/new-folder/CEP-02/1.jpg",
+      "/images/projects/new-folder/CEP-02/2.jpg"
     ],
     status: "Completed",
     client: "Road Development Authority",
