@@ -67,7 +67,8 @@ export default function SustainabilityHub() {
           backgroundSize: "cover", 
           backgroundPosition: "center 30%", 
            
-          margin: "0 0 40px",  
+          borderRadius: isMobile ? '24px' : '32px',
+          margin: isMobile ? '0 12px 30px' : '0 20px 40px',  
           overflow: "hidden" 
         }}
       >

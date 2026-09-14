@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { use, useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -11,6 +11,8 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
   const resolvedParams = use(params);
   const router = useRouter();
   const project: any = projectsData.find((p: any) => p.id === resolvedParams.id);
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => { const check = () => setIsMobile(window.innerWidth <= 768); check(); window.addEventListener('resize', check); return () => window.removeEventListener('resize', check); }, []);
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
 
   useEffect(() => {
@@ -199,7 +201,9 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
       {/* Dynamic Hero Section */}
       <section style={{ 
         position: 'relative', 
-        height: '50vh', 
+        height: '50vh',
+        borderRadius: isMobile ? '24px' : '32px',
+        margin: isMobile ? '0 12px 30px' : '0 20px 40px', 
         minHeight: '350px',
         display: 'flex',
         alignItems: 'flex-end',

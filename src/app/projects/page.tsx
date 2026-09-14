@@ -122,7 +122,8 @@ export default function Projects() {
 
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
-            <section className="page-header" style={{ padding: "90px 20px", textAlign: "center", position: "relative",  margin: "0 0 40px", overflow: "hidden", backgroundColor: "#0f172a" }}>
+            <section className="page-header" style={{ padding: "90px 20px", textAlign: "center", position: "relative",  borderRadius: '32px',
+          margin: '0 20px 40px', overflow: "hidden", backgroundColor: "#0f172a" }}>
         
         {/* Collage Background */}
         <div style={{ 

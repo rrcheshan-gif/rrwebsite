@@ -47,7 +47,8 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
           backgroundSize: "cover", 
           backgroundPosition: news.crop === 'top' ? 'top center' : 'center', 
            
-          margin: "0 0 40px", 
+          borderRadius: '32px',
+          margin: '0 20px 40px', 
           overflow: "hidden" 
         }}
       >
