@@ -23,7 +23,7 @@ export default function SocialResponsibility() {
         className="page-header" 
         style={{ 
           backgroundImage: "url('/images/about_section.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
-          padding: isMobile ? "80px 20px 30px" : "90px 20px 40px", 
+          padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
           textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 
