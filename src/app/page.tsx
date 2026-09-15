@@ -120,10 +120,10 @@ export default function Home() {
                       height: '100%', 
                       objectFit: 'cover', 
                       objectPosition: 'center', 
-                      opacity: 0.8, 
-                      filter: 'contrast(1.1) saturate(1.05)',
-                      transform: index === currentSlide ? 'scale(1.1)' : 'scale(1)',
-                      transition: index === currentSlide ? 'transform 10s ease-out' : 'none',
+                      opacity: 1, 
+                      filter: 'none',
+                      transform: 'scale(1)',
+                      transition: 'none',
                       willChange: 'transform'
                     }} 
                     onError={(e) => { if (slide.fallback) (e.target as HTMLImageElement).src = slide.fallback; }} 
@@ -132,7 +132,7 @@ export default function Home() {
           </div>
         ))}
         {/* Balanced Cinematic Overlay for high text contrast */}
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.5) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 80%, rgba(0,0,0,0.7) 100%)', zIndex: 2 }}></div>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.6) 100%), linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 80%, rgba(0,0,0,0.8) 100%)', zIndex: 2 }}></div>
 
         {/* Foreground Content */}
         <div className="container" style={{ position: "relative", zIndex: 3, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
