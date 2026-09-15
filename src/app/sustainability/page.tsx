@@ -79,7 +79,7 @@ export default function SustainabilityHub() {
               &larr; Back to Home
             </Link>
           </div>
-          <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px", textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>Our Responsibility</h4>
+          
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Sustainability <span style={{ color: "var(--primary-red)" }}>& HSE</span></h1>
           
         </div>
