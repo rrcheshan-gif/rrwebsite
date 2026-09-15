@@ -1,14 +1,14 @@
 ﻿import type { Metadata, Viewport } from "next";
-import { Montserrat, Poppins } from "next/font/google";
+import { Outfit, Manrope } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({
+const outfit = Outfit({
   variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const poppins = Poppins({
+const manrope = Manrope({
   variable: "--font-body",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -109,7 +109,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${montserrat.variable} ${poppins.variable}`}
+      className={`${outfit.variable} ${manrope.variable}`}
       suppressHydrationWarning
     >
       <head>
