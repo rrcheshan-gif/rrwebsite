@@ -1,17 +1,17 @@
-import type { Metadata, Viewport } from "next";
-import { Rajdhani, Roboto } from "next/font/google";
+﻿import type { Metadata, Viewport } from "next";
+import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 
-const rajdhani = Rajdhani({
+const montserrat = Montserrat({
   variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["500", "600", "700", "800", "900"],
 });
 
-const roboto = Roboto({
+const poppins = Poppins({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -109,7 +109,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${rajdhani.variable} ${roboto.variable}`}
+      className={`${montserrat.variable} ${poppins.variable}`}
       suppressHydrationWarning
     >
       <head>
