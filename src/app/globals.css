@@ -2076,7 +2076,7 @@ body {
   /* Typography scaling */
   h2 { font-size: clamp(1.5rem, 6vw, 2rem) !important; }
   h3 { font-size: clamp(1.2rem, 5vw, 1.5rem) !important; }
-  p  { font-size: 1rem !important; line-height: 1.7 !important; text-align: left !important; }
+  p  { font-size: 1rem !important; line-height: 1.7 !important; text-align: justify !important; }
 
   /* Hero / Page header */
   .page-header {
