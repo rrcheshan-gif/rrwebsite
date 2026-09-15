@@ -5,7 +5,7 @@ export default function OngoingProjects() {
   return (
     <div style={{ minHeight: '70vh', background: 'var(--bg-light)' }}>
       {/* Hero Section */}
-      <section style={{ padding: '180px 20px 100px', textAlign: 'center' }}>
+      <section style={{ padding: '160px 20px 40px', textAlign: 'center' }}>
         <div className='container' style={{ maxWidth: '1440px' }}>
           <div style={{ maxWidth: '900px', margin: '0 auto' }}>
             <h1 style={{ 
@@ -54,14 +54,14 @@ export default function OngoingProjects() {
         </div>
       </section>
       {/* Photo Gallery Section */}
-      <section style={{ padding: '40px 20px 100px', textAlign: 'center' }}>
+      <section style={{ padding: '0px 20px 80px', textAlign: 'center' }}>
         <div className='container' style={{ maxWidth: '1440px' }}>
           <h2 style={{ 
             fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
             fontFamily: 'var(--font-heading)', 
             fontWeight: 800, 
             color: 'var(--text-dark)', 
-            marginBottom: '50px'
+            marginBottom: '30px'
           }}>
             Gallery of <span style={{ color: 'var(--primary-red)' }}>Ongoing Works</span>
           </h2>
