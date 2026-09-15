@@ -11,11 +11,10 @@ export default function Home() {
 
   const slides = [
     {
-      img: '/images/home/SLIDE_01_NOTEXT-enhanced.jpg',
+      img: '/images/home/hero-collage.jpg',
       fallback: '/images/hero-road-roller.jpg',
-      duration: 999999,
+      duration: 8000,
       tag: 'PASSION FOR ENGINEERING EXCELLENCE',
-      video: '/videos/home-slider-new.mp4',
       heading1: 'Engineering',
       heading2: "Sri Lanka's",
       heading3: 'Tomorrow',
