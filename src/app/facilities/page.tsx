@@ -101,7 +101,7 @@ export default function QuarriesAggregates() {
       </section>
 
       {/* Introduction Section */}
-      <section style={{ padding: "130px 20px 50px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  textShadow: "0 2px 10px rgba(0,0,0,0.05)", marginBottom: "5px" }}>Industrial-Grade Aggregates for Construction Projects</h2>
           <p style={{ fontSize: "1.2rem", lineHeight: 1.8, color: "var(--text-light)", maxWidth: "800px", margin: "0 auto 30px" }}>
@@ -128,7 +128,7 @@ export default function QuarriesAggregates() {
       </section>
 
       {/* Our Plants Section */}
-      <section style={{ padding: "130px 20px 50px", background: "var(--bg-base)" }}>
+      <section style={{ padding: "60px 20px 50px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Our Strategic Plant Locations</h2>
@@ -213,7 +213,7 @@ export default function QuarriesAggregates() {
       </section>
 
       {/* Product Catalog Section */}
-      <section style={{ padding: "130px 20px 50px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Available Products & Specifications</h2>
@@ -268,7 +268,7 @@ export default function QuarriesAggregates() {
       </section>
 
       {/* B2B Order & Inquiry Form Section */}
-      <section id="inquiry" style={{ padding: "130px 20px 50px", background: "var(--bg-base)" }}>
+      <section id="inquiry" style={{ padding: "60px 20px 50px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "800px", margin: "0 auto" }}>
           <div style={{ background: "var(--white)", color: "var(--text-dark)", padding: "50px", borderRadius: "12px", borderTop: "6px solid var(--primary-red)", boxShadow: "0 15px 40px rgba(0,0,0,0.05)" }}>
             <div style={{ textAlign: "center", marginBottom: "40px" }}>

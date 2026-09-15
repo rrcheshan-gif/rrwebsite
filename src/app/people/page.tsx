@@ -18,7 +18,7 @@ export default function People() {
       </section>
 
       {/* Intro */}
-      <section style={{ padding: "130px 20px 50px" }}>
+      <section style={{ padding: "60px 20px 50px" }}>
         <div className="container" style={{ margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 5vw, 2.5rem)", color: "var(--text-dark)", marginBottom: "20px" }}>The Engine of RR Construction</h2>
           <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "0 auto 30px" }}></div>
@@ -67,7 +67,7 @@ export default function People() {
       </section>
 
       {/* Join Us CTA */}
-      <section style={{ padding: "130px 20px 50px", background: "#1e293b", color: "white", textAlign: "center" }}>
+      <section style={{ padding: "60px 20px 50px", background: "#1e293b", color: "white", textAlign: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 6vw, 3rem)", marginBottom: "20px", color: "white" }}>Build Your Career With Us</h2>
           <p style={{ color: "#cbd5e1", fontSize: "1.2rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.6 }}>Ready to engineer tomorrow? We are always looking for passionate engineers, project managers, and skilled tradespeople to join our growing team.</p>

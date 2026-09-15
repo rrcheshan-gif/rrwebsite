@@ -17,7 +17,7 @@ export default function Training() {
         </div>
       </section>
 
-      <section style={{ padding: "130px 20px 50px" }}>
+      <section style={{ padding: "60px 20px 50px" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
           <div style={{ width: "80px", height: "80px", background: "rgba(229, 57, 53, 0.1)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px" }}>
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>

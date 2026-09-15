@@ -25,7 +25,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Info & Form */}
-      <section style={{ padding: "140px 20px 60px", backgroundColor: "var(--bg-base)" }}>
+      <section style={{ padding: "60px 20px 60px", backgroundColor: "var(--bg-base)" }}>
         <div className="container" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "50px", alignItems: "start" }}>
           
           <div>

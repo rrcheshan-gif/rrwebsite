@@ -48,7 +48,7 @@ export default function Career() {
       </section>
 
       {/* Careers Content */}
-      <section style={{ padding: "140px 20px 60px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "60px 20px 60px", background: "var(--bg-light)" }}>
         <div className="container">
           <div style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto 50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 5vw, 2.5rem)", color: "var(--primary-red)", marginBottom: "20px" }}>Build Your Future With Us</h2>

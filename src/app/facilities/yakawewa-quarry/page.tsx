@@ -18,7 +18,7 @@ export default function YakawewaPlant() {
       </section>
 
       {/* Intro Section */}
-      <section style={{ padding: "130px 20px 50px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700,  letterSpacing: "2px", marginBottom: "10px" }}>Yakawewa Asphalt Plant</h4>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>Premium Quality Aggregates & Crushed Metal</h2>
@@ -49,7 +49,7 @@ export default function YakawewaPlant() {
       </section>
 
       {/* Photo Gallery */}
-      <section style={{ padding: "130px 20px 50px", background: "var(--bg-base)" }}>
+      <section style={{ padding: "60px 20px 50px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Our Yakawewa Facility</h2>
@@ -63,7 +63,7 @@ export default function YakawewaPlant() {
       </section>
 
       {/* Products List */}
-      <section style={{ padding: "130px 20px 50px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>YAKAWEWA ASPHALT PLANT: Our Products</h2>
@@ -86,7 +86,7 @@ export default function YakawewaPlant() {
       </section>
 
       {/* Contact Section */}
-      <section style={{ padding: "130px 20px 50px", background: "var(--bg-base)" }}>
+      <section style={{ padding: "60px 20px 50px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto" }}>
           <div style={{ background: "var(--white)", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", overflow: "hidden", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
             <div style={{ padding: "40px" }}>

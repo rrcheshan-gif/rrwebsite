@@ -18,7 +18,7 @@ export default function QualityPolicy() {
       </section>
 
       {/* ISO 9001 Section */}
-      <section style={{ padding: "130px 20px 50px" }}>
+      <section style={{ padding: "60px 20px 50px" }}>
         <div className="container">
           <div style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
             <div style={{ marginBottom: "20px", display: "inline-block", padding: "20px", background: "rgba(229, 57, 53, 0.1)", borderRadius: "50%" }}>
