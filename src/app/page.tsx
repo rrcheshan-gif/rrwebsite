@@ -369,7 +369,7 @@ export default function Home() {
             </p>
         
             <div>
-              <Link href="/about/history" className="btn btn-primary hover-glow" style={{ padding: "16px 36px", fontSize: "1.0rem" }}>Discover Our Legacy</Link>
+              <Link href="/about/history" className="btn btn-primary hover-glow" style={{ padding: "16px 36px", fontSize: "1.0rem" }}>Discover Our History</Link>
             </div>
           </div>
         </div>
