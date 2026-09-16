@@ -146,7 +146,7 @@ export default function VisionMission() {
               <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "25px", letterSpacing: "-1px" }}>Our Mission</h2>
               
               <p style={{ fontSize: "1.2rem", lineHeight: 1.8, color: "var(--text-light)", margin: 0, fontWeight: 500, position: "relative", paddingLeft: "25px", borderLeft: "4px solid var(--primary-red)" }}>
-                To deliver complex infrastructure and heavy civil engineering projects with excellence, innovation, and integrity�combining experienced people, advanced technology, integrated resources, uncompromising quality, and a strong commitment to safety, sustainability, and client satisfaction.
+                To deliver complex infrastructure and heavy civil engineering projects with excellence, innovation, and integrity — combining experienced people, advanced technology, integrated resources, uncompromising quality, and a strong commitment to safety, sustainability, and client satisfaction.
               </p>
             </div>
           </Reveal>
@@ -191,46 +191,7 @@ export default function VisionMission() {
           </Reveal>
         </div>
       </section>
-  {/* Our Direction Section */}
-      <section style={{ padding: isMobile ? "60px 20px" : "120px 20px", background: "var(--bg-light)", position: "relative" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <Reveal>
-            <div className="hover-lift" style={{ 
-              position: "relative",
-              backgroundColor: "var(--text-dark)", 
-              borderRadius: "32px", 
-              padding: isMobile ? "40px 30px" : "70px 60px", 
-              boxShadow: "0 30px 60px rgba(15, 23, 42, 0.2)", 
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              overflow: "hidden",
-              zIndex: 1
-            }}>
-              <div style={{ position: "absolute", top: "-50px", right: "-50px", opacity: 0.05, zIndex: -1, pointerEvents: "none" }}>
-                <Compass size={400} color="#fff" />
-              </div>
-              
-              <div style={{ width: "80px", height: "80px", borderRadius: "24px", backgroundColor: "rgba(255, 255, 255, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "40px", backdropFilter: "blur(10px)" }}>
-                <Compass size={40} color="#ffffff" />
-              </div>
-              
-              <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "#ffffff", marginBottom: "25px", letterSpacing: "-1px" }}>Our Direction</h2>
-              
-              <div style={{ position: "relative", paddingLeft: isMobile ? "20px" : "30px", borderLeft: "4px solid var(--primary-red)" }}>
-                <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "1.15rem", lineHeight: 1.8, marginBottom: "25px", fontWeight: 400 }}>
-                  RR Construction (Pvt) Ltd continues to strengthen its position in Sri Lanka's infrastructure sector through integrated heavy civil engineering capabilities covering <Link href="/services/road-construction" style={{ color: "#fff", textDecoration: "underline", fontWeight: "bold" }}>roads and highways</Link>, <Link href="/services/bridge-construction" style={{ color: "#fff", textDecoration: "underline", fontWeight: "bold" }}>bridges</Link>, <Link href="/services/railway-civil-works" style={{ color: "#fff", textDecoration: "underline", fontWeight: "bold" }}>railway construction</Link>, <Link href="/services/maritime-construction" style={{ color: "#fff", textDecoration: "underline", fontWeight: "bold" }}>maritime and marine infrastructure</Link>, <Link href="/services/water-infrastructure" style={{ color: "#fff", textDecoration: "underline", fontWeight: "bold" }}>water infrastructure</Link>, <Link href="/services/landslide-mitigation" style={{ color: "#fff", textDecoration: "underline", fontWeight: "bold" }}>geotechnical works</Link> and other major civil engineering projects.
-                </p>
-                <p style={{ color: "#ffffff", fontSize: "1.3rem", fontWeight: 700, fontFamily: "var(--font-heading)", margin: 0, letterSpacing: "0.5px" }}>
-                  Our vision guides where we are going, while our mission defines how we deliver value along the way.
-                </p>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Brand Statement Banner */}
+  {/* Brand Statement Banner */}
       <section style={{ padding: "80px 20px", background: "linear-gradient(135deg, #6b7280 0%, #4b5563 100%)", position: "relative", borderTop: "4px solid var(--primary-red)", borderBottom: "4px solid var(--primary-red)" }}>
         <Reveal>
           <div className="container" style={{ textAlign: "center", maxWidth: "1000px" }}>
