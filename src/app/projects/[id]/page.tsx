@@ -223,7 +223,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
         minHeight: '350px',
         display: 'flex',
         alignItems: 'flex-end',
-        background: heroImg ? `linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 100%), url('${heroImg.startsWith('/') ? heroImg : `/${heroImg}`}') center/cover` : 'linear-gradient(135deg, #B71C1C 0%, #E53935 100%)',
+        background: heroImg ? `linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 100%), url('${heroImg.startsWith('/') ? heroImg : `/${heroImg}`}') center/cover` : 'linear-gradient(to bottom, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.95) 100%), url("/images/page-headers/blueprint-bg-hq.jpg") center/cover',
         color: 'white',
         paddingBottom: '40px'
       }}>
