@@ -22,7 +22,7 @@ export default function AboutStory() {
       <section 
         className="page-header" 
         style={{ 
-          background: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)",
+          backgroundImage: "linear-gradient(to bottom, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.3) 60%, rgba(15, 23, 42, 0.8) 100%), url('/images/company-overview-bg.jpg')" , backgroundSize: "cover", backgroundPosition: "center", minHeight: "350px", display: "flex", flexDirection: "column", justifyContent: "flex-end",
           padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
           textAlign: "center", 
           position: "relative", 
@@ -33,12 +33,11 @@ export default function AboutStory() {
           boxShadow: "0 10px 30px rgba(0,0,0,0.05)"
         }}
       >
+        <div style={{ position: "absolute", top: "110px", left: "clamp(20px, 4vw, 40px)", zIndex: 10 }}>
+          <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home</Link>
+        </div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <div className="absolute-back-btn" style={{ position: "absolute", top: "110px", left: "clamp(20px, 4vw, 40px)", zIndex: 99 }}>
-            <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
-              &larr; Back to Home
-            </Link>
-          </div>
+          
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>RR <span style={{ color: "var(--primary-red)" }}>Overview</span></h1>
           
         </div>
