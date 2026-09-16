@@ -2032,7 +2032,14 @@ ul {
 
 
 /* Global Typography Adjustments */
-p { line-height: 1.75; }
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  line-height: 1.75;
+}
 
 
 
