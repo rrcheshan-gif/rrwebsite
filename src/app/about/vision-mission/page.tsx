@@ -185,7 +185,7 @@ export default function VisionMission() {
                   <h4 style={{ color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontSize: "1.5rem", fontWeight: 800, margin: "0 0 15px", lineHeight: 1.2 }}>
                     {val.subtitle}
                   </h4>
-                  <p style={{ color: "var(--text-light)", fontSize: "1rem", lineHeight: 1.6, margin: 0, fontWeight: 500, textAlign: "justify", textAlignLast: "center" }}>
+                  <p style={{ color: "var(--text-light)", fontSize: "1rem", lineHeight: 1.6, margin: 0, fontWeight: 500 }}>
                     {val.desc}
                   </p>
                 </div>
@@ -203,7 +203,7 @@ export default function VisionMission() {
               Our Direction
             </h2>
             <div style={{ width: "100%" }}>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "30px", textAlign: "justify", textAlignLast: "center" }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "30px" }}>
                 RR Construction (Pvt) Ltd continues to strengthen its position in Sri Lanka’s infrastructure sector through integrated heavy civil engineering capabilities covering <Link href="/services/road-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>roads and highways</Link>, <Link href="/services/bridge-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>bridges</Link>, <Link href="/services/railway-civil-works" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>railway construction</Link>, <Link href="/services/maritime-construction" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>maritime and marine infrastructure</Link>, <Link href="/services/water-infrastructure" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>water infrastructure</Link>, <Link href="/services/landslide-mitigation" style={{ color: "inherit", textDecoration: "none", fontWeight: "normal" }}>geotechnical works</Link> and other major civil engineering projects.
               </p>
               <p style={{ color: "var(--text-dark)", fontSize: "1.25rem", fontWeight: 800, fontFamily: "var(--font-heading)", textAlign: "center", margin: 0 }}>

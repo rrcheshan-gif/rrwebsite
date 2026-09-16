@@ -12,7 +12,7 @@ export default function Contact() {
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/projects/new-folder/badulla-buttala/1.jpg')", padding: "140px 20px 40px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center",  borderRadius: '32px',
+      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/contact-hero.jpg')", padding: "140px 20px 40px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center",  borderRadius: '32px',
           margin: '0 20px 40px', overflow: "hidden" }}>
         <div className="absolute-back-btn" style={{ position: "absolute", top: "110px", left: "clamp(20px, 4vw, 40px)", zIndex: 99 }}>
           <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
