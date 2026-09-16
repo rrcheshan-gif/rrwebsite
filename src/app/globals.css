@@ -2032,10 +2032,7 @@ ul {
 
 
 /* Global Typography Adjustments */
-p {
-  text-align: justify;
-  line-height: 1.75;
-}
+p { line-height: 1.75; }
 
 
 
@@ -2076,7 +2073,7 @@ body {
   /* Typography scaling */
   h2 { font-size: clamp(1.5rem, 6vw, 2rem) !important; }
   h3 { font-size: clamp(1.2rem, 5vw, 1.5rem) !important; }
-  p  { font-size: 1rem !important; line-height: 1.7 !important; text-align: justify !important; }
+  p { font-size: 1rem !important; line-height: 1.7 !important; }
 
   /* Hero / Page header */
   .page-header {
