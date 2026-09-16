@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -83,7 +83,7 @@ export default function KeyDataPage() {
                   <div style={{ background: 'rgba(229,57,53,0.1)', width: '45px', height: '45px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <Building2 size={22} color="var(--primary-red)" />
                   </div>
-                  <h3 style={{ color: 'var(--primary-red)', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: 800, fontSize: '0.8rem', margin: 0 }}>Corporate Identity</h3>
+                  <h3 className='card-heading' style={{ color: 'var(--primary-red)', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: 800, fontSize: '0.8rem' }}>Corporate Identity</h3>
                 </div>
                 <h2 style={{ fontSize: isMobile ? '1.8rem' : '2.5rem', fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'var(--text-dark)', marginBottom: '30px', lineHeight: 1.1 }}>RR Construction <br/><span style={{ color: 'var(--text-light)', fontSize: '0.7em' }}>(Pvt) Ltd</span></h2>
                 
@@ -106,7 +106,7 @@ export default function KeyDataPage() {
                 <div style={{ background: 'rgba(229,57,53,0.1)', width: '45px', height: '45px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <MapPin size={22} color="var(--primary-red)" />
                 </div>
-                <h4 style={{ color: 'var(--text-dark)', fontWeight: 800, fontSize: '1.2rem', margin: 0, fontFamily: 'var(--font-heading)' }}>Head Office</h4>
+                <h4 className='card-heading' style={{ color: 'var(--text-dark)', fontWeight: 800, fontSize: '1.2rem', fontFamily: 'var(--font-heading)' }}>Head Office</h4>
               </div>
               <p style={{ color: 'var(--text-light)', lineHeight: 1.8, fontSize: '1rem', margin: 0 }}>No. 865, Dr. Danister De Silva Mawatha, Baseline Road, Colombo 9, Orugodawatta.</p>
             </div>
@@ -126,7 +126,7 @@ export default function KeyDataPage() {
                 <div style={{ background: 'rgba(229,57,53,0.1)', width: '45px', height: '45px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <ShieldCheck size={22} color="var(--primary-red)" />
                 </div>
-                <h3 style={{ color: 'var(--text-dark)', fontWeight: 800, fontSize: '1.3rem', margin: 0, fontFamily: 'var(--font-heading)' }}>ISO Certified</h3>
+                <h3 className='card-heading' style={{ color: 'var(--text-dark)', fontWeight: 800, fontSize: '1.3rem', fontFamily: 'var(--font-heading)' }}>ISO Certified</h3>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 {["ISO 9001:2015 � Quality Management", "ISO 14001:2015 � Environmental Management", "ISO 45001:2018 � Occupational Health & Safety"].map((cert, i) => (
@@ -144,7 +144,7 @@ export default function KeyDataPage() {
                 <div style={{ background: 'rgba(229,57,53,0.1)', width: '45px', height: '45px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <Globe size={22} color="var(--primary-red)" />
                 </div>
-                <h3 style={{ color: 'var(--text-dark)', fontWeight: 800, fontSize: '1.3rem', margin: 0, fontFamily: 'var(--font-heading)' }}>Corporate Partners</h3>
+                <h3 className='card-heading' style={{ color: 'var(--text-dark)', fontWeight: 800, fontSize: '1.3rem', fontFamily: 'var(--font-heading)' }}>Corporate Partners</h3>
               </div>
               
               <div style={{ padding: '18px 20px', background: 'var(--bg-light)', borderRadius: '12px', marginBottom: '15px' }}>

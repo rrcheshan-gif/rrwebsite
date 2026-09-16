@@ -34,17 +34,17 @@ export default function People() {
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "40px" }}>
           
           <div style={{ background: "var(--white)", padding: "40px", borderRadius: "12px", borderLeft: "5px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
-            <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", marginBottom: "15px", color: "var(--text-dark)", fontWeight: 800 }}>Engineering & Technical</h3>
+            <h3 className="card-heading" style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", color: "var(--text-dark)", fontWeight: 800 }}>Engineering & Technical</h3>
             <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>Our core strength lies in our formidable, multidisciplinary team of industry veterans. This includes highly qualified Chartered Civil Engineers, precision-focused Quantity Surveyors, Geotechnical Experts, dedicated Health & Safety Professionals, and meticulous QA/QC Specialists. Together, they deploy advanced engineering methodologies and innovative problem-solving to ensure that every infrastructure project not only meets but consistently exceeds rigorous global engineering benchmarks.</p>
           </div>
 
           <div style={{ background: "var(--white)", padding: "40px", borderRadius: "12px", borderLeft: "5px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
-            <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", marginBottom: "15px", color: "var(--text-dark)", fontWeight: 800 }}>Skilled Trades & Operators</h3>
+            <h3 className="card-heading" style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", color: "var(--text-dark)", fontWeight: 800 }}>Skilled Trades & Operators</h3>
             <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>Recognized as the resilient backbone of our field operations, our direct workforce comprises highly trained, certified heavy machinery operators, master masons, specialized steel fixers, and expert asphalt technicians. We take immense pride in our long-term employee retention, with many of our seasoned tradespeople having been with us since the company's inception.</p>
           </div>
 
           <div style={{ background: "var(--white)", padding: "40px", borderRadius: "12px", borderLeft: "5px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
-            <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", marginBottom: "15px", color: "var(--text-dark)", fontWeight: 800 }}>Training & Development</h3>
+            <h3 className="card-heading" style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", color: "var(--text-dark)", fontWeight: 800 }}>Training & Development</h3>
             <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>We are profoundly committed to the Continuous Professional Development (CPD) of our workforce. We invest heavily in structured upskilling programs, ranging from rigorous ISO-certified occupational health and safety training to advanced workshops in modern structural technologies.</p>
           </div>
 

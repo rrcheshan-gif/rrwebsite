@@ -2469,3 +2469,47 @@ body {
   }
 }
 
+
+/* =====================================================
+   CARD HEADING WITH SHORT RED ACCENT LINE
+   Use class="card-heading" on h3/h4 inside cards
+   ===================================================== */
+
+.card-heading {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+  margin-bottom: 20px !important;
+}
+
+.card-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--primary-red);
+  border-radius: 2px;
+}
+
+/* Section heading with accent line (centered) */
+.section-heading {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 14px;
+  margin-bottom: 30px !important;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: var(--primary-red);
+  border-radius: 2px;
+}
+
