@@ -21,6 +21,7 @@ const projectsData = [
   },
   {
     id: 'project-mod-landslide-10f',
+    mapQuery: "Kegalle, Sri Lanka",
     type: 'ongoing',
     category: "disaster",
     title: "Ongoing Landslide Mitigation Project",
@@ -31,6 +32,7 @@ const projectsData = [
   },
   {
     id: 'project-rda-kurikadduvan-jetty',
+    mapQuery: "Kurikadduvan Jetty, Jaffna, Sri Lanka",
     type: 'ongoing',
     category: "maritime",
     title: "Ongoing Maritime & Dredging Project",
@@ -41,6 +43,7 @@ const projectsData = [
   },
   {
     id: 'project-mod-landslide-10j',
+    mapQuery: "Kegalle, Sri Lanka",
     type: 'ongoing',
     category: "disaster",
     title: "Ongoing Landslide Mitigation Project",
@@ -51,6 +54,7 @@ const projectsData = [
   },
   {
     id: 'project-rda-northern-province-lot03',
+    mapQuery: "Kilinochchi, Northern Province, Sri Lanka",
     type: 'ongoing',
     category: "roads",
     title: "Ongoing Road Construction Project",
@@ -68,6 +72,7 @@ const projectsData = [
   },
   {
     id: 'project-rda-colombo-galle',
+    mapQuery: "Galle Road, Bentota, Sri Lanka",
     type: 'ongoing',
     category: "roads",
     title: "Ongoing Road Construction Project",
@@ -78,6 +83,7 @@ const projectsData = [
   },
   {
     id: 'project-1',
+    mapQuery: "Batticaloa, Eastern Province, Sri Lanka",
     type: 'ongoing',
     category: "roads",
     title: "Ongoing Road Construction Project",
@@ -118,6 +124,7 @@ const projectsData = [
   },
   {
     id: 'project-3',
+    mapQuery: "Bentota, Sri Lanka",
     type: 'ongoing',
     category: "bridges",
     title: "Ongoing Bridge Construction Project",
@@ -137,6 +144,7 @@ const projectsData = [
   },
   {
     id: 'project-4',
+    mapQuery: "Deniyaya, Sri Lanka",
     type: 'ongoing',
     category: "bridges",
     title: "Ongoing Bridge Construction Project",
@@ -147,6 +155,7 @@ const projectsData = [
   },
   {
     id: 'project-5',
+    mapQuery: "Deniyaya, Sri Lanka",
     type: 'ongoing',
     category: "bridges",
     title: "Ongoing Bridge Construction Project",
@@ -157,6 +166,7 @@ const projectsData = [
   },
   {
     id: 'project-6',
+    mapQuery: "Horawela Pelawatta Pitigala Road, Sri Lanka",
     type: 'completed',
     category: "bridges",
     title: "Reconstruction of Bridge No. 4/1 on Horawela - Pelawatta - Pitigala Road (Balance Work)",
@@ -177,6 +187,7 @@ const projectsData = [
   },
   {
     id: 'project-7',
+    mapQuery: "Elpitiya, Sri Lanka",
     type: 'ongoing',
     category: "bridges",
     title: "Ongoing Bridge Construction Project",
@@ -187,6 +198,7 @@ const projectsData = [
   },
   {
     id: 'project-8',
+    mapQuery: "Chavakachcheri, Jaffna, Sri Lanka",
     type: 'ongoing',
     category: "roads",
     title: "Ongoing Road Construction Project",
@@ -197,6 +209,7 @@ const projectsData = [
   },
   {
     id: 'project-9',
+    mapQuery: "Kamburupitiya, Matara, Sri Lanka",
     type: 'ongoing',
     category: "bridges",
     title: "Ongoing Bridge Construction Project",
@@ -262,6 +275,7 @@ const projectsData = [
   },
   {
     id: 'project-14',
+    mapQuery: "Kegalle, Sri Lanka",
     type: 'ongoing',
     category: "disaster",
     title: "Ongoing Landslide Mitigation Project",
@@ -272,6 +286,7 @@ const projectsData = [
   },
   {
     id: 'project-16',
+    mapQuery: "Galle Road, Bentota, Sri Lanka",
     type: 'ongoing',
     category: "bridges",
     title: "Ongoing Bridge Construction Project",
@@ -282,6 +297,7 @@ const projectsData = [
   },
   {
     id: 'project-17',
+    mapQuery: "Negombo Lagoon, Negombo, Sri Lanka",
     type: 'ongoing',
     category: "maritime",
     title: "Ongoing Maritime & Dredging Project",
@@ -292,6 +308,7 @@ const projectsData = [
   },
   {
     id: 'project-18',
+    mapQuery: "Paranthan Mullaitivu Road, Sri Lanka",
     type: 'completed',
     category: "bridges",
     title: "Reconstruction of Bridge No. 12/1 on Paranthan - Karachchi - Mullaitivu Road (A035) Balance Work",
@@ -332,6 +349,7 @@ const projectsData = [
   },
   {
     id: 'project-20',
+    mapQuery: "Point Pedro Road, Jaffna, Sri Lanka",
     type: 'ongoing',
     category: "bridges",
     title: "Ongoing Bridge Construction Project",
@@ -342,6 +360,7 @@ const projectsData = [
   },
   {
     id: 'project-21',
+    mapQuery: "Mullaitivu, Sri Lanka",
     type: 'ongoing',
     category: "bridges",
     title: "Ongoing Bridge Construction Project",
@@ -359,6 +378,7 @@ const projectsData = [
   },
   {
     id: 'project-22',
+    mapQuery: "Walasmulla, Sri Lanka",
     type: 'ongoing',
     category: "bridges",
     title: "Ongoing Bridge Construction Project",
@@ -378,6 +398,7 @@ const projectsData = [
   },
   {
     id: 'project-23',
+    mapQuery: "Maho Railway Station, Sri Lanka",
     type: 'completed',
     category: "railway",
     title: "Maho to Anuradhapura Railway Line Track Rehabilitation & Ancillary Works",
@@ -415,6 +436,7 @@ const projectsData = [
   },
   {
     id: 'project-28',
+    mapQuery: "Kilinochchi, Northern Province, Sri Lanka",
     type: 'ongoing',
     category: "roads",
     title: "Ongoing Road Construction Project",
@@ -426,6 +448,7 @@ const projectsData = [
   // ONGOING / RECENT
   {
     id: 'project-92',
+    mapQuery: "Nuwara Eliya, Sri Lanka",
     type: 'completed',
     category: "disaster",
     title: "Landslide Mitigation Measures at 05 Locations in Nuwara Eliya District (RLVMMP)",
@@ -444,6 +467,7 @@ const projectsData = [
   },
   {
     id: 'project-93',
+    mapQuery: "Kegalle, Sri Lanka",
     type: 'completed',
     category: "disaster",
     title: "Landslide Mitigation Measures at 05 Locations in Kegalle and Rathnapura Districts (RLVMMP)",
@@ -454,6 +478,7 @@ const projectsData = [
   },
   {
     id: 'project-94',
+    mapQuery: "Ratnapura, Sri Lanka",
     type: 'completed',
     category: "disaster",
     title: "Landslide Mitigation Measures at 06 Location in Ratnapura District (Site No. 62,65,66,70,71,106) Under Package 6C of Reduction of Landslide Vulnerability by Mitigation Measures Project (RLVMMP)",
@@ -552,6 +577,7 @@ const projectsData = [
   },
   {
     id: 'project-29',
+    mapQuery: "Central Expressway, Pothuhera, Sri Lanka",
     type: 'completed', category: "roads",
     title: "Central Expressway Project Section 3 (Pothuhera to Galagedara)",
     heroImage: "/images/projects/new-folder/CEP03/1.jpg",
@@ -567,6 +593,7 @@ const projectsData = [
   },
   {
     id: 'project-30',
+    mapQuery: "Ratnapura, Sri Lanka",
     type: 'completed', category: "roads",
     title: "Rehabilitation of 30.12km Rural Roads in Rathnapura",
     heroImage: '/images/IMAGES/RRP/rrp-5.jpg',
@@ -578,6 +605,7 @@ const projectsData = [
   },
   {
       id: 'project-31',
+    mapQuery: "Palindanuwara, Kalutara, Sri Lanka",
       type: 'completed', category: "roads",
       title: "Rehabilitation of 20.80 Km Rural Roads in Palindanuwara (Kalutara)",
       heroImage: 'images/PYR/palindanuwara-1.jpeg',
@@ -637,6 +665,7 @@ const projectsData = [
   },
   {
     id: 'project-33',
+    mapQuery: "Kalutara, Sri Lanka",
     type: 'completed', category: "roads",
     title: "Rehabilitation of 26.05 Km of Rural Roads in Kalutara District",
     status: "Completed",
@@ -648,6 +677,7 @@ const projectsData = [
   },
   {
     id: 'project-34',
+    mapQuery: "NIFS Kandy, Sri Lanka",
     type: 'completed', category: "disaster",
     title: 'Rectification of Unstable Slope at NIFS Kandy',
     heroImage: 'images/nifs-landslide/nifs-hero.jpg',
@@ -660,6 +690,7 @@ const projectsData = [
   },
   {
     id: 'project-35',
+    mapQuery: "Nurses Training School, Kandy, Sri Lanka",
     type: 'completed', category: "disaster",
     title: 'RLVMMP Landslide Mitigation at Nursing Training School Kandy',
     heroImage: 'images/kandy-landslide/kandy-5.jpg',
@@ -674,6 +705,7 @@ const projectsData = [
   // 2023
   {
     id: 'project-36',
+    mapQuery: "Anuradhapura Railway Station, Sri Lanka",
     type: 'completed', category: "railway",
     title: "Anuradhapura to Vavuniya Railway Track Rehabilitation",
     status: "Completed",
@@ -689,6 +721,7 @@ const projectsData = [
   },
   {
     id: 'project-37',
+    mapQuery: "Ratnapura, Sri Lanka",
     type: 'completed', category: "disaster",
     title: "Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)",
     heroImage: "/images/projects/new-folder/Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)/1.jpg",
@@ -706,6 +739,7 @@ const projectsData = [
   },
   {
     id: 'project-38',
+    mapQuery: "Hatton Maskeliya Road, Sri Lanka",
     type: 'completed', category: "disaster",
     title: 'Landslide Mitigation on Hatton Maskeliya - Delhouse Road',
     heroImage: 'images/hatton-landslide/hatton-1.jpg',
@@ -718,6 +752,7 @@ const projectsData = [
   },
   {
     id: 'project-39',
+    mapQuery: "Kadugannawa, Sri Lanka",
     type: 'completed', category: "disaster",
     title: "Landslide Mitigation Along Railway Main Line (22 Sites)",
     status: "Completed",
@@ -771,6 +806,7 @@ const projectsData = [
   },
   {
     id: 'project-42',
+    mapQuery: "Kilinochchi, Sri Lanka",
     type: 'completed', category: "roads",
     title: 'Second Integrated Road Investment Program - Kilinochchi (53.60 Km)',
     heroImage: 'images/kilinochchi-iroad/kilinochchi-hero.jpg',
@@ -784,6 +820,7 @@ const projectsData = [
   },
   {
     id: 'project-43',
+    mapQuery: "Kurunegala, Sri Lanka",
     type: 'completed', category: "roads",
     title: "Integrated Road Development Program - Kurunegala (99.00 Km)",
     status: "Completed",
@@ -795,6 +832,7 @@ const projectsData = [
   },
   {
     id: 'project-44',
+    mapQuery: "Matara, Sri Lanka",
     type: 'completed', category: "water",
     title: "Matara Stage IV Water Supply Project - Raw Water Intake",
     heroImage: "/images/projects/new-folder/matara-stage-iv/1.jpg",
@@ -810,6 +848,7 @@ const projectsData = [
   },
   {
     id: 'project-45',
+    mapQuery: "Katana, Sri Lanka",
     type: 'completed', category: "water",
     title: "Pipe Laying Distribution Main in Katana Central Zone",
     heroImage: "/images/projects/new-folder/katana-central-zone/1.jpg",
@@ -826,6 +865,7 @@ const projectsData = [
   },
   {
     id: 'project-46',
+    mapQuery: "Lellama, Negombo, Sri Lanka",
     type: 'completed', category: "maritime",
     title: "Negombo Lagoon development Project, Dredging of Lagoon- Lellama Site II (Stage I, Package IV).",
     heroImage: "/images/projects/Negombo Lagoon development Project, Dredging of Lagoon- Lellama Site II/1.jpg",
@@ -906,6 +946,7 @@ const projectsData = [
   },
   {
     id: 'project-48',
+    mapQuery: "Central Expressway, Mirigama, Sri Lanka",
     type: 'completed', category: "roads",
     title: "Central Expressway Project Section - 2 (Package-A)",
     heroImage: "/images/projects/new-folder/CEP-02/1.jpg",
@@ -921,6 +962,7 @@ const projectsData = [
   },
   {
     id: 'project-49',
+    mapQuery: "Badulla, Sri Lanka",
     type: 'completed', category: "disaster",
     title: "Countermeasures at Six Locations in Sabaragamuwa & Uva",
     status: "Completed",
@@ -973,6 +1015,7 @@ const projectsData = [
   // 2019
   {
     id: 'project-105',
+    mapQuery: "Negombo Lagoon, Negombo, Sri Lanka",
     type: 'completed', category: "maritime",
     title: "Negombo Lagoon development Project Stage I, Package III Dredging of Lagoon- Near Regina Road.",
     heroImage: "/images/projects/new-folder/negombo-lagoon-stage-1/1.jpg",
@@ -1007,6 +1050,7 @@ const projectsData = [
   },
   {
     id: 'project-55',
+    mapQuery: "Udappuwa, Sri Lanka",
     type: 'completed', category: "bridges",
     title: "New Bridge at CH. 6+100 Udappuwa Town",
     status: "Completed",
@@ -1044,6 +1088,7 @@ const projectsData = [
   // 2018
   {
     id: 'project-58',
+    mapQuery: "Southern Expressway, Beliatta, Sri Lanka",
     type: 'completed', category: "roads",
     title: "Southern Expressway Subsection VI Structures (Matara to Beliatta)",
     status: "Completed",
@@ -1054,6 +1099,7 @@ const projectsData = [
   },
   {
     id: 'project-59',
+    mapQuery: "Ratnapura, Sri Lanka",
     type: 'completed', category: "roads",
     title: "Rehabilitation of 81km of Rural Roads in Rathnapura (R3)",
     status: "Completed",
@@ -1064,6 +1110,7 @@ const projectsData = [
   },
   {
     id: 'project-60',
+    mapQuery: "Southern Province, Sri Lanka",
     type: 'completed', category: "bridges",
     title: "Major Bridges Construction Project - Package 02",
     status: "Completed",
@@ -1074,6 +1121,7 @@ const projectsData = [
   },
   {
     id: 'project-61',
+    mapQuery: "Filadhoo, Haa Alif Atoll, Maldives",
     type: 'completed', category: "overseas",
     title: "Ha. Filadhoo Harbour Construction (Maldives)",
       heroImage: '/images/projects/filadhoo/img1.jpg',
@@ -1215,6 +1263,7 @@ const projectsData = [
   // 2017
   {
     id: 'project-63',
+    mapQuery: "Hambantota, Sri Lanka",
     type: 'completed', category: "roads",
     title: "Rehabilitation of 42Km Rural Roads in Hambantota (H3)",
     status: "Completed",
@@ -1264,6 +1313,7 @@ const projectsData = [
   },
   {
     id: 'project-67',
+    mapQuery: "Hulhudhoo, Seenu Atoll, Maldives",
     type: 'completed', category: "overseas",
     title: "Coastal Protection Structures in Seenu Hulhudhoo (Maldives)",
       heroImage: '/images/projects/hulhudhoo/img1.jpg',
@@ -1288,6 +1338,7 @@ const projectsData = [
 
     {
     id: 'project-ldpp-package-02',
+    mapQuery: "Badulla, Sri Lanka",
       hideMap: true,
     type: 'completed',
     category: 'disaster',
@@ -1329,6 +1380,7 @@ const projectsData = [
   },
   {
     id: 'project-70',
+    mapQuery: "Kirimetiya, Sri Lanka",
     type: 'completed', category: "bridges",
     title: "46 Nos. Bridges Under French Government (Kirimetiya - Yala)",
     status: "Completed",
@@ -1387,6 +1439,7 @@ const projectsData = [
   // 2015
   {
     id: 'project-104',
+    mapQuery: "Embilipitiya, Sri Lanka",
     type: 'completed', category: "water",
     title: "Laying of DI/uPVC Pipes & Fittings for Embilipitiya - Middeniya Road.",
     heroImage: "/images/projects/new-folder/embilipitiya-middeniya-road/1.jpg",
@@ -1461,6 +1514,7 @@ const projectsData = [
   },
   {
     id: 'project-77',
+    mapQuery: "Havelock City, Colombo, Sri Lanka",
     type: 'completed', category: "buildings",
     title: "Sama Vihara Building Project (Havelock City)",
     heroImage: "/images/projects/new-folder/sama-vihara/1.jpg",
@@ -1533,6 +1587,7 @@ const projectsData = [
   },
     {
       id: 'project-colombo-port-harbour-infra',
+    mapQuery: "Port of Colombo, Sri Lanka",
       type: 'completed', category: "maritime",
       title: "Colombo Port Expansion Project - Harbour Infrastructure works - Service Road and Paving Works",
       status: "Completed",
@@ -1628,6 +1683,7 @@ const projectsData = [
 
   {
     id: 'project-84',
+    mapQuery: "Hirana, Panadura, Sri Lanka",
     type: 'completed', category: "bridges",
     title: "Four Steel Bridges (Hirana, Molkawa, Lathpadura)",
     heroImage: "/images/projects/new-folder/hirana-bridges/2-cropped.jpg",
