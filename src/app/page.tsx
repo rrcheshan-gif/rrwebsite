@@ -271,9 +271,7 @@ export default function Home() {
                   <Link href="/projects" className="btn btn-primary">
                     Our Projects <ArrowRight style={{ marginLeft: '8px', width: '20px', height: '20px' }} />
                   </Link>
-                  <Link href="/about" className="btn btn-glass">
-                    Our Story
-                  </Link>
+                  <Link href="/about/company-overview" className="btn btn-glass">Our Story</Link>
                 </div>
               </div>
             ))}
@@ -371,7 +369,7 @@ export default function Home() {
             </p>
         
             <div>
-              <Link href="/about" className="btn btn-primary hover-glow" style={{ padding: "16px 36px", fontSize: "1.0rem" }}>Discover Our Legacy</Link>
+              <Link href="/about/history" className="btn btn-primary hover-glow" style={{ padding: "16px 36px", fontSize: "1.0rem" }}>Discover Our Legacy</Link>
             </div>
           </div>
         </div>
