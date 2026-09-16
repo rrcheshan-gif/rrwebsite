@@ -58,7 +58,7 @@ export default function VisionMission() {
       <section 
         className="page-header" 
         style={{ 
-          backgroundImage: "url('/images/IMAGES/Gandara/gandara-bg.jpeg'), linear-gradient(180deg, #1f2937, #111827)", 
+          backgroundImage: "url('/images/page-headers/about-story.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
           padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
           textAlign: "center", 
           position: "relative", 
@@ -83,81 +83,45 @@ export default function VisionMission() {
         </div>
       </section>
 
-      {/* Vision & Mission Cards */}
-      <section style={{ position: "relative", padding: isMobile ? "20px 20px 60px" : "20px 20px 80px" }}>
-        <div className="container" style={{ position: "relative", zIndex: 2, maxWidth: "1440px" }}>
-          <div style={{ display: "flex", gap: "30px", flexDirection: isMobile ? "column" : "row" }}>
-            
-            {/* Vision Card */}
-            <Reveal direction="left" style={{ flex: 1 }}>
-              <div style={{ 
-                height: "100%", 
-                background: "var(--white)", 
-                border: "1px solid var(--border-soft)",
-                borderRadius: "32px",
-                padding: isMobile ? "40px 30px" : "60px 50px",
-                position: "relative",
-                overflow: "hidden",
-                boxShadow: "0 20px 50px rgba(0,0,0,0.04)",
-                transition: "transform 0.4s ease, box-shadow 0.4s ease"
-              }}
-              onMouseOver={(e) => { e.currentTarget.style.transform = "translateY(-10px)"; e.currentTarget.style.boxShadow = "0 30px 60px rgba(0,0,0,0.08)"; }}
-              onMouseOut={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 20px 50px rgba(0,0,0,0.04)"; }}
-              >
-                <div style={{ position: "absolute", top: "-20px", right: "-10px", fontSize: "18rem", fontFamily: "var(--font-heading)", fontWeight: 900, color: "rgba(0,0,0,0.02)", lineHeight: 1, pointerEvents: "none" }}>V</div>
-                <div style={{ position: "relative", zIndex: 2 }}>
-                  <div style={{ width: "80px", height: "80px", borderRadius: "24px", background: "rgba(229, 57, 53, 0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "40px", color: "var(--primary-red)" }}>
-                    <Eye size={40} />
-                  </div>
-                  <h2 style={{ fontSize: "2.5rem", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 25px 0", color: "var(--text-dark)" }}>Our Vision</h2>
-                  <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, fontWeight: 500, margin: "0 0 15px 0", textAlign: "justify", textAlignLast: "center" }}>
-                    “To be a leading force in Sri Lanka’s infrastructure development, delivering world-class engineering solutions that connect communities, enable progress, and build a stronger, more resilient future.”
-                  </p>
-                  <p style={{ color: "var(--primary-red)", fontSize: "1.05rem", fontWeight: 700, margin: 0 }}>
-                    Building the infrastructure that enables tomorrow’s opportunities.
-                  </p>
-                </div>
-              </div>
-            </Reveal>
-
-            {/* Mission Card */}
-            <Reveal direction="right" delay={300} style={{ flex: 1 }}>
-              <div style={{ 
-                height: "100%", 
-                background: "var(--white)", 
-                border: "1px solid var(--border-soft)",
-                borderRadius: "32px",
-                padding: isMobile ? "40px 30px" : "60px 50px",
-                position: "relative",
-                overflow: "hidden",
-                boxShadow: "0 20px 50px rgba(0,0,0,0.04)",
-                transition: "transform 0.4s ease, box-shadow 0.4s ease"
-              }}
-              onMouseOver={(e) => { e.currentTarget.style.transform = "translateY(-10px)"; e.currentTarget.style.boxShadow = "0 30px 60px rgba(0,0,0,0.08)"; }}
-              onMouseOut={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 20px 50px rgba(0,0,0,0.04)"; }}
-              >
-                <div style={{ position: "absolute", top: "-20px", right: "-10px", fontSize: "18rem", fontFamily: "var(--font-heading)", fontWeight: 900, color: "rgba(0,0,0,0.02)", lineHeight: 1, pointerEvents: "none" }}>M</div>
-                <div style={{ position: "relative", zIndex: 2 }}>
-                  <div style={{ width: "80px", height: "80px", borderRadius: "24px", background: "rgba(229, 57, 53, 0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "40px", color: "var(--primary-red)" }}>
-                    <Target size={40} />
-                  </div>
-                  <h2 style={{ fontSize: "2.5rem", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 25px 0", color: "var(--text-dark)" }}>Our Mission</h2>
-                  <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, fontWeight: 500, margin: "0 0 15px 0", textAlign: "justify", textAlignLast: "center" }}>
-                    “To deliver complex infrastructure and heavy civil engineering projects with excellence, innovation, and integrity—combining experienced people, advanced technology, integrated resources, uncompromising quality, and a strong commitment to safety, sustainability, and client satisfaction.”
-                  </p>
-                  <p style={{ color: "var(--primary-red)", fontSize: "1.05rem", fontWeight: 700, margin: 0 }}>
-                    Delivering dependable engineering solutions through people, technology and responsible execution.
-                  </p>
-                </div>
-              </div>
-            </Reveal>
-
-          </div>
+            {/* Vision & Mission Redesign */}
+      <section style={{ padding: isMobile ? "60px 20px" : "100px 20px", backgroundColor: "var(--bg-light)" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", flexDirection: "column", gap: isMobile ? "40px" : "60px" }}>
           
+          {/* Vision Block */}
+          <Reveal direction="up">
+            <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: "40px", alignItems: "center", backgroundColor: "var(--white)", borderRadius: "24px", padding: isMobile ? "30px" : "50px", boxShadow: "0 10px 40px rgba(0,0,0,0.03)", border: "1px solid var(--border-soft)" }}>
+              <div style={{ flex: "0 0 auto", width: isMobile ? "80px" : "120px", height: isMobile ? "80px" : "120px", borderRadius: "50%", backgroundColor: "rgba(229, 57, 53, 0.08)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <Eye size={isMobile ? 40 : 60} color="var(--primary-red)" />
+              </div>
+              <div style={{ flex: 1, textAlign: isMobile ? "center" : "left" }}>
+                <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "16px" }}>Our Vision</h2>
+                <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "var(--text-light)", margin: 0, fontWeight: 400 }}>
+                  "To be a leading force in Sri Lanka's infrastructure development, delivering world-class engineering solutions that connect communities, enable progress, and build a stronger, more resilient future."
+                </p>
+                <div style={{ marginTop: "20px", width: "40px", height: "3px", backgroundColor: "var(--primary-red)", margin: isMobile ? "20px auto 0" : "20px 0 0" }}></div>
+              </div>
+            </div>
+          </Reveal>
+
+          {/* Mission Block */}
+          <Reveal direction="up" delay={200}>
+            <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row-reverse", gap: "40px", alignItems: "center", backgroundColor: "var(--white)", borderRadius: "24px", padding: isMobile ? "30px" : "50px", boxShadow: "0 10px 40px rgba(0,0,0,0.03)", border: "1px solid var(--border-soft)" }}>
+              <div style={{ flex: "0 0 auto", width: isMobile ? "80px" : "120px", height: isMobile ? "80px" : "120px", borderRadius: "50%", backgroundColor: "rgba(229, 57, 53, 0.08)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <Target size={isMobile ? 40 : 60} color="var(--primary-red)" />
+              </div>
+              <div style={{ flex: 1, textAlign: isMobile ? "center" : "right" }}>
+                <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "16px" }}>Our Mission</h2>
+                <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "var(--text-light)", margin: 0, fontWeight: 400 }}>
+                  "To deliver complex infrastructure and heavy civil engineering projects with excellence, innovation, and integrity-combining experienced people, advanced technology, integrated resources, uncompromising quality, and a strong commitment to safety, sustainability, and client satisfaction."
+                </p>
+                <div style={{ marginTop: "20px", width: "40px", height: "3px", backgroundColor: "var(--primary-red)", margin: isMobile ? "20px auto 0" : "20px 0 0 100%", transform: isMobile ? "none" : "translateX(-100%)" }}></div>
+              </div>
+            </div>
+          </Reveal>
+
         </div>
       </section>
-
-      {/* Brand Statement Banner */}
+{/* Brand Statement Banner */}
       <section style={{ padding: "80px 20px", background: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)", position: "relative", borderTop: "4px solid var(--primary-red)", borderBottom: "4px solid var(--primary-red)" }}>
         <Reveal>
           <div className="container" style={{ textAlign: "center", maxWidth: "1000px" }}>
