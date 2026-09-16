@@ -100,23 +100,25 @@ export default function Awards() {
               </p>
             </div>
             
-            <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "30px" }}>
-              {certifications.map((cert, idx) => (
-                <div key={idx} style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: "30px", background: "var(--bg-light)", border: "1px solid var(--border-soft)", padding: isMobile ? "30px 20px" : "40px", borderRadius: "20px", alignItems: isMobile ? "center" : "flex-start", textAlign: isMobile ? "center" : "left", transition: "transform 0.3s" }} className="hover-lift">
-                  <div style={{ flexShrink: 0, background: "rgba(229, 57, 53, 0.1)", padding: "20px", borderRadius: "20px" }}>
-                    {cert.icon}
+                          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "40px" }}>
+                {certifications.map((cert, idx) => (
+                  <div key={idx} style={{ background: "var(--white)", border: "1px solid var(--border-soft)", padding: "50px 30px", borderRadius: "24px", textAlign: "center", transition: "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)", position: "relative", overflow: "hidden", boxShadow: "0 15px 40px rgba(0,0,0,0.04)" }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-10px)'; e.currentTarget.style.boxShadow = '0 25px 50px rgba(229, 57, 53, 0.1)'; }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 15px 40px rgba(0,0,0,0.04)'; }}>
+                    <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "6px", background: "linear-gradient(90deg, var(--primary-red), #ff7b7b)" }}></div>
+                    
+                    <div style={{ display: "inline-flex", background: "rgba(229, 57, 53, 0.05)", padding: "25px", borderRadius: "50%", marginBottom: "30px", border: "1px dashed rgba(229, 57, 53, 0.3)" }}>
+                      {cert.icon}
+                    </div>
+                    
+                    <h3 style={{ fontSize: "1.8rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", margin: "0 0 10px" }}>{cert.title}</h3>
+                    <h4 style={{ fontSize: "0.95rem", fontWeight: 700, color: "var(--primary-red)", margin: "0 0 25px", letterSpacing: "1.5px", textTransform: "uppercase" }}>{cert.subtitle}</h4>
+                    
+                    <p style={{ color: "var(--text-light)", margin: 0, fontSize: "1.05rem", lineHeight: 1.8 }}>{cert.desc}</p>
                   </div>
-                  <div>
-                    <h3 style={{ fontSize: "2rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--primary-red)", margin: "0 0 5px" }}>{cert.title}</h3>
-                    <h4 style={{ fontSize: "1.2rem", fontWeight: 700, color: "var(--text-dark)", margin: "0 0 15px", letterSpacing: "1px" }}>{cert.subtitle}</h4>
-                    <p style={{ color: "var(--text-light)", margin: 0, fontSize: "1.1rem", lineHeight: 1.7, textAlign: isMobile ? "center" : "justify" }}>{cert.desc}</p>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
 
 
