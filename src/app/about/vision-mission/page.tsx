@@ -58,7 +58,7 @@ export default function VisionMission() {
       <section 
         className="page-header" 
         style={{ 
-          backgroundImage: "url('/images/page-headers/about-story.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
+          backgroundImage: "linear-gradient(to bottom, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.8) 100%), url('/images/IMAGES/Kadugannawa/IMG_20230224_115842.jpg')" , 
           padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
           textAlign: "center", 
           position: "relative", 
