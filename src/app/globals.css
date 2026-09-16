@@ -2331,3 +2331,141 @@ body {
 }
 
 .page-header h1 { font-size: clamp(1.8rem, 6vw, 4.2rem) !important; letter-spacing: -0.02em; }
+
+/* =====================================================
+   COMPREHENSIVE DARK MODE FIX — HARDCODED INLINE COLORS
+   Targets elements using inline style with hardcoded hex
+   colors that don't adapt to dark mode.
+   ===================================================== */
+
+/* Override hardcoded white backgrounds (#ffffff, white) in dark mode */
+[data-theme="dark"] div[style*="backgroundColor: '#ffffff'"],
+[data-theme="dark"] div[style*='backgroundColor: "#ffffff"'],
+[data-theme="dark"] div[style*="background: '#ffffff'"],
+[data-theme="dark"] div[style*='background: "#ffffff"'],
+[data-theme="dark"] div[style*="backgroundColor: 'var(--white)'"] {
+  background-color: #1e293b !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Override hardcoded dark text colors in dark mode */
+[data-theme="dark"] h2[style*="color: \"var(--text-dark)\""],
+[data-theme="dark"] h3[style*="color: \"var(--text-dark)\""],
+[data-theme="dark"] h4[style*="color: \"var(--text-dark)\""],
+[data-theme="dark"] p[style*="color: \"var(--text-light)\""] {
+  color: inherit !important;
+}
+
+/* Override hardcoded #0f172a text */
+[data-theme="dark"] *[style*="#0f172a"] {
+  color: #f8fafc !important;
+}
+
+/* Override hardcoded #64748b, #475569 (grey text) */
+[data-theme="dark"] *[style*="#64748b"] {
+  color: #94a3b8 !important;
+}
+[data-theme="dark"] *[style*="#475569"] {
+  color: #94a3b8 !important;
+}
+
+/* Override hardcoded #94a3b8 (lighter grey) — keep as is, already light */
+
+/* Override hardcoded #f1f5f9 borders */
+[data-theme="dark"] *[style*="#f1f5f9"] {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Key Data Bento Grid — dark mode backgrounds */
+[data-theme="dark"] .hover-lift {
+  background-color: var(--white) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Key Data — icon backgrounds adapt */
+[data-theme="dark"] div[style*="rgba(229, 57, 53, 0.08)"],
+[data-theme="dark"] div[style*="rgba(229, 57, 53, 0.1)"] {
+  background-color: rgba(229, 57, 53, 0.15) !important;
+}
+
+/* Vision/Mission white cards dark mode */
+[data-theme="dark"] div[style*="border-soft"] {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Core Values cards — red left border cards */
+[data-theme="dark"] div[style*="borderLeft: \"5px solid var(--primary-red)\""] {
+  background-color: var(--white) !important;
+}
+
+/* Override hardcoded #e2e8f0 dividers */
+[data-theme="dark"] *[style*="#e2e8f0"] {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Brand statement banner — keep as is (already has dark bg) */
+
+/* Contact page, Career page cards */
+[data-theme="dark"] div[style*="background: 'var(--white)'"],
+[data-theme="dark"] div[style*="background: \"var(--white)\""] {
+  background-color: var(--white) !important;
+}
+
+/* Ash banner — keep in dark mode, just lighten text */
+[data-theme="dark"] section[style*="#6b7280"] h2,
+[data-theme="dark"] section[style*="#4b5563"] h2 {
+  color: #ffffff !important;
+}
+
+/* Footer — preserve dark backgrounds */
+
+/* =====================================================
+   MOBILE RESPONSIVENESS FIXES 
+   ===================================================== */
+
+@media (max-width: 768px) {
+  /* Fix grid overflows on mobile — force single column */
+  div[style*="minmax(350px"] {
+    grid-template-columns: 1fr !important;
+  }
+  div[style*="minmax(320px"] {
+    grid-template-columns: 1fr !important;
+  }
+  div[style*="minmax(280px"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Fix card padding on mobile */
+  div[style*="padding: \"40px\""] {
+    padding: 24px 20px !important;
+  }
+
+  /* Fix back button positioning on mobile */
+  .absolute-back-btn {
+    top: 70px !important;
+  }
+
+  /* Service card descriptions visible on mobile (no hover on touch) */
+  .modern-service-card .msc-text {
+    max-height: 120px !important;
+    opacity: 1 !important;
+    margin-top: 10px !important;
+  }
+
+  /* Fix "Open in Google Maps" button on project pages */
+  a[style*="Open in Google Maps"],
+  a[style*="position: 'absolute'"][style*="bottom: '30px'"] {
+    position: static !important;
+    margin-top: 16px !important;
+    display: inline-flex !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small screens */
+  .absolute-back-btn {
+    top: 55px !important;
+  }
+}
+
