@@ -1,8 +1,8 @@
-﻿"use client";
-import { ArrowLeft } from 'lucide-react';
+"use client";
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { CheckCircle2 } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
 export default function DredgingReclamationPage() {
@@ -16,58 +16,22 @@ export default function DredgingReclamationPage() {
   }, []);
 
   const sectionPadding = isMobile ? "60px 10px" : "100px 20px";
-
-  const services = [
-    {
-      title: "Marine & Harbour Dredging",
-      desc: "Capital and maintenance dredging for ports, harbours, and navigational channels to ensure safe vessel passage.",
-      icon: "🚢"
-    },
-    {
-      title: "Land Reclamation",
-      desc: "Coastal reclamation, fill placement, and compaction to create new land for port expansion and coastal development.",
-      icon: "🏖️"
-    },
-    {
-      title: "Coastal Civil Works",
-      desc: "Construction of seawalls, breakwaters, and coastal protection structures to safeguard marine infrastructure.",
-      icon: "🌊"
-    },
-    {
-      title: "Dredging Equipment Fleet",
-      desc: "Self-owned and operated marine equipment fleet enabling efficient execution of complex dredging projects.",
-      icon: "🏗️"
-    }
-  ];
-
-  const faqs = [
-    {
-      q: "Do you own your own dredging equipment?",
-      a: "Yes, we maintain a self-owned marine equipment fleet, ensuring reliable availability and efficient project execution."
-    },
-    {
-      q: "How do you manage environmental impact during dredging?",
-      a: `We strictly adhere to ISO 14001:2015 Environmental Management standards, implementing comprehensive environmental management plans to protect marine ecosystems.`
-    },
-    {
-      q: "Do you handle both capital and maintenance dredging?",
-      a: "Yes, we provide both capital dredging for new developments and maintenance dredging to preserve navigational depths in existing harbours."
-    }
-  ];
+  const containerStyle = { maxWidth: '1440px', margin: '0 auto' };
 
   return (
-    <main style={{ minHeight: '100vh', backgroundColor: 'var(--white)' }}>
-      {/* Hero Section */}
-      <section className="page-header" style={{
-        position: 'relative',
-        padding: isMobile ? '40px 20px' : '70px 20px',
-        backgroundColor: 'var(--text-dark)',
-        backgroundImage: "linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.9)), url('/images/projects/filadhoo/img3.jpg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        color: 'var(--white)',
-        textAlign: 'center'
-      }}>
+    <main style={{ backgroundColor: 'var(--white)', minHeight: '100vh' }}>
+      {/* 1. Hero Section */}
+      <section 
+        className="page-header" 
+        style={{ position: 'relative', 
+          backgroundImage: "linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('/images/projects/filadhoo/img3.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          color: 'var(--white)',
+          padding: isMobile ? '40px 20px' : '70px 20px',
+          textAlign: 'center'
+        }}
+      >
         {/* Absolute Back Button */}
         <div style={{ position: 'absolute', top: isMobile ? '100px' : '140px', left: isMobile ? '20px' : '40px', zIndex: 10 }}>
           <Link href="/services" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
@@ -75,123 +39,124 @@ export default function DredgingReclamationPage() {
           </Link>
         </div>
 
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <div style={containerStyle}>
           
-          
-
-          <h1 style={{
-            fontSize: isMobile ? '2.5rem' : '4rem',
-            fontFamily: 'var(--font-heading)',
-            marginBottom: '20px',
+          <h1 style={{ 
+            fontFamily: 'var(--font-heading)', 
+            fontSize: isMobile ? '2.5rem' : '4rem', 
+            margin: '0 0 24px',
             lineHeight: 1.2
           }}>
-            Dredging & <span style={{ color: 'var(--primary-red)' }}>Reclamation</span> Services in Sri Lanka
+            Dredging & <span style={{ color: 'var(--primary-red)' }}>Reclamation</span>
           </h1>
           
         </div>
       </section>
 
-      {/* Overview Section */}
+      {/* 2. Capabilities */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{
-            fontSize: isMobile ? '2rem' : '2.5rem',
-            fontFamily: 'var(--font-heading)',
-            color: 'var(--text-dark)',
-            marginBottom: '30px'
-          }}>Expertise in Marine Environments</h2>
-          <p style={{
-            fontSize: '1.1rem',
-            color: 'var(--text-light)',
-            lineHeight: 1.8,
-            maxWidth: '800px',
-            margin: '0 auto'
-          }}>
-            RR Construction provides specialized dredging and reclamation services for ports, harbours, and coastal developments across Sri Lanka. Utilizing our own fleet of marine equipment and adhering to ISO 14001:2015 environmental management systems, we deliver complex marine engineering projects with a focus on efficiency and sustainability.
-          </p>
-        </div>
-      </section>
-
-      {/* Services Grid */}
-      <section style={{ padding: sectionPadding, backgroundColor: 'var(--bg-light)' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
-          <h2 style={{
-            fontSize: isMobile ? '2rem' : '2.5rem',
-            fontFamily: 'var(--font-heading)',
-            color: 'var(--text-dark)',
-            textAlign: 'center',
-            marginBottom: '50px'
-          }}>Our Dredging Capabilities</h2>
-          
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: isMobile ? '1fr' : 'repeat(2, 1fr)',
-            gap: '30px'
-          }}>
-            {services.map((service, index) => (
-              <div key={index} style={{
-                backgroundColor: 'var(--white)',
-                padding: '40px',
-                borderRadius: '24px',
-                border: '1px solid var(--border-soft)',
-                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                cursor: 'default'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-5px)';
-                e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.05)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'none';
-                e.currentTarget.style.boxShadow = 'none';
-              }}>
-                <div style={{ fontSize: '3rem', marginBottom: '20px' }}>{service.icon}</div>
-                <h3 style={{
-                  fontSize: '1.5rem',
-                  color: 'var(--text-dark)',
-                  marginBottom: '15px',
-                  fontFamily: 'var(--font-heading)'
-                }}>{service.title}</h3>
-                <p style={{ color: 'var(--text-light)', lineHeight: 1.6 }}>{service.desc}</p>
-              </div>
-            ))}
+        <div style={containerStyle}>
+          <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+            <h2 style={{ 
+              fontFamily: 'var(--font-heading)', 
+              fontSize: isMobile ? '2rem' : '2.5rem', 
+              color: 'var(--text-dark)',
+              marginBottom: '20px'
+            }}>
+              Expertise in Marine Environments
+            </h2>
+            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
+              RR Construction provides specialized dredging and reclamation services for ports, harbours, and coastal developments across Sri Lanka. Utilizing our own fleet of marine equipment and adhering to ISO 14001:2015 environmental management systems, we deliver complex marine engineering projects with a focus on efficiency and sustainability.
+            </p>
           </div>
-        </div>
-      </section>
 
-      {/* FAQ Section */}
-      <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <h2 style={{
-            fontSize: isMobile ? '2rem' : '2.5rem',
-            fontFamily: 'var(--font-heading)',
-            color: 'var(--text-dark)',
-            textAlign: 'center',
-            marginBottom: '50px'
-          }}>Frequently Asked Questions</h2>
-          
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            {faqs.map((faq, index) => (
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)', 
+            gap: '30px' 
+          }}>
+            {[
+              { title: 'Marine & Harbour Dredging', desc: 'Capital and maintenance dredging for ports, harbours, and navigational channels to ensure safe vessel passage.' },
+              { title: 'Land Reclamation', desc: 'Coastal reclamation, fill placement, and compaction to create new land for port expansion and coastal development.' },
+              { title: 'Coastal Civil Works', desc: 'Construction of seawalls, breakwaters, and coastal protection structures to safeguard marine infrastructure.' }
+            ].map((capability, index) => (
               <div key={index} style={{
                 backgroundColor: 'var(--bg-light)',
-                padding: '30px',
-                borderRadius: '16px',
-                border: '1px solid var(--border-soft)'
+                padding: '40px 30px',
+                borderRadius: '24px',
+                border: '1px solid var(--border-soft)',
+                transition: 'transform 0.3s ease'
               }}>
-                <h3 style={{
-                  fontSize: '1.2rem',
-                  color: 'var(--text-dark)',
-                  marginBottom: '10px',
-                  fontFamily: 'var(--font-heading)'
-                }}>{faq.q}</h3>
-                <p style={{ color: 'var(--text-light)', lineHeight: 1.6 }}>{faq.a}</p>
+                <CheckCircle2 size={32} color="var(--primary-red)" style={{ marginBottom: '20px' }} />
+                <h3 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginBottom: '15px' }}>{capability.title}</h3>
+                <p style={{ color: 'var(--text-light)', lineHeight: 1.6 }}>{capability.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      
+      {/* 3. Deep Dive */}
+      <section style={{ padding: sectionPadding, backgroundColor: 'var(--bg-light)' }}>
+        <div style={containerStyle}>
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', 
+            gap: '40px',
+            alignItems: 'center'
+          }}>
+            <div>
+              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.75rem' : '2.25rem', color: 'var(--text-dark)', marginBottom: '20px' }}>
+                Self-Owned Equipment Fleet
+              </h2>
+              <p style={{ color: 'var(--text-light)', lineHeight: 1.7, marginBottom: '20px' }}>
+                We maintain a self-owned marine equipment fleet, ensuring reliable availability and efficient project execution. This allows us to handle complex dredging projects with precision and reduces dependency on external rentals.
+              </p>
+              
+              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.75rem' : '2.25rem', color: 'var(--text-dark)', margin: '40px 0 20px' }}>
+                Environmental Management
+              </h2>
+              <p style={{ color: 'var(--text-light)', lineHeight: 1.7 }}>
+                We strictly adhere to ISO 14001:2015 Environmental Management standards. Our comprehensive environmental management plans protect marine ecosystems during all phases of dredging and reclamation.
+              </p>
+            </div>
+            
+            <div style={{ 
+              backgroundColor: 'var(--white)', 
+              padding: '40px', 
+              borderRadius: '24px',
+              border: '1px solid var(--border-soft)',
+              boxShadow: '0 10px 30px rgba(0,0,0,0.05)'
+            }}>
+              <h3 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginBottom: '24px' }}>
+                Key Technical Strengths
+              </h3>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                {[
+                  'Capital dredging for new developments',
+                  'Maintenance dredging to preserve navigational depths',
+                  'Reliable self-owned marine equipment fleet',
+                  'ISO 14001:2015 Environmental Management compliant',
+                  'Expertise in seawalls and breakwaters'
+                ].map((item, i) => (
+                  <li key={i} style={{ 
+                    display: 'flex', 
+                    alignItems: 'flex-start', 
+                    gap: '12px',
+                    marginBottom: '16px',
+                    color: 'var(--text-light)',
+                    lineHeight: 1.6
+                  }}>
+                    <CheckCircle2 size={20} color="var(--primary-red)" style={{ flexShrink: 0, marginTop: '4px' }} />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }

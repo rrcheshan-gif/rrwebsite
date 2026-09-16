@@ -1,81 +1,161 @@
-﻿
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { CheckCircle2 } from 'lucide-react';
 
 export default function ResearchAndDevelopmentPage() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth <= 768);
-    check();
-    window.addEventListener('resize', check);
-    return () => window.removeEventListener('resize', check);
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  const sectionPadding = isMobile ? "60px 10px" : "100px 20px";
+  const containerStyle = { maxWidth: '1440px', margin: '0 auto' };
+
   return (
-    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
-      
-      {/* Hero Section */}
+    <main style={{ backgroundColor: 'var(--white)', minHeight: '100vh' }}>
+      {/* 1. Hero Section */}
       <section 
         className="page-header" 
-        style={{ 
-          backgroundImage: "url('/images/research-development.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
-          padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
-          textAlign: "center", 
-          position: "relative", 
-          backgroundSize: "cover", 
-          backgroundPosition: "center", 
-           
-          borderRadius: isMobile ? '24px' : '32px',
-          margin: isMobile ? '0 12px 30px' : '0 20px 40px',  
-          overflow: "hidden" 
+        style={{ position: 'relative', 
+          backgroundImage: "linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('/images/research-development.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          color: 'var(--white)',
+          padding: isMobile ? '40px 20px' : '70px 20px',
+          textAlign: 'center'
         }}
       >
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
-        <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <div style={{ textAlign: "left", marginBottom: "24px" }}>
-            <Link href="/services" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
-              &larr; Back to Technology & Services
-            </Link>
-          </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>
-            Research & <span style={{ color: "var(--primary-red)" }}>Development</span>
+        {/* Absolute Back Button */}
+        <div style={{ position: 'absolute', top: isMobile ? '100px' : '140px', left: isMobile ? '20px' : '40px', zIndex: 10 }}>
+          <Link href="/services" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
+            &larr; Back to Services
+          </Link>
+        </div>
+
+        <div style={containerStyle}>
+          
+          <h1 style={{ 
+            fontFamily: 'var(--font-heading)', 
+            fontSize: isMobile ? '2.5rem' : '4rem', 
+            margin: '0 0 24px',
+            lineHeight: 1.2
+          }}>
+            Research & <span style={{ color: 'var(--primary-red)' }}>Development</span>
           </h1>
           
         </div>
       </section>
 
-      {/* Content Section */}
-      <section style={{ padding: isMobile ? "20px 10px 80px" : "20px 20px 120px" }}>
-        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", padding: "0 16px" }}>
-          
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "50px" }}>
-            <div style={{ flex: "1", minWidth: "300px" }}>
-              <div style={{ 
-                backgroundColor: '#ffffff', 
-                borderRadius: isMobile ? '24px' : '32px', 
-                padding: isMobile ? '30px 20px' : '50px 60px', 
-                border: '1px solid #e2e8f0',
-                boxShadow: '0 20px 40px rgba(0,0,0,0.04)'
-              }}>
-                <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2rem", color: "var(--text-dark)", marginBottom: "25px", fontWeight: 800 }}>
-                  Driving Operational Efficiency
-                </h2>
-                <p style={{ color: '#4a5568', fontSize: '1.1rem', lineHeight: 1.8, margin: "0 0 20px" }}>
-                  Research & Development (R&D) plays a pivotal role at RR Construction. The integration of cutting-edge technologies and rigorous R&D initiatives has enabled the organization to achieve unprecedented operational efficiency, maximize productivity, and overcome complex technical challenges inherent to the heavy civil engineering sphere.
-                </p>
-                <p style={{ color: '#4a5568', fontSize: '1.1rem', lineHeight: 1.8, margin: 0 }}>
-                  RR Construction continually invests in internal R&D focused specifically on Lean Production principles, Advanced Performance Management, and modern construction methodologies. Furthermore, following the successful adoption of localized Enterprise Resource Planning (ERP) systems, the company is actively transitioning toward a fully integrated, AI-assisted ERP ecosystem to streamline resource allocation across all national-scale operations.
-                </p>
-              </div>
-            </div>
+      {/* 2. Capabilities */}
+      <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>
+        <div style={containerStyle}>
+          <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+            <h2 style={{ 
+              fontFamily: 'var(--font-heading)', 
+              fontSize: isMobile ? '2rem' : '2.5rem', 
+              color: 'var(--text-dark)',
+              marginBottom: '20px'
+            }}>
+              Innovating Construction Methods
+            </h2>
+            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
+              The integration of cutting-edge technologies and rigorous R&D initiatives has enabled the organization to achieve unprecedented operational efficiency and overcome complex technical challenges.
+            </p>
           </div>
 
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)', 
+            gap: '30px' 
+          }}>
+            {[
+              { title: 'Lean Production', desc: 'Internal R&D focused specifically on Lean Production principles to maximize productivity across sites.' },
+              { title: 'Performance Management', desc: 'Advanced Performance Management systems driving operational efficiency in heavy civil engineering.' },
+              { title: 'Modern Methodologies', desc: 'Integrating cutting-edge technologies and modern construction methodologies to overcome complex challenges.' }
+            ].map((capability, index) => (
+              <div key={index} style={{
+                backgroundColor: 'var(--bg-light)',
+                padding: '40px 30px',
+                borderRadius: '24px',
+                border: '1px solid var(--border-soft)',
+                transition: 'transform 0.3s ease'
+              }}>
+                <CheckCircle2 size={32} color="var(--primary-red)" style={{ marginBottom: '20px' }} />
+                <h3 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginBottom: '15px' }}>{capability.title}</h3>
+                <p style={{ color: 'var(--text-light)', lineHeight: 1.6 }}>{capability.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-    </div>
+      {/* 3. Deep Dive */}
+      <section style={{ padding: sectionPadding, backgroundColor: 'var(--bg-light)' }}>
+        <div style={containerStyle}>
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', 
+            gap: '40px',
+            alignItems: 'center'
+          }}>
+            <div>
+              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.75rem' : '2.25rem', color: 'var(--text-dark)', marginBottom: '20px' }}>
+                Driving Operational Efficiency
+              </h2>
+              <p style={{ color: 'var(--text-light)', lineHeight: 1.7, marginBottom: '20px' }}>
+                Research & Development (R&D) plays a pivotal role at RR Construction. The integration of cutting-edge technologies and rigorous R&D initiatives has enabled the organization to achieve unprecedented operational efficiency, maximize productivity, and overcome complex technical challenges inherent to the heavy civil engineering sphere.
+              </p>
+              
+              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.75rem' : '2.25rem', color: 'var(--text-dark)', margin: '40px 0 20px' }}>
+                AI-Assisted Ecosystem
+              </h2>
+              <p style={{ color: 'var(--text-light)', lineHeight: 1.7 }}>
+                RR Construction continually invests in internal R&D focused specifically on Lean Production principles, Advanced Performance Management, and modern construction methodologies. Furthermore, following the successful adoption of localized Enterprise Resource Planning (ERP) systems, the company is actively transitioning toward a fully integrated, AI-assisted ERP ecosystem to streamline resource allocation across all national-scale operations.
+              </p>
+            </div>
+            
+            <div style={{ 
+              backgroundColor: 'var(--white)', 
+              padding: '40px', 
+              borderRadius: '24px',
+              border: '1px solid var(--border-soft)',
+              boxShadow: '0 10px 30px rgba(0,0,0,0.05)'
+            }}>
+              <h3 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginBottom: '24px' }}>
+                Key Technical Strengths
+              </h3>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                {[
+                  'Integration of cutting-edge technologies',
+                  'Rigorous R&D initiatives for efficiency',
+                  'Focus on Lean Production principles',
+                  'Advanced Performance Management',
+                  'Transition to AI-assisted ERP ecosystem'
+                ].map((item, i) => (
+                  <li key={i} style={{ 
+                    display: 'flex', 
+                    alignItems: 'flex-start', 
+                    gap: '12px',
+                    marginBottom: '16px',
+                    color: 'var(--text-light)',
+                    lineHeight: 1.6
+                  }}>
+                    <CheckCircle2 size={20} color="var(--primary-red)" style={{ flexShrink: 0, marginTop: '4px' }} />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
   );
 }

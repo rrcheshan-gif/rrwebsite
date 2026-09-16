@@ -1,38 +1,37 @@
-﻿"use client";
-import { ArrowLeft } from 'lucide-react';
+"use client";
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { CheckCircle2 } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
 export default function WaterInfrastructurePage() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
     handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  const sectionPadding = isMobile ? "60px 10px" : "100px 20px";
+  const containerStyle = { maxWidth: '1440px', margin: '0 auto' };
+
   return (
-    <div style={{ backgroundColor: 'var(--white)', minHeight: '100vh', width: '100%' }}>
-      {/* Hero Section */}
-      <section className="page-header" style={{
-        position: 'relative',
-        padding: isMobile ? '40px 20px' : '70px 20px',
-        backgroundColor: 'var(--text-dark)',
-        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/service-water-hero.jpeg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        textAlign: 'center'
-      }}>
+    <main style={{ backgroundColor: 'var(--white)', minHeight: '100vh' }}>
+      {/* 1. Hero Section */}
+      <section 
+        className="page-header" 
+        style={{ position: 'relative', 
+          backgroundImage: "linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('/images/service-water-hero.jpeg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          color: 'var(--white)',
+          padding: isMobile ? '40px 20px' : '70px 20px',
+          textAlign: 'center'
+        }}
+      >
         {/* Absolute Back Button */}
         <div style={{ position: 'absolute', top: isMobile ? '100px' : '140px', left: isMobile ? '20px' : '40px', zIndex: 10 }}>
           <Link href="/services" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
@@ -40,202 +39,124 @@ export default function WaterInfrastructurePage() {
           </Link>
         </div>
 
-        <div style={{ marginBottom: "20px" }}>
+        <div style={containerStyle}>
           
+          <h1 style={{ 
+            fontFamily: 'var(--font-heading)', 
+            fontSize: isMobile ? '2.5rem' : '4rem', 
+            margin: '0 0 24px',
+            lineHeight: 1.2
+          }}>
+            Water <span style={{ color: 'var(--primary-red)' }}>Infrastructure & Heavy Civil Engineering</span> in Sri Lanka
+          </h1>
           
-
-        </div>
-        <h1 style={{ color: 'var(--white)', fontSize: isMobile ? '36px' : '48px', fontFamily: 'var(--font-heading)', margin: '0 0 20px 0' }}>
-          Water <span style={{ color: 'var(--primary-red)' }}>Infrastructure & Heavy Civil Engineering</span> in Sri Lanka
-        </h1>
-        
-      </section>
-
-      {/* Services Grid */}
-      <section style={{ padding: isMobile ? "60px 20px" : "100px 40px", backgroundColor: 'var(--bg-light)' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
-          <h2 style={{ color: 'var(--text-dark)', fontSize: '32px', fontFamily: 'var(--font-heading)', textAlign: 'center', marginBottom: '60px' }}>
-            Our Water Infrastructure Services
-          </h2>
-          
-          <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(2, 1fr)', gap: '40px' }}>
-            {/* Water Supply Systems */}
-            <div style={{
-              backgroundColor: 'var(--white)',
-              padding: '40px',
-              borderRadius: '24px',
-              border: '1px solid var(--border-soft)',
-              boxShadow: '0 10px 30px rgba(0,0,0,0.02)'
-            }}>
-              <h3 style={{ color: 'var(--primary-red)', fontSize: '24px', marginBottom: '20px', fontFamily: 'var(--font-heading)' }}>
-                Water Supply Systems
-              </h3>
-              <p style={{ color: 'var(--text-light)', fontSize: '16px', lineHeight: 1.8, marginBottom: '20px' }}>
-                Extensive experience in constructing municipal and regional water supply networks to deliver clean drinking water to communities across Sri Lanka.
-              </p>
-              <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
-                {['Pipe networks and transmission mains', 'Distribution systems', 'Pumping stations', 'Elevated water towers', 'Ground reservoirs'].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: '12px', color: 'var(--text-dark)' }}>
-                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>•</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Water Treatment Plants */}
-            <div style={{
-              backgroundColor: 'var(--white)',
-              padding: '40px',
-              borderRadius: '24px',
-              border: '1px solid var(--border-soft)',
-              boxShadow: '0 10px 30px rgba(0,0,0,0.02)'
-            }}>
-              <h3 style={{ color: 'var(--primary-red)', fontSize: '24px', marginBottom: '20px', fontFamily: 'var(--font-heading)' }}>
-                Water Treatment Plants
-              </h3>
-              <p style={{ color: 'var(--text-light)', fontSize: '16px', lineHeight: 1.8, marginBottom: '20px' }}>
-                Heavy Civil engineering and structural works for industrial and municipal water treatment facilities. We partner with process engineers to deliver complete facilities.
-              </p>
-              <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
-                {['Clarifiers and filtration structures', 'Chemical dosing buildings', 'Intake structures', 'Civil works for M&E installations', 'Facility administrative buildings'].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: '12px', color: 'var(--text-dark)' }}>
-                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>•</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Irrigation & Drainage */}
-            <div style={{
-              backgroundColor: 'var(--white)',
-              padding: '40px',
-              borderRadius: '24px',
-              border: '1px solid var(--border-soft)',
-              boxShadow: '0 10px 30px rgba(0,0,0,0.02)'
-            }}>
-              <h3 style={{ color: 'var(--primary-red)', fontSize: '24px', marginBottom: '20px', fontFamily: 'var(--font-heading)' }}>
-                Irrigation & Drainage
-              </h3>
-              <p style={{ color: 'var(--text-light)', fontSize: '16px', lineHeight: 1.8, marginBottom: '20px' }}>
-                We handle large-scale irrigation projects essential for Sri Lanka's agricultural sector and rural development.
-              </p>
-              <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
-                {['Irrigation canals and channels', 'Spillways and weirs', 'Anicuts and sluice structures', 'Tank (wewa) rehabilitation', 'Agricultural drainage systems'].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: '12px', color: 'var(--text-dark)' }}>
-                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>•</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Storm Water Management */}
-            <div style={{
-              backgroundColor: 'var(--white)',
-              padding: '40px',
-              borderRadius: '24px',
-              border: '1px solid var(--border-soft)',
-              boxShadow: '0 10px 30px rgba(0,0,0,0.02)'
-            }}>
-              <h3 style={{ color: 'var(--primary-red)', fontSize: '24px', marginBottom: '20px', fontFamily: 'var(--font-heading)' }}>
-                Storm Water & Land Drainage
-              </h3>
-              <p style={{ color: 'var(--text-light)', fontSize: '16px', lineHeight: 1.8, marginBottom: '20px' }}>
-                Urban and regional storm water management solutions to prevent flooding and ensure proper land drainage.
-              </p>
-              <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
-                {['Urban drainage networks', 'Culverts and cross drainage', 'Retention basins', 'Flood protection structures', 'Land reclamation drainage'].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: '12px', color: 'var(--text-dark)' }}>
-                    <span style={{ color: 'var(--primary-red)', marginRight: '12px', fontSize: '18px' }}>•</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
         </div>
       </section>
 
-      
-
-      {/* Clients & Quality */}
-      <section style={{ padding: isMobile ? "60px 20px" : "100px 40px", backgroundColor: 'var(--bg-light)' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '50px' }}>
-          <div>
-            <h2 style={{ color: 'var(--text-dark)', fontSize: '28px', fontFamily: 'var(--font-heading)', marginBottom: '30px' }}>
-              Key Client organization's
+      {/* 2. Capabilities */}
+      <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>
+        <div style={containerStyle}>
+          <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+            <h2 style={{ 
+              fontFamily: 'var(--font-heading)', 
+              fontSize: isMobile ? '2rem' : '2.5rem', 
+              color: 'var(--text-dark)',
+              marginBottom: '20px'
+            }}>
+              Our Water Infrastructure Services
             </h2>
-            <p style={{ color: 'var(--text-light)', fontSize: '16px', lineHeight: 1.8, marginBottom: '20px' }}>
-              We are a trusted partner and registered contractor for major government bodies and authorities responsible for water infrastructure in Sri Lanka:
+            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
+              Extensive experience in constructing municipal and regional water infrastructure, handling everything from clean drinking water distribution to large-scale irrigation and storm drainage systems across Sri Lanka.
             </p>
-            <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
-              <li style={{ display: 'flex', alignItems: 'center', marginBottom: '15px', color: 'var(--text-dark)', padding: '15px', backgroundColor: 'var(--white)', borderRadius: '12px', border: '1px solid var(--border-soft)' }}>
-                <span style={{ color: 'var(--primary-red)', marginRight: '15px', fontSize: '20px' }}>✓</span>
-                <strong>National Water Supply & Drainage Board (NWSDB)</strong>
-              </li>
-              <li style={{ display: 'flex', alignItems: 'center', marginBottom: '15px', color: 'var(--text-dark)', padding: '15px', backgroundColor: 'var(--white)', borderRadius: '12px', border: '1px solid var(--border-soft)' }}>
-                <span style={{ color: 'var(--primary-red)', marginRight: '15px', fontSize: '20px' }}>✓</span>
-                <strong>Department of Irrigation</strong>
-              </li>
-              <li style={{ display: 'flex', alignItems: 'center', marginBottom: '15px', color: 'var(--text-dark)', padding: '15px', backgroundColor: 'var(--white)', borderRadius: '12px', border: '1px solid var(--border-soft)' }}>
-                <span style={{ color: 'var(--primary-red)', marginRight: '15px', fontSize: '20px' }}>✓</span>
-                <strong>Provincial Councils and Local Authorities</strong>
-              </li>
-            </ul>
           </div>
-          
-          <div>
-            <h2 style={{ color: 'var(--text-dark)', fontSize: '28px', fontFamily: 'var(--font-heading)', marginBottom: '30px' }}>
-              Quality & Safety Standards
-            </h2>
-            <p style={{ color: 'var(--text-light)', fontSize: '16px', lineHeight: 1.8, marginBottom: '20px' }}>
-              Water infrastructure projects demand stringent quality controls to ensure structural integrity and hygienic conditions.
-            </p>
-            <div style={{ backgroundColor: 'var(--white)', padding: '30px', borderRadius: '16px', border: '1px solid var(--border-soft)', marginBottom: '20px' }}>
-              <h4 style={{ color: 'var(--text-dark)', fontSize: '18px', marginBottom: '10px' }}>Material Testing & Concrete Quality</h4>
-              <p style={{ color: 'var(--text-light)', fontSize: '15px', lineHeight: 1.6, margin: 0 }}>
-                Rigorous testing of aggregates, cement, and concrete mixes to ensure water-tight structures for reservoirs and treatment facilities.
+
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)', 
+            gap: '30px' 
+          }}>
+            {[
+              { title: 'Water Supply Systems', desc: 'Constructing municipal and regional water supply networks, including pipe networks, transmission mains, pumping stations, and elevated ground reservoirs to deliver clean water.' },
+              { title: 'Water Treatment Plants', desc: 'Heavy Civil engineering and structural works for industrial and municipal water treatment facilities, including clarifiers, filtration structures, and chemical dosing buildings.' },
+              { title: 'Irrigation & Drainage', desc: 'Handling large-scale agricultural irrigation projects (canals, spillways, anicuts, tank rehabilitation) and urban storm water management solutions to prevent flooding.' }
+            ].map((capability, index) => (
+              <div key={index} style={{
+                backgroundColor: 'var(--bg-light)',
+                padding: '40px 30px',
+                borderRadius: '24px',
+                border: '1px solid var(--border-soft)',
+                transition: 'transform 0.3s ease'
+              }}>
+                <CheckCircle2 size={32} color="var(--primary-red)" style={{ marginBottom: '20px' }} />
+                <h3 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginBottom: '15px' }}>{capability.title}</h3>
+                <p style={{ color: 'var(--text-light)', lineHeight: 1.6 }}>{capability.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Deep Dive */}
+      <section style={{ padding: sectionPadding, backgroundColor: 'var(--bg-light)' }}>
+        <div style={containerStyle}>
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', 
+            gap: '40px',
+            alignItems: 'center'
+          }}>
+            <div>
+              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.75rem' : '2.25rem', color: 'var(--text-dark)', marginBottom: '20px' }}>
+                Key Client Organizations
+              </h2>
+              <p style={{ color: 'var(--text-light)', lineHeight: 1.7, marginBottom: '20px' }}>
+                We are a trusted partner and registered contractor for major government bodies and authorities responsible for water infrastructure in Sri Lanka. This includes the National Water Supply & Drainage Board (NWSDB), Department of Irrigation, Provincial Councils, and Local Authorities.
+              </p>
+              
+              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.75rem' : '2.25rem', color: 'var(--text-dark)', margin: '40px 0 20px' }}>
+                Quality & Safety Standards
+              </h2>
+              <p style={{ color: 'var(--text-light)', lineHeight: 1.7 }}>
+                Water infrastructure projects demand stringent quality controls to ensure structural integrity and hygienic conditions. We conduct rigorous testing of aggregates, cement, and concrete mixes to ensure water-tight structures. Additionally, we strictly adhere to environmental regulations during construction, particularly near existing waterways.
               </p>
             </div>
-            <div style={{ backgroundColor: 'var(--white)', padding: '30px', borderRadius: '16px', border: '1px solid var(--border-soft)' }}>
-              <h4 style={{ color: 'var(--text-dark)', fontSize: '18px', marginBottom: '10px' }}>Environmental Controls</h4>
-              <p style={{ color: 'var(--text-light)', fontSize: '15px', lineHeight: 1.6, margin: 0 }}>
-                Strict adherence to environmental regulations during construction, particularly for projects near existing waterways and irrigation tanks.
-              </p>
+            
+            <div style={{ 
+              backgroundColor: 'var(--white)', 
+              padding: '40px', 
+              borderRadius: '24px',
+              border: '1px solid var(--border-soft)',
+              boxShadow: '0 10px 30px rgba(0,0,0,0.05)'
+            }}>
+              <h3 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginBottom: '24px' }}>
+                Infrastructure Expertise
+              </h3>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                {[
+                  'Pipe networks, distribution systems, and ground reservoirs',
+                  'Clarifiers, chemical dosing buildings, and intake structures',
+                  'Irrigation canals, spillways, anicuts, and tank rehabilitation',
+                  'Urban drainage networks, retention basins, and flood protection',
+                  'Civil works for M&E installations in treatment plants'
+                ].map((item, i) => (
+                  <li key={i} style={{ 
+                    display: 'flex', 
+                    alignItems: 'flex-start', 
+                    gap: '12px',
+                    marginBottom: '16px',
+                    color: 'var(--text-light)',
+                    lineHeight: 1.6
+                  }}>
+                    <CheckCircle2 size={20} color="var(--primary-red)" style={{ flexShrink: 0, marginTop: '4px' }} />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section style={{ padding: isMobile ? "60px 20px" : "100px 40px", backgroundColor: 'var(--white)' }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <h2 style={{ color: 'var(--text-dark)', fontSize: '32px', fontFamily: 'var(--font-heading)', textAlign: 'center', marginBottom: '50px' }}>
-            Frequently Asked Questions
-          </h2>
-          
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-
-            <div style={{ padding: '25px', backgroundColor: 'var(--bg-light)', borderRadius: '16px', border: '1px solid var(--border-soft)' }}>
-              <h4 style={{ color: 'var(--text-dark)', fontSize: '18px', marginBottom: '10px' }}>Do you provide mechanical and electrical (M&E) installation for treatment plants?</h4>
-              <p style={{ color: 'var(--text-light)', fontSize: '15px', lineHeight: 1.6, margin: 0 }}>
-                Our core expertise lies in the extensive civil and structural engineering requirements of treatment plants. We typically collaborate with specialized M&E contractors or act as the main contractor managing M&E subcontractors.
-              </p>
-            </div>
-            <div style={{ padding: '25px', backgroundColor: 'var(--bg-light)', borderRadius: '16px', border: '1px solid var(--border-soft)' }}>
-              <h4 style={{ color: 'var(--text-dark)', fontSize: '18px', marginBottom: '10px' }}>What types of irrigation projects do you handle?</h4>
-              <p style={{ color: 'var(--text-light)', fontSize: '15px', lineHeight: 1.6, margin: 0 }}>
-                We construct major irrigation canals, structures such as anicuts and spillways, and undertake rehabilitation of tanks and reservoirs for agricultural zones.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
-
-    </div>
+    </main>
   );
 }
