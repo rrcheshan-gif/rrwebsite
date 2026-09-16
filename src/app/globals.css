@@ -2035,10 +2035,8 @@ ul {
 p {
   text-align: justify;
   text-justify: inter-word;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
   line-height: 1.75;
+  letter-spacing: -0.01em;
 }
 
 
