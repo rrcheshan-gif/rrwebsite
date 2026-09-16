@@ -181,45 +181,36 @@ export default function VisionMission() {
               { title: "SAFETY", subtitle: "Zero Harm", desc: "Protecting our people, communities and environment through responsible and disciplined construction practices.", icon: <HardHat size={32} /> },
               { title: "SUSTAINABILITY", subtitle: "Responsible Execution", desc: "Creating long-term infrastructure value while respecting environmental and social responsibilities.", icon: <Leaf size={32} /> },
               { title: "PARTNERSHIP", subtitle: "Shared Success", desc: "Working collaboratively with clients, professionals, communities and stakeholders to achieve shared success.", icon: <Handshake size={32} /> }
-            ].map((val, idx) => (
-              <Reveal key={idx} delay={idx * 150} direction="up">
-                <div style={{ 
-                  background: "var(--white)", 
-                  border: "1px solid var(--border-soft)",
-                  borderRadius: "24px", 
-                  padding: "40px 30px", 
-                  height: "100%",
-                  transition: "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
-                  position: "relative",
-                  overflow: "hidden",
-                  boxShadow: "0 10px 30px rgba(0,0,0,0.03)"
-                }}
-                onMouseOver={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-10px)';
-                  e.currentTarget.style.borderColor = "var(--primary-red)";
-                  e.currentTarget.style.boxShadow = "0 20px 40px rgba(229, 57, 53, 0.1)";
-                }}
-                onMouseOut={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.borderColor = "var(--border-soft)";
-                  e.currentTarget.style.boxShadow = "0 10px 30px rgba(0,0,0,0.03)";
-                }}
-                >
-                  <div style={{ width: "70px", height: "70px", borderRadius: "20px", background: "rgba(229, 57, 53, 0.08)", color: "var(--primary-red)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "30px" }}>
-                    {val.icon}
+                          ].map((val, idx) => (
+                <Reveal key={idx} delay={idx * 150} direction="up">
+                  <div style={{ 
+                    background: "var(--white)", 
+                    padding: "40px", 
+                    borderRadius: "12px", 
+                    borderLeft: "5px solid var(--primary-red)", 
+                    boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
+                    height: "100%",
+                    transition: "transform 0.3s ease",
+                  }}
+                  className="hover-lift"
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
+                      <div style={{ color: 'var(--primary-red)' }}>
+                        {val.icon}
+                      </div>
+                      <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", margin: 0, color: "var(--text-dark)", fontWeight: 800 }}>
+                        {val.title}
+                      </h3>
+                    </div>
+                    <h4 style={{ fontSize: "1.1rem", color: "var(--primary-red)", fontWeight: 700, margin: "0 0 15px" }}>
+                      {val.subtitle}
+                    </h4>
+                    <p style={{ color: "var(--text-light)", lineHeight: 1.7, margin: 0 }}>
+                      {val.desc}
+                    </p>
                   </div>
-                  <h3 style={{ fontSize: "0.95rem", color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px", margin: "0 0 10px" }}>
-                    {val.title}
-                  </h3>
-                  <h4 style={{ color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontSize: "1.5rem", fontWeight: 800, margin: "0 0 15px", lineHeight: 1.2 }}>
-                    {val.subtitle}
-                  </h4>
-                  <p style={{ color: "var(--text-light)", fontSize: "1rem", lineHeight: 1.6, margin: 0, fontWeight: 500 }}>
-                    {val.desc}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
+                </Reveal>
+              ))}
           </div>
         </div>
       </section>
