@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState, useRef } from "react";
 import { usePathname } from "next/navigation";
@@ -69,7 +69,7 @@ export default function PageTransition() {
       textAlign: "center",
       padding: "20px",
       boxSizing: "border-box",
-      animation: "revealOut 1.2s cubic-bezier(0.65, 0, 0.35, 1) forwards",
+      animation: "revealOut 1.2s ease-in-out forwards",
       pointerEvents: "none"
     }}>
       <div style={{ 
@@ -92,7 +92,7 @@ export default function PageTransition() {
           color: "var(--primary-red)", 
           fontFamily: "var(--font-heading)", 
           fontSize: "clamp(0.85rem, 3.5vw, 1.1rem)", 
-          fontWeight: 800, 
+          fontWeight: 800, WebkitFontSmoothing: "antialiased", textRendering: "optimizeLegibility", 
           letterSpacing: "2px", 
           
           textAlign: "center",
@@ -123,9 +123,9 @@ export default function PageTransition() {
 
       <style>{`
         @keyframes revealOut {
-          0% { opacity: 1; transform: scale(1); }
-          75% { opacity: 1; transform: scale(1); }
-          100% { opacity: 0; transform: scale(1.02); pointer-events: none; }
+          0% { opacity: 1; }
+          75% { opacity: 1; }
+          100% { opacity: 0; pointer-events: none; }
         }
         @keyframes smoothLoadingBar {
           0% { width: 0%; }
