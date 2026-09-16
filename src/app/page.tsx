@@ -421,7 +421,7 @@ export default function Home() {
               Since our establishment in {COMPANY_DATA.established}, we have evolved into a fully-fledged heavy civil engineering contractor delivering multi-billion rupee projects for both local and international clients.
             </p>
             <p style={{ fontSize: "1.1rem", color: "var(--text-light)", marginBottom: "30px", lineHeight: 1.8 }}>
-              Backed by a proven track record of {COMPANY_DATA.yearsOfExcellence} years, we continue to build the critical infrastructure that keeps Sri Lanka moving forward. <Link href="/about/history" style={{ color: "var(--primary-red)", fontWeight: 600, textDecoration: "none" }}>Learn more about our history &rarr;</Link>
+              Backed by a proven track record of {COMPANY_DATA.yearsOfExcellence} years, we continue to build the critical infrastructure that keeps Sri Lanka moving forward.
             </p>
           </div>
           
