@@ -20,33 +20,31 @@ export default function KeyDataPage() {
       
       {/* Hero Section */}
       <section 
-        className="page-header" 
-        style={{ 
-          backgroundImage: "url('/images/IMAGES/RRP/rrp-5.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
-          padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
-          textAlign: "center", 
-          position: "relative", 
-          backgroundSize: "cover", 
-          backgroundPosition: "center", 
-           
-          borderRadius: isMobile ? '24px' : '32px',
-          margin: isMobile ? '0 12px 30px' : '0 20px 40px',  
-          overflow: "hidden" 
-        }}
-      >
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
-        <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <div className="absolute-back-btn" style={{ position: "absolute", top: "110px", left: "clamp(20px, 4vw, 40px)", zIndex: 99 }}>
-            <Link href="/about" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>
-              &larr; Back to About Us
-            </Link>
+          className="page-header" 
+          style={{ 
+            backgroundImage: "linear-gradient(to bottom, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.3) 60%, rgba(15, 23, 42, 0.9) 100%), url('/images/company-overview-bg.jpg')", 
+            backgroundSize: "cover", 
+            backgroundPosition: "center", 
+            minHeight: isMobile ? "400px" : "500px", 
+            display: "flex", 
+            flexDirection: "column", 
+            justifyContent: "flex-end",
+            padding: isMobile ? "120px 20px 20px" : "160px 20px 20px", 
+            textAlign: "center", 
+            position: "relative", 
+            borderRadius: isMobile ? "24px" : "32px",
+            margin: isMobile ? "0 12px 30px" : "0 20px 40px",  
+            overflow: "hidden",
+            boxShadow: "0 10px 30px rgba(0,0,0,0.05)"
+          }}
+        >
+          <div style={{ position: "absolute", top: "110px", left: "clamp(20px, 4vw, 40px)", zIndex: 10 }}>
+            <Link href="/about" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to About Us</Link>
           </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>
-            Key <span style={{ color: "var(--primary-red)" }}>Data</span>
-          </h1>
-          
-        </div>
-      </section>
+          <div className="container" style={{ position: "relative", zIndex: 2 }}>
+            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Key <span style={{ color: "var(--primary-red)" }}>Data</span></h1>
+          </div>
+        </section>
 
       {/* Content Section */}
       <section style={{ padding: isMobile ? "20px 10px 80px" : "20px 20px 120px" }}>
