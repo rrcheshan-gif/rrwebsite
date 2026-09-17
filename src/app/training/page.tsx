@@ -71,13 +71,13 @@ export default function Training() {
               {/* Left Content */}
               <div style={{ flex: 1, padding: isMobile ? "30px 20px" : "50px" }}>
                  <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px", flexWrap: "wrap" }}>
-                    <span style={{ fontSize: "0.8rem", background: "rgba(0, 86, 210, 0.1)", color: "#0056D2", padding: "6px 15px", borderRadius: "20px", textTransform: "uppercase", letterSpacing: "1px", fontWeight: "800" }}>Corporate Training</span>
+                    <span style={{ fontSize: "0.8rem", background: "rgba(15, 23, 42, 0.08)", color: "var(--text-dark)", padding: "6px 15px", borderRadius: "20px", textTransform: "uppercase", letterSpacing: "1px", fontWeight: "800" }}>Corporate Training</span>
                     <span style={{ fontSize: "0.8rem", background: "var(--primary-red)", color: "white", padding: "6px 15px", borderRadius: "20px", textTransform: "uppercase", letterSpacing: "1px", fontWeight: "800" }}>Upcoming Program</span>
                  </div>
                  
                  <h3 style={{ fontFamily: "var(--font-heading)", fontSize: isMobile ? "1.6rem" : "2rem", color: "var(--text-dark)", marginBottom: "20px", lineHeight: 1.3 }}>
                    Empowering Our Team with <br/>
-                   <span style={{ color: "#0056D2" }}>Coursera AI Certification</span>
+                   <span style={{ color: "var(--primary-red)" }}>Coursera AI Certification</span>
                  </h3>
                  
                  <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.1rem", marginBottom: "30px" }}>
@@ -92,7 +92,7 @@ export default function Training() {
                      "Generative AI for Planning"
                    ].map((item, i) => (
                      <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "12px", color: "var(--text-dark)", fontWeight: 700, fontSize: "0.95rem" }}>
-                       <CheckCircle size={20} color="#0056D2" style={{ flexShrink: 0, marginTop: "2px" }} /> 
+                       <CheckCircle size={20} color="var(--primary-red)" style={{ flexShrink: 0, marginTop: "2px" }} /> 
                        <span>{item}</span>
                      </div>
                    ))}
@@ -100,14 +100,14 @@ export default function Training() {
               </div>
               
               {/* Right Graphic/Logo area */}
-              <div style={{ width: isMobile ? "100%" : "40%", background: "linear-gradient(135deg, #f0f7ff 0%, #e0efff 100%)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "50px 30px", borderLeft: isMobile ? "none" : "1px solid var(--border-soft)", borderTop: isMobile ? "1px solid var(--border-soft)" : "none" }}>
+              <div style={{ width: isMobile ? "100%" : "40%", background: "var(--bg-light)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "50px 30px", borderLeft: isMobile ? "none" : "1px solid var(--border-soft)", borderTop: isMobile ? "1px solid var(--border-soft)" : "none" }}>
                  
                  {/* Coursera simulated logo */}
-                 <div style={{ fontSize: isMobile ? "3rem" : "3.5rem", fontWeight: 900, color: "#0056D2", letterSpacing: "-2px", fontFamily: "Arial, sans-serif", marginBottom: "25px" }}>
+                 <div style={{ fontSize: isMobile ? "3rem" : "3.5rem", fontWeight: 900, color: "var(--text-dark)", letterSpacing: "-2px", fontFamily: "Arial, sans-serif", marginBottom: "25px" }}>
                    coursera
                  </div>
                  
-                 <h4 style={{ textAlign: "center", color: "#003b8e", fontWeight: 800, fontSize: "1.2rem", lineHeight: 1.5, margin: 0, fontFamily: "var(--font-heading)" }}>
+                 <h4 style={{ textAlign: "center", color: "var(--text-dark)", fontWeight: 800, fontSize: "1.2rem", lineHeight: 1.5, margin: 0, fontFamily: "var(--font-heading)" }}>
                    Global Standard <br/>Tech Education
                  </h4>
                  
@@ -117,9 +117,9 @@ export default function Training() {
                  
                  {/* Decorative elements */}
                  <div style={{ marginTop: "40px", display: "flex", gap: "12px" }}>
-                    <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "#0056D2", opacity: 0.2 }}></div>
-                    <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "#0056D2", opacity: 0.5 }}></div>
-                    <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "#0056D2", opacity: 1 }}></div>
+                    <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "var(--primary-red)", opacity: 0.2 }}></div>
+                    <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "var(--primary-red)", opacity: 0.5 }}></div>
+                    <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "var(--primary-red)", opacity: 1 }}></div>
                  </div>
               </div>
             </div>
