@@ -48,7 +48,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className={`navbar-wrapper ${scrolled ? "scrolled" : ""} home-nav`}>
+      <header className={`navbar-wrapper ${scrolled ? "scrolled" : ""}`}>
         <div className="container">
           <nav className="navbar">
             <a href="/" className="logo" onClick={() => setMobileMenuOpen(false)}>
