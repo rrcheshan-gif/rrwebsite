@@ -88,8 +88,8 @@ export default function Home() {
   return (
     <>
       {/* FULLSCREEN HERO SECTION */}
-      <section className="hero-contained" style={{ padding: '20px', paddingTop: '150px', backgroundColor: 'var(--bg-light)', display: 'flex', justifyContent: 'center' }}>
-        <div style={{ position: 'relative', width: '100%', maxWidth: '1440px', height: 'clamp(500px, 75vh, 800px)', borderRadius: 'clamp(24px, 5vw, 48px)', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
+      <section className="hero-contained" style={{ padding: '0', paddingTop: '130px', paddingBottom: '30px', backgroundColor: 'var(--bg-light)', display: 'flex', justifyContent: 'center' }}>
+        <div style={{ position: 'relative', width: 'calc(100% - 40px)', maxWidth: '1800px', height: 'clamp(650px, 85vh, 950px)', borderRadius: 'clamp(24px, 5vw, 48px)', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
         {/* Background Slider */}
         {slides.map((slide, index) => (
           <div 
@@ -137,7 +137,7 @@ export default function Home() {
 
         {/* Foreground Content */}
         <div className="container" style={{ position: "relative", zIndex: 3, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
-          <div style={{ width: '100%', maxWidth: '900px', paddingTop: '60px', margin: '0 auto' }}>
+          <div style={{ width: '100%', maxWidth: '900px', margin: '0 auto' }}>
             {slides.map((slide, index) => (
               <div 
                 key={index} 
