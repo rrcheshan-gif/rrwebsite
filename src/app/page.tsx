@@ -89,7 +89,7 @@ export default function Home() {
     <>
       {/* FULLSCREEN HERO SECTION */}
       <section className="hero-contained" style={{ padding: '20px', paddingTop: '100px', backgroundColor: 'var(--bg-light)', display: 'flex', justifyContent: 'center' }}>
-        <div style={{ position: 'relative', width: '100%', maxWidth: '1440px', height: 'clamp(500px, 75vh, 800px)', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
+        <div style={{ position: 'relative', width: '100%', maxWidth: '1440px', height: 'clamp(500px, 75vh, 800px)', borderRadius: 'clamp(24px, 5vw, 48px)', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
         {/* Background Slider */}
         {slides.map((slide, index) => (
           <div 
