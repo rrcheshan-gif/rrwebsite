@@ -1,6 +1,17 @@
+"use client";
 ﻿import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import { CheckCircle } from 'lucide-react';
 
 export default function Training() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Page Header */}
@@ -47,27 +58,69 @@ export default function Training() {
 
       {/* Special Initiatives Section */}
       <section style={{ padding: "0 20px 80px" }}>
-        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <div style={{ marginBottom: "40px", textAlign: "center" }}>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.2rem", color: "var(--text-dark)", margin: "0 0 15px 0" }}>Special <span style={{ color: "var(--primary-red)" }}>Initiatives</span></h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", margin: 0 }}>Discover the extra steps we take to empower our team and stay ahead of industry curves.</p>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <div style={{ marginBottom: "50px", textAlign: "center" }}>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", margin: "0 0 15px 0" }}>Special <span style={{ color: "var(--primary-red)" }}>Initiatives</span></h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.15rem", margin: 0 }}>Discover the extra steps we take to empower our team and stay ahead of industry curves.</p>
           </div>
           
-          <div style={{ display: "flex", flexDirection: "column", gap: "25px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
             
-            {/* Initiative Item 1 */}
-            <div className="hover-lift" style={{ background: "var(--white)", padding: "35px", borderRadius: "20px", borderLeft: "6px solid var(--primary-red)", boxShadow: "0 10px 40px rgba(0,0,0,0.04)", display: "flex", gap: "25px", alignItems: "flex-start", transition: "transform 0.3s ease" }}>
-              <div style={{ width: "60px", height: "60px", borderRadius: "16px", background: "rgba(229,57,53,0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, color: "var(--primary-red)" }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            {/* Initiative Item 1: Coursera AI */}
+            <div className="hover-lift" style={{ background: "var(--white)", borderRadius: "24px", border: "1px solid var(--border-soft)", overflow: "hidden", display: "flex", flexDirection: isMobile ? "column" : "row", boxShadow: "0 15px 40px rgba(0,0,0,0.05)" }}>
+              {/* Left Content */}
+              <div style={{ flex: 1, padding: isMobile ? "30px 20px" : "50px" }}>
+                 <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px", flexWrap: "wrap" }}>
+                    <span style={{ fontSize: "0.8rem", background: "rgba(0, 86, 210, 0.1)", color: "#0056D2", padding: "6px 15px", borderRadius: "20px", textTransform: "uppercase", letterSpacing: "1px", fontWeight: "800" }}>Corporate Training</span>
+                    <span style={{ fontSize: "0.8rem", background: "var(--primary-red)", color: "white", padding: "6px 15px", borderRadius: "20px", textTransform: "uppercase", letterSpacing: "1px", fontWeight: "800" }}>Upcoming Program</span>
+                 </div>
+                 
+                 <h3 style={{ fontFamily: "var(--font-heading)", fontSize: isMobile ? "1.6rem" : "2rem", color: "var(--text-dark)", marginBottom: "20px", lineHeight: 1.3 }}>
+                   Empowering Our Team with <br/>
+                   <span style={{ color: "#0056D2" }}>Coursera AI Certification</span>
+                 </h3>
+                 
+                 <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.1rem", marginBottom: "30px" }}>
+                   At RR Construction, we are taking a bold step into the future. We are launching a comprehensive <strong>Artificial Intelligence & Machine Learning</strong> training program for our staff through the global learning platform, Coursera. This initiative ensures our workforce remains at the absolute cutting edge of construction technology, ready to integrate AI-driven efficiencies into our engineering operations.
+                 </p>
+                 
+                 <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "20px" }}>
+                   {[
+                     "AI-Driven Project Management",
+                     "Automated Construction Workflows",
+                     "Data Analytics & Safety Prediction",
+                     "Generative AI for Planning"
+                   ].map((item, i) => (
+                     <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "12px", color: "var(--text-dark)", fontWeight: 700, fontSize: "0.95rem" }}>
+                       <CheckCircle size={20} color="#0056D2" style={{ flexShrink: 0, marginTop: "2px" }} /> 
+                       <span>{item}</span>
+                     </div>
+                   ))}
+                 </div>
               </div>
-              <div>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", marginBottom: "12px" }}>
-                  <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", color: "var(--text-dark)", margin: 0 }}>Coursera AI Certification for Staff</h3>
-                  <span style={{ fontSize: "0.75rem", background: "var(--primary-red)", color: "white", padding: "4px 10px", borderRadius: "20px", textTransform: "uppercase", letterSpacing: "1px", fontWeight: "bold" }}>Upcoming Program</span>
-                </div>
-                <p style={{ color: "var(--text-light)", lineHeight: 1.7, margin: 0, fontSize: "1.05rem" }}>
-                  As part of our commitment to continuous development, we are launching a special initiative to provide our staff with a comprehensive AI certification program through <strong>Coursera</strong>. This proactive step ensures our team is equipped with the latest knowledge in Artificial Intelligence, preparing them to integrate advanced technologies and automated workflows into our future engineering projects.
-                </p>
+              
+              {/* Right Graphic/Logo area */}
+              <div style={{ width: isMobile ? "100%" : "40%", background: "linear-gradient(135deg, #f0f7ff 0%, #e0efff 100%)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "50px 30px", borderLeft: isMobile ? "none" : "1px solid var(--border-soft)", borderTop: isMobile ? "1px solid var(--border-soft)" : "none" }}>
+                 
+                 {/* Coursera simulated logo */}
+                 <div style={{ fontSize: isMobile ? "3rem" : "3.5rem", fontWeight: 900, color: "#0056D2", letterSpacing: "-2px", fontFamily: "Arial, sans-serif", marginBottom: "25px" }}>
+                   coursera
+                 </div>
+                 
+                 <h4 style={{ textAlign: "center", color: "#003b8e", fontWeight: 800, fontSize: "1.2rem", lineHeight: 1.5, margin: 0, fontFamily: "var(--font-heading)" }}>
+                   Global Standard <br/>Tech Education
+                 </h4>
+                 
+                 <p style={{ textAlign: "center", color: "#475569", fontSize: "0.95rem", marginTop: "15px", maxWidth: "250px" }}>
+                   Equipping our people with world-class tech skills to engineer tomorrow.
+                 </p>
+                 
+                 {/* Decorative elements */}
+                 <div style={{ marginTop: "40px", display: "flex", gap: "12px" }}>
+                    <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "#0056D2", opacity: 0.2 }}></div>
+                    <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "#0056D2", opacity: 0.5 }}></div>
+                    <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "#0056D2", opacity: 1 }}></div>
+                 </div>
               </div>
             </div>
 
