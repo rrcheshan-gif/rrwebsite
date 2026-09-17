@@ -2,10 +2,10 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import projectsData from './data';
+import projectsData from '../data';
 
 export default function Projects() {
-  const [filter, setFilter] = useState('all');
+  
 
   const completedProjects = projectsData.filter((p: any) => p.type !== 'ongoing');
   
@@ -34,9 +34,7 @@ export default function Projects() {
     return valB.localeCompare(valA);
   });
 
-  const filteredProjects = sortedProjects.filter((p: any) => 
-    filter === 'all' ? true : p.category === filter
-  );
+  const filteredProjects = sortedProjects.filter((p: any) => p.category === 'overseas');
 
   
   const milestoneIds = ['project-ldpp-package-02', 'project-47', 'project-32', 'project-86'];
@@ -155,78 +153,21 @@ export default function Projects() {
 
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.2) 0%, rgba(15, 23, 42, 0.8) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our <span style={{ color: "var(--primary-red)" }}>Portfolio</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Overseas <span style={{ color: "var(--primary-red)" }}>Projects</span></h1>
           
         </div>
       </section>
 
       <div className="container">
 
-        {/* Status Toggle Tabs */}
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '30px', marginTop: '20px' }}>
-          <div style={{ display: 'flex', background: 'var(--bg-base)', borderRadius: '50px', padding: '6px', border: '1px solid var(--border-soft)' }}>
-             <Link href="/projects" style={{ padding: '12px 40px', borderRadius: '50px', background: 'var(--primary-red)', color: 'white', fontWeight: 'bold', textDecoration: 'none', boxShadow: '0 4px 15px rgba(229,57,53,0.3)' }}>
-               Completed Projects
-             </Link>
-             <Link href="/projects/ongoing" style={{ padding: '12px 40px', borderRadius: '50px', color: 'var(--text-dark)', fontWeight: 'bold', textDecoration: 'none' }}>
-               Ongoing Projects
-             </Link>
-          </div>
-        </div>
+        
 
-        {/* Filter Tabs */}
-        <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '15px', marginBottom: '50px' }}>
-          {['all', 'roads', 'bridges', 'water', 'maritime', 'buildings', 'irrigation', 'disaster', 'railway'].map(f => (
-            <button 
-              key={f}
-              onClick={() => setFilter(f)}
-              style={{
-                padding: '10px 20px',
-                borderRadius: '50px',
-                border: `1px solid ${filter === f ? 'var(--primary-red)' : 'var(--border-soft)'}`,
-                background: filter === f ? 'var(--primary-red)' : 'var(--white)',
-                color: filter === f ? '#fff' : 'var(--text-dark)',
-                cursor: 'pointer',
-                textTransform: 'capitalize',
-                transition: 'all 0.3s ease',
-                fontWeight: filter === f ? '700' : '500',
-                boxShadow: filter === f ? '0 10px 20px rgba(229,57,53,0.2)' : '0 4px 10px rgba(0,0,0,0.02)'
-              }}
-            >
-              {f === 'all' ? 'All Projects' : f === 'disaster' ? 'Disaster Mgmt' : f}
-            </button>
-          ))}
-        </div>
-
+        
         {/* Projects Grid */}
-          {filter === 'all' && milestoneProjects.length > 0 && (
-            <>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '30px', marginTop: '20px' }}>
-                <div style={{ width: '4px', height: '35px', background: 'var(--primary-red)', borderRadius: '4px' }}></div>
-                <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.5rem, 5vw, 2rem)", color: "var(--text-dark)", margin: 0, textAlign: "left" }}>
-                  Milestone Projects
-                </h2>
-              </div>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 340px), 1fr))", gap: "30px", paddingBottom: "50px", borderBottom: "1px solid var(--border-soft)", marginBottom: "50px" }}>
-                {milestoneProjects.map(renderProjectCard)}
-              </div>
-              
-              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '30px' }}>
-                <div style={{ width: '4px', height: '35px', background: 'var(--text-dark)', borderRadius: '4px' }}></div>
-                <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.4rem, 4vw, 1.8rem)", color: "var(--text-dark)", margin: 0, textAlign: "left" }}>
-                  All Completed Projects
-                </h2>
-              </div>
-            </>
-          )}
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 340px), 1fr))", gap: "30px", paddingBottom: "80px" }}>
-            {(filter === 'all' ? regularProjects : filteredProjects).map(renderProjectCard)}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 340px), 1fr))", gap: "30px", paddingBottom: "80px" }}>
+          {filteredProjects.map(renderProjectCard)}
         </div>
       </div>
     </div>
   );
 }
-
-
-
