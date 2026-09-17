@@ -164,7 +164,7 @@ export default function QuarriesAggregates() {
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Our Strategic Plant Locations</h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px" }}>Three crushing powerhouses placed strategically to cover the Western, North Central, and Northern Provinces.</p>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px", textAlign: "center" }}>Three crushing powerhouses placed strategically to cover the Western, North Central, and Northern Provinces.</p>
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
 
@@ -249,7 +249,7 @@ export default function QuarriesAggregates() {
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Available Products & Specifications</h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px" }}>Select from our wide range of crushed rock aggregates to suit your exact engineering needs.</p>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px", textAlign: "center" }}>Select from our wide range of crushed rock aggregates to suit your exact engineering needs.</p>
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
 
