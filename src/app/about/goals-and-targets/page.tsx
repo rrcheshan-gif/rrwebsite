@@ -1,8 +1,8 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Target, TrendingUp, CheckCircle, ArrowRight } from "lucide-react";
+import { Target, TrendingUp, CheckCircle } from "lucide-react";
 
 export default function GoalsAndTargets() {
   const [isMobile, setIsMobile] = useState(false);
@@ -56,51 +56,7 @@ export default function GoalsAndTargets() {
         "Improve equipment planning and utilization",
         "Strengthen material and resource planning",
         "Reduce avoidable equipment downtime",
-        "Improve project resource allocation"
-      ]
-    },
-    {
-      num: "05",
-      title: "Client & Stakeholder Value",
-      desc: "Create long-term value through dependable delivery, professional communication and strong stakeholder relationships.",
-      bullets: [
-        "Understand client requirements",
-        "Improve project communication",
-        "Respond effectively to stakeholder needs",
-        "Build long-term professional relationships"
-      ]
-    },
-    {
-      num: "06",
-      title: "Market & Business Development",
-      desc: "Strengthen RR Construction's position in Sri Lanka's construction and infrastructure sector through strategic growth and suitable project opportunities.",
-      bullets: [
-        "Strengthen participation in major infrastructure projects",
-        "Diversify the project portfolio",
-        "Develop specialized construction opportunities",
-        "Explore suitable regional and international opportunities"
-      ]
-    },
-    {
-      num: "07",
-      title: "Digital Transformation & Innovation",
-      desc: "Use appropriate digital technologies and modern management practices to improve project visibility, decision-making and operational efficiency.",
-      bullets: [
-        "Improve digital project monitoring",
-        "Strengthen data-based decision-making",
-        "Improve information flow",
-        "Evaluate practical construction technologies"
-      ]
-    },
-    {
-      num: "08",
-      title: "Organizational Strength & Governance",
-      desc: "Strengthen management systems, coordination and professional practices required for long-term organizational growth.",
-      bullets: [
-        "Improve internal coordination",
-        "Strengthen management processes",
-        "Support effective decision-making",
-        "Maintain accountability and professional conduct"
+        "Optimize operational cost efficiency"
       ]
     }
   ];
@@ -108,7 +64,7 @@ export default function GoalsAndTargets() {
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       
-      {/* 1. Hero Section */}
+      {/* 1. Page Header */}
       <section 
         className="page-header" 
         style={{ 
@@ -117,8 +73,11 @@ export default function GoalsAndTargets() {
           textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 
-          backgroundPosition: "center 40%", 
-           
+          backgroundPosition: "center", 
+          minHeight: isMobile ? "400px" : "600px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "flex-end",
           borderRadius: isMobile ? '24px' : '32px',
           margin: isMobile ? '0 12px 30px' : '0 20px 40px',  
           overflow: "hidden" 
@@ -128,7 +87,6 @@ export default function GoalsAndTargets() {
           <Link href="/about" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to About Us
             </Link>
         </div>
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ display: "flex", justifyContent: "center", marginBottom: "20px" }}>
             <div style={{ background: "var(--primary-red)", padding: "12px", borderRadius: "50%", display: "inline-flex" }}>
@@ -153,38 +111,46 @@ export default function GoalsAndTargets() {
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "30px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)", gap: "30px" }}>
             {strategicGoals.map((goal, idx) => (
               <div 
                 key={idx} 
+                className="hover-lift"
                 style={{ 
                   background: "var(--white)", 
-                  padding: "40px 30px", 
+                  padding: isMobile ? "30px 20px" : "40px 45px", 
                   borderRadius: "24px", 
-                  boxShadow: "0 15px 35px rgba(0,0,0,0.04)", 
+                  boxShadow: "0 10px 40px rgba(0,0,0,0.03)", 
                   border: "1px solid var(--border-soft)",
-                  transition: "transform 0.3s ease",
+                  borderTop: "4px solid var(--primary-red)",
+                  transition: "transform 0.4s ease, box-shadow 0.4s ease",
                   display: "flex",
-                  flexDirection: "column"
+                  flexDirection: "column",
+                  position: "relative",
+                  overflow: "hidden"
                 }}
-                onMouseEnter={(e) => e.currentTarget.style.transform = "translateY(-5px)"}
-                onMouseLeave={(e) => e.currentTarget.style.transform = "translateY(0)"}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
-                  <div style={{ fontSize: "2rem", fontWeight: 900, color: "rgba(229, 57, 53, 0.15)", fontFamily: "var(--font-heading)", lineHeight: 1 }}>
+                <div style={{ position: "absolute", top: "-15px", right: "20px", fontSize: "7rem", fontWeight: 900, color: "rgba(229, 57, 53, 0.04)", fontFamily: "var(--font-heading)", lineHeight: 1, pointerEvents: "none", zIndex: 0 }}>
+                  {goal.num}
+                </div>
+                
+                <div style={{ position: "relative", zIndex: 1, display: "flex", alignItems: "center", gap: "20px", marginBottom: "20px" }}>
+                  <div style={{ display: "flex", alignItems: "center", justifyContent: "center", background: "rgba(229, 57, 53, 0.1)", color: "var(--primary-red)", width: "55px", height: "55px", borderRadius: "16px", fontSize: "1.4rem", fontWeight: 800, fontFamily: "var(--font-heading)", flexShrink: 0 }}>
                     {goal.num}
                   </div>
-                  <h3 style={{ fontSize: "1.3rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, lineHeight: 1.3 }}>
+                  <h3 style={{ fontSize: "1.35rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, lineHeight: 1.3 }}>
                     {goal.title}
                   </h3>
                 </div>
-                <p style={{ color: "var(--text-light)", lineHeight: 1.6, margin: "0 0 20px 0", fontSize: "1.05rem" }}>
+                
+                <p style={{ position: "relative", zIndex: 1, color: "var(--text-light)", lineHeight: 1.7, margin: "10px 0 25px 0", fontSize: "1.1rem" }}>
                   {goal.desc}
                 </p>
-                <ul style={{ listStyle: "none", padding: 0, margin: "auto 0 0 0" }}>
+                
+                <ul style={{ position: "relative", zIndex: 1, listStyle: "none", padding: 0, margin: "auto 0 0 0", display: "flex", flexDirection: "column", gap: "12px" }}>
                   {goal.bullets.map((bullet, bIdx) => (
-                    <li key={bIdx} style={{ display: "flex", alignItems: "flex-start", gap: "10px", marginBottom: "12px", color: "var(--text-dark)", fontSize: "0.95rem", lineHeight: 1.5, fontWeight: 500 }}>
-                      <CheckCircle size={18} color="var(--primary-red)" style={{ flexShrink: 0, marginTop: "2px" }} />
+                    <li key={bIdx} style={{ display: "flex", alignItems: "flex-start", gap: "12px", color: "var(--text-dark)", fontSize: "0.95rem", lineHeight: 1.5, fontWeight: 600 }}>
+                      <CheckCircle size={20} color="var(--primary-red)" style={{ flexShrink: 0, marginTop: "2px" }} />
                       <span>{bullet}</span>
                     </li>
                   ))}
