@@ -112,7 +112,7 @@ export default function GoalsAndTargets() {
       <section 
         className="page-header" 
         style={{ 
-          backgroundImage: "url('/images/projects/new-folder/sagt-road/1.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
+          backgroundImage: "linear-gradient(to bottom, rgba(15, 23, 42, 0.45) 0%, rgba(15, 23, 42, 0.65) 60%, rgba(15, 23, 42, 0.92) 100%), url('/images/page-headers/engineering-blueprint-banner.jpg')", 
           padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
           textAlign: "center", 
           position: "relative", 

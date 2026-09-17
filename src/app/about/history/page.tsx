@@ -96,7 +96,7 @@ export default function HistoryTimeline() {
               <section 
           className="page-header" 
           style={{ 
-            backgroundImage: "linear-gradient(to bottom, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.3) 60%, rgba(15, 23, 42, 0.9) 100%), url('/images/page-headers/blueprint-bg-hq.jpg')", 
+            backgroundImage: "linear-gradient(to bottom, rgba(15, 23, 42, 0.45) 0%, rgba(15, 23, 42, 0.65) 60%, rgba(15, 23, 42, 0.92) 100%), url('/images/page-headers/engineering-blueprint-banner.jpg')", 
             backgroundSize: "cover", 
             backgroundPosition: "center top", 
             minHeight: isMobile ? "400px" : "600px", 
