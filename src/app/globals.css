@@ -556,12 +556,13 @@ ul {
 
 /* Desktop actions: theme toggle + Contact Us — always at the far right */
 .nav-desktop-actions {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex-shrink: 0;
-  margin-left: auto;
-}
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: clamp(20px, 4vw, 60px) !important;
+  }
 
 @media (max-width: 1200px) {
   .nav-desktop-actions {
