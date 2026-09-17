@@ -44,105 +44,171 @@ export default function KeyDataPage() {
         </div>
       </section>
 
-      {/* Main Content */}
-      <section style={{ padding: isMobile ? "0 12px 60px" : "0 20px 100px" }}>
-        <div className="container" style={{ maxWidth: "1100px", margin: "0 auto", display: "flex", flexDirection: "column", gap: isMobile ? "20px" : "30px" }}>
-
-          {/* Key Stats � simple row */}
-          <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(2, 1fr)' : 'repeat(4, 1fr)', gap: isMobile ? '12px' : '20px' }}>
-            {[
-              { num: "1995", label: "Year Established", icon: <Calendar size={20} /> },
-              { num: "1,400+", label: "Employees", icon: <Users size={20} /> },
-              { num: "1,000+", label: "Machinery Units", icon: <Truck size={20} /> },
-              { num: "100+", label: "Major Projects", icon: <CheckCircle2 size={20} /> },
-            ].map((s, i) => (
-              <div key={i} className="hover-lift" style={{ 
-                background: 'var(--white)', 
-                borderRadius: '16px', 
-                padding: isMobile ? '20px 16px' : '28px 24px',
-                border: '1px solid var(--border-soft)',
-                textAlign: 'center',
-                borderTop: '3px solid var(--primary-red)'
-              }}>
-                <div style={{ color: 'var(--primary-red)', marginBottom: '8px', display: 'flex', justifyContent: 'center' }}>{s.icon}</div>
-                <h3 style={{ fontSize: isMobile ? '1.8rem' : '2.2rem', fontFamily: 'var(--font-heading)', fontWeight: 800, margin: '0 0 4px', color: 'var(--text-dark)', lineHeight: 1 }}>{s.num}</h3>
-                <p style={{ color: 'var(--text-light)', fontSize: '0.85rem', margin: 0, fontWeight: 500 }}>{s.label}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Corporate Identity */}
-          <div className="hover-lift" style={{ background: 'var(--white)', borderRadius: '16px', padding: isMobile ? '28px 24px' : '40px 45px', border: '1px solid var(--border-soft)' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '24px' }}>
-              <Building2 size={20} color="var(--primary-red)" />
-              <h3 className="card-heading" style={{ color: 'var(--text-dark)', fontWeight: 800, fontSize: '1.15rem', fontFamily: 'var(--font-heading)', margin: 0 }}>Corporate Identity</h3>
-            </div>
-            <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)', gap: '16px' }}>
-              {[
-                { label: "Company Name", value: "RR Construction (Pvt) Ltd" },
-                { label: "Registration No", value: "PV 11346" },
-                { label: "Managing Director", value: "Mr. Ranjith Senadeera S. D." },
-              ].map((item, i) => (
-                <div key={i} style={{ paddingBottom: '16px', borderBottom: '1px solid var(--border-soft)' }}>
-                  <p style={{ color: 'var(--text-light)', fontSize: '0.75rem', marginBottom: '4px', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '1px' }}>{item.label}</p>
-                  <p style={{ color: 'var(--text-dark)', fontWeight: 700, fontSize: '1rem', margin: 0 }}>{item.value}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Head Office */}
-          <div className="hover-lift" style={{ background: 'var(--white)', borderRadius: '16px', padding: isMobile ? '28px 24px' : '40px 45px', border: '1px solid var(--border-soft)' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
-              <MapPin size={20} color="var(--primary-red)" />
-              <h3 className="card-heading" style={{ color: 'var(--text-dark)', fontWeight: 800, fontSize: '1.15rem', fontFamily: 'var(--font-heading)', margin: 0 }}>Head Office</h3>
-            </div>
-            <p style={{ color: 'var(--text-light)', lineHeight: 1.8, fontSize: '1rem', margin: 0 }}>No. 865, Dr. Danister De Silva Mawatha, Baseline Road, Colombo 9, Orugodawatta.</p>
-          </div>
-
-          {/* ISO & Partners row */}
-          <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? '20px' : '30px' }}>
-
-            {/* ISO Certifications */}
-            <div className="hover-lift" style={{ background: 'var(--white)', borderRadius: '16px', padding: isMobile ? '28px 24px' : '40px 45px', border: '1px solid var(--border-soft)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
-                <ShieldCheck size={20} color="var(--primary-red)" />
-                <h3 className="card-heading" style={{ color: 'var(--text-dark)', fontWeight: 800, fontSize: '1.15rem', fontFamily: 'var(--font-heading)', margin: 0 }}>ISO Certifications</h3>
-              </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                {[
-                  "ISO 9001:2015 � Quality Management",
-                  "ISO 14001:2015 � Environmental Management",
-                  "ISO 45001:2018 � Occupational Health & Safety"
-                ].map((cert, i) => (
-                  <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', paddingBottom: '10px', borderBottom: i < 2 ? '1px solid var(--border-soft)' : 'none' }}>
-                    <Award size={16} color="var(--primary-red)" style={{ marginTop: '2px', flexShrink: 0 }} />
-                    <p style={{ color: 'var(--text-dark)', fontWeight: 600, margin: 0, fontSize: '0.95rem' }}>{cert}</p>
+      {/* Bento Grid */}
+      <section style={{ padding: isMobile ? "10px 10px 80px" : "20px 20px 120px" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: isMobile ? "0" : "0 16px" }}>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)', gap: isMobile ? '15px' : '25px' }}>
+            
+            {/* 1. Identity Wide (span 2) */}
+            <div className="hover-lift" style={{ 
+              gridColumn: isMobile ? 'span 1' : 'span 2',
+              background: 'var(--white)', borderRadius: '24px',
+              padding: isMobile ? '35px 25px' : '50px 55px',
+              border: '1px solid var(--border-soft)',
+              boxShadow: '0 8px 30px rgba(0,0,0,0.04)',
+              position: 'relative', overflow: 'hidden',
+              display: 'flex', flexDirection: 'column', justifyContent: 'center'
+            }}>
+              <Building2 size={220} color="var(--bg-light)" style={{ position: 'absolute', right: '-40px', top: '-40px', opacity: 0.6, zIndex: 0 }} />
+              <div style={{ position: 'relative', zIndex: 1 }}>
+                <p style={{ color: 'var(--primary-red)', textTransform: 'uppercase', letterSpacing: '2.5px', fontWeight: 800, fontSize: '0.8rem', marginBottom: '12px' }}>Corporate Identity</p>
+                <h2 style={{ fontSize: isMobile ? '2rem' : '2.8rem', fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'var(--text-dark)', marginBottom: '30px', lineHeight: 1.1 }}>
+                  RR Construction <span style={{ color: 'var(--text-light)', fontWeight: 600 }}>(Pvt) Ltd</span>
+                </h2>
+                <div style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', gap: isMobile ? '16px' : '40px' }}>
+                  <div>
+                    <p style={{ color: 'var(--text-light)', fontSize: '0.75rem', marginBottom: '4px', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '1px' }}>Registration No</p>
+                    <p style={{ color: 'var(--text-dark)', fontWeight: 800, fontSize: '1.2rem', margin: 0 }}>PV 11346</p>
                   </div>
-                ))}
+                  <div>
+                    <p style={{ color: 'var(--text-light)', fontSize: '0.75rem', marginBottom: '4px', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '1px' }}>Managing Director</p>
+                    <p style={{ color: 'var(--text-dark)', fontWeight: 800, fontSize: '1.1rem', margin: 0 }}>Mr. Ranjith Senadeera S. D.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Corporate Partners */}
-            <div className="hover-lift" style={{ background: 'var(--white)', borderRadius: '16px', padding: isMobile ? '28px 24px' : '40px 45px', border: '1px solid var(--border-soft)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
-                <Globe size={20} color="var(--primary-red)" />
-                <h3 className="card-heading" style={{ color: 'var(--text-dark)', fontWeight: 800, fontSize: '1.15rem', fontFamily: 'var(--font-heading)', margin: 0 }}>Corporate Partners</h3>
+            {/* 2. Established (red) */}
+            <div className="hover-lift" style={{ 
+              background: 'var(--primary-red)',
+              borderRadius: '24px',
+              padding: isMobile ? '35px 25px' : '50px 40px',
+              color: 'white', display: 'flex', flexDirection: 'column',
+              justifyContent: 'center', alignItems: 'center',
+              position: 'relative', overflow: 'hidden',
+              boxShadow: '0 20px 40px rgba(211,47,47,0.2)'
+            }}>
+              <Calendar size={180} style={{ position: 'absolute', right: '-25px', bottom: '-25px', opacity: 0.08 }} />
+              <div style={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>
+                <p style={{ textTransform: 'uppercase', letterSpacing: '3px', fontWeight: 700, fontSize: '0.8rem', marginBottom: '10px', opacity: 0.85 }}>Established</p>
+                <h3 style={{ fontSize: isMobile ? 'clamp(3rem, 12vw, 4.5rem)' : '4.5rem', fontFamily: 'var(--font-heading)', fontWeight: 900, margin: 0, lineHeight: 1 }}>1995</h3>
+                <div style={{ width: '36px', height: '3px', backgroundColor: 'rgba(255,255,255,0.4)', margin: '18px auto 0', borderRadius: '2px' }}></div>
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                <div style={{ paddingBottom: '16px', borderBottom: '1px solid var(--border-soft)' }}>
-                  <p style={{ color: 'var(--text-light)', fontSize: '0.75rem', marginBottom: '4px', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '1px' }}>Company Auditor</p>
+            </div>
+
+            {/* 3. Workforce (dark) */}
+            <div className="hover-lift" style={{ 
+              background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
+              borderRadius: '24px', padding: isMobile ? '35px 25px' : '40px 40px',
+              color: 'white', display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
+              boxShadow: '0 20px 40px rgba(15,23,42,0.15)'
+            }}>
+              <div style={{ background: 'rgba(255,255,255,0.08)', width: '52px', height: '52px', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Users size={26} color="white" />
+              </div>
+              <div style={{ marginTop: '35px' }}>
+                <h3 style={{ fontSize: isMobile ? 'clamp(2.5rem, 9vw, 3.5rem)' : '3.5rem', fontFamily: 'var(--font-heading)', fontWeight: 800, margin: 0, lineHeight: 1 }}>1,400<span style={{ color: 'var(--primary-red)' }}>+</span></h3>
+                <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '1rem', marginTop: '8px', fontWeight: 500, margin: '8px 0 0' }}>Dedicated Employees</p>
+              </div>
+            </div>
+
+            {/* 4. Machinery */}
+            <div className="hover-lift" style={{ 
+              background: 'var(--white)', borderRadius: '24px',
+              padding: isMobile ? '35px 25px' : '40px 40px',
+              border: '1px solid var(--border-soft)',
+              boxShadow: '0 8px 30px rgba(0,0,0,0.03)',
+              display: 'flex', flexDirection: 'column', justifyContent: 'space-between'
+            }}>
+              <div style={{ background: 'rgba(211,47,47,0.08)', width: '52px', height: '52px', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Truck size={26} color="var(--primary-red)" />
+              </div>
+              <div style={{ marginTop: '35px' }}>
+                <h3 style={{ fontSize: isMobile ? 'clamp(2.5rem, 9vw, 3.5rem)' : '3.5rem', fontFamily: 'var(--font-heading)', fontWeight: 800, margin: 0, color: 'var(--text-dark)', lineHeight: 1 }}>1,000<span style={{ color: 'var(--primary-red)' }}>+</span></h3>
+                <p style={{ color: 'var(--text-light)', fontSize: '1rem', marginTop: '8px', fontWeight: 500, margin: '8px 0 0' }}>Heavy Machinery Units</p>
+              </div>
+            </div>
+
+            {/* 5. Projects */}
+            <div className="hover-lift" style={{ 
+              background: 'var(--white)', borderRadius: '24px',
+              padding: isMobile ? '35px 25px' : '40px 40px',
+              border: '1px solid var(--border-soft)',
+              boxShadow: '0 8px 30px rgba(0,0,0,0.03)',
+              display: 'flex', flexDirection: 'column', justifyContent: 'space-between'
+            }}>
+              <div style={{ background: 'rgba(211,47,47,0.08)', width: '52px', height: '52px', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <CheckCircle2 size={26} color="var(--primary-red)" />
+              </div>
+              <div style={{ marginTop: '35px' }}>
+                <h3 style={{ fontSize: isMobile ? 'clamp(2.5rem, 9vw, 3.5rem)' : '3.5rem', fontFamily: 'var(--font-heading)', fontWeight: 800, margin: 0, color: 'var(--text-dark)', lineHeight: 1 }}>100<span style={{ color: 'var(--primary-red)' }}>+</span></h3>
+                <p style={{ color: 'var(--text-light)', fontSize: '1rem', marginTop: '8px', fontWeight: 500, margin: '8px 0 0' }}>Major National Projects</p>
+              </div>
+            </div>
+
+            {/* 6. Head Office (1/3) */}
+            <div className="hover-lift" style={{ 
+              background: 'var(--white)', borderRadius: '24px',
+              padding: isMobile ? '35px 25px' : '40px 40px',
+              border: '1px solid var(--border-soft)',
+              boxShadow: '0 8px 30px rgba(0,0,0,0.03)',
+              display: 'flex', flexDirection: 'column', justifyContent: 'center'
+            }}>
+              <div style={{ background: 'rgba(211,47,47,0.08)', width: '52px', height: '52px', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px' }}>
+                <MapPin size={26} color="var(--primary-red)" />
+              </div>
+              <h4 className="card-heading" style={{ color: 'var(--text-dark)', fontWeight: 800, fontSize: '1.1rem', fontFamily: 'var(--font-heading)' }}>Head Office</h4>
+              <p style={{ color: 'var(--text-light)', lineHeight: 1.8, fontSize: '0.95rem', margin: 0 }}>No. 865, Dr. Danister De Silva Mawatha, Baseline Road, Colombo 9, Orugodawatta.</p>
+            </div>
+
+            {/* 7. Certifications + Partners (span 2) */}
+            <div className="hover-lift" style={{ 
+              gridColumn: isMobile ? 'span 1' : 'span 2',
+              background: 'var(--white)', borderRadius: '24px',
+              padding: isMobile ? '35px 25px' : '45px 55px',
+              border: '1px solid var(--border-soft)',
+              boxShadow: '0 8px 30px rgba(0,0,0,0.03)',
+              display: 'grid',
+              gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr',
+              gap: isMobile ? '30px' : '50px'
+            }}>
+              
+              {/* ISO */}
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '18px' }}>
+                  <ShieldCheck size={20} color="var(--primary-red)" />
+                  <h4 className="card-heading" style={{ color: 'var(--text-dark)', fontWeight: 800, fontSize: '1.1rem', fontFamily: 'var(--font-heading)', margin: 0 }}>ISO Certifications</h4>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  {['ISO 9001:2015 � Quality Management', 'ISO 14001:2015 � Environmental Management', 'ISO 45001:2018 � Occupational Health & Safety'].map((c, i) => (
+                    <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                      <Award size={14} color="var(--primary-red)" style={{ marginTop: '3px', flexShrink: 0 }} />
+                      <p style={{ color: 'var(--text-dark)', fontWeight: 600, margin: 0, fontSize: '0.9rem' }}>{c}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Partners */}
+              <div style={{ borderLeft: isMobile ? 'none' : '1px solid var(--border-soft)', paddingLeft: isMobile ? '0' : '50px', borderTop: isMobile ? '1px solid var(--border-soft)' : 'none', paddingTop: isMobile ? '25px' : '0' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '18px' }}>
+                  <Globe size={20} color="var(--primary-red)" />
+                  <h4 className="card-heading" style={{ color: 'var(--text-dark)', fontWeight: 800, fontSize: '1.1rem', fontFamily: 'var(--font-heading)', margin: 0 }}>Corporate Partners</h4>
+                </div>
+                <div style={{ marginBottom: '18px' }}>
+                  <p style={{ color: 'var(--text-light)', fontSize: '0.72rem', marginBottom: '4px', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '1px' }}>Company Auditor</p>
                   <p style={{ color: 'var(--text-dark)', fontWeight: 700, fontSize: '1rem', margin: 0 }}>P. Wijayawardana & Co.</p>
                 </div>
                 <div>
-                  <p style={{ color: 'var(--text-light)', fontSize: '0.75rem', marginBottom: '4px', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '1px' }}>Company Bankers</p>
-                  <p style={{ color: 'var(--text-dark)', fontSize: '0.95rem', lineHeight: 1.7, margin: 0, fontWeight: 500 }}>HNB, DFCC, Sampath, NDB, Commercial, Peoples Bank & NTB</p>
+                  <p style={{ color: 'var(--text-light)', fontSize: '0.72rem', marginBottom: '4px', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '1px' }}>Company Bankers</p>
+                  <p style={{ color: 'var(--text-dark)', fontSize: '0.9rem', lineHeight: 1.7, margin: 0, fontWeight: 500 }}>HNB, DFCC, Sampath, NDB, Commercial, Peoples Bank & NTB</p>
                 </div>
               </div>
+
             </div>
 
           </div>
-
         </div>
       </section>
 
