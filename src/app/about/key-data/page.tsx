@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -50,8 +50,8 @@ export default function KeyDataPage() {
             backgroundColor: 'var(--white)',
             borderRadius: '16px',
             padding: isMobile ? '30px 20px' : '50px 60px',
-            border: '1px solid var(--border-soft)',
-            boxShadow: '0 4px 6px rgba(0,0,0,0.02)'
+            border: '1px solid var(--primary-red)', boxShadow: '0 4px 25px rgba(229, 57, 53, 0.08)',
+            
           }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
 
