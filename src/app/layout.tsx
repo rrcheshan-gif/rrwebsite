@@ -85,7 +85,7 @@ const jsonLd = {
     "availableLanguage": ["English"]
   },
   "sameAs": [
-    "https://www.facebook.com/rrconstruction",
+    "https://web.facebook.com/profile.php?id=61594119435109",
     "https://www.linkedin.com/company/rrconstruction"
   ],
   "priceRange": "$$$",
