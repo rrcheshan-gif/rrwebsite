@@ -63,7 +63,7 @@ export default function BridgeConstructionPage() {
             }}>
               Premier Bridge Engineering Capabilities
             </h2>
-            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
+            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6, textAlign: 'center' }}>
               RR Construction is a leading force in Sri Lankan infrastructure development. With decades of structural engineering expertise, we design, construct, and rehabilitate complex bridge structures that serve communities and economies for generations.
             </p>
           </div>

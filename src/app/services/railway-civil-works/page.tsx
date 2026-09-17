@@ -64,7 +64,7 @@ export default function RailwayCivilWorksPage() {
             }}>
               Modernizing Railway Infrastructure
             </h2>
-            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
+            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6, textAlign: 'center' }}>
               Partnering with international entities like IRCON, we execute large-scale civil components required for high-speed track upgrades, ensuring precision grading and absolute geotechnical stability.
             </p>
           </div>

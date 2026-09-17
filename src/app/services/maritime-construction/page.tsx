@@ -62,7 +62,7 @@ export default function MaritimeConstructionPage() {
             }}>
               Sri Lanka's Premier Maritime Constructor
             </h2>
-            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
+            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6, textAlign: 'center' }}>
               RR Construction possesses the specialized equipment, technical expertise, and engineering capabilities required for complex marine environments. Our maritime division undertakes technically challenging projects from commercial ports and fishery harbours to coastal protection structures, delivering resilient infrastructure designed to withstand harsh marine conditions.
             </p>
           </div>

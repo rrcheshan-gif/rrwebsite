@@ -65,7 +65,7 @@ export default function RoadConstructionPage() {
             }}>
               Comprehensive Road Construction Capabilities
             </h2>
-            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
+            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6, textAlign: 'center' }}>
               Our dedicated highway division operates with a massive workforce of over {COMPANY_DATA.workforce} professionals and a self-owned fleet of {COMPANY_DATA.machineryFleet} machinery units, ensuring we can tackle national-scale projects efficiently.
             </p>
           </div>

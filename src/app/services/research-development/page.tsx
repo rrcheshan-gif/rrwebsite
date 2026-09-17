@@ -63,7 +63,7 @@ export default function ResearchAndDevelopmentPage() {
             }}>
               Innovating Construction Methods
             </h2>
-            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
+            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6, textAlign: 'center' }}>
               The integration of cutting-edge technologies and rigorous R&D initiatives has enabled the organization to achieve unprecedented operational efficiency and overcome complex technical challenges.
             </p>
           </div>

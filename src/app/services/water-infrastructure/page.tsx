@@ -63,7 +63,7 @@ export default function WaterInfrastructurePage() {
             }}>
               Our Water Infrastructure Services
             </h2>
-            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
+            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6, textAlign: 'center' }}>
               Extensive experience in constructing municipal and regional water infrastructure, handling everything from clean drinking water distribution to large-scale irrigation and storm drainage systems across Sri Lanka.
             </p>
           </div>
