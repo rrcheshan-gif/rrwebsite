@@ -1,11 +1,11 @@
 ﻿import type { Metadata, Viewport } from "next";
-import { Playfair_Display, Roboto } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
+const robotoHeading = Roboto({
   variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["500", "700", "900"],
 });
 
 const roboto = Roboto({
@@ -109,7 +109,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${roboto.variable}`}
+      className={`${robotoHeading.variable} ${roboto.variable}`}
       suppressHydrationWarning
     >
       <head>
@@ -132,7 +132,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${playfair.variable} ${roboto.variable} antialiased`} suppressHydrationWarning>
+      <body className={`${robotoHeading.variable} ${roboto.variable} antialiased`} suppressHydrationWarning>
         <ThemeProvider>
           <PageTransition />
           <Navbar />

@@ -2001,7 +2001,7 @@ ul {
   }
   
   h1 { font-size: clamp(1.8rem, 8vw, 2.5rem) !important; }
-  h2 { font-size: clamp(1.8rem, 6vw, 2.25rem) !important; }
+  h2 { font-size: clamp(1.5rem, 5vw, 1.875rem) !important; }
   h3 { font-size: clamp(1.25rem, 5vw, 1.6rem) !important; }
   
   section {
@@ -2084,8 +2084,8 @@ body {
 
   /* Typography scaling */
   h2 { font-size: clamp(1.5rem, 6vw, 2rem) !important; }
-  h3 { font-size: clamp(1.3rem, 5vw, 1.75rem) !important; }
-  p { font-size: 1.1rem !important; line-height: 1.75 !important; }
+  h3 { font-size: clamp(1.15rem, 4vw, 1.25rem) !important; }
+  p { font-size: 0.95rem !important; line-height: 1.6 !important; margin-bottom: 1rem; }
 
   /* Hero / Page header */
   .page-header {
