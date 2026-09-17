@@ -1,118 +1,94 @@
-﻿"use client";
+"use client";
 import React from 'react';
+import Link from 'next/link';
 
 export default function OngoingProjects() {
-  return (
-    <div style={{ minHeight: '70vh', background: 'var(--bg-light)' }}>
-      {/* Hero Section */}
-      <section style={{ padding: '160px 20px 40px', textAlign: 'center' }}>
-        <div className='container' style={{ maxWidth: '1440px' }}>
-          <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-            <h1 style={{ 
-              fontSize: 'clamp(2.5rem, 6vw, 4.2rem)', 
-              fontFamily: 'var(--font-heading)', 
-              fontWeight: 900, 
-              color: 'var(--text-dark)', 
-              marginBottom: '40px',
-              lineHeight: 1.1,
-              letterSpacing: '-1px'
-            }}>
-              Ongoing <span style={{ color: 'var(--primary-red)' }}>Projects</span>
-            </h1>
-            
-            <div style={{
-               background: 'var(--white)',
-               padding: '40px 50px',
-               borderRadius: '24px',
-               boxShadow: '0 20px 40px rgba(0,0,0,0.04)',
-               border: '1px solid var(--border-soft)',
-               position: 'relative'
-            }}>
-               <div style={{ width: '60px', height: '4px', background: 'var(--primary-red)', margin: '0 auto 30px', borderRadius: '2px' }}></div>
-               
-               <p style={{ 
-                 color: 'var(--text-dark)', 
-                 fontSize: '1.15rem', 
-                 lineHeight: 2, 
-                 textAlign: 'justify',
-                 marginBottom: '20px'
-               }}>
-                 <strong>RR Construction</strong> is currently executing a diverse and expansive portfolio of large-scale infrastructure projects. Our ongoing commitments span across all critical engineering sectors, including national road networks, complex bridges, comprehensive water supply and irrigation systems, major maritime developments, multi-storey buildings, railway infrastructure, disaster management and landslide mitigation, as well as specialized overseas construction projects.
-               </p>
+  const categories = [
+    { id: 'roads', title: 'Road Construction', img: '/images/KRP/img-1.jpeg' },
+    { id: 'bridges', title: 'Bridge Construction', img: '/images/BBP/img-1.jpeg' },
+    { id: 'irrigation', title: 'Irrigation & Water Supply', img: '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.28.jpeg' },
+    { id: 'disaster', title: 'Landslide Mitigation', img: '/images/Badulla Landslide/Background image.jpeg' },
+    { id: 'maritime', title: 'Maritime & Dredging', img: '/images/maritime-harbour-site.jpg' }
+  ];
 
-               <p style={{ 
-                 color: 'var(--text-light)', 
-                 fontSize: '1.15rem', 
-                 lineHeight: 2, 
-                 textAlign: 'justify',
-                 margin: 0
-               }}>
-                 Equipped with our expansive proprietary machinery fleet and unmatched technical expertise, we are continuously driving infrastructure development forward. Our dedicated engineering and project management teams ensure that every ongoing site progresses seamlessly, consistently delivering high-quality results while adhering to the strictest international standards for occupational health, safety, and environmental sustainability.
-               </p>
-            </div>
-          </div>
+  return (
+    <div style={{ minHeight: '100vh', background: 'var(--bg-light)' }}>
+      {/* Hero Section with Image Space */}
+      <section className="page-header" style={{ 
+        position: 'relative', 
+        backgroundImage: "linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.7)), url('/images/page-headers/ongoing-hero.jpg')", 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center', 
+        color: 'var(--white)', 
+        padding: '140px 20px 80px', 
+        textAlign: 'center',
+        borderBottomLeftRadius: '48px',
+        borderBottomRightRadius: '48px',
+        marginBottom: '60px',
+        overflow: 'hidden'
+      }}>
+        <div className="absolute-back-btn" style={{ position: "absolute", top: "110px", left: "clamp(20px, 4vw, 40px)", zIndex: 99 }}>
+          <Link href="/projects" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Projects
+            </Link>
+        </div>
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 800, marginBottom: '20px', letterSpacing: '-1px' }}>
+            Ongoing <span style={{ color: 'var(--primary-red)' }}>Categories</span>
+          </h1>
+          <p style={{ maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', color: '#cbd5e1', lineHeight: 1.8 }}>
+            Explore our diverse and expansive portfolio of active large-scale infrastructure projects across all critical engineering sectors.
+          </p>
         </div>
       </section>
-      {/* Photo Gallery Section */}
+
+      {/* Category Grid Section */}
       <section style={{ padding: '0px 20px 80px', textAlign: 'center' }}>
         <div className='container' style={{ maxWidth: '1440px' }}>
-          <h2 style={{ 
-            fontSize: 'clamp(2rem, 4vw, 2.5rem)', 
-            fontFamily: 'var(--font-heading)', 
-            fontWeight: 800, 
-            color: 'var(--text-dark)', 
-            marginBottom: '30px'
-          }}>
-            Gallery of <span style={{ color: 'var(--primary-red)' }}>Ongoing Works</span>
-          </h2>
-          
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))',
-            gap: '24px',
+            gap: '30px',
             padding: '20px'
           }}>
-            {[
-              { src: '/images/Badulla Landslide/Background image.jpeg', title: 'Landslide Mitigation Project' },
-              { src: '/images/KRP/img-1.jpeg', title: 'Road Construction Project' },
-              { src: '/images/BBP/img-1.jpeg', title: 'Bridge Construction Project' },
-              { src: '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.28.jpeg', title: 'Irrigation & Water Supply' },
-              { src: '/images/puttalam/puttalam-1.jpg', title: 'Bridge Construction Project' },
-              { src: '/images/VBP/img-1.jpeg', title: 'Bridge Construction Project' },
-              { src: '/images/WBP/img-1.jpeg', title: 'Bridge Construction Project' },
-              { src: '/images/mayilvakanapuram/mayil-1.jpg', title: 'Road Construction Project' }
-            ].map((img, idx) => (
-              <div key={idx} style={{
-                position: 'relative',
-                borderRadius: '16px',
-                overflow: 'hidden',
-                aspectRatio: '4/3',
-                boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
-                border: '1px solid var(--border-soft)'
-              }}>
-                <img 
-                  src={img.src} 
-                  alt={img.title}
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                    transition: 'transform 0.5s ease'
-                  }}
-                  onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-                  onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                />
+            {categories.map((cat, idx) => (
+              <Link href={`/projects/ongoing/${cat.id}`} key={idx} style={{ textDecoration: 'none' }}>
                 <div style={{
-                  position: 'absolute',
-                  bottom: 0, left: 0, right: 0,
-                  background: 'linear-gradient(transparent, rgba(15,23,42,0.9))',
-                  padding: '30px 20px 15px',
-                  color: 'white',
-                  textAlign: 'left'
-                }}>
-                  <h4 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 600 }}>{img.title}</h4>
+                  position: 'relative',
+                  borderRadius: '24px',
+                  overflow: 'hidden',
+                  aspectRatio: '4/3',
+                  boxShadow: '0 15px 35px rgba(0,0,0,0.1)',
+                  border: '1px solid var(--border-soft)',
+                  cursor: 'pointer',
+                  background: 'var(--white)'
+                }}
+                className="hover-lift"
+                >
+                  <img 
+                    src={cat.img} 
+                    alt={cat.title}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      transition: 'transform 0.5s cubic-bezier(0.2, 1, 0.3, 1)'
+                    }}
+                    onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.08)'}
+                    onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                  />
+                  <div style={{
+                    position: 'absolute',
+                    bottom: 0, left: 0, right: 0,
+                    background: 'linear-gradient(to top, rgba(15,23,42,0.95) 0%, rgba(15,23,42,0.4) 100%)',
+                    padding: '40px 25px 20px',
+                    color: 'white',
+                    textAlign: 'left'
+                  }}>
+                    <h4 style={{ margin: 0, fontSize: '1.2rem', fontWeight: 600, letterSpacing: '0.5px' }}>{cat.title}</h4>
+                    <span style={{ fontSize: '0.9rem', color: 'var(--primary-red)', marginTop: '5px', display: 'inline-block', fontWeight: 600 }}>View Projects &rarr;</span>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
