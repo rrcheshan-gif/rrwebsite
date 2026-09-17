@@ -442,7 +442,7 @@ ul {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: clamp(96%, 98vw, 1500px); max-width: 1500px;
+  width: 96%; max-width: 1500px;
     max-width: 1500px;
   z-index: 1000;
   transition: var(--transition);
