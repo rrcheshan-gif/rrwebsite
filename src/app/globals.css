@@ -465,9 +465,9 @@ ul {
 }
 
 .navbar-wrapper.scrolled {
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(20px) saturate(160%);
-  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
   padding: 10px 0;
   top: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.5);
@@ -513,8 +513,9 @@ ul {
 }
 
 .navbar-wrapper.default-nav {
-  background-color: var(--surface-glass-solid, rgba(255,255,255,0.95));
-  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
   border: 1px solid var(--glass-border);
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
   padding: 10px 0;
