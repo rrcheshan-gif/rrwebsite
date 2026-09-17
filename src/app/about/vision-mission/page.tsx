@@ -214,7 +214,7 @@ export default function VisionMission() {
             </div>
           </Reveal>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "30px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap: "30px" }}>
             {[
               { title: "EXCELLENCE", subtitle: "Built to Perform", desc: "Delivering every project with technical expertise, precision and a consistent commitment to quality.", icon: <Award size={32} /> },
               { title: "INNOVATION", subtitle: "Engineered for Tomorrow", desc: "Applying modern engineering methods, technology and practical solutions to address complex infrastructure challenges.", icon: <Lightbulb size={32} /> },
@@ -226,27 +226,32 @@ export default function VisionMission() {
                 <Reveal key={idx} delay={idx * 150} direction="up">
                   <div style={{ 
                     background: "var(--white)", 
-                    padding: "40px", 
-                    borderRadius: "12px", 
-                    borderLeft: "5px solid var(--primary-red)", 
-                    boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
+                    padding: isMobile ? "30px 25px" : "40px 35px", 
+                    borderRadius: "16px", 
+                    borderTop: "5px solid var(--primary-red)", 
+                    borderBottom: "1px solid var(--border-soft)",
+                    borderLeft: "1px solid var(--border-soft)",
+                    borderRight: "1px solid var(--border-soft)",
+                    boxShadow: "0 10px 40px rgba(0,0,0,0.03)",
                     height: "100%",
-                    transition: "transform 0.3s ease",
+                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                    display: "flex",
+                    flexDirection: "column"
                   }}
                   className="hover-lift"
                   >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
-                      <div style={{ color: 'var(--primary-red)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
+                      <div style={{ background: 'rgba(229,57,53,0.1)', color: 'var(--primary-red)', width: '50px', height: '50px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         {val.icon}
                       </div>
-                      <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", margin: 0, color: "var(--text-dark)", fontWeight: 800 }}>
+                      <h3 style={{ color: 'var(--text-dark)', fontFamily: 'var(--font-heading)', fontWeight: 800, margin: 0, fontSize: '1.2rem' }}>
                         {val.title}
                       </h3>
                     </div>
-                    <h4 style={{ fontSize: "1.1rem", color: "var(--primary-red)", fontWeight: 700, margin: "0 0 15px" }}>
+                    <h4 style={{ color: 'var(--primary-red)', fontSize: '0.95rem', fontWeight: 700, marginBottom: '15px' }}>
                       {val.subtitle}
                     </h4>
-                    <p style={{ color: "var(--text-light)", lineHeight: 1.7, margin: 0 }}>
+                    <p style={{ color: "var(--text-light)", lineHeight: 1.7, margin: 0, fontSize: "1.05rem" }}>
                       {val.desc}
                     </p>
                   </div>
