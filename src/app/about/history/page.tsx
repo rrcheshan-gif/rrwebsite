@@ -90,7 +90,7 @@ export default function HistoryTimeline() {
   }, []);
 
   return (
-    <div style={{ backgroundColor: "#f8fafc", minHeight: "100vh", overflowX: "hidden" }}>
+    <div style={{ backgroundColor: "var(--bg-light)", minHeight: "100vh", overflowX: "hidden" }}>
       
       {/* Hero Section */}
               <section 
@@ -167,7 +167,7 @@ export default function HistoryTimeline() {
                     position: 'absolute', 
                     top: '30px', 
                     left: '30px', 
-                    background: 'rgba(255,255,255,0.95)', 
+                    background: 'var(--white)', 
                     backdropFilter: 'blur(10px)',
                     padding: '12px 24px', 
                     borderRadius: '12px', 
