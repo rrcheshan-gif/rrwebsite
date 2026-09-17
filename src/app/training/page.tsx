@@ -61,7 +61,7 @@ export default function Training() {
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ marginBottom: "50px", textAlign: "center" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", margin: "0 0 15px 0" }}>Special <span style={{ color: "var(--primary-red)" }}>Initiatives</span></h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.15rem", margin: 0 }}>Discover the extra steps we take to empower our team and stay ahead of industry curves.</p>
+            <p style={{ color: "var(--text-light)", fontSize: "1.15rem", margin: 0, textAlign: "center" }}>Discover the extra steps we take to empower our team and stay ahead of industry curves.</p>
           </div>
           
           <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
