@@ -1,22 +1,29 @@
 const fs = require('fs');
-const path = require('path');
+const file = 'src/app/globals.css';
+let content = fs.readFileSync(file, 'utf8');
 
-function walkDir(dir, callback) {
-    fs.readdirSync(dir).forEach(f => {
-        let dirPath = path.join(dir, f);
-        let isDirectory = fs.statSync(dirPath).isDirectory();
-        isDirectory ? walkDir(dirPath, callback) : callback(path.join(dir, f));
-    });
+const oldP = `p {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
+}`;
+
+const newP = `p {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.75;
+  letter-spacing: -0.015em;
+  word-spacing: -0.05em; /* Reduces large gaps between words in justified text */
+  overflow-wrap: break-word;
+}`;
+
+content = content.replace(oldP, newP);
+
+// If it's different, let's just use regex to replace the global p { ... } block
+if (content.indexOf(newP) === -1) {
+  content = content.replace(/p\s*\{\s*text-align:\s*justify;[\s\S]*?\}/, newP);
 }
 
-walkDir('./src', function(filePath) {
-    if (filePath.endsWith('.tsx') || filePath.endsWith('.css')) {
-        let content = fs.readFileSync(filePath, 'utf8');
-        let newContent = content.replace(/textAlign:\s*["']justify["'],?\s*/g, '');
-        newContent = newContent.replace(/text-align:\s*justify;?\s*/g, '');
-        if (content !== newContent) {
-            fs.writeFileSync(filePath, newContent, 'utf8');
-            console.log('Fixed ' + filePath);
-        }
-    }
-});
+fs.writeFileSync(file, content, 'utf8');
+console.log('Updated global p tag to reduce gaps while keeping justify');

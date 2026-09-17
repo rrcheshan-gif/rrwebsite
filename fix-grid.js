@@ -1,14 +1,17 @@
 const fs = require('fs');
-let content = fs.readFileSync('src/app/page.tsx', 'utf8');
+const file = 'src/app/projects/overseas/page.tsx';
+let content = fs.readFileSync(file, 'utf8');
 
-const oldGridPattern = /<div style=\{\{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gridTemplateRows: "180px 180px", gap: "15px" \}\}>[\s\S]*?<\/div>\s*<\/div>\s*<\/div>\s*\{\/\* Floating 30\+ Years Box/;
+const targetIndex = content.indexOf('{/* Projects Grid */}');
+content = content.substring(0, targetIndex) + `{/* Projects Grid */}
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 340px), 1fr))", gap: "30px", paddingBottom: "80px" }}>
+              {filteredProjects.map(renderProjectCard)}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }`;
 
-const newGridCode = '<div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridTemplateRows: "250px 250px", gap: "20px" }}>\n                    \n                    {/* Top Left - Wide */}\n                    <div style={{ gridColumn: "1 / 3", gridRow: "1 / 2", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}>\n                      <img src="/images/home/slider/polished/road.jpg" alt="Civil Engineering Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />\n                    </div>\n  \n                    {/* Top Right - Square */}\n                    <div style={{ gridColumn: "3 / 4", gridRow: "1 / 2", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}>\n                      <img src="/images/home/WhatsApp Image 2026-07-18 at 10.24.03.jpeg" alt="Heavy Construction Machinery Fleet in Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />\n                    </div>\n  \n                    {/* Bottom Left - Square */}\n                    <div style={{ gridColumn: "1 / 2", gridRow: "2 / 3", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}>\n                      <img src="/images/home/WhatsApp Image 2026-07-24 at 23.23.33.jpeg" alt="Heavy Civil Engineering and Earthworks Equipment Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />\n                    </div>\n  \n                    {/* Bottom Right - Wide */}\n                    <div style={{ gridColumn: "2 / 4", gridRow: "2 / 3", borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}>\n                      <img src="/images/kandy-landslide/kandy-5.jpg" alt="Landslide Mitigation and Geotechnical Engineering in Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />\n                    </div>\n                    \n                  </div>\n                </div>\n                \n                {/* Floating 30+ Years Box Attached to Pictures */';
-
-if (content.match(oldGridPattern)) {
-    content = content.replace(oldGridPattern, newGridCode);
-    fs.writeFileSync('src/app/page.tsx', content, 'utf8');
-    console.log('Successfully updated the image grid.');
-} else {
-    console.log('Could not find the grid pattern to replace.');
-}
+fs.writeFileSync(file, content, 'utf8');
+console.log('Fixed grids');

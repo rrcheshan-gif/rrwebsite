@@ -1,35 +1,38 @@
 const fs = require('fs');
+const file = 'src/data/news-data.ts';
 
-let content = fs.readFileSync('src/data/news-data.ts', 'utf8');
+const newContent = `export interface NewsItem {
+  id: number;
+  slug: string;
+  tag: string;
+  title: string;
+  desc: string;
+  date: string;
+  img: string;
+  featured?: boolean;
+  crop?: 'center' | 'top' | 'bottom';
+  content?: string;
+}
 
-// Find the Maggona block and replace it.
-const oldBlockRegex = /\{\s*id:\s*8,\s*slug:\s*'maggona-railway-bridge-contract-awarded',[\s\S]*?<\/p>\s*\s*\}/;
+export const NEWS_DATA: NewsItem[] = [
+  {
+    id: 1,
+    slug: 'gandara-fishery-harbour-90-percent-completed',
+    tag: 'Maritime',
+    title: 'Gandara Fishery Harbour Project 90% Completed',
+    desc: 'Major milestones achieved in dredging and breakwater construction at the major southern maritime project. This facility is expected to boost the local fishing industry significantly.',
+    date: 'June 15, 2026',
+    img: '/images/maritime-harbour-site.jpg',
+    featured: true,
+    content: \`
+      <h2>Transforming the Southern Coastline</h2>
+      <p>RR Construction is proud to announce that the Gandara Fishery Harbour project has reached 90% completion. This monumental maritime engineering endeavor is set to revolutionize the local fishing industry in the Southern Province.</p>
+      <p>Our dedicated maritime division has successfully completed the primary dredging operations and the critical breakwater construction, ensuring a safe and robust harbor basin for local vessels regardless of seasonal monsoons.</p>
+      <p>The final phase will focus on onshore facilities, paving, and final structural touches before the official handover.</p>
+    \`
+  }
+];
+`;
 
-const newBlock = \{
-    id: 8,
-    slug: 'pending-railway-project-contract',
-    tag: 'Infrastructure',
-    title: 'Pending Railway Project',
-    desc: 'RR Construction has been officially awarded the contract for the construction of a new railway bridge infrastructure project.',
-    date: 'July 21, 2026',
-    img: '/images/news/railway-edited.jpg',
-    featured: false,
-    content: \\\
-      <h2>New Contract Award: Pending Railway Project</h2>
-      <p><strong>RR Construction (Pvt) Ltd has officially received the Letter of Acceptance for the construction of a major double line railway bridge.</strong></p>
-
-      <p>On July 21, 2026, the contract was formally awarded to RR Construction for the construction of a new railway bridge.</p>
-
-      <h3>Project Scope and Investment</h3>
-      <p>The project marks another significant milestone in our ongoing efforts to modernize and enhance the national railway network.</p>
-
-      <h3>Commencement and Execution</h3>
-      <p>Following the official acceptance, our engineering and project management teams are mobilizing for immediate deployment. The official commencement date is set for 14 days from the issuance of the Letter of Acceptance, with all preliminary material approvals and reinforcement planning already underway in strict accordance with the contract specifications and engineer's requirements.</p>
-
-      <p>We are fully committed to delivering this project with the highest standards of safety, quality, and structural integrity that RR Construction is known for.</p>
-    \\\
-  }\;
-
-content = content.replace(oldBlockRegex, newBlock);
-fs.writeFileSync('src/data/news-data.ts', content, 'utf8');
-console.log("Updated news item.");
+fs.writeFileSync(file, newContent, 'utf8');
+console.log('Updated news-data.ts to only keep Gandara Fishery Harbour');

@@ -1,11 +1,11 @@
 const fs = require('fs');
-
-let content = fs.readFileSync('src/app/about/history/page.tsx', 'utf8');
+const file = 'src/app/layout.tsx';
+let content = fs.readFileSync(file, 'utf8');
 
 content = content.replace(
-  '<style dangerouslySetInnerHTML={{__html: \n            .no-scrollbar::-webkit-scrollbar {\n              display: none;\n            }\n          }} />',
-  '<style dangerouslySetInnerHTML={{__html: \.no-scrollbar::-webkit-scrollbar { display: none; }\}} />'
+  'className={`${outfit.variable} ${manrope.variable}`}',
+  'className={`${playfair.variable} ${roboto.variable}`}'
 );
 
-fs.writeFileSync('src/app/about/history/page.tsx', content, 'utf8');
-console.log('Fixed html style block');
+fs.writeFileSync(file, content, 'utf8');
+console.log('Fixed html tag');
