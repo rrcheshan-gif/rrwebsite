@@ -1269,6 +1269,10 @@ ul {
   flex-shrink: 0;
 }
 
+.footer-bottom-bar p {
+  text-align: center !important;
+}
+
 .footer-bottom-bar {
   text-align: center;
   color: #64748b;

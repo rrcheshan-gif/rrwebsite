@@ -58,8 +58,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="footer-bottom-bar">
-          <p>&copy; {new Date().getFullYear()} RR Construction (Pvt) Ltd. All Rights Reserved. Engineering the ground beneath tomorrow.</p>
+        <div className="footer-bottom-bar" style={{ textAlign: "center" }}>
+          <p style={{ textAlign: "center", width: "100%" }}>&copy; {new Date().getFullYear()} RR Construction (Pvt) Ltd. All Rights Reserved. Engineering the ground beneath tomorrow.</p>
         </div>
       </div>
     </footer>
