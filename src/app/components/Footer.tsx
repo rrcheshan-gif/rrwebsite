@@ -11,10 +11,7 @@ export default function Footer() {
               <div className="logo-box">
                 <img src="/images/logo.png" alt="RR Construction Logo" />
               </div>
-              <div className="footer-logo-text">
-                <span className="logo-title" style={{ fontFamily: "'Times New Roman', Times, serif" }}>Construction</span>
-                <span className="logo-sub" style={{ fontFamily: "'Times New Roman', Times, serif" }}>(Pvt) Ltd</span>
-              </div>
+              
             </div>
             <p className="footer-bio">
               <strong>Passion for Engineering Excellence.</strong>
