@@ -90,7 +90,8 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
               border: "1px solid var(--border-soft)",
               fontSize: "1.15rem",
               lineHeight: 1.8,
-              color: "var(--text-dark)"
+              color: "var(--text-dark)",
+              textAlign: "justify"
             }}
             className="article-content"
           >
