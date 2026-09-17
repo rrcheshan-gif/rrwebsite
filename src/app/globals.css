@@ -1785,11 +1785,12 @@ ul {
 
 /* Global override to perfectly align RR logo image and text height */
 .logo {
-  display: flex !important;
-  align-items: center !important;
-  gap: 10px !important;
-  margin-right: 20px !important; /* Ensure it never touches the Home link */
-}
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-right: 20px !important; 
+    margin-left: clamp(20px, 4vw, 60px) !important;
+  }
 
 .nav-logo-img, .footer-logo-img {
   height: 60px !important;
