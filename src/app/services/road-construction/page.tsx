@@ -47,7 +47,7 @@ export default function RoadConstructionPage() {
             margin: '0 0 24px',
             lineHeight: 1.2
           }}>
-            Road & Highway <span style={{ color: 'var(--primary-red)' }}>Construction in Sri Lanka</span>
+            Highway and Expressway <span style={{ color: 'var(--primary-red)' }}>Construction in Sri Lanka</span>
           </h1>
           
         </div>
