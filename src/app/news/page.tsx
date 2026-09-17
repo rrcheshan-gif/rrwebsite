@@ -122,7 +122,7 @@ export default function News() {
             <h2 style={{ color: "var(--text-dark)", fontWeight: 800, letterSpacing: "2px",  margin: 0, fontSize: "1.2rem", fontFamily: "var(--font-heading)" }}>More Updates</h2>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "30px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "30px" }}>
             {regularNews.map((news) => (
                 <div 
                   key={news.id}

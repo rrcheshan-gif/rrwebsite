@@ -100,7 +100,7 @@ export default function Awards() {
               </p>
             </div>
             
-                          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "40px" }}>
+                          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "40px" }}>
                 {certifications.map((cert, idx) => (
                   <div key={idx} style={{ background: "var(--white)", border: "1px solid var(--border-soft)", padding: "50px 30px", borderRadius: "24px", textAlign: "center", transition: "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)", position: "relative", overflow: "hidden", boxShadow: "0 15px 40px rgba(0,0,0,0.04)" }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-10px)'; e.currentTarget.style.boxShadow = '0 25px 50px rgba(229, 57, 53, 0.1)'; }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 15px 40px rgba(0,0,0,0.04)'; }}>
                     <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "6px", background: "linear-gradient(90deg, var(--primary-red), #ff7b7b)" }}></div>

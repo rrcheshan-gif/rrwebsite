@@ -68,7 +68,7 @@ export default function OngoingProjects() {
           
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))',
             gap: '24px',
             padding: '20px'
           }}>

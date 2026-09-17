@@ -88,7 +88,7 @@ export default function YakawewaPlant() {
       {/* Contact Section */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <div style={{ background: "var(--white)", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", overflow: "hidden", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
+          <div style={{ background: "var(--white)", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", overflow: "hidden", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))" }}>
             <div style={{ padding: "40px" }}>
               <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2rem", color: "var(--text-dark)", marginBottom: "20px" }}>Contact YAKAWEWA ASPHALT PLANT</h2>
               <p style={{ color: "var(--text-light)", marginBottom: "30px" }}>For bulk orders, M-Sand inquiries, and ready-mix concrete supplies.</p>

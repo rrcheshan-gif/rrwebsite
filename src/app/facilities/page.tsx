@@ -220,7 +220,7 @@ export default function QuarriesAggregates() {
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "30px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "30px" }}>
             {/* 3/4" Metal */}
             <div style={{ background: "var(--white)", padding: "30px", borderRadius: "8px", boxShadow: "0 4px 15px rgba(0,0,0,0.03)", borderTop: "4px solid var(--primary-red)" }}>
               <h4 style={{ color: "var(--text-dark)", fontSize: "1.3rem", marginBottom: "12px", fontFamily: "var(--font-heading)" }}>3/4" (20mm) Aggregate</h4>

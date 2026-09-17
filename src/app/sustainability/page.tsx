@@ -96,7 +96,7 @@ export default function SustainabilityHub() {
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "30px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "30px" }}>
             {pillars.map((pillar) => (
               <Link href={pillar.link} key={pillar.id} style={{ textDecoration: "none" }} className="hover-lift">
                 <div style={{ 

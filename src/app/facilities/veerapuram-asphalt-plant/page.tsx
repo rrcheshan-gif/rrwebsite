@@ -130,7 +130,7 @@ export default function VeerapuramPlant() {
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "20px" }}>
             {galleryImages.map((img, idx) => (
               <div key={idx} className="img-polish glass-panel" style={{ borderRadius: "12px", overflow: "hidden", aspectRatio: "4/3", cursor: "pointer" }} onClick={() => setLightboxImg(`images/${img}`)}>
                 <img className="img-polished img-hover-zoom" src={`/images/${img}`} alt={`Veerapuram Facility ${idx + 1}`} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
@@ -147,7 +147,7 @@ export default function VeerapuramPlant() {
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Why Switch to Our M-Sand?</h2>
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "30px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "30px" }}>
             <div style={{ background: "var(--bg-light)", padding: "30px", borderRadius: "8px" }}>
               <h3 style={{ color: "var(--text-dark)", borderBottom: "2px solid #cbd5e1", paddingBottom: "10px", marginBottom: "20px" }}>Core Benefits</h3>
               <ul style={{ listStyle: "none", padding: 0 }}>
@@ -288,7 +288,7 @@ export default function VeerapuramPlant() {
       {/* Contact Section */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <div style={{ background: "var(--white)", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", overflow: "hidden", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
+          <div style={{ background: "var(--white)", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", overflow: "hidden", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))" }}>
             <div style={{ padding: "40px" }}>
               <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2rem", color: "var(--text-dark)", marginBottom: "20px" }}>Contact VEERAPURAM PLANT</h2>
               <p style={{ color: "var(--text-light)", marginBottom: "30px" }}>For bulk orders, M-Sand inquiries, and ready-mix concrete supplies.</p>

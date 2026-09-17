@@ -132,7 +132,7 @@ export default function OmanthaiPlant() {
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "20px" }}>
             {galleryImages.map((img, idx) => (
               <div key={idx} className="img-polish glass-panel" style={{ borderRadius: "12px", overflow: "hidden", aspectRatio: "4/3", cursor: "pointer" }} onClick={() => setLightboxImg(`images/${img}`)}>
                 <img className="img-polished img-hover-zoom" src={`/images/${img}`} alt={`Omanthai Facility ${idx + 1}`} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
@@ -168,7 +168,7 @@ export default function OmanthaiPlant() {
       {/* Contact Section */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <div style={{ background: "var(--white)", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", overflow: "hidden", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
+          <div style={{ background: "var(--white)", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", overflow: "hidden", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))" }}>
             <div style={{ padding: "40px" }}>
               <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2rem", color: "var(--text-dark)", marginBottom: "20px" }}>Contact OMANTHAI PLANT</h2>
               <p style={{ color: "var(--text-light)", marginBottom: "30px" }}>For bulk orders, M-Sand inquiries, and ready-mix concrete supplies.</p>
