@@ -13,15 +13,6 @@ export default function Training() {
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Training & <span style={{ color: "var(--primary-red)" }}>Development</span></h1>
-          <div style={{ background: "var(--white)", padding: "40px", borderRadius: "12px", borderLeft: "5px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
-            <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", marginBottom: "15px", color: "var(--text-dark)" }}>
-              AI & Future Tech Integration
-              <span style={{ marginLeft: "15px", fontSize: "0.75rem", background: "var(--primary-red)", color: "white", padding: "4px 10px", borderRadius: "20px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", verticalAlign: "middle" }}>Upcoming</span>
-            </h3>
-            <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>
-              Embracing the future of engineering, we are launching a comprehensive <strong>Coursera AI Certification</strong> for our staff. This upcoming program will equip our team with cutting-edge knowledge in Artificial Intelligence, data-driven project management, and automated construction workflows to significantly enhance our operational efficiency and innovation capacity.
-            </p>
-          </div>
         </div>
       </section>
 
@@ -50,6 +41,38 @@ export default function Training() {
           <div style={{ background: "var(--white)", padding: "40px", borderRadius: "12px", borderLeft: "5px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
             <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", marginBottom: "15px", color: "var(--text-dark)" }}>Leadership Development</h3>
             <p style={{ color: "var(--text-light)", lineHeight: 1.7 }}>We identify high-potential individuals within our ranks and provide them with project management training, financial literacy workshops, and leadership seminars to groom the next generation of RR Construction leaders.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Special Initiatives Section */}
+      <section style={{ padding: "0 20px 80px" }}>
+        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto" }}>
+          <div style={{ marginBottom: "40px", textAlign: "center" }}>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.2rem", color: "var(--text-dark)", margin: "0 0 15px 0" }}>Special <span style={{ color: "var(--primary-red)" }}>Initiatives</span></h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", margin: 0 }}>Discover the extra steps we take to empower our team and stay ahead of industry curves.</p>
+          </div>
+          
+          <div style={{ display: "flex", flexDirection: "column", gap: "25px" }}>
+            
+            {/* Initiative Item 1 */}
+            <div className="hover-lift" style={{ background: "var(--white)", padding: "35px", borderRadius: "20px", borderLeft: "6px solid var(--primary-red)", boxShadow: "0 10px 40px rgba(0,0,0,0.04)", display: "flex", gap: "25px", alignItems: "flex-start", transition: "transform 0.3s ease" }}>
+              <div style={{ width: "60px", height: "60px", borderRadius: "16px", background: "rgba(229,57,53,0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, color: "var(--primary-red)" }}>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              </div>
+              <div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", marginBottom: "12px" }}>
+                  <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", color: "var(--text-dark)", margin: 0 }}>Coursera AI Certification for Staff</h3>
+                  <span style={{ fontSize: "0.75rem", background: "var(--primary-red)", color: "white", padding: "4px 10px", borderRadius: "20px", textTransform: "uppercase", letterSpacing: "1px", fontWeight: "bold" }}>Upcoming Program</span>
+                </div>
+                <p style={{ color: "var(--text-light)", lineHeight: 1.7, margin: 0, fontSize: "1.05rem" }}>
+                  As part of our commitment to continuous development, we are launching a special initiative to provide our staff with a comprehensive AI certification program through <strong>Coursera</strong>. This proactive step ensures our team is equipped with the latest knowledge in Artificial Intelligence, preparing them to integrate advanced technologies and automated workflows into our future engineering projects.
+                </p>
+              </div>
+            </div>
+
+            {/* Space for future items */}
+
           </div>
         </div>
       </section>
