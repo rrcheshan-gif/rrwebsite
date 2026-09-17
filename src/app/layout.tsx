@@ -1,17 +1,17 @@
 ﻿import type { Metadata, Viewport } from "next";
-import { Outfit, Manrope } from "next/font/google";
+import { Playfair_Display, Roboto } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
+const playfair = Playfair_Display({
   variable: "--font-heading",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const manrope = Manrope({
+const roboto = Roboto({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -109,7 +109,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${manrope.variable}`}
+      className={`${playfair.variable} ${roboto.variable}`}
       suppressHydrationWarning
     >
       <head>
@@ -132,7 +132,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body suppressHydrationWarning>
+      <body className={`${playfair.variable} ${roboto.variable} antialiased`} suppressHydrationWarning>
         <ThemeProvider>
           <PageTransition />
           <Navbar />
