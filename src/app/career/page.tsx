@@ -50,9 +50,14 @@ export default function Career() {
       {/* Careers Content */}
       <section style={{ padding: "60px 20px 60px", background: "var(--bg-light)" }}>
         <div className="container">
-          <div style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto 50px" }}>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 5vw, 2.5rem)", color: "var(--primary-red)", marginBottom: "20px" }}>Build Your Future With Us</h2>
-            
+          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "800px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>CAREERS</h4>
+            </div>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", marginBottom: "20px", fontWeight: 800, lineHeight: 1.1 }}>
+              Build Your Future With <span className="text-gradient" style={{ fontWeight: 300 }}>Us</span>
+            </h2>
           </div>
 
           <div className="career-grid">
