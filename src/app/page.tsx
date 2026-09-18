@@ -389,11 +389,16 @@ export default function Home() {
       {/* CORE EXPERTISE */}
       <section style={{ padding: "60px 20px", background: "var(--bg-light)", position: "relative" }}>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <div style={{ textAlign: "center", marginBottom: "60px" }}>
-            <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px" }}>Sectors of Operation</h4>
-            <h2 className="text-gradient" style={{ fontSize: "clamp(2rem, 6vw, 3rem)", fontFamily: "var(--font-heading)" }}>Our Core Expertise</h2>
-            <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
-          </div>
+          <div style={{ marginBottom: "50px", maxWidth: "800px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
+                <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Sectors of Operation</h4>
+              </div>
+              <h2 style={{ fontSize: "clamp(2.2rem, 6vw, 3.2rem)", lineHeight: 1.1, marginBottom: "20px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>Our Core <span className="text-gradient" style={{ fontWeight: 300 }}>Expertise</span></h2>
+              <p style={{ fontSize: "1.1rem", color: "var(--text-light)", marginBottom: "30px", lineHeight: 1.8 }}>
+                Discover our comprehensive range of heavy civil engineering services, delivering structural excellence across national highways, bridges, maritime infrastructure, and mass earthworks.
+              </p>
+            </div>
           
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "25px" }}>
             {[
