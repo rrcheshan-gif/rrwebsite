@@ -83,11 +83,14 @@ export default function PageTransition() {
         width: "100%",
         margin: "0 auto"
       }}>
-        <img 
-          src="/images/logo.png" 
-          alt="RR Construction" 
-          style={{ width: "clamp(160px, 45vw, 240px)", height: "auto", display: "block", margin: "0 auto" }} 
-        />
+        <div style={{ 
+          width: "clamp(160px, 45vw, 240px)", 
+          height: "clamp(80px, 22vw, 110px)",
+          backgroundColor: "var(--primary-red)",
+          WebkitMask: "url(/images/logo.png) center/contain no-repeat",
+          mask: "url(/images/logo.png) center/contain no-repeat",
+          margin: "0 auto"
+        }} />
         <h3 style={{ 
           color: "var(--primary-red)", 
           fontFamily: "var(--font-heading)", 
