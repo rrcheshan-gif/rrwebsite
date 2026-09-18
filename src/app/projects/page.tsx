@@ -201,20 +201,26 @@ export default function Projects() {
         {/* Projects Grid */}
           {filter === 'all' && milestoneProjects.length > 0 && (
             <>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '30px', marginTop: '20px' }}>
-                <div style={{ width: '4px', height: '35px', background: 'var(--primary-red)', borderRadius: '4px' }}></div>
-                <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.5rem, 5vw, 2rem)", color: "var(--text-dark)", margin: 0, textAlign: "left" }}>
-                  Milestone Projects
+              <div style={{ textAlign: "left", marginBottom: "30px", marginTop: "20px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                  <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+                  <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>HIGHLIGHTS</h4>
+                </div>
+                <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 5vw, 2.4rem)", color: "var(--text-dark)", margin: 0, textAlign: "left", fontWeight: 800 }}>
+                  Milestone <span className="text-gradient" style={{ fontWeight: 300 }}>Projects</span>
                 </h2>
               </div>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 340px), 1fr))", gap: "30px", paddingBottom: "50px", borderBottom: "1px solid var(--border-soft)", marginBottom: "50px" }}>
                 {milestoneProjects.map(renderProjectCard)}
               </div>
               
-              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '30px' }}>
-                <div style={{ width: '4px', height: '35px', background: 'var(--text-dark)', borderRadius: '4px' }}></div>
-                <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.4rem, 4vw, 1.8rem)", color: "var(--text-dark)", margin: 0, textAlign: "left" }}>
-                  All Completed Projects
+              <div style={{ textAlign: "left", marginBottom: "30px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                  <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+                  <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>PORTFOLIO</h4>
+                </div>
+                <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 5vw, 2.4rem)", color: "var(--text-dark)", margin: 0, textAlign: "left", fontWeight: 800 }}>
+                  All Completed <span className="text-gradient" style={{ fontWeight: 300 }}>Projects</span>
                 </h2>
               </div>
             </>
