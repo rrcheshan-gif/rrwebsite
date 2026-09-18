@@ -89,7 +89,18 @@ export default function HistoryTimeline() {
     return () => window.removeEventListener('resize', check);
   }, []);
 
+  const formatTitle = (title: string) => {
+    const words = title.split(' ');
+    const mid = Math.ceil(words.length / 2);
+    const firstPart = words.slice(0, mid).join(' ');
+    const secondPart = words.slice(mid).join(' ');
+    return (
+      <>{firstPart} <span className="text-gradient" style={{ fontWeight: 600 }}>{secondPart}</span></>
+    );
+  };
+
   return (
+
     <div style={{ backgroundColor: "var(--bg-light)", minHeight: "100vh", overflowX: "hidden" }}>
       
       {/* Hero Section */}
