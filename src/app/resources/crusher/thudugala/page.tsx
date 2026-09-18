@@ -1,4 +1,5 @@
 ﻿"use client";
+import QuoteForm from "@/app/components/QuoteForm";
 
 import Link from "next/link";
 import { useEffect } from "react";
@@ -112,6 +113,8 @@ export default function ThudugalaPlant() {
           </div>
         </div>
       </section>
+    
+      <QuoteForm />
     </div>
   );
 }

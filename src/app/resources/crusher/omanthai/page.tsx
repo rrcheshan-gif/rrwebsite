@@ -1,4 +1,5 @@
 ﻿"use client";
+import QuoteForm from "@/app/components/QuoteForm";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -196,6 +197,8 @@ export default function OmanthaiPlant() {
           </div>
         </div>
       </section>
+    
+      <QuoteForm />
     </div>
   );
 }

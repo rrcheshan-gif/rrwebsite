@@ -1,5 +1,7 @@
 "use client";
 
+import QuoteForm from "@/app/components/QuoteForm";
+
 import Link from "next/link";
 import { CheckCircle } from "lucide-react";
 
@@ -127,6 +129,8 @@ export default function YakawewaPlant() {
         </div>
       </section>
 
+    
+      <QuoteForm />
     </div>
   );
 }

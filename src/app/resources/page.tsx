@@ -1,4 +1,5 @@
 ﻿"use client";
+import QuoteForm from "@/app/components/QuoteForm";
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -299,89 +300,8 @@ export default function QuarriesAggregates() {
         </div>
       </section>
 
-      {/* B2B Order & Inquiry Form Section */}
-      <section id="inquiry" style={{ padding: "60px 20px 50px", background: "var(--bg-base)" }}>
-        <div className="container" style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <div style={{ background: "var(--white)", color: "var(--text-dark)", padding: "50px", borderRadius: "12px", borderTop: "6px solid var(--primary-red)", boxShadow: "0 15px 40px rgba(0,0,0,0.05)" }}>
-            <div style={{ textAlign: "center", marginBottom: "40px" }}>
-              <h3 style={{ color: "var(--primary-red)", fontFamily: "var(--font-heading)", fontSize: "2.2rem", marginBottom: "10px" }}>Request a Quote or Consultation</h3>
-              <p style={{ color: "var(--text-light)", fontSize: "1.05rem" }}>Let us know your project requirements, and our aggregate logistics manager will get back to you with custom pricing and delivery timelines.</p>
-            </div>
-
-            <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px" }}>
-                <div>
-                  <label htmlFor="c-name" style={{ display: "block", marginBottom: "5px", color: "var(--text-dark)", fontSize: "0.9rem", fontWeight: "bold" }}>Your Name</label>
-                  <input type="text" id="c-name" name="name" style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", background: "var(--input-bg)", color: "var(--text-dark)", borderRadius: "8px" }} required />
-                </div>
-                <div>
-                  <label htmlFor="c-company" style={{ display: "block", marginBottom: "5px", color: "var(--text-dark)", fontSize: "0.9rem", fontWeight: "bold" }}>Company / Contractor Name</label>
-                  <input type="text" id="c-company" name="company" style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", background: "var(--input-bg)", color: "var(--text-dark)", borderRadius: "8px" }} />
-                </div>
-              </div>
-
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px" }}>
-                <div>
-                  <label htmlFor="c-email" style={{ display: "block", marginBottom: "5px", color: "var(--text-dark)", fontSize: "0.9rem", fontWeight: "bold" }}>Email Address</label>
-                  <input type="email" id="c-email" name="email" style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", background: "var(--input-bg)", color: "var(--text-dark)", borderRadius: "8px" }} required />
-                </div>
-                <div>
-                  <label htmlFor="c-phone" style={{ display: "block", marginBottom: "5px", color: "var(--text-dark)", fontSize: "0.9rem", fontWeight: "bold" }}>Phone / Mobile Number</label>
-                  <input type="tel" id="c-phone" name="phone" style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", background: "var(--input-bg)", color: "var(--text-dark)", borderRadius: "8px" }} required />
-                </div>
-              </div>
-
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px" }}>
-                <div>
-                  <label htmlFor="c-plant" style={{ display: "block", marginBottom: "5px", color: "var(--text-dark)", fontSize: "0.9rem", fontWeight: "bold" }}>Select Nearest Plant Location</label>
-                  <select id="c-plant" name="plant" style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", background: "var(--input-bg)", color: "var(--text-dark)", borderRadius: "8px" }}>
-                    <option value="thudugala">Thudugala Plant (Western Province)</option>
-                    <option value="medawachchiya">Veerapuram M Sand Plant and Crusher Plant (North Central Province)</option>
-                    <option value="omanthai">Omanthai Plant (Northern Province)</option>
-                    <option value="yakawewa">Yakawewa Asphalt Plant (North Central Province)</option>
-                  </select>
-                </div>
-                <div>
-                  <label htmlFor="c-product" style={{ display: "block", marginBottom: "5px", color: "var(--text-dark)", fontSize: "0.9rem", fontWeight: "bold" }}>Material Required</label>
-                  <select id="c-product" name="product" style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", background: "var(--input-bg)", color: "var(--text-dark)", borderRadius: "8px" }}>
-                    <option value="3/4">3/4" (20mm) Structural Metal</option>
-                    <option value="1/2">1/2" (12mm) Metal</option>
-                    <option value="1">1" (25mm) Metal</option>
-                    <option value="abc">Aggregate Base Course (ABC)</option>
-                    <option value="msand">Manufactured Sand (M-Sand)</option>
-                    <option value="dust">Quarry Dust</option>
-                    <option value="rubble">Rubbles & Boulders</option>
-                    <option value="other">Other / Custom Gradation</option>
-                  </select>
-                </div>
-              </div>
-
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px" }}>
-                <div>
-                  <label htmlFor="c-qty" style={{ display: "block", marginBottom: "5px", color: "var(--text-dark)", fontSize: "0.9rem", fontWeight: "bold" }}>Required Quantity</label>
-                  <input type="text" id="c-qty" name="qty" placeholder="e.g. 50 Cubes / 100 Tons" style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", background: "var(--input-bg)", color: "var(--text-dark)", borderRadius: "8px" }} required />
-                </div>
-                <div>
-                  <label htmlFor="c-location" style={{ display: "block", marginBottom: "5px", color: "var(--text-dark)", fontSize: "0.9rem", fontWeight: "bold" }}>Delivery Site Location</label>
-                  <input type="text" id="c-location" name="location" placeholder="e.g. Malabe, Anuradhapura, etc." style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", background: "var(--input-bg)", color: "var(--text-dark)", borderRadius: "8px" }} required />
-                </div>
-              </div>
-
-              <div>
-                <label htmlFor="c-message" style={{ display: "block", marginBottom: "5px", color: "var(--text-dark)", fontSize: "0.9rem", fontWeight: "bold" }}>Additional Instructions / Specifications</label>
-                <textarea id="c-message" name="message" rows={4} placeholder="Mention any grading specifications, delivery schedule, or multiple aggregate types..." style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", background: "var(--input-bg)", color: "var(--text-dark)", borderRadius: "8px", fontFamily: "inherit", resize: "vertical" }}></textarea>
-              </div>
-
-              <div style={{ textAlign: "center", marginTop: "10px" }}>
-                <button type="submit" className="btn btn-primary" disabled={isSubmitting}>{isSubmitting ? "Sending..." : "Submit Order Request"}</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
+      
+      <QuoteForm />
     </div>
   );
 }
-
-
-
