@@ -10,7 +10,7 @@ export default function OngoingCategoryPage({ params }: { params: { category: st
   
   // Define category titles
   const categoryTitles: Record<string, string> = {
-    'roads': 'Road Construction',
+    'roads': 'Highway and Expressway Construction',
     'bridges': 'Bridge Construction',
     'irrigation': 'Irrigation & Water Supply',
     'disaster': 'Landslide Mitigation',

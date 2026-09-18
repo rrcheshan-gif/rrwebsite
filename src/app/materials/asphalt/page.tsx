@@ -60,7 +60,7 @@ export default function AsphaltPage() {
             lineHeight: 1.2,
             marginBottom: '20px'
           }}>
-            Asphalt Production & <span style={{ color: 'var(--primary-red)' }}>Road Construction</span> in Sri Lanka
+            Asphalt Production & <span style={{ color: 'var(--primary-red)' }}>Highway and Expressway Construction</span> in Sri Lanka
           </h1>
           
         </div>
@@ -73,7 +73,7 @@ export default function AsphaltPage() {
             Asphalt Plant Operations
           </h2>
           <p style={{ color: 'var(--text-light)', fontSize: '1.1rem', maxWidth: '800px', margin: '0 auto 40px' }}>
-            RR Construction operates strategically located asphalt plants to support our extensive road construction projects across Sri Lanka. Our facilities are equipped with modern technology to ensure the continuous production of high-quality hot mix asphalt.
+            RR Construction operates strategically located asphalt plants to support our extensive highway and expressway construction projects across Sri Lanka. Our facilities are equipped with modern technology to ensure the continuous production of high-quality hot mix asphalt.
           </p>
           <div style={{
             display: 'grid',
@@ -196,8 +196,8 @@ export default function AsphaltPage() {
               <p style={{ color: 'var(--text-light)', marginBottom: '20px' }}>
                 The asphalt produced at our plants is primarily utilized in our own extensive portfolio of infrastructure developments, including national highway expansions like the Central Expressway and rural connectivity improvements under the iRoad program.
               </p>
-              <Link href="/services/road-construction" style={{ display: 'inline-flex', alignItems: 'center', color: 'var(--primary-red)', textDecoration: 'none', fontWeight: 600 }}>
-                View our Road Construction Services <ArrowRight size={18} style={{ marginLeft: '8px' }} />
+              <Link href="/services/highway-and-expressway-construction" style={{ display: 'inline-flex', alignItems: 'center', color: 'var(--primary-red)', textDecoration: 'none', fontWeight: 600 }}>
+                View our Highway and Expressway Construction Services <ArrowRight size={18} style={{ marginLeft: '8px' }} />
               </Link>
             </div>
             
@@ -222,7 +222,7 @@ export default function AsphaltPage() {
           Build With RR Construction
         </h2>
         <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link href="/services/road-construction" className="btn btn-primary" style={{ textDecoration: 'none' }}>
+          <Link href="/services/highway-and-expressway-construction" className="btn btn-primary" style={{ textDecoration: 'none' }}>
             Our Road Projects
           </Link>
           <Link href="/contact" className="btn btn-outline" style={{ textDecoration: 'none' }}>

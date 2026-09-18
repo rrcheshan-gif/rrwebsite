@@ -53,7 +53,7 @@ export default function RoadConstructionPage() {
         </div>
       </section>
 
-      {/* 2. Road Construction Capabilities */}
+      {/* 2. Highway and Expressway Construction Capabilities */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>
         <div style={containerStyle}>
           <div style={{ textAlign: 'center', marginBottom: '40px' }}>
@@ -63,7 +63,7 @@ export default function RoadConstructionPage() {
               color: 'var(--text-dark)',
               marginBottom: '20px'
             }}>
-              Comprehensive Road Construction Capabilities
+              Comprehensive Highway and Expressway Construction Capabilities
             </h2>
             <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6, textAlign: 'center' }}>
               Our dedicated highway division operates with a massive workforce of over {COMPANY_DATA.workforce} professionals and a self-owned fleet of {COMPANY_DATA.machineryFleet} machinery units, ensuring we can tackle national-scale projects efficiently.
@@ -77,7 +77,7 @@ export default function RoadConstructionPage() {
           }}>
             {[
               { title: 'New Highway Construction', desc: 'Full-scale development of multi-lane highways and expressways with advanced engineering.' },
-              { title: 'Rural Road Rehabilitation', desc: 'Improving connectivity through the upgrading and widening of rural road networks.' },
+              { title: 'rural highway and expressway Rehabilitation', desc: 'Improving connectivity through the upgrading and widening of rural highway and expressway networks.' },
               { title: 'Asphalt Surfacing', desc: 'High-quality asphalt concrete paving for roads, highways, and specialized projects.' }
             ].map((capability, index) => (
               <div key={index} style={{
@@ -96,7 +96,7 @@ export default function RoadConstructionPage() {
         </div>
       </section>
 
-      {/* 3. Highway Construction & 4. Road Rehabilitation */}
+      {/* 3. Highway Construction & 4. highway and expressway rehabilitation */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--bg-light)' }}>
         <div style={containerStyle}>
           <div style={{ 
@@ -114,10 +114,10 @@ export default function RoadConstructionPage() {
               </p>
               
               <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.75rem' : '2.25rem', color: 'var(--text-dark)', margin: '40px 0 20px' }}>
-                National Road Rehabilitation
+                National highway and expressway rehabilitation
               </h2>
               <p style={{ color: 'var(--text-light)', lineHeight: 1.7 }}>
-                RR Construction is extensively involved in the iRoad Programme initiated by the Road Development Authority (RDA). We have successfully rehabilitated hundreds of kilometers of rural roads, improving transport efficiency and connectivity in districts across Sri Lanka.
+                RR Construction is extensively involved in the iRoad Programme initiated by the Road Development Authority (RDA). We have successfully rehabilitated hundreds of kilometers of rural highway and expressways, improving transport efficiency and connectivity in districts across Sri Lanka.
               </p>
             </div>
             
@@ -212,7 +212,7 @@ export default function RoadConstructionPage() {
                 Equipment & Resources
               </h2>
               <p style={{ color: 'var(--text-light)', lineHeight: 1.7, marginBottom: '20px' }}>
-                A successful road construction project depends on reliable machinery. RR Construction owns and maintains a vast fleet of over {COMPANY_DATA.machineryFleet} units, including excavators, motor graders, rollers, asphalt pavers, and dump trucks. This extensive self-owned resource base ensures zero downtime waiting for equipment rentals and keeps projects strictly on schedule.
+                A successful highway and expressway construction project depends on reliable machinery. RR Construction owns and maintains a vast fleet of over {COMPANY_DATA.machineryFleet} units, including excavators, motor graders, rollers, asphalt pavers, and dump trucks. This extensive self-owned resource base ensures zero downtime waiting for equipment rentals and keeps projects strictly on schedule.
               </p>
             </div>
             
@@ -260,7 +260,7 @@ export default function RoadConstructionPage() {
             {[
 
               {
-                q: "Who are your primary clients for road construction?",
+                q: "Who are your primary clients for highway and expressway construction?",
                 a: "We work extensively with government bodies, primarily the Road Development Authority (RDA) of Sri Lanka, executing large-scale projects like the iRoad Programme and Expressway developments."
               },
               {
@@ -268,7 +268,7 @@ export default function RoadConstructionPage() {
                 a: "Yes, we have our own asphalt manufacturing plants. This vertical integration allows us to ensure the highest quality of asphalt concrete for our paving projects."
               },
               {
-                q: "Where do you provide road construction services?",
+                q: "Where do you provide highway and expressway construction services?",
                 a: "We mobilize our resources and workforce across all provinces in Sri Lanka, having successfully completed projects in districts such as Kalutara, Mannar, Kilinochchi, and Kurunegala."
               }
             ].map((faq, i) => (

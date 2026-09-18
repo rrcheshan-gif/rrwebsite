@@ -16,8 +16,8 @@ const nextConfig: NextConfig = {
       { source: '/awards',                        destination: '/about/awards',           permanent: true },
       { source: '/about',                         destination: '/about/company-overview', permanent: false },
       // Old Service slug URLs → New keyword-targeted URLs
-      { source: '/services/highway-road-construction',    destination: '/services/road-construction',    permanent: true },
-      { source: '/services/road-highway-construction',    destination: '/services/road-construction',    permanent: true },
+      { source: '/services/highway-road-construction',    destination: '/services/highway-and-expressway-construction',    permanent: true },
+      { source: '/services/road-highway-construction',    destination: '/services/highway-and-expressway-construction',    permanent: true },
       { source: '/services/maritime-harbour-engineering', destination: '/services/maritime-construction', permanent: true },
       { source: '/services/maritime-construction-sl',     destination: '/services/maritime-construction', permanent: true },
       { source: '/services/irrigation-water-supply',      destination: '/services/water-infrastructure', permanent: true },

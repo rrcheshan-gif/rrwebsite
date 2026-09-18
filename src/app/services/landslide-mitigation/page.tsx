@@ -113,10 +113,10 @@ export default function LandslideMitigationPage() {
           }}>
             <div>
               <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.75rem' : '2.25rem', color: 'var(--text-dark)', marginBottom: '20px' }}>
-                Road Disaster Countermeasures
+                Highway and Expressway Disaster Countermeasures
               </h2>
               <p style={{ color: 'var(--text-light)', lineHeight: 1.7, marginBottom: '20px' }}>
-                A significant portion of our geotechnical work involves emergency slope repair and preventative landslide mitigation on national roads. We have extensive experience executing road disaster countermeasures, ensuring that critical transport links remain open and safe. Our expertise in this sector is backed by works carried out under Japanese JICA technical assistance programs, bringing international best practices to local landslide mitigation efforts.
+                A significant portion of our geotechnical work involves emergency slope repair and preventative landslide mitigation on national highways and expressways. We have extensive experience executing road disaster countermeasures, ensuring that critical transport links remain open and safe. Our expertise in this sector is backed by works carried out under Japanese JICA technical assistance programs, bringing international best practices to local landslide mitigation efforts.
               </p>
               
               <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.75rem' : '2.25rem', color: 'var(--text-dark)', margin: '40px 0 20px' }}>

@@ -150,7 +150,7 @@ export default function AggregatesPage() {
               <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '30px', color: 'var(--text-dark)' }}>Key Applications</h2>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '20px' }}>
                 {[
-                  { title: 'Road Construction', desc: 'Sub-base, base course, and aggregate base course (ABC) materials.' },
+                  { title: 'Highway and Expressway Construction', desc: 'Sub-base, base course, and aggregate base course (ABC) materials.' },
                   { title: 'Concrete Production', desc: 'Coarse aggregates for structural concrete mixes.' },
                   { title: 'Drainage & Earthworks', desc: 'Permeable layers, rip-rap, and structural fill materials.' }
                 ].map((app, idx) => (

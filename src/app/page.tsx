@@ -24,11 +24,11 @@ export default function Home() {
       img: '/images/home/slider/polished/road-enhanced.jpg',
       fallback: '/images/hero-road-roller.jpg',
       duration: 8000,
-      tag: '01 / ROAD CONSTRUCTION & REHABILITATION',
+      tag: '01 / HIGHWAY & EXPRESSWAY CONSTRUCTION & REHABILITATION',
       heading1: 'Built on Every',
       heading2: 'Road We Pave',
       heading3: '',
-      desc: "From national highways to rural roads, RR Construction delivers precision road construction, rehabilitation, and asphalt paving across Sri Lanka - engineered for durability, safety, and long-term performance."
+      desc: "From national highways to rural highway and expressways, RR Construction delivers precision highway and expressway construction, rehabilitation, and asphalt paving across Sri Lanka - engineered for durability, safety, and long-term performance."
     },
     {
       img: '/images/home/slider-maritime-fihladhoo.jpg',
@@ -313,7 +313,7 @@ export default function Home() {
                     
                     {/* Top Left */}
                     <div style={{ borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}>
-                      <img src="/images/home/IMG_3025.jpg" alt="Major Highway and Road Construction by RR Construction Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                      <img src="/images/home/IMG_3025.jpg" alt="Major Highway and Highway and Expressway Construction by RR Construction Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                     </div>
                     
                     {/* Top Right */}

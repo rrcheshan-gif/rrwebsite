@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     template: "%s | RR Construction (Pvt) Ltd",
     default: "RR Construction (Pvt) Ltd | Leading Construction & Heavy Civil Engineering Company in Sri Lanka",
   },
-  description: "RR Construction (Pvt) Ltd is a leading Sri Lankan construction and heavy civil engineering company specializing in road construction, highways, bridges, infrastructure, harbour construction, geotechnical engineering, and sustainable construction solutions.",
+  description: "RR Construction (Pvt) Ltd is a leading Sri Lankan construction and heavy civil engineering company specializing in highway and expressway construction, highways, bridges, infrastructure, harbour construction, geotechnical engineering, and sustainable construction solutions.",
   keywords: ["RR Construction", "RR Construction Sri Lanka", "Construction Company in Sri Lanka", "Heavy Civil Engineering Company in Sri Lanka", "Civil Construction Company Sri Lanka", "Construction Contractor Sri Lanka", "Engineering Construction Company Sri Lanka"],
   openGraph: {
     title: "RR Construction (Pvt) Ltd | Leading Construction & Heavy Civil Engineering Company in Sri Lanka",
-    description: "RR Construction (Pvt) Ltd is a leading Sri Lankan construction and heavy civil engineering company specializing in road construction, highways, bridges, infrastructure, harbour construction, geotechnical engineering, and sustainable construction solutions.",
+    description: "RR Construction (Pvt) Ltd is a leading Sri Lankan construction and heavy civil engineering company specializing in highway and expressway construction, highways, bridges, infrastructure, harbour construction, geotechnical engineering, and sustainable construction solutions.",
     url: 'https://www.rrconstruction.lk',
     siteName: 'RR Construction (Pvt) Ltd',
     locale: 'en_US',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "RR Construction (Pvt) Ltd | Leading Construction & Heavy Civil Engineering Company in Sri Lanka",
-    description: "RR Construction (Pvt) Ltd is a leading Sri Lankan construction and heavy civil engineering company specializing in road construction, highways, bridges, infrastructure, harbour construction, geotechnical engineering, and sustainable construction solutions.",
+    description: "RR Construction (Pvt) Ltd is a leading Sri Lankan construction and heavy civil engineering company specializing in highway and expressway construction, highways, bridges, infrastructure, harbour construction, geotechnical engineering, and sustainable construction solutions.",
     images: ['/images/og-image.jpg'],
   },
   alternates: {

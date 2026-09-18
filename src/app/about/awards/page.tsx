@@ -17,7 +17,7 @@ export default function Awards() {
   const achievements = [
     {
       title: "100+ Completed Projects",
-      desc: "Successfully delivered over a hundred large-scale infrastructure projects across Sri Lanka, ranging from rural road networks to major national highways.",
+      desc: "Successfully delivered over a hundred large-scale infrastructure projects across Sri Lanka, ranging from rural highway and expressway networks to major national highways.",
       icon: <CheckCircle2 size={40} color="var(--primary-red)" />
     },
     {

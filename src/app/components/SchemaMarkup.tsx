@@ -12,7 +12,7 @@ export function OrganizationSchema() {
     "url": "https://www.rrconstruction.lk",
     "logo": "https://www.rrconstruction.lk/images/logo.png",
     "foundingDate": "1995",
-    "description": "RR Construction (Pvt) Ltd is a heavy civil engineering and construction company in Sri Lanka established in 1995, specialising in road construction, bridge construction, maritime construction, and water infrastructure.",
+    "description": "RR Construction (Pvt) Ltd is a heavy civil engineering and construction company in Sri Lanka established in 1995, specialising in highway and expressway construction, bridge construction, maritime construction, and water infrastructure.",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "LK"

@@ -1,40 +1,32 @@
-const fs = require("fs");
-const path = require("path");
+﻿const fs = require('fs');
 
-const walkSync = function(dir, filelist) {
-  files = fs.readdirSync(dir);
-  filelist = filelist || [];
-  files.forEach(function(file) {
-    if (fs.statSync(path.join(dir, file)).isDirectory()) {
-      filelist = walkSync(path.join(dir, file), filelist);
+function fixBackButton(file) {
+    if (!fs.existsSync(file)) return;
+    let content = fs.readFileSync(file, 'utf8');
+    
+    // Add useRouter import if missing
+    if (!content.includes('useRouter')) {
+        content = content.replace(/"use client";(\r?\n)/, '"use client";$1import { useRouter } from "next/navigation";$1');
     }
-    else {
-      if (file.endsWith(".tsx")) filelist.push(path.join(dir, file));
+
+    // Add router hook inside the component
+    const componentMatch = content.match(/export default function \w+\(\) \{/);
+    if (componentMatch && !content.includes('const router = useRouter();')) {
+        content = content.replace(componentMatch[0], componentMatch[0] + '\n  const router = useRouter();');
     }
-  });
-  return filelist;
-};
 
-const allFiles = walkSync("src/app");
-let fixedCount = 0;
+    // Replace the Link with a router.back() button
+    const linkRegex = /<Link href="\/resources"[^>]*>Back to Resources<\/Link>/g;
+    const buttonHtml = `<button onClick={(e) => { e.preventDefault(); router.back(); }} style={{ background: "none", border: "none", cursor: "pointer", color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold", fontSize: "1rem", padding: 0 }}>← Go Back</button>`;
+    
+    content = content.replace(linkRegex, buttonHtml);
 
-for (const file of allFiles) {
-  let content = fs.readFileSync(file, "utf8");
-  
-  // Find back buttons that are inside a centered container and move them OUT to be absolute.
-  // There are a few variations.
-  // E.g. <div style={{ textAlign: "left", marginBottom: "24px" }}> <Link ...>&larr; Back to Home</Link> </div>
-  
-  // Wait, replacing it with regex might be tricky if it spans multiple lines.
-  // Let"s just do a smarter regex replacement.
-  
-  let modified = false;
-  
-  // 1. Remove the old back button block
-  const oldButtonRegex = /<div style={{[^}]*textAlign:\s*["']left["'][^}]*}}>\s*<Link href=[^>]+>[^<]*&larr;\s*Back to[^<]*<\/Link>\s*<\/div>/g;
-  
-  // Wait, there might be newlines. Let"s use a more robust approach.
-  
-  // Actually, I can just find the `<Link ...>&larr; Back to ...</Link>` and the surrounding div.
+    fs.writeFileSync(file, content, 'utf8');
 }
 
+fixBackButton('src/app/resources/asphalt/yakawewa/page.tsx');
+fixBackButton('src/app/resources/crusher/thudugala/page.tsx');
+fixBackButton('src/app/resources/crusher/omanthai/page.tsx');
+fixBackButton('src/app/resources/sand/veerapuram/page.tsx');
+
+console.log('Fixed back buttons');

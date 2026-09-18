@@ -57,7 +57,7 @@ const projectsData = [
     mapQuery: "Kilinochchi, Northern Province, Sri Lanka",
     type: 'ongoing',
     category: "roads",
-    title: "Ongoing Road Construction Project",
+    title: "Ongoing Highway and Expressway Construction Project",
     client: "Confidential",
     duration: "Ongoing",
     year: 2025,
@@ -75,7 +75,7 @@ const projectsData = [
     mapQuery: "Galle Road, Bentota, Sri Lanka",
     type: 'ongoing',
     category: "roads",
-    title: "Ongoing Road Construction Project",
+    title: "Ongoing Highway and Expressway Construction Project",
     client: "Confidential",
     duration: "Ongoing",
     year: 2025,
@@ -86,7 +86,7 @@ const projectsData = [
     mapQuery: "Batticaloa, Eastern Province, Sri Lanka",
     type: 'ongoing',
     category: "roads",
-    title: "Ongoing Road Construction Project",
+    title: "Ongoing Highway and Expressway Construction Project",
     client: "Confidential",
     duration: "Ongoing",
     year: 2025,
@@ -201,7 +201,7 @@ const projectsData = [
     mapQuery: "Chavakachcheri, Jaffna, Sri Lanka",
     type: 'ongoing',
     category: "roads",
-    title: "Ongoing Road Construction Project",
+    title: "Ongoing Highway and Expressway Construction Project",
     client: "Confidential",
     duration: "Ongoing",
     year: 2025,
@@ -421,7 +421,7 @@ const projectsData = [
     id: 'project-27',
     type: 'ongoing',
     category: "roads",
-    title: "Ongoing Road Construction Project",
+    title: "Ongoing Highway and Expressway Construction Project",
     client: "Confidential",
     duration: "Ongoing",
     year: 2025,
@@ -439,7 +439,7 @@ const projectsData = [
     mapQuery: "Kilinochchi, Northern Province, Sri Lanka",
     type: 'ongoing',
     category: "roads",
-    title: "Ongoing Road Construction Project",
+    title: "Ongoing Highway and Expressway Construction Project",
     client: "Confidential",
     duration: "Ongoing",
     year: 2025,
@@ -595,7 +595,7 @@ const projectsData = [
     id: 'project-30',
     mapQuery: "Ratnapura, Sri Lanka",
     type: 'completed', category: "roads",
-    title: "Rehabilitation of 30.12km Rural Roads in Rathnapura",
+    title: "Rehabilitation of 30.12km rural highway and expressways in Rathnapura",
     heroImage: '/images/IMAGES/RRP/rrp-5.jpg',
     galleryImages: ['/images/IMAGES/RRP/rrp-1.jpg', '/images/IMAGES/RRP/rrp-2.jpg', '/images/IMAGES/RRP/rrp-3.jpg', '/images/IMAGES/RRP/rrp-4.jpg', '/images/IMAGES/RRP/rrp-5.jpg', '/images/IMAGES/RRP/rrp-6.jpg', '/images/IMAGES/RRP/rrp-7.jpg', '/images/IMAGES/RRP/rrp-8.jpg', '/images/IMAGES/RRP/rrp-9.jpg', '/images/IMAGES/RRP/rrp-10.jpg', '/images/IMAGES/RRP/rrp-11.jpg', '/images/IMAGES/RRP/rrp-12.jpg', '/images/IMAGES/RRP/rrp-13.jpg'],
     status: "Completed",
@@ -607,7 +607,7 @@ const projectsData = [
       id: 'project-31',
     mapQuery: "Palindanuwara, Kalutara, Sri Lanka",
       type: 'completed', category: "roads",
-      title: "Rehabilitation of 20.80 Km Rural Roads in Palindanuwara (Kalutara)",
+      title: "Rehabilitation of 20.80 Km rural highway and expressways in Palindanuwara (Kalutara)",
       heroImage: 'images/PYR/palindanuwara-1.jpeg',
       galleryImages: ['images/PYR/palindanuwara-1.jpeg', 'images/PYR/palindanuwara-2.jpeg', 'images/PYR/palindanuwara-3.jpeg', 'images/PYR/palindanuwara-4.jpeg', 'images/PYR/palindanuwara-5.jpeg', 'images/PYR/palindanuwara-6.jpeg', 'images/PYR/palindanuwara-7.jpeg', 'images/PYR/palindanuwara-8.jpeg'],
       status: "Completed",
@@ -642,7 +642,7 @@ const projectsData = [
     id: 'project-91',
     type: 'completed',
     category: "roads",
-    title: "Second Integrated Road Investment Program - Rehabilitation, Improvement and Maintenance of 23.96 Km Rural Roads in Badulla District",
+    title: "Second Integrated Road Investment Program - Rehabilitation, Improvement and Maintenance of 23.96 Km rural highway and expressways in Badulla District",
     status: "Completed",
     client: "Road Development Authority",
     duration: "24 Months",
@@ -667,12 +667,12 @@ const projectsData = [
     id: 'project-33',
     mapQuery: "Kalutara, Sri Lanka",
     type: 'completed', category: "roads",
-    title: "Rehabilitation of 26.05 Km of Rural Roads in Kalutara District",
+    title: "Rehabilitation of 26.05 Km of rural highway and expressways in Kalutara District",
     status: "Completed",
     client: "Road Development Authority",
     duration: "09 Months",
     year: 2024,
-    description: `<p style="margin-bottom: 20px;">The <strong>Rehabilitation / Improvement of 26.05 Km of Rural Roads in the Kalutara District</strong> project included performance-based maintenance for three years, executed for the Road Development Authority.</p>
+    description: `<p style="margin-bottom: 20px;">The <strong>Rehabilitation / Improvement of 26.05 Km of rural highway and expressways in the Kalutara District</strong> project included performance-based maintenance for three years, executed for the Road Development Authority.</p>
 <p>Completed in a fast-tracked 9-month timeframe, the project dramatically enhanced rural transport infrastructure in the district.</p>`
   },
   {
@@ -800,8 +800,8 @@ const projectsData = [
     client: "Road Development Authority",
     duration: "24 Months",
     year: 2022,
-    description: `<p style="margin-bottom: 20px;">The <strong>"Second Integrated Road Investment Program - Rehabilitation / Improvement and Maintenance of 49.01 Km Rural Roads in Mannar District in the Northern Province – Package 3"</strong> is a major infrastructure development executed for the <strong>Road Development Authority</strong>.</p>
-<p style="margin-bottom: 20px;">With a 24-month duration, RR Construction successfully rehabilitated a vast network of rural roads in the Mannar district, enhancing rural connectivity, agricultural transport, and economic development in the region.</p>
+    description: `<p style="margin-bottom: 20px;">The <strong>"Second Integrated Road Investment Program - Rehabilitation / Improvement and Maintenance of 49.01 Km rural highway and expressways in Mannar District in the Northern Province – Package 3"</strong> is a major infrastructure development executed for the <strong>Road Development Authority</strong>.</p>
+<p style="margin-bottom: 20px;">With a 24-month duration, RR Construction successfully rehabilitated a vast network of rural highway and expressways in the Mannar district, enhancing rural connectivity, agricultural transport, and economic development in the region.</p>
 <p>The project involved extensive earthworks, sub-base and base course construction, asphalt paving, and the establishment of robust drainage systems across 49.01 kilometers.</p>`
   },
   {
@@ -815,7 +815,7 @@ const projectsData = [
     client: "Road Development Authority",
     duration: "24 Months",
     year: 2022,
-    description: `<p style="margin-bottom: 20px;">Executed for the <strong>Road Development Authority</strong>, this project involved the rehabilitation and improvement of 53.60 km of rural roads in the Kilinochchi District (Package 2) under the Second Integrated Road Investment Program.</p>
+    description: `<p style="margin-bottom: 20px;">Executed for the <strong>Road Development Authority</strong>, this project involved the rehabilitation and improvement of 53.60 km of rural highway and expressways in the Kilinochchi District (Package 2) under the Second Integrated Road Investment Program.</p>
 <p>Over the 24-month contract period, our engineering teams delivered comprehensive road reconstruction, asphalt surfacing, and associated drainage structures, significantly improving the transport network in the Northern Province.</p>`
   },
   {
@@ -827,8 +827,8 @@ const projectsData = [
     client: "Road Development Authority",
     duration: "12 Months",
     year: 2022,
-    description: `<p style="margin-bottom: 20px;">The <strong>Integrated Road Development Program - Rehabilitation/ Improvements of 99.00 Km Rural Roads in the Kurunegala District</strong> (Package 3) included performance-based maintenance for three years.</p>
-<p>this extensive 12-month project upgraded nearly 100 kilometers of rural road infrastructure, demonstrating RR Construction's capacity to deliver massive road network improvements efficiently and to the highest standards.</p>`
+    description: `<p style="margin-bottom: 20px;">The <strong>Integrated Road Development Program - Rehabilitation/ Improvements of 99.00 Km rural highway and expressways in the Kurunegala District</strong> (Package 3) included performance-based maintenance for three years.</p>
+<p>this extensive 12-month project upgraded nearly 100 kilometers of rural highway and expressway infrastructure, demonstrating RR Construction's capacity to deliver massive road network improvements efficiently and to the highest standards.</p>`
   },
   {
     id: 'project-44',
@@ -1101,7 +1101,7 @@ const projectsData = [
     id: 'project-59',
     mapQuery: "Ratnapura, Sri Lanka",
     type: 'completed', category: "roads",
-    title: "Rehabilitation of 81km of Rural Roads in Rathnapura (R3)",
+    title: "Rehabilitation of 81km of rural highway and expressways in Rathnapura (R3)",
     status: "Completed",
     client: "Road Development Authority",
     
@@ -1265,7 +1265,7 @@ const projectsData = [
     id: 'project-63',
     mapQuery: "Hambantota, Sri Lanka",
     type: 'completed', category: "roads",
-    title: "Rehabilitation of 42Km Rural Roads in Hambantota (H3)",
+    title: "Rehabilitation of 42Km rural highway and expressways in Hambantota (H3)",
     status: "Completed",
     client: "Road Development Authority",
     

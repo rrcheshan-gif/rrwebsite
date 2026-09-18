@@ -138,7 +138,7 @@ export default function QuarriesAggregates() {
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  textShadow: "0 2px 10px rgba(0,0,0,0.05)", marginBottom: "5px" }}>Industrial-Grade Aggregates for Construction Projects</h2>
           <p style={{ fontSize: "1.2rem", lineHeight: 1.8, color: "var(--text-light)", maxWidth: "800px", margin: "0 auto 30px" }}>
-            RR Construction operates three high-capacity, fully automated quarries and processing plants strategically located across Sri Lanka. Catering to major B2B infrastructure developers, road contractors, and commercial builders, we guarantee consistent quality, massive stockpiles, and a direct transport fleet for on-time site delivery.
+            RR Construction operates three high-capacity, fully automated quarries and processing plants strategically located across Sri Lanka. Catering to major B2B infrastructure developers, highway and expressway contractors, and commercial builders, we guarantee consistent quality, massive stockpiles, and a direct transport fleet for on-time site delivery.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "30px", marginTop: "40px" }}>
             <div style={{ background: "var(--white)", padding: "25px", borderRadius: "8px", boxShadow: "0 5px 15px rgba(0,0,0,0.05)", minWidth: 'min(100%, 250px)', flex: 1 }}>
@@ -215,7 +215,7 @@ export default function QuarriesAggregates() {
               <div style={{ padding: "20px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Omanthai Plant</h3>
-                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>A key aggregates supplier for Northern infrastructure development and commercial sectors. Operating with high-capacity machinery to deliver uninterrupted material supply for large-scale provincial road and bridge constructions.</p>
+                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>A key aggregates supplier for Northern infrastructure development and commercial sectors. Operating with high-capacity machinery to deliver uninterrupted material supply for large-scale provincial highway and expressway and bridge constructions.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "auto" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>
@@ -233,7 +233,7 @@ export default function QuarriesAggregates() {
               <div style={{ padding: "20px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Yakawewa Asphalt Plant</h3>
-                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>Premium hot-mix asphalt supplier for major highway and road paving projects across the region. Featuring automated temperature and mix-control systems to guarantee maximum durability and smooth road surface finishes.</p>
+                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>Premium hot-mix asphalt supplier for major highway and highway and expressway paving projects across the region. Featuring automated temperature and mix-control systems to guarantee maximum durability and smooth highway and expressway surface finishes.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "auto" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>
@@ -265,8 +265,8 @@ export default function QuarriesAggregates() {
             {/* ABC Material */}
             <div style={{ background: "var(--white)", padding: "30px", borderRadius: "8px", boxShadow: "0 4px 15px rgba(0,0,0,0.03)", borderTop: "4px solid var(--primary-red)" }}>
               <h4 style={{ color: "var(--text-dark)", fontSize: "1.3rem", marginBottom: "12px", fontFamily: "var(--font-heading)" }}>Aggregate Base Course (ABC)</h4>
-              <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "15px" }}>Perfectly graded mixture of coarse aggregates and quarry dust for premium sub-base and base compaction in roads and highways.</p>
-              <span style={{ background: "rgba(229, 57, 53, 0.08)", color: "var(--primary-red)", fontSize: "0.85rem", fontWeight: 700, padding: "4px 10px", borderRadius: "4px",  }}>Road Construction</span>
+              <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "15px" }}>Perfectly graded mixture of coarse aggregates and quarry dust for premium sub-base and base compaction in highways and expressways.</p>
+              <span style={{ background: "rgba(229, 57, 53, 0.08)", color: "var(--primary-red)", fontSize: "0.85rem", fontWeight: 700, padding: "4px 10px", borderRadius: "4px",  }}>Highway and Expressway Construction</span>
             </div>
 
             {/* Manufactured Sand */}

@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/about/awards',                                      priority: 0.6, freq: 'monthly' },
     // Services Hub
     { path: '/services',                                          priority: 0.9, freq: 'monthly' },
-    { path: '/services/road-construction',                        priority: 0.9, freq: 'monthly' },
+    { path: '/services/highway-and-expressway-construction',                        priority: 0.9, freq: 'monthly' },
     { path: '/services/bridge-construction',                      priority: 0.9, freq: 'monthly' },
     { path: '/services/maritime-construction',                    priority: 0.9, freq: 'monthly' },
     { path: '/services/dredging-reclamation',                     priority: 0.8, freq: 'monthly' },

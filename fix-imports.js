@@ -1,7 +1,23 @@
-const fs = require('fs');
-let content = fs.readFileSync('src/app/page.tsx', 'utf8');
+﻿const fs = require('fs');
 
-content = content.replace('import { , Mountain } from "lucide-react";', 'import { ArrowRight, Map, GitMerge, Building2, Waves, Leaf, HardHat, Anchor, Droplets, MapPin, Clock, Mountain } from "lucide-react";');
+function addImport(filePath) {
+    if (!fs.existsSync(filePath)) return;
+    let content = fs.readFileSync(filePath, 'utf8');
+    
+    if (!content.includes('import QuoteForm')) {
+        content = content.replace(/"use client";(\r?\n)/, '"use client";$1import QuoteForm from "@/app/components/QuoteForm";$1');
+        fs.writeFileSync(filePath, content, 'utf8');
+    }
+}
 
-fs.writeFileSync('src/app/page.tsx', content, 'utf8');
+addImport('src/app/resources/page.tsx');
+addImport('src/app/resources/asphalt/page.tsx');
+addImport('src/app/resources/crusher/page.tsx');
+addImport('src/app/resources/sand/page.tsx');
+addImport('src/app/resources/concrete/page.tsx');
+addImport('src/app/resources/asphalt/yakawewa/page.tsx');
+addImport('src/app/resources/crusher/thudugala/page.tsx');
+addImport('src/app/resources/crusher/omanthai/page.tsx');
+addImport('src/app/resources/sand/veerapuram/page.tsx');
+
 console.log('Fixed imports');
