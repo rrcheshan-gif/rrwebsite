@@ -384,7 +384,7 @@ export default function Home() {
       </section>
 
       {/* CORE EXPERTISE */}
-      <section style={{ padding: "60px 20px", background: "var(--bg-light)", position: "relative" }}>
+      <section className="bg-gradient-adaptive" style={{ padding: "60px 20px", position: "relative" }}>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ marginBottom: "50px", maxWidth: "800px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
@@ -422,7 +422,7 @@ export default function Home() {
       </section>
 
       {/* PROJECT HIGHLIGHTS */}
-      <section style={{ padding: "50px 20px", background: "var(--bg-light)", overflow: "hidden", position: "relative" }}>
+      <section className="bg-gradient-adaptive" style={{ padding: "50px 20px", overflow: "hidden", position: "relative" }}>
         <div className="container" style={{ display: "flex", flexWrap: "wrap", gap: "40px", alignItems: "flex-start", position: "relative", zIndex: 2 }}>
           <div style={{ flex: 1, minWidth: 'min(100%, 350px)', position: "relative", paddingTop: "20px" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
