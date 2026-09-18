@@ -23,21 +23,25 @@ export default function ConcretePage() {
       <div className="page-header" style={{
           background: "linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('/images/yakawewa-asphalt-2.jpg') center/cover",
           padding: "100px 20px 60px",
-          textAlign: "center",
+          textAlign: "left",
           color: "white"
       }}>
         <div className="container">
           <div style={{ textAlign: "left", marginBottom: "24px", width: "100%", maxWidth: "1200px", margin: "0 auto 24px" }}>
             <button onClick={(e) => { e.preventDefault(); router.back(); }} style={{ background: "none", border: "none", cursor: "pointer", color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold", fontSize: "1.1rem", padding: "0 0 2px 0", outline: "none" }}>&larr; Back</button>
           </div>
-          <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 3.5rem)", marginBottom: "15px", fontWeight: 800 }}>Ready-Mix Concrete</h1>
+          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>RESOURCES</h4>
+            </div>
+            <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 3.5rem)", marginBottom: "15px", fontWeight: 800 }}>Ready-Mix Concrete</h1>
           <p style={{ fontSize: "1.1rem", opacity: 0.9, maxWidth: "700px", margin: "0 auto" }}>Premium quality Ready-Mix Concrete batching plants strategically located across Sri Lanka for uninterrupted project delivery.</p>
         </div>
       </div>
 
       <section style={{ padding: "80px 20px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: "60px" }}>
+          <div style={{ textAlign: "left", marginBottom: "60px" }}>
             <h2 style={{ color: "var(--primary-red)", fontSize: "1.2rem", letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px", fontWeight: 700 }}>Island-Wide Network</h2>
             <h3 style={{ color: "var(--text-dark)", fontSize: "2.4rem", fontFamily: "var(--font-heading)" }}>Concrete Batching Plants</h3>
             <p style={{ color: "var(--text-light)", maxWidth: "700px", margin: "15px auto 0", fontSize: "1.1rem", lineHeight: 1.6 }}>

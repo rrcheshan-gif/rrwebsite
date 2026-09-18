@@ -30,7 +30,7 @@ export default function BoardOfDirectors() {
             flexDirection: "column", 
             justifyContent: "flex-end",
             padding: isMobile ? "120px 20px 20px" : "160px 20px 20px", 
-            textAlign: "center", 
+            textAlign: "left", 
             position: "relative", 
             borderRadius: isMobile ? "24px" : "32px",
             margin: isMobile ? "0 12px 30px" : "0 20px 40px",  
@@ -42,7 +42,11 @@ export default function BoardOfDirectors() {
             <Link href="/about" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to About Us</Link>
           </div>
           <div className="container" style={{ position: "relative", zIndex: 2 }}>
-            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Board of <span style={{ color: "var(--primary-red)" }}>Directors</span></h1>
+            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OUR COMPANY</h4>
+            </div>
+            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Board of <span className="text-gradient" style={{ fontWeight: 600 }}>Directors</span></h1>
           </div>
         </section>
 

@@ -40,19 +40,23 @@ export default function OngoingCategoryPage({ params }: { params: { category: st
         backgroundPosition: 'center', 
         color: 'var(--white)', 
         padding: '140px 20px 60px', 
-        textAlign: 'center',
+        textAlign: "left",
         borderBottomLeftRadius: '32px',
         borderBottomRightRadius: '32px',
         marginBottom: '60px'
       }}>
         <div className="absolute-back-btn" style={{ position: "absolute", top: "110px", left: "clamp(20px, 4vw, 40px)", zIndex: 99 }}>
-          <Link href="/projects/ongoing" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-flex", alignItems: "center", gap: "5px" }}>
+          <Link href="/projects/ongoing" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-flex", alignItems: "flex-start", gap: "5px" }}>
             <ArrowLeft size={14} /> Back to Categories
           </Link>
         </div>
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-          <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 800, marginBottom: '15px' }}>
-            {title} <span style={{ color: 'var(--primary-red)' }}>Projects</span>
+          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OUR PROJECTS</h4>
+            </div>
+            <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 800, marginBottom: '15px' }}>
+            {title} <span className="text-gradient" style={{ fontWeight: 600 }}>Projects</span>
           </h1>
           <p style={{ maxWidth: '700px', margin: '0 auto', fontSize: '1.1rem', color: '#cbd5e1' }}>
             Ongoing developments and active sites in the {title.toLowerCase()} sector.
@@ -62,7 +66,7 @@ export default function OngoingCategoryPage({ params }: { params: { category: st
 
       <div className="container" style={{ maxWidth: '1440px' }}>
         {categoryProjects.length === 0 ? (
-          <div style={{ textAlign: 'center', padding: '60px 20px', color: 'var(--text-light)' }}>
+          <div style={{ textAlign: "left", padding: '60px 20px', color: 'var(--text-light)' }}>
             <p>No ongoing projects found in this category at the moment.</p>
           </div>
         ) : (

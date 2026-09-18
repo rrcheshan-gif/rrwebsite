@@ -12,7 +12,7 @@ export default function Contact() {
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Page Header */}
-      <section className="page-header" style={{ background: "linear-gradient(135deg, #1e293b 0%, #0f172a 100%)", padding: "140px 20px 40px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center",  borderRadius: '32px',
+      <section className="page-header" style={{ background: "linear-gradient(135deg, #1e293b 0%, #0f172a 100%)", padding: "140px 20px 40px", textAlign: "left", position: "relative", backgroundSize: "cover", backgroundPosition: "center",  borderRadius: '32px',
           margin: '0 20px 40px', overflow: "hidden" }}>
         <div className="absolute-back-btn" style={{ position: "absolute", top: "110px", left: "clamp(20px, 4vw, 40px)", zIndex: 99 }}>
           <Link href="/" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Home
@@ -20,7 +20,11 @@ export default function Contact() {
         </div>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Get In <span style={{ color: "var(--primary-red)" }}>Touch</span></h1>
+          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>GET IN TOUCH</h4>
+            </div>
+            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Get In <span className="text-gradient" style={{ fontWeight: 600 }}>Touch</span></h1>
         </div>
       </section>
 
@@ -29,7 +33,7 @@ export default function Contact() {
         <div className="container" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "50px", alignItems: "start" }}>
           
           <div>
-              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
+              <div style={{ display: "flex", alignItems: "flex-start", gap: "15px", marginBottom: "20px" }}>
                 <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
                 <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px",  margin: 0, fontSize: "0.9rem" }}>Reach Out</h4>
               </div>

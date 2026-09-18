@@ -42,7 +42,7 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
         style={{ 
           backgroundImage: `url('${news.img}')`, 
           padding: "140px 20px 40px", 
-          textAlign: "center", 
+          textAlign: "left", 
           position: "relative", 
           backgroundSize: "cover", 
           backgroundPosition: news.crop === 'top' ? 'top center' : 'center', 
@@ -56,7 +56,7 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
         <div className="container" style={{ position: "relative", zIndex: 2, maxWidth: "900px" }}>
           
           <div style={{ textAlign: "left", marginBottom: "24px" }}>
-            <Link href="/news" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,1)", display: "inline-flex", alignItems: "center", gap: "8px" }}>
+            <Link href="/news" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: "3px", fontWeight: "bold",  letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,1)", display: "inline-flex", alignItems: "flex-start", gap: "8px" }}>
               <ArrowLeft size={16} /> Back to News
             </Link>
           </div>
@@ -67,12 +67,16 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
             </span>
           </div>
 
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem", margin: "0 0 20px", fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.9), 0 2px 4px rgba(0,0,0,0.8)", lineHeight: 1.2 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>LATEST NEWS</h4>
+            </div>
+            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem", margin: "0 0 20px", fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.9), 0 2px 4px rgba(0,0,0,0.8)", lineHeight: 1.2 }}>
             {news.title}
           </h1>
           
-          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "20px", color: "#f8fafc", fontSize: "1.1rem", fontWeight: 600, textShadow: "0 2px 4px rgba(0,0,0,0.8)" }}>
-            <span style={{ display: "flex", alignItems: "center", gap: "8px" }}><Clock size={16} color="var(--primary-red)" /> {news.date}</span>
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "flex-start", gap: "20px", color: "#f8fafc", fontSize: "1.1rem", fontWeight: 600, textShadow: "0 2px 4px rgba(0,0,0,0.8)" }}>
+            <span style={{ display: "flex", alignItems: "flex-start", gap: "8px" }}><Clock size={16} color="var(--primary-red)" /> {news.date}</span>
           </div>
         </div>
       </section>

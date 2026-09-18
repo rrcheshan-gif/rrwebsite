@@ -21,7 +21,7 @@ export default function OngoingProjects() {
         backgroundPosition: 'center', 
         color: 'var(--white)', 
         padding: '140px 20px 80px', 
-        textAlign: 'center',
+        textAlign: "left",
         borderBottomLeftRadius: '48px',
         borderBottomRightRadius: '48px',
         marginBottom: '60px',
@@ -32,8 +32,12 @@ export default function OngoingProjects() {
             </Link>
         </div>
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-          <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 800, marginBottom: '20px', letterSpacing: '-1px' }}>
-            Ongoing <span style={{ color: 'var(--primary-red)' }}>Projects</span>
+          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OUR PROJECTS</h4>
+            </div>
+            <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 800, marginBottom: '20px', letterSpacing: '-1px' }}>
+            Ongoing <span className="text-gradient" style={{ fontWeight: 600 }}>Projects</span>
           </h1>
           
         </div>
@@ -41,7 +45,7 @@ export default function OngoingProjects() {
 
       
       {/* Intro Description */}
-      <section style={{ padding: '0 20px 40px', textAlign: 'center', marginTop: '-100px', position: 'relative', zIndex: 10 }}>
+      <section style={{ padding: '0 20px 40px', textAlign: "left", marginTop: '-100px', position: 'relative', zIndex: 10 }}>
         <div className="container" style={{ maxWidth: '1000px' }}>
           <div style={{
              background: 'var(--white)',

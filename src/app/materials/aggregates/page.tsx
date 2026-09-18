@@ -36,9 +36,9 @@ export default function AggregatesPage() {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',
-        alignItems: 'center',
+        alignItems: "flex-start",
         justifyContent: 'center',
-        textAlign: 'center',
+        textAlign: "left",
         color: 'var(--white)'
       }}>
         <div style={{
@@ -50,16 +50,20 @@ export default function AggregatesPage() {
           <div style={{ marginBottom: '20px' }}>
             <Link href="/" style={{ color: 'var(--white)', textDecoration: 'none', opacity: 0.8 }}>Home</Link>
             <span style={{ margin: '0 10px', opacity: 0.8 }}>/</span>
-            <span style={{ color: 'var(--primary-red)' }}>Aggregates</span>
+            <span className="text-gradient" style={{ fontWeight: 600 }}>Aggregates</span>
           </div>
-          <h1 style={{
+          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>MATERIALS</h4>
+            </div>
+            <h1 style={{
             fontFamily: 'var(--font-heading)',
             fontSize: isMobile ? '2.5rem' : '4rem',
             fontWeight: 800,
             lineHeight: 1.2,
             marginBottom: '20px'
           }}>
-            Construction Aggregates & <span style={{ color: 'var(--primary-red)' }}>Quarry Products</span> in Sri Lanka
+            Construction Aggregates & <span className="text-gradient" style={{ fontWeight: 600 }}>Quarry Products</span> in Sri Lanka
           </h1>
           
         </div>
@@ -68,7 +72,7 @@ export default function AggregatesPage() {
       {/* Overview & Products */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 20px', backgroundColor: 'var(--white)' }}>
         <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+          <div style={{ textAlign: "left", marginBottom: '60px' }}>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '20px', color: 'var(--text-dark)' }}>
               Aggregate Production Overview
             </h2>

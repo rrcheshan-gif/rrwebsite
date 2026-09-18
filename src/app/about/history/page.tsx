@@ -104,7 +104,7 @@ export default function HistoryTimeline() {
             flexDirection: "column", 
             justifyContent: "flex-end",
             padding: isMobile ? "120px 20px 20px" : "160px 20px 20px", 
-            textAlign: "center", 
+            textAlign: "left", 
             position: "relative", 
             borderRadius: isMobile ? "24px" : "32px",
             margin: isMobile ? "0 12px 30px" : "0 20px 40px",  
@@ -117,7 +117,11 @@ export default function HistoryTimeline() {
               </Link>
           </div>
           <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our History &amp; <span style={{ color: "var(--primary-red)" }}>Milestones</span></h1>
+          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OUR COMPANY</h4>
+            </div>
+            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our History &amp; <span className="text-gradient" style={{ fontWeight: 600 }}>Milestones</span></h1>
           
         </div>
       </section>

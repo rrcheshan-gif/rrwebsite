@@ -44,7 +44,7 @@ export default function VeerapuramPlant() {
           style={{
             position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', 
             background: 'rgba(0,0,0,0.95)', zIndex: 9999, display: 'flex', 
-            justifyContent: 'center', alignItems: 'center', padding: '20px'
+            justifyContent: 'center', alignItems: "flex-start", padding: '20px'
           }}
         >
           <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} onClick={() => setLightboxImg(null)}></div>
@@ -62,7 +62,7 @@ export default function VeerapuramPlant() {
               const prevIdx = (currentIdx - 1 + galleryImages.length) % galleryImages.length;
               setLightboxImg(`images/${galleryImages[prevIdx]}`);
             }}
-            style={{ position: 'absolute', left: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+            style={{ position: 'absolute', left: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: "flex-start", justifyContent: 'center' }}
           >
             ←
           </button>
@@ -76,27 +76,31 @@ export default function VeerapuramPlant() {
               const nextIdx = (currentIdx + 1) % galleryImages.length;
               setLightboxImg(`images/${galleryImages[nextIdx]}`);
             }}
-            style={{ position: 'absolute', right: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+            style={{ position: 'absolute', right: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: "flex-start", justifyContent: 'center' }}
           >
             →
           </button>
         </div>
       )}
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/veerapuram-plant-header.jpg')", padding: "140px 20px 40px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/veerapuram-plant-header.jpg')", padding: "140px 20px 40px", textAlign: "left", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0,0,0,0.4)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "24px" }}>
             <button onClick={(e) => { e.preventDefault(); router.back(); }} style={{ background: "none", border: "none", cursor: "pointer", color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold", fontSize: "1.1rem", padding: "0 0 2px 0", outline: "none" }}>&larr; Back</button>
           </div>
           
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Veerapuram <span style={{ color: "var(--primary-red)" }}>Plant</span></h1>
+          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>RESOURCES</h4>
+            </div>
+            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Veerapuram <span className="text-gradient" style={{ fontWeight: 600 }}>Plant</span></h1>
         </div>
       </section>
 
       {/* Intro Section */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
+        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "left" }}>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700,  letterSpacing: "2px", marginBottom: "10px" }}>Veerapuram M Sand Plant and Crusher Plant</h4>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>Choose M-SAND for your all kind of Constructions</h2>
           <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "40px", textAlign: "center" }}>The Modern Alternative to the River Sand.</p>

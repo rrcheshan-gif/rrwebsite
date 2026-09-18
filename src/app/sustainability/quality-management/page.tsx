@@ -24,7 +24,7 @@ export default function QualityManagement() {
         style={{ 
           backgroundImage: "url('/images/health-safety-site.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
           padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
-          textAlign: "center", 
+          textAlign: "left", 
           position: "relative", 
           backgroundSize: "cover", 
           backgroundPosition: "center 40%", 
@@ -40,7 +40,11 @@ export default function QualityManagement() {
         </div>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Quality <span style={{ color: "var(--primary-red)" }}>Management</span></h1>
+          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>SUSTAINABILITY</h4>
+            </div>
+            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Quality <span className="text-gradient" style={{ fontWeight: 600 }}>Management</span></h1>
           
         </div>
       </section>
