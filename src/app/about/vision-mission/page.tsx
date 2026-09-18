@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
@@ -190,16 +190,6 @@ export default function VisionMission() {
             </div>
           </Reveal>
         </div>
-      </section>
-  {/* Brand Statement Banner */}
-      <section style={{ padding: "80px 20px", background: "linear-gradient(135deg, #6b7280 0%, #4b5563 100%)", position: "relative", borderTop: "4px solid var(--primary-red)", borderBottom: "4px solid var(--primary-red)" }}>
-        <Reveal>
-          <div className="container" style={{ textAlign: "center", maxWidth: "1000px" }}>
-            <h2 style={{ fontSize: "clamp(1.5rem, 4vw, 2.5rem)", color: "white", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, letterSpacing: "1px", lineHeight: 1.3 }}>
-              Engineering Excellence. Building Infrastructure. Shaping the Future.
-            </h2>
-          </div>
-        </Reveal>
       </section>
 
       {/* Modern Core Values Grid */}
