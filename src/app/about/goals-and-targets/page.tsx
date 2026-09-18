@@ -102,11 +102,15 @@ export default function GoalsAndTargets() {
       <section style={{ padding: isMobile ? "20px 10px" : "40px 20px" }}>
         <div className="container" style={{ margin: "0 auto", padding: "0 16px" }}>
           
-          <div style={{ textAlign: "center", marginBottom: "60px" }}>
-            <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px", lineHeight: 1.2 }}>
-              Strategic <span style={{ color: "var(--primary-red)" }}>Goals</span>
-            </h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "650px", margin: "0 auto", lineHeight: 1.7, textAlign: "center" }}>
+          <div style={{ textAlign: "left", marginBottom: "60px", maxWidth: "800px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+                <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OBJECTIVES</h4>
+              </div>
+              <h2 style={{ fontSize: isMobile ? "2rem" : "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.1 }}>
+                Strategic <span className="text-gradient" style={{ fontWeight: 600 }}>Goals</span>
+              </h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.7, textAlign: "left", margin: 0 }}>
               Our operational and strategic objectives are designed to continuously improve our performance across all phases of <Link href="/services" style={{ color: "var(--primary-red)", textDecoration: "none" }}>construction and engineering</Link>.
             </p>
           </div>
@@ -204,9 +208,15 @@ export default function GoalsAndTargets() {
       {/* 4. Looking Ahead */}
       <section style={{ padding: isMobile ? "50px 10px" : "80px 20px", backgroundColor: "var(--bg-light)" }}>
         <div className="container" style={{ margin: "0 auto", padding: "0 16px" }}>
-          <h2 style={{ fontSize: isMobile ? "2rem" : "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 25px 0", textAlign: "center" }}>
-            Looking Ahead
-          </h2>
+          <div style={{ textAlign: "left", marginBottom: "30px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+                <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>FUTURE FOCUS</h4>
+              </div>
+              <h2 style={{ fontSize: isMobile ? "2rem" : "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0", lineHeight: 1.1 }}>
+                Looking <span className="text-gradient" style={{ fontWeight: 600 }}>Ahead</span>
+              </h2>
+            </div>
           <div style={{ width: "100%" }}>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0 }}>
               RR Construction (Pvt) Ltd continues to strengthen its capabilities with a clear focus on effective project delivery, engineering advancement, infrastructure development and operational excellence. By continuously improving its people, processes, resources and technical capabilities, the company aims to respond effectively to the evolving requirements of Sri Lanka's infrastructure sector and create lasting value through reliable construction and civil engineering solutions.
