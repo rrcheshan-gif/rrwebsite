@@ -28,7 +28,7 @@ export default function Home() {
       heading1: 'Built on Every',
       heading2: 'Road We Pave',
       heading3: '',
-      desc: "From national highways to rural highway and expressways, RR Construction delivers precision highway and expressway construction, rehabilitation, and asphalt paving across Sri Lanka - engineered for durability, safety, and long-term performance."
+      desc: "From national highways to rural highways and expressways, RR Construction delivers precision highway and expressway construction, rehabilitation, and asphalt paving across Sri Lanka - engineered for durability, safety, and long-term performance."
     },
     {
       img: '/images/home/slider-maritime-fihladhoo.jpg',
@@ -253,7 +253,7 @@ export default function Home() {
 
                   {/* Horizontal rule accent */}
                   {index !== 0 && (
-                    <div style={{ width: 'clamp(50px, 8vw, 70px)', height: '3px', background: 'rgba(255,255,255,0.3)', borderRadius: '2px', marginBottom: 'clamp(14px, 2.5vh, 22px)' }}></div>
+                    <div style={{ width: 'clamp(50px, 8vw, 70px)', height: '3px', background: 'rgba(255,255,255,0.3)', borderRadius: '2px', marginBottom: 'clamp(14px, 2.5vh, 22px)', marginLeft: 'auto', marginRight: 'auto' }}></div>
                   )}
 
                   {/* Description */}
@@ -313,7 +313,7 @@ export default function Home() {
                     
                     {/* Top Left */}
                     <div style={{ borderRadius: "24px", overflow: "hidden", background: "var(--bg-base)", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}>
-                      <img src="/images/home/IMG_3025.jpg" alt="Major Highway and Highway and Expressway Construction by RR Construction Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                      <img src="/images/home/IMG_3025.jpg" alt="Major highway and expressway Construction by RR Construction Sri Lanka" className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                     </div>
                     
                     {/* Top Right */}

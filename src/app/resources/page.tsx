@@ -215,7 +215,7 @@ export default function QuarriesAggregates() {
               <div style={{ padding: "20px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Omanthai Plant</h3>
-                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>A key aggregates supplier for Northern infrastructure development and commercial sectors. Operating with high-capacity machinery to deliver uninterrupted material supply for large-scale provincial highway and expressway and bridge constructions.</p>
+                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>A key aggregates supplier for Northern infrastructure development and commercial sectors. Operating with high-capacity machinery to deliver uninterrupted material supply for large-scale provincial highway, expressway, and bridge constructions.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "auto" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>
@@ -233,7 +233,7 @@ export default function QuarriesAggregates() {
               <div style={{ padding: "20px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Yakawewa Asphalt Plant</h3>
-                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>Premium hot-mix asphalt supplier for major highway and highway and expressway paving projects across the region. Featuring automated temperature and mix-control systems to guarantee maximum durability and smooth highway and expressway surface finishes.</p>
+                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>Premium hot-mix asphalt supplier for major highway and expressway paving projects across the region. Featuring automated temperature and mix-control systems to guarantee maximum durability and smooth highway and expressway surface finishes.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "auto" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>

@@ -29,7 +29,7 @@ export default function AsphaltProductionPage() {
             <button onClick={(e) => { e.preventDefault(); router.back(); }} style={{ background: "none", border: "none", cursor: "pointer", color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold", fontSize: "1.1rem", padding: "0 0 2px 0", outline: "none" }}>&larr; Back</button>
           </div>
           <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 3.5rem)", marginBottom: "15px", fontWeight: 800 }}>Asphalt Production</h1>
-          <p style={{ fontSize: "1.1rem", opacity: 0.9, maxWidth: "700px", margin: "0 auto" }}>Premium hot-mix asphalt for highway and highway and expressway paving projects across Sri Lanka.</p>
+          <p style={{ fontSize: "1.1rem", opacity: 0.9, maxWidth: "700px", margin: "0 auto" }}>Premium hot-mix asphalt for highway and expressway paving projects across Sri Lanka.</p>
         </div>
       </div>
 
@@ -49,7 +49,7 @@ export default function AsphaltProductionPage() {
               <div style={{ padding: "20px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "10px", fontFamily: "var(--font-heading)" }}>Yakawewa Asphalt Plant</h3>
-                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>Premium hot-mix asphalt supplier for major highway and highway and expressway paving projects across the region. Featuring automated temperature and mix-control systems to guarantee maximum durability and smooth highway and expressway surface finishes.</p>
+                  <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "5px" }}>Premium hot-mix asphalt supplier for major highway and expressway paving projects across the region. Featuring automated temperature and mix-control systems to guarantee maximum durability and smooth highway and expressway surface finishes.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "auto" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>

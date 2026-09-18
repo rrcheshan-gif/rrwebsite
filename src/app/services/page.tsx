@@ -9,7 +9,7 @@ const SERVICES = [
     slug: 'road-construction',
     num: '01',
     title: 'Highway and Expressway Construction',
-    subtitle: 'National Highways • rural highway and expressways • Rehabilitation',
+    subtitle: 'National Highways • rural highways and expressways • Rehabilitation',
     desc: 'Three decades of highway and expressway-building experience across every province in Sri Lanka. From high-speed expressway packages to rural connectivity highways and expressways under the iRoad Programme, our highway division operates with a self-owned asphalt plant fleet and 500+ dedicated personnel.',
     highlights: ['Self-owned Asphalt Plants', 'iRoad Programme', 'Central Expressway Package'],
     image: '/images/page-headers/sustainability-road-hq.jpg',

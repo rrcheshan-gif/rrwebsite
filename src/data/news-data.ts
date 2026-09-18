@@ -40,7 +40,7 @@ export const NEWS_DATA: NewsItem[] = [
       </div>
 
       <h3 style="font-family: var(--font-heading); color: var(--text-dark); margin-top: 40px; margin-bottom: 20px;">Paving the Way Forward</h3>
-      <p>This investment reinforces our position as the leading infrastructure development company in Sri Lanka. As we deploy the W 200 F to our major highway and highway and expressway rehabilitation projects across the island, our clients can expect unprecedented precision and speed in asphalt removal and highway and expressway surface preparation.</p>
+      <p>This investment reinforces our position as the leading infrastructure development company in Sri Lanka. As we deploy the W 200 F to our major highway and expressway rehabilitation projects across the island, our clients can expect unprecedented precision and speed in asphalt removal and highway and expressway surface preparation.</p>
       
       <p>We remain dedicated to our vision of equipping our expert teams with the world's best machinery, ensuring that every road we build meets the highest international standards of quality and durability.</p>
     `

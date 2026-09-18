@@ -117,7 +117,7 @@ export default function RoadConstructionPage() {
                 National highway and expressway rehabilitation
               </h2>
               <p style={{ color: 'var(--text-light)', lineHeight: 1.7 }}>
-                RR Construction is extensively involved in the iRoad Programme initiated by the Road Development Authority (RDA). We have successfully rehabilitated hundreds of kilometers of rural highway and expressways, improving transport efficiency and connectivity in districts across Sri Lanka.
+                RR Construction is extensively involved in the iRoad Programme initiated by the Road Development Authority (RDA). We have successfully rehabilitated hundreds of kilometers of rural highways and expressways, improving transport efficiency and connectivity in districts across Sri Lanka.
               </p>
             </div>
             
