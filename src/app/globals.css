@@ -110,8 +110,8 @@
   color: #94a3b8 !important;
 }
 
-.article-content h2 { font-family: var(--font-heading), "Plus Jakarta Sans", sans-serif; font-size: 2rem; font-weight: 800; color: var(--text-dark); margin: 40px 0 20px; }
-.article-content h3 { font-family: var(--font-heading), "Plus Jakarta Sans", sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--text-dark); margin: 30px 0 15px; }
+.article-content h2 { font-family: var(--font-heading), "Montserrat", sans-serif; font-size: 2rem; font-weight: 800; color: var(--text-dark); margin: 40px 0 20px; }
+.article-content h3 { font-family: var(--font-heading), "Montserrat", sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--text-dark); margin: 30px 0 15px; }
 .article-content p { margin-bottom: 25px; color: var(--text-light); }
 .article-content ul { margin-bottom: 25px; padding-left: 20px; color: var(--text-light); }
 .article-content li { margin-bottom: 10px; }
@@ -211,7 +211,7 @@ html, body {
 }
 
 body {
-  font-family: var(--font-body), "Plus Jakarta Sans", sans-serif;
+  font-family: var(--font-body), "Montserrat", sans-serif;
   background-color: var(--bg-light);
   color: var(--text-dark);
   line-height: 1.6;
@@ -220,7 +220,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading), "Plus Jakarta Sans", sans-serif;
+  font-family: var(--font-heading), "Montserrat", sans-serif;
   font-weight: 700;
   color: inherit;
   margin-bottom: 1rem;
@@ -787,7 +787,7 @@ ul {
 }
 
 .stat-number {
-  font-family: var(--font-heading), "Plus Jakarta Sans", sans-serif;
+  font-family: var(--font-heading), "Montserrat", sans-serif;
   font-size: 3rem;
   font-weight: 800;
   color: var(--primary-red);
@@ -1210,7 +1210,7 @@ ul {
 
 .footer-heading {
   color: #ffffff;
-  font-family: var(--font-heading), "Plus Jakarta Sans", sans-serif;
+  font-family: var(--font-heading), "Montserrat", sans-serif;
   font-size: 1.3rem;
   margin-bottom: 25px;
   position: relative;
@@ -1703,7 +1703,7 @@ ul {
 .career-hero-title {
   font-size: clamp(2rem, 5vw, 3.5rem) !important;
   color: white;
-  font-family: var(--font-heading), "Plus Jakarta Sans", sans-serif;
+  font-family: var(--font-heading), "Montserrat", sans-serif;
 }
 
 .career-grid {

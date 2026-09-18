@@ -1,14 +1,14 @@
 ﻿import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const jakartaHeading = Plus_Jakarta_Sans({
+const montserratHeading = Montserrat({
   variable: "--font-heading",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const jakartaBody = Plus_Jakarta_Sans({
+const montserratBody = Montserrat({
   variable: "--font-body",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -109,7 +109,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${jakartaHeading.variable} ${jakartaBody.variable}`}
+      className={`${montserratHeading.variable} ${montserratBody.variable}`}
       suppressHydrationWarning
     >
       <head>
@@ -132,7 +132,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${jakartaHeading.variable} ${jakartaBody.variable} antialiased`} suppressHydrationWarning>
+      <body className={`${montserratHeading.variable} ${montserratBody.variable} antialiased`} suppressHydrationWarning>
         <ThemeProvider>
           <PageTransition />
           <Navbar />
