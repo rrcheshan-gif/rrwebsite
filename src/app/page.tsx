@@ -123,7 +123,7 @@ export default function Home() {
                     objectFit: 'cover',
                     objectPosition: 'center',
                     opacity: 1,
-                    filter: 'brightness(0.72) contrast(1.05)',
+                    filter: 'brightness(1) contrast(1.05)',
                     transform: 'scale(1)',
                     transition: 'none',
                     willChange: 'transform'
@@ -134,8 +134,18 @@ export default function Home() {
             </div>
           ))}
 
-          {/* Premium Multi-layer Gradient Overlay - Centered for text readability */}
-          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.7) 100%), linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.6) 100%)', zIndex: 2 }}></div>
+          {/* Light vignette for the edges to frame the bright image */}
+          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'radial-gradient(ellipse at center, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.5) 100%)', zIndex: 2 }}></div>
+          
+          {/* Cinematic Center Blur & Tint specifically behind the text */}
+          <div style={{ 
+            position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', 
+            backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)', 
+            WebkitMaskImage: 'radial-gradient(ellipse at center, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 25%, rgba(0,0,0,0) 55%)', 
+            maskImage: 'radial-gradient(ellipse at center, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 25%, rgba(0,0,0,0) 55%)', 
+            background: 'radial-gradient(ellipse at center, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.3) 25%, transparent 55%)',
+            zIndex: 2 
+          }}></div>
           {/* Bottom fade */}
           <div style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', height: '130px', background: 'linear-gradient(0deg, rgba(5,10,20,0.7) 0%, transparent 100%)', zIndex: 2 }}></div>
 
@@ -238,8 +248,8 @@ export default function Home() {
                 )}
 
                   {/* Main Heading */}
-                  <h2 style={{ fontFamily: 'var(--font-heading)', color: '#ffffff', fontSize: 'clamp(2.4rem, 5.5vw, 4.8rem)', lineHeight: 1.1, marginBottom: 'clamp(14px, 2.5vh, 22px)', fontWeight: 800, textAlign: 'center', letterSpacing: '-0.02em', textShadow: '2px 2px 0px rgba(0,0,0,1), 0 10px 40px rgba(0,0,0,1)' }}>
-                    {slide.heading1}{slide.heading2 && <><br /><span style={{ color: 'var(--primary-red)' }}>{slide.heading2}</span></>}{slide.heading3 && <><br />{slide.heading3}</>}
+                  <h2 style={{ fontFamily: 'var(--font-heading)', color: '#ffffff', fontSize: 'clamp(2.4rem, 5.5vw, 4.8rem)', lineHeight: 1.1, marginBottom: 'clamp(14px, 2.5vh, 22px)', fontWeight: 800, textAlign: 'center', letterSpacing: '-0.02em', textShadow: '0 4px 20px rgba(0,0,0,0.6), 0 10px 40px rgba(0,0,0,0.5)' }}>
+                    {slide.heading1}{slide.heading2 && <><br /><span style={{ color: '#ff4444', textShadow: '0 4px 30px rgba(255, 68, 68, 0.4)' }}>{slide.heading2}</span></>}{slide.heading3 && <><br />{slide.heading3}</>}
                   </h2>
 
                   {/* Horizontal rule accent */}
@@ -248,7 +258,7 @@ export default function Home() {
                   )}
 
                   {/* Description */}
-                  <p style={{ fontSize: 'clamp(0.95rem, 1.5vw, 1.25rem)', lineHeight: 1.8, color: '#ffffff', maxWidth: '780px', fontWeight: 500, textAlign: 'center', marginBottom: 'clamp(22px, 4vh, 40px)', textShadow: '1px 1px 3px rgba(0,0,0,1), 0 4px 20px rgba(0,0,0,0.8)' }}>
+                  <p style={{ fontSize: 'clamp(0.95rem, 1.5vw, 1.25rem)', lineHeight: 1.8, color: '#ffffff', maxWidth: '780px', fontWeight: 500, textAlign: 'center', marginBottom: 'clamp(22px, 4vh, 40px)', textShadow: '0 2px 10px rgba(0,0,0,0.6), 0 4px 20px rgba(0,0,0,0.5)' }}>
                     {slide.desc}
                   </p>
 
