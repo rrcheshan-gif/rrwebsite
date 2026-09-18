@@ -28,12 +28,15 @@ export default function Training() {
       </section>
 
       <section style={{ padding: "60px 20px 50px" }}>
-        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
-          <div style={{ width: "80px", height: "80px", background: "rgba(229, 57, 53, 0.1)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px" }}>
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "left" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+            <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+            <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>DEVELOPMENT</h4>
           </div>
-          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", marginBottom: "20px" }}>Continuous Learning at RR</h2>
-          <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "var(--text-light)", marginBottom: "40px" }}>
+          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", marginBottom: "20px", fontWeight: 800, lineHeight: 1.1 }}>
+            Continuous Learning at <span className="text-gradient" style={{ fontWeight: 300 }}>RR</span>
+          </h2>
+          <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "var(--text-light)", marginBottom: "40px", textAlign: "left" }}>
             At RR Construction, we believe that an investment in our people is an investment in our future. As construction methodologies evolve rapidly, we ensure our workforce is equipped with the latest technical knowledge and safety protocols through rigorous, continuous training programs.
           </p>
         </div>
@@ -59,10 +62,16 @@ export default function Training() {
       {/* Special Initiatives Section */}
       <section style={{ padding: "0 20px 80px" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <div style={{ marginBottom: "50px", textAlign: "center" }}>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", margin: "0 0 15px 0" }}>Special <span style={{ color: "var(--primary-red)" }}>Initiatives</span></h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.15rem", margin: 0, textAlign: "center" }}>Discover the extra steps we take to empower our team and stay ahead of industry curves.</p>
-          </div>
+          <div style={{ marginBottom: "50px", textAlign: "left" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+                <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>PROGRAMS</h4>
+              </div>
+              <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", margin: "0 0 15px 0", fontWeight: 800, lineHeight: 1.1 }}>
+                Special <span className="text-gradient" style={{ fontWeight: 300 }}>Initiatives</span>
+              </h2>
+              <p style={{ color: "var(--text-light)", fontSize: "1.15rem", margin: 0, textAlign: "left" }}>Discover the extra steps we take to empower our team and stay ahead of industry curves.</p>
+            </div>
           
           <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
             
