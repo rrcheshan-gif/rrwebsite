@@ -1,15 +1,13 @@
 const fs = require('fs');
-let content = fs.readFileSync('src/app/page.tsx', 'utf8');
 
-content = content.replace(
-  /{ name: "U.D.A. SRI LANKA", logo: "\/images\/clients\/uda.png" }/,
-  '{ name: "U.D.A. SRI LANKA", logo: "/images/clients/uda-correct.jpg" }'
-);
+let file = 'src/app/components/Navbar.tsx';
+let content = fs.readFileSync(file, 'utf8');
+content = content.replace(/<div className="logo-text">[\s\S]*?<\/div>/g, '');
+fs.writeFileSync(file, content, 'utf8');
 
-content = content.replace(
-  /{ name: "MINISTRY OF IRRIGATION", logo: "\/images\/clients\/irrigation.png" }/,
-  '{ name: "MINISTRY OF IRRIGATION", logo: "/images/clients/irrigation-correct.svg" }'
-);
+file = 'src/app/components/Footer.tsx';
+content = fs.readFileSync(file, 'utf8');
+content = content.replace(/<div className="footer-logo-text">[\s\S]*?<\/div>/g, '');
+fs.writeFileSync(file, content, 'utf8');
 
-fs.writeFileSync('src/app/page.tsx', content, 'utf8');
-console.log('Updated UDA and Irrigation logos');
+console.log('Removed text from both');
