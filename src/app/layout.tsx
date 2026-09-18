@@ -1,14 +1,14 @@
 ﻿import type { Metadata, Viewport } from "next";
-import { Manrope } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const manropeHeading = Manrope({
+const jakartaHeading = Plus_Jakarta_Sans({
   variable: "--font-heading",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const manropeBody = Manrope({
+const jakartaBody = Plus_Jakarta_Sans({
   variable: "--font-body",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -109,7 +109,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${manropeHeading.variable} ${manropeBody.variable}`}
+      className={`${jakartaHeading.variable} ${jakartaBody.variable}`}
       suppressHydrationWarning
     >
       <head>
@@ -132,7 +132,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${manropeHeading.variable} ${manropeBody.variable} antialiased`} suppressHydrationWarning>
+      <body className={`${jakartaHeading.variable} ${jakartaBody.variable} antialiased`} suppressHydrationWarning>
         <ThemeProvider>
           <PageTransition />
           <Navbar />
