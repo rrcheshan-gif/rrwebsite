@@ -50,10 +50,13 @@ export default function EnvironmentalStewardship() {
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto", padding: "0 16px" }}>
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "50px", alignItems: "center" }}>
             <div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px" }}>Iso 14001:2015</h4>
-              <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.2 }}>
-                Engineering with an <span style={{ color: "var(--primary-red)" }}>Ecological Conscience</span>
-              </h2>
+              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                  <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+                  <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>ISO 14001:2015</h4>
+                </div>
+                <h2 style={{ fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.1 }}>
+                  Engineering with an <span className="text-gradient" style={{ fontWeight: 300 }}>Ecological Conscience</span>
+                </h2>
               <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
                 As a Tier-1 infrastructure developer executing mega-scale earthworks, maritime dredging, and expressway construction, RR Construction acknowledges its substantial ecological footprint. Our environmental stewardship is not an afterthought; it is engineered into the project lifecycle.
               </p>

@@ -87,14 +87,18 @@ export default function SustainabilityHub() {
       <section style={{ padding: isMobile ? "20px 10px 80px" : "40px 20px 100px" }}>
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto", padding: "0 16px" }}>
           
-          <div style={{ textAlign: "center", marginBottom: "60px" }}>
-            <h2 style={{ fontSize: isMobile ? "2.2rem" : "3rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0" }}>
-              Our Four Pillars
-            </h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "700px", margin: "0 auto" }}>
-              Explore how our certified management systems translate into real-world impact across every infrastructure project we undertake.
-            </p>
-          </div>
+          <div style={{ textAlign: "left", marginBottom: "60px", maxWidth: "800px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+                <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>SUSTAINABILITY</h4>
+              </div>
+              <h2 style={{ fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.1 }}>
+                Our Four <span className="text-gradient" style={{ fontWeight: 300 }}>Pillars</span>
+              </h2>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "700px", margin: "0", textAlign: "left" }}>
+                Explore how our certified management systems translate into real-world impact across every infrastructure project we undertake.
+              </p>
+            </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "30px" }}>
             {pillars.map((pillar) => (

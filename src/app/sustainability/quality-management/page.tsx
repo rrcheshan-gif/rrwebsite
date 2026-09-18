@@ -50,10 +50,13 @@ export default function QualityManagement() {
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto", padding: "0 16px" }}>
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "50px", alignItems: "stretch" }}>
             <div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px" }}>Iso 9001:2015</h4>
-              <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.2 }}>
-                Quality Assured from <span style={{ color: "var(--primary-red)" }}>The Ground Up</span>
-              </h2>
+              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                  <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+                  <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>ISO 9001:2015</h4>
+                </div>
+                <h2 style={{ fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.1 }}>
+                  Quality Assured from <span className="text-gradient" style={{ fontWeight: 300 }}>The Ground Up</span>
+                </h2>
               <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
                 True quality in heavy civil engineering cannot be retrofitted; it must be engineered into every mix, every pour, and every weld. RR Construction's reputation as a top-tier infrastructure developer is built on an unwavering commitment to structural integrity.
               </p>
