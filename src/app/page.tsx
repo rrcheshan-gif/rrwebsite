@@ -88,7 +88,7 @@ export default function Home() {
   return (
     <>
       {/* FULLSCREEN HERO SECTION */}
-      <section className="hero-contained" style={{ padding: '0', margin: '0', backgroundColor: '#0f172a', display: 'block', position: 'relative' }}>
+      <div className="hero-contained" style={{ padding: '0', margin: '0', backgroundColor: '#0f172a', display: 'block', position: 'relative' }}>
         <div style={{ position: 'relative', width: '100%', height: '100vh', minHeight: '600px', overflow: 'hidden', transform: 'translateZ(0)', isolation: 'isolate', WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}>
 
           {/* Background Slider Images */}
@@ -144,7 +144,7 @@ export default function Home() {
 
           {/* Foreground Content — LEFT ALIGNED */}
           <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 3, display: 'flex', alignItems: 'center', padding: '0 clamp(30px, 7vw, 100px)' }}>
-            <div style={{ width: '100%', maxWidth: '780px' }}>
+            <div style={{ width: '100%', maxWidth: '780px', marginTop: '80px' }}>
               {slides.map((slide, index) => (
                 <div
                   key={index}
@@ -213,7 +213,7 @@ export default function Home() {
           </div>
 
         </div>
-      </section>
+      </div>
 
 
       {/* CORPORATE PROFILE */}
