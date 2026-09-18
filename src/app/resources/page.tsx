@@ -135,17 +135,24 @@ export default function QuarriesAggregates() {
 
       {/* Introduction Section */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  textShadow: "0 2px 10px rgba(0,0,0,0.05)", marginBottom: "5px" }}>Industrial-Grade Aggregates for Construction Projects</h2>
-          <p style={{ fontSize: "1.2rem", lineHeight: 1.8, color: "var(--text-light)", maxWidth: "800px", margin: "0 auto 30px" }}>
+        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "left" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+            <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+            <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>MATERIALS</h4>
+          </div>
+          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", marginBottom: "20px", fontWeight: 800, lineHeight: 1.1 }}>
+            Industrial-Grade Aggregates for Construction <span className="text-gradient" style={{ fontWeight: 300 }}>Projects</span>
+          </h2>
+          <p style={{ fontSize: "1.2rem", lineHeight: 1.8, color: "var(--text-light)", maxWidth: "800px", margin: "0 0 30px 0" }}>
             RR Construction operates three high-capacity, fully automated quarries and processing plants strategically located across Sri Lanka. Catering to major B2B infrastructure developers, highway and expressway contractors, and commercial builders, we guarantee consistent quality, massive stockpiles, and a direct transport fleet for on-time site delivery.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "30px", marginTop: "40px" }}>
             <div style={{ background: "var(--white)", padding: "25px", borderRadius: "8px", boxShadow: "0 5px 15px rgba(0,0,0,0.05)", minWidth: 'min(100%, 250px)', flex: 1 }}>
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: "15px" }}><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
               <h4 style={{ color: "var(--text-dark)", fontSize: "1.2rem", marginBottom: "8px", fontWeight: 700 }}>RDA & SLS Compliant</h4>
-              <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.5 }}>All aggregates are tested at independent labs for strength, gradation, and durability standards.</p>
-            </div>
+              <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.5 }}>All aggregates are tested at independent labs for strength, gradation, and durability standards.
+          </p>
+        </div>
             <div style={{ background: "var(--white)", padding: "25px", borderRadius: "8px", boxShadow: "0 5px 15px rgba(0,0,0,0.05)", minWidth: 'min(100%, 250px)', flex: 1 }}>
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: "15px" }}><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
               <h4 style={{ color: "var(--text-dark)", fontSize: "1.2rem", marginBottom: "8px", fontWeight: 700 }}>Direct Transport Fleet</h4>

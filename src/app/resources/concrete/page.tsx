@@ -37,10 +37,15 @@ export default function ConcretePage() {
 
       <section style={{ padding: "80px 20px", background: "var(--bg-light)" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: "60px" }}>
-            <h2 style={{ color: "var(--primary-red)", fontSize: "1.2rem", letterSpacing: "2px", textTransform: "uppercase", marginBottom: "10px", fontWeight: 700 }}>Island-Wide Network</h2>
-            <h3 style={{ color: "var(--text-dark)", fontSize: "2.4rem", fontFamily: "var(--font-heading)" }}>Concrete Batching Plants</h3>
-            <p style={{ color: "var(--text-light)", maxWidth: "700px", margin: "15px auto 0", fontSize: "1.1rem", lineHeight: 1.6 }}>
+          <div style={{ textAlign: "left", marginBottom: "60px", maxWidth: "800px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>ISLAND-WIDE NETWORK</h4>
+            </div>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", margin: "0 0 15px 0", fontWeight: 800, lineHeight: 1.1 }}>
+              Concrete Batching <span className="text-gradient" style={{ fontWeight: 300 }}>Plants</span>
+            </h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.6, textAlign: "left", margin: 0 }}>
               Our extensive network of batching plants ensures that high-grade ready-mix concrete reaches your construction site exactly when you need it, maintaining perfect consistency and strength.
             </p>
           </div>
