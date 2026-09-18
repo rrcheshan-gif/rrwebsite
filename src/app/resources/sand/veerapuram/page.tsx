@@ -319,7 +319,7 @@ export default function VeerapuramPlant() {
         </div>
       </section>
     
-      <QuoteForm defaultPlant="Veerapuram (North Central)" allowedProducts={["M-Sand", "ABC", "Other"]} />
+      
     </div>
   );
 }
