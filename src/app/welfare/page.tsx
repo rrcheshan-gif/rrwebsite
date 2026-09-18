@@ -17,12 +17,15 @@ export default function Welfare() {
       </section>
 
       <section style={{ padding: "60px 20px 50px" }}>
-        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
-          <div style={{ width: "80px", height: "80px", background: "rgba(229, 57, 53, 0.1)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px" }}>
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"></path></svg>
+        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "left" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+            <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+            <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>CARE & SUPPORT</h4>
           </div>
-          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", marginBottom: "20px" }}>Beyond the Worksite</h2>
-          <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "var(--text-light)", marginBottom: "40px" }}>
+          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", marginBottom: "20px", fontWeight: 800, lineHeight: 1.1 }}>
+            Beyond the <span className="text-gradient" style={{ fontWeight: 300 }}>Worksite</span>
+          </h2>
+          <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "var(--text-light)", marginBottom: "40px", textAlign: "left" }}>
             The well-being of our 1400+ workforce is our highest priority. We understand that our success is built on their hard work, and we are committed to providing a supportive, secure, and rewarding environment for them and their families.
           </p>
         </div>
