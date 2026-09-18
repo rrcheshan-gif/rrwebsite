@@ -7,7 +7,7 @@ import projectsData from './data';
 export default function Projects() {
   const [filter, setFilter] = useState('all');
 
-  const completedProjects = projectsData.filter((p: any) => p.type !== 'ongoing');
+  const completedProjects = projectsData.filter((p: any) => p.type !== 'ongoing' && p.category !== 'overseas');
   
   // Sort projects: 1) Base Year Desc, 2) Has Custom Image, 3) Full Date Desc
   const sortedProjects = [...completedProjects].sort((a: any, b: any) => {
