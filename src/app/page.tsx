@@ -400,7 +400,7 @@ export default function Home() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px" }}>
             {[
               { title: "Highways & Expressways", scale: "scale(1.15)", img: "/images/home/rathnapura.jpg", icon: <Map size={30} />, text: "Specialized heavy civil engineering expertise carving expressways and national highways through every terrain." },
-              { title: "Bridge Construction", img: "/images/kilinochchi-bridge-feature.jpg", icon: <GitMerge size={30} />, text: "Structural steel and reinforced concrete bridges built to carry the load for generations." },
+              { title: "Bridge Construction", img: "/images/home/bridge-construction-new.jpg", icon: <GitMerge size={30} />, text: "Structural steel and reinforced concrete bridges built to carry the load for generations." },
               { title: "Civil Structures", img: "/images/wellamankara/building-projects.jpg", icon: <Building2 size={30} />, text: "Specialized structural engineering encompassing water retaining facilities, towers, and heavy steel fabrication." },
               { title: "Maritime & Water", img: "/images/maritime-harbour-site.jpg", icon: <Waves size={30} />, text: "Dredging, reclamation, and water supply systems engineered to serve communities at scale." },
               { title: "Landslide Mitigation", img: "/images/home/landslide-mitigation-new.jpeg", icon: <Mountain size={30} />, text: "Expert slope stabilization and rock-fall protection systems in critical hill-country zones." }
