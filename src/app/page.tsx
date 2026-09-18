@@ -411,7 +411,7 @@ export default function Home() {
               <div key={i} className="modern-service-card glass-panel hover-lift" style={{ width: "100%", minHeight: "280px", position: "relative", overflow: "hidden", padding: 0, borderRadius: "20px" }}>
                 <img src={srv.img} alt={srv.title} className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.9, transition: "opacity 0.5s ease" }} onMouseOver={(e) => { e.currentTarget.style.opacity = '1' }} onMouseOut={(e) => { e.currentTarget.style.opacity = '0.9' }} />
                 <div className="msc-content" style={{ position: "absolute", bottom: 0, left: 0, width: "100%", padding: "25px", background: "linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.3) 80%, transparent)", color: "white", pointerEvents: "none" }}>
-                  <div style={{ color: "white", marginBottom: "20px", display: "inline-block", padding: "15px", background: "var(--primary-red)", borderRadius: "20px", boxShadow: "0 10px 20px rgba(229,57,53,0.3)" }}>{srv.icon}</div>
+                  
                   <h3 style={{ fontSize: "clamp(1.2rem, 3vw, 1.5rem)", marginBottom: "15px", color: "white", fontFamily: "var(--font-heading)", letterSpacing: "1px" }}>{srv.title}</h3>
                   <p className="msc-text" style={{ fontSize: "0.9rem", color: "#e2e8f0", margin: 0, lineHeight: 1.5 }}>{srv.text}</p>
                 </div>
