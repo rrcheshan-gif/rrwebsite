@@ -54,16 +54,15 @@ export default function WaterInfrastructurePage() {
       {/* 2. Capabilities */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>
         <div style={containerStyle}>
-          <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-            <h2 style={{ 
-              fontFamily: 'var(--font-heading)', 
-              fontSize: isMobile ? '2rem' : '2.5rem', 
-              color: 'var(--text-dark)',
-              marginBottom: '20px'
-            }}>
-              Our Water Infrastructure Services
+          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "800px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>CAPABILITIES</h4>
+            </div>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", marginBottom: "20px", fontWeight: 800, lineHeight: 1.1 }}>
+              Our Water Infrastructure <span className="text-gradient" style={{ fontWeight: 300 }}>Services</span>
             </h2>
-            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6, textAlign: 'center' }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.6, textAlign: "left", margin: 0 }}>
               Extensive experience in constructing municipal and regional water infrastructure, handling everything from clean drinking water distribution to large-scale irrigation and storm drainage systems across Sri Lanka.
             </p>
           </div>

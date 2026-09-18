@@ -214,9 +214,15 @@ export default function Services() {
             <span style={{ color: 'var(--primary-red)', fontWeight: 800, letterSpacing: '3px',  fontSize: '0.82rem' }}>Our Services</span>
           </div>
 
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '2rem' : '2.8rem', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 44px', lineHeight: 1.15 }}>
-            All Engineering Disciplines
-          </h2>
+          <div style={{ textAlign: "left", marginBottom: "44px", maxWidth: "800px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>SERVICES</h4>
+            </div>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", margin: 0, fontWeight: 800, lineHeight: 1.1 }}>
+              All Engineering <span className="text-gradient" style={{ fontWeight: 300 }}>Disciplines</span>
+            </h2>
+          </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)', gap: '24px' }}>
             {SERVICES.map((svc, idx) => {
