@@ -120,7 +120,22 @@ export default function Navbar() {
                 </ul>
               </li>
 
-              <li className={`dropdown ${activeDropdown === 'sustainability' ? 'open' : ''}`}>
+                              <li className={`dropdown ${activeDropdown === 'resources' ? 'open' : ''}`}>
+                  <div className="dropdown-header">
+                    <Link href="/resources" title="Construction Resources Sri Lanka" onClick={() => setMobileMenuOpen(false)}>Resources</Link>
+                    <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('resources', e)} aria-label="Toggle Resources Submenu">
+                      <ChevronDown size={14} />
+                    </button>
+                  </div>
+                  <ul className="dropdown-menu">
+                    <li><Link href="/resources/asphalt" onClick={() => setMobileMenuOpen(false)}>Asphalt</Link></li>
+                    <li><Link href="/resources/crusher" onClick={() => setMobileMenuOpen(false)}>Crusher</Link></li>
+                    <li><Link href="/resources/sand" onClick={() => setMobileMenuOpen(false)}>Sand</Link></li>
+                    <li><Link href="/resources/concrete" onClick={() => setMobileMenuOpen(false)}>Concrete</Link></li>
+                  </ul>
+                </li>
+                
+                <li className={`dropdown ${activeDropdown === 'sustainability' ? 'open' : ''}`}>
                 <div className="dropdown-header">
                   <Link href="/sustainability" title="Sustainable Construction Practices Sri Lanka" onClick={() => setMobileMenuOpen(false)}>Sustainability</Link>
                   <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('sustainability', e)} aria-label="Toggle Sustainability Submenu">
