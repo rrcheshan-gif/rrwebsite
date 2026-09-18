@@ -1,14 +1,14 @@
 ﻿import type { Metadata, Viewport } from "next";
-import { Montserrat } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 
-const montserratHeading = Montserrat({
+const outfitHeading = Outfit({
   variable: "--font-heading",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const montserratBody = Montserrat({
+const outfitBody = Outfit({
   variable: "--font-body",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -109,7 +109,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${montserratHeading.variable} ${montserratBody.variable}`}
+      className={`${outfitHeading.variable} ${outfitBody.variable}`}
       suppressHydrationWarning
     >
       <head>
@@ -132,7 +132,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${montserratHeading.variable} ${montserratBody.variable} antialiased`} suppressHydrationWarning>
+      <body className={`${outfitHeading.variable} ${outfitBody.variable} antialiased`} suppressHydrationWarning>
         <ThemeProvider>
           <PageTransition />
           <Navbar />
