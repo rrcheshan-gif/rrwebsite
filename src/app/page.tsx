@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -88,8 +88,8 @@ export default function Home() {
   return (
     <>
       {/* FULLSCREEN HERO SECTION */}
-      <section className="hero-contained" style={{ padding: '0', paddingTop: '130px', paddingBottom: '80px', backgroundColor: 'var(--bg-light)', display: 'flex', justifyContent: 'center' }}>
-        <div style={{ position: 'relative', width: '92%', maxWidth: '1440px', height: 'clamp(550px, 70vh, 750px)', borderRadius: 'clamp(24px, 5vw, 48px)', overflow: 'hidden', boxShadow: '0 25px 60px rgba(0,0,0,0.25)', transform: 'translateZ(0)', isolation: 'isolate', WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}>
+      <section className="hero-contained" style={{ padding: '0', paddingTop: '0', paddingBottom: '0', backgroundColor: '#0f172a', display: 'block' }}>
+        <div style={{ position: 'relative', width: '100%', height: 'clamp(600px, 100vh, 1000px)', overflow: 'hidden', transform: 'translateZ(0)', isolation: 'isolate', WebkitMaskImage: '-webkit-radial-gradient(white, black)', marginTop: '80px' }}>
 
           {/* Background Slider Images */}
           {slides.map((slide, index) => (
