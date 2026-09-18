@@ -89,203 +89,130 @@ export default function Home() {
     <>
       {/* FULLSCREEN HERO SECTION */}
       <section className="hero-contained" style={{ padding: '0', paddingTop: '130px', paddingBottom: '80px', backgroundColor: 'var(--bg-light)', display: 'flex', justifyContent: 'center' }}>
-        <div style={{ position: 'relative', width: '92%', maxWidth: '1440px', height: 'clamp(550px, 70vh, 750px)', borderRadius: 'clamp(24px, 5vw, 48px)', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)', transform: 'translateZ(0)', isolation: 'isolate', WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}>
-        {/* Background Slider */}
-        {slides.map((slide, index) => (
-          <div 
-            key={index} 
-            style={{ 
-              position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', 
-              transition: 'opacity 1s ease-in-out', 
-              opacity: index === currentSlide ? 1 : 0,
-              background: '#0f172a',
-              zIndex: 1
-            }}
-          >
-            {slide.video ? (
-                <video 
+        <div style={{ position: 'relative', width: '92%', maxWidth: '1440px', height: 'clamp(550px, 70vh, 750px)', borderRadius: 'clamp(24px, 5vw, 48px)', overflow: 'hidden', boxShadow: '0 25px 60px rgba(0,0,0,0.25)', transform: 'translateZ(0)', isolation: 'isolate', WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}>
+
+          {/* Background Slider Images */}
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              style={{
+                position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
+                transition: 'opacity 1.2s ease-in-out',
+                opacity: index === currentSlide ? 1 : 0,
+                background: '#0f172a',
+                zIndex: 1
+              }}
+            >
+              {slide.video ? (
+                <video
                   src={slide.video}
-                  autoPlay 
-                  muted 
+                  autoPlay
+                  muted
                   playsInline
                   preload="auto"
                   onEnded={() => setCurrentSlide((prev) => (prev + 1) % slides.length)}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', filter: 'brightness(1.08) contrast(1.1) saturate(1.1)' }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                 />
               ) : (
-                <img className="img-polished" 
-                    src={slide.img} 
-                    alt={slide.tag} 
-                    style={{ 
-                      width: '100%', 
-                      height: '100%', 
-                      objectFit: 'cover', 
-                      objectPosition: 'center', 
-                      opacity: 1, 
-                      filter: 'none',
-                      transform: 'scale(1)',
-                      transition: 'none',
-                      willChange: 'transform'
-                    }} 
-                    onError={(e) => { if (slide.fallback) (e.target as HTMLImageElement).src = slide.fallback; }} 
-                  />
+                <img className="img-polished"
+                  src={slide.img}
+                  alt={slide.tag}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    objectPosition: 'center',
+                    opacity: 1,
+                    filter: 'brightness(0.72) contrast(1.05)',
+                    transform: 'scale(1)',
+                    transition: 'none',
+                    willChange: 'transform'
+                  }}
+                  onError={(e) => { if (slide.fallback) (e.target as HTMLImageElement).src = slide.fallback; }}
+                />
               )}
-          </div>
-        ))}
-        {/* Balanced Cinematic Overlay for high text contrast */}
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'radial-gradient(ellipse at center, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0.4) 100%), linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.2) 70%, rgba(0,0,0,0.5) 100%)', zIndex: 2 }}></div>
+            </div>
+          ))}
 
-        {/* Foreground Content */}
-        <div className="container" style={{ position: "relative", zIndex: 3, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
-          <div style={{ width: '100%', maxWidth: '900px', margin: '0 auto' }}>
-            {slides.map((slide, index) => (
-              <div 
-                key={index} 
-                style={{ 
-                  display: index === currentSlide ? 'flex' : 'none',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  animation: 'fadeInUp 0.8s ease forwards'
-                }}
-              >
-                {index === 0 ? (
-                  <div 
-                    key={`motto-0-${currentSlide}`}
-                    style={{ 
-                      display: "inline-flex", 
-                      flexDirection: "column",
-                      alignItems: "center", 
-                      gap: "12px", 
-                      marginBottom: "clamp(18px, 3vh, 32px)",
-                      position: "relative"
-                    }}
-                  >
-                    <div 
-                      style={{ 
-                        fontWeight: 800, 
-                        fontSize: "clamp(1.05rem, 2.2vw, 1.55rem)", 
-                         
-                        letterSpacing: "clamp(3px, 0.8vw, 6px)",
-                        lineHeight: 1.3,
-                        display: "flex",
-                        flexWrap: "wrap",
-                        justifyContent: "center",
-                        gap: "0.25em",
-                        textShadow: "2px 2px 0px rgba(0,0,0,1), 0 4px 20px rgba(0, 0, 0, 0.9)"
-                      }}
-                    >
-                      {/* PASSION FOR in crisp white */}
-                      <span style={{ color: "#ffffff", display: "inline-flex" }}>
-                        {"Passion for".split("").map((char, charIdx) => (
-                          <span
-                            key={`p-${charIdx}-${currentSlide}`}
-                            style={{
-                              display: "inline-block",
-                              opacity: 0,
-                              animation: `${charIdx % 2 === 0 ? 'mottoLoopLeft' : 'mottoLoopRight'} 4.5s cubic-bezier(0.16, 1, 0.3, 1) infinite`,
-                              animationDelay: `${charIdx * 0.04}s`,
-                              whiteSpace: char === " " ? "pre" : "normal"
-                            }}
-                          >
-                            {char}
-                          </span>
-                        ))}
-                      </span>
-                      {/* ENGINEERING EXCELLENCE in glowing brand red */}
-                      <span style={{ color: "#ff4d4d", textShadow: "2px 2px 0px rgba(0,0,0,1), 0 4px 20px rgba(0, 0, 0, 0.9)", display: "inline-flex" }}>
-                        {"Engineering Excellence".split("").map((char, charIdx) => (
-                          <span
-                            key={`e-${charIdx}-${currentSlide}`}
-                            style={{
-                              display: "inline-block",
-                              opacity: 0,
-                              animation: `${(charIdx + 11) % 2 === 0 ? 'mottoLoopLeft' : 'mottoLoopRight'} 4.5s cubic-bezier(0.16, 1, 0.3, 1) infinite`,
-                              animationDelay: `${(charIdx + 11) * 0.04}s`,
-                              whiteSpace: char === " " ? "pre" : "normal"
-                            }}
-                          >
-                            {char}
-                          </span>
-                        ))}
-                      </span>
-                    </div>
+          {/* Premium Multi-layer Gradient Overlay - Left heavy for text readability */}
+          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(105deg, rgba(5,10,20,0.88) 0%, rgba(5,10,20,0.68) 50%, rgba(5,10,20,0.20) 100%)', zIndex: 2 }}></div>
+          {/* Bottom fade */}
+          <div style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', height: '130px', background: 'linear-gradient(0deg, rgba(5,10,20,0.7) 0%, transparent 100%)', zIndex: 2 }}></div>
 
-                    {/* Glowing Red Underline Accent */}
-                    <div 
-                      style={{ 
-                        width: 'min(100%, 140px)', 
-                        height: "3px", 
-                        background: "linear-gradient(90deg, transparent, #ff4d4d, transparent)", 
-                        borderRadius: "2px",
-                        boxShadow: "0 0 12px #ff4d4d",
-                        animation: "mottoExpandLine 0.8s ease forwards",
-                        animationDelay: "0.7s",
-                        transformOrigin: "center"
-                      }}
-                    ></div>
-                  </div>
-                ) : (
-                  <div 
-                    key={`tag-${currentSlide}`}
-                    style={{ 
-                      display: "inline-flex", 
-                      alignItems: "center", 
-                      gap: "10px", 
-                      marginBottom: "clamp(12px, 2.5vh, 25px)",
-                      position: "relative"
-                    }}
-                  >
-                    <span 
-                      style={{ 
-                        width: "8px", 
-                        height: "8px", 
-                        borderRadius: "50%", 
-                        background: "var(--primary-red)", 
-                        display: "inline-block",
-                        boxShadow: "0 0 12px var(--primary-red)",
-                        flexShrink: 0
-                      }}
-                    ></span>
-                    <div 
-                      style={{ 
-                        color: "rgba(255, 255, 255, 0.95)", 
-                        fontWeight: 700, 
-                        fontSize: "clamp(0.75rem, 1.4vw, 0.95rem)", 
-                         
-                        letterSpacing: "3px",
-                        textShadow: "0 2px 12px rgba(0,0,0,0.85)"
-                      }}
-                    >
+          {/* Red vertical accent bar on left */}
+          <div style={{ position: 'absolute', top: '60px', left: '0', width: '5px', height: '50%', background: 'linear-gradient(180deg, var(--primary-red), transparent)', zIndex: 4, borderRadius: '0 4px 4px 0' }}></div>
+
+          {/* Foreground Content — LEFT ALIGNED */}
+          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 3, display: 'flex', alignItems: 'center', padding: '0 clamp(30px, 7vw, 100px)' }}>
+            <div style={{ width: '100%', maxWidth: '780px' }}>
+              {slides.map((slide, index) => (
+                <div
+                  key={index}
+                  style={{
+                    display: index === currentSlide ? 'flex' : 'none',
+                    flexDirection: 'column',
+                    alignItems: 'flex-start',
+                    animation: 'fadeInUp 0.9s ease forwards'
+                  }}
+                >
+                  {/* Tag / Section Label */}
+                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', marginBottom: 'clamp(14px, 2.5vh, 28px)' }}>
+                    <span style={{ width: '32px', height: '3px', background: 'var(--primary-red)', borderRadius: '2px', display: 'inline-block', boxShadow: '0 0 10px var(--primary-red)', flexShrink: 0 }}></span>
+                    <div style={{ color: 'rgba(255,255,255,0.82)', fontWeight: 600, fontSize: 'clamp(0.68rem, 1.1vw, 0.85rem)', letterSpacing: '3.5px', textTransform: 'uppercase' }}>
                       {slide.tag}
                     </div>
                   </div>
-                )}
-                <h2 style={{ fontFamily: "var(--font-heading)", color: "#ffffff", fontSize: "clamp(2.5rem, 5vw + 1rem, 4.5rem)", lineHeight: 1.1, marginBottom: "clamp(10px, 2vh, 20px)",  WebkitTextStroke: "0.5px rgba(0,0,0,0.8)", textShadow: "2px 2px 0px rgba(0,0,0,1), 0 10px 40px rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,0.9)", textAlign: "center" }}>
-                  {slide.heading1}<br/>
-                  <span style={{ color: "#ff4d4d", WebkitTextStroke: "0.5px rgba(0,0,0,0.8)", textShadow: "2px 2px 0px rgba(0,0,0,1), 0 8px 30px rgba(0, 0, 0, 1)" }}>{slide.heading2}</span>
-                  {slide.heading3 && <><br/>{slide.heading3}</>}
-                </h2>
-                <p style={{ fontSize: "clamp(1.05rem, 2vw, 1.3rem)", lineHeight: 1.8, marginBottom: "clamp(15px, 3vh, 30px)", color: "#ffffff", maxWidth: "780px", margin: "0 auto clamp(15px, 3vh, 30px)", fontWeight: 500, textShadow: "2px 2px 4px rgba(0,0,0,1), 0 8px 30px rgba(0,0,0,1)", textAlign: "center" }}>
-                  {slide.desc}
-                </p>
-                <div className="hero-buttons" style={{ display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: "center" }}>
-                  <Link href="/projects" className="btn btn-primary">
-                    Our Projects <ArrowRight style={{ marginLeft: '8px', width: '20px', height: '20px' }} />
-                  </Link>
-                  <Link href="/about/company-overview" className="btn btn-glass">Our Story</Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
 
-        {/* Scroll Indicator */}
-        <div style={{ position: 'absolute', bottom: '30px', left: '50%', transform: 'translateX(-50%)', zIndex: 3 }}>
-          <div style={{ width: '24px', height: '40px', border: '2px solid rgba(255,255,255,0.5)', borderRadius: '12px', display: 'flex', justifyContent: 'center', padding: '5px' }}>
-            <div style={{ width: '4px', height: '8px', background: 'white', borderRadius: '2px', animation: 'scrollWheel 2s infinite' }}></div>
+                  {/* Main Heading */}
+                  <h2 style={{ fontFamily: 'var(--font-heading)', color: '#ffffff', fontSize: 'clamp(2.4rem, 5.5vw, 5rem)', lineHeight: 1.05, marginBottom: 'clamp(14px, 2.5vh, 22px)', fontWeight: 800, textAlign: 'left', letterSpacing: '-0.025em', textShadow: '0 4px 30px rgba(0,0,0,0.5)' }}>
+                    {slide.heading1}{slide.heading2 && <><br /><span style={{ color: 'var(--primary-red)' }}>{slide.heading2}</span></>}{slide.heading3 && <><br />{slide.heading3}</>}
+                  </h2>
+
+                  {/* Horizontal rule accent */}
+                  <div style={{ width: 'clamp(50px, 8vw, 70px)', height: '2px', background: 'rgba(255,255,255,0.25)', borderRadius: '2px', marginBottom: 'clamp(14px, 2.5vh, 22px)' }}></div>
+
+                  {/* Description */}
+                  <p style={{ fontSize: 'clamp(0.92rem, 1.4vw, 1.12rem)', lineHeight: 1.85, color: 'rgba(255,255,255,0.82)', maxWidth: '600px', fontWeight: 400, textAlign: 'left', marginBottom: 'clamp(22px, 4vh, 40px)', letterSpacing: '0.01em' }}>
+                    {slide.desc}
+                  </p>
+
+                  {/* CTA Buttons */}
+                  <div className="hero-buttons" style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
+                    <Link href="/projects" className="btn btn-primary">
+                      Our Projects <ArrowRight style={{ marginLeft: '8px', width: '18px', height: '18px' }} />
+                    </Link>
+                    <Link href="/about/company-overview" className="btn btn-glass">Our Story</Link>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
+
+          {/* Bottom: Slide Progress Indicators */}
+          <div style={{ position: 'absolute', bottom: '26px', left: 'clamp(30px, 7vw, 100px)', zIndex: 5, display: 'flex', gap: '8px', alignItems: 'center' }}>
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                style={{
+                  height: '3px',
+                  width: index === currentSlide ? '44px' : '18px',
+                  background: index === currentSlide ? 'var(--primary-red)' : 'rgba(255,255,255,0.35)',
+                  border: 'none',
+                  borderRadius: '2px',
+                  cursor: 'pointer',
+                  padding: 0,
+                  transition: 'all 0.4s ease',
+                  boxShadow: index === currentSlide ? '0 0 8px var(--primary-red)' : 'none'
+                }}
+              />
+            ))}
+            <span style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.75rem', letterSpacing: '2px', marginLeft: '6px', fontWeight: 500 }}>
+              {String(currentSlide + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}
+            </span>
+          </div>
+
         </div>
-      </div>
       </section>
 
 
