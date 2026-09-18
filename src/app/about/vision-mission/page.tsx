@@ -161,7 +161,7 @@ export default function VisionMission() {
         </div>
       </section>
   {/* Our Direction Section */}
-      <section style={{ padding: isMobile ? "60px 20px" : "120px 20px", background: "var(--bg-light)", position: "relative" }}>
+      <section style={{ padding: isMobile ? "0px 20px 60px" : "0px 20px 120px", background: "var(--bg-light)", position: "relative" }}>
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <Reveal>
             <div className="hover-lift" style={{ 
