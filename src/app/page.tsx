@@ -503,21 +503,21 @@ export default function Home() {
                     key={idx} 
                     className="glass-panel hover-lift" 
                     style={{ 
-                      padding: "15px 25px", 
+                      padding: "12px 20px", 
                       borderRadius: "16px", 
                       border: "1px solid var(--border-soft)", 
                       background: "white",
                       boxShadow: "0 10px 30px rgba(0,0,0,0.04)",
                       display: "flex", 
                       alignItems: "center", 
-                      gap: "18px",
-                      width: "min(100%, 320px)"
+                      gap: "15px",
+                      width: "min(100%, 290px)"
                     }}
                   >
-                    <div style={{ width: "75px", height: "75px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                    <div style={{ width: "60px", height: "60px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                       <img src={client.logo} alt={client.name} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
                     </div>
-                    <span style={{ fontSize: "1rem", fontWeight: 800, color: "var(--text-dark)", letterSpacing: "0.5px", lineHeight: 1.3 }}>
+                    <span style={{ fontSize: "0.92rem", fontWeight: 800, color: "var(--text-dark)", letterSpacing: "0.5px", lineHeight: 1.3 }}>
                       {client.name}
                     </span>
                   </div>
