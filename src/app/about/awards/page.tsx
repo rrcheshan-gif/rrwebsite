@@ -92,10 +92,15 @@ export default function Awards() {
       <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto", padding: "0 16px" }}>
           <div style={{ background: "var(--white)", borderRadius: "32px", padding: isMobile ? "40px 20px" : "60px", border: "1px solid var(--border-soft)", boxShadow: "0 20px 40px rgba(0,0,0,0.04)" }}>
-            <div style={{ textAlign: "center", marginBottom: "50px" }}>
-              <Award size={40} color="var(--primary-red)" style={{ margin: "0 auto 15px" }} />
-              <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0 }}>International Certifications</h2>
-              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "15px", maxWidth: "800px", margin: "15px auto 0" }}>
+            <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "800px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+                <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>STANDARDS</h4>
+              </div>
+              <h2 style={{ fontSize: isMobile ? "2rem" : "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.1 }}>
+                International <span className="text-gradient" style={{ fontWeight: 600 }}>Certifications</span>
+              </h2>
+              <p style={{ color: "var(--text-light)", fontSize: "1.1rem", margin: "0", lineHeight: 1.7 }}>
                 Our commitment to quality, safety, and environmental responsibility is independently verified by global standards.
               </p>
             </div>
