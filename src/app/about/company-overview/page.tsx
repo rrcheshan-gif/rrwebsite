@@ -53,13 +53,13 @@ export default function AboutStory() {
           <div style={{ display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "stretch", marginBottom: "50px" }}>
             
             <div style={{ flex: "1.2", minWidth: "300px", display: "flex", flexDirection: "column" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
-                <div style={{ width: "40px", height: "3px", background: "var(--primary-red)" }}></div>
-                <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "2px",  margin: 0, fontSize: "1rem", fontFamily: "var(--font-heading)", textTransform: "uppercase" }}>Company Overview</h2>
-              </div>
-              <h3 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", margin: "0 0 20px", fontFamily: "var(--font-heading)", lineHeight: 1.2, fontWeight: 800 }}>
-                A Legacy of Engineering <span style={{ color: "var(--primary-red)" }}>Excellence.</span>
-              </h3>
+              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                  <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+                  <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>COMPANY OVERVIEW</h4>
+                </div>
+                <h3 style={{ fontSize: isMobile ? "2rem" : "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", margin: "0 0 20px", fontFamily: "var(--font-heading)", lineHeight: 1.1, fontWeight: 800 }}>
+                  A Legacy of Engineering <span className="text-gradient" style={{ fontWeight: 600 }}>Excellence.</span>
+                </h3>
               
               <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", background: "rgba(229, 57, 53, 0.05)", padding: "35px 30px", borderRadius: "20px", borderLeft: "4px solid var(--primary-red)", position: "relative" }}>
                   <span style={{ position: "absolute", top: "10px", left: "15px", fontSize: "5rem", color: "rgba(229, 57, 53, 0.1)", fontFamily: "Georgia, serif", lineHeight: 1, zIndex: 0 }}>"</span>
