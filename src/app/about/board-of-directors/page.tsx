@@ -51,9 +51,14 @@ export default function BoardOfDirectors() {
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto", padding: "0 16px" }}>
           
           <div style={{ marginBottom: "50px" }}>
-            <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0" }}>Board of Directors</h2>
-            <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", borderRadius: "2px" }}></div>
-          </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+                <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>LEADERSHIP</h4>
+              </div>
+              <h2 style={{ fontSize: isMobile ? "2rem" : "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, lineHeight: 1.1 }}>
+                Board of <span className="text-gradient" style={{ fontWeight: 600 }}>Directors</span>
+              </h2>
+            </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "30px", marginBottom: "60px" }}>
             {COMPANY_DATA.leadership.filter(l => l.role.includes('Director')).map((leader, idx) => (
