@@ -130,7 +130,7 @@ export default function YakawewaPlant() {
       </section>
 
     
-      <QuoteForm />
+      <QuoteForm defaultPlant="Yakawewa (North Central)" allowedProducts={["Asphalt Binder Course", "Asphalt Wearing Course", "Other"]} />
     </div>
   );
 }

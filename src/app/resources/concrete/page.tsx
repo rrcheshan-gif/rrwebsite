@@ -45,7 +45,7 @@ export default function ConcretePage() {
       </section>
 
       
-      <QuoteForm />
+      <QuoteForm allowedProducts={["Ready-Mix Concrete", "Other"]} />
     </div>
   );
 }

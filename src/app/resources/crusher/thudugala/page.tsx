@@ -114,7 +114,7 @@ export default function ThudugalaPlant() {
         </div>
       </section>
     
-      <QuoteForm />
+      <QuoteForm defaultPlant="Thudugala (Western)" allowedProducts={["3/4 Metal", "1/2 Metal", "1 Metal", "ABC", "Other"]} />
     </div>
   );
 }

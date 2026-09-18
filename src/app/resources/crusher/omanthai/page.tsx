@@ -198,7 +198,7 @@ export default function OmanthaiPlant() {
         </div>
       </section>
     
-      <QuoteForm />
+      <QuoteForm defaultPlant="Omanthai (Northern)" allowedProducts={["3/4 Metal", "1/2 Metal", "1 Metal", "ABC", "Other"]} />
     </div>
   );
 }

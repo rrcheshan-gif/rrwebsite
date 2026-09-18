@@ -77,7 +77,7 @@ export default function CrusherPage() {
       </section>
 
       
-      <QuoteForm />
+      <QuoteForm allowedProducts={["3/4 Metal", "1/2 Metal", "1 Metal", "ABC", "Other"]} />
     </div>
   );
 }
