@@ -6,13 +6,13 @@ import Link from "next/link";
 
 export default function ConcretePage() {
   const locations = [
-    { name: "Ampara", district: "Eastern Province" },
-    { name: "Jaffna", district: "Northern Province" },
-    { name: "Bibila", district: "Uva Province" },
-    { name: "Iththapana", district: "Western Province" },
-    { name: "Vadduvakal", district: "Mullaitivu District" },
-    { name: "Galgamuwa", district: "North Western Province" },
-    { name: "Gandara", district: "Matara District" }
+    { name: "Ampara", district: "Ampara" },
+    { name: "Jaffna", district: "Jaffna" },
+    { name: "Bibila", district: "Monaragala" },
+    { name: "Iththapana", district: "Kalutara" },
+    { name: "Vadduvakal", district: "Mullaitivu" },
+    { name: "Galgamuwa", district: "Kurunegala" },
+    { name: "Gandara", district: "Matara" }
   ];
 
   return (

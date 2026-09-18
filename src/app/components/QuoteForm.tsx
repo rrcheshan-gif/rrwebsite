@@ -58,10 +58,10 @@ export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants
 
   const allPlants = [
     { value: "Any", label: "Any / Nearest Plant" },
-    { value: "Thudugala (Western)", label: "Thudugala Plant (Western Province)" },
-    { value: "Veerapuram (North Central)", label: "Veerapuram M Sand & Crusher (North Central)" },
-    { value: "Omanthai (Northern)", label: "Omanthai Plant (Northern Province)" },
-    { value: "Yakawewa (North Central)", label: "Yakawewa Asphalt Plant (North Central)" },
+    { value: "Thudugala (Western)", label: "Thudugala Plant (Kalutara)" },
+    { value: "Veerapuram (North Central)", label: "Veerapuram M Sand & Crusher (Medawachchiya)" },
+    { value: "Omanthai (Northern)", label: "Omanthai Plant (Vavuniya)" },
+    { value: "Yakawewa (North Central)", label: "Yakawewa Asphalt Plant (Medawachchiya)" },
   
     { value: "Ampara (Concrete)", label: "Ampara Concrete Batching Plant" },
     { value: "Jaffna (Concrete)", label: "Jaffna Concrete Batching Plant" },
