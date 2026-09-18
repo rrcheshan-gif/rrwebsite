@@ -64,7 +64,7 @@ export default function YakawewaPlant() {
             
             {/* Binder Course */}
             <div style={{ background: "var(--white)", borderRadius: "16px", overflow: "hidden", boxShadow: "0 10px 40px rgba(0,0,0,0.08)", border: "1px solid rgba(0,0,0,0.03)" }}>
-              <div style={{ background: "var(--primary-dark)", padding: "30px 40px", color: "white", borderBottom: "4px solid var(--primary-red)" }}>
+              <div style={{ background: "var(--text-dark)", padding: "30px 40px", color: "white", borderBottom: "4px solid var(--primary-red)" }}>
                 <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.8rem", margin: 0 }}>Asphalt Binder Course</h3>
                 <p style={{ margin: "5px 0 0", color: "rgba(255,255,255,0.7)", fontSize: "0.95rem", letterSpacing: "1px", textTransform: "uppercase" }}>Structural Base Layer</p>
               </div>
@@ -91,7 +91,7 @@ export default function YakawewaPlant() {
 
             {/* Wearing Course */}
             <div style={{ background: "var(--white)", borderRadius: "16px", overflow: "hidden", boxShadow: "0 10px 40px rgba(0,0,0,0.08)", border: "1px solid rgba(0,0,0,0.03)" }}>
-              <div style={{ background: "var(--primary-dark)", padding: "30px 40px", color: "white", borderBottom: "4px solid var(--primary-red)" }}>
+              <div style={{ background: "var(--text-dark)", padding: "30px 40px", color: "white", borderBottom: "4px solid var(--primary-red)" }}>
                 <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.8rem", margin: 0 }}>Asphalt Wearing Course</h3>
                 <p style={{ margin: "5px 0 0", color: "rgba(255,255,255,0.7)", fontSize: "0.95rem", letterSpacing: "1px", textTransform: "uppercase" }}>Surface Protection Layer</p>
               </div>
