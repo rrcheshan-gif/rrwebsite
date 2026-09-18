@@ -135,11 +135,19 @@ export default function HistoryTimeline() {
 
       {/* Timeline */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 0', background: 'var(--bg-light)' }}>
-        <div className="container" style={{ maxWidth: '1440px', margin: '0 auto' }}>
-          
+          <div className="container" style={{ maxWidth: '1440px', margin: '0 auto' }}>
+            
+            <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "800px", padding: "0 16px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+                <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OUR JOURNEY</h4>
+              </div>
+              <h2 style={{ fontSize: isMobile ? "2rem" : "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.1 }}>
+                History &amp; <span className="text-gradient" style={{ fontWeight: 300 }}>Milestones</span>
+              </h2>
+            </div>
 
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
             {timelineEvents.map((e, i) => (
               <div key={i} className="hover-lift" style={{ 
                 display: 'flex', 
