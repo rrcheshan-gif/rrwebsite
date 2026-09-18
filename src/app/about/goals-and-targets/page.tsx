@@ -70,7 +70,7 @@ export default function GoalsAndTargets() {
         style={{ 
           backgroundImage: "linear-gradient(to bottom, rgba(15, 23, 42, 0.45) 0%, rgba(15, 23, 42, 0.65) 60%, rgba(15, 23, 42, 0.92) 100%), url('/images/page-headers/engineering-blueprint-banner.jpg')", 
           padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
-          textAlign: "left", 
+          textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 
           backgroundPosition: "center", 
@@ -93,11 +93,7 @@ export default function GoalsAndTargets() {
               <Target size={32} color="white" />
             </div>
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
-              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OUR COMPANY</h4>
-            </div>
-            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Goals & <span className="text-gradient" style={{ fontWeight: 600 }}>Targets</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Goals & <span style={{ color: "var(--primary-red)" }}>Targets</span></h1>
           
         </div>
       </section>
@@ -106,9 +102,9 @@ export default function GoalsAndTargets() {
       <section style={{ padding: isMobile ? "20px 10px" : "40px 20px" }}>
         <div className="container" style={{ margin: "0 auto", padding: "0 16px" }}>
           
-          <div style={{ textAlign: "left", marginBottom: "60px" }}>
+          <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px", lineHeight: 1.2 }}>
-              Strategic <span className="text-gradient" style={{ fontWeight: 600 }}>Goals</span>
+              Strategic <span style={{ color: "var(--primary-red)" }}>Goals</span>
             </h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "650px", margin: "0 auto", lineHeight: 1.7, textAlign: "center" }}>
               Our operational and strategic objectives are designed to continuously improve our performance across all phases of <Link href="/services" style={{ color: "var(--primary-red)", textDecoration: "none" }}>construction and engineering</Link>.

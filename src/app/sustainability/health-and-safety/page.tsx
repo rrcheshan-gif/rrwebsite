@@ -24,7 +24,7 @@ export default function HealthAndSafety() {
         style={{ 
           backgroundImage: "url('/images/page-headers/health-safety-hero-wide.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
           padding: isMobile ? "60px 20px" : "100px 20px", 
-          textAlign: "left", 
+          textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 
           backgroundPosition: "center", 
@@ -40,11 +40,7 @@ export default function HealthAndSafety() {
         </div>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
-              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>SUSTAINABILITY</h4>
-            </div>
-            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Occupational <span className="text-gradient" style={{ fontWeight: 600 }}>Health & Safety</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Occupational <span style={{ color: "var(--primary-red)" }}>Health & Safety</span></h1>
           
         </div>
       </section>

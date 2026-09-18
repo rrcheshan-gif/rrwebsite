@@ -10,27 +10,23 @@ export default function ThudugalaPlant() {
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/thudugala-plant-header.jpg')", padding: "140px 20px 40px", textAlign: "left", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/thudugala-plant-header.jpg')", padding: "140px 20px 40px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0,0,0,0.4)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "24px" }}>
             <button onClick={(e) => { e.preventDefault(); router.back(); }} style={{ background: "none", border: "none", cursor: "pointer", color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold", fontSize: "1.1rem", padding: "0 0 2px 0", outline: "none" }}>&larr; Back</button>
           </div>
           
-          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
-              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>RESOURCES</h4>
-            </div>
-            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Thudugala <span className="text-gradient" style={{ fontWeight: 600 }}>Plant</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Thudugala <span style={{ color: "var(--primary-red)" }}>Plant</span></h1>
         </div>
       </section>
 
       {/* Intro Section */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "left" }}>
+        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700,  letterSpacing: "2px", marginBottom: "10px" }}>Thudugala Crusher Plant</h4>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>Premium Quality Aggregates & Crushed Metal</h2>
-          <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "40px", textAlign: "left" }}>Fueling Infrastructure Development in the Western Province.</p>
+          <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "40px", textAlign: "center" }}>Fueling Infrastructure Development in the Western Province.</p>
 
           <div style={{ background: "var(--white)", padding: "40px", borderRadius: "12px", borderTop: "4px solid var(--primary-red)", marginBottom: "40px", boxShadow: "0 5px 15px rgba(0,0,0,0.05)", textAlign: "left" }}>
             <h3 style={{ color: "var(--text-dark)", marginBottom: "15px", fontFamily: "var(--font-heading)", fontSize: "1.5rem" }}>State-of-the-Art Crusher Technology</h3>

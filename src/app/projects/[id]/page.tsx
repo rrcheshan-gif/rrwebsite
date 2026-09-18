@@ -158,7 +158,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
           style={{
             position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', 
             background: 'rgba(0,0,0,0.95)', zIndex: 9999, display: 'flex', 
-            justifyContent: 'center', alignItems: "flex-start", padding: '20px'
+            justifyContent: 'center', alignItems: 'center', padding: '20px'
           }}
         >
           <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} onClick={() => setLightboxImg(null)}></div>
@@ -176,7 +176,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
               const prevIdx = (currentIdx - 1 + galleryImages.length) % galleryImages.length;
               setLightboxImg(galleryImages[prevIdx]);
             }}
-            style={{ position: 'absolute', left: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: "flex-start", justifyContent: 'center' }}
+            style={{ position: 'absolute', left: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
             ←
           </button>
@@ -190,7 +190,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
               limitToBounds={true}
               wheel={{ step: 0.1 }}
             >
-              <TransformComponent wrapperStyle={{ width: "100%", height: "100%", display: "flex", alignItems: "flex-start", justifyContent: "center" }}>
+              <TransformComponent wrapperStyle={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <img 
                   src={lightboxImg.startsWith('/') ? lightboxImg : `/${lightboxImg}`} 
                   alt="Fullscreen view" 
@@ -207,7 +207,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
               const nextIdx = (currentIdx + 1) % galleryImages.length;
               setLightboxImg(galleryImages[nextIdx]);
             }}
-            style={{ position: 'absolute', right: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: "flex-start", justifyContent: 'center' }}
+            style={{ position: 'absolute', right: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
             →
           </button>
@@ -230,7 +230,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
         <div className="container" style={{ position: 'relative', zIndex: 10 }}>
           <button
             onClick={() => router.back()}
-            style={{ display: 'inline-flex', alignItems: "flex-start", gap: '6px', marginBottom: '24px', color: '#ccc', textDecoration: 'none', paddingBottom: '2px', background: 'none', border: 'none', borderBottom: '1px solid #ccc', cursor: 'pointer', fontSize: '1rem', fontFamily: 'inherit' }}
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '24px', color: '#ccc', textDecoration: 'none', paddingBottom: '2px', background: 'none', border: 'none', borderBottom: '1px solid #ccc', cursor: 'pointer', fontSize: '1rem', fontFamily: 'inherit' }}
           >
             ← Back
           </button>
@@ -241,15 +241,11 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
               <span style={{ padding: '5px 16px', background: 'rgba(255, 255, 255, 0.95)', color: 'var(--text-dark)', borderRadius: "30px", fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.5px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>{project.year}</span>
             )}
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
-              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OUR PROJECTS</h4>
-            </div>
-            <h1 className="hero-heading" style={{ fontSize: 'clamp(1.5rem, 3.2vw, 2.4rem)', lineHeight: '1.3', marginBottom: '0', textShadow: '0 2px 8px rgba(0,0,0,0.5)', color: 'white' }}>{project.title}</h1>
+          <h1 className="hero-heading" style={{ fontSize: 'clamp(1.5rem, 3.2vw, 2.4rem)', lineHeight: '1.3', marginBottom: '0', textShadow: '0 2px 8px rgba(0,0,0,0.5)', color: 'white' }}>{project.title}</h1>
         </div>
         
         {/* Open in Google Maps Pill */}
-        <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', bottom: '30px', right: '5%', display: 'inline-flex', alignItems: "flex-start", gap: '8px', padding: '10px 20px', background: 'rgba(255,255,255,0.15)', color: 'white', borderRadius: '30px', fontSize: '0.9rem', fontWeight: 'bold', textDecoration: 'none', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.3)', transition: 'background 0.3s' }} onMouseOver={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.25)'} onMouseOut={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.15)'}>
+        <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', bottom: '30px', right: '5%', display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 20px', background: 'rgba(255,255,255,0.15)', color: 'white', borderRadius: '30px', fontSize: '0.9rem', fontWeight: 'bold', textDecoration: 'none', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.3)', transition: 'background 0.3s' }} onMouseOver={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.25)'} onMouseOut={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.15)'}>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
           Open in Google Maps
         </a>

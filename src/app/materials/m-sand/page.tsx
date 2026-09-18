@@ -36,9 +36,9 @@ export default function MSandPage() {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',
-        alignItems: "flex-start",
+        alignItems: 'center',
         justifyContent: 'center',
-        textAlign: "left",
+        textAlign: 'center',
         color: 'var(--white)'
       }}>
         <div style={{
@@ -50,20 +50,16 @@ export default function MSandPage() {
           <div style={{ marginBottom: '20px' }}>
             <Link href="/" style={{ color: 'var(--white)', textDecoration: 'none', opacity: 0.8 }}>Home</Link>
             <span style={{ margin: '0 10px', opacity: 0.8 }}>/</span>
-            <span className="text-gradient" style={{ fontWeight: 600 }}>M-Sand</span>
+            <span style={{ color: 'var(--primary-red)' }}>M-Sand</span>
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
-              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>MATERIALS</h4>
-            </div>
-            <h1 style={{
+          <h1 style={{
             fontFamily: 'var(--font-heading)',
             fontSize: isMobile ? '2.5rem' : '4rem',
             fontWeight: 800,
             lineHeight: 1.2,
             marginBottom: '20px'
           }}>
-            M-Sand & <span className="text-gradient" style={{ fontWeight: 600 }}>Manufactured Sand</span> in Sri Lanka
+            M-Sand & <span style={{ color: 'var(--primary-red)' }}>Manufactured Sand</span> in Sri Lanka
           </h1>
           
         </div>
@@ -76,7 +72,7 @@ export default function MSandPage() {
             display: 'flex',
             flexDirection: isMobile ? 'column' : 'row',
             gap: '50px',
-            alignItems: "flex-start"
+            alignItems: 'center'
           }}>
             <div style={{ flex: 1 }}>
               <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '20px', color: 'var(--text-dark)' }}>

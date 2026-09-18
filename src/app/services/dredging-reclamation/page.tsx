@@ -29,7 +29,7 @@ export default function DredgingReclamationPage() {
           backgroundPosition: 'center',
           color: 'var(--white)',
           padding: isMobile ? '40px 20px' : '70px 20px',
-          textAlign: "left"
+          textAlign: 'center'
         }}
       >
         <div className="absolute-back-btn" style={{ position: "absolute", top: "110px", left: "clamp(20px, 4vw, 40px)", zIndex: 99 }}>
@@ -39,17 +39,13 @@ export default function DredgingReclamationPage() {
         {/* Absolute Back Button */}
         <div style={containerStyle}>
           
-          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
-              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OUR SERVICES</h4>
-            </div>
-            <h1 style={{ 
+          <h1 style={{ 
             fontFamily: 'var(--font-heading)', 
             fontSize: isMobile ? '2.5rem' : '4rem', 
             margin: '0 0 24px',
             lineHeight: 1.2
           }}>
-            Dredging & <span className="text-gradient" style={{ fontWeight: 600 }}>Reclamation</span>
+            Dredging & <span style={{ color: 'var(--primary-red)' }}>Reclamation</span>
           </h1>
           
         </div>
@@ -58,7 +54,7 @@ export default function DredgingReclamationPage() {
       {/* 2. Capabilities */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>
         <div style={containerStyle}>
-          <div style={{ textAlign: "left", marginBottom: '40px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '40px' }}>
             <h2 style={{ 
               fontFamily: 'var(--font-heading)', 
               fontSize: isMobile ? '2rem' : '2.5rem', 
@@ -67,7 +63,7 @@ export default function DredgingReclamationPage() {
             }}>
               Expertise in Marine Environments
             </h2>
-            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6, textAlign: "left" }}>
+            <p style={{ color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.6, textAlign: 'center' }}>
               RR Construction provides specialized dredging and reclamation services for ports, harbours, and coastal developments across Sri Lanka. Utilizing our own fleet of marine equipment and adhering to ISO 14001:2015 environmental management systems, we deliver complex marine engineering projects with a focus on efficiency and sustainability.
             </p>
           </div>

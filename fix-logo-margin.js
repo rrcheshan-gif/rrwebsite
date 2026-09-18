@@ -1,11 +1,23 @@
-﻿const fs = require('fs');
-let content = fs.readFileSync('src/app/globals.css', 'utf8');
+const fs = require('fs');
+const file = 'src/app/globals.css';
+let content = fs.readFileSync(file, 'utf8');
 
-// Find the global override for .logo and remove margin-left
-content = content.replace(
-  /margin-left:\s*clamp\(20px,\s*4vw,\s*60px\)\s*!important;/g,
-  "margin-left: 0 !important;"
-);
+const oldLogoClass = `.logo {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-right: 20px !important; /* Ensure it never touches the Home link */
+  }`;
 
-fs.writeFileSync('src/app/globals.css', content, 'utf8');
-console.log('Removed left margin from logo');
+const newLogoClass = `.logo {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-right: 20px !important; /* Ensure it never touches the Home link */
+    margin-left: clamp(20px, 4vw, 60px) !important; /* Push inwards from the left edge */
+  }`;
+
+content = content.replace(oldLogoClass, newLogoClass);
+
+fs.writeFileSync(file, content, 'utf8');
+console.log('Added margin-left to logo');

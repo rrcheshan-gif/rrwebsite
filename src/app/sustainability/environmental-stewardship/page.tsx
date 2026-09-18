@@ -24,7 +24,7 @@ export default function EnvironmentalStewardship() {
         style={{ 
           backgroundImage: "url('/images/page-headers/sustainability-road-hq.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
           padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
-          textAlign: "left", 
+          textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 
           backgroundPosition: "center center", 
@@ -40,11 +40,7 @@ export default function EnvironmentalStewardship() {
         </div>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
-              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>SUSTAINABILITY</h4>
-            </div>
-            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Environmental <span className="text-gradient" style={{ fontWeight: 600 }}>Stewardship</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Environmental <span style={{ color: "var(--primary-red)" }}>Stewardship</span></h1>
           
         </div>
       </section>
@@ -52,7 +48,7 @@ export default function EnvironmentalStewardship() {
       {/* Intro Section */}
       <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto", padding: "0 16px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "50px", alignItems: "flex-start" }}>
+          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "50px", alignItems: "center" }}>
             <div>
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px",  marginBottom: "10px" }}>Iso 14001:2015</h4>
               <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.2 }}>

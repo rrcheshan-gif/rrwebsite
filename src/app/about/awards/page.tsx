@@ -67,7 +67,7 @@ export default function Awards() {
         style={{ 
           backgroundImage: "url('/images/page-headers/awards-recognition.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
           padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
-          textAlign: "left", 
+          textAlign: "center", 
           position: "relative", 
           backgroundSize: "cover", 
           backgroundPosition: "center", 
@@ -83,11 +83,7 @@ export default function Awards() {
         </div>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
-              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OUR COMPANY</h4>
-            </div>
-            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Project <span className="text-gradient" style={{ fontWeight: 600 }}>Achievements</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Project <span style={{ color: "var(--primary-red)" }}>Achievements</span></h1>
           
         </div>
       </section>
@@ -96,7 +92,7 @@ export default function Awards() {
       <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto", padding: "0 16px" }}>
           <div style={{ background: "var(--white)", borderRadius: "32px", padding: isMobile ? "40px 20px" : "60px", border: "1px solid var(--border-soft)", boxShadow: "0 20px 40px rgba(0,0,0,0.04)" }}>
-            <div style={{ textAlign: "left", marginBottom: "50px" }}>
+            <div style={{ textAlign: "center", marginBottom: "50px" }}>
               <Award size={40} color="var(--primary-red)" style={{ margin: "0 auto 15px" }} />
               <h2 style={{ fontSize: isMobile ? "2rem" : "2.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0 }}>International Certifications</h2>
               <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "15px", maxWidth: "800px", margin: "15px auto 0" }}>

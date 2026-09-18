@@ -188,16 +188,16 @@ export default function Services() {
         </div>
         <div style={{ position: 'absolute', left: 0, top: 0, width: '5px', height: '100%', background: 'var(--primary-red)', borderRadius: '0 4px 4px 0' }} />
 
-        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: "flex-start", textAlign: "left" }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
           
 
-          
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '18px' }}>
+            <div style={{ width: '36px', height: '2px', background: 'var(--primary-red)' }} />
+            <span style={{ color: 'var(--primary-red)', fontWeight: 800, letterSpacing: '3px',  fontSize: '0.82rem' }}>Engineering Capabilities</span>
+            <div style={{ width: '36px', height: '2px', background: 'var(--primary-red)' }} />
+          </div>
 
-          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
-              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OUR SERVICES</h4>
-            </div>
-            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Technology & <span className="text-gradient" style={{ fontWeight: 600 }}>Services</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Technology & <span style={{ color: "var(--primary-red)" }}>Services</span></h1>
 
           
         </div>
@@ -209,9 +209,9 @@ export default function Services() {
       <section style={{ padding: isMobile ? '0 12px 60px' : '0 20px 100px' }}>
         <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
 
-          <div style={{ display: 'flex', alignItems: "flex-start", gap: '12px', marginBottom: '16px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
             <div style={{ width: '36px', height: '2px', background: 'var(--primary-red)' }} />
-            <span className="text-gradient" style={{ fontWeight: 600 }}>Our Services</span>
+            <span style={{ color: 'var(--primary-red)', fontWeight: 800, letterSpacing: '3px',  fontSize: '0.82rem' }}>Our Services</span>
           </div>
 
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '2rem' : '2.8rem', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 44px', lineHeight: 1.15 }}>
