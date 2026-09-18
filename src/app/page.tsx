@@ -460,29 +460,27 @@ export default function Home() {
                 </div>
               </div>
             
-            {/* Tightly Integrated Major Clients Footer Strip */}
-          <div 
-            style={{ 
-              width: "100%", 
-              marginTop: "15px", 
-              paddingTop: "20px", 
-              borderTop: "1px solid var(--border-soft)", 
-              display: "flex", 
-              flexDirection: "column", 
-              alignItems: "center", 
-              textAlign: "center", 
-              gap: "15px", 
-              position: "relative", 
-              zIndex: 2 
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <div style={{ width: "25px", height: "1px", background: "var(--primary-red)" }}></div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2.5px",  margin: 0, fontSize: "0.82rem" }}>
-                Trusted By Our Major Clients
-              </h4>
-              <div style={{ width: "25px", height: "1px", background: "var(--primary-red)" }}></div>
-            </div>
+            {/* Tightly Integrated Major Clients Section */}
+            <div 
+              style={{ 
+                width: "100%", 
+                marginTop: "40px", 
+                paddingTop: "60px", 
+                borderTop: "1px solid var(--border-soft)", 
+                position: "relative", 
+                zIndex: 2 
+              }}
+            >
+              <div style={{ marginBottom: "50px", maxWidth: "800px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                  <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
+                  <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Trusted Partners</h4>
+                </div>
+                <h2 style={{ fontSize: "clamp(2.2rem, 6vw, 3.2rem)", lineHeight: 1.1, marginBottom: "20px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>Our Major <span className="text-gradient" style={{ fontWeight: 300 }}>Clients</span></h2>
+                <p style={{ fontSize: "1.1rem", color: "var(--text-light)", marginBottom: "30px", lineHeight: 1.8 }}>
+                  Collaborating with leading government authorities and international bodies to deliver nation-building infrastructure projects across Sri Lanka.
+                </p>
+              </div>
 
             <div 
                 style={{ 
