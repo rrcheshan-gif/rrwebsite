@@ -128,10 +128,10 @@ export default function Navbar() {
                     </button>
                   </div>
                   <ul className="dropdown-menu">
-                    <li><Link href="/resources/asphalt" onClick={() => setMobileMenuOpen(false)}>Asphalt</Link></li>
-                    <li><Link href="/resources/crusher" onClick={() => setMobileMenuOpen(false)}>Crusher</Link></li>
-                    <li><Link href="/resources/sand" onClick={() => setMobileMenuOpen(false)}>Sand</Link></li>
-                    <li><Link href="/resources/concrete" onClick={() => setMobileMenuOpen(false)}>Concrete</Link></li>
+                    <li><Link href="/resources/asphalt" onClick={() => setMobileMenuOpen(false)}>RR Asphalt</Link></li>
+                    <li><Link href="/resources/crusher" onClick={() => setMobileMenuOpen(false)}>RR Crusher</Link></li>
+                    <li><Link href="/resources/sand" onClick={() => setMobileMenuOpen(false)}>RR Sand</Link></li>
+                    <li><Link href="/resources/concrete" onClick={() => setMobileMenuOpen(false)}>RR Concrete</Link></li>
                   </ul>
                 </li>
                 
