@@ -135,7 +135,7 @@ export default function QuarriesAggregates() {
 
       {/* Introduction Section */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "left" }}>
+        <div className="container" style={{ maxWidth: "1440px", margin: "0 auto", textAlign: "left" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
             <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
             <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>MATERIALS</h4>
