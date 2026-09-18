@@ -59,7 +59,7 @@ export default function AsphaltProductionPage() {
       </section>
 
       
-      <QuoteForm allowedProducts={["Asphalt Binder Course", "Asphalt Wearing Course", "Other"]} />
+      
     </div>
   );
 }

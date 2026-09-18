@@ -59,7 +59,7 @@ export default function SandPage() {
       </section>
 
       
-      <QuoteForm allowedProducts={["M-Sand", "Other"]} />
+      
     </div>
   );
 }
