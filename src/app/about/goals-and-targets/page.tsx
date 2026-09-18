@@ -108,7 +108,7 @@ export default function GoalsAndTargets() {
                 <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OBJECTIVES</h4>
               </div>
               <h2 style={{ fontSize: isMobile ? "2rem" : "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.1 }}>
-                Strategic <span className="text-gradient" style={{ fontWeight: 600 }}>Goals</span>
+                Strategic <span className="text-gradient" style={{ fontWeight: 300 }}>Goals</span>
               </h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.7, textAlign: "left", margin: 0 }}>
               Our operational and strategic objectives are designed to continuously improve our performance across all phases of <Link href="/services" style={{ color: "var(--primary-red)", textDecoration: "none" }}>construction and engineering</Link>.
@@ -214,7 +214,7 @@ export default function GoalsAndTargets() {
                 <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>FUTURE FOCUS</h4>
               </div>
               <h2 style={{ fontSize: isMobile ? "2rem" : "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0", lineHeight: 1.1 }}>
-                Looking <span className="text-gradient" style={{ fontWeight: 600 }}>Ahead</span>
+                Looking <span className="text-gradient" style={{ fontWeight: 300 }}>Ahead</span>
               </h2>
             </div>
           <div style={{ width: "100%" }}>

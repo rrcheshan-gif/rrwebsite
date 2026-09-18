@@ -58,7 +58,7 @@ export default function AboutStory() {
                   <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>COMPANY OVERVIEW</h4>
                 </div>
                 <h3 style={{ fontSize: isMobile ? "2rem" : "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", margin: "0 0 20px", fontFamily: "var(--font-heading)", lineHeight: 1.1, fontWeight: 800 }}>
-                  A Legacy of Engineering <span className="text-gradient" style={{ fontWeight: 600 }}>Excellence.</span>
+                  A Legacy of Engineering <span className="text-gradient" style={{ fontWeight: 300 }}>Excellence.</span>
                 </h3>
               
               <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", background: "rgba(229, 57, 53, 0.05)", padding: "35px 30px", borderRadius: "20px", borderLeft: "4px solid var(--primary-red)", position: "relative" }}>

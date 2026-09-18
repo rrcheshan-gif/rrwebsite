@@ -115,7 +115,7 @@ export default function VisionMission() {
                   <div style={{ width: "30px", height: "2px", background: "var(--primary-red)" }}></div>
                   <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.85rem" }}>FUTURE</h4>
                 </div>
-                <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "25px", letterSpacing: "-1px" }}>Our <span className="text-gradient" style={{ fontWeight: 600 }}>Vision</span></h2>
+                <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "25px", letterSpacing: "-1px" }}>Our <span className="text-gradient" style={{ fontWeight: 300 }}>Vision</span></h2>
               
               <p style={{ fontSize: "1.2rem", lineHeight: 1.8, color: "var(--text-light)", margin: 0, fontWeight: 500, position: "relative", paddingLeft: "25px", borderLeft: "4px solid var(--primary-red)" }}>
                 To be a leading force in Sri Lanka's infrastructure development, delivering world-class engineering solutions that connect communities, enable progress, and build a stronger, more resilient future.
@@ -151,7 +151,7 @@ export default function VisionMission() {
                   <div style={{ width: "30px", height: "2px", background: "var(--primary-red)" }}></div>
                   <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.85rem" }}>PURPOSE</h4>
                 </div>
-                <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "25px", letterSpacing: "-1px" }}>Our <span className="text-gradient" style={{ fontWeight: 600 }}>Mission</span></h2>
+                <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "25px", letterSpacing: "-1px" }}>Our <span className="text-gradient" style={{ fontWeight: 300 }}>Mission</span></h2>
               
               <p style={{ fontSize: "1.2rem", lineHeight: 1.8, color: "var(--text-light)", margin: 0, fontWeight: 500, position: "relative", paddingLeft: "25px", borderLeft: "4px solid var(--primary-red)" }}>
                 To deliver complex infrastructure and heavy civil engineering projects with excellence, innovation, and integrity — combining experienced people, advanced technology, integrated resources, uncompromising quality, and a strong commitment to safety, sustainability, and client satisfaction.
@@ -189,7 +189,7 @@ export default function VisionMission() {
                   <div style={{ width: "30px", height: "2px", background: "var(--primary-red)" }}></div>
                   <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.85rem" }}>STRATEGY</h4>
                 </div>
-                <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "25px", letterSpacing: "-1px" }}>Our <span className="text-gradient" style={{ fontWeight: 600 }}>Direction</span></h2>
+                <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "25px", letterSpacing: "-1px" }}>Our <span className="text-gradient" style={{ fontWeight: 300 }}>Direction</span></h2>
               
               <div style={{ position: "relative", paddingLeft: isMobile ? "20px" : "30px", borderLeft: "4px solid var(--primary-red)" }}>
                 <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, marginBottom: "25px", fontWeight: 500 }}>
@@ -214,7 +214,7 @@ export default function VisionMission() {
                   <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>PRINCIPLES</h4>
                 </div>
                 <h2 style={{ fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, lineHeight: 1.1 }}>
-                  Our Core <span className="text-gradient" style={{ fontWeight: 600 }}>Values</span>
+                  Our Core <span className="text-gradient" style={{ fontWeight: 300 }}>Values</span>
                 </h2>
               </div>
           </Reveal>

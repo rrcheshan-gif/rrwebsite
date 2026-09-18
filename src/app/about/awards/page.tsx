@@ -98,7 +98,7 @@ export default function Awards() {
                 <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>STANDARDS</h4>
               </div>
               <h2 style={{ fontSize: isMobile ? "2rem" : "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.1 }}>
-                International <span className="text-gradient" style={{ fontWeight: 600 }}>Certifications</span>
+                International <span className="text-gradient" style={{ fontWeight: 300 }}>Certifications</span>
               </h2>
               <p style={{ color: "var(--text-light)", fontSize: "1.1rem", margin: "0", lineHeight: 1.7 }}>
                 Our commitment to quality, safety, and environmental responsibility is independently verified by global standards.

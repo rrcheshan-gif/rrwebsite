@@ -56,7 +56,7 @@ export default function BoardOfDirectors() {
                 <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>LEADERSHIP</h4>
               </div>
               <h2 style={{ fontSize: isMobile ? "2rem" : "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, lineHeight: 1.1 }}>
-                Board of <span className="text-gradient" style={{ fontWeight: 600 }}>Directors</span>
+                Board of <span className="text-gradient" style={{ fontWeight: 300 }}>Directors</span>
               </h2>
             </div>
 

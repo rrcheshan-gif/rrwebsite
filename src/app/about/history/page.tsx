@@ -95,7 +95,7 @@ export default function HistoryTimeline() {
     const firstPart = words.slice(0, mid).join(' ');
     const secondPart = words.slice(mid).join(' ');
     return (
-      <>{firstPart} <span className="text-gradient" style={{ fontWeight: 600 }}>{secondPart}</span></>
+      <>{firstPart} <span className="text-gradient" style={{ fontWeight: 300 }}>{secondPart}</span></>
     );
   };
 
