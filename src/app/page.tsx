@@ -142,7 +142,7 @@ export default function Home() {
             backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', 
             WebkitMaskImage: 'radial-gradient(550px 280px at center, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0) 100%)', 
             maskImage: 'radial-gradient(550px 280px at center, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0) 100%)', 
-            background: 'radial-gradient(550px 280px at center, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.2) 50%, transparent 100%)',
+            background: 'radial-gradient(550px 280px at center, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.3) 50%, transparent 100%)',
             zIndex: 2 
           }}></div>
           {/* Bottom fade */}
@@ -247,7 +247,7 @@ export default function Home() {
                 )}
 
                   {/* Main Heading */}
-                  <h2 style={{ fontFamily: 'var(--font-heading)', color: '#ffffff', fontSize: 'clamp(2.4rem, 5.5vw, 4.8rem)', lineHeight: 1.1, marginBottom: 'clamp(14px, 2.5vh, 22px)', fontWeight: 800, textAlign: 'center', letterSpacing: '-0.02em', textShadow: '0 4px 20px rgba(0,0,0,0.6), 0 10px 40px rgba(0,0,0,0.5)' }}>
+                  <h2 style={{ fontFamily: 'var(--font-heading)', color: '#ffffff', fontSize: 'clamp(2.4rem, 5.5vw, 4.8rem)', lineHeight: 1.1, marginBottom: 'clamp(14px, 2.5vh, 22px)', fontWeight: 800, textAlign: 'center', letterSpacing: '-0.02em', WebkitTextStroke: '1.5px rgba(0,0,0,0.6)', textShadow: '3px 3px 0px rgba(0,0,0,0.8), 0 10px 30px rgba(0,0,0,0.9)' }}>
                     {slide.heading1}{slide.heading2 && <><br /><span style={{ color: '#ff4444', textShadow: '0 4px 30px rgba(255, 68, 68, 0.4)' }}>{slide.heading2}</span></>}{slide.heading3 && <><br />{slide.heading3}</>}
                   </h2>
 
@@ -257,7 +257,7 @@ export default function Home() {
                   )}
 
                   {/* Description */}
-                  <p style={{ fontSize: 'clamp(0.95rem, 1.5vw, 1.25rem)', lineHeight: 1.8, color: '#ffffff', maxWidth: '780px', fontWeight: 500, textAlign: 'center', marginBottom: 'clamp(22px, 4vh, 40px)', textShadow: '0 2px 10px rgba(0,0,0,0.6), 0 4px 20px rgba(0,0,0,0.5)' }}>
+                  <p style={{ fontSize: 'clamp(0.95rem, 1.5vw, 1.25rem)', lineHeight: 1.8, color: '#ffffff', maxWidth: '780px', fontWeight: 500, textAlign: 'center', marginBottom: 'clamp(22px, 4vh, 40px)', textShadow: '1px 1px 2px rgba(0,0,0,1), 0 4px 15px rgba(0,0,0,0.9)' }}>
                     {slide.desc}
                   </p>
 
