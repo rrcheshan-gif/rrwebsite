@@ -115,7 +115,7 @@ export default function Navbar() {
                 </div>
                 <ul className="dropdown-menu">
                   <li><Link href="/services" onClick={() => setMobileMenuOpen(false)}>Technology &amp; Services</Link></li>
-                  <li><Link href="/facilities" onClick={() => setMobileMenuOpen(false)}>Quarries &amp; Aggregates</Link></li>
+                  
                   <li><Link href="/services/research-development" onClick={() => setMobileMenuOpen(false)}>Research &amp; Development</Link></li>
                 </ul>
               </li>
