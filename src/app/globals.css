@@ -264,8 +264,8 @@ ul {
 }
 
 .hero-subheading {
-  font-size: 1.25rem;
-  font-weight: 400;
+    font-size: 1.25rem;
+    font-weight: 600;
   max-width: 650px;
   margin-bottom: 2rem;
 }
@@ -572,8 +572,8 @@ ul {
 
 
 .nav-links a,
-.dropdown-header a {
-  font-weight: 700;
+  .dropdown-header a {
+    font-weight: 600;
   font-size: clamp(0.75rem, 0.85vw, 0.95rem);
   letter-spacing: 0.3px;
   color: var(--text-dark);
