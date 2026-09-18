@@ -60,6 +60,8 @@ export default function SandPage() {
 
       
       
+    
+      <QuoteForm allowedPlants={["Veerapuram (North Central)"]} allowedProducts={["M-Sand", "Other"]} />
     </div>
   );
 }

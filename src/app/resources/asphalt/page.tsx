@@ -60,6 +60,8 @@ export default function AsphaltProductionPage() {
 
       
       
+    
+      <QuoteForm allowedPlants={["Yakawewa (North Central)"]} allowedProducts={["Asphalt Binder Course", "Asphalt Wearing Course", "Other"]} />
     </div>
   );
 }

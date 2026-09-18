@@ -78,6 +78,8 @@ export default function CrusherPage() {
 
       
       
+    
+      <QuoteForm allowedPlants={["Thudugala (Western)", "Omanthai (Northern)"]} allowedProducts={["3/4 Metal", "1/2 Metal", "1 Metal", "ABC", "Other"]} />
     </div>
   );
 }

@@ -91,6 +91,8 @@ export default function ConcretePage() {
       </section>
 
       
+    
+      <QuoteForm allowedPlants={["Ampara (Concrete)", "Jaffna (Concrete)", "Bibila (Concrete)", "Iththapana (Concrete)", "Vadduvakal (Concrete)", "Galgamuwa (Concrete)", "Gandara (Concrete)"]} allowedProducts={["Ready-Mix Concrete", "Other"]} />
     </div>
   );
 }

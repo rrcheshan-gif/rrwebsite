@@ -4,10 +4,11 @@ import { useState } from "react";
 
 interface QuoteFormProps {
   defaultPlant?: string;
+  allowedPlants?: string[];
   allowedProducts?: string[];
 }
 
-export default function QuoteForm({ defaultPlant, allowedProducts }: QuoteFormProps) {
+export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants }: QuoteFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
@@ -75,9 +76,15 @@ export default function QuoteForm({ defaultPlant, allowedProducts }: QuoteFormPr
     ? allProducts.filter(p => allowedProducts.includes(p.value))
     : allProducts;
 
-  const displayPlants = defaultPlant
-    ? allPlants.filter(p => p.value === defaultPlant)
-    : allPlants;
+  
+  let displayPlants = allPlants;
+  if (allowedPlants) {
+    displayPlants = displayPlants.filter(p => allowedPlants.includes(p.value) || p.value === "Any");
+  }
+  if (defaultPlant) {
+    displayPlants = displayPlants.filter(p => p.value === defaultPlant);
+  }
+
 
   return (
     <section id="inquiry" style={{ padding: "60px 20px 50px", background: "var(--bg-base)" }}>
