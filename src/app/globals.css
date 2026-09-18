@@ -1790,7 +1790,7 @@ ul {
     align-items: center !important;
     gap: 10px !important;
     margin-right: 20px !important; 
-    margin-left: clamp(20px, 4vw, 60px) !important;
+    margin-left: 0 !important;
   }
 
 .nav-logo-img, .footer-logo-img {
