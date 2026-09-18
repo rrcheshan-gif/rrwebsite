@@ -88,8 +88,8 @@ export default function Home() {
   return (
     <>
       {/* FULLSCREEN HERO SECTION */}
-      <section className="hero-contained" style={{ padding: '0', paddingTop: '0', paddingBottom: '0', backgroundColor: '#0f172a', display: 'block' }}>
-        <div style={{ position: 'relative', width: '100%', height: 'clamp(600px, 100vh, 1000px)', overflow: 'hidden', transform: 'translateZ(0)', isolation: 'isolate', WebkitMaskImage: '-webkit-radial-gradient(white, black)', marginTop: '80px' }}>
+      <section className="hero-contained" style={{ padding: '0', margin: '0', backgroundColor: '#0f172a', display: 'block', position: 'relative' }}>
+        <div style={{ position: 'relative', width: '100%', height: '100vh', minHeight: '600px', overflow: 'hidden', transform: 'translateZ(0)', isolation: 'isolate', WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}>
 
           {/* Background Slider Images */}
           {slides.map((slide, index) => (

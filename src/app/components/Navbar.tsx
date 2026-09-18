@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -48,7 +48,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className={`navbar-wrapper ${scrolled ? "scrolled" : "default-nav"}`}>
+      <header className={`navbar-wrapper ${scrolled ? "scrolled" : "home-nav"}`}>
         <div className="container">
           <nav className="navbar">
             <a href="/" className="logo" onClick={() => setMobileMenuOpen(false)}>
