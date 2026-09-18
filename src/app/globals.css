@@ -1801,11 +1801,11 @@ ul {
 }
 
 .logo-text, .footer-logo-text {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    transform: translateY(-5px) !important;
-  }
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      transform: translateY(2px) !important;
+    }
 
 .logo-title {
   font-size: 1.35rem !important;
