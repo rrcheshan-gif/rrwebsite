@@ -439,7 +439,7 @@ export default function Home() {
             </div>
             
             <div style={{ flex: 1, minWidth: 'min(100%, 350px)', position: "relative", marginTop: "20px" }}>
-                <div className="glass-panel hover-lift" style={{ borderRadius: "20px", overflow: "hidden", background: "var(--white)", border: "1px solid var(--border-soft)", display: "flex", flexDirection: "column", height: "100%", boxShadow: "0 10px 40px rgba(0,0,0,0.05)" }}>
+                <div className="glass-panel hover-lift" style={{ borderRadius: "20px", overflow: "hidden", background: "var(--white)", border: "1px solid rgba(211, 47, 47, 0.4)", display: "flex", flexDirection: "column", height: "100%", boxShadow: "0 10px 40px rgba(0,0,0,0.05)" }}>
                   <div style={{ position: "relative", height: "240px", width: "100%", overflow: "hidden" }}>
                     <img src="/images/news/wirtgen-milling-machine/img-1.jpg" alt="Wirtgen W 200 F Milling Machine" style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease" }} className="img-hover-zoom" />
                     <div style={{ position: "absolute", top: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "6px 14px", borderRadius: "30px", fontSize: "0.85rem", fontWeight: "bold", letterSpacing: "1px" }}>Machinery & Technology</div>
