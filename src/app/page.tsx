@@ -365,22 +365,19 @@ export default function Home() {
           </div>
           
           <div style={{ flex: "1 1 min(100%, 500px)", display: "flex", flexDirection: "column", justifyContent: "center", paddingLeft: "clamp(0px, 4vw, 40px)" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "25px" }}>
-              <div style={{ width: "50px", height: "4px", background: "var(--primary-red)", borderRadius: "2px" }}></div>
-              <h2 style={{ color: "var(--primary-red)", fontWeight: 800, letterSpacing: "3px",  margin: 0, fontSize: "0.95rem" }}>Corporate Profile</h2>
-            </div>
-            
-            <h1 style={{ fontSize: "clamp(2.2rem, 3.5vw, 3.2rem)", lineHeight: 1.15, marginBottom: "25px", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800 }}>
-              RR Construction<br />(Pvt) Ltd
-              <span style={{ color: "var(--primary-red)", fontWeight: 600, fontSize: "0.45em", letterSpacing: "2px", display: "block", marginTop: "15px",  }}>Construction & Heavy Civil Engineering In Sri Lanka</span>
-            </h1>
+            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
+                <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Corporate Profile</h4>
+              </div>
+              <h2 style={{ fontSize: "clamp(2.2rem, 6vw, 3.2rem)", lineHeight: 1.1, marginBottom: "15px", color: "var(--text-dark)", fontFamily: "var(--font-heading)" }}>RR Construction <span className="text-gradient" style={{ fontWeight: 300 }}>(Pvt) Ltd</span></h2>
+              <h3 style={{ color: "var(--primary-red)", fontWeight: 600, fontSize: "1.1rem", letterSpacing: "1px", marginBottom: "25px" }}>Construction & Heavy Civil Engineering In Sri Lanka</h3>
             
             <p style={{ color: "var(--text-light)", marginBottom: "40px", lineHeight: 1.8, fontSize: "1.1rem" }}>
               With a self-owned fleet of {COMPANY_DATA.machineryFleet} heavy construction machines, our capabilities go beyond earthworks and structural concrete. We execute large-scale highways, bridges, irrigation canals, maritime construction, dredging, and heavy steel fabrication. We bring the full strength of our heavy civil engineering resources to every site, ensuring Sri Lanka's infrastructure is built with absolute reliability.
             </p>
         
             <div>
-              <Link href="/about/history" className="btn btn-primary hover-glow" style={{ padding: "16px 36px", fontSize: "1.0rem" }}>Discover Our History</Link>
+              <Link href="/about/history" className="btn-glass-red" style={{ display: "inline-flex", textDecoration: "none", alignItems: "center", gap: "8px" }}>Discover Our History <ArrowRight size={18} /></Link>
             </div>
           </div>
         </div>
