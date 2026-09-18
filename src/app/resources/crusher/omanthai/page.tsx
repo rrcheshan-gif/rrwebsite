@@ -1,10 +1,12 @@
 ﻿"use client";
+import { useRouter } from "next/navigation";
 import QuoteForm from "@/app/components/QuoteForm";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function OmanthaiPlant() {
+  const router = useRouter();
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
   const galleryImages = [
     'omanthai/plant-1.jpg',

@@ -1,10 +1,12 @@
 ﻿"use client";
+import { useRouter } from "next/navigation";
 import QuoteForm from "@/app/components/QuoteForm";
 
 import Link from "next/link";
 import { useEffect } from "react";
 
 export default function ThudugalaPlant() {
+  const router = useRouter();
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Page Header */}

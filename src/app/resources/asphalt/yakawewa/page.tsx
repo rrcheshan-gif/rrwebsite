@@ -1,4 +1,5 @@
 "use client";
+import { useRouter } from "next/navigation";
 
 import QuoteForm from "@/app/components/QuoteForm";
 
@@ -6,6 +7,7 @@ import Link from "next/link";
 import { CheckCircle } from "lucide-react";
 
 export default function YakawewaPlant() {
+  const router = useRouter();
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Page Header */}
@@ -13,7 +15,7 @@ export default function YakawewaPlant() {
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0,0,0,0.6)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ textAlign: "left", marginBottom: "24px" }}>
-            <Link href="/resources" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold" }}>Back to Resources</Link>
+            <button onClick={(e) => { e.preventDefault(); router.back(); }} style={{ background: "none", border: "none", cursor: "pointer", color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold", fontSize: "1rem", padding: 0 }}>← Go Back</button>
           </div>
           
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Yakawewa <span style={{ color: "var(--primary-red)" }}>Asphalt Plant</span></h1>
