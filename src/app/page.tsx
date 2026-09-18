@@ -490,7 +490,7 @@ export default function Home() {
                   alignItems: "center", 
                   gap: "20px", 
                   width: "100%", 
-                  maxWidth: "1100px" 
+                  maxWidth: "1400px" 
                 }}
               >
                 {[
@@ -514,7 +514,7 @@ export default function Home() {
                       display: "flex", 
                       alignItems: "center", 
                       gap: "18px",
-                      width: "min(100%, 340px)"
+                      width: "min(100%, 320px)"
                     }}
                   >
                     <div style={{ width: "75px", height: "75px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
