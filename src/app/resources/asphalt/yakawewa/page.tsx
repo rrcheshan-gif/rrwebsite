@@ -27,7 +27,7 @@ export default function YakawewaPlant() {
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700,  letterSpacing: "2px", marginBottom: "10px" }}>Medawachchiya (North Central Province)</h4>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>High-Performance Hot Mix Asphalt</h2>
-          <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "40px" }}>Fueling highway and expressway development across Sri Lanka.</p>
+          <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "40px", textAlign: "center" }}>Fueling highway and expressway development across Sri Lanka.</p>
 
           <div style={{ background: "var(--white)", padding: "40px", borderRadius: "12px", borderTop: "4px solid var(--primary-red)", marginBottom: "40px", boxShadow: "0 5px 15px rgba(0,0,0,0.05)", textAlign: "left" }}>
             <h3 style={{ color: "var(--text-dark)", marginBottom: "15px", fontFamily: "var(--font-heading)", fontSize: "1.5rem" }}>Advanced Asphalt Batching Technology</h3>

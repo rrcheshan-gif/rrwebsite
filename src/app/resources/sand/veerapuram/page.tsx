@@ -99,7 +99,7 @@ export default function VeerapuramPlant() {
         <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700,  letterSpacing: "2px", marginBottom: "10px" }}>Veerapuram M Sand Plant and Crusher Plant</h4>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>Choose M-SAND for your all kind of Constructions</h2>
-          <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "40px" }}>The Modern Alternative to the River Sand.</p>
+          <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "40px", textAlign: "center" }}>The Modern Alternative to the River Sand.</p>
 
           <div style={{ background: "var(--white)", padding: "40px", borderRadius: "12px", borderTop: "4px solid var(--primary-red)", marginBottom: "40px", boxShadow: "0 5px 15px rgba(0,0,0,0.05)", textAlign: "left" }}>
             <h3 style={{ color: "var(--text-dark)", marginBottom: "15px", fontFamily: "var(--font-heading)", fontSize: "1.5rem" }}>What is M-Sand?</h3>
