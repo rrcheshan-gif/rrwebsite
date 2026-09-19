@@ -8,13 +8,13 @@ import Link from "next/link";
 export default function ConcretePage() {
   const router = useRouter();
   const locations = [
-    { name: "Ampara", district: "Ampara" },
-    { name: "Jaffna", district: "Jaffna" },
-    { name: "Bibila", district: "Monaragala" },
-    { name: "Iththapana", district: "Kalutara" },
-    { name: "Vadduvakal", district: "Mullaitivu" },
-    { name: "Galgamuwa", district: "Kurunegala" },
-    { name: "Gandara", district: "Matara" }
+    { name: "Ampara", district: "Ampara", image: "/images/omanthai-1.jpg" },
+    { name: "Jaffna", district: "Jaffna", image: "/images/omanthai-2.jpg" },
+    { name: "Bibila", district: "Monaragala", image: "/images/omanthai-3.jpg" },
+    { name: "Iththapana", district: "Kalutara", image: "/images/thudugala-1.jpg" },
+    { name: "Vadduvakal", district: "Mullaitivu", image: "/images/thudugala-2.jpg" },
+    { name: "Galgamuwa", district: "Kurunegala", image: "/images/thudugala-3.jpg" },
+    { name: "Gandara", district: "Matara", image: "/images/kalutara-crusher-plant.jpg" }
   ];
 
   return (
