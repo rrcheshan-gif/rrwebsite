@@ -10,7 +10,6 @@ export default function ConcretePage() {
   const locations = [
     { name: "Ampara", district: "Ampara", image: "/images/ampara-concrete.jpg" },
     { name: "Jaffna", district: "Jaffna", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" },
-    { name: "Bibila", district: "Monaragala", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" },
     { name: "Iththapana", district: "Kalutara", image: "/images/iththapana-concrete.jpg" },
     { name: "Vadduvakal", district: "Mullaitivu", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" },
     { name: "Galgamuwa", district: "Kurunegala", image: "/images/galgamuwa-concrete.jpg" },
@@ -86,7 +85,7 @@ export default function ConcretePage() {
 
       
     
-      <QuoteForm allowedPlants={["Ampara (Concrete)", "Jaffna (Concrete)", "Bibila (Concrete)", "Iththapana (Concrete)", "Vadduvakal (Concrete)", "Galgamuwa (Concrete)", "Gandara (Concrete)"]} allowedProducts={["Ready-Mix Concrete", "Other"]} />
+      <QuoteForm allowedPlants={["Ampara (Concrete)", "Jaffna (Concrete)", "Iththapana (Concrete)", "Vadduvakal (Concrete)", "Galgamuwa (Concrete)", "Gandara (Concrete)"]} allowedProducts={["Ready-Mix Concrete", "Other"]} />
     </div>
   );
 }
