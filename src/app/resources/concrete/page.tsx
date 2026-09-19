@@ -54,7 +54,11 @@ export default function ConcretePage() {
             {locations.map((loc, index) => (
               <div key={index} style={{ background: "var(--white)", borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", transition: "transform 0.2s ease" }}>
                 <div style={{ minWidth: "min(100%, 300px)", position: "relative" }} className="img-polish">
-                  <img className="img-polished img-hover-zoom" src={loc.image} alt={loc.name + " Concrete Plant"} style={{ width: "100%", height: "250px", objectFit: "cover", display: "block" }} />
+                  {loc.image.includes('placehold.co') ? (
+                    <div style={{ width: "100%", height: "250px", backgroundColor: "#f1f5f9" }} />
+                  ) : (
+                    <img className="img-polished img-hover-zoom" src={loc.image} alt={loc.name + " Concrete Plant"} style={{ width: "100%", height: "250px", objectFit: "cover", display: "block" }} />
+                  )}
                   <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px",  letterSpacing: "1px" }}>{loc.district}</span>
                 </div>
                 <div style={{ padding: "20px", display: "flex", flexDirection: "column", flex: 1 }}>
