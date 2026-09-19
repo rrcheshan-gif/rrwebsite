@@ -103,7 +103,7 @@ export default function KeyDataPage() {
              </div>
              <div style={{ marginTop: "auto", position: "relative" }}>
                  <div style={{ width: "100%", height: "250px", position: "relative" }}>
-                     <img src="/images/home/hero-single.jpg" alt="RR Construction Building" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                     <img src="/images/about/head-office-building.jpg" alt="RR Construction Head Office" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                      
                      <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(to bottom right, var(--white) 20%, transparent 60%)" }} />
                  </div>
