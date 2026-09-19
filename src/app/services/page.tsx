@@ -205,82 +205,27 @@ export default function Services() {
 
 
 
-      {/* ── ALL SERVICES GRID ── */}
-      <section style={{ padding: isMobile ? '0 12px 60px' : '0 20px 100px' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
-
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
-            <div style={{ width: '36px', height: '2px', background: 'var(--primary-red)' }} />
-            <span style={{ color: 'var(--primary-red)', fontWeight: 800, letterSpacing: '3px',  fontSize: '0.82rem' }}>Our Services</span>
-          </div>
-
-          <div style={{ textAlign: "left", marginBottom: "44px", maxWidth: "800px" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+      {/* ✨ TECHNOLOGY & SERVICES OVERVIEW ✨ */}
+        <section style={{ padding: isMobile ? '30px 12px 60px' : '40px 20px 100px' }}>
+          <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "15px", marginBottom: "20px" }}>
               <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>SERVICES</h4>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>EXCELLENCE IN ENGINEERING</h4>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
             </div>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", margin: 0, fontWeight: 800, lineHeight: 1.1 }}>
-              All Engineering <span className="text-gradient" style={{ fontWeight: 300 }}>Disciplines</span>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 3rem)", color: "var(--text-dark)", marginBottom: "30px", fontWeight: 800, lineHeight: 1.2 }}>
+              Advanced Solutions for <span className="text-gradient" style={{ fontWeight: 300 }}>Complex Infrastructure</span>
             </h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
+              RR Construction brings three decades of heavy civil engineering expertise across Sri Lanka. We integrate state-of-the-art construction technology, a massive self-owned machinery fleet, and industry-leading technical experts to deliver projects of national significance. 
+            </p>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8 }}>
+              Our operations span across Highway & Expressway construction, Maritime & Harbour engineering, complex Bridge structures, and advanced Water Infrastructure. We combine rigorous quality management with innovative engineering methodologies to ensure unparalleled structural integrity and on-time project delivery. You can explore each of our engineering disciplines in detail through the navigation menu.
+            </p>
           </div>
+        </section>
 
-          <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)', gap: '24px' }}>
-            {SERVICES.map((svc, idx) => {
-              const isLink = svc.cta.startsWith('/services/');
-              const cardContent = (
-                <>
-                  {svc.image && (
-                    <div style={{ overflow: 'hidden', position: 'relative' }}>
-                      <img
-                        src={encodeURI(svc.image)}
-                        alt={svc.title}
-                        className="svc-card-img"
-                        onError={(e: any) => {
-                          e.currentTarget.style.display = 'none';
-                          e.currentTarget.parentElement.style.display = 'none';
-                        }}
-                      />
-                      <div style={{ position: 'absolute', top: '14px', left: '14px', background: 'var(--primary-red)', color: 'white', borderRadius: '8px', padding: '3px 10px', fontSize: '0.75rem', fontWeight: 800, letterSpacing: '1px' }}>
-                        {svc.num}
-                      </div>
-                    </div>
-                  )}
-
-                  <div className="svc-card-body">
-                    <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--primary-red)',  letterSpacing: '1.5px', marginBottom: '8px' }}>{svc.subtitle}</div>
-                    <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.3rem' : '1.45rem', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 12px', lineHeight: 1.2 }}>{svc.title}</h3>
-                    <p style={{ color: 'var(--text-light)', lineHeight: 1.75, fontSize: '0.93rem', margin: '0 0 20px', flex: 1 }}>{svc.desc}</p>
-
-                    {isLink && (
-                      <div style={{ display: 'flex', justifyContent: 'center', marginTop: 'auto', paddingTop: '15px' }}>
-                        <div className="btn-glass-red" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 30px !important' }}>
-                          Learn more
-                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                          </svg>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                </>
-              );
-
-              return isLink ? (
-                <Link key={svc.slug} href={svc.cta} className="svc-card" style={{ animationDelay: `${(idx % 3) * 80}ms` }}>
-                  {cardContent}
-                </Link>
-              ) : (
-                <div key={svc.slug} className="svc-card" style={{ animationDelay: `${(idx % 3) * 80}ms` }}>
-                  {cardContent}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-
-      {/* ── RESOURCE PLANNING ── */}
+        {/* ── RESOURCE PLANNING ── */}
       <section style={{ padding: isMobile ? '60px 12px' : '100px 20px' }}>
         <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? '40px' : '80px', alignItems: 'center' }}>
           <div style={{ borderRadius: '28px', overflow: 'hidden', minHeight: isMobile ? '260px' : '460px', position: 'relative', boxShadow: '0 28px 60px rgba(0,0,0,0.14)' }}>
