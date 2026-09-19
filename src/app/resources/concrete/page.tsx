@@ -52,46 +52,26 @@ export default function ConcretePage() {
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "25px", margin: "0 auto" }}>
             {locations.map((loc, index) => (
-              <div key={index} style={{
-                background: "var(--white)",
-                borderRadius: "12px",
-                padding: "30px",
-                boxShadow: "0 10px 30px rgba(0,0,0,0.04)",
-                borderTop: "4px solid var(--primary-red)",
-                transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                cursor: "default",
-                display: "flex",
-                flexDirection: "column",
-                position: "relative",
-                overflow: "hidden"
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "translateY(-5px)";
-                e.currentTarget.style.boxShadow = "0 15px 40px rgba(0,0,0,0.08)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.boxShadow = "0 10px 30px rgba(0,0,0,0.04)";
-              }}
-              >
-                <div style={{ position: "absolute", right: "-15px", top: "-15px", opacity: 0.04, transform: "rotate(-15deg)" }}>
-                  <Truck size={120} />
+              <div key={index} style={{ background: "var(--white)", borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", transition: "transform 0.2s ease" }}>
+                <div style={{ minWidth: "min(100%, 300px)", position: "relative" }} className="img-polish">
+                  <img className="img-polished img-hover-zoom" src={loc.image} alt={loc.name + " Concrete Plant"} style={{ width: "100%", height: "250px", objectFit: "cover", display: "block" }} />
+                  <span style={{ position: "absolute", bottom: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "4px 12px", fontWeight: 700, fontSize: "0.8rem", borderRadius: "4px",  letterSpacing: "1px" }}>{loc.district}</span>
                 </div>
-                
-                <h4 style={{ color: "var(--text-dark)", fontSize: "1.5rem", fontFamily: "var(--font-heading)", marginBottom: "8px", position: "relative", zIndex: 2 }}>
-                  {loc.name}
-                </h4>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "var(--text-light)", fontSize: "0.95rem", marginBottom: "25px", position: "relative", zIndex: 2 }}>
-                  <MapPin size={16} color="var(--primary-red)" />
-                  {loc.district}
-                </div>
-                
-                <div style={{ marginTop: "auto", display: "flex", flexDirection: "column", gap: "10px", position: "relative", zIndex: 2 }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.9rem", color: "var(--text-dark)", fontWeight: 500 }}>
-                    <CheckCircle2 size={16} color="#10B981" /> Custom Mix Designs
+                <div style={{ padding: "20px", display: "flex", flexDirection: "column", flex: 1 }}>
+                  <div>
+                    <h3 style={{ color: "var(--text-dark)", fontSize: "1.4rem", marginBottom: "15px", fontFamily: "var(--font-heading)" }}>{loc.name} Plant</h3>
+                    
+                    <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "20px" }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "var(--text-dark)", fontSize: "0.95rem" }}>
+                        <CheckCircle2 size={16} color="#10B981" /> Custom Mix Designs
+                      </div>
+                      <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "var(--text-dark)", fontSize: "0.95rem" }}>
+                        <CheckCircle2 size={16} color="#10B981" /> On-Time Delivery
+                      </div>
+                    </div>
                   </div>
-                  <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.9rem", color: "var(--text-dark)", fontWeight: 500 }}>
-                    <CheckCircle2 size={16} color="#10B981" /> On-Time Delivery
+                  <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "auto" }}>
+                    <a href="#inquiry" className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center", textDecoration: "none" }} onClick={(e) => { e.preventDefault(); document.getElementById('inquiry')?.scrollIntoView({ behavior: 'smooth' }); }}>Request Quote</a>
                   </div>
                 </div>
               </div>
