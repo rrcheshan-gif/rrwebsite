@@ -2622,3 +2622,32 @@ body::after {
   background-size: 40px 3px;
   text-shadow: none !important;
 }
+
+/* BRUTAL LEFT ALIGNMENT FOR ALL HEADERS */
+.page-header * {
+  text-align: left !important;
+}
+
+.page-header > div:last-child {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  width: 100% !important;
+  align-items: flex-start !important;
+  box-sizing: border-box !important;
+}
+
+.page-header > div:last-child > div {
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
+
+.page-header > div:last-child > h1,
+.page-header > div:last-child > h2,
+.page-header > div:last-child > h3,
+.page-header > div:last-child > h4,
+.page-header > div:last-child > p {
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
