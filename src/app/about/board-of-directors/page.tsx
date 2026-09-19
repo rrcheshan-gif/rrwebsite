@@ -48,7 +48,7 @@ export default function BoardOfDirectors() {
 
       {/* Leadership List */}
       <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
-        <div className="container" style={{ maxWidth: "1440px", margin: "0 auto", padding: "0 16px" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
           
           <div style={{ marginBottom: "50px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>

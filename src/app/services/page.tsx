@@ -188,7 +188,7 @@ export default function Services() {
         </div>
         <div style={{ position: 'absolute', left: 0, top: 0, width: '5px', height: '100%', background: 'var(--primary-red)', borderRadius: '0 4px 4px 0' }} />
 
-        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+        <div style={{ maxWidth: "1200px", margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
           
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '18px' }}>
@@ -207,7 +207,7 @@ export default function Services() {
 
       {/* ✨ TECHNOLOGY & SERVICES OVERVIEW ✨ */}
         <section style={{ padding: isMobile ? '30px 12px 60px' : '40px 20px 100px' }}>
-          <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
+          <div style={{ maxWidth: "1200px", margin: '0 auto', textAlign: 'center' }}>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "15px", marginBottom: "20px" }}>
               <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>EXCELLENCE IN ENGINEERING</h4>
@@ -227,7 +227,7 @@ export default function Services() {
 
         {/* ── RESOURCE PLANNING ── */}
       <section style={{ padding: isMobile ? '60px 12px' : '100px 20px' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? '40px' : '80px', alignItems: 'center' }}>
+        <div style={{ maxWidth: "1200px", margin: '0 auto', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? '40px' : '80px', alignItems: 'center' }}>
           <div style={{ borderRadius: '28px', overflow: 'hidden', minHeight: isMobile ? '260px' : '460px', position: 'relative', boxShadow: '0 28px 60px rgba(0,0,0,0.14)' }}>
             <img src="/images/machinery/plant-6.jpg" alt="RR Construction heavy machinery fleet" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }}
               onError={e => { (e.currentTarget as HTMLImageElement).src = '/images/puttalam/puttalam-3.jpg'; }} />

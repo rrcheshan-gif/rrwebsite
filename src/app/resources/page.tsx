@@ -135,7 +135,7 @@ export default function QuarriesAggregates() {
 
       {/* Introduction Section */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1440px", margin: "0 auto", textAlign: "left" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "left" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
             <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
             <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>MATERIALS</h4>
@@ -169,7 +169,7 @@ export default function QuarriesAggregates() {
 
       {/* Our Plants Section */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-base)" }}>
-        <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Our Strategic Plant Locations</h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px", textAlign: "center" }}>Three crushing powerhouses placed strategically to cover the Western, North Central, and Northern Provinces.</p>
@@ -254,7 +254,7 @@ export default function QuarriesAggregates() {
 
       {/* Product Catalog Section */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Available Products & Specifications</h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px", textAlign: "center" }}>Select from our wide range of crushed rock aggregates to suit your exact engineering needs.</p>

@@ -167,7 +167,7 @@ export default function GoalsAndTargets() {
 
       {/* 3. Strategic Priorities */}
       <section style={{ padding: isMobile ? "50px 10px" : "80px 20px", background: "var(--white)", borderTop: "1px solid var(--border-soft)" }}>
-        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", padding: "0 16px" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
           <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: "40px", alignItems: "center" }}>
             <div style={{ flex: 1 }}>
               <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>

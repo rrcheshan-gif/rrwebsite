@@ -18,7 +18,7 @@ export default function People() {
 
             {/* Intro */}
       <section style={{ padding: "60px 20px 50px" }}>
-        <div className="container" style={{ maxWidth: "1440px", margin: "0 auto", textAlign: "left" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "left" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
             <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
             <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OUR TEAM</h4>
@@ -34,7 +34,7 @@ export default function People() {
 
       {/* Workforce Categories */}
       <section style={{ padding: "0 20px 100px" }}>
-        <div className="container" style={{ maxWidth: "1440px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 420px), 1fr))", gap: "40px" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 420px), 1fr))", gap: "40px" }}>
           
           <div style={{ background: "var(--white)", padding: "40px", borderRadius: "12px", borderLeft: "5px solid var(--primary-red)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)" }}>
             <h3 className="card-heading" style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", color: "var(--text-dark)", fontWeight: 800 }}>Engineering & Technical</h3>

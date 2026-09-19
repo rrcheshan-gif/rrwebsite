@@ -24,7 +24,7 @@ export default function YakawewaPlant() {
 
       {/* Intro Section */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700,  letterSpacing: "2px", marginBottom: "10px" }}>Medawachchiya (North Central Province)</h4>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>High-Performance Hot Mix Asphalt</h2>
           <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "40px", textAlign: "center" }}>Fueling highway and expressway development across Sri Lanka.</p>

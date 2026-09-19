@@ -48,7 +48,7 @@ export default function AboutStory() {
 
       {/* Unified Company Overview */}
       <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
-        <div className="container" style={{ maxWidth: "1440px", margin: "0 0auto", padding: "0 16px" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 0auto", padding: "0 16px" }}>
           
           
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", marginBottom: "50px", maxWidth: "900px", margin: "0 auto 50px auto" }}>
@@ -62,7 +62,7 @@ export default function AboutStory() {
               </h3>
           </div>
           {/* Full Width Introduction Text */}
-          <div style={{ width: "100%", maxWidth: "1000px", margin: "0 auto" }}>
+          <div style={{ width: "100%", maxWidth: "1200px", margin: "0 auto" }}>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "30px", textAlign: "justify" }}>
               Founded in 1995, <strong style={{ fontWeight: 'normal' }}>RR Construction (Pvt) Ltd</strong> is a leading <strong style={{ fontWeight: 'normal' }}>construction and civil engineering company in Sri Lanka</strong>, delivering integrated solutions for major infrastructure and specialized construction projects across the country. With over three decades of industry experience, we have developed strong capabilities in <strong style={{ fontWeight: 'normal' }}>highway and expressway construction, railway construction, bridge construction, maritime and marine construction, geotechnical engineering, earthworks, water infrastructure, aggregate production, and heavy civil engineering</strong>. Our railway construction capabilities further strengthen our position in Sri Lanka’s infrastructure sector, enabling us to contribute to the development, improvement, and maintenance of essential railway infrastructure through professional engineering expertise, modern equipment, and efficient project execution.
             </p>

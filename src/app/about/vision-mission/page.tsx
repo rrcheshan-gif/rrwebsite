@@ -206,7 +206,7 @@ export default function VisionMission() {
 
       {/* Modern Core Values Grid */}
       <section style={{ padding: "80px 20px 80px", background: "var(--bg-light)", position: "relative" }}>
-        <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <Reveal>
             <div style={{ textAlign: "left", marginBottom: "80px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>

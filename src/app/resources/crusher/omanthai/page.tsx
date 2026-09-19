@@ -98,7 +98,7 @@ export default function OmanthaiPlant() {
 
       {/* Intro Section */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700,  letterSpacing: "2px", marginBottom: "10px" }}>Omanthai Metal Crusher Plant</h4>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>Premium Quality Aggregates & Crushed Metal</h2>
           <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "40px", textAlign: "center" }}>Fueling Infrastructure Development in the Northern Province.</p>
@@ -129,7 +129,7 @@ export default function OmanthaiPlant() {
 
       {/* Photo Gallery */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-base)" }}>
-        <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Our Omanthai Facility</h2>
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
@@ -147,7 +147,7 @@ export default function OmanthaiPlant() {
 
       {/* Products List */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1440px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>OMANTHAI PLANT: Our Products</h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px" }}>High Quality Aggregates & M-Sand for Stronger Constructions</p>
@@ -170,7 +170,7 @@ export default function OmanthaiPlant() {
 
       {/* Contact Section */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-base)" }}>
-        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ background: "var(--white)", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", overflow: "hidden", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))" }}>
             <div style={{ padding: "40px" }}>
               <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2rem", color: "var(--text-dark)", marginBottom: "20px" }}>Contact OMANTHAI PLANT</h2>

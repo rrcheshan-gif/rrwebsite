@@ -489,7 +489,7 @@ export default function Home() {
                   alignItems: "center", 
                   gap: "20px", 
                   width: "100%", 
-                  maxWidth: "1400px" 
+                  maxWidth: "1200px" 
                 }}
               >
                 {[
