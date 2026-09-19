@@ -983,12 +983,7 @@ ul {
     padding: 50px 0;
   }
 
-  .page-header {
-    padding: 45px 16px !important;
-    border-radius: 20px !important;
-    margin: 0 10px 30px !important;
-    text-align: center !important;
-  }
+  /* Replaced .page-header padding block */
 
   .page-header h1,
   .page-header h2,
@@ -2092,11 +2087,7 @@ body {
   p { font-size: 0.95rem !important; line-height: 1.6 !important; margin-bottom: 1rem; }
 
   /* Hero / Page header */
-  .page-header {
-    margin: 0 10px 24px !important;
-    padding: 36px 16px !important;
-    border-radius: 20px !important;
-  }
+  /* Replaced mobile page-header */
   .page-header h1 {
     font-size: clamp(1.8rem, 7vw, 2.5rem) !important;
     letter-spacing: -0.02em !important;
@@ -2156,10 +2147,7 @@ body {
   h1 { font-size: clamp(1.6rem, 8vw, 2rem) !important; }
   h2 { font-size: clamp(1.3rem, 7vw, 1.7rem) !important; }
 
-  .page-header {
-    margin: 0 8px 20px !important;
-    padding: 28px 14px !important;
-  }
+  /* Replaced mobile page-header 2 */
 }
 
 /* ============================================
@@ -2542,4 +2530,95 @@ body::after {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
   pointer-events: none;
   z-index: 50;
+}
+
+/* ============================================
+   GLOBAL SLANTED HERO FIX
+   ============================================ */
+.page-header {
+  position: relative;
+  overflow: hidden;
+  text-align: left !important;
+  /* Reset some paddings */
+  padding-top: 120px !important;
+  padding-bottom: 60px !important;
+  border-radius: 0 !important; /* Make it edge to edge */
+  margin: 0 !important;
+}
+
+/* Slanted solid dark blue */
+.page-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1b2738;
+  clip-path: polygon(0 0, 50% 0, 35% 100%, 0 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Subtle slanted border overlay */
+.page-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.05);
+  clip-path: polygon(50% 0, 51.5% 0, 36.5% 100%, 35% 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding-top: 100px !important;
+    padding-bottom: 40px !important;
+  }
+  .page-header::before {
+    clip-path: polygon(0 0, 85% 0, 70% 100%, 0 100%);
+  }
+  .page-header::after {
+    clip-path: polygon(85% 0, 88% 0, 73% 100%, 70% 100%);
+  }
+}
+
+/* Ensure contents sit above the pseudo-elements */
+.page-header > div {
+  position: relative;
+  z-index: 2;
+  text-align: left !important;
+  align-items: flex-start !important; /* overrides centered flex */
+}
+
+/* Align text and reset margins */
+.page-header h1,
+.page-header h2,
+.page-header h3,
+.page-header h4,
+.page-header p {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* Add the "BUILDING TRUST" subtitle and red line */
+.page-header h1::before {
+  content: "BUILDING TRUST • DELIVERING QUALITY";
+  display: block;
+  font-family: var(--font-sans), sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #94a3b8;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  background: linear-gradient(var(--primary-red), var(--primary-red)) no-repeat left bottom;
+  background-size: 40px 3px;
+  text-shadow: none !important;
 }
