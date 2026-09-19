@@ -58,7 +58,7 @@ export default function VisionMission() {
       <section 
         className="page-header" 
         style={{ 
-          backgroundImage: "linear-gradient(to bottom, rgba(15, 23, 42, 0.45) 0%, rgba(15, 23, 42, 0.65) 60%, rgba(15, 23, 42, 0.92) 100%), url('/images/page-headers/engineering-blueprint-banner.jpg')" , 
+          backgroundImage: "url('/images/page-headers/engineering-blueprint-banner.jpg')" , 
           padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
           textAlign: "center", 
           position: "relative", 

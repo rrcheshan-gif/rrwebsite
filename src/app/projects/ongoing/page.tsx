@@ -16,7 +16,7 @@ export default function OngoingProjects() {
       {/* Hero Section with Image Space */}
       <section className="page-header" style={{ 
         position: 'relative', 
-        backgroundImage: "linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.7)), url('/images/page-headers/ongoing-hero.jpg')", 
+        backgroundImage: "url('/images/page-headers/ongoing-hero.jpg')", 
         backgroundSize: 'cover', 
         backgroundPosition: 'center', 
         color: 'var(--white)', 

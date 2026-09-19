@@ -20,7 +20,7 @@ export default function ConcretePage() {
     <div className="page-wrapper">
       {/* Page Header */}
       <div className="page-header" style={{
-          background: "linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('/images/yakawewa-asphalt-2.jpg') center/cover",
+          background: "url('/images/yakawewa-asphalt-2.jpg') center/cover",
           padding: "100px 20px 60px",
           textAlign: "center",
           color: "white"

@@ -26,7 +26,7 @@ export default function RoadConstructionPage() {
       <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('/images/hambantota-iroad/hambantota-2.jpg')",
+          backgroundImage: "url('/images/hambantota-iroad/hambantota-2.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'var(--white)',

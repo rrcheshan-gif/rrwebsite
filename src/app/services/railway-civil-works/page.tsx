@@ -25,7 +25,7 @@ export default function RailwayCivilWorksPage() {
       <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('/images/IRCON-MANNAR/WhatsApp%20Image%202026-08-01%20at%2012.32.07.jpeg')",
+          backgroundImage: "url('/images/IRCON-MANNAR/WhatsApp%20Image%202026-08-01%20at%2012.32.07.jpeg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'var(--white)',

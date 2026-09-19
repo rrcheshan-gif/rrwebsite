@@ -24,7 +24,7 @@ export default function BridgeConstructionPage() {
       <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('/images/home/bridge_mahanama-enhanced.jpeg')",
+          backgroundImage: "url('/images/home/bridge_mahanama-enhanced.jpeg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'var(--white)',

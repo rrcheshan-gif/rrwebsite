@@ -88,7 +88,7 @@ export default function TransportationCivilPage() {
 
       {/* HERO SECTION */}
       <section className="page-header" style={{
-        backgroundImage: "linear-gradient(rgba(10,18,35,0.72), rgba(10,18,35,0.84)), url('/images/hambantota-iroad/hambantota-2.jpg')",
+        backgroundImage: "url('/images/hambantota-iroad/hambantota-2.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center 35%',
         padding: isMobile ? "90px 20px 30px" : "140px 20px 40px",

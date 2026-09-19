@@ -35,7 +35,7 @@ export default function OngoingCategoryPage({ params }: { params: { category: st
         position: 'relative', 
         backgroundColor: '#0f172a',
         // Optional: Replace this with a specific image per category
-        backgroundImage: "linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('/images/hero-road-roller.jpg')", 
+        backgroundImage: "url('/images/hero-road-roller.jpg')", 
         backgroundSize: 'cover', 
         backgroundPosition: 'center', 
         color: 'var(--white)', 
