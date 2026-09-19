@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function ConcretePage() {
   const router = useRouter();
   const locations = [
-    { name: "Ampara", district: "Ampara", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" },
+    { name: "Ampara", district: "Ampara", image: "/images/ampara-concrete.jpg" },
     { name: "Jaffna", district: "Jaffna", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" },
     { name: "Bibila", district: "Monaragala", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" },
     { name: "Iththapana", district: "Kalutara", image: "/images/iththapana-concrete.jpg" },
