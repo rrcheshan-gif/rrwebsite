@@ -8,13 +8,13 @@ import Link from "next/link";
 export default function ConcretePage() {
   const router = useRouter();
   const locations = [
-    { name: "Ampara", district: "Ampara", image: "/images/omanthai-1.jpg" },
-    { name: "Jaffna", district: "Jaffna", image: "/images/omanthai-2.jpg" },
-    { name: "Bibila", district: "Monaragala", image: "/images/omanthai-3.jpg" },
-    { name: "Iththapana", district: "Kalutara", image: "/images/thudugala-1.jpg" },
-    { name: "Vadduvakal", district: "Mullaitivu", image: "/images/thudugala-2.jpg" },
-    { name: "Galgamuwa", district: "Kurunegala", image: "/images/thudugala-3.jpg" },
-    { name: "Gandara", district: "Matara", image: "/images/kalutara-crusher-plant.jpg" }
+    { name: "Ampara", district: "Ampara", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" },
+    { name: "Jaffna", district: "Jaffna", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" },
+    { name: "Bibila", district: "Monaragala", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" },
+    { name: "Iththapana", district: "Kalutara", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" },
+    { name: "Vadduvakal", district: "Mullaitivu", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" },
+    { name: "Galgamuwa", district: "Kurunegala", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" },
+    { name: "Gandara", district: "Matara", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" }
   ];
 
   return (
