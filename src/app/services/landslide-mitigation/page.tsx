@@ -44,7 +44,7 @@ export default function LandslideMitigationPage() {
             margin: '0 0 24px',
             lineHeight: 1.2
           }}>
-            Landslide Mitigation &amp; <span style={{ color: 'var(--primary-red)' }}>Geotechnical Engineering</span>
+            Slope Stabilization &amp; <span style={{ color: 'var(--primary-red)' }}>Landslide Mitigation</span>
           </h1>
           <p style={{
             fontSize: isMobile ? '1rem' : '1.2rem',
