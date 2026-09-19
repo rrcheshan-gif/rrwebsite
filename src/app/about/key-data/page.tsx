@@ -2,12 +2,13 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { Calendar, Users, Tractor, Building, FileText, ShieldCheck, Briefcase, FileSearch, University, UserCircle } from 'lucide-react';
 
 export default function KeyDataPage() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth <= 768);
+    const check = () => setIsMobile(window.innerWidth <= 1024); // tablet and mobile break
     check();
     window.addEventListener('resize', check);
     return () => window.removeEventListener('resize', check);
@@ -15,75 +16,131 @@ export default function KeyDataPage() {
 
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
-      
       {/* Hero Section */}
       <section 
           className="page-header" 
           style={{ 
-            backgroundImage: "linear-gradient(to bottom, rgba(15, 23, 42, 0.45) 0%, rgba(15, 23, 42, 0.65) 60%, rgba(15, 23, 42, 0.92) 100%), url('/images/page-headers/engineering-blueprint-banner.jpg')", 
+            backgroundImage: "linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.8) 50%, rgba(15, 23, 42, 0.2) 100%), url('/images/page-headers/engineering-blueprint-banner.jpg')", 
             backgroundSize: "cover", 
-            backgroundPosition: "center top", 
-            minHeight: isMobile ? "400px" : "600px", 
+            backgroundPosition: "center", 
+            minHeight: isMobile ? "300px" : "380px", 
             display: "flex", 
             flexDirection: "column", 
-            justifyContent: "flex-end",
-            padding: isMobile ? "120px 20px 20px" : "160px 20px 20px", 
-            textAlign: "center", 
+            justifyContent: "center",
+            padding: isMobile ? "100px 20px 40px" : "120px 60px", 
+            textAlign: "left", 
             position: "relative", 
-            borderRadius: isMobile ? "24px" : "32px",
-            margin: isMobile ? "0 12px 30px" : "0 20px 40px",  
-            overflow: "hidden"
+            borderRadius: isMobile ? "0" : "0",
+            margin: "0" 
           }}
         >
-        <div className="absolute-back-btn" style={{ position: "absolute", top: "110px", left: "clamp(20px, 4vw, 40px)", zIndex: 99 }}>
+        <div className="absolute-back-btn" style={{ position: "absolute", top: "40px", left: "clamp(20px, 4vw, 60px)", zIndex: 99 }}>
           <Link href="/about" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to About Us</Link>
         </div>
-        <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Key <span style={{ color: "var(--primary-red)" }}>Data</span></h1>
+        
+        <div style={{ maxWidth: "1440px", width: "100%", margin: "0 auto", position: "relative", zIndex: 2 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+                <span style={{ color: '#9ca3af', fontWeight: 600, letterSpacing: '2px',  fontSize: '0.75rem', textTransform: 'uppercase' }}>BUILDING TRUST &bull; DELIVERING QUALITY</span>
+            </div>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 6vw, 4.5rem)", margin: "0 0 15px", fontWeight: 800 }}>
+            Key <span style={{ color: "var(--primary-red)" }}>Data</span>
+          </h1>
+          <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "1.1rem", maxWidth: "450px", lineHeight: 1.6, margin: 0 }}>
+             Key information about RR Construction (Pvt) Ltd, our foundation, experience and capabilities.
+          </p>
         </div>
       </section>
 
-      {/* Simple List Layout (As requested) */}
-      <section style={{ padding: isMobile ? "10px 10px 80px" : "20px 20px 120px" }}>
-        <div className="container" style={{ maxWidth: "1000px", margin: "0 auto", padding: isMobile ? "0" : "0 16px" }}>
-          <div style={{
-            backgroundColor: 'var(--white)',
-            borderRadius: '16px',
-            padding: isMobile ? '30px 20px' : '50px 60px',
-            border: '1px solid var(--primary-red)', boxShadow: '0 4px 25px rgba(229, 57, 53, 0.08)',
-            
+      {/* Main Content Area */}
+      <section style={{ padding: isMobile ? "40px 15px 80px" : "60px 40px 120px", background: "var(--bg-light)" }}>
+        <div style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", flexDirection: isMobile ? "column" : "row", gap: "24px", alignItems: "stretch" }}>
+          
+          {/* Left Sidebar */}
+          <div style={{ 
+              width: isMobile ? "100%" : "300px", 
+              background: "#f4f7fb", 
+              borderRadius: "24px", 
+              overflow: "hidden", 
+              display: "flex", 
+              flexDirection: "column",
+              boxShadow: "0 10px 30px rgba(0,0,0,0.03)",
+              flexShrink: 0
           }}>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
-
-              {[
-                { label: "Company Name", value: "RR Construction (Pvt) Ltd" },
-                { label: "Head Office", value: "No. 865, Dr. Danister De Silva Mawatha, Baseline Road, Colombo 9, Orugodawatta." },
-                { label: "Registration No", value: "PV 11346" },
-                { label: "Year Established", value: "1995" },
-                { label: "Ownership", value: "Private Limited Liability Company" },
-                { label: "Managing Director", value: "Mr. Ranjith Senadeera S. D." },
-                { label: "National Grading (CIDA)", value: "CS2 (Highest Grade in Buildings, Roads, Water Supply & Drainage, Bridges)" },
-                { label: "Workforce", value: "1,400+ Dedicated Employees" },
-                { label: "Machinery Units", value: "1,000+ Heavy Machinery Units" },
-                { label: "Quality Certifications", value: "ISO 9001:2015, ISO 14001:2015, ISO 45001:2018" },
-                { label: "Company Auditor", value: "P. Wijayawardana & Co." },
-                { label: "Company Bankers", value: "HNB, DFCC, Sampath, NDB, Commercial, Peoples Bank & NTB" }
-              ].map((item, i) => (
-                <div key={i}>
-                  <h3 style={{ fontSize: '1rem', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 10px', fontFamily: 'var(--font-heading)' }}>
-                    {item.label}
-                  </h3>
-                  <p style={{ color: 'var(--text-light)', margin: 0, fontSize: '1.1rem', lineHeight: 1.6 }}>
-                    {item.value}
-                  </p>
-                </div>
-              ))}
-
-            </div>
+             <div style={{ padding: "40px 30px 20px" }}>
+                 <p style={{ fontSize: "0.75rem", fontWeight: 700, color: "#64748b", letterSpacing: "1px", margin: "0 0 10px 0" }}>OUR COMPANY</p>
+                 <div style={{ borderLeft: "3px solid var(--primary-red)", paddingLeft: "15px", marginBottom: "25px" }}>
+                     <h2 style={{ fontSize: "1.8rem", color: "#0f172a", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, lineHeight: 1.2 }}>RR Construction (Pvt) Ltd</h2>
+                 </div>
+                 <p style={{ color: "#64748b", fontSize: "0.95rem", lineHeight: 1.6 }}>Building reliable infrastructure for a stronger tomorrow.</p>
+             </div>
+             <div style={{ marginTop: "auto", position: "relative" }}>
+                 <div style={{ width: "100%", height: "250px", position: "relative" }}>
+                     <img src="/images/home/hero-single.jpg" alt="RR Construction Building" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                     
+                     <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(to bottom right, rgba(244, 247, 251, 1) 20%, transparent 60%)" }} />
+                 </div>
+             </div>
           </div>
+
+          {/* Right Grid Area */}
+          <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "24px" }}>
+              
+              {/* Top 3 Cards */}
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "24px" }}>
+                  <StatCard icon={<Calendar color="#e11d48" size={24} />} bg="#ffe4e6" label="Year Established" value="1995" />
+                  <StatCard icon={<Users color="#0284c7" size={24} />} bg="#e0f2fe" label="Workforce" value="1,400+" />
+                  <StatCard icon={<Tractor color="#16a34a" size={24} />} bg="#dcfce7" label="Machinery Units" value="1,000+" />
+              </div>
+
+              {/* Remaining Data Cards */}
+              <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
+                  <DataCard icon={<Building color="#2563eb" size={20} />} bg="#dbeafe" label="Head Office" value="No. 865, Dr. Danister De Silva Mawatha, Baseline Road, Colombo 9, Orugodawatta." />
+                  <DataCard icon={<University color="#4f46e5" size={20} />} bg="#e0e7ff" label="National Grading (CIDA)" value="CS2 (Highest Grade in Buildings, Roads, Water Supply & Drainage, Bridges)" />
+                  
+                  <DataCard icon={<FileText color="#6366f1" size={20} />} bg="#e0e7ff" label="Registration No" value="PV 11346" />
+                  <DataCard icon={<ShieldCheck color="#0891b2" size={20} />} bg="#cffafe" label="Quality Certifications" value="ISO 9001:2015, ISO 14001:2015, ISO 45001:2018" />
+                  
+                  <DataCard icon={<Briefcase color="#ea580c" size={20} />} bg="#ffedd5" label="Ownership" value="Private Limited Liability Company" />
+                  <DataCard icon={<FileSearch color="#db2777" size={20} />} bg="#fce7f3" label="Company Auditor" value="P. Wijayawardana & Co." />
+                  
+                  <DataCard icon={<UserCircle color="#0284c7" size={20} />} bg="#e0f2fe" label="Managing Director" value="Mr. Ranjith Senadeera S. D." />
+                  <DataCard icon={<Building color="#ca8a04" size={20} />} bg="#fef08a" label="Company Bankers" value="HNB, DFCC, Sampath, NDB, Commercial, Peoples Bank & NTB" />
+              </div>
+
+          </div>
+
         </div>
       </section>
 
     </div>
   );
+}
+
+// Helpers
+function StatCard({ icon, bg, label, value }: { icon: any, bg: string, label: string, value: string }) {
+    return (
+        <div style={{ background: "#ffffff", borderRadius: "16px", padding: "25px", display: "flex", alignItems: "center", gap: "20px", boxShadow: "0 4px 15px rgba(0,0,0,0.02)", border: "1px solid var(--border-soft)" }}>
+            <div style={{ width: "60px", height: "60px", borderRadius: "50%", background: bg, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                {icon}
+            </div>
+            <div>
+                <p style={{ margin: "0 0 5px 0", fontSize: "0.85rem", color: "#64748b", fontWeight: 600 }}>{label}</p>
+                <h3 style={{ margin: 0, fontSize: "1.8rem", color: "#0f172a", fontFamily: "var(--font-heading)", fontWeight: 800 }}>{value}</h3>
+            </div>
+        </div>
+    )
+}
+
+function DataCard({ icon, bg, label, value }: { icon: any, bg: string, label: string, value: string }) {
+    return (
+        <div style={{ background: "#ffffff", borderRadius: "16px", padding: "20px", display: "flex", alignItems: "flex-start", gap: "15px", boxShadow: "0 4px 15px rgba(0,0,0,0.02)", border: "1px solid var(--border-soft)" }}>
+            <div style={{ width: "45px", height: "45px", borderRadius: "50%", background: bg, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: "5px" }}>
+                {icon}
+            </div>
+            <div>
+                <p style={{ margin: "0 0 5px 0", fontSize: "0.85rem", color: "#0f172a", fontWeight: 700 }}>{label}</p>
+                <p style={{ margin: 0, fontSize: "0.95rem", color: "#64748b", lineHeight: 1.5 }}>{value}</p>
+            </div>
+        </div>
+    )
 }
