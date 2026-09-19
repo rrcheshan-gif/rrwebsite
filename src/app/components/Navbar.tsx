@@ -118,7 +118,7 @@ export default function Navbar() {
                   </button>
                 </div>
                 <ul className="dropdown-menu">
-                  <li><Link href="/services" onClick={() => setMobileMenuOpen(false)}>Technology &amp; Services Overview</Link></li>
+                  {/* <li><Link href="/services" onClick={() => setMobileMenuOpen(false)}>Technology &amp; Services Overview</Link></li> */}
                   <li><Link href="/services/highway-and-expressway-construction" onClick={() => setMobileMenuOpen(false)}>Highway &amp; Expressway</Link></li>
                   <li><Link href="/services/bridge-construction" onClick={() => setMobileMenuOpen(false)}>Bridge Construction</Link></li>
                   <li><Link href="/services/maritime-construction" onClick={() => setMobileMenuOpen(false)}>Maritime Construction</Link></li>
