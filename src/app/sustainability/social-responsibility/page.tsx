@@ -146,11 +146,15 @@ export default function SocialResponsibility() {
       {/* CSR Initiatives Showcase */}
       <section style={{ padding: "80px 20px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1440px", margin: "0 auto", padding: "0 16px" }}>
-          <div style={{ textAlign: "center", marginBottom: "60px" }}>
-            <h2 style={{ fontSize: isMobile ? "2.2rem" : "3rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0" }}>
-              Our CSR <span style={{ color: "var(--primary-red)" }}>Initiatives</span>
+          <div style={{ textAlign: "left", marginBottom: "60px", maxWidth: "800px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>INITIATIVES</h4>
+            </div>
+            <h2 style={{ fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.1 }}>
+              Our CSR <span className="text-gradient" style={{ fontWeight: 300 }}>Initiatives</span>
             </h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.8 }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", margin: 0, lineHeight: 1.8, textAlign: "left" }}>
               Real impact is measured through action. Explore some of our recent community and social responsibility projects.
             </p>
           </div>
