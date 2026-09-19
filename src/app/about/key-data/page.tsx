@@ -18,11 +18,9 @@ export default function KeyDataPage() {
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Hero Section */}
       <section 
-          className="page-header" 
+          className="page-header slanted-hero" 
           style={{ 
-            backgroundImage: "linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.8) 50%, rgba(15, 23, 42, 0.2) 100%), url('/images/page-headers/engineering-blueprint-banner.jpg')", 
-            backgroundSize: "cover", 
-            backgroundPosition: "center", 
+            backgroundColor: "#1b2738", // Solid dark blue from design
             minHeight: isMobile ? "300px" : "380px", 
             display: "flex", 
             flexDirection: "column", 
@@ -31,22 +29,49 @@ export default function KeyDataPage() {
             textAlign: "left", 
             position: "relative", 
             borderRadius: isMobile ? "0" : "0",
-            margin: "0" 
+            margin: "0",
+            overflow: "hidden"
           }}
         >
+        {/* Background Image with Slanted Cut */}
+        <div style={{
+          position: "absolute",
+          top: 0, right: 0, bottom: 0,
+          width: isMobile ? "100%" : "65%",
+          backgroundImage: "url('/images/page-headers/engineering-blueprint-banner.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          clipPath: isMobile ? "none" : "polygon(20% 0, 100% 0, 100% 100%, 0 100%)",
+          zIndex: 1,
+          opacity: isMobile ? 0.3 : 1
+        }}></div>
+        {/* Subtle lighter diagonal band (decor) */}
+        {!isMobile && (
+          <div style={{
+            position: "absolute",
+            top: 0, right: 0, bottom: 0,
+            width: "66%",
+            backgroundColor: "rgba(255,255,255,0.06)",
+            clipPath: "polygon(18% 0, 100% 0, 100% 100%, -2% 100%)",
+            zIndex: 0
+          }}></div>
+        )}
+
         <div className="absolute-back-btn" style={{ position: "absolute", top: "40px", left: "clamp(20px, 4vw, 60px)", zIndex: 99 }}>
           <Link href="/about" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to About Us</Link>
         </div>
         
         <div style={{ maxWidth: "1440px", width: "100%", margin: "0 auto", position: "relative", zIndex: 2 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
-                <span style={{ color: '#9ca3af', fontWeight: 600, letterSpacing: '2px',  fontSize: '0.75rem', textTransform: 'uppercase' }}>BUILDING TRUST &bull; DELIVERING QUALITY</span>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginBottom: '16px' }}>
+                <span style={{ color: '#94a3b8', fontWeight: 600, letterSpacing: '2px',  fontSize: '0.8rem', textTransform: 'uppercase', marginBottom: '12px' }}>BUILDING TRUST &bull; DELIVERING QUALITY</span>
+                {/* Red Line from design */}
+                <div style={{ width: '40px', height: '3px', backgroundColor: 'var(--primary-red)' }}></div>
             </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.5rem, 6vw, 4.5rem)", margin: "0 0 15px", fontWeight: 800 }}>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(3rem, 6vw, 4.5rem)", margin: "0 0 15px", fontWeight: 800 }}>
             Key <span style={{ color: "var(--primary-red)" }}>Data</span>
           </h1>
-          <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "1.1rem", maxWidth: "450px", lineHeight: 1.6, margin: 0 }}>
-             Key information about RR Construction (Pvt) Ltd, our foundation, experience and capabilities.
+          <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "450px", lineHeight: 1.6, margin: 0 }}>
+             Key information about RR Construction (Pvt) Ltd,<br/>our foundation, experience and capabilities.
           </p>
         </div>
       </section>
