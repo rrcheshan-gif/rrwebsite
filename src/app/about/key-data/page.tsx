@@ -16,7 +16,10 @@ export default function KeyDataPage() {
 
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+      
+      
       {/* Hero Section */}
+
       <section 
           className="page-header slanted-hero" 
           style={{ 
@@ -83,26 +86,26 @@ export default function KeyDataPage() {
           {/* Left Sidebar */}
           <div style={{ 
               width: isMobile ? "100%" : "300px", 
-              background: "#f4f7fb", 
+              background: "var(--white)", 
               borderRadius: "24px", 
               overflow: "hidden", 
               display: "flex", 
               flexDirection: "column",
-              boxShadow: "0 10px 30px rgba(0,0,0,0.03)",
+              border: "1px solid var(--border-soft)",
               flexShrink: 0
           }}>
              <div style={{ padding: "40px 30px 20px" }}>
-                 <p style={{ fontSize: "0.75rem", fontWeight: 700, color: "#64748b", letterSpacing: "1px", margin: "0 0 10px 0" }}>OUR COMPANY</p>
+                 <p style={{ fontSize: "0.75rem", fontWeight: 700, color: "var(--text-light)", letterSpacing: "1px", margin: "0 0 10px 0" }}>OUR COMPANY</p>
                  <div style={{ borderLeft: "3px solid var(--primary-red)", paddingLeft: "15px", marginBottom: "25px" }}>
-                     <h2 style={{ fontSize: "1.8rem", color: "#0f172a", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, lineHeight: 1.2 }}>RR Construction (Pvt) Ltd</h2>
+                     <h2 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, lineHeight: 1.2 }}>RR Construction (Pvt) Ltd</h2>
                  </div>
-                 <p style={{ color: "#64748b", fontSize: "0.95rem", lineHeight: 1.6 }}>Building reliable infrastructure for a stronger tomorrow.</p>
+                 <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6 }}>Building reliable infrastructure for a stronger tomorrow.</p>
              </div>
              <div style={{ marginTop: "auto", position: "relative" }}>
                  <div style={{ width: "100%", height: "250px", position: "relative" }}>
                      <img src="/images/home/hero-single.jpg" alt="RR Construction Building" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                      
-                     <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(to bottom right, rgba(244, 247, 251, 1) 20%, transparent 60%)" }} />
+                     <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(to bottom right, var(--white) 20%, transparent 60%)" }} />
                  </div>
              </div>
           </div>
@@ -144,13 +147,13 @@ export default function KeyDataPage() {
 // Helpers
 function StatCard({ icon, bg, label, value }: { icon: any, bg: string, label: string, value: string }) {
     return (
-        <div style={{ background: "#ffffff", borderRadius: "16px", padding: "25px", display: "flex", alignItems: "center", gap: "20px", boxShadow: "0 4px 15px rgba(0,0,0,0.02)", border: "1px solid var(--border-soft)" }}>
+        <div style={{ background: "var(--white)", borderRadius: "16px", padding: "25px", display: "flex", alignItems: "center", gap: "20px", border: "1px solid var(--border-soft)" }}>
             <div style={{ width: "60px", height: "60px", borderRadius: "50%", background: bg, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                 {icon}
             </div>
             <div>
-                <p style={{ margin: "0 0 5px 0", fontSize: "0.85rem", color: "#64748b", fontWeight: 600 }}>{label}</p>
-                <h3 style={{ margin: 0, fontSize: "1.8rem", color: "#0f172a", fontFamily: "var(--font-heading)", fontWeight: 800 }}>{value}</h3>
+                <p style={{ margin: "0 0 5px 0", fontSize: "0.85rem", color: "var(--text-light)", fontWeight: 600 }}>{label}</p>
+                <h3 style={{ margin: 0, fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800 }}>{value}</h3>
             </div>
         </div>
     )
@@ -158,13 +161,13 @@ function StatCard({ icon, bg, label, value }: { icon: any, bg: string, label: st
 
 function DataCard({ icon, bg, label, value }: { icon: any, bg: string, label: string, value: string }) {
     return (
-        <div style={{ background: "#ffffff", borderRadius: "16px", padding: "20px", display: "flex", alignItems: "flex-start", gap: "15px", boxShadow: "0 4px 15px rgba(0,0,0,0.02)", border: "1px solid var(--border-soft)" }}>
+        <div style={{ background: "var(--white)", borderRadius: "16px", padding: "20px", display: "flex", alignItems: "flex-start", gap: "15px", border: "1px solid var(--border-soft)" }}>
             <div style={{ width: "45px", height: "45px", borderRadius: "50%", background: bg, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: "5px" }}>
                 {icon}
             </div>
             <div>
-                <p style={{ margin: "0 0 5px 0", fontSize: "0.85rem", color: "#0f172a", fontWeight: 700 }}>{label}</p>
-                <p style={{ margin: 0, fontSize: "0.95rem", color: "#64748b", lineHeight: 1.5 }}>{value}</p>
+                <p style={{ margin: "0 0 5px 0", fontSize: "0.85rem", color: "var(--text-dark)", fontWeight: 700 }}>{label}</p>
+                <p style={{ margin: 0, fontSize: "0.95rem", color: "var(--text-light)", lineHeight: 1.5 }}>{value}</p>
             </div>
         </div>
     )
