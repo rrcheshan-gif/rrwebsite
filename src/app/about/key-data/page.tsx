@@ -37,10 +37,7 @@ export default function KeyDataPage() {
           <BackButton />
         </div>
         <div style={{ maxWidth: "1500px", margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '18px' }}>
-              <span style={{ color: 'var(--primary-red)', fontWeight: 800, letterSpacing: '3px',  fontSize: '0.82rem' }}>CORPORATE PROFILE</span>
-              <div style={{ width: '36px', height: '2px', background: 'var(--primary-red)' }} />
-          </div>
+          
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 4.5rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", lineHeight: 1.2 }}>
             Key <span style={{ color: "var(--primary-red)" }}>Data</span>
           </h1>
