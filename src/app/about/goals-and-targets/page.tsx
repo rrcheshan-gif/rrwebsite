@@ -101,7 +101,7 @@ export default function GoalsAndTargets() {
       <section style={{ padding: isMobile ? "20px 10px" : "40px 20px" }}>
         <div className="container" style={{ margin: "0 auto", padding: "0 16px" }}>
           
-          <div style={{ textAlign: "left", marginBottom: "60px", maxWidth: "800px" }}>
+          <div style={{ textAlign: "left", marginBottom: "60px", maxWidth: "1500px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
                 <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
                 <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OBJECTIVES</h4>
@@ -114,50 +114,44 @@ export default function GoalsAndTargets() {
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)", gap: "30px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
             {strategicGoals.map((goal, idx) => (
               <div 
                 key={idx} 
-                className="hover-lift"
                 style={{ 
-                  background: "var(--white)", 
-                  padding: isMobile ? "30px 20px" : "40px 45px", 
-                  borderRadius: "24px", 
-                  boxShadow: "0 10px 40px rgba(0,0,0,0.03)", 
-                  border: "1px solid var(--border-soft)",
-                  borderTop: "4px solid var(--primary-red)",
-                  transition: "transform 0.4s ease, box-shadow 0.4s ease",
                   display: "flex",
-                  flexDirection: "column",
-                  position: "relative",
-                  overflow: "hidden"
+                  flexDirection: isMobile ? "column" : "row",
+                  gap: isMobile ? "20px" : "60px",
+                  paddingBottom: "40px",
+                  borderBottom: idx !== strategicGoals.length - 1 ? "1px solid var(--border-soft)" : "none",
+                  alignItems: "flex-start"
                 }}
               >
-                <div style={{ position: "absolute", top: "-15px", right: "20px", fontSize: "7rem", fontWeight: 900, color: "rgba(229, 57, 53, 0.04)", fontFamily: "var(--font-heading)", lineHeight: 1, pointerEvents: "none", zIndex: 0 }}>
-                  {goal.num}
-                </div>
-                
-                <div style={{ position: "relative", zIndex: 1, display: "flex", alignItems: "center", gap: "20px", marginBottom: "20px" }}>
-                  <div style={{ display: "flex", alignItems: "center", justifyContent: "center", background: "rgba(229, 57, 53, 0.1)", color: "var(--primary-red)", width: "55px", height: "55px", borderRadius: "16px", fontSize: "1.4rem", fontWeight: 800, fontFamily: "var(--font-heading)", flexShrink: 0 }}>
+                <div style={{ flex: "0 0 80px", borderRight: isMobile ? "none" : "2px solid rgba(229, 57, 53, 0.2)", paddingRight: isMobile ? "0" : "30px" }}>
+                  <div style={{ fontSize: "3rem", fontWeight: 900, color: "var(--primary-red)", fontFamily: "var(--font-heading)", lineHeight: 1 }}>
                     {goal.num}
                   </div>
-                  <h3 style={{ fontSize: "1.35rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, lineHeight: 1.3 }}>
-                    {goal.title}
-                  </h3>
                 </div>
                 
-                <p style={{ position: "relative", zIndex: 1, color: "var(--text-light)", lineHeight: 1.7, margin: "10px 0 25px 0", fontSize: "1.1rem" }}>
-                  {goal.desc}
-                </p>
+                <div style={{ flex: "1" }}>
+                  <h3 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0", lineHeight: 1.2 }}>
+                    {goal.title}
+                  </h3>
+                  <p style={{ color: "var(--text-light)", lineHeight: 1.7, margin: "0", fontSize: "1.1rem" }}>
+                    {goal.desc}
+                  </p>
+                </div>
                 
-                <ul style={{ position: "relative", zIndex: 1, listStyle: "none", padding: 0, margin: "auto 0 0 0", display: "flex", flexDirection: "column", gap: "12px" }}>
-                  {goal.bullets.map((bullet, bIdx) => (
-                    <li key={bIdx} style={{ display: "flex", alignItems: "flex-start", gap: "12px", color: "var(--text-dark)", fontSize: "0.95rem", lineHeight: 1.5, fontWeight: 600 }}>
-                      <CheckCircle size={20} color="var(--primary-red)" style={{ flexShrink: 0, marginTop: "2px" }} />
-                      <span>{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
+                <div style={{ flex: "1" }}>
+                  <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "15px" }}>
+                    {goal.bullets.map((bullet, bIdx) => (
+                      <li key={bIdx} style={{ display: "flex", alignItems: "flex-start", gap: "12px", color: "var(--text-dark)", fontSize: "1.05rem", lineHeight: 1.5, fontWeight: 500 }}>
+                        <CheckCircle size={20} color="var(--primary-red)" style={{ flexShrink: 0, marginTop: "2px" }} />
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             ))}
           </div>
