@@ -25,7 +25,7 @@ export default function MaritimeConstructionPage() {
         style={{ position: 'relative', 
           backgroundImage: "url('/images/home/slider-maritime-fihladhoo.jpg')",
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: 'right center',
           color: 'var(--white)',
           padding: isMobile ? '40px 20px' : '70px 20px',
           textAlign: 'center'
