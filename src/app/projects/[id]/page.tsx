@@ -84,8 +84,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
                    <p>By leveraging our decades of heavy civil engineering expertise, a massive self-owned machinery fleet, and a dedicated workforce of over 1400 professionals, we ensured that this project strictly adhered to ISO 9001 quality, ISO 14001 environmental, and ISO 45001 safety standards from inception to completion.</p>`;
   }
 
-    const googleImagesUrl = `https://www.google.com/search?tbm=isch&q=${searchQuery}`;
-
+    
   const galleryImages = project.images || project.galleryImages || [];
   const hasGallery = galleryImages.length > 0;
   const heroImg = project.heroImage || (galleryImages.length > 0 ? (galleryImages.find((img: string) => img.toLowerCase().includes('background')) || galleryImages[0]) : null);
