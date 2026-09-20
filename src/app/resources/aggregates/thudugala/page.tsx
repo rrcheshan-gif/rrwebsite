@@ -22,7 +22,7 @@ export default function ThudugalaPlant() {
       {/* Intro Section */}
       <section style={{ padding: "80px 20px 50px", backgroundColor: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
-          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "1000px" }}>
+          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "100%" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
               <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Thudugala Crusher Plant</h4>
@@ -56,7 +56,7 @@ export default function ThudugalaPlant() {
       {/* Photo Gallery */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
-          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "1000px" }}>
+          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "100%" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
               <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Plant Gallery</h4>
@@ -77,7 +77,7 @@ export default function ThudugalaPlant() {
       {/* Products List */}
       <section style={{ padding: "60px 20px 50px", backgroundColor: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
-          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "1000px" }}>
+          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "100%" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
               <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Our Products</h4>

@@ -58,7 +58,7 @@ export default function BoardOfDirectors() {
               <h2 style={{ fontSize: isMobile ? "2rem" : "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, lineHeight: 1.1 }}>
                 Our <span className="text-gradient" style={{ fontWeight: 300 }}>Management</span>
               </h2>
-              <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, maxWidth: "1000px", marginTop: "20px" }}>
+              <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, maxWidth: "100%", marginTop: "20px", textAlign: "justify" }}>
                 At the helm of RR Construction is a visionary leadership team that blends decades of heavy civil engineering expertise with strategic foresight. Rather than simply managing projects, our leadership is deeply involved in the operational intricacies—from expanding our massive proprietary machinery fleet to advancing our asphalt and concrete production capabilities. It is this hands-on approach and unwavering commitment to total resource independence that ensures we consistently deliver uncompromising quality and forge lasting trust across Sri Lanka’s infrastructure landscape.
               </p>
             </div>
