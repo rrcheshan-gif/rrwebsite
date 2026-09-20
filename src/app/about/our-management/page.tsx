@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { ArrowRight, User } from 'lucide-react';
+import { ArrowRight, User, Quote } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
 import BackButton from "@/app/components/BackButton";
@@ -94,11 +94,57 @@ export default function BoardOfDirectors() {
               </div>
             ))}
           </div>
+          </div>
+        </section>
 
+
+      {/* MD Message Section */}
+      <section style={{ padding: isMobile ? "0px 10px 40px" : "0px 20px 80px" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", position: "relative" }}>
+          <div style={{ 
+            background: "linear-gradient(135deg, #1b2738 0%, #0f172a 100%)", 
+            borderRadius: "24px", 
+            padding: isMobile ? "40px 20px" : "60px 80px", 
+            position: "relative",
+            overflow: "hidden",
+            boxShadow: "0 20px 50px rgba(0,0,0,0.15)"
+          }}>
+            {/* Decorative background elements */}
+            <div style={{ position: "absolute", top: "-20%", right: "-10%", width: "50%", height: "150%", background: "rgba(255,255,255,0.03)", transform: "rotate(15deg)", pointerEvents: "none" }}></div>
+            <div style={{ position: "absolute", bottom: "40px", right: "60px", opacity: 0.1, pointerEvents: "none" }}>
+              <Quote size={160} color="#ffffff" fill="currentColor" />
+            </div>
+
+            <div style={{ position: "relative", zIndex: 2 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "30px" }}>
+                <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+                <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Message from the Managing Director</h4>
+              </div>
+              
+              <h2 style={{ fontSize: "clamp(1.6rem, 4vw, 2.2rem)", color: "white", fontFamily: "var(--font-heading)", fontWeight: 600, margin: "0 0 30px 0", lineHeight: 1.4, fontStyle: "italic" }}>
+                "We don't just build structures; we build the foundations for our nation's progress with uncompromising quality."
+              </h2>
+              
+              <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "1.15rem", lineHeight: 1.8, marginBottom: "20px", maxWidth: "900px" }}>
+                At RR Construction, our journey of over three decades has been defined by a singular commitment: building trust through engineering excellence. Since our inception, we have continually invested in our most valuable assets—our people and our state-of-the-art machinery fleet.
+              </p>
+              <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "1.15rem", lineHeight: 1.8, marginBottom: "40px", maxWidth: "900px" }}>
+                This operational independence allows us to execute complex infrastructure projects that shape the future of Sri Lanka. As we look to the future, our core values of integrity, innovation, and uncompromising quality will continue to guide every project we undertake.
+              </p>
+              
+              <div style={{ display: "flex", alignItems: "center", gap: "20px", borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "30px" }}>
+                <div>
+                  <h4 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "1.3rem", fontWeight: 800, margin: "0 0 5px 0" }}>Mr. Ranjith Senadhera S.D.</h4>
+                  <p style={{ color: "var(--primary-red)", fontWeight: 600, margin: 0, fontSize: "0.95rem", letterSpacing: "1px" }}>MANAGING DIRECTOR</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
   );
 }
+
 
 
