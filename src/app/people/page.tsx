@@ -10,8 +10,10 @@ export default function People() {
         
 
       {/* Page Header */}
-      <section className="page-header our-people-hero" style={{ 
-        backgroundColor: "#1b2738", 
+      <section className="page-header" style={{ 
+        backgroundImage: "url('/images/page-headers/people-team-final.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "right center",
         padding: "140px 20px 40px", 
         textAlign: "left", 
         position: "relative", 
@@ -19,12 +21,6 @@ export default function People() {
         margin: '0 20px 40px', 
         overflow: "hidden" 
       }}>
-        
-        <div className="hero-img-container">
-          <img src="/images/page-headers/people-team-final.jpg" alt="Our Team" />
-        </div>
-        <div className="hero-gradient"></div>
-        
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our <span style={{ color: "var(--primary-red)" }}>People</span></h1>
           <div style={{ marginTop: "20px", textAlign: "left" }}><BackButton /></div>
