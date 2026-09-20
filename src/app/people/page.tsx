@@ -7,25 +7,83 @@ export default function People() {
       
         
 
-        {/* Page Header */}
+        <style dangerouslySetInnerHTML={{__html: `
+          .page-header::before, .page-header::after { display: none !important; }
+          .hero-img-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 58%;
+            height: 100%;
+            z-index: 0;
+          }
+          .hero-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+          }
+          .hero-gradient {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #1b2738 0%, #1b2738 42%, rgba(27,39,56,0.85) 52%, rgba(27,39,56,0) 75%);
+            z-index: 1;
+            pointer-events: none;
+          }
+          @media (max-width: 992px) {
+            .hero-img-container { width: 70%; }
+            .hero-gradient { background: linear-gradient(to right, #1b2738 0%, #1b2738 30%, rgba(27,39,56,0.9) 45%, rgba(27,39,56,0) 75%); }
+          }
+          @media (max-width: 768px) {
+            .page-header {
+              padding-bottom: 0 !important;
+              display: flex;
+              flex-direction: column;
+            }
+            .hero-img-container {
+              position: relative !important;
+              width: 100% !important;
+              height: 350px !important;
+              margin-top: 40px;
+              order: 2;
+              z-index: 1;
+              border-radius: 20px 20px 0 0;
+              overflow: hidden;
+            }
+            .hero-img-container img {
+              object-position: center 15%;
+            }
+            .hero-gradient {
+              display: none;
+            }
+            .page-header > .container {
+              order: 1;
+            }
+          }
+        `}} />
+
+      {/* Page Header */}
       <section className="page-header" style={{ 
-  backgroundImage: "url('/images/page-headers/people-team-new.jpg')", 
-  backgroundColor: "#1b2738", 
-  padding: "140px 20px 40px", 
-  textAlign: "left", 
-  position: "relative", 
-  backgroundSize: "max(55vw, 600px) auto", 
-  backgroundPosition: "right 20%",
-  backgroundRepeat: "no-repeat", 
-  borderRadius: '32px', 
-  margin: '0 20px 40px', 
-  overflow: "hidden" 
-}}>
-          
+        backgroundColor: "#1b2738", 
+        padding: "140px 20px 40px", 
+        textAlign: "left", 
+        position: "relative", 
+        borderRadius: '32px', 
+        margin: '0 20px 40px', 
+        overflow: "hidden" 
+      }}>
+        
+        <div className="hero-img-container">
+          <img src="/images/page-headers/people-team-new.jpg" alt="Our Team" />
+        </div>
+        <div className="hero-gradient"></div>
         
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our <span style={{ color: "var(--primary-red)" }}>People</span></h1>
-                <div style={{ marginTop: "20px", textAlign: "left" }}><BackButton /></div>
+          <div style={{ marginTop: "20px", textAlign: "left" }}><BackButton /></div>
         </div>
       </section>
 
