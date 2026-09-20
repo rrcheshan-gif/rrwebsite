@@ -5,7 +5,7 @@ export default function People() {
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/our-people-workers.jpg')", padding: "140px 20px 40px", textAlign: "left", position: "relative", backgroundSize: "cover", backgroundPosition: "right center",  borderRadius: '32px',
+      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/our-people-workers.jpg')", padding: "140px 20px 40px", textAlign: "left", position: "relative", backgroundSize: "cover", backgroundPosition: "center",  borderRadius: '32px',
           margin: '0 20px 40px', overflow: "hidden" }}>
         
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
