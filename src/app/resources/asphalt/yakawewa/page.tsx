@@ -14,11 +14,14 @@ export default function YakawewaPlant() {
       <section className="page-header" style={{ backgroundImage: "url('/images/yakawewa-asphalt-2.jpg')", padding: "140px 20px 40px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0,0,0,0.6)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <div style={{ textAlign: "left", marginBottom: "24px" }}>
-            <button onClick={(e) => { e.preventDefault(); router.back(); }} style={{ background: "none", border: "none", cursor: "pointer", color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold", fontSize: "1rem", padding: 0 }}>Back</button>
-          </div>
+          
           
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Yakawewa <span style={{ color: "var(--primary-red)" }}>Asphalt Plant</span></h1>
+            <div style={{ marginTop: "30px" }}>
+              <button onClick={(e) => { e.preventDefault(); router.back(); }} style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "#fff", textDecoration: "none", fontWeight: 700, fontSize: "0.95rem", padding: "10px 24px", background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.2)", borderRadius: "30px", cursor: "pointer", transition: "all 0.3s ease", outline: "none" }}>
+                &larr; Back
+              </button>
+            </div>
         </div>
       </section>
 

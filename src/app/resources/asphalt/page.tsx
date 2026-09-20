@@ -25,13 +25,19 @@ export default function AsphaltProductionPage() {
           color: "white"
       }}>
         <div className="container">
-          <div style={{ textAlign: "left", marginBottom: "24px", width: "100%", maxWidth: "1500px", margin: "0 auto 24px" }}>
-            <button onClick={(e) => { e.preventDefault(); router.back(); }} style={{ background: "none", border: "none", cursor: "pointer", color: "#fff", textDecoration: "none", borderBottom: "1px solid #fff", paddingBottom: "2px", fontWeight: "bold", fontSize: "1.1rem", padding: "0 0 2px 0", outline: "none" }}>&larr; Back</button>
-          </div>
+          
           <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 3.5rem)", marginBottom: "15px", fontWeight: 800 }}>Asphalt Production</h1>
             <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
                High-grade asphalt production facilities supporting major expressway and highway projects.
             </p>
+              <div style={{ marginTop: "30px" }}>
+                <button onClick={(e) => { e.preventDefault(); router.back(); }} style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "#fff", textDecoration: "none", fontWeight: 700, fontSize: "0.95rem", padding: "10px 24px", background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.2)", borderRadius: "30px", cursor: "pointer", transition: "all 0.3s ease", outline: "none" }}>
+                  &larr; 
+                  Back
+                
+                </button>
+              </div>
+              
         </div>
       </div>
 

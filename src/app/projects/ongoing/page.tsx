@@ -15,10 +15,7 @@ export default function OngoingProjects() {
     <div style={{ minHeight: '100vh', background: 'var(--bg-light)' }}>
       {/* Hero Section with Image Space */}
       <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/page-headers/ongoing-hero.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)' }}>
-        <div className="absolute-back-btn" style={{ position: "absolute", top: "110px", left: "clamp(20px, 4vw, 40px)", zIndex: 99 }}>
-          <Link href="/projects" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Projects
-            </Link>
-        </div>
+        
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 800, marginBottom: '20px', letterSpacing: '-1px' }}>
             Ongoing <span style={{ color: 'var(--primary-red)' }}>Projects</span>
@@ -26,6 +23,12 @@ export default function OngoingProjects() {
             <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
                Currently executing massive civil engineering and infrastructure developments.
             </p>
+              <div style={{ marginTop: "30px" }}>
+                <Link href="/projects" style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "#fff", textDecoration: "none", fontWeight: 700, fontSize: "0.95rem", padding: "10px 24px", background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.2)", borderRadius: "30px", transition: "all 0.3s ease" }}>
+                  &larr; Back to Projects
+            
+                </Link>
+              </div>
           
         </div>
       </section>

@@ -32,10 +32,7 @@ export default function WaterInfrastructurePage() {
           textAlign: 'center'
         }}
       >
-        <div className="absolute-back-btn" style={{ position: "absolute", top: "110px", left: "clamp(20px, 4vw, 40px)", zIndex: 99 }}>
-          <Link href="/services" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Services
-          </Link>
-        </div>
+        
         {/* Absolute Back Button */}
         <div style={containerStyle}>
           
@@ -50,6 +47,12 @@ export default function WaterInfrastructurePage() {
             <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
                Building resilient water supply, treatment, and distribution systems for the future.
             </p>
+              <div style={{ marginTop: "30px" }}>
+                <Link href="/services" style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "#fff", textDecoration: "none", fontWeight: 700, fontSize: "0.95rem", padding: "10px 24px", background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.2)", borderRadius: "30px", transition: "all 0.3s ease" }}>
+                  &larr; Back to Services
+          
+                </Link>
+              </div>
           
         </div>
       </section>
