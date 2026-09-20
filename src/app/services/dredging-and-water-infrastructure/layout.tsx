@@ -1,13 +1,13 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Dredging Company in Sri Lanka | Dredging & Reclamation Services | RR Construction',
+  title: 'Dredging Company in Sri Lanka | Dredging & Water Infrastructure Services | RR Construction',
   description: 'RR Construction is a dredging company in Sri Lanka providing marine dredging, harbour dredging, land reclamation and coastal heavy civil engineering services.',
-  alternates: { canonical: 'https://www.rrconstruction.lk/services/dredging-reclamation' },
+  alternates: { canonical: 'https://www.rrconstruction.lk/services/dredging-and-water-infrastructure' },
   openGraph: {
     title: 'Dredging Company in Sri Lanka | RR Construction',
     description: 'Marine dredging, harbour dredging, and land reclamation services in Sri Lanka.',
-    url: 'https://www.rrconstruction.lk/services/dredging-reclamation',
+    url: 'https://www.rrconstruction.lk/services/dredging-and-water-infrastructure',
     type: 'website'
   }
 };
@@ -24,7 +24,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       'url': 'https://www.rrconstruction.lk'
     },
     'areaServed': { '@type': 'Country', 'name': 'Sri Lanka' },
-    'url': 'https://www.rrconstruction.lk/services/dredging-reclamation'
+    'url': 'https://www.rrconstruction.lk/services/dredging-and-water-infrastructure'
   };
 
   const breadcrumbSchema = {
@@ -33,7 +33,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     'itemListElement': [
       { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.rrconstruction.lk' },
       { '@type': 'ListItem', 'position': 2, 'name': 'Services', 'item': 'https://www.rrconstruction.lk/services' },
-      { '@type': 'ListItem', 'position': 3, 'name': 'Dredging & Reclamation', 'item': 'https://www.rrconstruction.lk/services/dredging-reclamation' }
+      { '@type': 'ListItem', 'position': 3, 'name': 'Dredging & Water Infrastructure', 'item': 'https://www.rrconstruction.lk/services/dredging-and-water-infrastructure' }
     ]
   };
 

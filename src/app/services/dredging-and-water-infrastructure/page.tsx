@@ -6,7 +6,7 @@ import { CheckCircle2 } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
 import BackButton from "@/app/components/BackButton";
-export default function WaterInfrastructurePage() {
+export default function DredgingWaterInfrastructurePage() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function WaterInfrastructurePage() {
       <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "url('/images/service-water-hero.jpeg')",
+          backgroundImage: "url('/images/projects/filadhoo/img3.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'var(--white)',
@@ -43,7 +43,7 @@ export default function WaterInfrastructurePage() {
             margin: '0 0 24px',
             lineHeight: 1.2
           }}>
-            Water <span style={{ color: 'var(--primary-red)' }}>Infrastructure & Heavy Civil Engineering</span> in Sri Lanka
+            Dredging & <span style={{ color: "var(--primary-red)" }}>Water Infrastructure</span>
           </h1>
               <BackButton />
           
@@ -59,10 +59,10 @@ export default function WaterInfrastructurePage() {
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>CAPABILITIES</h4>
             </div>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", marginBottom: "20px", fontWeight: 800, lineHeight: 1.1 }}>
-              Our Water Infrastructure <span className="text-gradient" style={{ fontWeight: 300 }}>Services</span>
+              Expertise in Marine <span className="text-gradient" style={{ fontWeight: 300 }}>Environments</span>
             </h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.6, textAlign: "left", margin: 0 }}>
-              Extensive experience in constructing municipal and regional water infrastructure, handling everything from clean drinking water distribution to large-scale irrigation and storm drainage systems across Sri Lanka.
+              RR Construction provides specialized dredging and reclamation services for ports, harbours, and coastal developments across Sri Lanka. Utilizing our own fleet of marine equipment and adhering to ISO 14001:2015 environmental management systems, we deliver complex marine engineering projects with a focus on efficiency and sustainability.
             </p>
           </div>
 
@@ -72,9 +72,9 @@ export default function WaterInfrastructurePage() {
             gap: '30px' 
           }}>
             {[
-              { title: 'Water Supply Systems', desc: 'Constructing municipal and regional water supply networks, including pipe networks, transmission mains, pumping stations, and elevated ground reservoirs to deliver clean water.' },
-              { title: 'Water Treatment Plants', desc: 'Heavy Civil engineering and structural works for industrial and municipal water treatment facilities, including clarifiers, filtration structures, and chemical dosing buildings.' },
-              { title: 'Irrigation & Drainage', desc: 'Handling large-scale agricultural irrigation projects (canals, spillways, anicuts, tank rehabilitation) and urban storm water management solutions to prevent flooding.' }
+              { title: 'Marine & Harbour Dredging', desc: 'Capital and maintenance dredging for ports, harbours, and navigational channels to ensure safe vessel passage.' },
+              { title: 'Land Reclamation', desc: 'Coastal reclamation, fill placement, and compaction to create new land for port expansion and coastal development.' },
+              { title: 'Coastal Civil Works', desc: 'Construction of seawalls, breakwaters, and coastal protection structures to safeguard marine infrastructure.' }
             ].map((capability, index) => (
               <div key={index} style={{
                 backgroundColor: 'var(--bg-light)',
@@ -103,17 +103,17 @@ export default function WaterInfrastructurePage() {
           }}>
             <div>
               <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.75rem' : '2.25rem', color: 'var(--text-dark)', marginBottom: '20px' }}>
-                Key Client Organizations
+                Self-Owned Equipment Fleet
               </h2>
               <p style={{ color: 'var(--text-light)', lineHeight: 1.7, marginBottom: '20px' }}>
-                We are a trusted partner and registered contractor for major government bodies and authorities responsible for water infrastructure in Sri Lanka. This includes the National Water Supply & Drainage Board (NWSDB), Department of Irrigation, Provincial Councils, and Local Authorities.
+                We maintain a self-owned marine equipment fleet, ensuring reliable availability and efficient project execution. This allows us to handle complex dredging projects with precision and reduces dependency on external rentals.
               </p>
               
               <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.75rem' : '2.25rem', color: 'var(--text-dark)', margin: '40px 0 20px' }}>
-                Quality & Safety Standards
+                Environmental Management
               </h2>
               <p style={{ color: 'var(--text-light)', lineHeight: 1.7 }}>
-                Water infrastructure projects demand stringent quality controls to ensure structural integrity and hygienic conditions. We conduct rigorous testing of aggregates, cement, and concrete mixes to ensure water-tight structures. Additionally, we strictly adhere to environmental regulations during construction, particularly near existing waterways.
+                We strictly adhere to ISO 14001:2015 Environmental Management standards. Our comprehensive environmental management plans protect marine ecosystems during all phases of dredging and reclamation.
               </p>
             </div>
             
@@ -125,15 +125,15 @@ export default function WaterInfrastructurePage() {
               boxShadow: '0 10px 30px rgba(0,0,0,0.05)'
             }}>
               <h3 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginBottom: '24px' }}>
-                Infrastructure Expertise
+                Key Technical Strengths
               </h3>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 {[
-                  'Pipe networks, distribution systems, and ground reservoirs',
-                  'Clarifiers, chemical dosing buildings, and intake structures',
-                  'Irrigation canals, spillways, anicuts, and tank rehabilitation',
-                  'Urban drainage networks, retention basins, and flood protection',
-                  'Civil works for M&E installations in treatment plants'
+                  'Capital dredging for new developments',
+                  'Maintenance dredging to preserve navigational depths',
+                  'Reliable self-owned marine equipment fleet',
+                  'ISO 14001:2015 Environmental Management compliant',
+                  'Expertise in seawalls and breakwaters'
                 ].map((item, i) => (
                   <li key={i} style={{ 
                     display: 'flex', 
