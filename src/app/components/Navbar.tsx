@@ -51,17 +51,16 @@ export default function Navbar() {
       <header className={`navbar-wrapper ${scrolled ? "scrolled" : "home-nav"}`}>
         <div className="container">
           <nav className="navbar">
-            <a href="/" className="logo" onClick={() => setMobileMenuOpen(false)}>
+            <Link href="/" className="logo" onClick={() => setMobileMenuOpen(false)}>
               <img src="/images/logo.png" alt="RR Construction Logo" className="nav-logo-img" />
                 <div className="logo-text">
                   <span className="logo-title">Construction</span>
                   <span className="logo-sub">(Pvt) Ltd</span>
                 </div>
-              
-            </a>
+            </Link>
             
             <ul className={`nav-links ${mobileMenuOpen ? "active" : ""}`}>
-              <li><a href="/" onClick={() => setMobileMenuOpen(false)}>Home</a></li>
+              <li><Link href="/" onClick={() => setMobileMenuOpen(false)}>Home</Link></li>
               
               <li className={`dropdown ${activeDropdown === 'about' ? 'open' : ''}`}>
                 <div className="dropdown-header">
