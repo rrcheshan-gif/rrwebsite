@@ -14,23 +14,25 @@ export default function BackButton() {
           alignItems: "center", 
           gap: "8px", 
           color: "#fff", 
-          textDecoration: "none", 
-          fontWeight: 700, 
+          background: "none",
+          border: "none",
+          padding: 0,
+          fontWeight: 600, 
           fontSize: "0.95rem", 
-          padding: "10px 24px", 
-          background: "rgba(255,255,255,0.1)", 
-          backdropFilter: "blur(10px)", 
-          border: "1px solid rgba(255,255,255,0.2)", 
-          borderRadius: "30px", 
           cursor: "pointer", 
           transition: "all 0.3s ease", 
-          outline: "none" 
+          outline: "none",
+          opacity: 0.8
         }}
         onMouseOver={(e) => {
-          e.currentTarget.style.background = "rgba(255,255,255,0.2)";
+          e.currentTarget.style.opacity = "1";
+          e.currentTarget.style.textDecoration = "underline";
+          e.currentTarget.style.transform = "translateX(-3px)";
         }}
         onMouseOut={(e) => {
-          e.currentTarget.style.background = "rgba(255,255,255,0.1)";
+          e.currentTarget.style.opacity = "0.8";
+          e.currentTarget.style.textDecoration = "none";
+          e.currentTarget.style.transform = "translateX(0)";
         }}
       >
         &larr; Back
