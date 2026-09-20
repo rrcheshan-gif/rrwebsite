@@ -1831,7 +1831,21 @@ ul {
   }
 }
 
-/* Removed old toxic page-header height and background position overrides */
+/* Global override to make page headers taller and zoom out the background image so more of it fits */
+.page-header {
+  min-height: 55vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    min-height: 40vh !important;
+  }
+}
 
 /* Global override for page header subtitles (h4) to fix visibility against image backgrounds */
 .page-header h4 {
