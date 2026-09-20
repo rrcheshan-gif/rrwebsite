@@ -398,11 +398,11 @@ export default function Home() {
               { title: "Civil Structures", img: "/images/wellamankara/building-projects.jpg", icon: <Building2 size={30} />, text: "Specialized structural engineering encompassing water retaining facilities, towers, and heavy steel fabrication." },
               { title: "Maritime & Water", img: "/images/maritime-harbour-site.jpg", icon: <Waves size={30} />, text: "Dredging, reclamation, and water supply systems engineered to serve communities at scale." },
               { title: "Landslide Mitigation", img: "/images/home/landslide-mitigation-new.jpeg", icon: <Mountain size={30} />, text: "Expert slope stabilization and rock-fall protection systems in critical hill-country zones." },
-                { title: "Piling & Foundation", img: "/images/home/piling-service-card.jpg", icon: <HardHat size={30} />, text: "Advanced geotechnical solutions including bored cast-in-situ piling and retaining structures." }
+                { title: "Piling & Foundation", img: "/images/home/piling-service-card.jpg", icon: <HardHat size={30} />, position: "center 20%", text: "Advanced geotechnical solutions including bored cast-in-situ piling and retaining structures." }
             ].map((srv, i) => (
               <div key={i} className="modern-service-card glass-panel hover-lift" style={{ width: "100%", minHeight: "280px", position: "relative", overflow: "hidden", padding: 0, borderRadius: "20px" }}>
                 <div style={{ width: "100%", height: "100%", transform: srv.scale || "scale(1)" }}>
-                    <img src={srv.img} alt={srv.title} className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.9, transition: "opacity 0.5s ease" }} onMouseOver={(e) => { e.currentTarget.style.opacity = '1' }} onMouseOut={(e) => { e.currentTarget.style.opacity = '0.9' }} />
+                    <img src={srv.img} alt={srv.title} className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: srv.position || "center", opacity: 0.9, transition: "opacity 0.5s ease" }} onMouseOver={(e) => { e.currentTarget.style.opacity = '1' }} onMouseOut={(e) => { e.currentTarget.style.opacity = '0.9' }} />
                   </div>
                 <div className="msc-content" style={{ position: "absolute", bottom: 0, left: 0, width: "100%", padding: "25px", background: "linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.3) 80%, transparent)", color: "white", pointerEvents: "none" }}>
                   
