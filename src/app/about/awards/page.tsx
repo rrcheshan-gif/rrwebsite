@@ -113,15 +113,15 @@ export default function Awards() {
                   <div key={idx} style={{ background: "var(--white)", border: "1px solid var(--border-soft)", padding: "50px 30px", borderRadius: "24px", textAlign: "center", transition: "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)", position: "relative", overflow: "hidden", boxShadow: "0 15px 40px rgba(0,0,0,0.04)", display: "flex", flexDirection: "column" }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-10px)'; e.currentTarget.style.boxShadow = '0 25px 50px rgba(229, 57, 53, 0.1)'; }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 15px 40px rgba(0,0,0,0.04)'; }}>
                     <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "6px", background: "linear-gradient(90deg, var(--primary-red), #ff7b7b)" }}></div>
                     
-                    <div style={{ display: "inline-flex", background: "rgba(229, 57, 53, 0.05)", padding: "25px", borderRadius: "50%", marginBottom: "30px", border: "1px dashed rgba(229, 57, 53, 0.3)" }}>
-                      {cert.icon}
-                    </div>
+                    <div style={{ width: "100%", marginBottom: "30px", borderRadius: "12px", overflow: "hidden", border: "1px solid var(--border-soft)", boxShadow: "0 10px 25px rgba(0,0,0,0.06)", backgroundColor: "#fff" }}>
+                        <img src="/images/awards/iso-certificate.png" alt={`${cert.title} Certificate`} style={{ width: "100%", height: "auto", display: "block" }} />
+                      </div>
                     
                     <h3 style={{ fontSize: "1.8rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", margin: "0 0 10px" }}>{cert.title}</h3>
                     <h4 style={{ fontSize: "0.95rem", fontWeight: 700, color: "var(--primary-red)", margin: "0 0 25px", letterSpacing: "1.5px", textTransform: "uppercase" }}>{cert.subtitle}</h4>
                     
                     <p style={{ color: "var(--text-light)", margin: "0 0 30px 0", fontSize: "1.05rem", lineHeight: 1.8, flex: 1 }}>{cert.desc}</p>
-                      <a href="/images/awards/iso-certificate.png" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", padding: "12px 24px", background: "rgba(229, 57, 53, 0.05)", color: "var(--primary-red)", borderRadius: "30px", textDecoration: "none", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "1px", border: "1px solid rgba(229, 57, 53, 0.2)", transition: "all 0.3s ease", alignSelf: "center", marginTop: "auto" }} onMouseEnter={(e) => { e.currentTarget.style.background = "var(--primary-red)"; e.currentTarget.style.color = "white"; }} onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(229, 57, 53, 0.05)"; e.currentTarget.style.color = "var(--primary-red)"; }}>View Certificate</a>
+                      
                   </div>
                 ))}
               </div>
