@@ -49,15 +49,6 @@ export default function LandslideMitigationPage() {
             <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
                Protecting communities and infrastructure through advanced geotechnical stabilization.
             </p>
-          <p style={{
-            fontSize: isMobile ? '1rem' : '1.2rem',
-            lineHeight: 1.6,
-            opacity: 0.9,
-            maxWidth: '800px',
-            margin: '0 auto'
-          }}>
-            in Sri Lanka
-          </p>
           
         </div>
       </section>

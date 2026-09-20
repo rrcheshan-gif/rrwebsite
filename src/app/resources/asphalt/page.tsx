@@ -32,7 +32,6 @@ export default function AsphaltProductionPage() {
             <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
                High-grade asphalt production facilities supporting major expressway and highway projects.
             </p>
-          <p style={{ fontSize: "1.1rem", opacity: 0.9, maxWidth: "700px", margin: "0 auto" }}>Premium hot-mix asphalt for highway and expressway paving projects across Sri Lanka.</p>
         </div>
       </div>
 

@@ -32,7 +32,6 @@ export default function CrusherPage() {
             <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
                Massive aggregate crushing capabilities fueling our heavy civil engineering operations.
             </p>
-          <p style={{ fontSize: "1.1rem", opacity: 0.9, maxWidth: "700px", margin: "0 auto" }}>High-yield aggregates for high-rise buildings, expressways, and major infrastructure projects.</p>
         </div>
       </div>
 

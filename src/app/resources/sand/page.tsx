@@ -32,7 +32,6 @@ export default function SandPage() {
             <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
                Sustainable, high-quality washed sand production for superior concrete strength.
             </p>
-          <p style={{ fontSize: "1.1rem", opacity: 0.9, maxWidth: "700px", margin: "0 auto" }}>High-quality Manufactured Sand (M-Sand) providing superior compressive strength.</p>
         </div>
       </div>
 

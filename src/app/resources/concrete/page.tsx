@@ -33,7 +33,6 @@ export default function ConcretePage() {
             <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
                State-of-the-art batching plants delivering premium grade ready-mix concrete.
             </p>
-          <p style={{ fontSize: "1.1rem", opacity: 0.9, maxWidth: "700px", margin: "0 auto" }}>Premium quality Ready-Mix Concrete batching plants strategically located across Sri Lanka for uninterrupted project delivery.</p>
         </div>
       </div>
 
