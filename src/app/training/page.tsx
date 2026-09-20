@@ -79,7 +79,7 @@ export default function Training() {
               {/* Left Content */}
               <div style={{ flex: 1, padding: isMobile ? "30px 20px" : "50px" }}>
                  <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px", flexWrap: "wrap" }}>
-                    <span style={{ fontSize: "0.8rem", background: "rgba(15, 23, 42, 0.08)", color: "var(--text-dark)", padding: "6px 15px", borderRadius: "20px", textTransform: "uppercase", letterSpacing: "1px", fontWeight: "800" }}>Corporate Training</span>
+                    <span style={{ fontSize: "0.8rem", background: "var(--border-soft)", color: "var(--text-dark)", padding: "6px 15px", borderRadius: "20px", textTransform: "uppercase", letterSpacing: "1px", fontWeight: "800" }}>Corporate Training</span>
                     <span style={{ fontSize: "0.8rem", background: "var(--primary-red)", color: "white", padding: "6px 15px", borderRadius: "20px", textTransform: "uppercase", letterSpacing: "1px", fontWeight: "800" }}>Upcoming Program</span>
                  </div>
                  
