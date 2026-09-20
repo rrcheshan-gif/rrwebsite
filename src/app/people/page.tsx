@@ -12,8 +12,19 @@ export default function People() {
         `}} />
 
         {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/people-team-new.jpg')", padding: "140px 20px 40px", textAlign: "left", position: "relative", backgroundSize: "cover", backgroundPosition: "center",  borderRadius: '32px',
-          margin: '0 20px 40px', overflow: "hidden" }}>
+      <section className="page-header" style={{ 
+  backgroundImage: "url('/images/page-headers/people-team-new.jpg')", 
+  backgroundColor: "#1b2738", 
+  padding: "140px 20px 40px", 
+  textAlign: "left", 
+  position: "relative", 
+  backgroundSize: "clamp(600px, 70vw, 1000px) auto", 
+  backgroundPosition: "right 20%",
+  backgroundRepeat: "no-repeat", 
+  borderRadius: '32px', 
+  margin: '0 20px 40px', 
+  overflow: "hidden" 
+}}>
           <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(to right, rgba(27, 39, 56, 1) 0%, rgba(27, 39, 56, 1) 35%, rgba(27, 39, 56, 0.7) 50%, rgba(27, 39, 56, 0) 70%)", zIndex: 1 }}></div>
         
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
