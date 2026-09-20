@@ -24,20 +24,23 @@ export default function YakawewaPlant() {
       </section>
 
       {/* Intro Section */}
-      <section style={{ padding: "60px 20px 50px", backgroundColor: "var(--white)" }}>
-        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto", textAlign: "center" }}>
-          <h4 style={{ color: "var(--primary-red)", fontWeight: 700,  letterSpacing: "2px", marginBottom: "10px" }}>Medawachchiya (North Central Province)</h4>
-          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>High-Performance Hot Mix Asphalt</h2>
-          <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "40px", textAlign: "center" }}>Fueling highway and expressway development across Sri Lanka.</p>
-
-          <div style={{ background: "var(--white)", padding: "40px", borderRadius: "12px", borderTop: "4px solid var(--primary-red)", marginBottom: "40px", boxShadow: "0 5px 15px rgba(0,0,0,0.05)", textAlign: "left" }}>
-            <h3 style={{ color: "var(--text-dark)", marginBottom: "15px", fontFamily: "var(--font-heading)", fontSize: "1.5rem" }}>Advanced Asphalt Batching Technology</h3>
-            <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.1rem" }}>
+      <section style={{ padding: "80px 20px 50px", backgroundColor: "var(--white)" }}>
+        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
+          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "1000px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Medawachchiya (North Central Province)</h4>
+            </div>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 3.2rem)", color: "var(--text-dark)", lineHeight: 1.1, margin: "0 0 20px 0", fontWeight: 800 }}>High-Performance Hot Mix Asphalt</h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "30px", paddingLeft: "55px", borderLeft: "2px solid rgba(229, 57, 53, 0.3)" }}>Fueling highway and expressway development across Sri Lanka.</p>
+            
+            <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", marginBottom: "15px", fontFamily: "var(--font-heading)", fontWeight: 700 }}>Advanced Asphalt Batching Technology</h3>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0 }}>
               Our Yakawewa Asphalt Facility operates a state-of-the-art, fully automated batching plant capable of producing premium hot-mix asphalt for large-scale infrastructure projects. We utilize precision temperature and mix-control systems to guarantee maximum durability, load-bearing capacity, and smooth highway and expressway surface finishes that withstand extreme weather and heavy traffic conditions.
             </p>
           </div>
-
-          <div style={{ display: "flex", justifyContent: "center", gap: "25px", flexWrap: "wrap", marginTop: "15px" }}>
+          
+          <div style={{ display: "flex", justifyContent: "flex-start", gap: "20px", flexWrap: "wrap", marginTop: "20px", marginBottom: "30px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", background: "rgba(229, 57, 53, 0.08)", border: "1px solid rgba(229, 57, 53, 0.2)", color: "var(--primary-red)", padding: "10px 22px", borderRadius: "12px", fontWeight: 700, fontSize: "1.05rem", backdropFilter: "blur(5px)" }}>
                 <CheckCircle size={20} strokeWidth={2.5} />
                 High Durability

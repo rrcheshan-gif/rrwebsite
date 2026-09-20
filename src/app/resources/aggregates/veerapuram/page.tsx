@@ -96,20 +96,23 @@ export default function VeerapuramPlant() {
       </section>
 
       {/* Intro Section */}
-      <section style={{ padding: "60px 20px 50px", backgroundColor: "var(--white)" }}>
-        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto", textAlign: "center" }}>
-          <h4 style={{ color: "var(--primary-red)", fontWeight: 700,  letterSpacing: "2px", marginBottom: "10px" }}>Veerapuram M Sand Plant and Crusher Plant</h4>
-          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>Choose M-SAND for your all kind of Constructions</h2>
-          <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "40px", textAlign: "center" }}>The Modern Alternative to the River Sand.</p>
-
-          <div style={{ background: "var(--white)", padding: "40px", borderRadius: "12px", borderTop: "4px solid var(--primary-red)", marginBottom: "40px", boxShadow: "0 5px 15px rgba(0,0,0,0.05)", textAlign: "left" }}>
-            <h3 style={{ color: "var(--text-dark)", marginBottom: "15px", fontFamily: "var(--font-heading)", fontSize: "1.5rem" }}>What is M-Sand?</h3>
-            <p style={{ color: "var(--text-light)", lineHeight: 1.8, fontSize: "1.1rem" }}>
+      <section style={{ padding: "80px 20px 50px", backgroundColor: "var(--white)" }}>
+        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
+          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "1000px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Veerapuram M Sand Plant and Crusher Plant</h4>
+            </div>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 3.2rem)", color: "var(--text-dark)", lineHeight: 1.1, margin: "0 0 20px 0", fontWeight: 800 }}>Choose M-SAND for your all kind of Constructions</h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "30px", paddingLeft: "55px", borderLeft: "2px solid rgba(229, 57, 53, 0.3)" }}>The Modern Alternative to the River Sand.</p>
+            
+            <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", marginBottom: "15px", fontFamily: "var(--font-heading)", fontWeight: 700 }}>What is M-Sand?</h3>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0 }}>
               M-Sand, or Manufactured sand, is a high-quality, Eco-Friendly alternative to natural river sand, produced by washing crushed hard granite stones. Engineered to meet construction standards, M-Sand offers superior strength, consistent quality, and better workability, making it the ideal choice for concrete, plastering, and masonry work.
             </p>
           </div>
-
-                      <div style={{ display: "flex", justifyContent: "center", gap: "25px", flexWrap: "wrap", marginTop: "15px" }}>
+          
+          <div style={{ display: "flex", justifyContent: "flex-start", gap: "20px", flexWrap: "wrap", marginTop: "20px", marginBottom: "30px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", background: "rgba(229, 57, 53, 0.08)", border: "1px solid rgba(229, 57, 53, 0.2)", color: "var(--primary-red)", padding: "10px 22px", borderRadius: "12px", fontWeight: 700, fontSize: "1.05rem", backdropFilter: "blur(5px)" }}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 High Quality
@@ -129,9 +132,12 @@ export default function VeerapuramPlant() {
       {/* Photo Gallery */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: "50px" }}>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Our Veerapuram Facility</h2>
-            <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
+          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "1000px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Plant Gallery</h4>
+            </div>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 3.2rem)", color: "var(--text-dark)", margin: "0", fontWeight: 800 }}>Our Veerapuram <span className="text-gradient" style={{ fontWeight: 300 }}>Facility</span></h2>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "20px" }}>
@@ -218,10 +224,13 @@ export default function VeerapuramPlant() {
       {/* Quality Assurance Table */}
       <section style={{ padding: "60px 20px 50px", backgroundColor: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: "50px" }}>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>VEERAPURAM PLANT: Quality Assurance</h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px" }}>Our M-Sand is manufactured under strict quality control standards to ensure consistent performance.</p>
-            <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
+          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "1000px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Our Products</h4>
+            </div>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 3.2rem)", color: "var(--text-dark)", marginBottom: "15px", fontWeight: 800 }}>VEERAPURAM PLANT: Quality <span className="text-gradient" style={{ fontWeight: 300 }}>Assurance</span></h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", margin: 0, lineHeight: 1.6 }}>Our M-Sand is manufactured under strict quality control standards to ensure consistent performance.</p>
           </div>
 
           <div style={{ overflowX: "auto", background: "var(--bg-base)", padding: "20px", borderRadius: "8px", boxShadow: "0 5px 20px rgba(0,0,0,0.05)" }}>
@@ -269,10 +278,13 @@ export default function VeerapuramPlant() {
       {/* Products List */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: "50px" }}>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>VEERAPURAM PLANT: Our Products</h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", marginTop: "10px" }}>High Quality Aggregates & M-Sand for Stronger Constructions</p>
-            <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
+          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "1000px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Our Products</h4>
+            </div>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 3.2rem)", color: "var(--text-dark)", marginBottom: "15px", fontWeight: 800 }}>VEERAPURAM PLANT: Our <span className="text-gradient" style={{ fontWeight: 300 }}>Products</span></h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", margin: 0, lineHeight: 1.6 }}>High Quality Aggregates & M-Sand for Stronger Constructions</p>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "20px", textAlign: "center" }}>
