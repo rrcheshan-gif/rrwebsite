@@ -24,8 +24,8 @@ export default function AboutStory() {
           className="page-header" 
           style={{ 
             backgroundImage: "url('/images/page-headers/overview-keydata-hero-flipped.jpg')", 
-            backgroundSize: "cover", 
-            backgroundPosition: "center", 
+            backgroundColor: "#1b2738", backgroundSize: "max(55vw, 1100px) auto", backgroundRepeat: "no-repeat", 
+            backgroundPosition: "right center", 
             minHeight: isMobile ? "400px" : "600px", 
             display: "flex", 
             flexDirection: "column", 
