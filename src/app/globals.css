@@ -331,6 +331,7 @@ ul {
   border: 2px solid var(--primary-red) !important;
   box-shadow: none !important;
   text-shadow: none !important;
+}
 
 .btn-primary:hover {
   transform: translateY(-3px) scale(1.03) !important;
