@@ -20,7 +20,7 @@ export default function CrusherPage() {
       <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/yakawewa-asphalt-2.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)', padding: '70px 20px', textAlign: 'center' }}>
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
-            RR <span style={{ color: "var(--primary-red)" }}>Aggregates</span>
+            RR <span style={{ color: "var(--primary-red)" }}>Aggregates & Sand</span>
           </h1>
           <p className="hero-slogan" style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "650px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
             Massive aggregate crushing and sand production capabilities fueling our heavy civil engineering operations.
