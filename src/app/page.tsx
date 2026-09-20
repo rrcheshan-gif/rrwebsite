@@ -21,7 +21,7 @@ export default function Home() {
       desc: "For three decades, RR Construction has turned ambitious blueprints into the roads, bridges, harbours, and water systems that keep Sri Lanka moving forward - built to last, delivered on time."
     },
     {
-      img: '/images/home/slider-highway-new.jpg',
+      img: '/images/home/slider-highway-rrp.jpg',
       fallback: '/images/hero-road-roller.jpg',
       duration: 8000,
       tag: '01 / HIGHWAY & EXPRESSWAY CONSTRUCTION & REHABILITATION',
