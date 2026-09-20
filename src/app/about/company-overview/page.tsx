@@ -54,15 +54,14 @@ export default function AboutStory() {
         <div className="container" style={{ maxWidth: "1500px", margin: "0 0auto", padding: "0 16px" }}>
           
           
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", marginBottom: "50px", maxWidth: "900px", margin: "0 auto 50px auto" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
-                <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
-                <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>COMPANY OVERVIEW</h4>
-                <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
-              </div>
-              <h3 style={{ fontSize: isMobile ? "2rem" : "clamp(2.5rem, 6vw, 3.8rem)", color: "var(--text-dark)", margin: "0 0 20px", fontFamily: "var(--font-heading)", lineHeight: 1.1, fontWeight: 800 }}>
-                A Legacy of Engineering <span className="text-gradient" style={{ fontWeight: 300 }}>Excellence.</span>
-              </h3>
+          <div style={{ textAlign: "left", marginBottom: "40px", maxWidth: "1000px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+                  <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+                  <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>COMPANY OVERVIEW</h4>
+                </div>
+                <h3 style={{ fontSize: isMobile ? "2rem" : "clamp(2.5rem, 6vw, 3.8rem)", color: "var(--text-dark)", margin: "0 0 20px", fontFamily: "var(--font-heading)", lineHeight: 1.1, fontWeight: 800 }}>
+                  A Legacy of Engineering <span className="text-gradient" style={{ fontWeight: 300 }}>Excellence.</span>
+                </h3>
           </div>
           {/* Full Width Introduction Text */}
           <div style={{ width: "100%", maxWidth: "1500px", margin: "0 auto" }}>
