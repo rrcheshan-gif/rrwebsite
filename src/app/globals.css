@@ -2314,7 +2314,7 @@ body {
 
 /* Global Page Header Widen Fix */
 .page-header p { 
-  max-width: 1200px !important; 
+  max-width: 1500px !important; 
   text-align: center !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -2626,11 +2626,11 @@ body::after {
 }
 
 .page-header > div:last-child {
-  max-width: 1200px !important;
+  max-width: 1500px !important;
   margin: 0 auto !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
-  width: 100% !important;
+  width: 96% !important;
   align-items: flex-start !important;
   box-sizing: border-box !important;
 }
