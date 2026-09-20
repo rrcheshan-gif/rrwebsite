@@ -19,7 +19,7 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const sectionPadding = isMobile ? "60px 10px" : "100px 20px";
+  const sectionPadding = isMobile ? "40px 20px" : "60px 20px";
   const containerStyle = { maxWidth: "1500px", margin: '0 auto' };
 
   return (
