@@ -137,23 +137,23 @@ export default function TransportationCivilPage() {
                 key={idx}
                 onClick={() => setActiveTab(idx)}
                 style={{
-                  padding: isMobile ? '12px 20px' : '15px 35px',
-                  backgroundColor: activeTab === idx ? 'var(--primary-red)' : 'var(--white)',
-                  color: activeTab === idx ? 'white' : 'var(--text-dark)',
-                  border: '1px solid',
-                  borderColor: activeTab === idx ? 'var(--primary-red)' : 'var(--border-soft)',
-                  borderRadius: '50px',
+                  padding: '10px 20px 15px',
+                  background: 'transparent',
+                  color: activeTab === idx ? 'var(--primary-red)' : 'var(--text-light)',
+                  border: 'none',
+                  borderBottom: activeTab === idx ? '3px solid var(--primary-red)' : '3px solid transparent',
+                  borderRadius: '0',
                   fontFamily: 'var(--font-heading)',
-                  fontSize: isMobile ? '0.9rem' : '1.1rem',
-                  fontWeight: 700,
+                  fontSize: isMobile ? '1rem' : '1.25rem',
+                  fontWeight: activeTab === idx ? 800 : 600,
                   cursor: 'pointer',
                   whiteSpace: 'nowrap',
-                  transition: 'all 0.3s ease',
-                  boxShadow: activeTab === idx ? '0 10px 20px rgba(229, 57, 53, 0.2)' : 'none',
-                  flexShrink: 0
+                  transition: 'all 0.2s ease',
+                  flexShrink: 0,
+                  marginBottom: '-1px'
                 }}
-                onMouseOver={(e) => { if (activeTab !== idx) e.currentTarget.style.borderColor = 'var(--primary-red)'; }}
-                onMouseOut={(e) => { if (activeTab !== idx) e.currentTarget.style.borderColor = 'var(--border-soft)'; }}
+                onMouseOver={(e) => { if (activeTab !== idx) e.currentTarget.style.color = 'var(--text-dark)'; }}
+                onMouseOut={(e) => { if (activeTab !== idx) e.currentTarget.style.color = 'var(--text-light)'; }}
               >
                 {svc.title}
               </button>
