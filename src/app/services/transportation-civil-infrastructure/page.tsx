@@ -102,7 +102,7 @@ export default function TransportationCivilPage() {
         </div>
         <div style={{ position: 'absolute', left: 0, top: 0, width: '5px', height: '100%', background: 'var(--primary-red)', borderRadius: '0 4px 4px 0' }} />
 
-        <div style={{ maxWidth: "1200px", margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+        <div style={{ maxWidth: "1500px", margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '18px' }}>
             <div style={{ width: '36px', height: '2px', background: 'var(--primary-red)' }} />
             <span style={{ color: 'var(--primary-red)', fontWeight: 800, letterSpacing: '3px',  fontSize: '0.82rem' }}>OUR DISCIPLINES</span>
@@ -120,7 +120,7 @@ export default function TransportationCivilPage() {
 
       {/* GRID SECTION */}
       <section style={{ padding: isMobile ? '0 12px 60px' : '0 20px 100px' }}>
-        <div style={{ maxWidth: "1200px", margin: '0 auto' }}>
+        <div style={{ maxWidth: "1500px", margin: '0 auto' }}>
           
           <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)', gap: '24px', marginTop: '20px' }}>
             {SERVICES.map((svc, idx) => {

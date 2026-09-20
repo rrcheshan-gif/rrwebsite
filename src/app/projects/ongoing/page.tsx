@@ -33,7 +33,7 @@ export default function OngoingProjects() {
       
       {/* Intro Description */}
       <section style={{ padding: '0 20px 40px', textAlign: 'center', marginTop: '-100px', position: 'relative', zIndex: 10 }}>
-        <div className="container" style={{ maxWidth: "1200px" }}>
+        <div className="container" style={{ maxWidth: "1500px" }}>
           <div style={{
              background: 'var(--white)',
              padding: '40px 50px',
@@ -69,7 +69,7 @@ export default function OngoingProjects() {
 
       {/* Category Grid Section */}
       <section style={{ padding: '0px 20px 80px', textAlign: 'center' }}>
-        <div className='container' style={{ maxWidth: "1200px" }}>
+        <div className='container' style={{ maxWidth: "1500px" }}>
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))',

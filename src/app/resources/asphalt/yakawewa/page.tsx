@@ -24,7 +24,7 @@ export default function YakawewaPlant() {
 
       {/* Intro Section */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
+        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto", textAlign: "center" }}>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700,  letterSpacing: "2px", marginBottom: "10px" }}>Medawachchiya (North Central Province)</h4>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>High-Performance Hot Mix Asphalt</h2>
           <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "40px", textAlign: "center" }}>Fueling highway and expressway development across Sri Lanka.</p>
@@ -55,7 +55,7 @@ export default function YakawewaPlant() {
 
       {/* Asphalt Categories Section */}
       <section style={{ padding: "60px 20px 80px", background: "var(--bg-base)" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)" }}>Asphalt Production Categories</h2>
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
@@ -124,7 +124,7 @@ export default function YakawewaPlant() {
 
       {/* Photo Gallery */}
       <section style={{ padding: "20px 20px 80px", background: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
           <div className="img-polish glass-panel" style={{ borderRadius: "16px", overflow: "hidden", boxShadow: "0 15px 50px rgba(0,0,0,0.15)" }}>
             <img className="img-polished img-hover-zoom" src="/images/yakawewa-asphalt-2.jpg" alt="Yakawewa Asphalt Plant Operation" style={{ width: "100%", height: "auto", maxHeight: "600px", objectFit: "cover" }} />
           </div>

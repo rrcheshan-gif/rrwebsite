@@ -64,7 +64,7 @@ export default function KeyDataPage() {
           <Link href="/about" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to About Us</Link>
         </div>
         
-        <div style={{ maxWidth: "1200px", width: "100%", margin: "0 auto", padding: "0 20px", position: "relative", zIndex: 2 }}>
+        <div style={{ maxWidth: "1500px", width: "100%", margin: "0 auto", padding: "0 20px", position: "relative", zIndex: 2 }}>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginBottom: '16px' }}>
                 <span style={{ color: '#94a3b8', fontWeight: 600, letterSpacing: '2px',  fontSize: '0.8rem', textTransform: 'uppercase', marginBottom: '12px' }}>BUILDING TRUST &bull; DELIVERING QUALITY</span>
                 {/* Red Line from design */}
@@ -81,7 +81,7 @@ export default function KeyDataPage() {
 
       {/* Main Content Area */}
       <section style={{ padding: isMobile ? "40px 0 80px" : "60px 0 120px", background: "var(--bg-light)" }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 20px", display: "flex", flexDirection: isMobile ? "column" : "row", gap: "24px", alignItems: "stretch" }}>
+        <div style={{ maxWidth: "1500px", margin: "0 auto", padding: "0 20px", display: "flex", flexDirection: isMobile ? "column" : "row", gap: "24px", alignItems: "stretch" }}>
           
           {/* Left Sidebar */}
           <div style={{ 

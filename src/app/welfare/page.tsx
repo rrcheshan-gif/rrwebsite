@@ -20,7 +20,7 @@ export default function Welfare() {
       </section>
 
       <section style={{ padding: "60px 20px 50px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "left" }}>
+        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto", textAlign: "left" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
             <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
             <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>CARE & SUPPORT</h4>
@@ -35,7 +35,7 @@ export default function Welfare() {
       </section>
 
       <section style={{ padding: "0 20px 100px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", flexWrap: "wrap", gap: "50px" }}>
+        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto", display: "flex", flexWrap: "wrap", gap: "50px" }}>
           <div style={{ flex: 1, minWidth: 'min(100%, 300px)' }}>
             <img className="img-polished img-hover-zoom" src="/images/page-headers/bg-6.jpg" alt="Health Benefits" style={{ width: "100%", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }} />
           </div>
@@ -58,7 +58,7 @@ export default function Welfare() {
           </div>
         </div>
         
-        <div className="container" style={{ maxWidth: "1200px", margin: "80px auto 0", display: "flex", flexWrap: "wrap-reverse", gap: "50px" }}>
+        <div className="container" style={{ maxWidth: "1500px", margin: "80px auto 0", display: "flex", flexWrap: "wrap-reverse", gap: "50px" }}>
           <div style={{ flex: 1, minWidth: 'min(100%, 300px)', display: "flex", flexDirection: "column", justifyContent: "center" }}>
             <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "2rem", marginBottom: "20px", color: "var(--text-dark)" }}>Financial & Social Support</h3>
             <ul style={{ listStyle: "none", padding: 0 }}>

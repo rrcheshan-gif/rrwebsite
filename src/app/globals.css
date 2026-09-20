@@ -426,10 +426,10 @@ ul {
 
 /* Layout Utilities */
 .container {
-  width: 100%;
-  max-width: 1200px;
+  width: 96%;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 clamp(15px, 1.5vw, 30px);
 }
 
 .section {
@@ -442,7 +442,7 @@ ul {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%; max-width: 1200px;
+  width: 96%; max-width: 1500px;
   z-index: 1000;
   transition: var(--transition);
   border-radius: clamp(24px, 3vw, 50px);
@@ -450,7 +450,7 @@ ul {
 
 .navbar-wrapper .container {
   max-width: 100%;
-  padding: 0 20px;
+  padding: 0 clamp(15px, 1.5vw, 30px);
 }
 
 .navbar-wrapper.home-nav {

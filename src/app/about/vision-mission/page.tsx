@@ -88,7 +88,7 @@ export default function VisionMission() {
 
                         {/* Vision & Mission Redesign */}
       <section style={{ padding: isMobile ? "60px 20px" : "120px 20px", backgroundColor: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: isMobile ? "30px" : "40px" }}>
+        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto", display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: isMobile ? "30px" : "40px" }}>
           
                                         {/* Vision Block */}
           <Reveal direction="left">
@@ -165,7 +165,7 @@ export default function VisionMission() {
       </section>
   {/* Our Direction Section */}
       <section style={{ padding: isMobile ? "0px 20px 60px" : "0px 20px 120px", background: "var(--bg-light)", position: "relative" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
           <Reveal>
             <div className="hover-lift" style={{ 
               position: "relative",
@@ -209,7 +209,7 @@ export default function VisionMission() {
 
       {/* Modern Core Values Grid */}
       <section style={{ padding: "80px 20px 80px", background: "var(--bg-light)", position: "relative" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
           <Reveal>
             <div style={{ textAlign: "left", marginBottom: "80px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>

@@ -60,7 +60,7 @@ export default function OngoingCategoryPage({ params }: { params: { category: st
         </div>
       </section>
 
-      <div className="container" style={{ maxWidth: "1200px" }}>
+      <div className="container" style={{ maxWidth: "1500px" }}>
         {categoryProjects.length === 0 ? (
           <div style={{ textAlign: 'center', padding: '60px 20px', color: 'var(--text-light)' }}>
             <p>No ongoing projects found in this category at the moment.</p>

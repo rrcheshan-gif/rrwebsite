@@ -15,7 +15,7 @@ export default function MaritimeConstructionPage() {
   }, []);
 
   const sectionPadding = isMobile ? "60px 10px" : "100px 20px";
-  const containerStyle = { maxWidth: "1200px", margin: '0 auto' };
+  const containerStyle = { maxWidth: "1500px", margin: '0 auto' };
 
   return (
     <main style={{ backgroundColor: 'var(--white)', minHeight: '100vh' }}>

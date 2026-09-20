@@ -138,7 +138,7 @@ export default function HistoryTimeline() {
 
       {/* Timeline */}
       <section style={{ padding: isMobile ? '60px 10px' : '100px 0', background: 'var(--bg-light)' }}>
-          <div className="container" style={{ maxWidth: "1200px", margin: '0 auto' }}>
+          <div className="container" style={{ maxWidth: "1500px", margin: '0 auto' }}>
             
             <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "800px", padding: "0 16px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
