@@ -2,7 +2,6 @@
 import BackButton from "@/app/components/BackButton";
 import { useRouter } from "next/navigation";
 
-import QuoteForm from "@/app/components/QuoteForm";
 import { MapPin, Truck, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 
@@ -88,7 +87,7 @@ export default function ConcretePage() {
 
       
     
-      <QuoteForm allowedPlants={["Ampara (Concrete)", "Jaffna (Concrete)", "Iththapana (Concrete)", "Vadduvakal (Concrete)", "Galgamuwa (Concrete)", "Gandara (Concrete)"]} allowedProducts={["Ready-Mix Concrete", "Other"]} />
+      
     </div>
   );
 }

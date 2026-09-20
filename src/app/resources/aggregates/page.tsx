@@ -1,6 +1,5 @@
 "use client";
 import BackButton from "@/app/components/BackButton";
-import QuoteForm from "@/app/components/QuoteForm";
 import { useEffect, useState } from "react";
 import { MapPin, HardHat, Clock, CheckCircle } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -108,7 +107,7 @@ export default function CrusherPage() {
       
       
     
-      <QuoteForm allowedPlants={["Thudugala (Western)", "Omanthai (Northern)"]} allowedProducts={["3/4 Metal", "1/2 Metal", "1 Metal", "ABC", "Other"]} />
+      
     </div>
   );
 }
