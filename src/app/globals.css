@@ -442,17 +442,16 @@ ul {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 96%; max-width: 1500px;
-    max-width: 1500px;
+  width: 100%; max-width: 1200px;
   z-index: 1000;
   transition: var(--transition);
   border-radius: clamp(24px, 3vw, 50px);
 }
 
 .navbar-wrapper .container {
-    max-width: 100%;
-    padding: 0 clamp(15px, 1.5vw, 30px);
-  }
+  max-width: 100%;
+  padding: 0 20px;
+}
 
 .navbar-wrapper.home-nav {
   padding: 10px 0;
