@@ -82,7 +82,7 @@ export default function VisionMission() {
 
       {/* Clean Layout: Vision, Mission, Strategy */}
       <section style={{ padding: isMobile ? "60px 20px" : "100px 20px" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
           
           <Reveal direction="up">
             <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: isMobile ? "20px" : "60px", marginBottom: "80px", borderBottom: "1px solid var(--border-soft)", paddingBottom: "80px" }}>
@@ -146,7 +146,7 @@ export default function VisionMission() {
 
       {/* Clean Core Values List Design */}
       <section style={{ padding: "80px 20px 100px", background: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
           
           <Reveal>
             <div style={{ textAlign: "left", marginBottom: "60px" }}>
