@@ -384,7 +384,7 @@ export default function Home() {
       </section>
 
       {/* CORE EXPERTISE */}
-      <section className="bg-gradient-adaptive" style={{ padding: "60px 20px", position: "relative" }}>
+      <section className="bg-gradient-adaptive" style={{ padding: "60px 20px 20px", position: "relative" }}>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ marginBottom: "50px", maxWidth: "800px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
@@ -424,14 +424,14 @@ export default function Home() {
       </section>
 
             {/* MAJOR CLIENTS */}
-      <section className="bg-gradient-adaptive" style={{ padding: "50px 20px", overflow: "hidden", position: "relative" }}>
+      <section className="bg-gradient-adaptive" style={{ padding: "10px 20px 50px", overflow: "hidden", position: "relative" }}>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
 {/* Tightly Integrated Major Clients Section */}
             <div 
               style={{ 
                 width: "100%", 
                 marginBottom: "40px", 
-                paddingTop: "60px", 
+                  paddingTop: "0px", 
                 borderBottom: "1px solid var(--border-soft)", 
                 position: "relative", 
                 zIndex: 2 
@@ -500,7 +500,7 @@ export default function Home() {
       </section>
 
 {/* PROJECT HIGHLIGHTS */}
-      <section className="bg-gradient-adaptive" style={{ padding: "50px 20px", overflow: "hidden", position: "relative" }}>
+      <section className="bg-gradient-adaptive" style={{ padding: "10px 20px 50px", overflow: "hidden", position: "relative" }}>
         <div className="container" style={{ display: "flex", flexWrap: "wrap", gap: "40px", alignItems: "flex-start", position: "relative", zIndex: 2 }}>
           <div style={{ flex: 1, minWidth: 'min(100%, 350px)', position: "relative", paddingTop: "20px" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
