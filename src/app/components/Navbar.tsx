@@ -77,7 +77,7 @@ export default function Navbar() {
                   <li><Link href="/about/our-management" onClick={() => setMobileMenuOpen(false)}>Our Management</Link></li>
                   <li><Link href="/about/vision-mission" onClick={() => setMobileMenuOpen(false)}>Vision &amp; Mission</Link></li>
                   <li><Link href="/about/goals-and-targets" onClick={() => setMobileMenuOpen(false)}>Goals &amp; Targets</Link></li>
-                  <li><Link href="/about/awards" onClick={() => setMobileMenuOpen(false)}>Awards &amp; Achievements</Link></li>
+                  <li><Link href="/about/awards" onClick={() => setMobileMenuOpen(false)}>Awards &amp; Certificates</Link></li>
                 </ul>
               </li>
               
