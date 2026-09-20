@@ -84,66 +84,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
                    <p>By leveraging our decades of heavy civil engineering expertise, a massive self-owned machinery fleet, and a dedicated workforce of over 1400 professionals, we ensured that this project strictly adhered to ISO 9001 quality, ISO 14001 environmental, and ISO 45001 safety standards from inception to completion.</p>`;
   }
 
-  // --- Google Maps URLs ---
-  const getMapSearchQuery = (title: string, proj: any) => {
-      if (proj.location) return proj.location;
-      
-      if (proj.heroImage) {
-        const parts = proj.heroImage.split('/');
-        if (parts.length > 1) {
-          let folder = parts[1];
-          if (folder.toLowerCase() !== 'projects' && folder.toLowerCase() !== 'images' && !folder.toLowerCase().includes('website')) {
-            folder = folder.replace(/Landslide/gi, '').trim();
-            if (folder.length > 2) {
-              return folder + ', Sri Lanka';
-            }
-          }
-        }
-      }
-
-      let cleaned = title.replace(/\(.*?\)/g, '');
-      cleaned = cleaned.replace(/Rehabilitation and Improvement of/gi, '');
-      cleaned = cleaned.replace(/Rehabilitation and Maintenance of/gi, '');
-      cleaned = cleaned.replace(/Reconstruction of Proposed Improvement and Rehabilitation of/gi, '');
-      cleaned = cleaned.replace(/Rehabilitation of bridge No\.[0-9/]+/gi, '');
-      cleaned = cleaned.replace(/Reconstruction of Bridge No\.[0-9/]+/gi, '');
-      cleaned = cleaned.replace(/Reconstruction of/gi, '');
-      cleaned = cleaned.replace(/Rehabilitation of/gi, '');
-      cleaned = cleaned.replace(/Construction of/gi, '');
-      cleaned = cleaned.replace(/Landslide Mitigation Measures at.*?Locations? in /gi, '');
-      cleaned = cleaned.replace(/Landslide Mitigation Measures in /gi, '');
-      cleaned = cleaned.replace(/Landslide Mitigation in /gi, '');
-      cleaned = cleaned.replace(/Landslide Mitigation /gi, '');
-      cleaned = cleaned.replace(/Rectification of Unstable Slope at /gi, '');
-      cleaned = cleaned.replace(/Quarry And Crusher Plant - /gi, '');
-      cleaned = cleaned.replace(/Procurement of construction of boat launching ramp at /gi, '');
-      cleaned = cleaned.replace(/Water Treatment Plant - /gi, '');
-      cleaned = cleaned.replace(/Emergency Reconstruction of Northern Railway Line Damaged by Cyclone Ditwah /gi, '');
-      cleaned = cleaned.replace(/Emergency Reconstruction of /gi, '');
-      cleaned = cleaned.replace(/Reactivation and Reconstruction of /gi, '');
-      cleaned = cleaned.replace(/Widening & Redecking of /gi, '');
-      cleaned = cleaned.replace(/Second Integrated Road Investment Program - /gi, '');
-      cleaned = cleaned.replace(/Integrated Road Investment Program - /gi, '');
-      
-      const onMatch = cleaned.match(/on\s+(.*?Road)/i);
-      if (onMatch) return onMatch[1].trim() + ', Sri Lanka';
-      
-      const atMatch = title.match(/at (.*)/i);
-      if (atMatch) return atMatch[1].trim() + ', Sri Lanka';
-      
-      if (cleaned.toLowerCase().includes('ongoing')) {
-        return "Sri Lanka";
-      }
-  
-      return cleaned.trim() + ', Sri Lanka';
-    };
-  
-    const mapSearchTerm = project.mapQuery || getMapSearchQuery(project.title || '', project);
-  const searchQuery = encodeURIComponent(mapSearchTerm);
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${searchQuery}`;
-  const mapSrc = `https://maps.google.com/maps?q=${searchQuery}&output=embed&hl=en`;
-  const satelliteSrc = `https://maps.google.com/maps?q=${searchQuery}&t=k&output=embed&hl=en`;
-  const googleImagesUrl = `https://www.google.com/search?tbm=isch&q=${searchQuery}`;
+    const googleImagesUrl = `https://www.google.com/search?tbm=isch&q=${searchQuery}`;
 
   const galleryImages = project.images || project.galleryImages || [];
   const hasGallery = galleryImages.length > 0;
@@ -244,11 +185,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
           <h1 className="hero-heading" style={{ fontSize: 'clamp(1.5rem, 3.2vw, 2.4rem)', lineHeight: '1.3', marginBottom: '0', textShadow: '0 2px 8px rgba(0,0,0,0.5)', color: 'white' }}>{project.title}</h1>
         </div>
         
-        {/* Open in Google Maps Pill */}
-        <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', bottom: '30px', right: '5%', display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 20px', background: 'rgba(255,255,255,0.15)', color: 'white', borderRadius: '30px', fontSize: '0.9rem', fontWeight: 'bold', textDecoration: 'none', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.3)', transition: 'background 0.3s' }} onMouseOver={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.25)'} onMouseOut={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.15)'}>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-          Open in Google Maps
-        </a>
+        
       </section>
 
       {/* Project Details */}
