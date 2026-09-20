@@ -20,7 +20,7 @@ export const NEWS_DATA: NewsItem[] = [
     desc: 'RR Construction successfully completed the reconstruction of Bridge No. 12/1 for the Road Development Authority, emphasizing modern engineering standards and timely delivery.',
     date: 'July 28, 2026',
     img: '/images/POINT PEDRO/Background image.jpeg',
-    featured: true,
+    featured: false,
     content: `
       <p>RR Construction (Pvt) Ltd is proud to announce the successful completion and handover of the <strong>Reconstruction of Bridge No. 12/1 on Paranthan - Karachchi - Mullaitivu Road (A035) Balance Work</strong>. This crucial infrastructure project was executed for the Road Development Authority (RDA) and officially completed on July 28, 2026.</p>
       

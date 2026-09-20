@@ -509,26 +509,28 @@ export default function Home() {
               <Link href="/news" className="btn-glass-red" style={{ display: "inline-flex", textDecoration: "none", alignItems: "center", gap: "8px" }}>View All News <ArrowRight size={18} /></Link>
             </div>
             
-            <div style={{ flex: 1, minWidth: 'min(100%, 350px)', position: "relative", marginTop: "20px" }}>
-                <div className="glass-panel hover-lift" style={{ borderRadius: "20px", overflow: "hidden", background: "var(--white)", border: "1px solid rgba(211, 47, 47, 0.4)", display: "flex", flexDirection: "column", height: "100%", boxShadow: "0 10px 40px rgba(0,0,0,0.05)" }}>
-                  <div style={{ position: "relative", height: "240px", width: "100%", overflow: "hidden" }}>
-                    <img src="/images/news/wirtgen-milling-machine/img-1.jpg" alt="Wirtgen W 200 F Milling Machine" style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease" }} className="img-hover-zoom" />
-                    <div style={{ position: "absolute", top: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "6px 14px", borderRadius: "30px", fontSize: "0.85rem", fontWeight: "bold", letterSpacing: "1px" }}>Machinery & Technology</div>
-                  </div>
-                  <div style={{ padding: "30px" }}>
-                    <div style={{ color: "var(--text-light)", fontSize: "0.9rem", marginBottom: "12px", display: "flex", alignItems: "center", gap: "8px" }}>
-                      <span>September 17, 2026</span>
+            <div style={{ flex: 2, minWidth: 'min(100%, 350px)', position: "relative", marginTop: "20px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "25px" }}>
+                {NEWS_DATA.slice(0, 2).map((newsItem, idx) => (
+                  <div key={idx} className="glass-panel hover-lift" style={{ borderRadius: "20px", overflow: "hidden", background: "var(--white)", border: "1px solid rgba(211, 47, 47, 0.4)", display: "flex", flexDirection: "column", height: "100%", boxShadow: "0 10px 40px rgba(0,0,0,0.05)" }}>
+                    <div style={{ position: "relative", height: "200px", width: "100%", overflow: "hidden" }}>
+                      <img src={newsItem.img} alt={newsItem.title} style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease" }} className="img-hover-zoom" />
+                      <div style={{ position: "absolute", top: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "6px 14px", borderRadius: "30px", fontSize: "0.85rem", fontWeight: "bold", letterSpacing: "1px" }}>{newsItem.tag}</div>
                     </div>
-                    <h3 style={{ fontSize: "1.3rem", color: "var(--text-dark)", marginBottom: "12px", lineHeight: 1.4, fontFamily: "var(--font-heading)", fontWeight: 700 }}>
-                      RR Construction Acquires Sri Lanka's First Brand New Wirtgen Milling Machine
-                    </h3>
-                    <p style={{ color: "var(--text-light)", fontSize: "1rem", lineHeight: 1.6, marginBottom: "25px" }}>
-                      Setting a new benchmark in the local construction industry, RR Construction has successfully imported the first-ever brand new Wirtgen W 200 F milling machine to Sri Lanka.
-                    </p>
-                    <Link href="/news/first-brand-new-wirtgen-w200f-milling-machine-sri-lanka" style={{ color: "var(--primary-red)", fontWeight: "bold", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "5px" }}>Read Full Article <ArrowRight size={16} /></Link>
+                    <div style={{ padding: "25px", display: "flex", flexDirection: "column", flex: 1 }}>
+                      <div style={{ color: "var(--text-light)", fontSize: "0.85rem", marginBottom: "10px", display: "flex", alignItems: "center", gap: "8px" }}>
+                        <span>{newsItem.date}</span>
+                      </div>
+                      <h3 style={{ fontSize: "1.15rem", color: "var(--text-dark)", marginBottom: "10px", lineHeight: 1.4, fontFamily: "var(--font-heading)", fontWeight: 700 }}>
+                        {newsItem.title}
+                      </h3>
+                      <p style={{ color: "var(--text-light)", fontSize: "0.9rem", lineHeight: 1.6, marginBottom: "20px", flex: 1, display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+                        {newsItem.desc}
+                      </p>
+                      <Link href={`/news/${newsItem.slug}`} style={{ color: "var(--primary-red)", fontWeight: "bold", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "5px" }}>Read Full Article <ArrowRight size={16} /></Link>
+                    </div>
                   </div>
-                </div>
-              </div>
+                ))}
+              </div></div>
             
                     </div>
       </section>
