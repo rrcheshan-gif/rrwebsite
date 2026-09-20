@@ -190,7 +190,7 @@ export default function QuarriesAggregates() {
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "auto" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>
-                  <a href="#inquiry" className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center", textDecoration: "none" }} onClick={(e) => e.stopPropagation()}>Quote</a>
+                  <a href="/resources/request-order" className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center", textDecoration: "none" }} onClick={(e) => e.stopPropagation()}>Quote</a>
                 </div>
               </div>
             </div>
@@ -208,7 +208,7 @@ export default function QuarriesAggregates() {
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "auto" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>
-                  <a href="#inquiry" className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center", textDecoration: "none" }} onClick={(e) => e.stopPropagation()}>Quote</a>
+                  <a href="/resources/request-order" className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center", textDecoration: "none" }} onClick={(e) => e.stopPropagation()}>Quote</a>
                 </div>
               </div>
             </div>
@@ -226,7 +226,7 @@ export default function QuarriesAggregates() {
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "auto" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>
-                  <a href="#inquiry" className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center", textDecoration: "none" }} onClick={(e) => e.stopPropagation()}>Quote</a>
+                  <a href="/resources/request-order" className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center", textDecoration: "none" }} onClick={(e) => e.stopPropagation()}>Quote</a>
                 </div>
               </div>
             </div>
@@ -244,7 +244,7 @@ export default function QuarriesAggregates() {
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "auto" }}>
                   <div className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center" }}>View Details</div>
-                  <a href="#inquiry" className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center", textDecoration: "none" }} onClick={(e) => e.stopPropagation()}>Quote</a>
+                  <a href="/resources/request-order" className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center", textDecoration: "none" }} onClick={(e) => e.stopPropagation()}>Quote</a>
                 </div>
               </div>
             </div>

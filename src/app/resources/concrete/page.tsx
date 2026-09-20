@@ -71,7 +71,7 @@ export default function ConcretePage() {
                     </div>
                   </div>
                   <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "auto" }}>
-                    <a href="#inquiry" className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center", textDecoration: "none" }} onClick={(e) => { e.preventDefault(); document.getElementById('inquiry')?.scrollIntoView({ behavior: 'smooth' }); }}>Request Quote</a>
+                    <a href="/resources/request-order" className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center", textDecoration: "none" }} >Request Quote</a>
                   </div>
                 </div>
               </div>
