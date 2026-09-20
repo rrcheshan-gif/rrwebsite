@@ -96,7 +96,6 @@ export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants
     { value: "Yakawewa (North Central)", label: "Yakawewa Asphalt Plant", category: "asphalt" },
     { value: "Ampara (Concrete)", label: "Ampara Concrete Batching Plant", category: "concrete" },
     { value: "Jaffna (Concrete)", label: "Jaffna Concrete Batching Plant", category: "concrete" },
-    { value: "Bibila (Concrete)", label: "Bibila Concrete Batching Plant", category: "concrete" },
     { value: "Iththapana (Concrete)", label: "Iththapana Concrete Batching Plant", category: "concrete" },
     { value: "Vadduvakal (Concrete)", label: "Vadduvakal Concrete Batching Plant (Mullaitivu)", category: "concrete" },
     { value: "Galgamuwa (Concrete)", label: "Galgamuwa Concrete Batching Plant", category: "concrete" },
