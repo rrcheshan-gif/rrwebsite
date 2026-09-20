@@ -78,19 +78,20 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
           }}>
             {[
               { title: 'New Highway Construction', desc: 'Full-scale development of multi-lane highways and expressways with advanced engineering.' },
-              { title: 'rural highway and expressway Rehabilitation', desc: 'Improving connectivity through the upgrading and widening of rural highway and expressway networks.' },
+              { title: 'Rural Highway and Expressway Rehabilitation', desc: 'Improving connectivity through the upgrading and widening of rural highway and expressway networks.' },
               { title: 'Asphalt Surfacing', desc: 'High-quality asphalt concrete paving for roads, highways, and specialized projects.' }
             ].map((capability, index) => (
               <div key={index} style={{
-                backgroundColor: 'var(--bg-light)',
-                padding: '40px 30px',
-                borderRadius: '24px',
-                border: '1px solid var(--border-soft)',
-                transition: 'transform 0.3s ease'
+                padding: '0',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '12px'
               }}>
-                <CheckCircle2 size={32} color="var(--primary-red)" style={{ marginBottom: '20px' }} />
-                <h3 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginBottom: '15px' }}>{capability.title}</h3>
-                <p style={{ color: 'var(--text-light)', lineHeight: 1.6 }}>{capability.desc}</p>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                  <CheckCircle2 size={28} color="var(--primary-red)" style={{ flexShrink: 0 }} />
+                  <h3 style={{ fontSize: '1.4rem', color: 'var(--text-dark)', margin: 0 }}>{capability.title}</h3>
+                </div>
+                <p style={{ color: 'var(--text-light)', lineHeight: 1.6, paddingLeft: '43px', margin: 0 }}>{capability.desc}</p>
               </div>
             ))}
           </div>
