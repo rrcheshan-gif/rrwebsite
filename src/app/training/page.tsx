@@ -108,31 +108,19 @@ export default function Training() {
               </div>
               
               {/* Right Graphic/Logo area */}
-              <div style={{ width: isMobile ? "100%" : "40%", background: "var(--bg-light)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "50px 30px", borderLeft: isMobile ? "none" : "1px solid var(--border-soft)", borderTop: isMobile ? "1px solid var(--border-soft)" : "none" }}>
-                 
-                 {/* Coursera simulated logo */}
-                 <div style={{ fontSize: isMobile ? "3rem" : "3.5rem", fontWeight: 900, color: "var(--text-dark)", letterSpacing: "-2px", fontFamily: "Arial, sans-serif", marginBottom: "25px" }}>
-                   coursera
-                 </div>
-                 
-                 <h4 style={{ textAlign: "center", color: "var(--text-dark)", fontWeight: 800, fontSize: "1.2rem", lineHeight: 1.5, margin: 0, fontFamily: "var(--font-heading)" }}>
-                   Global Standard <br/>Tech Education
-                 </h4>
-                 
-                 <p style={{ textAlign: "center", color: "#475569", fontSize: "0.95rem", marginTop: "15px", maxWidth: "250px" }}>
-                   Equipping our people with world-class tech skills to engineer tomorrow.
-                 </p>
-                 
-                 {/* Decorative elements */}
-                 <div style={{ marginTop: "40px", display: "flex", gap: "12px" }}>
-                    <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "var(--primary-red)", opacity: 0.2 }}></div>
-                    <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "var(--primary-red)", opacity: 0.5 }}></div>
-                    <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "var(--primary-red)", opacity: 1 }}></div>
-                 </div>
+                <div style={{ width: isMobile ? "100%" : "40%", position: "relative", minHeight: isMobile ? "300px" : "auto", display: "flex" }}>
+                  <img 
+                    src="/images/training/coursera-ai.jpg" 
+                    alt="AI Training at RR Construction" 
+                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} 
+                  />
+                  <div style={{ position: "absolute", bottom: "20px", right: "20px", background: "white", padding: "8px 16px", borderRadius: "8px", boxShadow: "0 10px 20px rgba(0,0,0,0.15)", display: "flex", alignItems: "center", gap: "10px" }}>
+                     <span style={{ fontSize: "1.4rem", fontWeight: 900, color: "var(--text-dark)", letterSpacing: "-1px", fontFamily: "Arial, sans-serif" }}>coursera</span>
+                  </div>
+                </div>
               </div>
-            </div>
-
-            {/* Space for future items */}
+  
+              {/* Space for future items */}
 
           </div>
         </div>
