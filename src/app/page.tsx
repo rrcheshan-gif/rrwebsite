@@ -137,6 +137,7 @@ export default function Home() {
           
           
           {/* Strict Blur & Tint ONLY behind the text area */}
+          <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "radial-gradient(ellipse at center, rgba(15,23,42,0.6) 0%, rgba(15,23,42,0.3) 45%, rgba(15,23,42,0) 70%)", zIndex: 2 }}></div>
           
           {/* Bottom fade */}
           
