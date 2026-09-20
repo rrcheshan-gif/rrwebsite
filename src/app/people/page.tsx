@@ -5,11 +5,7 @@ export default function People() {
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       
-        <style dangerouslySetInnerHTML={{__html: `
-          .page-header::before, .page-header::after {
-            display: none !important;
-          }
-        `}} />
+        
 
         {/* Page Header */}
       <section className="page-header" style={{ 
@@ -18,14 +14,14 @@ export default function People() {
   padding: "140px 20px 40px", 
   textAlign: "left", 
   position: "relative", 
-  backgroundSize: "clamp(600px, 70vw, 1000px) auto", 
+  backgroundSize: "max(55vw, 600px) auto", 
   backgroundPosition: "right 20%",
   backgroundRepeat: "no-repeat", 
   borderRadius: '32px', 
   margin: '0 20px 40px', 
   overflow: "hidden" 
 }}>
-          <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(to right, rgba(27, 39, 56, 1) 0%, rgba(27, 39, 56, 1) 35%, rgba(27, 39, 56, 0.7) 50%, rgba(27, 39, 56, 0) 70%)", zIndex: 1 }}></div>
+          
         
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our <span style={{ color: "var(--primary-red)" }}>People</span></h1>
