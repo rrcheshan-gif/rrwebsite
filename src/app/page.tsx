@@ -276,7 +276,7 @@ export default function Home() {
                 style={{
                   height: '4px',
                   width: index === currentSlide ? '40px' : '16px',
-                  background: index === currentSlide ? 'var(--primary-red)' : 'rgba(255,255,255,0.5)',
+                  background: index === currentSlide ? 'var(--primary-red)' : 'rgba(255,255,255,0.9)',
                   border: 'none',
                   borderRadius: '2px',
                   cursor: 'pointer',
