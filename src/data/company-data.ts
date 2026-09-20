@@ -14,7 +14,8 @@
     "Harbour & Marine Construction",
     "Landslide Mitigation & Retaining Walls",
     "Railway Civil Works",
-    "Building Projects"
+    "Building Projects",
+    "Piling & Foundation Engineering"
   ],
   cidaRegistration: "C-10171",
 
