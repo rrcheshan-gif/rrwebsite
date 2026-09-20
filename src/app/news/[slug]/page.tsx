@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { Clock, ArrowLeft, Share2 } from 'lucide-react';
 import { NEWS_DATA } from '@/data/news-data';
+import ShareButton from '@/app/components/ShareButton';
 
 export function generateStaticParams() {
   return NEWS_DATA.map((news) => ({
@@ -104,9 +105,7 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
             <div style={{ marginTop: "50px", paddingTop: "30px", borderTop: "1px solid var(--border-soft)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <span style={{ fontWeight: 700, color: "var(--text-dark)" }}>Share this story</span>
               <div style={{ display: "flex", gap: "15px" }}>
-                <button className="share-btn" style={{ background: "var(--bg-light)", border: "none", width: "40px", height: "40px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", color: "var(--text-dark)", transition: "background 0.3s" }}>
-                  <Share2 size={18} />
-                </button>
+                <ShareButton title={news.title} text={news.desc} />
               </div>
             </div>
           </div>
