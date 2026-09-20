@@ -40,7 +40,7 @@ export default function Home() {
       desc: "We deliver advanced maritime infrastructure - including dredging, breakwaters, and harbour facility development, ensuring robust connectivity for Sri Lanka's coastal trade and economic growth."
     },
     {
-      img: '/images/home/slider-bridge-new.jpg',
+      img: '/images/home/slider-bridge-mahanama.jpg',
       duration: 8000,
       tag: '03 / BRIDGES & OVERPASSES',
       heading1: 'Structural Integrity',
@@ -379,7 +379,7 @@ export default function Home() {
       {/* CORE EXPERTISE */}
       <section className="bg-gradient-adaptive" style={{ padding: "60px 20px 20px", position: "relative" }}>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <div style={{ marginBottom: "50px", maxWidth: "800px" }}>
+          <div style={{ marginBottom: "50px", maxWidth: "100%" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
                 <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
                 <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Sectors of Operation</h4>
@@ -430,7 +430,7 @@ export default function Home() {
                 zIndex: 2 
               }}
             >
-              <div style={{ marginBottom: "50px", maxWidth: "800px" }}>
+              <div style={{ marginBottom: "50px", maxWidth: "100%" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
                   <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
                   <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Trusted Partners</h4>

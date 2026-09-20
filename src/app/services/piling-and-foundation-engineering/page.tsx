@@ -24,7 +24,7 @@ export default function PilingFoundationEngineeringPage() {
       <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('/images/home/slider-bridge-new.jpg')",
+          backgroundImage: "linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('/images/home/slider-bridge-mahanama.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'var(--white)',
