@@ -16,66 +16,20 @@ export default function KeyDataPage() {
   }, []);
 
   return (
-    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--white)" }}>
       
       
       {/* Hero Section */}
 
-      <section 
-          className="slanted-hero" 
-          style={{ 
-            backgroundColor: "#1b2738", // Solid dark blue from design
-            minHeight: isMobile ? "300px" : "380px", 
-            display: "flex", 
-            flexDirection: "column", 
-            justifyContent: "center",
-            padding: isMobile ? "100px 0 40px" : "120px 0 60px", 
-            textAlign: "left", 
-            position: "relative", 
-            borderRadius: isMobile ? "0" : "0",
-            margin: "0",
-            overflow: "hidden"
-          }}
-        >
-        {/* Background Image with Slanted Cut */}
-        <div style={{
-          position: "absolute",
-          top: 0, right: 0, bottom: 0,
-          width: isMobile ? "100%" : "55%",
-          backgroundImage: "url('/images/page-headers/engineering-blueprint-banner.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          clipPath: isMobile ? "none" : "polygon(15% 0, 100% 0, 100% 100%, 0 100%)",
-          zIndex: 1,
-          opacity: isMobile ? 0.3 : 1
-        }}></div>
-        {/* Subtle lighter diagonal band (decor) */}
-        {!isMobile && (
-          <div style={{
-            position: "absolute",
-            top: 0, right: 0, bottom: 0,
-            width: "56%",
-            backgroundColor: "rgba(255,255,255,0.06)",
-            clipPath: "polygon(14% 0, 100% 0, 100% 100%, -2% 100%)",
-            zIndex: 0
-          }}></div>
-        )}
-
-        
-        
-        <div style={{ maxWidth: "1500px", width: "100%", margin: "0 auto", padding: "0 20px", position: "relative", zIndex: 2 }}>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginBottom: '16px' }}>
-                <span style={{ color: '#94a3b8', fontWeight: 600, letterSpacing: '2px',  fontSize: '0.8rem', textTransform: 'uppercase', marginBottom: '12px' }}>BUILDING TRUST &bull; DELIVERING QUALITY</span>
-                {/* Red Line from design */}
-                <div style={{ width: '40px', height: '3px', backgroundColor: 'var(--primary-red)' }}></div>
-            </div>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(3rem, 6vw, 4.5rem)", margin: "0 0 15px", fontWeight: 800 }}>
+      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/page-headers/engineering-blueprint-banner.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)', padding: '70px 20px', textAlign: 'center' }}>
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
             Key <span style={{ color: "var(--primary-red)" }}>Data</span>
           </h1>
-          <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "450px", lineHeight: 1.6, margin: 0 }}>
-             Key information about RR Construction (Pvt) Ltd,<br/>our foundation, experience and capabilities.
+          <p className="hero-slogan" style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "650px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
+             Key information about RR Construction (Pvt) Ltd, our foundation, experience and capabilities.
           </p>
-              <BackButton />
+          <BackButton />
         </div>
       </section>
 
