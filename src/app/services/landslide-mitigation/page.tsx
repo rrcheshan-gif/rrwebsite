@@ -52,7 +52,7 @@ export default function LandslideMitigationPage() {
       {/* 2. Capabilities */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>
         <div style={containerStyle}>
-          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "800px" }}>
+          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "100%" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
               <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>CAPABILITIES</h4>
