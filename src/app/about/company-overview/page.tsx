@@ -23,15 +23,15 @@ export default function AboutStory() {
       <section 
           className="page-header" 
           style={{ 
-            backgroundImage: "url('/images/page-headers/engineering-blueprint-banner.jpg')", 
+            backgroundImage: "url('/images/page-headers/overview-keydata-hero.jpg')", 
             backgroundSize: "cover", 
-            backgroundPosition: "center top", 
+            backgroundPosition: "right center", 
             minHeight: isMobile ? "400px" : "600px", 
             display: "flex", 
             flexDirection: "column", 
             justifyContent: "flex-end",
             padding: isMobile ? "120px 20px 20px" : "160px 20px 20px", 
-            textAlign: "center", 
+            textAlign: "left", 
             position: "relative", 
             borderRadius: isMobile ? "24px" : "32px",
             margin: isMobile ? "0 12px 30px" : "0 20px 40px",  
@@ -42,7 +42,7 @@ export default function AboutStory() {
         
           <div className="container" style={{ position: "relative", zIndex: 2 }}>
             <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>RR <span style={{ color: "var(--primary-red)" }}>Overview</span></h1>
-              <BackButton />
+              <div style={{ marginTop: "20px" }}><BackButton /></div>
           </div>
         </section>
 

@@ -30,14 +30,12 @@ export default function KeyDataPage() {
   return (
     <main style={{ backgroundColor: "var(--white)", minHeight: "100vh" }}>
       {/* Hero Section */}
-      <section className="page-header" style={{ position: 'relative', backgroundImage: "linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('/images/page-headers/engineering-blueprint-banner.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)', padding: isMobile ? '40px 20px' : '70px 20px', textAlign: 'center' }}>
-        <div style={{ position: 'absolute', top: isMobile ? '20px' : '40px', left: isMobile ? '20px' : '40px', zIndex: 10 }}>
-          <BackButton />
-        </div>
-        <div style={{ maxWidth: "1500px", margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 4.5rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", lineHeight: 1.2 }}>
+      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/page-headers/overview-keydata-hero.jpg')", backgroundSize: 'cover', backgroundPosition: 'right center', color: 'var(--white)', padding: isMobile ? "120px 20px 20px" : "160px 20px 20px", minHeight: isMobile ? "400px" : "600px", display: "flex", flexDirection: "column", justifyContent: "flex-end", textAlign: 'left' }}>
+        <div className="container" style={{ position: "relative", zIndex: 2 }}>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textAlign: "left" }}>
             Key <span style={{ color: "var(--primary-red)" }}>Data</span>
           </h1>
+          <div style={{ marginTop: "20px", textAlign: "left" }}><BackButton /></div>
         </div>
       </section>
 
