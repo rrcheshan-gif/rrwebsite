@@ -129,7 +129,7 @@ export default function MaritimeConstructionPage() {
               </h3>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 {[
-                  'Specialized in Maritime Construction',
+                  'Specialized in Marine & Harbour Construction',
                   'ISO 9001:2015 Quality Management',
                   'ISO 14001:2015 Environmental Management',
                   'ISO 45001:2018 Occupational Health & Safety',

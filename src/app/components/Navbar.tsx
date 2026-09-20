@@ -116,15 +116,13 @@ export default function Navbar() {
                   <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('services', e)} aria-label="Toggle Services Submenu">
                     <ChevronDown size={14} />
                   </button>
-                </div>
-                <ul className="dropdown-menu">
-                  {/* <li><Link href="/services" onClick={() => setMobileMenuOpen(false)}>Technology &amp; Services Overview</Link></li> */}
+                </div>                <ul className="dropdown-menu">
                   <li><Link href="/services/transportation-civil-infrastructure" onClick={() => setMobileMenuOpen(false)}>Transportation &amp; Civil Infrastructure</Link></li>
-                                    <li><Link href="/services/maritime-construction" onClick={() => setMobileMenuOpen(false)}>Maritime Construction</Link></li>
-                  <li><Link href="/services/dredging-and-water-infrastructure" onClick={() => setMobileMenuOpen(false)}>Dredging &amp; Water Infrastructure</Link></li>
-                                    <li><Link href="/services/landslide-mitigation" onClick={() => setMobileMenuOpen(false)}>Slope Stabilization &amp; Landslide Mitigation</Link></li>
-                                    <li><Link href="/services/railway-civil-works" onClick={() => setMobileMenuOpen(false)}>Railway Civil Works</Link></li>
+                  <li><Link href="/services/maritime-construction" onClick={() => setMobileMenuOpen(false)}>Marine &amp; Harbour Construction</Link></li>
+                  <li><Link href="/services/landslide-mitigation" onClick={() => setMobileMenuOpen(false)}>Slope Stabilization &amp; Landslide Mitigation</Link></li>
                   <li><Link href="/services/piling-and-foundation-engineering" onClick={() => setMobileMenuOpen(false)}>Piling &amp; Foundation Engineering</Link></li>
+                  <li><Link href="/services/dredging-and-water-infrastructure" onClick={() => setMobileMenuOpen(false)}>Dredging &amp; Water Infrastructure</Link></li>
+                  <li><Link href="/services/railway-civil-works" onClick={() => setMobileMenuOpen(false)}>Railway Civil Works</Link></li>
                   <li><Link href="/services/research-development" onClick={() => setMobileMenuOpen(false)}>Research &amp; Development</Link></li>
                 </ul>
               </li>
