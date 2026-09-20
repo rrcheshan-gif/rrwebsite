@@ -95,7 +95,7 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
             }}
             className="article-content"
           >
-            <p style={{ fontSize: "1.3rem", color: "var(--primary-red)", fontWeight: 600, fontStyle: "italic", marginBottom: "40px", borderLeft: "4px solid var(--primary-red)", paddingLeft: "20px" }}>
+            <p style={{ fontSize: "1.3rem", color: "var(--primary-red)", fontWeight: 400, fontStyle: "italic", marginBottom: "40px", borderLeft: "4px solid var(--primary-red)", paddingLeft: "20px" }}>
               {news.desc}
             </p>
 
