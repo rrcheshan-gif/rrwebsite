@@ -326,34 +326,18 @@ ul {
 
 /* Liquid Red Primary Glass Button */
 .btn-primary {
-  background: linear-gradient(
-    135deg, 
-    rgba(239, 68, 68, 0.92) 0%, 
-    rgba(185, 28, 28, 0.95) 50%, 
-    rgba(220, 38, 38, 0.92) 100%
-  ) !important;
-  color: #ffffff !important;
-  border: 1px solid rgba(255, 255, 255, 0.45) !important;
-  box-shadow: 
-    inset 0 1.5px 2px rgba(255, 255, 255, 0.7),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.35),
-    0 10px 30px rgba(229, 57, 53, 0.5) !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-}
+  background: transparent !important;
+  color: var(--primary-red) !important;
+  border: 2px solid var(--primary-red) !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
 
 .btn-primary:hover {
   transform: translateY(-3px) scale(1.03) !important;
-  background: linear-gradient(
-    135deg, 
-    rgba(248, 113, 113, 1) 0%, 
-    rgba(220, 38, 38, 0.98) 50%, 
-    rgba(185, 28, 28, 1) 100%
-  ) !important;
-  border-color: rgba(255, 255, 255, 0.85) !important;
-  box-shadow: 
-    inset 0 2px 4px rgba(255, 255, 255, 0.9),
-    inset 0 -2px 8px rgba(0, 0, 0, 0.4),
-    0 15px 38px rgba(229, 57, 53, 0.7) !important;
+  background: rgba(229, 57, 53, 0.05) !important;
+  color: var(--primary-red) !important;
+  border-color: var(--primary-red) !important;
+  box-shadow: 0 4px 15px rgba(229, 57, 53, 0.15) !important;
 }
 
 /* Liquid Translucent Dark/Outline Glass Button */
@@ -598,34 +582,23 @@ ul {
 }
 
 .nav-contact-btn {
-    white-space: nowrap;
-    flex-shrink: 0;
-  background: linear-gradient(135deg, rgba(239, 68, 68, 0.9), rgba(185, 28, 28, 0.95)) !important;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  color: #fff !important;
+  white-space: nowrap;
+  flex-shrink: 0;
+  background: transparent !important;
+  color: var(--primary-red) !important;
   padding: 10px 18px;
   border-radius: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.45) !important;
-  box-shadow: 
-    inset 0 1.5px 2px rgba(255, 255, 255, 0.7),
-    0 8px 25px rgba(229, 57, 53, 0.45) !important;
-  transition: all 0.35s ease;
+  border: 2px solid var(--primary-red) !important;
+  box-shadow: none !important;
+  font-weight: 700;
+  text-decoration: none;
   position: relative;
   overflow: hidden;
-  font-weight: 700;
+  transition: all 0.3s ease;
 }
 
 .nav-contact-btn::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -100%;
-  width: 50%;
-  height: 200%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.65), transparent);
-  transform: rotate(25deg);
-  animation: shine 3.5s ease-in-out infinite;
+  display: none;
 }
 
 .nav-contact-btn::after {
@@ -633,12 +606,11 @@ ul {
 }
 
 .nav-contact-btn:hover {
-  background: linear-gradient(135deg, rgba(248, 113, 113, 1), rgba(185, 28, 28, 1)) !important;
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 
-    inset 0 2px 4px rgba(255, 255, 255, 0.9),
-    0 12px 30px rgba(229, 57, 53, 0.65) !important;
-  border-color: rgba(255, 255, 255, 0.8) !important;
+  transform: translateY(-2px);
+  background: rgba(229, 57, 53, 0.05) !important;
+  color: var(--primary-red) !important;
+  border-color: var(--primary-red) !important;
+  box-shadow: 0 4px 15px rgba(229, 57, 53, 0.15) !important;
 }
 
 @keyframes shine {
@@ -1855,40 +1827,29 @@ ul {
 .btn-glass-red {
   display: inline-block;
   padding: 10px 24px !important;
-  background: linear-gradient(135deg, rgba(229, 57, 53, 0.8) 0%, rgba(183, 28, 28, 0.95) 100%) !important;
-  color: white !important;
-  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  background: transparent !important;
+  color: var(--primary-red) !important;
+  border: 2px solid var(--primary-red) !important;
   border-radius: 30px !important;
   font-size: 0.9rem !important;
   font-weight: bold !important;
   letter-spacing: 1px !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  box-shadow: 0 4px 15px rgba(229, 57, 53, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.5) !important;
+  box-shadow: none !important;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease !important;
-  text-decoration: none !important;
   text-align: center;
 }
 
 .btn-glass-red::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
-  transform: skewX(-25deg);
-  animation: shine 3s infinite;
+  display: none;
 }
 
 .btn-glass-red:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(229, 57, 53, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.6) !important;
-  background: linear-gradient(135deg, rgba(229, 57, 53, 0.9) 0%, rgba(183, 28, 28, 1) 100%) !important;
-  color: white !important;
+  background: rgba(229, 57, 53, 0.05) !important;
+  color: var(--primary-red) !important;
+  box-shadow: 0 4px 15px rgba(229, 57, 53, 0.15) !important;
 }
 
 @keyframes shine {

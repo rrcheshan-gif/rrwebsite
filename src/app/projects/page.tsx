@@ -146,7 +146,7 @@ export default function Projects() {
         {/* Status Toggle Tabs */}
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '30px', marginTop: '20px' }}>
           <div style={{ display: 'flex', background: 'var(--bg-base)', borderRadius: '50px', padding: '6px', border: '1px solid var(--border-soft)' }}>
-             <Link href="/projects" style={{ padding: '12px 40px', borderRadius: '50px', background: 'var(--primary-red)', color: 'white', fontWeight: 'bold', textDecoration: 'none', boxShadow: '0 4px 15px rgba(229,57,53,0.3)' }}>
+             <Link href="/projects" style={{ padding: '12px 40px', borderRadius: '50px', background: 'transparent', color: 'var(--primary-red)', border: '2px solid var(--primary-red)', fontWeight: 'bold', textDecoration: 'none', boxShadow: 'none' }}>
                Completed Projects
              </Link>
              <Link href="/projects/ongoing" style={{ padding: '12px 40px', borderRadius: '50px', color: 'var(--text-dark)', fontWeight: 'bold', textDecoration: 'none' }}>
