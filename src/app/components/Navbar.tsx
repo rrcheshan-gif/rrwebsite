@@ -130,7 +130,7 @@ export default function Navbar() {
 
                               <li className={`dropdown ${activeDropdown === 'resources' ? 'open' : ''}`}>
                   <div className="dropdown-header">
-                    <Link href="/resources" title="Construction Resources Sri Lanka" onClick={() => setMobileMenuOpen(false)}>Resources</Link>
+                    <Link href="/resources/asphalt" title="Construction Resources Sri Lanka" onClick={() => setMobileMenuOpen(false)}>Resources</Link>
                     <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('resources', e)} aria-label="Toggle Resources Submenu">
                       <ChevronDown size={14} />
                     </button>
