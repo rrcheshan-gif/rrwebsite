@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Board of Directors | RR Construction (Pvt) Ltd",
+  title: "Our Management | RR Construction (Pvt) Ltd",
   description:
     "Meet the leadership team of RR Construction (Pvt) Ltd, a Sri Lankan construction and civil engineering company delivering major infrastructure and engineering projects.",
 };
@@ -19,10 +19,10 @@ export default function BoardOfDirectorsLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            name: "Board of Directors | RR Construction (Pvt) Ltd",
+            name: "Our Management | RR Construction (Pvt) Ltd",
             description:
               "Meet the leadership team of RR Construction (Pvt) Ltd, a Sri Lankan construction and civil engineering company delivering major infrastructure and engineering projects.",
-            url: "https://www.rrconstruction.lk/about/board-of-directors",
+            url: "https://www.rrconstruction.lk/about/our-management",
             breadcrumb: {
               "@type": "BreadcrumbList",
               itemListElement: [
@@ -41,8 +41,8 @@ export default function BoardOfDirectorsLayout({
                 {
                   "@type": "ListItem",
                   position: 3,
-                  name: "Board of Directors",
-                  item: "https://www.rrconstruction.lk/about/board-of-directors"
+                  name: "Our Management",
+                  item: "https://www.rrconstruction.lk/about/our-management"
                 }
               ]
             }

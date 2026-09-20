@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 export const metadata: Metadata = {
-  title: 'Our People & Board of Directors | RR Construction (Pvt) Ltd',
+  title: 'Our People & Our Management | RR Construction (Pvt) Ltd',
   description: 'Meet the dedicated leadership team and skilled professionals driving RR Constructions heavy civil engineering success in Sri Lanka.',
   alternates: { canonical: 'https://www.rrconstruction.lk/people' }
 };

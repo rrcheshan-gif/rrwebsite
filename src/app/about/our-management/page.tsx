@@ -41,9 +41,9 @@ export default function BoardOfDirectors() {
         >
           
           <div className="container" style={{ position: "relative", zIndex: 2 }}>
-            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Board of <span style={{ color: "var(--primary-red)" }}>Directors</span></h1>
-            <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
-               Meet the visionary leadership team driving our strategic growth and engineering success.
+            <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our <span style={{ color: "var(--primary-red)" }}>Management</span></h1>
+            <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "800px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
+               As one of Sri Lanka’s foremost Building and Civil Engineering Organizations, our strength is drawn from our Management Team, who is the backbone of our Company. Integrating strong values into our business model, they continue to anticipate and exceed our customers’ expectations, ensuring that we grow in success as the years go by.
             </p>
               <BackButton />
           </div>
@@ -59,12 +59,15 @@ export default function BoardOfDirectors() {
                 <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>LEADERSHIP</h4>
               </div>
               <h2 style={{ fontSize: isMobile ? "2rem" : "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, lineHeight: 1.1 }}>
-                Board of <span className="text-gradient" style={{ fontWeight: 300 }}>Directors</span>
+                Our <span className="text-gradient" style={{ fontWeight: 300 }}>Management</span>
               </h2>
+              <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, maxWidth: "1000px", marginTop: "20px" }}>
+                As one of Sri Lanka’s foremost Building and Civil Engineering Organizations, our strength is drawn from our Management Team, who is the backbone of our Company. Integrating strong values into our business model, they continue to anticipate and exceed our customers’ expectations, ensuring that we grow in success as the years go by.
+              </p>
             </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "30px", marginBottom: "60px" }}>
-            {COMPANY_DATA.leadership.filter(l => l.role.includes('Director')).map((leader, idx) => (
+            {COMPANY_DATA.leadership.map((leader, idx) => (
               <div key={idx} style={{ display: "flex", flexDirection: isMobile ? "column" : "row", alignItems: isMobile ? "center" : "stretch", gap: "40px", background: "var(--white)", padding: isMobile ? "30px 20px" : "50px", borderRadius: "24px", border: "1px solid var(--border-soft)", textAlign: isMobile ? "center" : "left", boxShadow: "0 15px 40px rgba(0,0,0,0.06)", overflow: "hidden" }}>
                 {leader.image ? (
                   <div style={{ display: "flex", flexShrink: 0, width: isMobile ? "100%" : "320px", margin: isMobile ? "0 0 20px 0" : "0", borderRadius: "16px", padding: "8px", background: "var(--bg-light)", border: "1px solid var(--border-soft)", boxShadow: "0 15px 35px rgba(0,0,0,0.1)" }}>
