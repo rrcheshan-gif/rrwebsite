@@ -43,7 +43,7 @@ export default function BoardOfDirectors() {
           <div className="container" style={{ position: "relative", zIndex: 2 }}>
             <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our <span style={{ color: "var(--primary-red)" }}>Management</span></h1>
             <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "800px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
-               As one of Sri Lanka’s foremost Building and Civil Engineering Organizations, our strength is drawn from our Management Team, who is the backbone of our Company. Integrating strong values into our business model, they continue to anticipate and exceed our customers’ expectations, ensuring that we grow in success as the years go by.
+               At the helm of RR Construction is a visionary leadership team that blends decades of heavy civil engineering expertise with strategic foresight. Rather than simply managing projects, our leadership is deeply involved in the operational intricacies—from expanding our massive proprietary machinery fleet to advancing our asphalt and concrete production capabilities. It is this hands-on approach and unwavering commitment to total resource independence that ensures we consistently deliver uncompromising quality and forge lasting trust across Sri Lanka’s infrastructure landscape.
             </p>
               <BackButton />
           </div>
@@ -62,7 +62,7 @@ export default function BoardOfDirectors() {
                 Our <span className="text-gradient" style={{ fontWeight: 300 }}>Management</span>
               </h2>
               <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, maxWidth: "1000px", marginTop: "20px" }}>
-                As one of Sri Lanka’s foremost Building and Civil Engineering Organizations, our strength is drawn from our Management Team, who is the backbone of our Company. Integrating strong values into our business model, they continue to anticipate and exceed our customers’ expectations, ensuring that we grow in success as the years go by.
+                At the helm of RR Construction is a visionary leadership team that blends decades of heavy civil engineering expertise with strategic foresight. Rather than simply managing projects, our leadership is deeply involved in the operational intricacies—from expanding our massive proprietary machinery fleet to advancing our asphalt and concrete production capabilities. It is this hands-on approach and unwavering commitment to total resource independence that ensures we consistently deliver uncompromising quality and forge lasting trust across Sri Lanka’s infrastructure landscape.
               </p>
             </div>
 
