@@ -39,6 +39,7 @@ const SERVICES = [
 
 export default function TransportationCivilPage() {
   const [isMobile, setIsMobile] = useState(false);
+  const [activeTab, setActiveTab] = useState(0);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
@@ -114,47 +115,107 @@ export default function TransportationCivilPage() {
         </div>
       </section>
 
-      {/* GRID SECTION */}
+      {/* TABS SECTION */}
       <section style={{ padding: isMobile ? '0 12px 60px' : '0 20px 100px' }}>
         <div style={{ maxWidth: "1500px", margin: '0 auto' }}>
           
-          <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)', gap: '24px', marginTop: '20px' }}>
-            {SERVICES.map((svc, idx) => {
-              return (
-                <Link key={svc.slug} href={svc.cta} className="svc-card" style={{ animationDelay: `${(idx % 3) * 80}ms` }}>
-                  <div style={{ overflow: 'hidden', position: 'relative' }}>
-                    <img
-                      src={encodeURI(svc.image)}
-                      alt={svc.title}
-                      className="svc-card-img"
-                      onError={(e: any) => {
-                        e.currentTarget.style.display = 'none';
-                        e.currentTarget.parentElement.style.display = 'none';
-                      }}
-                    />
-                    <div style={{ position: 'absolute', top: '14px', left: '14px', background: 'var(--primary-red)', color: 'white', borderRadius: '8px', padding: '3px 10px', fontSize: '0.75rem', fontWeight: 800, letterSpacing: '1px' }}>
-                      {svc.num}
-                    </div>
-                  </div>
-
-                  <div className="svc-card-body">
-                    <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--primary-red)',  letterSpacing: '1.5px', marginBottom: '8px' }}>{svc.subtitle}</div>
-                    <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.3rem' : '1.45rem', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 12px', lineHeight: 1.2 }}>{svc.title}</h3>
-                    <p style={{ color: 'var(--text-light)', lineHeight: 1.75, fontSize: '0.93rem', margin: '0 0 20px', flex: 1 }}>{svc.desc}</p>
-
-                    <div style={{ display: 'flex', justifyContent: 'center', marginTop: 'auto', paddingTop: '15px' }}>
-                      <div className="btn-glass-red" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 30px !important' }}>
-                        More Details
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              );
-            })}
+          {/* Tabs Navigation */}
+          <div style={{ 
+            display: 'flex', 
+            gap: isMobile ? '10px' : '20px', 
+            overflowX: 'auto', 
+            marginBottom: '40px', 
+            paddingBottom: '10px',
+            scrollbarWidth: 'none', // Firefox
+            msOverflowStyle: 'none', // IE/Edge
+          }}>
+            {SERVICES.map((svc, idx) => (
+              <button
+                key={idx}
+                onClick={() => setActiveTab(idx)}
+                style={{
+                  padding: isMobile ? '12px 20px' : '15px 35px',
+                  backgroundColor: activeTab === idx ? 'var(--primary-red)' : 'var(--white)',
+                  color: activeTab === idx ? 'white' : 'var(--text-dark)',
+                  border: '1px solid',
+                  borderColor: activeTab === idx ? 'var(--primary-red)' : 'var(--border-soft)',
+                  borderRadius: '50px',
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: isMobile ? '0.9rem' : '1.1rem',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  whiteSpace: 'nowrap',
+                  transition: 'all 0.3s ease',
+                  boxShadow: activeTab === idx ? '0 10px 20px rgba(229, 57, 53, 0.2)' : 'none',
+                  flexShrink: 0
+                }}
+                onMouseOver={(e) => { if (activeTab !== idx) e.currentTarget.style.borderColor = 'var(--primary-red)'; }}
+                onMouseOut={(e) => { if (activeTab !== idx) e.currentTarget.style.borderColor = 'var(--border-soft)'; }}
+              >
+                {svc.title}
+              </button>
+            ))}
           </div>
+
+          {/* Tab Content */}
+          <div style={{ 
+            background: 'var(--white)', 
+            borderRadius: '24px', 
+            overflow: 'hidden',
+            border: '1px solid var(--border-soft)',
+            boxShadow: '0 20px 50px rgba(0,0,0,0.04)',
+            animation: 'fadeSlideUp 0.5s ease-out',
+            display: 'flex',
+            flexDirection: isMobile ? 'column' : 'row'
+          }}>
+            <div style={{ flex: '1', position: 'relative' }}>
+              <img 
+                src={encodeURI(SERVICES[activeTab].image)} 
+                alt={SERVICES[activeTab].title}
+                style={{ width: '100%', height: '100%', minHeight: isMobile ? '300px' : '500px', objectFit: 'cover' }}
+              />
+              <div style={{ position: 'absolute', top: '20px', left: '20px', background: 'var(--primary-red)', color: 'white', borderRadius: '12px', padding: '8px 16px', fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-heading)' }}>
+                {SERVICES[activeTab].num}
+              </div>
+            </div>
+            
+            <div style={{ flex: '1', padding: isMobile ? '30px 20px' : '60px 50px', display: 'flex', flexDirection: 'column' }}>
+              <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--primary-red)', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '15px' }}>
+                {SERVICES[activeTab].subtitle}
+              </div>
+              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.8rem' : '2.5rem', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 25px', lineHeight: 1.2 }}>
+                {SERVICES[activeTab].title}
+              </h2>
+              <p style={{ color: 'var(--text-light)', lineHeight: 1.8, fontSize: '1.1rem', margin: '0 0 35px' }}>
+                {SERVICES[activeTab].desc}
+              </p>
+              
+              <div style={{ marginBottom: '40px' }}>
+                <h4 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.2rem', color: 'var(--text-dark)', marginBottom: '15px', fontWeight: 700 }}>Key Highlights</h4>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  {SERVICES[activeTab].highlights.map((hl, i) => (
+                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--text-dark)', fontWeight: 500, fontSize: '1.05rem' }}>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                      </svg>
+                      {hl}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div style={{ marginTop: 'auto' }}>
+                <Link href={SERVICES[activeTab].cta} className="btn-glass-red" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', padding: '12px 35px !important', fontSize: '1rem', fontWeight: 600 }}>
+                  Explore Details
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
     </div>
