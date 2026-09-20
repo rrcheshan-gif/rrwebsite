@@ -263,7 +263,7 @@ export default function Home() {
 
                   {/* CTA Buttons */}
                   <div className="hero-buttons" style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
-                    <Link href="/projects" className="btn btn-primary">
+                    <Link href="/projects" className="btn-hero-solid">
                       Our Projects <ArrowRight style={{ marginLeft: '8px', width: '18px', height: '18px' }} />
                     </Link>
                     <Link href="/about/company-overview" className="btn btn-glass">Our Story</Link>
