@@ -126,7 +126,7 @@ export default function BoardOfDirectors() {
               </h2>
               
               <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "1.15rem", lineHeight: 1.8, marginBottom: "20px", maxWidth: "900px" }}>
-                At RR Construction, our journey of over three decades has been defined by a singular commitment: building trust through engineering excellence. Since our inception, we have continually invested in our most valuable assets—our people and our state-of-the-art machinery fleet.
+                At RR Construction, our journey of over three decades has been defined by a singular commitment: delivering construction excellence. Since our inception, we have continually invested in our most valuable assets—our people and our state-of-the-art machinery fleet.
               </p>
               <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "1.15rem", lineHeight: 1.8, marginBottom: "40px", maxWidth: "900px" }}>
                 This operational independence allows us to execute complex infrastructure projects that shape the future of Sri Lanka. As we look to the future, our core values of integrity, innovation, and uncompromising quality will continue to guide every project we undertake.
