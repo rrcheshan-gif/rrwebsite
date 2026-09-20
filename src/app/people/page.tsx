@@ -21,7 +21,7 @@ export default function People() {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center center;
+            object-position: right center;
           }
           .hero-gradient {
             position: absolute;
@@ -54,7 +54,7 @@ export default function People() {
               overflow: hidden;
             }
             .hero-img-container img {
-              object-position: center 15%;
+              object-position: right 15%;
             }
             .hero-gradient {
               display: none;
@@ -77,7 +77,7 @@ export default function People() {
       }}>
         
         <div className="hero-img-container">
-          <img src="/images/page-headers/people-team-new.jpg" alt="Our Team" />
+          <img src="/images/page-headers/people-team-final.jpg" alt="Our Team" />
         </div>
         <div className="hero-gradient"></div>
         
