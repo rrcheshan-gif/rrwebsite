@@ -60,7 +60,7 @@ export default function Career() {
       {/* Careers Content */}
       <section style={{ padding: "60px 20px 60px", background: "var(--bg-light)" }}>
         <div className="container">
-          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "800px" }}>
+          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "100%" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
               <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>CAREERS</h4>

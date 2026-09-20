@@ -145,7 +145,7 @@ export default function SocialResponsibility() {
       {/* CSR Initiatives Showcase */}
       <section style={{ padding: "80px 20px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto", padding: "0 16px" }}>
-          <div style={{ textAlign: "left", marginBottom: "60px", maxWidth: "800px" }}>
+          <div style={{ textAlign: "left", marginBottom: "60px", maxWidth: "100%" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
               <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>INITIATIVES</h4>

@@ -159,7 +159,7 @@ export default function HealthAndSafety() {
             <h2 style={{ fontSize: "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0" }}>
               Comprehensive HSE Policy Integration
             </h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.8 }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "100%", margin: "0 auto", lineHeight: 1.8 }}>
               Our commitment to Occupational Health and Safety extends beyond basic compliance. We have integrated strict protocols covering worker participation, emergency response, and continuous hazard management.
             </p>
           </div>

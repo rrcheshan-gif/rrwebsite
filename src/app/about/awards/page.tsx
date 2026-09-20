@@ -91,7 +91,7 @@ export default function Awards() {
       <section style={{ padding: isMobile ? "40px 10px" : "60px 20px" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto", padding: "0 16px" }}>
           <div style={{ background: "var(--white)", borderRadius: "32px", padding: isMobile ? "40px 20px" : "60px", border: "1px solid var(--border-soft)", boxShadow: "0 20px 40px rgba(0,0,0,0.04)" }}>
-            <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "800px" }}>
+            <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "100%" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
                 <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
                 <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>STANDARDS</h4>

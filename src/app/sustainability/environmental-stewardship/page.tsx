@@ -144,7 +144,7 @@ export default function EnvironmentalStewardship() {
             <h2 style={{ fontSize: "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 15px 0" }}>
               Comprehensive Environmental Policy
             </h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.8 }}>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", maxWidth: "100%", margin: "0 auto", lineHeight: 1.8 }}>
               Our operations are strictly governed by our overarching Health, Safety, and Environment (HSE) Policy, ensuring we go beyond compliance to actively improve our ecological footprint.
             </p>
           </div>
