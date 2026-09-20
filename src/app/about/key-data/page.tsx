@@ -1,125 +1,194 @@
 ﻿"use client";
-
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import { Calendar, Users, Tractor, Building, FileText, ShieldCheck, Briefcase, FileSearch, University, UserCircle } from 'lucide-react';
-
 import BackButton from "@/app/components/BackButton";
+
 export default function KeyDataPage() {
   const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth <= 1024); // tablet and mobile break
+    const check = () => setIsMobile(window.innerWidth <= 768);
     check();
     window.addEventListener('resize', check);
     return () => window.removeEventListener('resize', check);
   }, []);
 
   return (
-    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--white)" }}>
-      
+    <main style={{ backgroundColor: 'var(--white)', minHeight: '100vh' }}>
       
       {/* Hero Section */}
-
-      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/page-headers/engineering-blueprint-banner.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)', padding: '70px 20px', textAlign: 'center' }}>
-        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-          <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
-            Key <span style={{ color: "var(--primary-red)" }}>Data</span>
+      <section className="page-header" style={{ position: 'relative', backgroundImage: "linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('/images/page-headers/engineering-blueprint-banner.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)', padding: isMobile ? '40px 20px' : '70px 20px', textAlign: 'center' }}>
+        <div style={{ maxWidth: "1500px", margin: '0 auto', width: '100%' }}>
+          <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '2.5rem' : '4rem', margin: '0 0 24px', lineHeight: 1.2 }}>
+            Key <span style={{ color: 'var(--primary-red)' }}>Data</span>
           </h1>
           <BackButton />
         </div>
       </section>
 
-      {/* Main Content Area */}
-      <section style={{ padding: isMobile ? "40px 0 80px" : "60px 0 120px", background: "var(--bg-light)" }}>
-        <div style={{ maxWidth: "1500px", margin: "0 auto", padding: "0 20px", display: "flex", flexDirection: isMobile ? "column" : "row", gap: "24px", alignItems: "stretch" }}>
+      {/* Intro & Big Stats Section (Dark Theme) */}
+      <section style={{ padding: isMobile ? "60px 20px" : "100px 20px", background: "var(--bg-base)" }}>
+        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           
-          {/* Left Sidebar */}
-          <div style={{ 
-              width: isMobile ? "100%" : "300px", 
-              background: "var(--white)", 
-              borderRadius: "24px", 
-              overflow: "hidden", 
-              display: "flex", 
-              flexDirection: "column",
-              border: "1px solid var(--border-soft)",
-              flexShrink: 0
-          }}>
-             <div style={{ padding: "40px 30px 20px" }}>
-                 <p style={{ fontSize: "0.75rem", fontWeight: 700, color: "var(--text-light)", letterSpacing: "1px", margin: "0 0 10px 0" }}>OUR COMPANY</p>
-                 <div style={{ borderLeft: "3px solid var(--primary-red)", paddingLeft: "15px", marginBottom: "25px" }}>
-                     <h2 style={{ fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: 0, lineHeight: 1.2 }}>RR Construction (Pvt) Ltd</h2>
-                 </div>
-                 <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6 }}>Building reliable infrastructure for a stronger tomorrow.</p>
-             </div>
-             <div style={{ marginTop: "auto", position: "relative" }}>
-                 <div style={{ width: "100%", height: "250px", position: "relative" }}>
-                     <img src="/images/about/head-office-building.jpg" alt="RR Construction Head Office" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                     
-                     <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(to bottom right, var(--white) 20%, transparent 60%)" }} />
-                 </div>
-             </div>
+          <div style={{ textAlign: "center", marginBottom: "60px" }}>
+            <div style={{ display: "inline-flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>AT A GLANCE</h4>
+              <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
+            </div>
+            <h2 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", color: "var(--white)", fontFamily: "var(--font-heading)", margin: "0 0 20px 0" }}>
+              RR Construction (Pvt) Ltd
+            </h2>
+            <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "1.2rem", maxWidth: "700px", margin: "0 auto", lineHeight: 1.6 }}>
+              Building reliable infrastructure for a stronger tomorrow. Our operational scale is a testament to our legacy of engineering excellence.
+            </p>
           </div>
 
-          {/* Right Grid Area */}
-          <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "24px" }}>
-              
-              {/* Top 3 Cards */}
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "24px" }}>
-                  <StatCard icon={<Calendar color="#e11d48" size={24} />} bg="#ffe4e6" label="Year Established" value="1995" />
-                  <StatCard icon={<Users color="#0284c7" size={24} />} bg="#e0f2fe" label="Workforce" value="1,400+" />
-                  <StatCard icon={<Tractor color="#16a34a" size={24} />} bg="#dcfce7" label="Machinery Units" value="1,000+" />
-              </div>
-
-              {/* Remaining Data Cards */}
-              <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
-                  <DataCard icon={<Building color="#2563eb" size={20} />} bg="#dbeafe" label="Head Office" value="No. 865, Dr. Danister De Silva Mawatha, Baseline Road, Colombo 9, Orugodawatta." />
-                  <DataCard icon={<University color="#4f46e5" size={20} />} bg="#e0e7ff" label="National Grading (CIDA)" value="CS2 (Highest Grade in Buildings, Roads, Water Supply & Drainage, Bridges)" />
-                  
-                  <DataCard icon={<FileText color="#6366f1" size={20} />} bg="#e0e7ff" label="Registration No" value="PV 11346" />
-                  <DataCard icon={<ShieldCheck color="#0891b2" size={20} />} bg="#cffafe" label="Quality Certifications" value="ISO 9001:2015, ISO 14001:2015, ISO 45001:2018" />
-                  
-                  <DataCard icon={<Briefcase color="#ea580c" size={20} />} bg="#ffedd5" label="Ownership" value="Private Limited Liability Company" />
-                  <DataCard icon={<FileSearch color="#db2777" size={20} />} bg="#fce7f3" label="Company Auditor" value="P. Wijayawardana & Co." />
-                  
-                  <DataCard icon={<UserCircle color="#0284c7" size={20} />} bg="#e0f2fe" label="Managing Director" value="Mr. Ranjith Senadeera S. D." />
-                  <DataCard icon={<Building color="#ca8a04" size={20} />} bg="#fef08a" label="Company Bankers" value="HNB, DFCC, Sampath, NDB, Commercial, Peoples Bank & NTB" />
-              </div>
-
+          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap: "30px" }}>
+             {/* Stat 1 */}
+             <div style={{ textAlign: "center", padding: "50px 20px", background: "rgba(255,255,255,0.03)", borderRadius: "20px", border: "1px solid rgba(255,255,255,0.05)", transition: "transform 0.3s ease" }} onMouseOver={(e) => e.currentTarget.style.transform="translateY(-10px)"} onMouseOut={(e) => e.currentTarget.style.transform="translateY(0)"}>
+                <Calendar color="var(--primary-red)" size={40} style={{ margin: "0 auto 20px" }} />
+                <h3 style={{ fontSize: "3.5rem", color: "var(--white)", fontFamily: "var(--font-heading)", margin: "0 0 10px 0", fontWeight: 800 }}>1995</h3>
+                <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.1rem", textTransform: "uppercase", letterSpacing: "2px", margin: 0, fontWeight: 600 }}>Year Established</p>
+             </div>
+             {/* Stat 2 */}
+             <div style={{ textAlign: "center", padding: "50px 20px", background: "rgba(255,255,255,0.03)", borderRadius: "20px", border: "1px solid rgba(255,255,255,0.05)", transition: "transform 0.3s ease" }} onMouseOver={(e) => e.currentTarget.style.transform="translateY(-10px)"} onMouseOut={(e) => e.currentTarget.style.transform="translateY(0)"}>
+                <Users color="var(--primary-red)" size={40} style={{ margin: "0 auto 20px" }} />
+                <h3 style={{ fontSize: "3.5rem", color: "var(--white)", fontFamily: "var(--font-heading)", margin: "0 0 10px 0", fontWeight: 800 }}>1,400+</h3>
+                <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.1rem", textTransform: "uppercase", letterSpacing: "2px", margin: 0, fontWeight: 600 }}>Direct Workforce</p>
+             </div>
+             {/* Stat 3 */}
+             <div style={{ textAlign: "center", padding: "50px 20px", background: "rgba(255,255,255,0.03)", borderRadius: "20px", border: "1px solid rgba(255,255,255,0.05)", transition: "transform 0.3s ease" }} onMouseOver={(e) => e.currentTarget.style.transform="translateY(-10px)"} onMouseOut={(e) => e.currentTarget.style.transform="translateY(0)"}>
+                <Tractor color="var(--primary-red)" size={40} style={{ margin: "0 auto 20px" }} />
+                <h3 style={{ fontSize: "3.5rem", color: "var(--white)", fontFamily: "var(--font-heading)", margin: "0 0 10px 0", fontWeight: 800 }}>1,000+</h3>
+                <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.1rem", textTransform: "uppercase", letterSpacing: "2px", margin: 0, fontWeight: 600 }}>Machinery Units</p>
+             </div>
           </div>
 
         </div>
       </section>
 
-    </div>
+      {/* Corporate Particulars Section */}
+      <section style={{ padding: isMobile ? "60px 20px" : "100px 20px", background: "var(--bg-light)" }}>
+        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
+          
+          <div style={{ marginBottom: "50px", textAlign: "center" }}>
+            <h2 style={{ fontSize: "2.5rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", margin: "0 0 15px 0" }}>Corporate <span style={{ color: "var(--primary-red)" }}>Particulars</span></h2>
+            <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "0 auto" }}></div>
+          </div>
+
+          <div style={{ background: "var(--white)", borderRadius: "24px", boxShadow: "0 20px 40px rgba(0,0,0,0.04)", overflow: "hidden", border: "1px solid var(--border-soft)" }}>
+             {/* Head Office */}
+             <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", borderBottom: "1px solid var(--border-soft)", padding: isMobile ? "30px 20px" : "40px", gap: isMobile ? "10px" : "40px" }}>
+                <div style={{ width: isMobile ? "100%" : "300px", flexShrink: 0, display: "flex", alignItems: "center", gap: "15px" }}>
+                   <div style={{ width: "45px", height: "45px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "12px", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--primary-red)" }}>
+                      <Building size={22} />
+                   </div>
+                   <h4 style={{ margin: 0, fontSize: "1.05rem", color: "var(--text-dark)", textTransform: "uppercase", letterSpacing: "1px", fontWeight: 800 }}>Head Office</h4>
+                </div>
+                <div style={{ flex: 1, display: "flex", alignItems: "center" }}>
+                   <p style={{ margin: 0, fontSize: "1.15rem", color: "var(--text-light)", lineHeight: 1.6 }}>No. 865, Dr. Danister De Silva Mawatha, Baseline Road, Colombo 9, Orugodawatta, Sri Lanka.</p>
+                </div>
+             </div>
+
+             {/* CIDA */}
+             <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", borderBottom: "1px solid var(--border-soft)", padding: isMobile ? "30px 20px" : "40px", gap: isMobile ? "10px" : "40px" }}>
+                <div style={{ width: isMobile ? "100%" : "300px", flexShrink: 0, display: "flex", alignItems: "center", gap: "15px" }}>
+                   <div style={{ width: "45px", height: "45px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "12px", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--primary-red)" }}>
+                      <University size={22} />
+                   </div>
+                   <h4 style={{ margin: 0, fontSize: "1.05rem", color: "var(--text-dark)", textTransform: "uppercase", letterSpacing: "1px", fontWeight: 800 }}>National Grading</h4>
+                </div>
+                <div style={{ flex: 1, display: "flex", alignItems: "center" }}>
+                   <p style={{ margin: 0, fontSize: "1.15rem", color: "var(--text-light)", lineHeight: 1.6 }}><strong style={{ color: "var(--text-dark)", fontSize: "1.2rem" }}>CS2 (CIDA)</strong> &mdash; Highest Grade in Buildings, Roads, Water Supply &amp; Drainage, Bridges</p>
+                </div>
+             </div>
+
+             {/* Reg */}
+             <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", borderBottom: "1px solid var(--border-soft)", padding: isMobile ? "30px 20px" : "40px", gap: isMobile ? "10px" : "40px" }}>
+                <div style={{ width: isMobile ? "100%" : "300px", flexShrink: 0, display: "flex", alignItems: "center", gap: "15px" }}>
+                   <div style={{ width: "45px", height: "45px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "12px", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--primary-red)" }}>
+                      <FileText size={22} />
+                   </div>
+                   <h4 style={{ margin: 0, fontSize: "1.05rem", color: "var(--text-dark)", textTransform: "uppercase", letterSpacing: "1px", fontWeight: 800 }}>Registration No</h4>
+                </div>
+                <div style={{ flex: 1, display: "flex", alignItems: "center" }}>
+                   <p style={{ margin: 0, fontSize: "1.15rem", color: "var(--text-light)", lineHeight: 1.6 }}>PV 11346</p>
+                </div>
+             </div>
+
+             {/* ISO */}
+             <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", borderBottom: "1px solid var(--border-soft)", padding: isMobile ? "30px 20px" : "40px", gap: isMobile ? "10px" : "40px", background: "rgba(229, 57, 53, 0.02)" }}>
+                <div style={{ width: isMobile ? "100%" : "300px", flexShrink: 0, display: "flex", alignItems: "center", gap: "15px" }}>
+                   <div style={{ width: "45px", height: "45px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "12px", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--primary-red)" }}>
+                      <ShieldCheck size={22} />
+                   </div>
+                   <h4 style={{ margin: 0, fontSize: "1.05rem", color: "var(--text-dark)", textTransform: "uppercase", letterSpacing: "1px", fontWeight: 800 }}>Certifications</h4>
+                </div>
+                <div style={{ flex: 1, display: "flex", alignItems: "center", flexWrap: "wrap", gap: "15px" }}>
+                   <span style={{ padding: "10px 20px", background: "var(--white)", border: "1px solid var(--border-soft)", borderRadius: "30px", fontSize: "1rem", fontWeight: 700, color: "var(--text-dark)", boxShadow: "0 4px 10px rgba(0,0,0,0.03)" }}>ISO 9001:2015</span>
+                   <span style={{ padding: "10px 20px", background: "var(--white)", border: "1px solid var(--border-soft)", borderRadius: "30px", fontSize: "1rem", fontWeight: 700, color: "var(--text-dark)", boxShadow: "0 4px 10px rgba(0,0,0,0.03)" }}>ISO 14001:2015</span>
+                   <span style={{ padding: "10px 20px", background: "var(--white)", border: "1px solid var(--border-soft)", borderRadius: "30px", fontSize: "1rem", fontWeight: 700, color: "var(--text-dark)", boxShadow: "0 4px 10px rgba(0,0,0,0.03)" }}>ISO 45001:2018</span>
+                </div>
+             </div>
+
+             {/* Ownership */}
+             <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", borderBottom: "1px solid var(--border-soft)", padding: isMobile ? "30px 20px" : "40px", gap: isMobile ? "10px" : "40px" }}>
+                <div style={{ width: isMobile ? "100%" : "300px", flexShrink: 0, display: "flex", alignItems: "center", gap: "15px" }}>
+                   <div style={{ width: "45px", height: "45px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "12px", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--primary-red)" }}>
+                      <Briefcase size={22} />
+                   </div>
+                   <h4 style={{ margin: 0, fontSize: "1.05rem", color: "var(--text-dark)", textTransform: "uppercase", letterSpacing: "1px", fontWeight: 800 }}>Ownership</h4>
+                </div>
+                <div style={{ flex: 1, display: "flex", alignItems: "center" }}>
+                   <p style={{ margin: 0, fontSize: "1.15rem", color: "var(--text-light)", lineHeight: 1.6 }}>Private Limited Liability Company</p>
+                </div>
+             </div>
+
+             {/* Auditor */}
+             <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", borderBottom: "1px solid var(--border-soft)", padding: isMobile ? "30px 20px" : "40px", gap: isMobile ? "10px" : "40px" }}>
+                <div style={{ width: isMobile ? "100%" : "300px", flexShrink: 0, display: "flex", alignItems: "center", gap: "15px" }}>
+                   <div style={{ width: "45px", height: "45px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "12px", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--primary-red)" }}>
+                      <FileSearch size={22} />
+                   </div>
+                   <h4 style={{ margin: 0, fontSize: "1.05rem", color: "var(--text-dark)", textTransform: "uppercase", letterSpacing: "1px", fontWeight: 800 }}>Company Auditor</h4>
+                </div>
+                <div style={{ flex: 1, display: "flex", alignItems: "center" }}>
+                   <p style={{ margin: 0, fontSize: "1.15rem", color: "var(--text-light)", lineHeight: 1.6 }}>P. Wijayawardana &amp; Co.</p>
+                </div>
+             </div>
+
+             {/* Managing Director */}
+             <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", borderBottom: "1px solid var(--border-soft)", padding: isMobile ? "30px 20px" : "40px", gap: isMobile ? "10px" : "40px" }}>
+                <div style={{ width: isMobile ? "100%" : "300px", flexShrink: 0, display: "flex", alignItems: "center", gap: "15px" }}>
+                   <div style={{ width: "45px", height: "45px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "12px", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--primary-red)" }}>
+                      <UserCircle size={22} />
+                   </div>
+                   <h4 style={{ margin: 0, fontSize: "1.05rem", color: "var(--text-dark)", textTransform: "uppercase", letterSpacing: "1px", fontWeight: 800 }}>Managing Director</h4>
+                </div>
+                <div style={{ flex: 1, display: "flex", alignItems: "center" }}>
+                   <p style={{ margin: 0, fontSize: "1.3rem", color: "var(--text-dark)", fontWeight: 700, lineHeight: 1.6 }}>Mr. Ranjith Senadeera S. D.</p>
+                </div>
+             </div>
+
+             {/* Bankers */}
+             <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", padding: isMobile ? "30px 20px" : "40px", gap: isMobile ? "10px" : "40px" }}>
+                <div style={{ width: isMobile ? "100%" : "300px", flexShrink: 0, display: "flex", alignItems: "center", gap: "15px" }}>
+                   <div style={{ width: "45px", height: "45px", background: "rgba(229, 57, 53, 0.08)", borderRadius: "12px", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--primary-red)" }}>
+                      <Building size={22} />
+                   </div>
+                   <h4 style={{ margin: 0, fontSize: "1.05rem", color: "var(--text-dark)", textTransform: "uppercase", letterSpacing: "1px", fontWeight: 800 }}>Company Bankers</h4>
+                </div>
+                <div style={{ flex: 1, display: "flex", alignItems: "center" }}>
+                   <p style={{ margin: 0, fontSize: "1.15rem", color: "var(--text-light)", lineHeight: 1.8 }}>
+                      HNB, DFCC, Sampath Bank, NDB, Commercial Bank, People's Bank &amp; NTB
+                   </p>
+                </div>
+             </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
   );
-}
-
-// Helpers
-function StatCard({ icon, bg, label, value }: { icon: any, bg: string, label: string, value: string }) {
-    return (
-        <div style={{ background: "var(--white)", borderRadius: "16px", padding: "25px", display: "flex", alignItems: "center", gap: "20px", border: "1px solid var(--border-soft)" }}>
-            <div style={{ width: "60px", height: "60px", borderRadius: "50%", background: bg, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                {icon}
-            </div>
-            <div>
-                <p style={{ margin: "0 0 5px 0", fontSize: "0.85rem", color: "var(--text-light)", fontWeight: 600 }}>{label}</p>
-                <h3 style={{ margin: 0, fontSize: "1.8rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800 }}>{value}</h3>
-            </div>
-        </div>
-    )
-}
-
-function DataCard({ icon, bg, label, value }: { icon: any, bg: string, label: string, value: string }) {
-    return (
-        <div style={{ background: "var(--white)", borderRadius: "16px", padding: "20px", display: "flex", alignItems: "flex-start", gap: "15px", border: "1px solid var(--border-soft)" }}>
-            <div style={{ width: "45px", height: "45px", borderRadius: "50%", background: bg, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: "5px" }}>
-                {icon}
-            </div>
-            <div>
-                <p style={{ margin: "0 0 5px 0", fontSize: "0.85rem", color: "var(--text-dark)", fontWeight: 700 }}>{label}</p>
-                <p style={{ margin: 0, fontSize: "0.95rem", color: "var(--text-light)", lineHeight: 1.5 }}>{value}</p>
-            </div>
-        </div>
-    )
 }
