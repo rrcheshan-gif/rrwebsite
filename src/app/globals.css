@@ -2555,7 +2555,7 @@ body::after {
   width: 100%;
   height: 100%;
   background-color: #1b2738;
-  clip-path: polygon(0 0, 50% 0, 35% 100%, 0 100%);
+  clip-path: polygon(0 0, 60% 0, 48% 100%, 0 100%);
   z-index: 0;
   pointer-events: none;
 }
@@ -2569,7 +2569,7 @@ body::after {
   width: 100%;
   height: 100%;
   background-color: rgba(255,255,255,0.05);
-  clip-path: polygon(50% 0, 51.5% 0, 36.5% 100%, 35% 100%);
+  clip-path: polygon(60% 0, 61.5% 0, 49.5% 100%, 48% 100%);
   z-index: 0;
   pointer-events: none;
 }
@@ -2648,6 +2648,17 @@ body::after {
 .page-header > div:last-child > h3,
 .page-header > div:last-child > h4,
 .page-header > div:last-child > p {
+  max-width: 520px !important;
+  white-space: normal !important;
   align-items: flex-start !important;
   justify-content: flex-start !important;
+}
+
+/* Restrict text width so it never overflows the navy blue slant */
+.page-header > div:last-child > h1,
+.page-header > div:last-child > h2,
+.page-header > div:last-child > p {
+  max-width: 520px !important;
+  word-wrap: break-word !important;
+  white-space: normal !important;
 }
