@@ -119,7 +119,7 @@ export default function TransportationCivilPage() {
       </section>
 
       {/* TABS SECTION */}
-      <section style={{ padding: isMobile ? '0 12px 60px' : '0 20px 100px' }}>
+      <section style={{ padding: isMobile ? '40px 12px 60px' : '60px 20px 100px' }}>
         <div style={{ maxWidth: "1500px", margin: '0 auto' }}>
           
           {/* Tabs Navigation */}
