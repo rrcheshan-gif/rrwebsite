@@ -153,9 +153,12 @@ export default function VeerapuramPlant() {
       {/* Why Switch to M-Sand */}
       <section style={{ padding: "60px 20px 50px", background: "var(--bg-base)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: "50px" }}>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Why Switch to Our M-Sand?</h2>
-            <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
+          <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "1000px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Core Benefits</h4>
+            </div>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 3.2rem)", color: "var(--text-dark)", marginBottom: "15px", fontWeight: 800 }}>Why Switch to <span className="text-gradient" style={{ fontWeight: 300 }}>Our M-Sand?</span></h2>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "30px" }}>
             <div style={{ backgroundColor: "var(--white)", padding: "30px", borderRadius: "8px" }}>
