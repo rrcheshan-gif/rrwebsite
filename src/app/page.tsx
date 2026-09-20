@@ -137,9 +137,9 @@ export default function Home() {
           
           
           {/* Strict Blur & Tint ONLY behind the text area */}
-          <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(15, 23, 42, 0.5)", zIndex: 2 }}></div>
+          
           {/* Bottom fade */}
-          <div style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', height: '130px', background: 'linear-gradient(0deg, rgba(5,10,20,0.7) 0%, transparent 100%)', zIndex: 2 }}></div>
+          
 
           {/* Foreground Content — CENTER ALIGNED */}
           <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 3, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 clamp(20px, 5vw, 40px)', textAlign: 'center' }}>
@@ -233,14 +233,14 @@ export default function Home() {
                 ) : (
                   <div style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', marginBottom: 'clamp(14px, 2.5vh, 28px)' }}>
                     <span style={{ width: '8px', height: '8px', background: 'var(--primary-red)', borderRadius: '50%', display: 'inline-block', boxShadow: '0 0 10px var(--primary-red)', flexShrink: 0 }}></span>
-                    <div style={{ color: "#ffffff", fontWeight: 800, fontSize: 'clamp(0.75rem, 1.3vw, 0.9rem)', letterSpacing: '3px', textTransform: 'uppercase', textShadow: "0 2px 10px rgba(0,0,0,0.5)" }}>
+                    <div style={{ color: "#ffffff", fontWeight: 800, fontSize: 'clamp(0.75rem, 1.3vw, 0.9rem)', letterSpacing: '3px', textTransform: 'uppercase', textShadow: "0 2px 4px rgba(0,0,0,0.8), 0 8px 24px rgba(0,0,0,0.5)" }}>
                       {slide.tag}
                     </div>
                   </div>
                 )}
 
                   {/* Main Heading */}
-                  <h2 style={{ fontFamily: 'var(--font-heading)', color: "#ffffff", fontSize: 'clamp(2.4rem, 5.5vw, 4.8rem)', lineHeight: 1.1, marginBottom: 'clamp(14px, 2.5vh, 22px)', fontWeight: 900, textAlign: 'center', letterSpacing: '-0.02em', textShadow: "0 4px 20px rgba(0,0,0,0.5)" }}>
+                  <h2 style={{ fontFamily: 'var(--font-heading)', color: "#ffffff", fontSize: 'clamp(2.4rem, 5.5vw, 4.8rem)', lineHeight: 1.1, marginBottom: 'clamp(14px, 2.5vh, 22px)', fontWeight: 900, textAlign: 'center', letterSpacing: '-0.02em', textShadow: "0 2px 4px rgba(0,0,0,0.8), 0 8px 24px rgba(0,0,0,0.5)" }}>
                     {slide.heading1}{slide.heading2 && <><br /><span style={{ color: 'var(--primary-red)', textShadow: '0 2px 10px rgba(229, 57, 53, 0.2)' }}>{slide.heading2}</span></>}{slide.heading3 && <><br />{slide.heading3}</>}
                   </h2>
 
@@ -250,7 +250,7 @@ export default function Home() {
                   )}
 
                   {/* Description */}
-                  <p style={{ fontSize: 'clamp(0.95rem, 1.5vw, 1.25rem)', lineHeight: 1.8, color: "rgba(255, 255, 255, 0.9)", maxWidth: '780px', fontWeight: 600, textAlign: 'center', marginBottom: 'clamp(22px, 4vh, 40px)', textShadow: "0 2px 10px rgba(0,0,0,0.5)" }}>
+                  <p style={{ fontSize: 'clamp(0.95rem, 1.5vw, 1.25rem)', lineHeight: 1.8, color: "rgba(255, 255, 255, 0.9)", maxWidth: '780px', fontWeight: 600, textAlign: 'center', marginBottom: 'clamp(22px, 4vh, 40px)', textShadow: "0 2px 4px rgba(0,0,0,0.8), 0 8px 24px rgba(0,0,0,0.5)" }}>
                     {slide.desc}
                   </p>
 
