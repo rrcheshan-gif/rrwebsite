@@ -1,10 +1,11 @@
+
 "use client";
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import {  Target, Eye, ShieldCheck, HardHat, Lightbulb, Leaf, Award, Handshake , Compass } from 'lucide-react';
-
+import { Target, Eye, ShieldCheck, HardHat, Lightbulb, Leaf, Award, Handshake, Compass } from 'lucide-react';
 import BackButton from "@/app/components/BackButton";
+
 function Reveal({ children, delay = 0, className = "", direction = "up" }: { children: React.ReactNode, delay?: number, className?: string, direction?: "up"|"left"|"right" }) {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -34,7 +35,7 @@ function Reveal({ children, delay = 0, className = "", direction = "up" }: { chi
       style={{
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? 'translate(0,0)' : transformStart,
-        transition: "opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) $delayms, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) $delayms",
+        transition: `opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`
       }}
     >
       {children}
@@ -53,7 +54,7 @@ export default function VisionMission() {
   }, []);
 
   return (
-    <div style={{ paddingTop: "0px", backgroundColor: "var(--bg-light)", minHeight: "100vh", overflowX: "hidden" }}>
+    <div style={{ paddingTop: "0px", backgroundColor: "var(--white)", minHeight: "100vh", overflowX: "hidden" }}>
       
       {/* Hero Section */}
       <section 
@@ -65,149 +66,90 @@ export default function VisionMission() {
           position: "relative", 
           backgroundSize: "cover", 
           backgroundPosition: "center", 
-           
           borderRadius: isMobile ? '24px' : '32px',
           margin: isMobile ? '0 12px 30px' : '0 20px 40px',  
           overflow: "hidden" 
         }}
       >
-        
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>
             Vision & <span style={{ color: "var(--primary-red)" }}>Mission</span>
           </h1>
-              <BackButton />
-          
+          <BackButton />
         </div>
       </section>
 
-                        {/* Vision & Mission Redesign */}
-      <section style={{ padding: isMobile ? "60px 20px" : "120px 20px", backgroundColor: "var(--bg-light)" }}>
-        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto", display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: isMobile ? "30px" : "40px" }}>
+      {/* Clean Layout: Vision, Mission, Strategy */}
+      <section style={{ padding: isMobile ? "60px 20px" : "100px 20px" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           
-                                        {/* Vision Block */}
-          <Reveal direction="left">
-            <div className="hover-lift" style={{ 
-              position: "relative",
-              backgroundColor: "var(--white)", 
-              borderRadius: "32px", 
-              padding: isMobile ? "40px 30px" : "70px 60px", 
-              boxShadow: "0 20px 60px rgba(0,0,0,0.04)", 
-              border: "1px solid var(--border-soft)",
-              height: "100%",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              overflow: "hidden",
-              zIndex: 1
-            }}>
-              <div style={{ position: "absolute", top: "-50px", right: "-50px", opacity: 0.03, zIndex: -1, pointerEvents: "none" }}>
-                <Eye size={300} />
+          <Reveal direction="up">
+            <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: isMobile ? "20px" : "60px", marginBottom: "80px", borderBottom: "1px solid var(--border-soft)", paddingBottom: "80px" }}>
+              <div style={{ flex: "0 0 80px" }}>
+                <Eye size={isMobile ? 50 : 80} color="var(--primary-red)" opacity={0.9} strokeWidth={1.5} />
               </div>
-              
-              <div style={{ width: "80px", height: "80px", borderRadius: "24px", backgroundColor: "rgba(229, 57, 53, 0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "40px" }}>
-                <Eye size={40} color="var(--primary-red)" />
-              </div>
-              
-              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div>
+                <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
                   <div style={{ width: "30px", height: "2px", background: "var(--primary-red)" }}></div>
-                  <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.85rem" }}>FUTURE</h4>
+                  <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.85rem" }}>FUTURE OUTLOOK</h4>
                 </div>
-                <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "25px", letterSpacing: "-1px" }}>Our <span className="text-gradient" style={{ fontWeight: 300 }}>Vision</span></h2>
-              
-              <p style={{ fontSize: "1.2rem", lineHeight: 1.8, color: "var(--text-light)", margin: 0, fontWeight: 500, position: "relative", paddingLeft: "25px", borderLeft: "4px solid var(--primary-red)" }}>
-                To be a leading force in Sri Lanka's infrastructure development, delivering world-class engineering solutions that connect communities, enable progress, and build a stronger, more resilient future.
-              </p>
+                <h2 style={{ fontSize: isMobile ? "2rem" : "3rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "20px", letterSpacing: "-1px" }}>Our <span className="text-gradient" style={{ fontWeight: 300 }}>Vision</span></h2>
+                <p style={{ fontSize: "1.25rem", lineHeight: 1.8, color: "var(--text-light)", margin: 0, fontWeight: 400, textAlign: "justify" }}>
+                  To be a leading force in Sri Lanka's infrastructure development, delivering world-class engineering solutions that connect communities, enable progress, and build a stronger, more resilient future.
+                </p>
+              </div>
             </div>
           </Reveal>
 
-          {/* Mission Block */}
-          <Reveal direction="right" delay={200}>
-            <div className="hover-lift" style={{ 
-              position: "relative",
-              backgroundColor: "var(--white)", 
-              borderRadius: "32px", 
-              padding: isMobile ? "40px 30px" : "70px 60px", 
-              boxShadow: "0 20px 60px rgba(0,0,0,0.04)", 
-              border: "1px solid var(--border-soft)",
-              height: "100%",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              overflow: "hidden",
-              zIndex: 1
-            }}>
-              <div style={{ position: "absolute", top: "-50px", right: "-50px", opacity: 0.03, zIndex: -1, pointerEvents: "none" }}>
-                <Target size={300} />
+          <Reveal direction="up" delay={150}>
+            <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: isMobile ? "20px" : "60px", marginBottom: "80px", borderBottom: "1px solid var(--border-soft)", paddingBottom: "80px" }}>
+              <div style={{ flex: "0 0 80px" }}>
+                <Target size={isMobile ? 50 : 80} color="var(--primary-red)" opacity={0.9} strokeWidth={1.5} />
               </div>
-              
-              <div style={{ width: "80px", height: "80px", borderRadius: "24px", backgroundColor: "rgba(229, 57, 53, 0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "40px" }}>
-                <Target size={40} color="var(--primary-red)" />
-              </div>
-              
-              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div>
+                <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
                   <div style={{ width: "30px", height: "2px", background: "var(--primary-red)" }}></div>
                   <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.85rem" }}>PURPOSE</h4>
                 </div>
-                <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "25px", letterSpacing: "-1px" }}>Our <span className="text-gradient" style={{ fontWeight: 300 }}>Mission</span></h2>
-              
-              <p style={{ fontSize: "1.2rem", lineHeight: 1.8, color: "var(--text-light)", margin: 0, fontWeight: 500, position: "relative", paddingLeft: "25px", borderLeft: "4px solid var(--primary-red)" }}>
-                To deliver complex infrastructure and heavy civil engineering projects with excellence, innovation, and integrity — combining experienced people, advanced technology, integrated resources, uncompromising quality, and a strong commitment to safety, sustainability, and client satisfaction.
-              </p>
+                <h2 style={{ fontSize: isMobile ? "2rem" : "3rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "20px", letterSpacing: "-1px" }}>Our <span className="text-gradient" style={{ fontWeight: 300 }}>Mission</span></h2>
+                <p style={{ fontSize: "1.25rem", lineHeight: 1.8, color: "var(--text-light)", margin: 0, fontWeight: 400, textAlign: "justify" }}>
+                  To deliver complex infrastructure and heavy civil engineering projects with excellence, innovation, and integrity — combining experienced people, advanced technology, integrated resources, uncompromising quality, and a strong commitment to safety, sustainability, and client satisfaction.
+                </p>
+              </div>
             </div>
           </Reveal>
-        </div>
-      </section>
-  {/* Our Direction Section */}
-      <section style={{ padding: isMobile ? "0px 20px 60px" : "0px 20px 120px", background: "var(--bg-light)", position: "relative" }}>
-        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
-          <Reveal>
-            <div className="hover-lift" style={{ 
-              position: "relative",
-              backgroundColor: "var(--white)", 
-              borderRadius: "32px", 
-              padding: isMobile ? "40px 30px" : "70px 60px", 
-              boxShadow: "0 20px 60px rgba(0,0,0,0.04)", 
-              border: "1px solid var(--border-soft)",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              overflow: "hidden",
-              zIndex: 1
-            }}>
-              <div style={{ position: "absolute", top: "-50px", right: "-50px", opacity: 0.03, zIndex: -1, pointerEvents: "none" }}>
-                <Compass size={400} />
+
+          <Reveal direction="up" delay={300}>
+            <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: isMobile ? "20px" : "60px", paddingBottom: "40px" }}>
+              <div style={{ flex: "0 0 80px" }}>
+                <Compass size={isMobile ? 50 : 80} color="var(--primary-red)" opacity={0.9} strokeWidth={1.5} />
               </div>
-              
-              <div style={{ width: "80px", height: "80px", borderRadius: "24px", backgroundColor: "rgba(229, 57, 53, 0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "40px" }}>
-                <Compass size={40} color="var(--primary-red)" />
-              </div>
-              
-              <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+              <div>
+                <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
                   <div style={{ width: "30px", height: "2px", background: "var(--primary-red)" }}></div>
                   <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.85rem" }}>STRATEGY</h4>
                 </div>
-                <h2 style={{ fontSize: isMobile ? "2.2rem" : "3.2rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "25px", letterSpacing: "-1px" }}>Our <span className="text-gradient" style={{ fontWeight: 300 }}>Direction</span></h2>
-              
-              <div style={{ position: "relative", paddingLeft: isMobile ? "20px" : "30px", borderLeft: "4px solid var(--primary-red)" }}>
-                <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, marginBottom: "25px", fontWeight: 500 }}>
-                  RR Construction (Pvt) Ltd continues to strengthen its position in Sri Lanka's infrastructure sector through integrated heavy civil engineering capabilities covering <Link href="/services/highway-and-expressway-construction" style={{ color: "var(--primary-red)", textDecoration: "underline", fontWeight: "bold" }}>highways and expressways</Link>, <Link href="/services/bridge-construction" style={{ color: "var(--primary-red)", textDecoration: "underline", fontWeight: "bold" }}>bridges</Link>, <Link href="/services/railway-civil-works" style={{ color: "var(--primary-red)", textDecoration: "underline", fontWeight: "bold" }}>railway construction</Link>, <Link href="/services/maritime-construction" style={{ color: "var(--primary-red)", textDecoration: "underline", fontWeight: "bold" }}>maritime and marine infrastructure</Link>, <Link href="/services/water-infrastructure" style={{ color: "var(--primary-red)", textDecoration: "underline", fontWeight: "bold" }}>water infrastructure</Link>, <Link href="/services/landslide-mitigation" style={{ color: "var(--primary-red)", textDecoration: "underline", fontWeight: "bold" }}>geotechnical works</Link> and other major civil engineering projects.
+                <h2 style={{ fontSize: isMobile ? "2rem" : "3rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "20px", letterSpacing: "-1px" }}>Our <span className="text-gradient" style={{ fontWeight: 300 }}>Direction</span></h2>
+                <p style={{ color: "var(--text-light)", fontSize: "1.15rem", lineHeight: 1.8, marginBottom: "20px", fontWeight: 400, textAlign: "justify" }}>
+                  RR Construction (Pvt) Ltd continues to strengthen its position in Sri Lanka's infrastructure sector through integrated heavy civil engineering capabilities covering <Link href="/services/highway-and-expressway-construction" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: "bold" }}>highways and expressways</Link>, <Link href="/services/bridge-construction" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: "bold" }}>bridges</Link>, <Link href="/services/railway-civil-works" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: "bold" }}>railway construction</Link>, <Link href="/services/maritime-construction" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: "bold" }}>maritime and marine infrastructure</Link>, <Link href="/services/water-infrastructure" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: "bold" }}>water infrastructure</Link>, <Link href="/services/landslide-mitigation" style={{ color: "var(--primary-red)", textDecoration: "none", fontWeight: "bold" }}>geotechnical works</Link> and other major civil engineering projects.
                 </p>
-                <p style={{ color: "var(--text-dark)", fontSize: "1.3rem", fontWeight: 800, fontFamily: "var(--font-heading)", margin: 0, letterSpacing: "0.5px" }}>
+                <p style={{ color: "var(--text-dark)", fontSize: "1.25rem", fontWeight: 700, fontFamily: "var(--font-heading)", margin: 0, letterSpacing: "0.5px" }}>
                   Our vision guides where we are going, while our mission defines how we deliver value along the way.
                 </p>
               </div>
             </div>
           </Reveal>
+
         </div>
       </section>
 
-      {/* Modern Core Values Grid */}
-      <section style={{ padding: "80px 20px 80px", background: "var(--bg-light)", position: "relative" }}>
-        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
+      {/* Clean Core Values List Design */}
+      <section style={{ padding: "80px 20px 100px", background: "var(--bg-light)" }}>
+        <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          
           <Reveal>
-            <div style={{ textAlign: "left", marginBottom: "80px" }}>
+            <div style={{ textAlign: "left", marginBottom: "60px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
                   <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
                   <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>PRINCIPLES</h4>
@@ -218,54 +160,47 @@ export default function VisionMission() {
               </div>
           </Reveal>
 
-          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap: "30px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
             {[
-              { title: "EXCELLENCE", subtitle: "Built to Perform", desc: "Delivering every project with technical expertise, precision and a consistent commitment to quality.", icon: <Award size={32} /> },
-              { title: "INNOVATION", subtitle: "Engineered for Tomorrow", desc: "Applying modern engineering methods, technology and practical solutions to address complex infrastructure challenges.", icon: <Lightbulb size={32} /> },
-              { title: "INTEGRITY", subtitle: "Trust & Transparency", desc: "Building lasting relationships through accountability, transparency and professional conduct.", icon: <ShieldCheck size={32} /> },
-              { title: "SAFETY", subtitle: "Zero Harm", desc: "Protecting our people, communities and environment through responsible and disciplined construction practices.", icon: <HardHat size={32} /> },
-              { title: "SUSTAINABILITY", subtitle: "Responsible Execution", desc: "Creating long-term infrastructure value while respecting environmental and social responsibilities.", icon: <Leaf size={32} /> },
-              { title: "PARTNERSHIP", subtitle: "Shared Success", desc: "Working collaboratively with clients, professionals, communities and stakeholders to achieve shared success.", icon: <Handshake size={32} /> }
-                          ].map((val, idx) => (
-                <Reveal key={idx} delay={idx * 150} direction="up">
-                  <div style={{ 
-                    background: "var(--white)", 
-                    padding: isMobile ? "30px 25px" : "40px 35px", 
-                    borderRadius: "16px", 
-                    borderTop: "5px solid var(--primary-red)", 
-                    borderBottom: "1px solid var(--border-soft)",
-                    borderLeft: "1px solid var(--border-soft)",
-                    borderRight: "1px solid var(--border-soft)",
-                    boxShadow: "0 10px 40px rgba(0,0,0,0.03)",
-                    height: "100%",
-                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                    display: "flex",
-                    flexDirection: "column"
-                  }}
-                  className="hover-lift"
-                  >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
-                      <div style={{ background: 'rgba(229,57,53,0.1)', color: 'var(--primary-red)', width: '50px', height: '50px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        {val.icon}
-                      </div>
-                      <h3 style={{ color: 'var(--text-dark)', fontFamily: 'var(--font-heading)', fontWeight: 800, margin: 0, fontSize: '1.2rem' }}>
-                        {val.title}
-                      </h3>
-                    </div>
-                    <h4 style={{ color: 'var(--primary-red)', fontSize: '0.95rem', fontWeight: 700, marginBottom: '15px' }}>
+              { title: "EXCELLENCE", subtitle: "Built to Perform", desc: "Delivering every project with technical expertise, precision and a consistent commitment to quality.", icon: <Award size={40} color="var(--primary-red)" strokeWidth={1.5} /> },
+              { title: "INNOVATION", subtitle: "Engineered for Tomorrow", desc: "Applying modern engineering methods, technology and practical solutions to address complex infrastructure challenges.", icon: <Lightbulb size={40} color="var(--primary-red)" strokeWidth={1.5} /> },
+              { title: "INTEGRITY", subtitle: "Trust & Transparency", desc: "Building lasting relationships through accountability, transparency and professional conduct.", icon: <ShieldCheck size={40} color="var(--primary-red)" strokeWidth={1.5} /> },
+              { title: "SAFETY", subtitle: "Zero Harm", desc: "Protecting our people, communities and environment through responsible and disciplined construction practices.", icon: <HardHat size={40} color="var(--primary-red)" strokeWidth={1.5} /> },
+              { title: "SUSTAINABILITY", subtitle: "Responsible Execution", desc: "Creating long-term infrastructure value while respecting environmental and social responsibilities.", icon: <Leaf size={40} color="var(--primary-red)" strokeWidth={1.5} /> },
+              { title: "PARTNERSHIP", subtitle: "Shared Success", desc: "Working collaboratively with clients, professionals, communities and stakeholders to achieve shared success.", icon: <Handshake size={40} color="var(--primary-red)" strokeWidth={1.5} /> }
+            ].map((val, idx) => (
+              <Reveal key={idx} delay={idx * 100} direction="up">
+                <div style={{ 
+                  display: "flex",
+                  flexDirection: isMobile ? "column" : "row",
+                  alignItems: isMobile ? "flex-start" : "center",
+                  gap: isMobile ? "15px" : "40px",
+                  paddingBottom: "30px",
+                  borderBottom: idx !== 5 ? "1px solid var(--border-soft)" : "none"
+                }}>
+                  <div style={{ flex: "0 0 60px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    {val.icon}
+                  </div>
+                  <div style={{ flex: "1" }}>
+                    <h3 style={{ color: 'var(--text-dark)', fontFamily: 'var(--font-heading)', fontWeight: 800, margin: "0 0 5px 0", fontSize: '1.4rem' }}>
+                      {val.title}
+                    </h3>
+                    <h4 style={{ color: 'var(--primary-red)', fontSize: '0.95rem', fontWeight: 600, margin: "0 0 10px 0", letterSpacing: "1px" }}>
                       {val.subtitle}
                     </h4>
-                    <p style={{ color: "var(--text-light)", lineHeight: 1.7, margin: 0, fontSize: "1.05rem" }}>
+                  </div>
+                  <div style={{ flex: "2" }}>
+                    <p style={{ color: "var(--text-light)", lineHeight: 1.7, margin: 0, fontSize: "1.1rem" }}>
                       {val.desc}
                     </p>
                   </div>
-                </Reveal>
-              ))}
+                </div>
+              </Reveal>
+            ))}
           </div>
+
         </div>
       </section>
-
-      
 
     </div>
   );
