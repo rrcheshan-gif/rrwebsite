@@ -62,7 +62,7 @@ export default function BridgeConstructionPage({ hideHero = false }: Props) {
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>CAPABILITIES</h4>
             </div>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", marginBottom: "20px", fontWeight: 800, lineHeight: 1.1 }}>
-              Premier Bridge Engineering <span className="text-gradient" style={{ fontWeight: 300 }}>Capabilities</span>
+              Premier Bridge <span className="text-gradient" style={{ fontWeight: 300 }}>Engineering Capabilities</span>
             </h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.6, textAlign: "left", margin: 0 }}>
               RR Construction is a leading force in Sri Lankan infrastructure development. With decades of structural engineering expertise, we design, construct, and rehabilitate complex bridge structures that serve communities and economies for generations.

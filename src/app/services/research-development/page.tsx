@@ -60,7 +60,7 @@ export default function ResearchAndDevelopmentPage() {
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>CAPABILITIES</h4>
             </div>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", marginBottom: "20px", fontWeight: 800, lineHeight: 1.1 }}>
-              Innovating Construction <span className="text-gradient" style={{ fontWeight: 300 }}>Methods</span>
+              Innovating <span className="text-gradient" style={{ fontWeight: 300 }}>Construction Methods</span>
             </h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.6, textAlign: "left", margin: 0 }}>
               The integration of cutting-edge technologies and rigorous R&D initiatives has enabled the organization to achieve unprecedented operational efficiency and overcome complex technical challenges.
