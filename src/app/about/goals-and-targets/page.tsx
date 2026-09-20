@@ -178,7 +178,8 @@ export default function GoalsAndTargets() {
                   "Strong client and stakeholder relationships",
                   "Long-term organizational and business growth"
                 ].map((priority, idx) => (
-                  <li key={idx} style={{ display: "flex", alignItems: "center", gap: "15px", background: "var(--bg-light)", padding: "15px 20px", borderRadius: "12px", borderLeft: "4px solid var(--primary-red)", color: "var(--text-dark)", fontSize: "1.1rem", fontWeight: 600 }}>
+                  <li key={idx} style={{ display: "flex", alignItems: "center", gap: "15px", padding: "20px 0", borderBottom: "1px solid var(--border-soft)", color: "var(--text-dark)", fontSize: "1.2rem", fontWeight: 600 }}>
+                      <CheckCircle size={24} color="var(--primary-red)" />
                     <span>{priority}</span>
                   </li>
                 ))}
