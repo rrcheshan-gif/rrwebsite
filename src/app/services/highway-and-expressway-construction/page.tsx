@@ -47,9 +47,6 @@ export default function RoadConstructionPage() {
           }}>
             Highway and Expressway <span style={{ color: 'var(--primary-red)' }}>Construction in Sri Lanka</span>
           </h1>
-            <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
-               Connecting the nation through high-quality, durable, and sustainable road networks.
-            </p>
               <BackButton />
           
         </div>

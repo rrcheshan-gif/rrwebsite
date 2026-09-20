@@ -24,9 +24,6 @@ export default function ConcretePage() {
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
             Concrete <span style={{ color: "var(--primary-red)" }}>Batching Plants</span>
           </h1>
-          <p className="hero-slogan" style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "650px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
-            High-grade ready-mix concrete production facilities supporting major expressway and highway projects.
-          </p>
           <BackButton />
         </div>
       </section>

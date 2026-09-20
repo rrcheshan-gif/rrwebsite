@@ -45,9 +45,6 @@ export default function DredgingReclamationPage() {
           }}>
             Dredging & <span style={{ color: 'var(--primary-red)' }}>Reclamation</span>
           </h1>
-            <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
-               Transforming marine environments and expanding land capacities with advanced dredging.
-            </p>
               <BackButton />
           
         </div>

@@ -12,9 +12,6 @@ export default function RequestOrderPage() {
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
             Request <span style={{ color: "var(--primary-red)" }}>Your Order</span>
           </h1>
-          <p className="hero-slogan" style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "650px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
-            Order high-quality aggregates, asphalt, concrete, and M-Sand directly from our production plants.
-          </p>
           <BackButton />
         </div>
       </section>

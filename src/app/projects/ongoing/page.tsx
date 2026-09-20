@@ -21,9 +21,6 @@ export default function OngoingProjects() {
           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 800, marginBottom: '20px', letterSpacing: '-1px' }}>
             Ongoing <span style={{ color: 'var(--primary-red)' }}>Projects</span>
           </h1>
-            <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
-               Currently executing massive civil engineering and infrastructure developments.
-            </p>
               <BackButton />
           
         </div>

@@ -44,9 +44,6 @@ export default function LandslideMitigationPage() {
           }}>
             Slope Stabilization &amp; <span style={{ color: 'var(--primary-red)' }}>Landslide Mitigation</span>
           </h1>
-            <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
-               Protecting communities and infrastructure through advanced geotechnical stabilization.
-            </p>
               <BackButton />
           
         </div>

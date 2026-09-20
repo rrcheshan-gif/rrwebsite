@@ -126,9 +126,6 @@ export default function QuarriesAggregates() {
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
             Quarries & <span style={{ color: "var(--primary-red)" }}>Aggregates</span>
           </h1>
-          <p className="hero-slogan" style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "650px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
-            Self-owned, fully integrated material production and machinery divisions ensuring uninterrupted supply.
-          </p>
           <BackButton />
         </div>
       </section>

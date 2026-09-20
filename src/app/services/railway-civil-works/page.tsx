@@ -46,9 +46,6 @@ export default function RailwayCivilWorksPage() {
           }}>
             Railway <span style={{ color: 'var(--primary-red)' }}>Civil Works</span>
           </h1>
-            <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
-               Modernizing Sri Lanka's railway infrastructure for faster, safer, and efficient transit.
-            </p>
               <BackButton />
           
         </div>

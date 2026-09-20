@@ -16,9 +16,6 @@ export default function YakawewaPlant() {
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
             Yakawewa <span style={{ color: "var(--primary-red)" }}>Asphalt Plant</span>
           </h1>
-          <p className="hero-slogan" style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "650px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
-            High-capacity asphalt batching operations delivering engineered pavement mixtures for major highway constructions across Sri Lanka.
-          </p>
           <BackButton />
         </div>
       </section>

@@ -77,9 +77,6 @@ export default function VisionMission() {
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>
             Vision & <span style={{ color: "var(--primary-red)" }}>Mission</span>
           </h1>
-            <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
-               Our core philosophy that drives every project, every decision, and every structure we build.
-            </p>
               <BackButton />
           
         </div>

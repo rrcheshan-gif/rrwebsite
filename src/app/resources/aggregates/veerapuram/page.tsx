@@ -88,9 +88,6 @@ export default function VeerapuramPlant() {
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
             Veerapuram <span style={{ color: "var(--primary-red)" }}>Plant</span>
           </h1>
-          <p className="hero-slogan" style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "650px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
-            The modern alternative to river sand. Providing high-quality Manufactured Sand (M-Sand) and aggregates.
-          </p>
           <BackButton />
         </div>
       </section>
