@@ -49,7 +49,7 @@ export default function Home() {
       desc: 'Using high-strength concrete and advanced structural steel fabrication, we build river crossings, heavy overpasses, and causeways designed to carry extreme traffic loads safely.'
     },
     {
-      img: '/images/home/slider/polished/hatton-enhanced.jpg',
+      img: '/images/home/slider-landslide-ldpp.jpg',
       duration: 8000,
       tag: '04 / LANDSLIDE & SOIL MITIGATION',
       heading1: 'Stabilizing Communities',
