@@ -28,7 +28,7 @@ export default function ThudugalaPlant() {
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Thudugala Crusher Plant</h4>
             </div>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 3.2rem)", color: "var(--text-dark)", lineHeight: 1.1, margin: "0 0 20px 0", fontWeight: 800 }}>Premium Quality Aggregates & Crushed Metal</h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "30px", paddingLeft: "clamp(18px, 5vw, 55px)", borderLeft: "2px solid rgba(229, 57, 53, 0.3)" }}>Fueling Infrastructure Development in the Western Province.</p>
+            <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "30px", paddingLeft: "20px", borderLeft: "2px solid rgba(229, 57, 53, 0.3)" }}>Fueling Infrastructure Development in the Western Province.</p>
             
             <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", marginBottom: "15px", fontFamily: "var(--font-heading)", fontWeight: 700 }}>State-of-the-Art Crusher Technology</h3>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0 }}>
