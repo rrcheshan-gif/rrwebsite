@@ -417,7 +417,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div style={{ textAlign: "center", marginTop: "50px" }}>
+          <div style={{ textAlign: "center", marginTop: "30px" }}>
             <Link href="/services" className="btn btn-primary hover-glow">View All Services</Link>
           </div>
         </div>
