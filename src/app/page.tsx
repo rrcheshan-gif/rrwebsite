@@ -142,7 +142,7 @@ export default function Home() {
             backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', 
             WebkitMaskImage: 'radial-gradient(550px 280px at center, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0) 100%)', 
             maskImage: 'radial-gradient(550px 280px at center, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0) 100%)', 
-            background: 'radial-gradient(550px 320px at center, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.55) 55%, transparent 100%)',
+            background: 'radial-gradient(600px 350px at center, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.7) 40%, rgba(255,255,255,0) 100%)',
             zIndex: 2 
           }}></div>
           {/* Bottom fade */}
@@ -240,24 +240,24 @@ export default function Home() {
                 ) : (
                   <div style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', marginBottom: 'clamp(14px, 2.5vh, 28px)' }}>
                     <span style={{ width: '8px', height: '8px', background: 'var(--primary-red)', borderRadius: '50%', display: 'inline-block', boxShadow: '0 0 10px var(--primary-red)', flexShrink: 0 }}></span>
-                    <div style={{ color: 'rgba(255,255,255,0.95)', fontWeight: 700, fontSize: 'clamp(0.75rem, 1.3vw, 0.9rem)', letterSpacing: '3px', textTransform: 'uppercase', textShadow: '0 2px 10px rgba(0,0,0,0.8)' }}>
+                    <div style={{ color: '#0b0f19', fontWeight: 800, fontSize: 'clamp(0.75rem, 1.3vw, 0.9rem)', letterSpacing: '3px', textTransform: 'uppercase', textShadow: '0 2px 10px rgba(255,255,255,0.8)' }}>
                       {slide.tag}
                     </div>
                   </div>
                 )}
 
                   {/* Main Heading */}
-                  <h2 style={{ fontFamily: 'var(--font-heading)', color: '#ffffff', fontSize: 'clamp(2.4rem, 5.5vw, 4.8rem)', lineHeight: 1.1, marginBottom: 'clamp(14px, 2.5vh, 22px)', fontWeight: 800, textAlign: 'center', letterSpacing: '-0.02em', textShadow: '0 4px 25px rgba(0,0,0,0.9), 0 10px 45px rgba(0,0,0,0.7)' }}>
-                    {slide.heading1}{slide.heading2 && <><br /><span style={{ color: '#ff4444', textShadow: '0 4px 30px rgba(255, 68, 68, 0.4)' }}>{slide.heading2}</span></>}{slide.heading3 && <><br />{slide.heading3}</>}
+                  <h2 style={{ fontFamily: 'var(--font-heading)', color: '#0b0f19', fontSize: 'clamp(2.4rem, 5.5vw, 4.8rem)', lineHeight: 1.1, marginBottom: 'clamp(14px, 2.5vh, 22px)', fontWeight: 900, textAlign: 'center', letterSpacing: '-0.02em', textShadow: '0 4px 20px rgba(255,255,255,0.8)' }}>
+                    {slide.heading1}{slide.heading2 && <><br /><span style={{ color: 'var(--primary-red)', textShadow: '0 2px 10px rgba(229, 57, 53, 0.2)' }}>{slide.heading2}</span></>}{slide.heading3 && <><br />{slide.heading3}</>}
                   </h2>
 
                   {/* Horizontal rule accent */}
                   {index !== 0 && (
-                    <div style={{ width: 'clamp(50px, 8vw, 70px)', height: '3px', background: 'rgba(255,255,255,0.3)', borderRadius: '2px', marginBottom: 'clamp(14px, 2.5vh, 22px)', marginLeft: 'auto', marginRight: 'auto' }}></div>
+                    <div style={{ width: 'clamp(50px, 8vw, 70px)', height: '3px', background: 'var(--primary-red)', borderRadius: '2px', marginBottom: 'clamp(14px, 2.5vh, 22px)', marginLeft: 'auto', marginRight: 'auto' }}></div>
                   )}
 
                   {/* Description */}
-                  <p style={{ fontSize: 'clamp(0.95rem, 1.5vw, 1.25rem)', lineHeight: 1.8, color: '#ffffff', maxWidth: '780px', fontWeight: 500, textAlign: 'center', marginBottom: 'clamp(22px, 4vh, 40px)', textShadow: '0 2px 15px rgba(0,0,0,0.9), 0 4px 25px rgba(0,0,0,0.7)' }}>
+                  <p style={{ fontSize: 'clamp(0.95rem, 1.5vw, 1.25rem)', lineHeight: 1.8, color: '#1e293b', maxWidth: '780px', fontWeight: 600, textAlign: 'center', marginBottom: 'clamp(22px, 4vh, 40px)', textShadow: '0 2px 10px rgba(255,255,255,0.8)' }}>
                     {slide.desc}
                   </p>
 
