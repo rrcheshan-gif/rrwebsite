@@ -5,13 +5,12 @@ export default function People() {
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/our-people-workers.jpg')", padding: "140px 20px 40px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center",  borderRadius: '32px',
+      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/our-people-workers.jpg')", padding: "140px 20px 40px", textAlign: "left", position: "relative", backgroundSize: "cover", backgroundPosition: "right center",  borderRadius: '32px',
           margin: '0 20px 40px', overflow: "hidden" }}>
         
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.5) 0%, rgba(15, 23, 42, 0.8) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our <span style={{ color: "var(--primary-red)" }}>People</span></h1>
-              <BackButton />
+                <div style={{ marginTop: "20px", textAlign: "left" }}><BackButton /></div>
         </div>
       </section>
 
@@ -53,7 +52,7 @@ export default function People() {
         </div>
       </section>
 {/* Join Us CTA */}
-      <section style={{ padding: "60px 20px 50px", background: "#1e293b", color: "white", textAlign: "center" }}>
+      <section style={{ padding: "60px 20px 50px", background: "#1e293b", color: "white", textAlign: "left" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 6vw, 3rem)", marginBottom: "20px", color: "white" }}>Build Your Career With Us</h2>
           <p style={{ color: "#cbd5e1", fontSize: "1.2rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.6 }}>Ready to engineer tomorrow? We are always looking for passionate engineers, project managers, and skilled tradespeople to join our growing team.</p>
