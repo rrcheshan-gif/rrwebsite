@@ -31,7 +31,7 @@ export default function OngoingProjects() {
 
       
       {/* Intro Description */}
-      <section style={{ padding: '0 20px 40px', textAlign: 'center', marginTop: '-100px', position: 'relative', zIndex: 10 }}>
+      <section style={{ padding: '0 20px 40px', textAlign: 'center', marginTop: '-20px', position: 'relative', zIndex: 10 }}>
         <div className="container" style={{ maxWidth: "1500px" }}>
           <div style={{
              background: 'var(--white)',
