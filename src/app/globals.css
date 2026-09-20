@@ -429,7 +429,7 @@ ul {
   width: 96%;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 clamp(15px, 1.5vw, 30px);
+  padding: 0 20px;
 }
 
 .section {
@@ -450,7 +450,7 @@ ul {
 
 .navbar-wrapper .container {
   max-width: 100%;
-  padding: 0 clamp(15px, 1.5vw, 30px);
+  padding: 0 20px;
 }
 
 .navbar-wrapper.home-nav {
@@ -911,9 +911,7 @@ ul {
     z-index: 1000 !important;
   }
   
-  .navbar-wrapper .container {
-    padding: 0 5px !important;
-  }
+  
 
   .navbar-wrapper .logo-title {
     color: #ffffff !important;
