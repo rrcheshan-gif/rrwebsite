@@ -47,6 +47,9 @@ export default function WaterInfrastructurePage() {
           }}>
             Water <span style={{ color: 'var(--primary-red)' }}>Infrastructure & Heavy Civil Engineering</span> in Sri Lanka
           </h1>
+            <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
+               Building resilient water supply, treatment, and distribution systems for the future.
+            </p>
           
         </div>
       </section>

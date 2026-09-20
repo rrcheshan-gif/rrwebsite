@@ -47,6 +47,9 @@ export default function ResearchAndDevelopmentPage() {
           }}>
             Research & <span style={{ color: 'var(--primary-red)' }}>Development</span>
           </h1>
+            <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
+               Pioneering new construction methodologies, material testing, and structural innovations.
+            </p>
           
         </div>
       </section>

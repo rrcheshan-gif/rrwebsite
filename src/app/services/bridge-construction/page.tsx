@@ -47,6 +47,9 @@ export default function BridgeConstructionPage() {
           }}>
             Bridge Construction & <span style={{ color: 'var(--primary-red)' }}>Rehabilitation in Sri Lanka</span>
           </h1>
+            <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
+               Engineered to carry extreme loads and withstand the test of time across Sri Lanka.
+            </p>
           
         </div>
       </section>

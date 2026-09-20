@@ -46,6 +46,9 @@ export default function MaritimeConstructionPage() {
           }}>
             Maritime & Marine Construction <span style={{ color: 'var(--primary-red)' }}>in Sri Lanka</span>
           </h1>
+            <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
+               Expert marine civil engineering, breakwaters, and harbor development.
+            </p>
           
         </div>
       </section>

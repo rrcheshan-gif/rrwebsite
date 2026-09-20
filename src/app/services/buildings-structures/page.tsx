@@ -48,6 +48,9 @@ export default function CivilStructuresPage() {
           }}>
             Civil <span style={{ color: 'var(--primary-red)' }}>Structures</span>
           </h1>
+            <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
+               Delivering complex building projects and structural frameworks with precision.
+            </p>
           
         </div>
       </section>
