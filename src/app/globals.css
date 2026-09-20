@@ -2662,3 +2662,12 @@ body::after {
   word-wrap: break-word !important;
   white-space: normal !important;
 }
+
+/* Fix massive gaps between lines in multiline headings */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2 !important;
+}
+
+.page-header > div:last-child > h1 {
+  line-height: 1.15 !important;
+}
