@@ -126,7 +126,7 @@ export default function HistoryTimeline() {
         >
           
           <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our History &amp; <span style={{ color: "var(--primary-red)" }}>Milestones</span></h1>
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 600, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our History &amp; <span style={{ color: "var(--primary-red)" }}>Milestones</span></h1>
               <BackButton />
           
         </div>
@@ -141,7 +141,7 @@ export default function HistoryTimeline() {
                 <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
                 <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OUR JOURNEY</h4>
               </div>
-              <h2 style={{ fontSize: isMobile ? "2rem" : "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, margin: "0 0 20px 0", lineHeight: 1.1 }}>
+              <h2 style={{ fontSize: isMobile ? "2rem" : "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 600, margin: "0 0 20px 0", lineHeight: 1.1 }}>
                 History &amp; <span className="text-gradient" style={{ fontWeight: 300 }}>Milestones</span>
               </h2>
             </div>
@@ -213,7 +213,7 @@ export default function HistoryTimeline() {
                   justifyContent: 'center',
                   zIndex: 1
                 }}>
-                  <h3 style={{ fontSize: '2rem', fontFamily: 'var(--font-heading)', fontWeight: 800, color: 'var(--primary-red)', marginBottom: '20px' }}>
+                  <h3 style={{ fontSize: '2rem', fontFamily: 'var(--font-heading)', fontWeight: 400, color: 'var(--primary-red)', marginBottom: '20px' }}>
                     {e.title}
                   </h3>
                   <p style={{ color: 'var(--text-light)', fontSize: '1.15rem', lineHeight: 1.8, margin: 0, textAlign: 'justify' }}>
