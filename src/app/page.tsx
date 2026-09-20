@@ -391,7 +391,7 @@ export default function Home() {
               </p>
             </div>
           
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px" }}>
+          <div className="services-grid-6">
             {[
               { title: "Highways & Expressways", scale: "scale(1.15)", img: "/images/home/rathnapura.jpg", icon: <Map size={30} />, text: "Specialized heavy civil engineering expertise carving expressways and national highways through every terrain." },
               { title: "Bridge Construction", img: "/images/home/bridge-construction-new.jpg", icon: <GitMerge size={30} />, text: "Structural steel and reinforced concrete bridges built to carry the load for generations." },
@@ -535,6 +535,21 @@ export default function Home() {
 
 
       <style jsx global>{`
+        .services-grid-6 {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          gap: 20px;
+        }
+        @media (max-width: 1100px) {
+          .services-grid-6 { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 768px) {
+          .services-grid-6 { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 480px) {
+          .services-grid-6 { grid-template-columns: 1fr; }
+        }
+
         @keyframes scrollWheel {
           0% { transform: translateY(0); opacity: 1; }
           100% { transform: translateY(20px); opacity: 0; }
