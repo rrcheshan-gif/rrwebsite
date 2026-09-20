@@ -39,7 +39,7 @@ export default function OmanthaiPlant() {
   }, [lightboxImg]);
 
   return (
-    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--white)" }}>
       {/* Lightbox Modal */}
       {lightboxImg && (
         <div 
@@ -85,18 +85,20 @@ export default function OmanthaiPlant() {
         </div>
       )}
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/omanthai-plant-header.jpg')", padding: "140px 20px 40px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0,0,0,0.4)", zIndex: 1 }}></div>
-        <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          
-          
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Omanthai <span style={{ color: "var(--primary-red)" }}>Plant</span></h1>
-            <BackButton />
+      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/page-headers/omanthai-plant-header.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)', padding: '70px 20px', textAlign: 'center' }}>
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
+            Omanthai <span style={{ color: "var(--primary-red)" }}>Plant</span>
+          </h1>
+          <p className="hero-slogan" style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "650px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
+            A key aggregates supplier for Northern infrastructure development and commercial sectors.
+          </p>
+          <BackButton />
         </div>
       </section>
 
       {/* Intro Section */}
-      <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "60px 20px 50px", backgroundColor: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto", textAlign: "center" }}>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700,  letterSpacing: "2px", marginBottom: "10px" }}>Omanthai Metal Crusher Plant</h4>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>Premium Quality Aggregates & Crushed Metal</h2>
@@ -145,7 +147,7 @@ export default function OmanthaiPlant() {
       </section>
 
       {/* Products List */}
-      <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "60px 20px 50px", backgroundColor: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>OMANTHAI PLANT: Our Products</h2>

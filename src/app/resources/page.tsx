@@ -75,7 +75,7 @@ export default function QuarriesAggregates() {
   };
 
   return (
-    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--white)" }}>
       {/* Lightbox Modal */}
       {lightboxImg && (
         <div 
@@ -121,21 +121,20 @@ export default function QuarriesAggregates() {
         </div>
       )}
 
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/quarry-hero-new.jpg')", padding: "140px 20px 40px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center",  borderRadius: '32px',
-          margin: '0 20px 40px', overflow: "hidden" }}>
-        
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
-        <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Quarries & <span style={{ color: "var(--primary-red)" }}>Aggregates</span></h1>
-            <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
-               Self-owned, fully integrated material production and machinery divisions ensuring uninterrupted supply.
-            </p>
-              <BackButton />
+      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/page-headers/quarry-hero-new.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)', padding: '70px 20px', textAlign: 'center' }}>
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
+            Quarries & <span style={{ color: "var(--primary-red)" }}>Aggregates</span>
+          </h1>
+          <p className="hero-slogan" style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "650px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
+            Self-owned, fully integrated material production and machinery divisions ensuring uninterrupted supply.
+          </p>
+          <BackButton />
         </div>
       </section>
 
       {/* Introduction Section */}
-      <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "60px 20px 50px", backgroundColor: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto", textAlign: "left" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
             <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
@@ -254,7 +253,7 @@ export default function QuarriesAggregates() {
       </section>
 
       {/* Product Catalog Section */}
-      <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "60px 20px 50px", backgroundColor: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>Available Products & Specifications</h2>

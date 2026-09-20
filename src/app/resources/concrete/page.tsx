@@ -17,26 +17,21 @@ export default function ConcretePage() {
   ];
 
   return (
-    <div className="page-wrapper">
+    <main style={{ backgroundColor: "var(--white)", minHeight: "100vh" }}>
       {/* Page Header */}
-      <div className="page-header" style={{
-          background: "url('/images/yakawewa-asphalt-2.jpg') center/cover",
-          padding: "100px 20px 60px",
-          textAlign: "center",
-          color: "white"
-      }}>
-        <div className="container">
-          
-          <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 3.5rem)", marginBottom: "15px", fontWeight: 800 }}>Ready-Mix Concrete</h1>
-            <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
-               State-of-the-art batching plants delivering premium grade ready-mix concrete.
-            </p>
-              <BackButton />
-              
+      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/yakawewa-asphalt-2.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)', padding: '70px 20px', textAlign: 'center' }}>
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
+            Concrete <span style={{ color: "var(--primary-red)" }}>Batching Plants</span>
+          </h1>
+          <p className="hero-slogan" style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "650px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
+            High-grade ready-mix concrete production facilities supporting major expressway and highway projects.
+          </p>
+          <BackButton />
         </div>
-      </div>
+      </section>
 
-      <section style={{ padding: "80px 20px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "80px 20px", backgroundColor: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
           <div style={{ textAlign: "left", marginBottom: "60px", maxWidth: "800px" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
@@ -88,6 +83,6 @@ export default function ConcretePage() {
       
     
       
-    </div>
+    </main>
   );
 }

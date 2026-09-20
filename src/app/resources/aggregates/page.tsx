@@ -16,25 +16,20 @@ export default function CrusherPage() {
   };
 
   return (
-    <div className="page-wrapper">
-      <div className="page-header" style={{
-          background: "url('/images/yakawewa-asphalt-2.jpg') center/cover",
-          padding: "100px 20px 60px",
-          textAlign: "center",
-          color: "white"
-      }}>
-        <div className="container">
-          
-          <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 3.5rem)", marginBottom: "15px", fontWeight: 800 }}>Aggregates & Sand</h1>
-            <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
-               Massive aggregate crushing and sand production capabilities fueling our heavy civil engineering operations.
-            </p>
-              <BackButton />
-              
+    <main style={{ backgroundColor: "var(--white)", minHeight: "100vh" }}>
+      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/yakawewa-asphalt-2.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)', padding: '70px 20px', textAlign: 'center' }}>
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
+            RR <span style={{ color: "var(--primary-red)" }}>Aggregates</span>
+          </h1>
+          <p className="hero-slogan" style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "650px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
+            Massive aggregate crushing and sand production capabilities fueling our heavy civil engineering operations.
+          </p>
+          <BackButton />
         </div>
-      </div>
+      </section>
 
-      <section style={{ padding: "60px 20px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "60px 20px", backgroundColor: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
           <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "800px" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
@@ -108,6 +103,6 @@ export default function CrusherPage() {
       
     
       
-    </div>
+    </main>
   );
 }

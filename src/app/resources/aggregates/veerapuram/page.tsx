@@ -37,7 +37,7 @@ export default function VeerapuramPlant() {
   }, [lightboxImg]);
 
   return (
-    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--white)" }}>
       {/* Lightbox Modal */}
       {lightboxImg && (
         <div 
@@ -83,18 +83,20 @@ export default function VeerapuramPlant() {
         </div>
       )}
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/page-headers/veerapuram-plant-header.jpg')", padding: "140px 20px 40px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0,0,0,0.4)", zIndex: 1 }}></div>
-        <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          
-          
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Veerapuram <span style={{ color: "var(--primary-red)" }}>Plant</span></h1>
-            <BackButton />
+      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/page-headers/veerapuram-plant-header.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)', padding: '70px 20px', textAlign: 'center' }}>
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
+            Veerapuram <span style={{ color: "var(--primary-red)" }}>Plant</span>
+          </h1>
+          <p className="hero-slogan" style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "650px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
+            The modern alternative to river sand. Providing high-quality Manufactured Sand (M-Sand) and aggregates.
+          </p>
+          <BackButton />
         </div>
       </section>
 
       {/* Intro Section */}
-      <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "60px 20px 50px", backgroundColor: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto", textAlign: "center" }}>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700,  letterSpacing: "2px", marginBottom: "10px" }}>Veerapuram M Sand Plant and Crusher Plant</h4>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>Choose M-SAND for your all kind of Constructions</h2>
@@ -150,7 +152,7 @@ export default function VeerapuramPlant() {
             <div style={{ width: "60px", height: "4px", background: "var(--primary-red)", margin: "20px auto" }}></div>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "30px" }}>
-            <div style={{ background: "var(--bg-light)", padding: "30px", borderRadius: "8px" }}>
+            <div style={{ backgroundColor: "var(--white)", padding: "30px", borderRadius: "8px" }}>
               <h3 style={{ color: "var(--text-dark)", borderBottom: "2px solid #cbd5e1", paddingBottom: "10px", marginBottom: "20px" }}>Core Benefits</h3>
               <ul style={{ listStyle: "none", padding: 0 }}>
                 {["Consistency: Uniform size and shape ensure smooth concrete mix and finish.",
@@ -168,7 +170,7 @@ export default function VeerapuramPlant() {
                   })}
               </ul>
             </div>
-            <div style={{ background: "var(--bg-light)", padding: "30px", borderRadius: "8px" }}>
+            <div style={{ backgroundColor: "var(--white)", padding: "30px", borderRadius: "8px" }}>
               <h3 style={{ color: "var(--text-dark)", borderBottom: "2px solid #cbd5e1", paddingBottom: "10px", marginBottom: "20px" }}>Other Advantages</h3>
               <ul style={{ listStyle: "none", padding: 0 }}>
                 {["Eco-Friendly: Reduces riverbed depletion and protects natural resources.",
@@ -188,7 +190,7 @@ export default function VeerapuramPlant() {
               </div>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-              <div style={{ background: "var(--bg-light)", padding: "30px", borderRadius: "8px", flex: 1 }}>
+              <div style={{ backgroundColor: "var(--white)", padding: "30px", borderRadius: "8px", flex: 1 }}>
                 <h3 style={{ color: "var(--text-dark)", borderBottom: "2px solid #cbd5e1", paddingBottom: "10px", marginBottom: "20px" }}>Ideal For</h3>
                 <ul style={{ listStyle: "none", padding: 0 }}>
                   <li style={{ marginBottom: "12px", color: "var(--text-light)" }}>Ready-Mix Concrete (RMC)</li>
@@ -197,7 +199,7 @@ export default function VeerapuramPlant() {
                   <li style={{ marginBottom: "12px", color: "var(--text-light)" }}>Foundations and Road work</li>
                 </ul>
               </div>
-              <div style={{ background: "var(--bg-light)", padding: "30px", borderRadius: "8px", flex: 1 }}>
+              <div style={{ backgroundColor: "var(--white)", padding: "30px", borderRadius: "8px", flex: 1 }}>
                 <h3 style={{ color: "var(--text-dark)", borderBottom: "2px solid #cbd5e1", paddingBottom: "10px", marginBottom: "20px" }}>NBRO Test Reports</h3>
                 <ul style={{ listStyle: "none", padding: 0 }}>
                   <li style={{ marginBottom: "8px", color: "var(--text-light)", fontSize: "0.9rem" }}>Sieve Analysis</li>
@@ -214,7 +216,7 @@ export default function VeerapuramPlant() {
       </section>
 
       {/* Quality Assurance Table */}
-      <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "60px 20px 50px", backgroundColor: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)",  }}>VEERAPURAM PLANT: Quality Assurance</h2>
@@ -230,7 +232,7 @@ export default function VeerapuramPlant() {
                   <th colSpan={2} style={{ padding: "15px", border: "1px solid #334155", textAlign: "center" }}>ICTAD Standard (Limits)</th>
                   <th colSpan={2} style={{ padding: "15px", border: "1px solid #334155", textAlign: "center", background: "var(--primary-red)" }}>Our M-Sand (Passing %)</th>
                 </tr>
-                <tr style={{ background: "var(--bg-light)", color: "var(--text-dark)" }}>
+                <tr style={{ backgroundColor: "var(--white)", color: "var(--text-dark)" }}>
                   <th style={{ padding: "12px", border: "1px solid var(--border-soft)", textAlign: "center" }}>Sieve</th>
                   <th style={{ padding: "12px", border: "1px solid var(--border-soft)", textAlign: "center" }}>Limits</th>
                   <th style={{ padding: "12px", border: "1px solid var(--border-soft)", textAlign: "center" }}>Sieve</th>
@@ -288,7 +290,7 @@ export default function VeerapuramPlant() {
       </section>
 
       {/* Contact Section */}
-      <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "60px 20px 50px", backgroundColor: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
           <div style={{ background: "var(--white)", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", overflow: "hidden", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))" }}>
             <div style={{ padding: "40px" }}>

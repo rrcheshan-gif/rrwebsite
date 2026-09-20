@@ -9,20 +9,22 @@ import { CheckCircle } from "lucide-react";
 export default function YakawewaPlant() {
   const router = useRouter();
   return (
-    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
+    <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--white)" }}>
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/yakawewa-asphalt-2.jpg')", padding: "140px 20px 40px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center" }}>
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0,0,0,0.6)", zIndex: 1 }}></div>
-        <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          
-          
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Yakawewa <span style={{ color: "var(--primary-red)" }}>Asphalt Plant</span></h1>
-            <BackButton />
+      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/yakawewa-asphalt-2.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)', padding: '70px 20px', textAlign: 'center' }}>
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
+            Yakawewa <span style={{ color: "var(--primary-red)" }}>Asphalt Plant</span>
+          </h1>
+          <p className="hero-slogan" style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "650px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
+            High-capacity asphalt batching operations delivering engineered pavement mixtures for major highway constructions across Sri Lanka.
+          </p>
+          <BackButton />
         </div>
       </section>
 
       {/* Intro Section */}
-      <section style={{ padding: "60px 20px 50px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "60px 20px 50px", backgroundColor: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto", textAlign: "center" }}>
           <h4 style={{ color: "var(--primary-red)", fontWeight: 700,  letterSpacing: "2px", marginBottom: "10px" }}>Medawachchiya (North Central Province)</h4>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.8rem", color: "var(--text-dark)", lineHeight: 1.2, marginBottom: "10px" }}>High-Performance Hot Mix Asphalt</h2>
@@ -122,7 +124,7 @@ export default function YakawewaPlant() {
       </section>
 
       {/* Photo Gallery */}
-      <section style={{ padding: "20px 20px 80px", background: "var(--bg-light)" }}>
+      <section style={{ padding: "20px 20px 80px", backgroundColor: "var(--white)" }}>
         <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
           <div className="img-polish glass-panel" style={{ borderRadius: "16px", overflow: "hidden", boxShadow: "0 15px 50px rgba(0,0,0,0.15)" }}>
             <img className="img-polished img-hover-zoom" src="/images/yakawewa-asphalt-2.jpg" alt="Yakawewa Asphalt Plant Operation" style={{ width: "100%", height: "auto", maxHeight: "600px", objectFit: "cover" }} />
