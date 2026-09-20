@@ -4,6 +4,9 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 import BackButton from "@/app/components/BackButton";
+import RoadConstructionPage from '../highway-and-expressway-construction/page';
+import BridgeConstructionPage from '../bridge-construction/page';
+import BuildingsStructuresPage from '../buildings-structures/page';
 const SERVICES = [
   {
     slug: 'highway-and-expressway-construction',
@@ -164,56 +167,11 @@ export default function TransportationCivilPage() {
             overflow: 'hidden',
             border: '1px solid var(--border-soft)',
             boxShadow: '0 20px 50px rgba(0,0,0,0.04)',
-            animation: 'fadeSlideUp 0.5s ease-out',
-            display: 'flex',
-            flexDirection: isMobile ? 'column' : 'row'
+            animation: 'fadeSlideUp 0.5s ease-out'
           }}>
-            <div style={{ flex: '1', position: 'relative' }}>
-              <img 
-                src={encodeURI(SERVICES[activeTab].image)} 
-                alt={SERVICES[activeTab].title}
-                style={{ width: '100%', height: '100%', minHeight: isMobile ? '300px' : '500px', objectFit: 'cover' }}
-              />
-              <div style={{ position: 'absolute', top: '20px', left: '20px', background: 'var(--primary-red)', color: 'white', borderRadius: '12px', padding: '8px 16px', fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-heading)' }}>
-                {SERVICES[activeTab].num}
-              </div>
-            </div>
-            
-            <div style={{ flex: '1', padding: isMobile ? '30px 20px' : '60px 50px', display: 'flex', flexDirection: 'column' }}>
-              <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--primary-red)', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '15px' }}>
-                {SERVICES[activeTab].subtitle}
-              </div>
-              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.8rem' : '2.5rem', color: 'var(--text-dark)', fontWeight: 800, margin: '0 0 25px', lineHeight: 1.2 }}>
-                {SERVICES[activeTab].title}
-              </h2>
-              <p style={{ color: 'var(--text-light)', lineHeight: 1.8, fontSize: '1.1rem', margin: '0 0 35px' }}>
-                {SERVICES[activeTab].desc}
-              </p>
-              
-              <div style={{ marginBottom: '40px' }}>
-                <h4 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.2rem', color: 'var(--text-dark)', marginBottom: '15px', fontWeight: 700 }}>Key Highlights</h4>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                  {SERVICES[activeTab].highlights.map((hl, i) => (
-                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--text-dark)', fontWeight: 500, fontSize: '1.05rem' }}>
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                      </svg>
-                      {hl}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div style={{ marginTop: '10px' }}>
-                <Link href={SERVICES[activeTab].cta} className="btn-glass-red" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', padding: '12px 35px !important', fontSize: '1rem', fontWeight: 600 }}>
-                  Explore Details
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
+            {activeTab === 0 && <RoadConstructionPage hideHero={true} />}
+            {activeTab === 1 && <BridgeConstructionPage hideHero={true} />}
+            {activeTab === 2 && <BuildingsStructuresPage hideHero={true} />}
           </div>
 
         </div>

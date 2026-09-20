@@ -7,7 +7,8 @@ import { CheckCircle2 } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
 import BackButton from "@/app/components/BackButton";
-export default function CivilStructuresPage() {
+interface Props { hideHero?: boolean; }
+export default function CivilStructuresPage({ hideHero = false }: Props) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -21,9 +22,10 @@ export default function CivilStructuresPage() {
   const containerStyle = { maxWidth: "1500px", margin: '0 auto' };
 
   return (
-    <main style={{ backgroundColor: 'var(--white)', minHeight: '100vh' }}>
+    <main style={{ backgroundColor: 'transparent', minHeight: hideHero ? 'auto' : '100vh' }}>
       {/* 1. Hero Section */}
-      <section 
+      {!hideHero && (
+        <section 
         className="page-header" 
         style={{ position: 'relative', 
           backgroundImage: "url('/images/BADULLA/WhatsApp%20Image%202026-07-28%20at%2014.03.18.jpeg')",
@@ -50,6 +52,7 @@ export default function CivilStructuresPage() {
           
         </div>
       </section>
+      )}
 
       {/* 2. Capabilities */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>

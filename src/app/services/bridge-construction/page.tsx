@@ -6,7 +6,8 @@ import { CheckCircle2 } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
 import BackButton from "@/app/components/BackButton";
-export default function BridgeConstructionPage() {
+interface Props { hideHero?: boolean; }
+export default function BridgeConstructionPage({ hideHero = false }: Props) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -20,9 +21,10 @@ export default function BridgeConstructionPage() {
   const containerStyle = { maxWidth: "1500px", margin: '0 auto' };
 
   return (
-    <main style={{ backgroundColor: 'var(--white)', minHeight: '100vh' }}>
+    <main style={{ backgroundColor: 'transparent', minHeight: hideHero ? 'auto' : '100vh' }}>
       {/* 1. Hero Section */}
-      <section 
+      {!hideHero && (
+        <section 
         className="page-header" 
         style={{ position: 'relative', 
           backgroundImage: "url('/images/home/bridge_mahanama-enhanced.jpeg')",
@@ -49,6 +51,7 @@ export default function BridgeConstructionPage() {
           
         </div>
       </section>
+      )}
 
       {/* 2. Capabilities */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>

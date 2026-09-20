@@ -6,7 +6,8 @@ import {  CheckCircle2, ArrowRight , ArrowLeft } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
 import BackButton from "@/app/components/BackButton";
-export default function RoadConstructionPage() {
+interface Props { hideHero?: boolean; }
+export default function RoadConstructionPage({ hideHero = false }: Props) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -22,9 +23,10 @@ export default function RoadConstructionPage() {
   const containerStyle = { maxWidth: "1500px", margin: '0 auto' };
 
   return (
-    <main style={{ backgroundColor: 'var(--white)', minHeight: '100vh' }}>
+    <main style={{ backgroundColor: 'transparent', minHeight: hideHero ? 'auto' : '100vh' }}>
       {/* 1. Hero Section */}
-      <section 
+      {!hideHero && (
+        <section 
         className="page-header" 
         style={{ position: 'relative', 
           backgroundImage: "url('/images/hambantota-iroad/hambantota-2.jpg')",
@@ -51,6 +53,7 @@ export default function RoadConstructionPage() {
           
         </div>
       </section>
+      )}
 
       {/* 2. Highway and Expressway Construction Capabilities */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>
