@@ -14,19 +14,7 @@ export default function OngoingProjects() {
   return (
     <div style={{ minHeight: '100vh', background: 'var(--bg-light)' }}>
       {/* Hero Section with Image Space */}
-      <section className="page-header" style={{ 
-        position: 'relative', 
-        backgroundImage: "url('/images/page-headers/ongoing-hero.jpg')", 
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center', 
-        color: 'var(--white)', 
-        padding: '140px 20px 80px', 
-        textAlign: 'center',
-        borderBottomLeftRadius: '48px',
-        borderBottomRightRadius: '48px',
-        marginBottom: '60px',
-        overflow: 'hidden'
-      }}>
+      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/page-headers/ongoing-hero.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)' }}>
         <div className="absolute-back-btn" style={{ position: "absolute", top: "110px", left: "clamp(20px, 4vw, 40px)", zIndex: 99 }}>
           <Link href="/projects" style={{ color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.5)", paddingBottom: "3px", fontWeight: "bold", letterSpacing: "1px", fontSize: "0.85rem", textShadow: "0 2px 5px rgba(0,0,0,0.8)", display: "inline-block" }}>&larr; Back to Projects
             </Link>
