@@ -118,14 +118,14 @@ export default function BoardOfDirectors() {
                 <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Message from the Managing Director</h4>
               </div>
               
-              <h2 style={{ fontSize: "clamp(1.6rem, 4vw, 2.2rem)", color: "white", fontFamily: "var(--font-heading)", fontWeight: 600, margin: "0 0 30px 0", lineHeight: 1.4, fontStyle: "italic" }}>
+              <h2 style={{ fontSize: "clamp(1.6rem, 4vw, 2.2rem)", color: "white", fontFamily: "var(--font-heading)", fontWeight: 400, margin: "0 0 30px 0", lineHeight: 1.4, fontStyle: "italic" }}>
                 "We don't just build structures; we build the foundations for our nation's progress with uncompromising quality."
               </h2>
               
-              <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "1.15rem", lineHeight: 1.8, marginBottom: "20px", maxWidth: "900px" }}>
+              <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "1.15rem", lineHeight: 1.8, marginBottom: "20px", maxWidth: "900px", textAlign: "justify" }}>
                 At RR Construction, our journey of over three decades has been defined by a singular commitment: delivering construction excellence. Since our inception, we have continually invested in our most valuable assets—our people and our state-of-the-art machinery fleet.
               </p>
-              <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "1.15rem", lineHeight: 1.8, marginBottom: "40px", maxWidth: "900px" }}>
+              <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "1.15rem", lineHeight: 1.8, marginBottom: "40px", maxWidth: "900px", textAlign: "justify" }}>
                 This operational independence allows us to execute complex infrastructure projects that shape the future of Sri Lanka. As we look to the future, our core values of integrity, innovation, and uncompromising quality will continue to guide every project we undertake.
               </p>
               
