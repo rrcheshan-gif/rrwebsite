@@ -67,7 +67,7 @@ export default function Home() {
       desc: 'We operate large-scale, eco-friendly M-Sand and crusher facilities to supply high-quality, continuous aggregates. Our self-reliant production ensures superior concrete strength for major infrastructure projects nationwide.'
     },
     {
-      img: '/images/home/slider/polished/machinery-enhanced.jpg',
+      img: '/images/home/slider-machinery-new.jpg',
       duration: 8000,
       tag: '06 / HEAVY RESOURCE FLEET',
       heading1: 'Self-Owned Assets',
