@@ -124,6 +124,7 @@ export default function Navbar() {
                   <li><Link href="/services/dredging-and-water-infrastructure" onClick={() => setMobileMenuOpen(false)}>Dredging &amp; Water Infrastructure</Link></li>
                                     <li><Link href="/services/landslide-mitigation" onClick={() => setMobileMenuOpen(false)}>Slope Stabilization &amp; Landslide Mitigation</Link></li>
                                     <li><Link href="/services/railway-civil-works" onClick={() => setMobileMenuOpen(false)}>Railway Civil Works</Link></li>
+                  <li><Link href="/services/piling-and-foundation-engineering" onClick={() => setMobileMenuOpen(false)}>Piling &amp; Foundation Engineering</Link></li>
                   <li><Link href="/services/research-development" onClick={() => setMobileMenuOpen(false)}>Research &amp; Development</Link></li>
                 </ul>
               </li>
