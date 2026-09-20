@@ -32,7 +32,7 @@ export default function YakawewaPlant() {
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Medawachchiya (North Central Province)</h4>
             </div>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 3.2rem)", color: "var(--text-dark)", lineHeight: 1.1, margin: "0 0 20px 0", fontWeight: 800 }}>High-Performance Hot Mix Asphalt</h2>
-            <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "30px", paddingLeft: "55px", borderLeft: "2px solid rgba(229, 57, 53, 0.3)" }}>Fueling highway and expressway development across Sri Lanka.</p>
+            <p style={{ color: "var(--text-light)", fontSize: "1.2rem", fontStyle: "italic", marginBottom: "30px", paddingLeft: "clamp(18px, 5vw, 55px)", borderLeft: "2px solid rgba(229, 57, 53, 0.3)" }}>Fueling highway and expressway development across Sri Lanka.</p>
             
             <h3 style={{ fontSize: "1.4rem", color: "var(--text-dark)", marginBottom: "15px", fontFamily: "var(--font-heading)", fontWeight: 700 }}>Advanced Asphalt Batching Technology</h3>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, margin: 0 }}>
@@ -73,11 +73,11 @@ export default function YakawewaPlant() {
             
             {/* Binder Course */}
             <div style={{ background: "var(--white)", borderRadius: "16px", overflow: "hidden", boxShadow: "0 10px 40px rgba(0,0,0,0.08)", border: "1px solid rgba(0,0,0,0.03)" }}>
-              <div style={{ background: "var(--text-dark)", padding: "30px 40px", color: "white", borderBottom: "4px solid var(--primary-red)" }}>
+              <div style={{ background: "var(--text-dark)", padding: "clamp(20px, 4vw, 30px) clamp(16px, 5vw, 40px)", color: "white", borderBottom: "4px solid var(--primary-red)" }}>
                 <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.8rem", margin: 0 }}>Asphalt Binder Course</h3>
                 <p style={{ margin: "5px 0 0", color: "rgba(255,255,255,0.7)", fontSize: "0.95rem", letterSpacing: "1px", textTransform: "uppercase" }}>Structural Base Layer</p>
               </div>
-              <div style={{ padding: "40px" }}>
+              <div style={{ padding: "clamp(20px, 5vw, 40px)" }}>
                 <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, marginBottom: "25px" }}>
                   The Binder Course is the heavy-duty intermediate layer of flexible pavement. Engineered with larger aggregates and a specific bitumen ratio, it is designed to bear and distribute heavy traffic loads down to the sub-base while preventing structural deformation.
                 </p>
@@ -100,11 +100,11 @@ export default function YakawewaPlant() {
 
             {/* Wearing Course */}
             <div style={{ background: "var(--white)", borderRadius: "16px", overflow: "hidden", boxShadow: "0 10px 40px rgba(0,0,0,0.08)", border: "1px solid rgba(0,0,0,0.03)" }}>
-              <div style={{ background: "var(--text-dark)", padding: "30px 40px", color: "white", borderBottom: "4px solid var(--primary-red)" }}>
+              <div style={{ background: "var(--text-dark)", padding: "clamp(20px, 4vw, 30px) clamp(16px, 5vw, 40px)", color: "white", borderBottom: "4px solid var(--primary-red)" }}>
                 <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.8rem", margin: 0 }}>Asphalt Wearing Course</h3>
                 <p style={{ margin: "5px 0 0", color: "rgba(255,255,255,0.7)", fontSize: "0.95rem", letterSpacing: "1px", textTransform: "uppercase" }}>Surface Protection Layer</p>
               </div>
-              <div style={{ padding: "40px" }}>
+              <div style={{ padding: "clamp(20px, 5vw, 40px)" }}>
                 <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.7, marginBottom: "25px" }}>
                   The Wearing Course is the premium top surface layer in direct contact with traffic and weather. Formulated with smaller, highly polished aggregates and premium bitumen, it provides a smooth, waterproof, and skid-resistant riding surface.
                 </p>

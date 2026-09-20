@@ -89,7 +89,7 @@ export default function Home() {
     <>
       {/* FULLSCREEN HERO SECTION */}
       <div className="hero-contained" style={{ padding: '0', margin: '0', backgroundColor: '#0f172a', display: 'block', position: 'relative' }}>
-        <div style={{ position: 'relative', width: '100%', height: '100vh', minHeight: '600px', overflow: 'hidden', transform: 'translateZ(0)', isolation: 'isolate', WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}>
+        <div className="hero-fullscreen" style={{ position: 'relative', width: '100%', height: '100vh', minHeight: '600px', overflow: 'hidden', transform: 'translateZ(0)', isolation: 'isolate', WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}>
 
           {/* Background Slider Images */}
           {slides.map((slide, index) => (
@@ -306,7 +306,7 @@ export default function Home() {
             {/* Premium Picture Collage */}
             <div style={{ position: "relative", width: "100%", height: "calc(100% - 10px)", zIndex: 1, marginTop: "10px" }}>
               {/* Perfectly Aligned Red Dashed Outer Frame */}
-              <div style={{ position: "absolute", top: "-15px", bottom: "-15px", left: "-15px", right: "-15px", border: "2px dashed rgba(229, 57, 53, 0.5)", borderRadius: "48px", zIndex: 0, pointerEvents: "none" }}></div>
+              <div className="hero-dashed-border" style={{ position: "absolute", top: "-15px", bottom: "-15px", left: "-15px", right: "-15px", border: "2px dashed rgba(229, 57, 53, 0.5)", borderRadius: "48px", zIndex: 0, pointerEvents: "none" }}></div>
               
               <div style={{ position: "relative", width: "100%", height: "100%", padding: "15px", background: "var(--white)", borderRadius: "40px", boxShadow: "0 25px 70px rgba(0,0,0,0.06)", border: "1px solid rgba(0,0,0,0.04)", zIndex: 2, display: "flex", flexDirection: "column" }}>
                 <div className="collage-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gridTemplateRows: "repeat(2, clamp(140px, 20vw, 220px))", flex: 1, gap: "15px", position: "relative", zIndex: 1 }}>
@@ -344,7 +344,7 @@ export default function Home() {
                 backdropFilter: "blur(16px)",
                 padding: "15px 30px", 
                 zIndex: 10, 
-                width: "max-content",
+                width: "min(max-content, 85%)",
                 textAlign: "center",
                 borderRadius: "30px",
                 boxShadow: "0 15px 35px rgba(0, 0, 0, 0.15)",

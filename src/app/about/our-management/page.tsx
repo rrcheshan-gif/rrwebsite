@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -111,8 +111,8 @@ export default function BoardOfDirectors() {
           }}>
             {/* Decorative background elements */}
             <div style={{ position: "absolute", top: "-20%", right: "-10%", width: "50%", height: "150%", background: "rgba(255,255,255,0.03)", transform: "rotate(15deg)", pointerEvents: "none" }}></div>
-            <div style={{ position: "absolute", bottom: "40px", right: "60px", opacity: 0.1, pointerEvents: "none" }}>
-              <Quote size={160} color="#ffffff" fill="currentColor" />
+            <div style={{ position: "absolute", bottom: isMobile ? "15px" : "40px", right: isMobile ? "15px" : "60px", opacity: 0.06, pointerEvents: "none" }}>
+              <Quote size={isMobile ? 80 : 160} color="#ffffff" fill="currentColor" />
             </div>
 
             <div style={{ position: "relative", zIndex: 2 }}>

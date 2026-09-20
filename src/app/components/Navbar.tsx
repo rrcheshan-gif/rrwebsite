@@ -160,6 +160,9 @@ export default function Navbar() {
               </li>
 
               <li><Link href="/news" title="Sri Lanka Construction Industry News" onClick={() => setMobileMenuOpen(false)}>News &amp; Updates</Link></li>
+              <li className="mobile-contact-item" style={{ marginTop: "15px", paddingTop: "15px", borderTop: "1px solid rgba(0,0,0,0.1)" }}>
+                <Link href="/contact" className="mobile-contact-link" onClick={() => setMobileMenuOpen(false)} style={{ display: "block", textAlign: "center", background: "var(--primary-red)", color: "white", padding: "14px 24px", borderRadius: "30px", fontWeight: 700, textDecoration: "none" }}>Contact Us</Link>
+              </li>
             </ul>
 
             {/* Desktop: Theme toggle + Contact Us — outside ul, always in nav row */}

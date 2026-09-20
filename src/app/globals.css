@@ -2684,3 +2684,106 @@ h1, h2, h3, h4, h5, h6 {
     inset 0 -2px 8px rgba(0, 0, 0, 0.4),
     0 15px 38px rgba(229, 57, 53, 0.7) !important;
 }
+
+/* =====================================================
+   COMPREHENSIVE MOBILE RESPONSIVENESS OVERHAUL
+   Single consolidated block for all mobile fixes.
+   ===================================================== */
+
+/* ── PLANT PRODUCT TAG GRIDS — Stay 2-column on mobile ── */
+@media (max-width: 768px) {
+  /* Product tags should stay 2 columns, not collapse to 1 */
+  div[style*="repeat(auto-fill, minmax(200px, 1fr))"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+  
+  /* Quote callout italic text — reduce left padding on mobile */
+  p[style*="paddingLeft"] {
+    padding-left: 18px !important;
+  }
+
+  /* Fix card body padding on mobile */
+  div[style*="padding: 40px"],
+  div[style*="padding: \"40px\""] {
+    padding: 20px 16px !important;
+  }
+  
+  /* Card header padding */
+  div[style*="padding: 30px 40px"],
+  div[style*="padding: \"30px 40px\""] {
+    padding: 20px 16px !important;
+  }
+
+  /* Feature badges — smaller on mobile */
+  div[style*="padding: 10px 22px"][style*="borderRadius"] {
+    padding: 8px 14px !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Quote icon in MD message — shrink and reposition */
+  .md-quote-icon {
+    display: none !important;
+  }
+
+  /* Fix leadership card text alignment on mobile */
+  div[style*="textAlign: \"justify\""] p {
+    text-align: left !important;
+  }
+
+  /* Lightbox navigation buttons — smaller on mobile */
+  .lightbox-nav-btn {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 1.2rem !important;
+  }
+
+  /* Fix hero dashed border overflow on mobile */
+  .hero-dashed-border {
+    display: none !important;
+  }
+
+  /* Contact card padding fix */
+  div[style*="padding: \"40px\""] {
+    padding: 20px !important;
+  }
+
+  /* Floating years box — constrain width */
+  .floating-years-box {
+    width: min(max-content, 85%) !important;
+    padding: 12px 20px !important;
+  }
+
+  /* Fix navbar crowding on very small screens */
+  .logo-sub {
+    display: none !important;
+  }
+
+  /* Contact Us in mobile drawer */
+  .mobile-contact-link {
+    display: block !important;
+    text-align: center;
+    background: var(--primary-red) !important;
+    color: white !important;
+    padding: 14px 24px !important;
+    border-radius: 30px !important;
+    font-weight: 700 !important;
+    margin: 20px 16px !important;
+    text-decoration: none !important;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  /* Further reduce padding */
+  p[style*="paddingLeft"] {
+    padding-left: 12px !important;
+  }
+  
+  /* Stack feature badges vertically */
+  div[style*="justifyContent: \"flex-start\""][style*="flexWrap: \"wrap\""] {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+}
+
