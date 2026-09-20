@@ -277,12 +277,12 @@ export default function Home() {
                   height: '4px',
                   width: index === currentSlide ? '40px' : '16px',
                   background: index === currentSlide ? 'var(--primary-red)' : 'rgba(255,255,255,0.9)',
-                  border: 'none',
-                  borderRadius: '2px',
-                  cursor: 'pointer',
-                  padding: 0,
-                  transition: 'all 0.4s ease',
-                  boxShadow: index === currentSlide ? '0 0 10px var(--primary-red)' : 'none'
+                  border: '1px solid rgba(0,0,0,0.5)',
+                    borderRadius: '4px',
+                    cursor: 'pointer',
+                    padding: 0,
+                    transition: 'all 0.4s ease',
+                    boxShadow: index === currentSlide ? '0 0 12px var(--primary-red), 0 2px 6px rgba(0,0,0,0.8)' : '0 2px 6px rgba(0,0,0,0.8)'
                 }}
               />
             ))}
