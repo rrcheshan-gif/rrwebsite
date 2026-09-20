@@ -23,9 +23,9 @@ export default function AboutStory() {
       <section 
           className="page-header" 
           style={{ 
-            backgroundImage: "url('/images/page-headers/overview-keydata-hero.jpg')", 
+            backgroundImage: "url('/images/page-headers/overview-keydata-hero-flipped.jpg')", 
             backgroundSize: "cover", 
-            backgroundPosition: "right center", 
+            backgroundPosition: "center", 
             minHeight: isMobile ? "400px" : "600px", 
             display: "flex", 
             flexDirection: "column", 
