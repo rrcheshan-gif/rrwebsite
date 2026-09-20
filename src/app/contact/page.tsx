@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 
+import BackButton from "@/app/components/BackButton";
 export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -21,12 +22,7 @@ export default function Contact() {
             <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
                Get in touch with our team for inquiries, partnerships, and expert engineering services.
             </p>
-              <div style={{ marginTop: "30px" }}>
-                <Link href="/" style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "#fff", textDecoration: "none", fontWeight: 700, fontSize: "0.95rem", padding: "10px 24px", background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.2)", borderRadius: "30px", transition: "all 0.3s ease" }}>
-                  &larr; Back to Home
-            
-                </Link>
-              </div>
+              <BackButton />
         </div>
       </section>
 

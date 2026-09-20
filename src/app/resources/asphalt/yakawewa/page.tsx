@@ -1,4 +1,5 @@
 "use client";
+import BackButton from "@/app/components/BackButton";
 import { useRouter } from "next/navigation";
 
 import QuoteForm from "@/app/components/QuoteForm";
@@ -17,11 +18,7 @@ export default function YakawewaPlant() {
           
           
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Yakawewa <span style={{ color: "var(--primary-red)" }}>Asphalt Plant</span></h1>
-            <div style={{ marginTop: "30px" }}>
-              <button onClick={(e) => { e.preventDefault(); router.back(); }} style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "#fff", textDecoration: "none", fontWeight: 700, fontSize: "0.95rem", padding: "10px 24px", background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.2)", borderRadius: "30px", cursor: "pointer", transition: "all 0.3s ease", outline: "none" }}>
-                &larr; Back
-              </button>
-            </div>
+            <BackButton />
         </div>
       </section>
 

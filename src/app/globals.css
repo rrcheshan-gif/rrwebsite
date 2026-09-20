@@ -2607,7 +2607,7 @@ body::after {
 .page-header > div:last-child > h3,
 .page-header > div:last-child > h4,
 .page-header > div:last-child > p {
-  max-width: 520px !important;
+  max-width: 750px !important;
   white-space: normal !important;
   align-items: flex-start !important;
   justify-content: flex-start !important;
@@ -2617,7 +2617,7 @@ body::after {
 .page-header > div:last-child > h1,
 .page-header > div:last-child > h2,
 .page-header > div:last-child > p {
-  max-width: 520px !important;
+  max-width: 750px !important;
   word-wrap: break-word !important;
   white-space: normal !important;
 }

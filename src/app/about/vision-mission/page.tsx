@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import {  Target, Eye, ShieldCheck, HardHat, Lightbulb, Leaf, Award, Handshake , Compass } from 'lucide-react';
 
+import BackButton from "@/app/components/BackButton";
 function Reveal({ children, delay = 0, className = "", direction = "up" }: { children: React.ReactNode, delay?: number, className?: string, direction?: "up"|"left"|"right" }) {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -79,12 +80,7 @@ export default function VisionMission() {
             <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
                Our core philosophy that drives every project, every decision, and every structure we build.
             </p>
-              <div style={{ marginTop: "30px" }}>
-                <Link href="/about" style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "#fff", textDecoration: "none", fontWeight: 700, fontSize: "0.95rem", padding: "10px 24px", background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.2)", borderRadius: "30px", transition: "all 0.3s ease" }}>
-                  &larr; Back to About Us
-            
-                </Link>
-              </div>
+              <BackButton />
           
         </div>
       </section>

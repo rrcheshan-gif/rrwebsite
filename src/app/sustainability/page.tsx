@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Leaf, ShieldCheck, Award, Users, ArrowRight } from 'lucide-react';
 
+import BackButton from "@/app/components/BackButton";
 export default function SustainabilityHub() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -79,12 +80,7 @@ export default function SustainabilityHub() {
             <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
                Building for tomorrow with an unwavering commitment to environmental and social responsibility.
             </p>
-              <div style={{ marginTop: "30px" }}>
-                <Link href="/" style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "#fff", textDecoration: "none", fontWeight: 700, fontSize: "0.95rem", padding: "10px 24px", background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.2)", borderRadius: "30px", transition: "all 0.3s ease" }}>
-                  &larr; Back to Home
-            
-                </Link>
-              </div>
+              <BackButton />
           
         </div>
       </section>

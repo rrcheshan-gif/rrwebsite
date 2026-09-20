@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { CheckCircle2 } from 'lucide-react';
 
+import BackButton from "@/app/components/BackButton";
 export default function ResearchAndDevelopmentPage() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -48,11 +49,7 @@ export default function ResearchAndDevelopmentPage() {
             <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
                Pioneering new construction methodologies, material testing, and structural innovations.
             </p>
-              <div style={{ marginTop: "30px" }}>
-                <Link href="/services" style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "#fff", textDecoration: "none", fontWeight: 700, fontSize: "0.95rem", padding: "10px 24px", background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.2)", borderRadius: "30px", transition: "all 0.3s ease" }}>
-                  &larr; Back to Services
-                </Link>
-              </div>
+              <BackButton />
           
         </div>
       </section>

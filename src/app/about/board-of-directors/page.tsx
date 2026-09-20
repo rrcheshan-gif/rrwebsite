@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowRight, User } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
+import BackButton from "@/app/components/BackButton";
 export default function BoardOfDirectors() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -44,11 +45,7 @@ export default function BoardOfDirectors() {
             <p style={{ color: "#cbd5e1", fontSize: "1.1rem", maxWidth: "550px", lineHeight: 1.6, margin: "10px 0 0 0" }}>
                Meet the visionary leadership team driving our strategic growth and engineering success.
             </p>
-              <div style={{ marginTop: "30px" }}>
-                <Link href="/about" style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "#fff", textDecoration: "none", fontWeight: 700, fontSize: "0.95rem", padding: "10px 24px", background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.2)", borderRadius: "30px", transition: "all 0.3s ease" }}>
-                  &larr; Back to About Us
-                </Link>
-              </div>
+              <BackButton />
           </div>
         </section>
 

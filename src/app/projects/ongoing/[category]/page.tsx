@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import projectsData from '@/app/projects/data';
 import { ArrowLeft } from 'lucide-react';
 
+import BackButton from "@/app/components/BackButton";
 export default function OngoingCategoryPage({ params }: { params: { category: string } }) {
   const categoryId = params.category;
   
@@ -50,13 +51,7 @@ export default function OngoingCategoryPage({ params }: { params: { category: st
           <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 800, marginBottom: '15px' }}>
             {title} <span style={{ color: 'var(--primary-red)' }}>Projects</span>
           </h1>
-            <div style={{ marginTop: "30px" }}>
-              <Link href="/projects/ongoing" style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "#fff", textDecoration: "none", fontWeight: 700, fontSize: "0.95rem", padding: "10px 24px", background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.2)", borderRadius: "30px", transition: "all 0.3s ease" }}>
-                &larr; 
-            <ArrowLeft size={14} /> Back to Categories
-          
-              </Link>
-            </div>
+            <BackButton />
           <p style={{ maxWidth: '700px', margin: '0 auto', fontSize: '1.1rem', color: '#cbd5e1' }}>
             Ongoing developments and active sites in the {title.toLowerCase()} sector.
           </p>
