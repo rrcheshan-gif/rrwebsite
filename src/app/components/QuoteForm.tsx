@@ -14,6 +14,14 @@ export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [selectedPlant, setSelectedPlant] = useState<string>(defaultPlant || "");
   const [selectedProduct, setSelectedProduct] = useState<string>("");
+  const [captchaA, setCaptchaA] = useState(0);
+  const [captchaB, setCaptchaB] = useState(0);
+  const [captchaAns, setCaptchaAns] = useState('');
+
+  useEffect(() => {
+    setCaptchaA(Math.floor(Math.random() * 10) + 1);
+    setCaptchaB(Math.floor(Math.random() * 10) + 1);
+  }, []);
 
   useEffect(() => {
     if (defaultPlant) {
@@ -23,6 +31,13 @@ export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (parseInt(captchaAns) !== captchaA + captchaB) {
+      alert('Incorrect CAPTCHA answer. Please try again.');
+      setCaptchaA(Math.floor(Math.random() * 10) + 1);
+      setCaptchaB(Math.floor(Math.random() * 10) + 1);
+      setCaptchaAns('');
+      return;
+    }
     setIsSubmitting(true);
     setStatus("idle");
 
@@ -44,6 +59,9 @@ export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants
       if (response.ok) {
         setStatus("success");
         (e.target as HTMLFormElement).reset();
+        setCaptchaAns('');
+        setCaptchaA(Math.floor(Math.random() * 10) + 1);
+        setCaptchaB(Math.floor(Math.random() * 10) + 1);
         setSelectedProduct("");
       } else {
         setStatus("error");

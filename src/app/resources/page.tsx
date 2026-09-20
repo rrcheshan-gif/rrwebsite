@@ -36,8 +36,23 @@ export default function QuarriesAggregates() {
   }, [lightboxImg]);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [captchaA, setCaptchaA] = useState(0);
+  const [captchaB, setCaptchaB] = useState(0);
+  const [captchaAns, setCaptchaAns] = useState('');
+
+  useEffect(() => {
+    setCaptchaA(Math.floor(Math.random() * 10) + 1);
+    setCaptchaB(Math.floor(Math.random() * 10) + 1);
+  }, []);
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (parseInt(captchaAns) !== captchaA + captchaB) {
+      alert('Incorrect CAPTCHA answer. Please try again.');
+      setCaptchaA(Math.floor(Math.random() * 10) + 1);
+      setCaptchaB(Math.floor(Math.random() * 10) + 1);
+      setCaptchaAns('');
+      return;
+    }
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
     
@@ -64,6 +79,9 @@ export default function QuarriesAggregates() {
       if (res.ok) {
         alert('Thank you for your aggregates inquiry! An email has been successfully sent to our dispatch team. We will contact you shortly.');
         form.reset();
+        setCaptchaAns('');
+        setCaptchaA(Math.floor(Math.random() * 10) + 1);
+        setCaptchaB(Math.floor(Math.random() * 10) + 1);
       } else {
         alert('There was a problem sending your request. Please try again later.');
       }
