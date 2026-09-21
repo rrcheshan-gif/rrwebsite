@@ -99,4 +99,46 @@ export const NEWS_DATA: NewsItem[] = [
       <p>We extend our gratitude to the Road Development Authority for their continuous trust in RR Construction, and to our dedicated project team for delivering this milestone project efficiently, safely, and within the stipulated timeline.</p>
     `
   }
+,
+  {
+    id: 4,
+    slug: 'reconstruction-of-northern-railway-line-medawachchiya-to-talai-mannar',
+    tag: 'Emergency Restoration',
+    title: 'Emergency Reconstruction of Northern Railway Line Damaged by Cyclone Ditwah',
+    desc: 'RR Construction successfully executed the emergency reconstruction of the Northern Railway Line between Medawachchiya and Talai Mannar, rapidly restoring critical rail connectivity for IRCON International.',
+    date: 'February 15, 2026',
+    img: '/images/IRCON-MANNAR/Background image.jpeg',
+    featured: false,
+    content: `
+      <p>In response to the devastating impact of Cyclone Ditwah, RR Construction (Pvt) Ltd undertook the <strong>"Emergency Reconstruction of Northern Railway Line Damaged by Cyclone Ditwah: Civil Works between Medawachchiya and Talai Mannar"</strong>. This major emergency railway restoration project was funded under Indian Grant Assistance and executed for <strong>IRCON International Limited (Government of India Undertaking)</strong>.</p>
+      
+      <div style="margin: 30px 0; text-align: center;">
+        <img src="/images/IRCON-MANNAR/Background image.jpeg" alt="Emergency Reconstruction of Northern Railway Line" style="width: 100%; max-width: 800px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
+        <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 10px; font-style: italic;">Heavy machinery deployed for rapid railway track restoration.</p>
+      </div>
+
+      <h3 style="font-family: var(--font-heading); color: var(--text-dark); margin-top: 40px; margin-bottom: 20px;">Rapid Restoration of Critical Infrastructure</h3>
+      <p>Covering 105 km of damaged track corridor between Medawachchiya (MWH) and Talaimannar (TMP)—including the Chettikulam, Madhu Road, and Murukkan sections—our engineering teams mobilized rapidly to execute large-scale formation civil works and restore safe rail connectivity.</p>
+      
+      <p>The critical scope of the project comprised:</p>
+      <ul style="color: var(--text-light); line-height: 1.8; margin-bottom: 20px; padding-left: 20px;">
+        <li style="margin-bottom: 10px;">Removal of 2,325 Cum of washed-away debris</li>
+        <li style="margin-bottom: 10px;">Rock boulder formation preparation (2,820 Cum)</li>
+        <li style="margin-bottom: 10px;">ABC sub-ballast compaction (2,400 Cum)</li>
+        <li style="margin-bottom: 10px;">Geotextile laying spanning 8,120 Sqm</li>
+        <li style="margin-bottom: 10px;">Grouted stone riprap slope stabilization (1,025 Cum)</li>
+        <li style="margin-bottom: 10px;">Transportation and supply of 3,500 Cum of railway ballast</li>
+      </ul>
+
+      <h3 style="font-family: var(--font-heading); color: var(--text-dark); margin-top: 40px; margin-bottom: 20px;">Delivering Under Pressure</h3>
+      <p>Executed within a strict and demanding 2-month schedule, this emergency restoration successfully re-established safe, high-speed rail transportation to Sri Lanka's northern coastal line. The project was completed strictly adhering to ISO 9001 quality management systems and IRCON's stringent railway engineering standards.</p>
+
+      <div style="margin: 30px 0; text-align: center;">
+        <img src="/images/IRCON-MANNAR/WhatsApp Image 2026-08-01 at 12.35.44.jpeg" alt="Track laying and ballast work" style="width: 100%; max-width: 800px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
+      </div>
+      
+      <p>RR Construction remains dedicated to supporting national infrastructure resilience, consistently delivering excellence even under the most challenging emergency conditions.</p>
+    `
+  }
+
 ];
