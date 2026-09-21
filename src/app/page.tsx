@@ -425,9 +425,10 @@ export default function Home() {
             <div 
               style={{ 
                 width: "100%", 
-                marginBottom: "40px", 
-                  paddingTop: "0px", 
-                borderBottom: "1px solid var(--border-soft)", 
+                marginBottom: "40px",
+                  paddingTop: "0px",
+                  paddingBottom: "50px",
+                  borderBottom: "1px solid var(--border-soft)", 
                 position: "relative", 
                 zIndex: 2 
               }}
