@@ -25,7 +25,7 @@ export default function AboutStory() {
           className="page-header" 
           style={{ 
             backgroundImage: "url('/images/about/overview-image.jpg')", 
-            backgroundColor: "#1b2738", backgroundSize: isMobile ? "cover" : "contain", backgroundRepeat: "no-repeat", backgroundPosition: isMobile ? "center" : "right center", 
+            backgroundColor: "#1b2738", backgroundSize: isMobile ? "cover" : "auto 100%", backgroundRepeat: "no-repeat", backgroundPosition: isMobile ? "center" : "calc(max(46vw, 550px) - 50px) center", 
             minHeight: isMobile ? "400px" : "600px", 
             display: "flex", 
             flexDirection: "column", 
