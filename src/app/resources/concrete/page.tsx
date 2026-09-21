@@ -10,7 +10,7 @@ export default function ConcretePage() {
   const router = useRouter();
   const locations = [
     { name: "Ampara", district: "Ampara", image: "/images/ampara-concrete.jpg" },
-    { name: "Jaffna", district: "Jaffna", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" },
+    { name: "Jaffna", district: "Jaffna", image: "/images/resources/concrete/jaffna-plant.jpg" },
     { name: "Iththapana", district: "Kalutara", image: "/images/iththapana-concrete.jpg" },
     { name: "Vadduvakal", district: "Mullaitivu", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" },
     { name: "Galgamuwa", district: "Kurunegala", image: "/images/galgamuwa-concrete.jpg" },
