@@ -14,7 +14,7 @@ export default function ConcretePage() {
     { name: "Iththapana", district: "Kalutara", image: "/images/iththapana-concrete.jpg" },
     { name: "Vadduvakal", district: "Mullaitivu", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" },
     { name: "Galgamuwa", district: "Kurunegala", image: "/images/galgamuwa-concrete.jpg" },
-    { name: "Gandara", district: "Matara", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" }
+    { name: "Gandara", district: "Matara", image: "/images/resources/concrete/gandara-plant.jpg" }
   ];
 
   return (
