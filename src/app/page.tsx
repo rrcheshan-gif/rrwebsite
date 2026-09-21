@@ -178,7 +178,7 @@ export default function Home() {
                         flexWrap: "wrap",
                         justifyContent: "center",
                         gap: "0.25em",
-                        textShadow: "2px 2px 0px rgba(0,0,0,1), 0 4px 20px rgba(0, 0, 0, 0.9)"
+                        textShadow: "0 4px 30px rgba(0,0,0,0.9), 0 2px 10px rgba(0,0,0,0.7)"
                       }}
                     >
                       {/* PASSION FOR in crisp white */}
@@ -199,7 +199,7 @@ export default function Home() {
                         ))}
                       </span>
                       {/* ENGINEERING EXCELLENCE in glowing brand red */}
-                      <span style={{ color: "var(--primary-red)", textShadow: "2px 2px 0px rgba(0,0,0,1), 0 4px 20px rgba(0, 0, 0, 0.9)", display: "inline-flex" }}>
+                      <span style={{ color: "var(--primary-red)", textShadow: "0 4px 30px rgba(0,0,0,0.9), 0 2px 10px rgba(0,0,0,0.7)", display: "inline-flex" }}>
                         {"Engineering Excellence".split("").map((char, charIdx) => (
                           <span
                             key={`e-${charIdx}-${currentSlide}`}
@@ -234,15 +234,15 @@ export default function Home() {
                 ) : (
                   <div style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', marginBottom: 'clamp(14px, 2.5vh, 28px)' }}>
                     <span style={{ width: '8px', height: '8px', background: 'var(--primary-red)', borderRadius: '50%', display: 'inline-block', boxShadow: '0 0 10px var(--primary-red)', flexShrink: 0 }}></span>
-                    <div style={{ color: "#ffffff", fontWeight: 800, fontSize: 'clamp(0.75rem, 1.3vw, 0.9rem)', letterSpacing: '3px', textTransform: 'uppercase', textShadow: "1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0 6px 15px rgba(0,0,0,0.7)" }}>
+                    <div style={{ color: "#ffffff", fontWeight: 800, fontSize: 'clamp(0.75rem, 1.3vw, 0.9rem)', letterSpacing: '3px', textTransform: 'uppercase', textShadow: "0 4px 30px rgba(0,0,0,0.8), 0 2px 10px rgba(0,0,0,0.6)" }}>
                       {slide.tag}
                     </div>
                   </div>
                 )}
 
                   {/* Main Heading */}
-                  <h2 style={{ fontFamily: 'var(--font-heading)', color: "#ffffff", fontSize: 'clamp(2.4rem, 5.5vw, 4.8rem)', lineHeight: 1.1, marginBottom: 'clamp(14px, 2.5vh, 22px)', fontWeight: 900, textAlign: 'center', letterSpacing: '-0.02em', textShadow: "1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0 6px 15px rgba(0,0,0,0.7)" }}>
-                    {slide.heading1}{slide.heading2 && <><br /><span style={{ color: 'var(--primary-red)', textShadow: '1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0 6px 15px rgba(0,0,0,0.7)' }}>{slide.heading2}</span></>}{slide.heading3 && <><br />{slide.heading3}</>}
+                  <h2 style={{ fontFamily: 'var(--font-heading)', color: "#ffffff", fontSize: 'clamp(2.4rem, 5.5vw, 4.8rem)', lineHeight: 1.1, marginBottom: 'clamp(14px, 2.5vh, 22px)', fontWeight: 900, textAlign: 'center', letterSpacing: '-0.02em', textShadow: "0 4px 30px rgba(0,0,0,0.8), 0 2px 10px rgba(0,0,0,0.6)" }}>
+                    {slide.heading1}{slide.heading2 && <><br /><span style={{ color: 'var(--primary-red)', textShadow: '0 4px 30px rgba(0,0,0,0.8), 0 2px 10px rgba(0,0,0,0.6)' }}>{slide.heading2}</span></>}{slide.heading3 && <><br />{slide.heading3}</>}
                   </h2>
 
                   {/* Horizontal rule accent */}
@@ -251,7 +251,7 @@ export default function Home() {
                   )}
 
                   {/* Description */}
-                  <p style={{ fontSize: 'clamp(0.95rem, 1.5vw, 1.25rem)', lineHeight: 1.8, color: "rgba(255, 255, 255, 0.9)", maxWidth: '780px', fontWeight: 600, textAlign: 'center', marginBottom: 'clamp(22px, 4vh, 40px)', textShadow: "1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0 6px 15px rgba(0,0,0,0.7)" }}>
+                  <p style={{ fontSize: 'clamp(0.95rem, 1.5vw, 1.25rem)', lineHeight: 1.8, color: "rgba(255, 255, 255, 0.9)", maxWidth: '780px', fontWeight: 600, textAlign: 'center', marginBottom: 'clamp(22px, 4vh, 40px)', textShadow: "0 4px 30px rgba(0,0,0,0.8), 0 2px 10px rgba(0,0,0,0.6)" }}>
                     {slide.desc}
                   </p>
 
