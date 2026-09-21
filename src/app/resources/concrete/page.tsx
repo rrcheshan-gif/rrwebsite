@@ -12,7 +12,7 @@ export default function ConcretePage() {
     { name: "Ampara", district: "Ampara", image: "/images/ampara-concrete.jpg" },
     { name: "Jaffna", district: "Jaffna", image: "/images/resources/concrete/jaffna-plant.jpg" },
     { name: "Iththapana", district: "Kalutara", image: "/images/iththapana-concrete.jpg" },
-    { name: "Vadduvakal", district: "Mullaitivu", image: "https://placehold.co/600x400/f1f5f9/94a3b8?text=Image+Pending" },
+    { name: "Vadduvakal", district: "Mullaitivu", image: "/images/resources/concrete/vadduvakal-plant.jpg" },
     { name: "Galgamuwa", district: "Kurunegala", image: "/images/galgamuwa-concrete.jpg" },
     { name: "Gandara", district: "Matara", image: "/images/resources/concrete/gandara-plant.jpg" }
   ];
