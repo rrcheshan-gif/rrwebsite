@@ -1757,7 +1757,7 @@ ul {
 .page-header .career-hero-title,
 .page-header .projects-title {
   color: #ffffff !important;
-  text-shadow: 0 4px 12px rgba(0,0,0,0.9), 0 1px 3px rgba(0,0,0,0.8) !important;
+  text-shadow: 0 4px 25px rgba(0,0,0,0.5) !important;
   z-index: 10 !important;
   position: relative !important;
 }
@@ -1833,7 +1833,7 @@ ul {
 /* Global override for page header subtitles (h4) to fix visibility against image backgrounds */
 .page-header h4 {
   color: #ffffff !important; /* White color as requested */
-  text-shadow: 0 4px 12px rgba(0,0,0,0.9), 0 1px 4px rgba(0,0,0,0.9) !important;
+  text-shadow: 0 4px 25px rgba(0,0,0,0.5) !important;
   z-index: 10 !important;
   position: relative !important;
 }
