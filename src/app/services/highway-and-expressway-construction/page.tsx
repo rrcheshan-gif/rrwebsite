@@ -1,8 +1,7 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import {  CheckCircle2, ArrowRight , ArrowLeft } from 'lucide-react';
+import { CheckCircle2, ChevronDown, Activity, Truck, ShieldCheck, Factory } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
 import BackButton from "@/app/components/BackButton";
@@ -37,10 +36,7 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
           textAlign: 'center'
         }}
       >
-        
-        {/* Absolute Back Button */}
         <div style={containerStyle}>
-          
           <h1 style={{ 
             fontFamily: 'var(--font-heading)', 
             fontSize: isMobile ? '2.5rem' : '4rem', 
@@ -49,22 +45,21 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
           }}>
             Highway and Expressway <span style={{ color: 'var(--primary-red)' }}>Construction in Sri Lanka</span>
           </h1>
-              <BackButton />
-          
+          <BackButton />
         </div>
       </section>
       )}
 
-      {/* 2. Highway and Expressway Construction Capabilities */}
+      {/* 2. Capabilities */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>
         <div style={containerStyle}>
           <div style={{ textAlign: "left", marginBottom: "50px", maxWidth: "100%" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
               <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>CAPABILITIES</h4>
+              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>Core Expertise</h4>
             </div>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", marginBottom: "20px", fontWeight: 800, lineHeight: 1.1 }}>
-              Comprehensive Highway and Expressway <span className="text-gradient" style={{ fontWeight: 300 }}>Construction Capabilities</span>
+              Comprehensive Highway and Expressway <span className="text-gradient" style={{ fontWeight: 300 }}>Construction</span>
             </h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.6, textAlign: "left", margin: 0 }}>
               Our dedicated highway division operates with a massive workforce of over {COMPANY_DATA.workforce} professionals and a self-owned fleet of {COMPANY_DATA.machineryFleet} machinery units, ensuring we can tackle national-scale projects efficiently.
@@ -78,148 +73,113 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
           }}>
             {[
               { title: 'New Highway Construction', desc: 'Full-scale development of multi-lane highways and expressways with advanced engineering.' },
-              { title: 'Rural Highway and Expressway Rehabilitation', desc: 'Improving connectivity through the upgrading and widening of rural highway and expressway networks.' },
+              { title: 'Rural Highway Rehabilitation', desc: 'Improving connectivity through the upgrading and widening of rural highway and expressway networks.' },
               { title: 'Asphalt Surfacing', desc: 'High-quality asphalt concrete paving for roads, highways, and specialized projects.' }
             ].map((capability, index) => (
               <div key={index} style={{
-                padding: '0',
+                background: 'var(--bg-light)',
+                padding: '30px',
+                borderRadius: '20px',
+                border: '1px solid var(--border-soft)',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '12px'
+                gap: '15px'
               }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-                  <CheckCircle2 size={28} color="var(--primary-red)" style={{ flexShrink: 0 }} />
-                  <h3 style={{ fontSize: '1.4rem', color: 'var(--text-dark)', margin: 0 }}>{capability.title}</h3>
+                  <div style={{ background: 'var(--white)', padding: '10px', borderRadius: '50%', display: 'flex', boxShadow: '0 4px 10px rgba(0,0,0,0.05)' }}>
+                    <CheckCircle2 size={28} color="var(--primary-red)" />
+                  </div>
+                  <h3 style={{ fontSize: '1.3rem', color: 'var(--text-dark)', margin: 0 }}>{capability.title}</h3>
                 </div>
-                <p style={{ color: 'var(--text-light)', lineHeight: 1.6, paddingLeft: '43px', margin: 0 }}>{capability.desc}</p>
+                <p style={{ color: 'var(--text-light)', lineHeight: 1.6, margin: 0 }}>{capability.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 3. Highway Construction & 4. highway and expressway rehabilitation */}
+      {/* 3. Deep Dive into Specializations (Grid layout for readability) */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--bg-light)' }}>
         <div style={containerStyle}>
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', 
-            gap: '40px',
-            alignItems: 'center'
-          }}>
-            <div>
-              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.75rem' : '2.25rem', color: 'var(--text-dark)', marginBottom: '20px' }}>
-                Major Highway Construction
-              </h2>
-              <p style={{ color: 'var(--text-light)', lineHeight: 1.7, marginBottom: '20px' }}>
-                We possess the technical capability and machinery to execute major highway and expressway projects. Our involvement as a key subcontractor for the Central Expressway Section 2 (Package A) demonstrates our capacity to deliver complex infrastructure elements to international standards.
-              </p>
-              
-              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: isMobile ? '1.75rem' : '2.25rem', color: 'var(--text-dark)', margin: '40px 0 20px' }}>
-                National highway and expressway rehabilitation
-              </h2>
-              <p style={{ color: 'var(--text-light)', lineHeight: 1.7 }}>
-                RR Construction is extensively involved in the iRoad Programme initiated by the Road Development Authority (RDA). We have successfully rehabilitated hundreds of kilometers of rural highways and expressways, improving transport efficiency and connectivity in districts across Sri Lanka.
-              </p>
-            </div>
-            
-            <div style={{ 
-              backgroundColor: 'var(--white)', 
-              padding: '40px', 
-              borderRadius: '24px',
-              border: `1px solid var(--border-soft)`,
-              boxShadow: '0 10px 30px rgba(0,0,0,0.05)'
-            }}>
-              <h3 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', marginBottom: '24px' }}>
-                Key Technical Strengths
-              </h3>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                {[
-                  'Specialized in Highway Construction',
-                  'In-house material testing and quality control laboratories',
-                  'Dedicated earthworks and pavement divisions',
-                  'Advanced surveying and setting out capabilities',
-                  'Large-scale material sourcing networks'
-                ].map((item, i) => (
-                  <li key={i} style={{ 
-                    display: 'flex', 
-                    alignItems: 'flex-start', 
-                    gap: '12px',
-                    marginBottom: '16px',
-                    color: 'var(--text-light)',
-                    lineHeight: 1.6
-                  }}>
-                    <CheckCircle2 size={20} color="var(--primary-red)" style={{ flexShrink: 0, marginTop: '4px' }} />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div style={{ textAlign: "center", marginBottom: "50px", maxWidth: "800px", margin: "0 auto 50px" }}>
+            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 2.8rem)", color: "var(--text-dark)", marginBottom: "20px", fontWeight: 800 }}>
+              Technical Specializations
+            </h2>
+            <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.6 }}>
+              We possess the technical capability and machinery to execute major highway and expressway projects to international standards.
+            </p>
           </div>
-        </div>
-      </section>
 
-      {/* 5. Earthworks & Drainage & 6. Asphalt & Pavement Works */}
-      <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>
-        <div style={containerStyle}>
           <div style={{ 
             display: 'grid', 
             gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', 
-            gap: '40px'
+            gap: '30px'
           }}>
-            <div style={{
-              backgroundColor: 'var(--bg-light)',
-              padding: '40px',
-              borderRadius: '24px',
-              border: '1px solid var(--border-soft)'
-            }}>
-              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.75rem', color: 'var(--text-dark)', marginBottom: '20px' }}>
-                Earthworks & Drainage
-              </h2>
-              <p style={{ color: 'var(--text-light)', lineHeight: 1.6, marginBottom: '20px' }}>
-                Stable roads begin with solid foundations. Our heavy machinery division handles massive earthmoving, subgrade preparation, and embankment construction. We also construct complex drainage systems, including concrete culverts and side drains, critical for the longevity of roads in Sri Lanka's tropical climate.
+            {/* Card 1 */}
+            <div style={{ backgroundColor: 'var(--white)', padding: '40px', borderRadius: '24px', border: '1px solid var(--border-soft)', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
+                <Activity size={32} color="var(--primary-red)" />
+                <h3 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', margin: 0 }}>Major Highway Construction</h3>
+              </div>
+              <p style={{ color: 'var(--text-light)', lineHeight: 1.7, margin: 0 }}>
+                Our involvement as a key subcontractor for the Central Expressway Section 2 (Package A) demonstrates our capacity to deliver complex infrastructure elements. We handle everything from subgrade preparation to final asphalt laying on massive national arteries.
               </p>
             </div>
 
-            <div style={{
-              backgroundColor: 'var(--bg-light)',
-              padding: '40px',
-              borderRadius: '24px',
-              border: '1px solid var(--border-soft)'
-            }}>
-              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.75rem', color: 'var(--text-dark)', marginBottom: '20px' }}>
-                Asphalt & Pavement Works
-              </h2>
-              <p style={{ color: 'var(--text-light)', lineHeight: 1.6, marginBottom: '24px' }}>
+            {/* Card 2 */}
+            <div style={{ backgroundColor: 'var(--white)', padding: '40px', borderRadius: '24px', border: '1px solid var(--border-soft)', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
+                <Truck size={32} color="var(--primary-red)" />
+                <h3 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', margin: 0 }}>National Rehabilitation (iRoad)</h3>
+              </div>
+              <p style={{ color: 'var(--text-light)', lineHeight: 1.7, margin: 0 }}>
+                RR Construction is extensively involved in the iRoad Programme initiated by the Road Development Authority (RDA). We have successfully rehabilitated hundreds of kilometers of rural highways and expressways across multiple districts in Sri Lanka.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div style={{ backgroundColor: 'var(--white)', padding: '40px', borderRadius: '24px', border: '1px solid var(--border-soft)', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
+                <Factory size={32} color="var(--primary-red)" />
+                <h3 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', margin: 0 }}>Earthworks & Drainage</h3>
+              </div>
+              <p style={{ color: 'var(--text-light)', lineHeight: 1.7, margin: 0 }}>
+                Stable roads begin with solid foundations. Our heavy machinery division handles massive earthmoving, subgrade preparation, and embankment construction. We also construct complex drainage systems, including concrete culverts and side drains, critical for longevity.
+              </p>
+            </div>
+
+            {/* Card 4 */}
+            <div style={{ backgroundColor: 'var(--white)', padding: '40px', borderRadius: '24px', border: '1px solid var(--border-soft)', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
+                <ShieldCheck size={32} color="var(--primary-red)" />
+                <h3 style={{ fontSize: '1.5rem', color: 'var(--text-dark)', margin: 0 }}>Asphalt & Pavement Works</h3>
+              </div>
+              <p style={{ color: 'var(--text-light)', lineHeight: 1.7, margin: 0 }}>
                 We operate our own asphalt mixing plants and possess a modern fleet of pavers and compactors. This vertical integration allows us to maintain strict quality control over ABC (Aggregate Base Course) laying and asphalt surfacing.
               </p>
-              
             </div>
           </div>
         </div>
       </section>
 
-      
-
-      {/* 8. Equipment & Resources & 9. Quality & Safety */}
+      {/* 4. Resources & Technical Strengths */}
       <section style={{ padding: sectionPadding, backgroundColor: 'var(--white)' }}>
         <div style={containerStyle}>
           <div style={{ 
             display: 'grid', 
-            gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', 
-            gap: '40px'
+            gridTemplateColumns: isMobile ? '1fr' : '1.2fr 1fr', 
+            gap: '50px',
+            alignItems: 'center'
           }}>
             <div>
               <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', color: 'var(--text-dark)', marginBottom: '20px' }}>
                 Equipment & Resources
               </h2>
               <p style={{ color: 'var(--text-light)', lineHeight: 1.7, marginBottom: '20px' }}>
-                A successful highway and expressway construction project depends on reliable machinery. RR Construction owns and maintains a vast fleet of over {COMPANY_DATA.machineryFleet} units, including excavators, motor graders, rollers, asphalt pavers, and dump trucks. This extensive self-owned resource base ensures zero downtime waiting for equipment rentals and keeps projects strictly on schedule.
+                A successful highway project depends on reliable machinery. RR Construction owns and maintains a vast fleet of over {COMPANY_DATA.machineryFleet} units, including excavators, motor graders, rollers, asphalt pavers, and dump trucks. This self-owned resource base ensures zero downtime and keeps projects strictly on schedule.
               </p>
-            </div>
-            
-            <div>
-              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', color: 'var(--text-dark)', marginBottom: '20px' }}>
+              
+              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', color: 'var(--text-dark)', margin: '40px 0 20px' }}>
                 Quality & Safety Standards
               </h2>
               <p style={{ color: 'var(--text-light)', lineHeight: 1.7, marginBottom: '24px' }}>
@@ -234,81 +194,51 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
                     borderRadius: '20px',
                     color: 'var(--text-dark)',
                     fontSize: '0.9rem',
-                    fontWeight: 500
+                    fontWeight: 600
                   }}>
                     {cert}
                   </span>
                 ))}
               </div>
             </div>
+            
+            <div style={{ 
+              backgroundColor: 'var(--bg-dark)', 
+              padding: '40px', 
+              borderRadius: '24px',
+              color: 'var(--white)',
+              boxShadow: '0 20px 40px rgba(0,0,0,0.1)'
+            }}>
+              <h3 style={{ fontSize: '1.6rem', color: 'var(--white)', marginBottom: '30px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '20px' }}>
+                Key Technical Strengths
+              </h3>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                {[
+                  'Specialized in Highway Construction',
+                  'In-house material testing and quality control laboratories',
+                  'Dedicated earthworks and pavement divisions',
+                  'Advanced surveying and setting out capabilities',
+                  'Large-scale material sourcing networks'
+                ].map((item, i) => (
+                  <li key={i} style={{ 
+                    display: 'flex', 
+                    alignItems: 'flex-start', 
+                    gap: '15px',
+                    marginBottom: '20px',
+                    color: 'rgba(255,255,255,0.9)',
+                    lineHeight: 1.5,
+                    fontSize: '1.05rem'
+                  }}>
+                    <CheckCircle2 size={24} color="var(--primary-red)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 10. FAQ Section */}
-      <section style={{ padding: sectionPadding, backgroundColor: 'var(--bg-light)' }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <h2 style={{ 
-            fontFamily: 'var(--font-heading)', 
-            fontSize: isMobile ? '2rem' : '2.5rem', 
-            color: 'var(--text-dark)',
-            textAlign: 'center',
-            marginBottom: '40px'
-          }}>
-            Frequently Asked Questions
-          </h2>
-          
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            {[
-
-              {
-                q: "Who are your primary clients for highway and expressway construction?",
-                a: "We work extensively with government bodies, primarily the Road Development Authority (RDA) of Sri Lanka, executing large-scale projects like the iRoad Programme and Expressway developments."
-              },
-              {
-                q: "Do you manufacture your own asphalt?",
-                a: "Yes, we have our own asphalt manufacturing plants. This vertical integration allows us to ensure the highest quality of asphalt concrete for our paving projects."
-              },
-              {
-                q: "Where do you provide highway and expressway construction services?",
-                a: "We mobilize our resources and workforce across all provinces in Sri Lanka, having successfully completed projects in districts such as Kalutara, Mannar, Kilinochchi, and Kurunegala."
-              }
-            ].map((faq, i) => (
-              <details key={i} style={{
-                backgroundColor: 'var(--white)',
-                borderRadius: '12px',
-                border: '1px solid var(--border-soft)',
-                overflow: 'hidden'
-              }}>
-                <summary style={{
-                  padding: '24px',
-                  fontSize: '1.1rem',
-                  fontWeight: 600,
-                  color: 'var(--text-dark)',
-                  cursor: 'pointer',
-                  listStyle: 'none',
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center'
-                }}>
-                  {faq.q}
-                  <span style={{ color: 'var(--primary-red)' }}>+</span>
-                </summary>
-                <div style={{
-                  padding: '0 24px 24px',
-                  color: 'var(--text-light)',
-                  lineHeight: 1.6
-                }}>
-                  {faq.a}
-                </div>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      
     </main>
   );
 }
-
