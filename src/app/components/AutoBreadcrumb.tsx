@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ChevronRight, Home } from 'lucide-react';
 
-// A mapping of path segments to readable names
+// A mapping of path segments or full paths to readable names
 const labelMap: Record<string, string> = {
   'about': 'About Us',
   'company-overview': 'RR Overview',
@@ -47,27 +47,43 @@ const labelMap: Record<string, string> = {
   'career': 'Careers',
   'contact': 'Contact Us',
   'quality-policy': 'Quality Policy',
-  'welfare': 'Welfare'
+  'welfare': 'Employee Welfare',
+  'training': 'Training & Development'
 };
 
 function formatLabel(segment: string) {
   if (labelMap[segment]) return labelMap[segment];
-  // fallback for unknown segments: capitalize and replace dashes
+  // fallback for unknown segments
   return segment.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 }
 
 export default function AutoBreadcrumb() {
   const pathname = usePathname();
-  if (pathname === '/') return null; // No breadcrumbs on home page
+  if (pathname === '/') return null;
 
-  const segments = pathname.split('/').filter(Boolean);
+  // Handle logical parents for flat routes that belong in a dropdown
+  const logicalParents: Record<string, string> = {
+    '/training': '/people',
+    '/welfare': '/people',
+    '/career': '/people'
+  };
+
+  let paths: string[] = [];
   
-  // Build items
-  const items = segments.map((segment, index) => {
-    const href = '/' + segments.slice(0, index + 1).join('/');
+  if (logicalParents[pathname]) {
+    paths = [logicalParents[pathname], pathname];
+  } else {
+    // Standard segment parsing
+    const segments = pathname.split('/').filter(Boolean);
+    paths = segments.map((_, i) => '/' + segments.slice(0, i + 1).join('/'));
+  }
+
+  const items = paths.map((p, index) => {
+    // Extract just the last segment to format it
+    const segment = p.split('/').pop() || '';
     return {
       label: formatLabel(segment),
-      href: index === segments.length - 1 ? undefined : href // Last item is not a link
+      href: index === paths.length - 1 ? undefined : p
     };
   });
 
