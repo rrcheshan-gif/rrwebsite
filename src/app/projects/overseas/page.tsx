@@ -87,7 +87,7 @@ export default function Projects() {
                       </div>
                       {project.year && project.type !== 'ongoing' && (
                         <div style={{ position: "absolute", top: "12px", right: "12px", zIndex: 2 }}>
-                          <span style={{ padding: '4px 12px', background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(8px)', color: '#1e293b', borderRadius: "30px", fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.5px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>{project.year}</span>
+                          <span style={{ padding: '4px 12px', background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(8px)', color: '#1e293b', borderRadius: "30px", fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.5px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>{String(project.year).substring(0, 4)}</span>
                         </div>
                       )}
                     </div>
