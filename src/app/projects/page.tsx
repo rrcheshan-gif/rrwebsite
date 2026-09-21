@@ -85,7 +85,6 @@ export default function Projects() {
                         }}
                       />
                       <div style={{ position: "absolute", top: "12px", left: "12px", display: "flex", gap: "6px", flexWrap: "wrap", zIndex: 2 }}>
-                        <span style={{ padding: '4px 10px', background: 'rgba(15, 23, 42, 0.75)', backdropFilter: 'blur(8px)', color: 'white', borderRadius: "30px", fontSize: '0.7rem', fontWeight: 700,  letterSpacing: '0.5px', border: '1px solid rgba(255,255,255,0.2)' }}>{project.category}</span>
                         <span style={{ padding: '4px 10px', background: project.type === 'ongoing' ? 'rgba(217, 119, 6, 0.85)' : 'rgba(16, 185, 129, 0.85)', backdropFilter: 'blur(8px)', color: 'white', borderRadius: "30px", fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.3px', border: '1px solid rgba(255,255,255,0.25)' }}>{project.status}</span>
                       </div>
                       {project.year && project.type !== 'ongoing' && (
@@ -98,7 +97,7 @@ export default function Projects() {
                 })()}
                 
                 <div style={{ padding: '25px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                  <div style={{ color: 'var(--primary-red)', fontSize: '0.8rem', fontWeight: 700,  marginBottom: '10px' }}>
+                  <div style={{ color: 'var(--primary-red)', fontSize: '0.8rem', fontWeight: 700, marginBottom: '10px', textTransform: 'capitalize' }}>
                     {project.category}
                   </div>
                   <h3 style={{ color: "var(--text-dark)", fontSize: '1.2rem', marginBottom: '15px', lineHeight: '1.4', fontFamily: 'var(--font-heading)' }}>
@@ -107,7 +106,7 @@ export default function Projects() {
                   
                   <div style={{ marginTop: 'auto' }}>
                     <p style={{ color: "var(--text-light)", fontSize: '0.95rem', marginBottom: '15px', lineHeight: '1.5' }}>
-                      A comprehensive {project.category} project executed for {project.client}, emphasizing modern engineering standards and timely delivery.
+                      A comprehensive {String(project.category).charAt(0).toUpperCase() + String(project.category).slice(1)} project executed for {project.client}, emphasizing modern engineering standards and timely delivery.
                     </p>
                     
                     
