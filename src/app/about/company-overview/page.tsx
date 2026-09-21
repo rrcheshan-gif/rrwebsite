@@ -24,9 +24,8 @@ export default function AboutStory() {
       <section 
           className="page-header" 
           style={{ 
-            backgroundImage: "url('/images/home/slider-highway-rrp.jpg')", 
-            backgroundColor: "#1b2738", backgroundSize: "max(55vw, 1100px) auto", backgroundRepeat: "no-repeat", 
-            backgroundPosition: "right center", 
+            backgroundImage: "url('/images/about/overview-image.jpg')", 
+            backgroundColor: "#1b2738", backgroundSize: isMobile ? "cover" : "contain", backgroundRepeat: "no-repeat", backgroundPosition: isMobile ? "center" : "right center", 
             minHeight: isMobile ? "400px" : "600px", 
             display: "flex", 
             flexDirection: "column", 
