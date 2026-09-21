@@ -66,9 +66,9 @@ export default function People() {
       </section>
 {/* Join Us CTA */}
       <section style={{ padding: "60px 20px 50px", background: "#1e293b", color: "white", textAlign: "left" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto" }}>
           <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 6vw, 3rem)", marginBottom: "20px", color: "white" }}>Build Your Career With Us</h2>
-          <p style={{ color: "#cbd5e1", fontSize: "1.2rem", maxWidth: "800px", margin: "0 auto", lineHeight: 1.6 }}>Ready to engineer tomorrow? We are always looking for passionate engineers, project managers, and skilled tradespeople to join our growing team.</p>
+          <p style={{ color: "#cbd5e1", fontSize: "1.2rem", maxWidth: "1500px", margin: "0 auto 0 0", lineHeight: 1.6 }}>Ready to engineer tomorrow? We are always looking for passionate engineers, project managers, and skilled tradespeople to join our growing team.</p>
         </div>
       </section>
     </div>
