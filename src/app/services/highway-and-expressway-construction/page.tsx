@@ -203,7 +203,7 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
             </div>
             
             <div style={{ 
-              backgroundColor: 'var(--bg-dark)', 
+              backgroundColor: '#0f172a', 
               padding: '40px', 
               borderRadius: '24px',
               color: 'var(--white)',
