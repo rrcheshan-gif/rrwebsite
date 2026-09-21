@@ -1,44 +1,82 @@
 "use client";
-import React, { useMemo } from 'react';
-import Link from 'next/link';
+import React from 'react';
 import { notFound } from 'next/navigation';
-import projectsData from '@/app/projects/data';
-import { ArrowLeft } from 'lucide-react';
-
 import BackButton from "@/app/components/BackButton";
+
 export default function OngoingCategoryPage({ params }: { params: Promise<{ category: string }> }) {
   const resolvedParams = React.use(params);
   const categoryId = resolvedParams.category;
   
-  // Define category titles
-  const categoryData: Record<string, { title: string, img: string }> = {
-    'roads': { title: 'Highway and Expressway Construction', img: '/images/KRP/img-1.jpeg' },
-    'bridges': { title: 'Bridge Construction', img: '/images/BBP/img-1.jpeg' },
-    'irrigation': { title: 'Irrigation & Water Supply', img: '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.28.jpeg' },
-    'disaster': { title: 'Landslide Mitigation', img: '/images/Badulla Landslide/Background image.jpeg' },
-    'maritime': { title: 'Maritime & Dredging', img: '/images/maritime-harbour-site.jpg' }
+  // Define category titles and their specific gallery images
+  const categoryData: Record<string, { title: string, img: string, gallery: string[] }> = {
+    'roads': { 
+      title: 'Highway and Expressway Construction', 
+      img: '/images/KRP/img-1.jpeg',
+      gallery: [
+        '/images/KRP/img-1.jpeg',
+        '/images/KRP/img-2.jpeg',
+        '/images/KRP/img-3.jpeg',
+        '/images/KRP/img-4.jpeg',
+      ]
+    },
+    'bridges': { 
+      title: 'Bridge Construction', 
+      img: '/images/BBP/img-1.jpeg',
+      gallery: [
+        '/images/BBP/img-1.jpeg',
+        '/images/BBP/img-2.jpeg',
+        '/images/BBP/img-3.jpeg',
+        '/images/BBP/img-4.jpeg',
+        '/images/BBP/img-5.jpeg',
+        '/images/BBP/img-6.jpeg',
+      ]
+    },
+    'irrigation': { 
+      title: 'Irrigation & Water Supply', 
+      img: '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.28.jpeg',
+      gallery: [
+        '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.28 (1).jpeg',
+        '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.28.jpeg',
+        '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.33.jpeg',
+        '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.55.jpeg',
+      ]
+    },
+    'disaster': { 
+      title: 'Landslide Mitigation', 
+      img: '/images/Badulla Landslide/Background image.jpeg',
+      gallery: [
+        '/images/Badulla Landslide/WhatsApp Image 2026-07-28 at 16.41.31.jpeg',
+        '/images/Badulla Landslide/WhatsApp Image 2026-07-28 at 16.41.34.jpeg',
+        '/images/Badulla Landslide/WhatsApp Image 2026-07-28 at 16.41.43.jpeg',
+        '/images/Badulla Landslide/WhatsApp Image 2026-07-28 at 16.41.45.jpeg',
+      ]
+    },
+    'maritime': { 
+      title: 'Maritime & Dredging', 
+      img: '/images/maritime-harbour-site.jpg',
+      gallery: [
+        '/images/maritime-harbour-site.jpg',
+        '/images/service-maritime-card.jpg',
+        '/images/service-maritime-wellamankara.jpg'
+      ]
+    }
   };
 
   const categoryInfo = categoryData[categoryId];
   const title = categoryInfo?.title;
   const heroImg = categoryInfo?.img;
+  const gallery = categoryInfo?.gallery || [];
 
   if (!title) {
     notFound();
   }
 
-  // Filter ongoing projects for this category
-  const categoryProjects = useMemo(() => {
-    return projectsData.filter(p => p.type === 'ongoing' && p.category === categoryId);
-  }, [categoryId]);
-
   return (
     <div style={{ minHeight: '100vh', background: 'var(--bg-light)', paddingBottom: '80px' }}>
-      {/* Space for a beautiful hero image specifically for this category */}
+      {/* Hero Section */}
       <section className="page-header" style={{ 
         position: 'relative', 
         backgroundColor: '#0f172a',
-        // Optional: Replace this with a specific image per category
         backgroundImage: `url("${heroImg}")`, 
         backgroundSize: 'cover', 
         backgroundPosition: 'center', 
@@ -49,84 +87,51 @@ export default function OngoingCategoryPage({ params }: { params: Promise<{ cate
         borderBottomRightRadius: '32px',
         marginBottom: '60px'
       }}>
-        
+        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(15, 23, 42, 0.7)", borderBottomLeftRadius: '32px', borderBottomRightRadius: '32px', zIndex: 1 }}></div>
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 800, marginBottom: '15px' }}>
-            {title} <span style={{ color: 'var(--primary-red)' }}>Projects</span>
+            {title} <span style={{ color: 'var(--primary-red)' }}>Gallery</span>
           </h1>
-            <BackButton />
+          <BackButton />
           <p style={{ maxWidth: '700px', margin: '0 auto', fontSize: '1.1rem', color: '#cbd5e1' }}>
             Ongoing developments and active sites in the {title.toLowerCase()} sector.
           </p>
         </div>
       </section>
 
+      {/* Photo Gallery Grid */}
       <div className="container" style={{ maxWidth: "1500px" }}>
-        {categoryProjects.length === 0 ? (
+        {gallery.length === 0 ? (
           <div style={{ textAlign: 'center', padding: '60px 20px', color: 'var(--text-light)' }}>
-            <p>No ongoing projects found in this category at the moment.</p>
+            <p>No images available in this gallery.</p>
           </div>
         ) : (
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-            gap: '30px',
+            gap: '20px',
             padding: '20px'
           }}>
-            {categoryProjects.map((project, idx) => (
-              <div key={project.id || idx} style={{
-                background: 'var(--white)',
-                borderRadius: '20px',
+            {gallery.map((imgSrc, idx) => (
+              <div key={idx} style={{
+                borderRadius: '16px',
                 overflow: 'hidden',
-                boxShadow: '0 15px 35px rgba(0,0,0,0.06)',
-                border: '1px solid var(--border-soft)',
-                display: 'flex',
-                flexDirection: 'column'
+                boxShadow: '0 10px 30px rgba(0,0,0,0.08)',
+                aspectRatio: '4/3',
+                position: 'relative'
               }}
               className="hover-lift"
               >
-                <div style={{ position: 'relative', aspectRatio: '4/3', overflow: 'hidden' }}>
-                  <img 
-                    src={project.mainImage || (project.images && project.images[0]) || '/images/hero-road-roller.jpg'} 
-                    alt={project.title}
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover'
-                    }}
-                    className="img-hover-zoom"
-                  />
-                  {/* Status Badge */}
-                  <div style={{
-                    position: 'absolute',
-                    top: '15px', right: '15px',
-                    background: 'var(--primary-red)',
-                    color: 'white',
-                    padding: '5px 12px',
-                    borderRadius: '20px',
-                    fontSize: '0.8rem',
-                    fontWeight: 'bold',
-                    boxShadow: '0 4px 10px rgba(0,0,0,0.2)'
-                  }}>
-                    Ongoing
-                  </div>
-                </div>
-                <div style={{ padding: '25px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                  <h3 style={{ fontSize: '1.25rem', color: 'var(--text-dark)', marginBottom: '10px', fontWeight: 700, fontFamily: 'var(--font-heading)' }}>
-                    {project.title}
-                  </h3>
-                  {project.mapQuery && (
-                    <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginBottom: '15px', display: 'flex', alignItems: 'center', gap: '5px' }}>
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                      {project.mapQuery}
-                    </p>
-                  )}
-                  {project.client && (
-                    <div style={{ marginTop: 'auto', paddingTop: '15px', borderTop: '1px solid var(--border-soft)', fontSize: '0.9rem', color: 'var(--text-light)' }}>
-                      <strong>Client:</strong> {project.client}
-                    </div>
-                  )}
-                </div>
+                <img 
+                  src={imgSrc} 
+                  alt={`${title} - Image ${idx + 1}`}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover'
+                  }}
+                  className="img-hover-zoom"
+                />
               </div>
             ))}
           </div>
