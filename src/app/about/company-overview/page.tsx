@@ -23,7 +23,7 @@ export default function AboutStory() {
       <section 
           className="page-header" 
           style={{ 
-            backgroundImage: "url('/images/page-headers/overview-keydata-hero-flipped.jpg')", 
+            backgroundImage: "url('/images/home/slider-highway-rrp.jpg')", 
             backgroundColor: "#1b2738", backgroundSize: "max(55vw, 1100px) auto", backgroundRepeat: "no-repeat", 
             backgroundPosition: "right center", 
             minHeight: isMobile ? "400px" : "600px", 
