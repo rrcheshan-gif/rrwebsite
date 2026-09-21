@@ -204,13 +204,9 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
             </div>
             
             <div style={{ 
-              backgroundColor: '#0f172a', 
-              padding: '40px', 
-              borderRadius: '24px',
-              color: 'var(--white)',
-              boxShadow: '0 20px 40px rgba(0,0,0,0.1)'
+              backgroundColor: 'var(--white)', padding: '40px', borderRadius: '24px', border: '1px solid var(--border-soft)', boxShadow: '0 10px 30px rgba(0,0,0,0.05)'
             }}>
-              <h3 style={{ fontSize: '1.6rem', color: 'var(--white)', marginBottom: '30px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '20px' }}>
+              <h3 style={{ fontSize: '1.6rem', color: 'var(--text-dark)', marginBottom: '30px', borderBottom: '1px solid var(--border-soft)', paddingBottom: '20px' }}>
                 Key Technical Strengths
               </h3>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
@@ -226,7 +222,7 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
                     alignItems: 'flex-start', 
                     gap: '15px',
                     marginBottom: '20px',
-                    color: 'rgba(255,255,255,0.9)',
+                    color: 'var(--text-light)',
                     lineHeight: 1.5,
                     fontSize: '1.05rem'
                   }}>
