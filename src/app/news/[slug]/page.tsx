@@ -62,11 +62,7 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
             </Link>
           </div>
 
-          <div style={{ display: "flex", justifyContent: "center", gap: "15px", marginBottom: "20px" }}>
-            <span style={{ background: "var(--primary-red)", color: "white", padding: "6px 16px", borderRadius: "30px", fontSize: "0.85rem", fontWeight: 700, letterSpacing: "1px",  }}>
-              {news.tag}
-            </span>
-          </div>
+          
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem", margin: "0 0 20px", fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.9), 0 2px 4px rgba(0,0,0,0.8)", lineHeight: 1.2 }}>
             {news.title}
           </h1>
