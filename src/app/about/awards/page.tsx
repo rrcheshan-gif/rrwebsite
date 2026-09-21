@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowRight, Trophy, ShieldCheck, HardHat, Cog, CheckCircle2, Award, Leaf, CheckCircle } from 'lucide-react';
 
 import BackButton from "@/app/components/BackButton";
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 export default function Awards() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -83,6 +84,7 @@ export default function Awards() {
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <BackButton />
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Awards &amp; <span style={{ color: "var(--primary-red)" }}>Certificates</span></h1>
+          <AutoBreadcrumb />
               
           
         </div>

@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 
 export default function OmanthaiPlant() {
   const router = useRouter();
@@ -91,6 +92,7 @@ export default function OmanthaiPlant() {
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
             Omanthai <span style={{ color: "var(--primary-red)" }}>Plant</span>
           </h1>
+          <AutoBreadcrumb />
           
         </div>
       </section>

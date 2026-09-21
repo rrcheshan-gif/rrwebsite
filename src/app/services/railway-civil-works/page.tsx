@@ -7,6 +7,7 @@ import { CheckCircle2 } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
 import BackButton from "@/app/components/BackButton";
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 export default function RailwayCivilWorksPage() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -47,6 +48,7 @@ export default function RailwayCivilWorksPage() {
           }}>
             Railway <span style={{ color: 'var(--primary-red)' }}>Civil Works</span>
           </h1>
+          <AutoBreadcrumb />
               
           
         </div>

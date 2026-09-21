@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { CheckCircle2 } from 'lucide-react';
 
 import BackButton from "@/app/components/BackButton";
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 export default function MaritimeConstructionPage() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -45,6 +46,7 @@ export default function MaritimeConstructionPage() {
           }}>
             Maritime & Marine Construction <span style={{ color: 'var(--primary-red)' }}>in Sri Lanka</span>
           </h1>
+          <AutoBreadcrumb />
               
           
         </div>

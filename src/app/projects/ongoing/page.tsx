@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import BackButton from "@/app/components/BackButton";
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 export default function OngoingProjects() {
   const categories = [
     { id: 'roads', title: 'Highway and Expressway Construction', img: '/images/KRP/img-1.jpeg' },
@@ -22,6 +23,7 @@ export default function OngoingProjects() {
           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 800, marginBottom: '20px', letterSpacing: '-1px' }}>
             Ongoing <span style={{ color: 'var(--primary-red)' }}>Projects</span>
           </h1>
+          <AutoBreadcrumb />
               
           
         </div>

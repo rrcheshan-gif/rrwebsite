@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 
 import Link from "next/link";
 import { useEffect } from "react";
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 
 export default function ThudugalaPlant() {
   const router = useRouter();
@@ -16,6 +17,7 @@ export default function ThudugalaPlant() {
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
             Thudugala <span style={{ color: "var(--primary-red)" }}>Plant</span>
           </h1>
+          <AutoBreadcrumb />
           
         </div>
       </section>

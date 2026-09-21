@@ -5,6 +5,7 @@ import { CheckCircle2, ChevronDown, Activity, Truck, ShieldCheck, Factory } from
 import { COMPANY_DATA } from '@/data/company-data';
 
 import BackButton from "@/app/components/BackButton";
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 interface Props { hideHero?: boolean; }
 export default function RoadConstructionPage({ hideHero = false }: Props) {
   const [isMobile, setIsMobile] = useState(false);
@@ -46,6 +47,7 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
           }}>
             Highway and Expressway <span style={{ color: 'var(--primary-red)' }}>Construction in Sri Lanka</span>
           </h1>
+          <AutoBreadcrumb />
           
         </div>
       </section>

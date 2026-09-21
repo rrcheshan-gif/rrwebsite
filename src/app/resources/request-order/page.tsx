@@ -3,6 +3,7 @@
 
 import BackButton from "@/app/components/BackButton";
 import QuoteForm from "@/app/components/QuoteForm";
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 
 export default function RequestOrderPage() {
   return (
@@ -13,6 +14,7 @@ export default function RequestOrderPage() {
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
             Request <span style={{ color: "var(--primary-red)" }}>Your Order</span>
           </h1>
+          <AutoBreadcrumb />
           
         </div>
       </section>

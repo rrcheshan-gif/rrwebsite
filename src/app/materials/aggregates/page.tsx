@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 
 export default function AggregatesPage() {
   const [isMobile, setIsMobile] = useState(false);
@@ -61,6 +62,7 @@ export default function AggregatesPage() {
           }}>
             Construction Aggregates & <span style={{ color: 'var(--primary-red)' }}>Quarry Products</span> in Sri Lanka
           </h1>
+          <AutoBreadcrumb />
           
         </div>
       </section>

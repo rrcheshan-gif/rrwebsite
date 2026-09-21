@@ -6,6 +6,7 @@ import { Award, Target, Factory, ClipboardCheck, CheckCircle2 } from 'lucide-rea
 import { COMPANY_DATA } from '@/data/company-data';
 
 import BackButton from "@/app/components/BackButton";
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 export default function QualityManagement() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -40,6 +41,7 @@ export default function QualityManagement() {
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <BackButton />
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Quality <span style={{ color: "var(--primary-red)" }}>Management</span></h1>
+          <AutoBreadcrumb />
               
           
         </div>

@@ -7,6 +7,7 @@ import { CheckCircle2 } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
 import BackButton from "@/app/components/BackButton";
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 interface Props { hideHero?: boolean; }
 export default function CivilStructuresPage({ hideHero = false }: Props) {
   const [isMobile, setIsMobile] = useState(false);
@@ -49,6 +50,7 @@ export default function CivilStructuresPage({ hideHero = false }: Props) {
           }}>
             Civil <span style={{ color: 'var(--primary-red)' }}>Structures</span>
           </h1>
+          <AutoBreadcrumb />
               
           
         </div>

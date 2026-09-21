@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { Target, Eye, ShieldCheck, HardHat, Lightbulb, Leaf, Award, Handshake, Compass } from 'lucide-react';
 import BackButton from "@/app/components/BackButton";
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 
 function Reveal({ children, delay = 0, className = "", direction = "up" }: { children: React.ReactNode, delay?: number, className?: string, direction?: "up"|"left"|"right" }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -77,6 +78,7 @@ export default function VisionMission() {
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>
             Vision & <span style={{ color: "var(--primary-red)" }}>Mission</span>
           </h1>
+          <AutoBreadcrumb />
           
         </div>
       </section>

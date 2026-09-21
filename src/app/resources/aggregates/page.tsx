@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { MapPin, HardHat, Clock, CheckCircle } from "lucide-react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 
 export default function CrusherPage() {
   const router = useRouter();
@@ -23,6 +24,7 @@ export default function CrusherPage() {
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
             Aggregates <span style={{ color: "var(--primary-red)" }}>& Sand</span>
           </h1>
+          <AutoBreadcrumb />
           
         </div>
       </section>

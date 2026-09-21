@@ -6,6 +6,7 @@ import { CheckCircle2 } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
 import BackButton from "@/app/components/BackButton";
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 interface Props { hideHero?: boolean; }
 export default function BridgeConstructionPage({ hideHero = false }: Props) {
   const [isMobile, setIsMobile] = useState(false);
@@ -48,6 +49,7 @@ export default function BridgeConstructionPage({ hideHero = false }: Props) {
           }}>
             Bridge Construction & <span style={{ color: 'var(--primary-red)' }}>Rehabilitation in Sri Lanka</span>
           </h1>
+          <AutoBreadcrumb />
               
           
         </div>

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import BackButton from "@/app/components/BackButton";
 import { Building2, Hash, Scale, FileText, Award, Users, Tractor, Briefcase, MapPin, Landmark } from 'lucide-react';
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 
 export default function KeyDataPage() {
   const [isMobile, setIsMobile] = useState(false);
@@ -36,6 +37,7 @@ export default function KeyDataPage() {
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textAlign: "left" }}>
             Key <span style={{ color: "var(--primary-red)" }}>Data</span>
           </h1>
+          <AutoBreadcrumb />
           
         </div>
       </section>

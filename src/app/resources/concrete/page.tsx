@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 
 import { MapPin, Truck, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 
 export default function ConcretePage() {
   const router = useRouter();
@@ -25,6 +26,7 @@ export default function ConcretePage() {
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
             Concrete <span style={{ color: "var(--primary-red)" }}>Batching Plants</span>
           </h1>
+          <AutoBreadcrumb />
           
         </div>
       </section>

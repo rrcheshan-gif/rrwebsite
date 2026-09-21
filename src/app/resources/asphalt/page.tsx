@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 
 import Link from "next/link";
 import { CheckCircle } from "lucide-react";
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 
 export default function YakawewaPlant() {
   const router = useRouter();
@@ -17,6 +18,7 @@ export default function YakawewaPlant() {
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
             Yakawewa <span style={{ color: "var(--primary-red)" }}>Asphalt Plant</span>
           </h1>
+          <AutoBreadcrumb />
           
         </div>
       </section>

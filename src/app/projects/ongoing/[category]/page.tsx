@@ -2,6 +2,7 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
 import BackButton from "@/app/components/BackButton";
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 
 export default function OngoingCategoryPage({ params }: { params: Promise<{ category: string }> }) {
   const resolvedParams = React.use(params);
@@ -93,6 +94,7 @@ export default function OngoingCategoryPage({ params }: { params: Promise<{ cate
           <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 800, marginBottom: '15px' }}>
             {title} <span style={{ color: 'var(--primary-red)' }}>Gallery</span>
           </h1>
+          <AutoBreadcrumb />
           
           <p style={{ maxWidth: '700px', margin: '0 auto', fontSize: '1.1rem', color: '#cbd5e1' }}>
             Ongoing developments and active sites in the {title.toLowerCase()} sector.

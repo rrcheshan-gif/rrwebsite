@@ -7,6 +7,7 @@ import BackButton from "@/app/components/BackButton";
 import RoadConstructionPage from '../highway-and-expressway-construction/page';
 import BridgeConstructionPage from '../bridge-construction/page';
 import BuildingsStructuresPage from '../buildings-structures/page';
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 const SERVICES = [
   {
     slug: 'highway-and-expressway-construction',
@@ -115,6 +116,7 @@ export default function TransportationCivilPage() {
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", lineHeight: 1.2 }}>
             Transportation & <span style={{ color: "var(--primary-red)" }}>Civil Infrastructure</span>
           </h1>
+          <AutoBreadcrumb />
               
         </div>
       </section>

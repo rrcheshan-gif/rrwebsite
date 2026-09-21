@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
+import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 
 export default function AsphaltPage() {
   const [isMobile, setIsMobile] = useState(false);
@@ -62,6 +63,7 @@ export default function AsphaltPage() {
           }}>
             Asphalt Production & <span style={{ color: 'var(--primary-red)' }}>Highway and Expressway Construction</span> in Sri Lanka
           </h1>
+          <AutoBreadcrumb />
           
         </div>
       </section>
