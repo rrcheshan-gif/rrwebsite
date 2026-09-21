@@ -36,6 +36,7 @@ export default function MaritimeConstructionPage() {
         {/* Absolute Back Button */}
         <div style={containerStyle}>
           
+          <BackButton />
           <h1 style={{ 
             fontFamily: 'var(--font-heading)', 
             fontSize: isMobile ? '2.5rem' : '4rem', 
@@ -44,7 +45,7 @@ export default function MaritimeConstructionPage() {
           }}>
             Maritime & Marine Construction <span style={{ color: 'var(--primary-red)' }}>in Sri Lanka</span>
           </h1>
-              <BackButton />
+              
           
         </div>
       </section>

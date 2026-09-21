@@ -89,10 +89,11 @@ export default function OngoingCategoryPage({ params }: { params: Promise<{ cate
       }}>
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(15, 23, 42, 0.7)", borderBottomLeftRadius: '32px', borderBottomRightRadius: '32px', zIndex: 1 }}></div>
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <BackButton />
           <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 800, marginBottom: '15px' }}>
             {title} <span style={{ color: 'var(--primary-red)' }}>Gallery</span>
           </h1>
-          <BackButton />
+          
           <p style={{ maxWidth: '700px', margin: '0 auto', fontSize: '1.1rem', color: '#cbd5e1' }}>
             Ongoing developments and active sites in the {title.toLowerCase()} sector.
           </p>

@@ -34,6 +34,7 @@ export default function DredgingWaterInfrastructurePage() {
         }}
       >
         <div style={containerStyle}>
+          <BackButton />
           <h1 style={{ 
             fontFamily: 'var(--font-heading)', 
             fontSize: isMobile ? '2.5rem' : '4rem', 
@@ -42,7 +43,7 @@ export default function DredgingWaterInfrastructurePage() {
           }}>
             Dredging & <span style={{ color: "var(--primary-red)" }}>Water Infrastructure</span>
           </h1>
-          <BackButton />
+          
         </div>
       </section>
 

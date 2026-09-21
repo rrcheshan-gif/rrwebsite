@@ -38,6 +38,7 @@ export default function ResearchAndDevelopmentPage() {
 
         <div style={containerStyle}>
           
+          <BackButton />
           <h1 style={{ 
             fontFamily: 'var(--font-heading)', 
             fontSize: isMobile ? '2.5rem' : '4rem', 
@@ -46,7 +47,7 @@ export default function ResearchAndDevelopmentPage() {
           }}>
             Research & <span style={{ color: 'var(--primary-red)' }}>Development</span>
           </h1>
-              <BackButton />
+              
           
         </div>
       </section>

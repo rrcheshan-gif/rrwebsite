@@ -18,10 +18,11 @@ export default function OngoingProjects() {
       <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/page-headers/ongoing-hero.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)' }}>
         
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <BackButton />
           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 800, marginBottom: '20px', letterSpacing: '-1px' }}>
             Ongoing <span style={{ color: 'var(--primary-red)' }}>Projects</span>
           </h1>
-              <BackButton />
+              
           
         </div>
       </section>

@@ -40,6 +40,7 @@ export default function CivilStructuresPage({ hideHero = false }: Props) {
         {/* Absolute Back Button */}
         <div style={containerStyle}>
           
+          <BackButton />
           <h1 style={{ 
             fontFamily: 'var(--font-heading)', 
             fontSize: isMobile ? '2.5rem' : '4rem', 
@@ -48,7 +49,7 @@ export default function CivilStructuresPage({ hideHero = false }: Props) {
           }}>
             Civil <span style={{ color: 'var(--primary-red)' }}>Structures</span>
           </h1>
-              <BackButton />
+              
           
         </div>
       </section>

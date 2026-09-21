@@ -36,6 +36,7 @@ export default function LandslideMitigationPage() {
         {/* Absolute Back Button */}
         <div style={containerStyle}>
           
+          <BackButton />
           <h1 style={{ 
             fontFamily: 'var(--font-heading)', 
             fontSize: isMobile ? '2.5rem' : '4rem', 
@@ -44,7 +45,7 @@ export default function LandslideMitigationPage() {
           }}>
             Slope Stabilization &amp; <span style={{ color: 'var(--primary-red)' }}>Landslide Mitigation</span>
           </h1>
-              <BackButton />
+              
           
         </div>
       </section>

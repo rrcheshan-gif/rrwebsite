@@ -87,8 +87,9 @@ export default function GoalsAndTargets() {
         
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           
+          <BackButton />
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Goals & <span style={{ color: "var(--primary-red)" }}>Targets</span></h1>
-              <BackButton />
+              
           
         </div>
       </section>

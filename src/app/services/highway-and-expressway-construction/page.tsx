@@ -37,6 +37,7 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
         }}
       >
         <div style={containerStyle}>
+          <BackButton />
           <h1 style={{ 
             fontFamily: 'var(--font-heading)', 
             fontSize: isMobile ? '2.5rem' : '4rem', 
@@ -45,7 +46,7 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
           }}>
             Highway and Expressway <span style={{ color: 'var(--primary-red)' }}>Construction in Sri Lanka</span>
           </h1>
-          <BackButton />
+          
         </div>
       </section>
       )}

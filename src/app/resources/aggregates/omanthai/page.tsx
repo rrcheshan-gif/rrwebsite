@@ -87,10 +87,11 @@ export default function OmanthaiPlant() {
       {/* Page Header */}
       <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/page-headers/omanthai-plant-header.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)', padding: '70px 20px', textAlign: 'center' }}>
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <BackButton />
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
             Omanthai <span style={{ color: "var(--primary-red)" }}>Plant</span>
           </h1>
-          <BackButton />
+          
         </div>
       </section>
 
