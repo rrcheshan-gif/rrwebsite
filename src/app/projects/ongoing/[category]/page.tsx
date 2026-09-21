@@ -78,7 +78,7 @@ export default function OngoingCategoryPage({ params }: { params: Promise<{ cate
       <section className="page-header" style={{ 
         position: 'relative', 
         backgroundColor: '#0f172a',
-        backgroundImage: `url("${heroImg}")`, 
+        backgroundImage: "url('/images/projects/Kandy/2.jpg')", 
         backgroundSize: 'cover', 
         backgroundPosition: 'center', 
         color: 'var(--white)', 

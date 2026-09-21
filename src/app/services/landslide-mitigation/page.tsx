@@ -25,7 +25,7 @@ export default function LandslideMitigationPage() {
       <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "url('/images/service-landslide-hero.jpeg')",
+          backgroundImage: "url('/images/projects/Thudugala/thudugala-2.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'var(--white)',

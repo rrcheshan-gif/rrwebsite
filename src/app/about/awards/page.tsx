@@ -65,8 +65,7 @@ export default function Awards() {
       
       {/* Hero Section */}
       <section 
-        className="page-header" 
-        style={{ 
+        className="page-header" style={{  
           backgroundImage: "url('/images/page-headers/awards-recognition.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
           padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
           textAlign: "center", 

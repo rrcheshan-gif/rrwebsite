@@ -70,7 +70,7 @@ export default function GoalsAndTargets() {
       <section 
         className="page-header" 
         style={{ 
-          backgroundImage: "url('/images/page-headers/engineering-blueprint-banner.jpg')", 
+          backgroundImage: "url('/images/projects/BADULLA/WhatsApp%20Image%202026-07-28%20at%2014.13.10.jpeg')", 
           padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
           textAlign: "center", 
           position: "relative", 

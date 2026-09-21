@@ -94,7 +94,7 @@ export default function TransportationCivilPage() {
 
       {/* HERO SECTION */}
       <section className="page-header" style={{
-        backgroundImage: "url('/images/hambantota-iroad/hambantota-2.jpg')",
+        backgroundImage: "url('/images/projects/BADULLA/BACKGROUND%20IMAGE.jpeg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center 35%',
         padding: isMobile ? "90px 20px 30px" : "140px 20px 40px",

@@ -33,7 +33,7 @@ export default function MSandPage() {
         position: 'relative',
         height: isMobile ? '40vh' : '60vh',
         minHeight: '300px',
-        backgroundImage: "url('/images/thudugala-5.jpg')",
+        backgroundImage: "url('/images/projects/Hambantota%20iRoad/hambantota-2.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',

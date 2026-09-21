@@ -12,7 +12,7 @@ export default function People() {
 
       {/* Page Header */}
       <section className="page-header" style={{ 
-        backgroundImage: "url('/images/page-headers/people-team-final.jpg')",
+        backgroundImage: "url('/images/projects/IRCON-MANNAR/Background%20image.jpeg')",
         backgroundSize: "cover",
         backgroundPosition: "right center",
         padding: "140px 20px 40px", 

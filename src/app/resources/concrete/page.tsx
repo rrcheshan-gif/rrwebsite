@@ -20,7 +20,7 @@ export default function ConcretePage() {
   return (
     <main style={{ backgroundColor: "var(--white)", minHeight: "100vh" }}>
       {/* Page Header */}
-      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/yakawewa-asphalt-2.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)', padding: '70px 20px', textAlign: 'center' }}>
+      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/projects/Photos%20-%20Fihladhoo/IMG_20180920_110617_419.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)', padding: '70px 20px', textAlign: 'center' }}>
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <AutoBreadcrumb />
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>

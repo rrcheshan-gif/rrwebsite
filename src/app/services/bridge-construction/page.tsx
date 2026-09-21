@@ -28,7 +28,7 @@ export default function BridgeConstructionPage({ hideHero = false }: Props) {
         <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "url('/images/home/bridge_mahanama-enhanced.jpeg')",
+          backgroundImage: "url('/images/projects/Puttalam/puttalam-6.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'var(--white)',

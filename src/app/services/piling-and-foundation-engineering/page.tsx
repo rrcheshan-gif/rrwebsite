@@ -23,8 +23,7 @@ export default function PilingFoundationEngineeringPage() {
     <main style={{ backgroundColor: 'var(--white)', minHeight: '100vh' }}>
       {/* 1. Hero Section */}
       <section 
-        className="page-header" 
-        style={{ position: 'relative', 
+        className="page-header" style={{  position: 'relative', 
           backgroundImage: "linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('/images/home/slider-bridge-mahanama.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',

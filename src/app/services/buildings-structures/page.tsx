@@ -29,7 +29,7 @@ export default function CivilStructuresPage({ hideHero = false }: Props) {
         <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "url('/images/BADULLA/WhatsApp%20Image%202026-07-28%20at%2014.03.18.jpeg')",
+          backgroundImage: "url('/images/projects/Puttalam/puttalam-hero.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'var(--white)',

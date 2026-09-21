@@ -25,7 +25,7 @@ export default function MaritimeConstructionPage() {
       <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "url('/images/home/slider-maritime-fihladhoo.jpg')",
+          backgroundImage: "url('/images/projects/Veerapuram/omanthai-3.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'right center',
           color: 'var(--white)',

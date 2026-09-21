@@ -16,7 +16,7 @@ export default function OngoingProjects() {
   return (
     <div style={{ minHeight: '100vh', background: 'var(--bg-light)' }}>
       {/* Hero Section with Image Space */}
-      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/page-headers/ongoing-hero.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)' }}>
+      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/projects/IRCON-MANNAR/WhatsApp%20Image%202026-08-01%20at%2012.32.07.jpeg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)' }}>
         
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <AutoBreadcrumb />

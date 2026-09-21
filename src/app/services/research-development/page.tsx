@@ -25,7 +25,7 @@ export default function ResearchAndDevelopmentPage() {
       <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "url('/images/research-development.jpg')",
+          backgroundImage: "url('/images/projects/wellamankara/IMG_20220124_084819_781.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'var(--white)',

@@ -26,7 +26,7 @@ export default function DredgingWaterInfrastructurePage() {
       <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "url('/images/projects/filadhoo/img3.jpg')",
+          backgroundImage: "url('/images/projects/R3%20-%20iRoad/r3-10.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'var(--white)',

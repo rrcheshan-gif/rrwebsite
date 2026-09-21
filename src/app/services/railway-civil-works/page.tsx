@@ -27,7 +27,7 @@ export default function RailwayCivilWorksPage() {
       <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "url('/images/IRCON-MANNAR/WhatsApp%20Image%202026-08-01%20at%2012.32.07.jpeg')",
+          backgroundImage: "url('/images/projects/Yakawewa/yakawewa-hero.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'var(--white)',

@@ -34,7 +34,7 @@ export default function AsphaltPage() {
         position: 'relative',
         height: isMobile ? '40vh' : '60vh',
         minHeight: '300px',
-        backgroundImage: "url('/images/yakawewa-asphalt-2.jpg')",
+        backgroundImage: "url('/images/projects/Gammaduwa/3.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',

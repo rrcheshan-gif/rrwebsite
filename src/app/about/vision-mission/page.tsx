@@ -61,7 +61,7 @@ export default function VisionMission() {
       <section 
         className="page-header" 
         style={{ 
-          backgroundImage: "url('/images/page-headers/engineering-blueprint-banner.jpg')" , 
+          backgroundImage: "url('/images/projects/Bridge_12-1/2.jpg')" , 
           padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
           textAlign: "center", 
           position: "relative", 

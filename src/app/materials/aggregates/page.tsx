@@ -33,7 +33,7 @@ export default function AggregatesPage() {
         position: 'relative',
         height: isMobile ? '40vh' : '60vh',
         minHeight: '300px',
-        backgroundImage: "url('/images/page-headers/quarry-hero-new.jpg')",
+        backgroundImage: "url('/images/projects/Gammaduwa/1.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',

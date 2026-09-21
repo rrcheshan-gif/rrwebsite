@@ -29,7 +29,7 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
         <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "url('/images/hambantota-iroad/hambantota-2.jpg')",
+          backgroundImage: "url('/images/projects/R3%20-%20iRoad/r3-hero.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'var(--white)',

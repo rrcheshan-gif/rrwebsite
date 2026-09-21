@@ -24,7 +24,7 @@ export default function BoardOfDirectors() {
       <section 
           className="page-header" 
           style={{ 
-            backgroundImage: "url('/images/page-headers/engineering-blueprint-banner.jpg')", 
+            backgroundImage: "url('/images/projects/Bridge_12-1/1.jpg')", 
             backgroundSize: "cover", 
             backgroundPosition: "center top", 
             minHeight: isMobile ? "400px" : "600px", 

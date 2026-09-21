@@ -123,7 +123,7 @@ export default function Projects() {
 
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
-            <section className="page-header" style={{ position: "relative", backgroundImage: "url('/images/page-headers/projects-portfolio.jpg')", backgroundSize: "cover", backgroundPosition: "center", color: "var(--white)" }}>
+            <section className="page-header" style={{ position: "relative", backgroundImage: "url('/images/projects/LDPP/img-1.jpg')", backgroundSize: "cover", backgroundPosition: "center", color: "var(--white)" }}>
         
         
         
