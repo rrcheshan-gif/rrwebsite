@@ -120,7 +120,7 @@ export default function Navbar() {
               
               <li className={`dropdown ${activeDropdown === 'services' ? 'open' : ''}`}>
                 <div className="dropdown-header">
-                  <Link href="/services/transportation-civil-infrastructure" title="Top Construction &amp; Engineering Services Sri Lanka" onClick={() => setMobileMenuOpen(false)}>Technology &amp; Services</Link>
+                  <Link href="/services/transportation-civil-infrastructure" title="Top Construction &amp; Engineering Services Sri Lanka" onClick={() => setMobileMenuOpen(false)} className={isActive("/services") ? "active" : ""}>Technology &amp; Services</Link>
                   <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('services', e)} aria-label="Toggle Services Submenu">
                     <ChevronDown size={14} />
                   </button>
@@ -137,7 +137,7 @@ export default function Navbar() {
 
                               <li className={`dropdown ${activeDropdown === 'resources' ? 'open' : ''}`}>
                   <div className="dropdown-header">
-                    <Link href="/resources/asphalt" title="Construction Resources Sri Lanka" onClick={() => setMobileMenuOpen(false)}>Resources</Link>
+                    <Link href="/resources/asphalt" title="Construction Resources Sri Lanka" onClick={() => setMobileMenuOpen(false)} className={isActive("/resources") ? "active" : ""}>Resources</Link>
                     <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('resources', e)} aria-label="Toggle Resources Submenu">
                       <ChevronDown size={14} />
                     </button>
@@ -152,7 +152,7 @@ export default function Navbar() {
                 
                 <li className={`dropdown ${activeDropdown === 'sustainability' ? 'open' : ''}`}>
                 <div className="dropdown-header">
-                  <Link href="/sustainability/environmental-stewardship" title="Sustainable Construction Practices Sri Lanka" onClick={() => setMobileMenuOpen(false)}>Sustainability</Link>
+                  <Link href="/sustainability/environmental-stewardship" title="Sustainable Construction Practices Sri Lanka" onClick={() => setMobileMenuOpen(false)} className={isActive("/sustainability") ? "active" : ""}>Sustainability</Link>
                   <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('sustainability', e)} aria-label="Toggle Sustainability Submenu">
                     <ChevronDown size={14} />
                   </button>
