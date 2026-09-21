@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { CheckCircle2 } from 'lucide-react';
 
-import BackButton from "@/app/components/BackButton";
+
 import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 export default function LandslideMitigationPage() {
   const [isMobile, setIsMobile] = useState(false);
@@ -37,7 +37,7 @@ export default function LandslideMitigationPage() {
         {/* Absolute Back Button */}
         <div style={containerStyle}>
           
-          <BackButton />
+          <AutoBreadcrumb />
           <h1 style={{ 
             fontFamily: 'var(--font-heading)', 
             fontSize: isMobile ? '2.5rem' : '4rem', 
@@ -46,7 +46,6 @@ export default function LandslideMitigationPage() {
           }}>
             Slope Stabilization &amp; <span style={{ color: 'var(--primary-red)' }}>Landslide Mitigation</span>
           </h1>
-          <AutoBreadcrumb />
               
           
         </div>

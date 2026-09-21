@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { CheckCircle2 } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
-import BackButton from "@/app/components/BackButton";
+
 import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 interface Props { hideHero?: boolean; }
 export default function CivilStructuresPage({ hideHero = false }: Props) {
@@ -41,7 +41,7 @@ export default function CivilStructuresPage({ hideHero = false }: Props) {
         {/* Absolute Back Button */}
         <div style={containerStyle}>
           
-          <BackButton />
+          <AutoBreadcrumb />
           <h1 style={{ 
             fontFamily: 'var(--font-heading)', 
             fontSize: isMobile ? '2.5rem' : '4rem', 
@@ -50,7 +50,6 @@ export default function CivilStructuresPage({ hideHero = false }: Props) {
           }}>
             Civil <span style={{ color: 'var(--primary-red)' }}>Structures</span>
           </h1>
-          <AutoBreadcrumb />
               
           
         </div>

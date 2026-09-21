@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Users, BookOpen, Building2, MapPin, CheckCircle2, X } from 'lucide-react';
 
-import BackButton from "@/app/components/BackButton";
+
 import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 export default function SocialResponsibility() {
   const [isMobile, setIsMobile] = useState(false);
@@ -39,9 +39,8 @@ export default function SocialResponsibility() {
         
         <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <BackButton />
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Social <span style={{ color: "var(--primary-red)" }}>Responsibility</span></h1>
           <AutoBreadcrumb />
+          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Social <span style={{ color: "var(--primary-red)" }}>Responsibility</span></h1>
               
           
         </div>

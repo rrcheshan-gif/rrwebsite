@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import BackButton from "@/app/components/BackButton";
+
 import { Building2, Hash, Scale, FileText, Award, Users, Tractor, Briefcase, MapPin, Landmark } from 'lucide-react';
 import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 
@@ -33,11 +33,10 @@ export default function KeyDataPage() {
       {/* Hero Section */}
       <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/home/slider-bridge-mahanama.jpg')", backgroundColor: "#1b2738", backgroundSize: "max(55vw, 1100px) auto", backgroundRepeat: "no-repeat", backgroundPosition: "right center", color: 'var(--white)', padding: isMobile ? "120px 20px 20px" : "160px 20px 20px", minHeight: isMobile ? "400px" : "600px", display: "flex", flexDirection: "column", justifyContent: "flex-end", textAlign: 'left' }}>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <BackButton />
+          <AutoBreadcrumb />
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textAlign: "left" }}>
             Key <span style={{ color: "var(--primary-red)" }}>Data</span>
           </h1>
-          <AutoBreadcrumb />
           
         </div>
       </section>

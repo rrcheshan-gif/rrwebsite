@@ -69,10 +69,10 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
             </span>
           </div>
 
+          <AutoBreadcrumb />
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem", margin: "0 0 20px", fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.9), 0 2px 4px rgba(0,0,0,0.8)", lineHeight: 1.2 }}>
             {news.title}
           </h1>
-          <AutoBreadcrumb />
           
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "20px", color: "#f8fafc", fontSize: "1.1rem", fontWeight: 600, textShadow: "0 2px 4px rgba(0,0,0,0.8)" }}>
             <span style={{ display: "flex", alignItems: "center", gap: "8px" }}><Clock size={16} color="var(--primary-red)" /> {news.date}</span>

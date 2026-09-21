@@ -81,8 +81,8 @@ export default function AutoBreadcrumb() {
       flexWrap: 'wrap',
       fontSize: '0.85rem',
       color: 'rgba(255,255,255,0.7)',
-      marginTop: '20px',
-      marginBottom: '10px'
+      marginTop: '0px',
+      marginBottom: '15px'
     }}>
       {allItems.map((item, index) => (
         <span key={index} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>

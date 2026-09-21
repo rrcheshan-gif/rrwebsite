@@ -53,6 +53,7 @@ export default function MSandPage() {
             <span style={{ margin: '0 10px', opacity: 0.8 }}>/</span>
             <span style={{ color: 'var(--primary-red)' }}>M-Sand</span>
           </div>
+          <AutoBreadcrumb />
           <h1 style={{
             fontFamily: 'var(--font-heading)',
             fontSize: isMobile ? '2.5rem' : '4rem',
@@ -62,7 +63,6 @@ export default function MSandPage() {
           }}>
             M-Sand & <span style={{ color: 'var(--primary-red)' }}>Manufactured Sand</span> in Sri Lanka
           </h1>
-          <AutoBreadcrumb />
           
         </div>
       </section>

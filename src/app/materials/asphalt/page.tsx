@@ -54,6 +54,7 @@ export default function AsphaltPage() {
             <span style={{ margin: '0 10px', opacity: 0.8 }}>/</span>
             <span style={{ color: 'var(--primary-red)' }}>Asphalt</span>
           </div>
+          <AutoBreadcrumb />
           <h1 style={{
             fontFamily: 'var(--font-heading)',
             fontSize: isMobile ? '2.5rem' : '4rem',
@@ -63,7 +64,6 @@ export default function AsphaltPage() {
           }}>
             Asphalt Production & <span style={{ color: 'var(--primary-red)' }}>Highway and Expressway Construction</span> in Sri Lanka
           </h1>
-          <AutoBreadcrumb />
           
         </div>
       </section>

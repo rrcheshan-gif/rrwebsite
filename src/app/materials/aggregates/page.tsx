@@ -53,6 +53,7 @@ export default function AggregatesPage() {
             <span style={{ margin: '0 10px', opacity: 0.8 }}>/</span>
             <span style={{ color: 'var(--primary-red)' }}>Aggregates</span>
           </div>
+          <AutoBreadcrumb />
           <h1 style={{
             fontFamily: 'var(--font-heading)',
             fontSize: isMobile ? '2.5rem' : '4rem',
@@ -62,7 +63,6 @@ export default function AggregatesPage() {
           }}>
             Construction Aggregates & <span style={{ color: 'var(--primary-red)' }}>Quarry Products</span> in Sri Lanka
           </h1>
-          <AutoBreadcrumb />
           
         </div>
       </section>

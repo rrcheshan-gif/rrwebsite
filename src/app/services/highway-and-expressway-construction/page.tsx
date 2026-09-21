@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { CheckCircle2, ChevronDown, Activity, Truck, ShieldCheck, Factory } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 
-import BackButton from "@/app/components/BackButton";
+
 import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 interface Props { hideHero?: boolean; }
 export default function RoadConstructionPage({ hideHero = false }: Props) {
@@ -38,7 +38,7 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
         }}
       >
         <div style={containerStyle}>
-          <BackButton />
+          <AutoBreadcrumb />
           <h1 style={{ 
             fontFamily: 'var(--font-heading)', 
             fontSize: isMobile ? '2.5rem' : '4rem', 
@@ -47,7 +47,6 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
           }}>
             Highway and Expressway <span style={{ color: 'var(--primary-red)' }}>Construction in Sri Lanka</span>
           </h1>
-          <AutoBreadcrumb />
           
         </div>
       </section>

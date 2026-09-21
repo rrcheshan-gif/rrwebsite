@@ -1,5 +1,5 @@
 "use client";
-import BackButton from "@/app/components/BackButton";
+
 import { useEffect, useState } from "react";
 import { MapPin, HardHat, Clock, CheckCircle } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -20,11 +20,10 @@ export default function CrusherPage() {
     <main style={{ backgroundColor: "var(--white)", minHeight: "100vh" }}>
       <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/yakawewa-asphalt-2.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)', padding: '70px 20px', textAlign: 'center' }}>
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-          <BackButton />
+          <AutoBreadcrumb />
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
             Aggregates <span style={{ color: "var(--primary-red)" }}>& Sand</span>
           </h1>
-          <AutoBreadcrumb />
           
         </div>
       </section>
