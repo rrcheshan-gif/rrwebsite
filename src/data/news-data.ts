@@ -13,29 +13,6 @@ export interface NewsItem {
 
 export const NEWS_DATA: NewsItem[] = [
   {
-    id: 2,
-    slug: 'reconstruction-of-bridge-paranthan-karachchi-mullaitivu-completed',
-    tag: 'Project Completion',
-    title: 'Successful Completion of Bridge No. 12/1 on Paranthan - Karachchi - Mullaitivu Road',
-    desc: 'RR Construction successfully completed the reconstruction of Bridge No. 12/1 for the Road Development Authority, emphasizing modern engineering standards and timely delivery.',
-    date: 'July 28, 2026',
-    img: '/images/POINT PEDRO/Background image.jpeg',
-    featured: false,
-    content: `
-      <p>RR Construction (Pvt) Ltd is proud to announce the successful completion and handover of the <strong>Reconstruction of Bridge No. 12/1 on Paranthan - Karachchi - Mullaitivu Road (A035) Balance Work</strong>. This crucial infrastructure project was executed for the Road Development Authority (RDA) and officially completed on July 28, 2026.</p>
-      
-      <div style="margin: 30px 0; text-align: center;">
-        <img src="/images/POINT PEDRO/Background image.jpeg" alt="Completed Bridge at Night" style="width: 100%; max-width: 800px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
-        <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 10px; font-style: italic;">The newly reconstructed bridge, well-illuminated and ready for public transit.</p>
-      </div>
-
-      <h3 style="font-family: var(--font-heading); color: var(--text-dark); margin-top: 40px; margin-bottom: 20px;">Enhancing Regional Connectivity</h3>
-      <p>The reconstruction of this bridge plays a vital role in enhancing connectivity and transportation efficiency in the Northern Province, directly benefiting communities traveling between Paranthan, Karachchi, and Mullaitivu. Built to modern structural engineering standards, the bridge ensures long-term durability and safety for all commuters and heavy vehicles.</p>
-      
-      <p>We extend our gratitude to the Road Development Authority for their continuous trust in RR Construction, and to our dedicated project team for delivering this milestone project efficiently, safely, and within the stipulated timeline.</p>
-    `
-  },
-  {
     id: 1,
     slug: 'first-brand-new-wirtgen-w200f-milling-machine-sri-lanka',
     tag: 'Machinery & Technology',
@@ -66,6 +43,29 @@ export const NEWS_DATA: NewsItem[] = [
       <p>This investment reinforces our position as the leading infrastructure development company in Sri Lanka. As we deploy the W 200 F to our major highway and expressway rehabilitation projects across the island, our clients can expect unprecedented precision and speed in asphalt removal and highway and expressway surface preparation.</p>
       
       <p>We remain dedicated to our vision of equipping our expert teams with the world's best machinery, ensuring that every road we build meets the highest international standards of quality and durability.</p>
+    `
+  },
+  {
+    id: 2,
+    slug: 'reconstruction-of-bridge-paranthan-karachchi-mullaitivu-completed',
+    tag: 'Project Completion',
+    title: 'Successful Completion of Bridge No. 12/1 on Paranthan - Karachchi - Mullaitivu Road',
+    desc: 'RR Construction successfully completed the reconstruction of Bridge No. 12/1 for the Road Development Authority, emphasizing modern engineering standards and timely delivery.',
+    date: 'July 28, 2026',
+    img: '/images/POINT PEDRO/Background image.jpeg',
+    featured: false,
+    content: `
+      <p>RR Construction (Pvt) Ltd is proud to announce the successful completion and handover of the <strong>Reconstruction of Bridge No. 12/1 on Paranthan - Karachchi - Mullaitivu Road (A035) Balance Work</strong>. This crucial infrastructure project was executed for the Road Development Authority (RDA) and officially completed on July 28, 2026.</p>
+      
+      <div style="margin: 30px 0; text-align: center;">
+        <img src="/images/POINT PEDRO/Background image.jpeg" alt="Completed Bridge at Night" style="width: 100%; max-width: 800px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
+        <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 10px; font-style: italic;">The newly reconstructed bridge, well-illuminated and ready for public transit.</p>
+      </div>
+
+      <h3 style="font-family: var(--font-heading); color: var(--text-dark); margin-top: 40px; margin-bottom: 20px;">Enhancing Regional Connectivity</h3>
+      <p>The reconstruction of this bridge plays a vital role in enhancing connectivity and transportation efficiency in the Northern Province, directly benefiting communities traveling between Paranthan, Karachchi, and Mullaitivu. Built to modern structural engineering standards, the bridge ensures long-term durability and safety for all commuters and heavy vehicles.</p>
+      
+      <p>We extend our gratitude to the Road Development Authority for their continuous trust in RR Construction, and to our dedicated project team for delivering this milestone project efficiently, safely, and within the stipulated timeline.</p>
     `
   }
 ];
