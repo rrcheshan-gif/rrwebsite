@@ -57,39 +57,53 @@ function formatLabel(segment: string) {
   return segment.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 }
 
+
 export default function AutoBreadcrumb() {
   const pathname = usePathname();
   if (pathname === '/') return null;
 
-  // Handle logical parents for flat routes that belong in a dropdown
-  const logicalParents: Record<string, string> = {
-    '/training': '/people',
-    '/welfare': '/people',
-    '/career': '/people'
+  // Manual overrides for specific paths where the URL doesn't perfectly match the desired breadcrumb
+  const customOverrides: Record<string, {label: string, href?: string}[]> = {
+    '/projects': [
+      { label: 'Projects', href: undefined }, // No href so it's just text
+      { label: 'Completed Projects', href: undefined }
+    ],
+    '/training': [
+      { label: 'People', href: '/people' },
+      { label: 'Training & Development', href: undefined }
+    ],
+    '/welfare': [
+      { label: 'People', href: '/people' },
+      { label: 'Employee Welfare', href: undefined }
+    ],
+    '/career': [
+      { label: 'People', href: '/people' },
+      { label: 'Careers', href: undefined }
+    ]
   };
 
-  let paths: string[] = [];
-  
-  if (logicalParents[pathname]) {
-    paths = [logicalParents[pathname], pathname];
+  let items = [];
+
+  if (customOverrides[pathname]) {
+    items = customOverrides[pathname];
   } else {
     // Standard segment parsing
     const segments = pathname.split('/').filter(Boolean);
-    paths = segments.map((_, i) => '/' + segments.slice(0, i + 1).join('/'));
+    const paths = segments.map((_, i) => '/' + segments.slice(0, i + 1).join('/'));
+    
+    items = paths.map((p, index) => {
+      const segment = p.split('/').pop() || '';
+      return {
+        label: formatLabel(segment),
+        href: index === paths.length - 1 ? undefined : p
+      };
+    });
   }
-
-  const items = paths.map((p, index) => {
-    // Extract just the last segment to format it
-    const segment = p.split('/').pop() || '';
-    return {
-      label: formatLabel(segment),
-      href: index === paths.length - 1 ? undefined : p
-    };
-  });
 
   const allItems = [{ label: 'Home', href: '/' }, ...items];
 
   return (
+
     <nav aria-label="Breadcrumb" style={{
       display: 'flex',
       alignItems: 'center',
