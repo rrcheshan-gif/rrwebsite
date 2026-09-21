@@ -115,7 +115,7 @@ export default function Training() {
                     style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} 
                   />
                   <div style={{ position: "absolute", bottom: "20px", right: "20px", background: "white", padding: "8px 16px", borderRadius: "8px", boxShadow: "0 10px 20px rgba(0,0,0,0.15)", display: "flex", alignItems: "center", gap: "10px" }}>
-                     <span style={{ fontSize: "1.4rem", fontWeight: 900, color: "var(--text-dark)", letterSpacing: "-1px", fontFamily: "Arial, sans-serif" }}>coursera</span>
+                     <span style={{ fontSize: "1.4rem", fontWeight: 900, color: "#0056D2", letterSpacing: "-1px", fontFamily: "Arial, sans-serif" }}>coursera</span>
                   </div>
                 </div>
               </div>

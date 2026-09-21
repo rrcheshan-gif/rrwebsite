@@ -349,7 +349,7 @@ export default function Home() {
                       <div style={{ fontSize: "2.5rem", fontWeight: 800, fontFamily: "var(--font-heading)", lineHeight: 1, color: "var(--primary-red)" }}>{COMPANY_DATA.yearsOfExcellence}</div>
                       <div style={{ textAlign: "left" }}>
                         <h4 style={{ margin: 0, fontSize: "0.9rem", fontFamily: "var(--font-heading)",  letterSpacing: "1px", color: "var(--primary-red)", fontWeight: 800 }}>Years of</h4>
-                        <p style={{ color: "var(--text-dark)", margin: 0, fontSize: "0.9rem", fontWeight: 700,  }}>Excellence</p>
+                        <p style={{ color: "#1e293b", margin: 0, fontSize: "0.9rem", fontWeight: 700,  }}>Excellence</p>
                       </div>
                     </div>
                     
@@ -470,8 +470,8 @@ export default function Home() {
                       padding: "12px 20px", 
                       borderRadius: "16px", 
                       border: "1px solid var(--border-soft)", 
-                      background: "white",
-                      boxShadow: "0 10px 30px rgba(0,0,0,0.04)",
+                      background: "var(--white)",
+                        boxShadow: "0 10px 30px rgba(0,0,0,0.04)",
                       display: "flex", 
                       alignItems: "center", 
                       gap: "15px",
