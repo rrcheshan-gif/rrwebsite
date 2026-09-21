@@ -6,19 +6,22 @@ import projectsData from '@/app/projects/data';
 import { ArrowLeft } from 'lucide-react';
 
 import BackButton from "@/app/components/BackButton";
-export default function OngoingCategoryPage({ params }: { params: { category: string } }) {
-  const categoryId = params.category;
+export default function OngoingCategoryPage({ params }: { params: Promise<{ category: string }> }) {
+  const resolvedParams = React.use(params);
+  const categoryId = resolvedParams.category;
   
   // Define category titles
-  const categoryTitles: Record<string, string> = {
-    'roads': 'Highway and Expressway Construction',
-    'bridges': 'Bridge Construction',
-    'irrigation': 'Irrigation & Water Supply',
-    'disaster': 'Landslide Mitigation',
-    'maritime': 'Maritime & Dredging'
+  const categoryData: Record<string, { title: string, img: string }> = {
+    'roads': { title: 'Highway and Expressway Construction', img: '/images/KRP/img-1.jpeg' },
+    'bridges': { title: 'Bridge Construction', img: '/images/BBP/img-1.jpeg' },
+    'irrigation': { title: 'Irrigation & Water Supply', img: '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.28.jpeg' },
+    'disaster': { title: 'Landslide Mitigation', img: '/images/Badulla Landslide/Background image.jpeg' },
+    'maritime': { title: 'Maritime & Dredging', img: '/images/maritime-harbour-site.jpg' }
   };
 
-  const title = categoryTitles[categoryId];
+  const categoryInfo = categoryData[categoryId];
+  const title = categoryInfo?.title;
+  const heroImg = categoryInfo?.img;
 
   if (!title) {
     notFound();
@@ -36,7 +39,7 @@ export default function OngoingCategoryPage({ params }: { params: { category: st
         position: 'relative', 
         backgroundColor: '#0f172a',
         // Optional: Replace this with a specific image per category
-        backgroundImage: "url('/images/hero-road-roller.jpg')", 
+        backgroundImage: `url("${heroImg}")`, 
         backgroundSize: 'cover', 
         backgroundPosition: 'center', 
         color: 'var(--white)', 
