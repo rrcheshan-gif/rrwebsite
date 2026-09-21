@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { Clock, ArrowLeft, Share2 } from 'lucide-react';
 import { NEWS_DATA } from '@/data/news-data';
 import ShareButton from '@/app/components/ShareButton';
-import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 
 export function generateStaticParams() {
   return NEWS_DATA.map((news) => ({
@@ -68,8 +67,6 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
               {news.tag}
             </span>
           </div>
-
-          <AutoBreadcrumb />
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "3.5rem", margin: "0 0 20px", fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.9), 0 2px 4px rgba(0,0,0,0.8)", lineHeight: 1.2 }}>
             {news.title}
           </h1>

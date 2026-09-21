@@ -6,7 +6,6 @@ import { useRouter } from 'next/navigation';
 import { notFound } from 'next/navigation';
 import projectsData from '../data';
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
-import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 
 export default function ProjectDetail({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params);
@@ -182,7 +181,6 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
               <span style={{ padding: '5px 16px', background: 'rgba(255, 255, 255, 0.95)', color: '#1e293b', borderRadius: "30px", fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.5px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>{project.year}</span>
             )}
           </div>
-          <AutoBreadcrumb />
           <h1 className="hero-heading" style={{ fontSize: 'clamp(1.5rem, 3.2vw, 2.4rem)', lineHeight: '1.3', marginBottom: '0', textShadow: '0 2px 8px rgba(0,0,0,0.5)', color: 'white' }}>{project.title}</h1>
         </div>
         
