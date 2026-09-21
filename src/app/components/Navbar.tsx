@@ -69,11 +69,11 @@ export default function Navbar() {
             </Link>
             
             <ul className={`nav-links ${mobileMenuOpen ? "active" : ""}`}>
-              <li><Link href="/" onClick={() => setMobileMenuOpen(false)} style={{ color: isActive("/") ? "var(--primary-red)" : "" }}>Home</Link></li>
+              <li><Link href="/" onClick={() => setMobileMenuOpen(false)} className={isActive("/") ? "active" : ""}>Home</Link></li>
               
               <li className={`dropdown ${activeDropdown === 'about' ? 'open' : ''}`}>
                 <div className="dropdown-header">
-                  <Link href="/about" title="Leading Construction Company in Sri Lanka" onClick={() => setMobileMenuOpen(false)} style={{ color: isActive("/about") ? "var(--primary-red)" : "" }}>About Us</Link>
+                  <Link href="/about" title="Leading Construction Company in Sri Lanka" onClick={() => setMobileMenuOpen(false)} className={isActive("/about") ? "active" : ""}>About Us</Link>
                   <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('about', e)} aria-label="Toggle About Submenu">
                     <ChevronDown size={14} />
                   </button>
@@ -91,7 +91,7 @@ export default function Navbar() {
               
               <li className={`dropdown ${activeDropdown === 'projects' ? 'open' : ''}`}>
                 <div className="dropdown-header">
-                  <Link href="/projects" title="Major Infrastructure &amp; Heavy Civil Engineering Projects Sri Lanka" onClick={() => setMobileMenuOpen(false)} style={{ color: isActive("/projects") ? "var(--primary-red)" : "" }}>Projects</Link>
+                  <Link href="/projects" title="Major Infrastructure &amp; Heavy Civil Engineering Projects Sri Lanka" onClick={() => setMobileMenuOpen(false)} className={isActive("/projects") ? "active" : ""}>Projects</Link>
                   <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('projects', e)} aria-label="Toggle Projects Submenu">
                     <ChevronDown size={14} />
                   </button>
@@ -105,7 +105,7 @@ export default function Navbar() {
               
               <li className={`dropdown ${activeDropdown === 'people' ? 'open' : ''}`}>
                 <div className="dropdown-header">
-                  <Link href="/people" title="Heavy Civil Engineering Workforce Sri Lanka" onClick={() => setMobileMenuOpen(false)} style={{ color: isActive("/people") ? "var(--primary-red)" : "" }}>People</Link>
+                  <Link href="/people" title="Heavy Civil Engineering Workforce Sri Lanka" onClick={() => setMobileMenuOpen(false)} className={isActive("/people") ? "active" : ""}>People</Link>
                   <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('people', e)} aria-label="Toggle People Submenu">
                     <ChevronDown size={14} />
                   </button>
@@ -165,7 +165,7 @@ export default function Navbar() {
                 </ul>
               </li>
 
-              <li><Link href="/news" title="Construction Industry News Sri Lanka" onClick={() => setMobileMenuOpen(false)} style={{ color: isActive("/news") ? "var(--primary-red)" : "" }}>News &amp; Updates</Link></li>
+              <li><Link href="/news" title="Construction Industry News Sri Lanka" onClick={() => setMobileMenuOpen(false)} className={isActive("/news") ? "active" : ""}>News &amp; Updates</Link></li>
               <li className="mobile-contact-item" style={{ marginTop: "15px", paddingTop: "15px", borderTop: "1px solid rgba(0,0,0,0.1)" }}>
                 <Link href="/contact" className="mobile-contact-link" onClick={() => setMobileMenuOpen(false)} style={{ display: "block", textAlign: "center", background: "var(--primary-red)", color: "white", padding: "14px 24px", borderRadius: "30px", fontWeight: 700, textDecoration: "none" }}>Contact Us</Link>
               </li>
