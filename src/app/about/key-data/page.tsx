@@ -87,7 +87,7 @@ export default function KeyDataPage() {
                     <p style={{ 
                       color: 'var(--text-dark)', 
                       fontWeight: 800, 
-                      fontSize: ['Year Established', 'Direct Workforce', 'Machinery Units'].includes(item.label) ? '1.8rem' : '1.3rem', 
+                      fontSize: '1.25rem', 
                       margin: 0,
                       lineHeight: 1.4,
                       fontFamily: 'var(--font-heading)'
