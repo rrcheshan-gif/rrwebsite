@@ -22,7 +22,7 @@ export default function AboutStory() {
       
       {/* Hero Section */}
       <section 
-          className="page-header" 
+          className="page-header overview-hero-bg" 
           style={{ 
             backgroundImage: "url('/images/about/overview-image.jpg')", 
             backgroundColor: "#1b2738", backgroundSize: isMobile ? "cover" : "auto 100%", backgroundRepeat: "no-repeat", backgroundPosition: isMobile ? "center" : "calc(max(58vw, 750px) - 40px) center", 
