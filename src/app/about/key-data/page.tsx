@@ -45,14 +45,14 @@ export default function KeyDataPage() {
       <section style={{ padding: isMobile ? '60px 20px' : '100px 20px', background: 'var(--white)' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
+          <div className="hover-lift" style={{ display: 'flex', flexDirection: 'column', gap: '30px', background: 'var(--bg-light)', padding: isMobile ? '30px 20px' : '50px 60px', borderRadius: '24px', boxShadow: '0 20px 40px rgba(0,0,0,0.04)', border: '1px solid var(--border-soft)' }}>
             {dataList.map((item, idx) => (
               <div key={idx} style={{
                 display: 'flex',
                 alignItems: isMobile ? 'flex-start' : 'center',
                 flexDirection: isMobile ? 'column' : 'row',
                 paddingBottom: '30px',
-                borderBottom: idx === dataList.length - 1 ? 'none' : '1px solid rgba(0,0,0,0.06)',
+                borderBottom: idx === dataList.length - 1 ? 'none' : '1px solid var(--border-soft)',
                 gap: isMobile ? '15px' : '30px'
               }}>
                 {/* Icon Container */}
