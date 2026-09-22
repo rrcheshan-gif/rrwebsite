@@ -99,6 +99,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "./components/ThemeProvider";
 import PageTransition from "./components/PageTransition";
+import FloatingChat from "./components/FloatingChat";
 import Script from "next/script";
 
 export default function RootLayout({
@@ -138,6 +139,7 @@ export default function RootLayout({
           <Navbar />
           <main>{children}</main>
           <Footer />
+          <FloatingChat />
         </ThemeProvider>
       </body>
     </html>
