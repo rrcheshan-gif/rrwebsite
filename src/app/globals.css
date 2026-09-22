@@ -1820,7 +1820,7 @@ ul {
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
-  background-position: right 30% !important;
+  background-position: right 30%;
     background-size: cover !important;
 }
 
