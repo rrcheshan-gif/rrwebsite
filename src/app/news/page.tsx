@@ -82,9 +82,7 @@ export default function News() {
               </div>
             </div>
             <div style={{ flex: "1", padding: isMobile ? "30px 20px" : "50px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-              <span style={{ color: "var(--text-light)", fontSize: "0.95rem", fontWeight: 600, display: "flex", alignItems: "center", gap: "8px", marginBottom: "15px" }}>
-                <Calendar size={18} color="var(--primary-red)" /> {featuredNews.date}
-              </span>
+              
               <h3 style={{ fontSize: isMobile ? "1.8rem" : "2.5rem", color: "var(--text-dark)", margin: "0 0 20px", fontFamily: "var(--font-heading)", lineHeight: 1.2, fontWeight: 800 }}>
                 {featuredNews.title}
               </h3>
@@ -151,8 +149,8 @@ export default function News() {
                     <p style={{ color: "var(--text-light)", fontSize: "1rem", lineHeight: 1.6, marginBottom: "25px", flex: 1 }}>{news.desc}</p>
                     
                     <Link href={`/news/${news.slug}`} style={{ textDecoration: 'none' }}>
-                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px solid var(--border-soft)", paddingTop: "20px", cursor: "pointer" }}>
-                        <span style={{ color: "var(--text-light)", fontSize: "0.9rem", fontWeight: 600, display: "flex", alignItems: "center", gap: "8px" }}><Clock size={16} color="var(--primary-red)" /> {news.date}</span>
+                      <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", borderTop: "1px solid var(--border-soft)", paddingTop: "20px", cursor: "pointer" }}>
+                        
                         <div style={{ display: "flex", alignItems: "center", gap: "5px", color: "var(--primary-red)", fontWeight: 600 }}>
                           Read More <ArrowRight size={18} />
                         </div>

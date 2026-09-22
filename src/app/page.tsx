@@ -518,9 +518,7 @@ export default function Home() {
                       <div style={{ position: "absolute", top: "15px", left: "15px", background: "var(--primary-red)", color: "white", padding: "6px 14px", borderRadius: "30px", fontSize: "0.85rem", fontWeight: "bold", letterSpacing: "1px" }}>{newsItem.tag}</div>
                     </div>
                     <div style={{ padding: "25px", display: "flex", flexDirection: "column", flex: 1 }}>
-                      <div style={{ color: "var(--text-light)", fontSize: "0.85rem", marginBottom: "10px", display: "flex", alignItems: "center", gap: "8px" }}>
-                        <span>{newsItem.date}</span>
-                      </div>
+                      
                       <h3 style={{ fontSize: "1.15rem", color: "var(--text-dark)", marginBottom: "10px", lineHeight: 1.4, fontFamily: "var(--font-heading)", fontWeight: 700 }}>
                         {newsItem.title}
                       </h3>

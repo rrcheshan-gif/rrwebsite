@@ -68,7 +68,7 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
           </h1>
           
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "20px", color: "#f8fafc", fontSize: "1.1rem", fontWeight: 600, textShadow: "0 2px 4px rgba(0,0,0,0.8)" }}>
-            <span style={{ display: "flex", alignItems: "center", gap: "8px" }}><Clock size={16} color="var(--primary-red)" /> {news.date}</span>
+            
           </div>
         </div>
       </section>
