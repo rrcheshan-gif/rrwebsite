@@ -2493,18 +2493,7 @@ body {
 
 
 
-/* Dark gradient at the very top to make navbar text/logo visible */
-body::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 150px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
-  pointer-events: none;
-  z-index: 50;
-}
+/* Removed top body gradient to fix dark bleed over the slanted hero images */
 
 /* ============================================
    GLOBAL SLANTED HERO FIX
