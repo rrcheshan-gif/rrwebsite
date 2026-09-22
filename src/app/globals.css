@@ -2547,7 +2547,7 @@ body {
     padding-bottom: 40px !important;
   }
   .page-header::before { clip-path: polygon(0 0, 85% 0, 70% 100%, 0 100%); }
-  .page-header::after { clip-path: polygon(85% 0, 88% 0, 73% 100%, 70% 100%); }
+  
 }
 
 /* Ensure contents sit above the pseudo-elements */
@@ -2881,3 +2881,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+
+
+.page-header::after { display: none !important; }
