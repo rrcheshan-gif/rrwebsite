@@ -87,6 +87,7 @@ export default function Home() {
 
   return (
     <>
+      <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', borderWidth: 0 }}>RR Construction (Pvt) Ltd - Leading Construction & Heavy Civil Engineering Company in Sri Lanka</h1>
       {/* FULLSCREEN HERO SECTION */}
       <div className="hero-contained" style={{ padding: '0', margin: '0', backgroundColor: '#0f172a', display: 'block', position: 'relative' }}>
         <div className="hero-fullscreen" style={{ position: 'relative', width: '100%', height: '100vh', minHeight: '600px', overflow: 'hidden', transform: 'translateZ(0)', isolation: 'isolate', WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}>
