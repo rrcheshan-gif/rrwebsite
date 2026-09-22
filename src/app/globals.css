@@ -1820,7 +1820,7 @@ ul {
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
-  background-position: center center !important;
+  background-position: right center !important;
     background-size: cover !important;
 }
 
@@ -2861,15 +2861,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
   
-  /* Special offset for company overview panorama */
-  .overview-hero-bg {
-    background-size: auto 100% !important;
-    background-position: calc(max(58vw, 750px) - 40px) center !important;
-    background-repeat: no-repeat !important;
-  }
-  @media (max-width: 768px) {
-    .overview-hero-bg {
-      background-size: cover !important;
-      background-position: center !important;
-    }
-  }
+  
+
+
