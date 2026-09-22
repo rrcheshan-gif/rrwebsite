@@ -918,7 +918,7 @@ ul {
     color: #ffffff !important;
     display: flex !important;
     align-items: center !important;
-    justify-content: center !important;
+    justify-content: flex-start !important;
   }
 
   .nav-extra-actions {
@@ -936,7 +936,7 @@ ul {
   .footer-logo-container,
   .footer-logo-text,
   .footer-social-links {
-    justify-content: center !important;
+    justify-content: flex-start !important;
   }
 
   .footer-grid h3::after {
@@ -1062,7 +1062,7 @@ ul {
   .hero-buttons a {
     width: 100% !important;
     max-width: 290px !important;
-    justify-content: center !important;
+    justify-content: flex-start !important;
   }
 }
 
@@ -1283,7 +1283,7 @@ ul {
   }
 
   .footer-brand-col .footer-logo-container {
-    justify-content: center !important;
+    justify-content: flex-start !important;
   }
 
   .footer-bio {
@@ -1292,7 +1292,7 @@ ul {
   }
 
   .footer-social-pills {
-    justify-content: center !important;
+    justify-content: flex-start !important;
   }
 
   .footer-heading::after {
@@ -1310,7 +1310,7 @@ ul {
   }
 
   .footer-contact-list li {
-    justify-content: center !important;
+    justify-content: flex-start !important;
     text-align: center !important;
   }
 }
@@ -1781,7 +1781,7 @@ ul {
 .logo-text, .footer-logo-text {
       display: flex !important;
       flex-direction: column !important;
-      justify-content: center !important;
+      justify-content: flex-start !important;
       transform: translateY(2px) !important;
     }
 
@@ -1819,7 +1819,7 @@ ul {
   min-height: 55vh !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   background-position: center center !important;
     background-size: cover !important;
 }
@@ -2157,7 +2157,7 @@ body {
     width: 100% !important;
     max-width: 280px !important;
     text-align: center !important;
-    justify-content: center !important;
+    justify-content: flex-start !important;
   }
 
   /* ── CORPORATE PROFILE COLLAGE ── */
@@ -2501,7 +2501,7 @@ body {
   overflow: hidden;
   text-align: left !important;
   /* Reset some paddings */
-  padding-top: 120px !important;
+  padding-top: 100px !important;
   padding-bottom: 60px !important;
   border-radius: 0 !important; /* Make it edge to edge */
   margin: 0 !important;
@@ -2849,6 +2849,9 @@ h1, h2, h3, h4, h5, h6 {
 .dropdown-header a.active::after {
     width: 100% !important;
 }
+
+
+
 
 
 
