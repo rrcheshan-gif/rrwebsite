@@ -2850,15 +2850,4 @@ h1, h2, h3, h4, h5, h6 {
     width: 100% !important;
 }
 
-/* Special offset for company overview panorama */
-.overview-hero-bg {
-    background-size: auto 100% !important;
-    background-position: calc(max(58vw, 750px) - 40px) center !important;
-    background-repeat: no-repeat !important;
-}
-@media (max-width: 768px) {
-    .overview-hero-bg {
-        background-size: cover !important;
-        background-position: center !important;
-    }
-}
+/* Removed overview-hero-bg offset */
