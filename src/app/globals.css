@@ -2864,3 +2864,15 @@ h1, h2, h3, h4, h5, h6 {
   
 
 
+  
+  /* Special fix for panoramic hero images to prevent vertical zooming while ensuring no left gap */
+  .panorama-header {
+    background-size: auto 100% !important;
+    background-position: right center !important;
+    background-repeat: no-repeat !important;
+  }
+  @media (max-width: 768px) {
+    .panorama-header {
+      background-size: cover !important;
+    }
+  }

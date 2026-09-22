@@ -22,7 +22,7 @@ export default function AboutStory() {
       
       {/* Hero Section */}
       <section 
-          className="page-header" 
+          className="page-header panorama-header" 
           style={{ 
             backgroundImage: "url('/images/about/overview-image.jpg')", 
             backgroundColor: "#1b2738",  
