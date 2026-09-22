@@ -109,7 +109,7 @@ export default function HistoryTimeline() {
               <section 
           className="page-header" 
           style={{ 
-            backgroundImage: "url('/images/projects/BBP/hero.jpeg')", 
+            backgroundImage: "url('/images/about/blueprint-blue-bg.webp')", 
             backgroundSize: "cover", 
             backgroundPosition: "center top", 
             minHeight: isMobile ? "400px" : "600px", 
