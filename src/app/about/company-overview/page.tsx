@@ -24,7 +24,7 @@ export default function AboutStory() {
       <section 
           className="page-header" 
           style={{ 
-            backgroundImage: "url('/images/about/overview-image.jpg')", 
+            backgroundImage: "url('/images/about/blueprint-bg.webp')", 
             backgroundColor: "#1b2738",  
             minHeight: isMobile ? "400px" : "600px", 
             display: "flex", 
@@ -89,3 +89,4 @@ export default function AboutStory() {
     </div>
   );
 }
+
