@@ -4,23 +4,20 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 
+import FakeRecaptcha from '@/app/components/FakeRecaptcha';
 import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 export default function Career() {
   
   const [status, setStatus] = useState('');
-  const [captchaA, setCaptchaA] = useState(0);
-  const [captchaB, setCaptchaB] = useState(0);
-  const [captchaAns, setCaptchaAns] = useState('');
+  const [captchaVerified, setCaptchaVerified] = useState(false);
 
-  useEffect(() => {
-    setCaptchaA(Math.floor(Math.random() * 10) + 1);
-    setCaptchaB(Math.floor(Math.random() * 10) + 1);
-  }, []);
+  
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('loading');
     const form = e.target as HTMLFormElement;
+    if (!captchaVerified) { alert('Please verify that you are not a robot.'); setStatus(''); return; }
     const formData = new FormData(form);
 
     try {
@@ -32,9 +29,7 @@ export default function Career() {
       if (response.ok) {
         setStatus('success');
         form.reset();
-        setCaptchaAns('');
-        setCaptchaA(Math.floor(Math.random() * 10) + 1);
-        setCaptchaB(Math.floor(Math.random() * 10) + 1);
+        setCaptchaVerified(false);
       } else {
         setStatus('error');
       }
@@ -158,9 +153,8 @@ export default function Career() {
                     <label style={{ display: "block", marginBottom: "8px", fontWeight: 500, color: "var(--text-dark)" }}>Upload CV/Resume (PDF)</label>
                     <input type="file" name="file" accept=".pdf,.doc,.docx" required style={{ width: "100%", padding: "10px", border: "1px dashed var(--input-border)", borderRadius: "8px", background: "var(--input-bg)", color: "var(--text-dark)" }} />
                   </div>
-                  <div style={{ marginBottom: "30px" }}>
-                    <label style={{ display: "block", marginBottom: "8px", fontWeight: 500, color: "var(--text-dark)" }}>Security Question: What is {captchaA} + {captchaB}?</label>
-                    <input type="text" value={captchaAns} onChange={(e) => setCaptchaAns(e.target.value)} required style={{ width: "100%", padding: "10px", border: "1px solid var(--input-border)", borderRadius: "8px", background: "var(--input-bg)", color: "var(--text-dark)" }} placeholder="Enter answer here" />
+                  <div style={{ marginBottom: "30px", display: "flex", justifyContent: "center" }}>
+                    <FakeRecaptcha onChange={(v) => setCaptchaVerified(v)} />
                   </div>
                   <button type="submit" disabled={status === 'loading'} className="btn btn-primary" style={{ width: "100%", opacity: status === 'loading' ? 0.7 : 1 }}>
                     {status === 'loading' ? 'Sending...' : 'Submit Application'}

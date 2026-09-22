@@ -14,14 +14,9 @@ export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [selectedPlant, setSelectedPlant] = useState<string>(defaultPlant || "");
   const [selectedProduct, setSelectedProduct] = useState<string>("");
-  const [captchaA, setCaptchaA] = useState(0);
-  const [captchaB, setCaptchaB] = useState(0);
-  const [captchaAns, setCaptchaAns] = useState('');
+  const [captchaVerified, setCaptchaVerified] = useState(false);
 
-  useEffect(() => {
-    setCaptchaA(Math.floor(Math.random() * 10) + 1);
-    setCaptchaB(Math.floor(Math.random() * 10) + 1);
-  }, []);
+  
 
   useEffect(() => {
     if (defaultPlant) {
@@ -31,13 +26,7 @@ export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (parseInt(captchaAns) !== captchaA + captchaB) {
-      alert('Incorrect CAPTCHA answer. Please try again.');
-      setCaptchaA(Math.floor(Math.random() * 10) + 1);
-      setCaptchaB(Math.floor(Math.random() * 10) + 1);
-      setCaptchaAns('');
-      return;
-    }
+    if (!captchaVerified) { alert('Please verify that you are not a robot.'); return; }
     setIsSubmitting(true);
     setStatus("idle");
 
@@ -59,9 +48,7 @@ export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants
       if (response.ok) {
         setStatus("success");
         (e.target as HTMLFormElement).reset();
-        setCaptchaAns('');
-        setCaptchaA(Math.floor(Math.random() * 10) + 1);
-        setCaptchaB(Math.floor(Math.random() * 10) + 1);
+        setCaptchaVerified(false);
         setSelectedProduct("");
       } else {
         setStatus("error");
@@ -241,18 +228,8 @@ export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants
                   <textarea id="q-message" name="message" rows={4} placeholder="Mention any grading specifications, delivery schedule, or special requirements..." style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", background: "var(--input-bg)", color: "var(--text-dark)", borderRadius: "8px", fontFamily: "inherit", resize: "vertical" }}></textarea>
                 </div>
 
-                <div style={{ background: "rgba(0,0,0,0.02)", padding: "15px", borderRadius: "8px", border: "1px solid var(--border-soft)", display: "flex", alignItems: "center", gap: "15px", flexWrap: "wrap" }}>
-                  <label htmlFor="q-captcha" style={{ color: "var(--text-dark)", fontSize: "0.9rem", fontWeight: "bold", margin: 0 }}>
-                    Human Verification: What is {captchaA} + {captchaB}? *
-                  </label>
-                  <input 
-                    type="number" 
-                    id="q-captcha" 
-                    value={captchaAns}
-                    onChange={(e) => setCaptchaAns(e.target.value)}
-                    style={{ width: "100px", padding: "10px", border: "1px solid var(--input-border)", background: "var(--white)", color: "var(--text-dark)", borderRadius: "8px" }} 
-                    required 
-                  />
+                <div style={{ background: "rgba(0,0,0,0.02)", padding: "15px", borderRadius: "8px", border: "1px solid var(--border-soft)", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                  <FakeRecaptcha onChange={(v) => setCaptchaVerified(v)} />
                 </div>
 
                 <div style={{ textAlign: "center", marginTop: "10px" }}>
