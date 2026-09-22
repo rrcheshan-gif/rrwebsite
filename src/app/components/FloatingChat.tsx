@@ -14,17 +14,34 @@ export default function FloatingChat() {
     e.preventDefault();
     if (!inputValue.trim()) return;
     
-    // Add user message
-    setMessages([...messages, { text: inputValue, sender: "user" }]);
+    const userMsg = inputValue.trim();
+    setMessages([...messages, { text: userMsg, sender: "user" }]);
     setInputValue('');
     
-    // Auto reply after delay
     setTimeout(() => {
-      setMessages(prev => [...prev, { 
-        text: "Thank you for your message! Our team will get back to you shortly. You can also reach us directly at 011-2433427.", 
-        sender: "bot" 
-      }]);
-    }, 1000);
+      let botResponse = "Thank you for your message. Our team will get back to you shortly, or you can call us at 011-2433427 for immediate assistance.";
+      const lower = userMsg.toLowerCase();
+      
+      if (lower.match(/hello|hi|hey|ayubowan|good morning|good afternoon/)) {
+        botResponse = "Hello there! How can I assist you with RR Construction services today?";
+      } else if (lower.match(/contact|phone|call|email|reach|number/)) {
+        botResponse = "You can reach us directly at 011-2433427 or email us at info@rrconstruction.lk.";
+      } else if (lower.match(/address|location|where|office/)) {
+        botResponse = "Our head office is located in Colombo, Sri Lanka. We also operate batching plants and project sites island-wide.";
+      } else if (lower.match(/services|what do you do|expertise/)) {
+        botResponse = "We specialize in Road Construction, Bridges, Maritime Construction, Dredging, and Water Infrastructure. Check out our Services menu!";
+      } else if (lower.match(/career|job|vacancy|work|apply/)) {
+        botResponse = "We are always looking for talented individuals! Please visit our Careers page to submit your application and CV.";
+      } else if (lower.match(/project|portfolio|built/)) {
+        botResponse = "We have completed many landmark projects across Sri Lanka, including major highways, bridges, and the Ircon Mannar Railway project.";
+      } else if (lower.match(/m-sand|sand|aggregate|concrete|material/)) {
+        botResponse = "We produce high-quality M-Sand, aggregates, and ready-mix concrete. You can request a quote directly from our Resources section!";
+      } else if (lower.match(/price|cost|quote|estimate/)) {
+        botResponse = "For pricing and quotes, please visit the specific material page under Resources and use the 'Request Quote' form.";
+      }
+
+      setMessages(prev => [...prev, { text: botResponse, sender: "bot" }]);
+    }, 800);
   };
 
   return (
