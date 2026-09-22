@@ -12,9 +12,9 @@ export default function People() {
 
       {/* Page Header */}
       <section className="page-header" style={{ 
-        backgroundImage: "url('/images/projects/IRCON-MANNAR/Background%20image.jpeg')",
+        backgroundImage: "url('/images/about/our-people-team.jpg')",
         backgroundSize: "cover",
-        backgroundPosition: "right center",
+        backgroundPosition: "center center",
         padding: "140px 20px 40px", 
         textAlign: "left", 
         position: "relative", 
@@ -31,22 +31,17 @@ export default function People() {
 
             {/* Intro */}
       <section style={{ padding: "60px 20px 50px" }}>
-        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 500px), 1fr))", gap: "60px", alignItems: "center" }}>
-          <div style={{ textAlign: "left" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
-              <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
-              <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OUR TEAM</h4>
-            </div>
-            <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", marginBottom: "20px", fontWeight: 800, lineHeight: 1.1 }}>
-              The Engine of RR <span className="text-gradient" style={{ fontWeight: 300 }}>Construction</span>
-            </h2>
-            <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "var(--text-light)", marginBottom: "40px", textAlign: "left" }}>
-              Infrastructure isn't built by machines; it's built by people. From our boardroom in Colombo to the furthest reaches of our highway projects, the RR Construction family consists of over <strong>1,400+ dedicated professionals</strong>. We cultivate an environment that rewards precision, promotes safety, and encourages lifelong learning.
-            </p>
+        <div className="container" style={{ maxWidth: "1500px", margin: "0 auto", textAlign: "left" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "15px" }}>
+            <div style={{ width: "40px", height: "2px", background: "var(--primary-red)" }}></div>
+            <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>OUR TEAM</h4>
           </div>
-          <div>
-            <img src="/images/about/our-people-team.jpg" alt="Our Team" style={{ width: "100%", height: "auto", borderRadius: "12px", boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }} />
-          </div>
+          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", marginBottom: "20px", fontWeight: 800, lineHeight: 1.1 }}>
+            The Engine of RR <span className="text-gradient" style={{ fontWeight: 300 }}>Construction</span>
+          </h2>
+          <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "var(--text-light)", marginBottom: "40px", textAlign: "left" }}>
+            Infrastructure isn't built by machines; it's built by people. From our boardroom in Colombo to the furthest reaches of our highway projects, the RR Construction family consists of over <strong>1,400+ dedicated professionals</strong>. We cultivate an environment that rewards precision, promotes safety, and encourages lifelong learning.
+          </p>
         </div>
       </section>
 
@@ -81,5 +76,7 @@ export default function People() {
     </div>
   );
 }
+
+
 
 
