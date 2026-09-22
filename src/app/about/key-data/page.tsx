@@ -31,7 +31,7 @@ export default function KeyDataPage() {
   return (
     <main style={{ backgroundColor: "var(--white)", minHeight: "100vh" }}>
       {/* Hero Section */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/about/key-data-hero.jpg')" }}>
+      <section className="page-header overview-hero-bg" style={{ backgroundImage: "url('/images/about/key-data-hero.jpg')" }}>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <AutoBreadcrumb />
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textAlign: "left" }}>
