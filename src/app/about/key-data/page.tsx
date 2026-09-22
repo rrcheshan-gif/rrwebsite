@@ -31,7 +31,7 @@ export default function KeyDataPage() {
   return (
     <main style={{ backgroundColor: "var(--white)", minHeight: "100vh" }}>
       {/* Hero Section */}
-      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/projects/Beruwala/WhatsApp%20Image%202026-07-28%20at%2013.34.00.jpeg')", backgroundColor: "#1b2738", backgroundSize: "max(55vw, 1100px) auto", backgroundRepeat: "no-repeat", backgroundPosition: "right center", color: 'var(--white)', padding: isMobile ? "120px 20px 20px" : "160px 20px 20px", minHeight: isMobile ? "400px" : "600px", display: "flex", flexDirection: "column", justifyContent: "flex-end", textAlign: 'left' }}>
+      <section className="page-header overview-hero-bg" style={{ backgroundImage: "url('/images/about/key-data-hero.jpg')" }}>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <AutoBreadcrumb />
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)", textAlign: "left" }}>
