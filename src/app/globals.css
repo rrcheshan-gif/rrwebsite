@@ -918,7 +918,7 @@ ul {
     color: #ffffff !important;
     display: flex !important;
     align-items: center !important;
-    justify-content: flex-start !important;
+    justify-content: center !important;
   }
 
   .nav-extra-actions {
@@ -936,7 +936,7 @@ ul {
   .footer-logo-container,
   .footer-logo-text,
   .footer-social-links {
-    justify-content: flex-start !important;
+    justify-content: center !important;
   }
 
   .footer-grid h3::after {
@@ -1062,7 +1062,7 @@ ul {
   .hero-buttons a {
     width: 100% !important;
     max-width: 290px !important;
-    justify-content: flex-start !important;
+    justify-content: center !important;
   }
 }
 
@@ -1283,7 +1283,7 @@ ul {
   }
 
   .footer-brand-col .footer-logo-container {
-    justify-content: flex-start !important;
+    justify-content: center !important;
   }
 
   .footer-bio {
@@ -1292,7 +1292,7 @@ ul {
   }
 
   .footer-social-pills {
-    justify-content: flex-start !important;
+    justify-content: center !important;
   }
 
   .footer-heading::after {
@@ -1310,7 +1310,7 @@ ul {
   }
 
   .footer-contact-list li {
-    justify-content: flex-start !important;
+    justify-content: center !important;
     text-align: center !important;
   }
 }
@@ -1781,7 +1781,7 @@ ul {
 .logo-text, .footer-logo-text {
       display: flex !important;
       flex-direction: column !important;
-      justify-content: flex-start !important;
+      justify-content: center !important;
       transform: translateY(2px) !important;
     }
 
@@ -1819,7 +1819,7 @@ ul {
   min-height: 55vh !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: flex-start !important;
+  justify-content: center !important;
   background-position: right center !important;
     background-size: cover !important;
 }
@@ -1909,7 +1909,7 @@ ul {
     height: 100vh !important;
     background: var(--bg-light) !important;
     flex-direction: column !important;
-    justify-content: flex-start !important;
+    justify-content: center !important;
     align-items: flex-start !important;
     padding: 90px 30px 40px !important;
     box-shadow: -10px 0 30px rgba(0,0,0,0.1) !important;
@@ -2157,7 +2157,7 @@ body {
     width: 100% !important;
     max-width: 280px !important;
     text-align: center !important;
-    justify-content: flex-start !important;
+    justify-content: center !important;
   }
 
   /* ── CORPORATE PROFILE COLLAGE ── */
@@ -2501,7 +2501,7 @@ body {
   overflow: hidden;
   text-align: left !important;
   /* Reset some paddings */
-  padding-top: 100px !important;
+  padding-top: 120px !important;
   padding-bottom: 60px !important;
   border-radius: 0 !important; /* Make it edge to edge */
   margin: 0 !important;
@@ -2543,7 +2543,7 @@ body {
 
 @media (max-width: 768px) {
   .page-header {
-    padding-top: 100px !important;
+    padding-top: 120px !important;
     padding-bottom: 40px !important;
   }
   .page-header::before { clip-path: polygon(0 0, 85% 0, 70% 100%, 0 100%); }
@@ -2586,7 +2586,7 @@ body {
 
 .page-header > div:last-child > div {
   align-items: flex-start !important;
-  justify-content: flex-start !important;
+  justify-content: center !important;
 }
 
 .page-header > div:last-child > h1,
@@ -2597,7 +2597,7 @@ body {
   max-width: 750px !important;
   white-space: normal !important;
   align-items: flex-start !important;
-  justify-content: flex-start !important;
+  justify-content: center !important;
 }
 
 /* Restrict text width so it never overflows the navy blue slant */
@@ -2849,6 +2849,7 @@ h1, h2, h3, h4, h5, h6 {
 .dropdown-header a.active::after {
     width: 100% !important;
 }
+
 
 
 

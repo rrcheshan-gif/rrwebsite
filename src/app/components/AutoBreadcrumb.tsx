@@ -112,7 +112,7 @@ export default function AutoBreadcrumb() {
       fontSize: '0.85rem',
       color: 'rgba(255,255,255,0.7)',
       marginTop: '0px',
-      marginBottom: '15px'
+      marginBottom: '40px'
     }}>
       {allItems.map((item, index) => (
         <span key={index} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
