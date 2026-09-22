@@ -1820,7 +1820,7 @@ ul {
   display: flex !important;
   flex-direction: column !important;
   justify-content: flex-start !important;
-  background-position: center center !important;
+  background-position: right center !important;
     background-size: cover !important;
 }
 
@@ -2849,6 +2849,7 @@ h1, h2, h3, h4, h5, h6 {
 .dropdown-header a.active::after {
     width: 100% !important;
 }
+
 
 
 
