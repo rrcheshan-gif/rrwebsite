@@ -12,22 +12,20 @@ export default function People() {
 
       {/* Page Header */}
       <section className="page-header" style={{ 
-        backgroundColor: "#0f172a",
+        backgroundColor: "#1b2738",
         padding: "140px 20px 40px", 
         textAlign: "left", 
-        position: "relative", 
+        position: "relative",
+        isolation: "isolate",
         borderRadius: '32px', 
         margin: '0 20px 40px', 
         overflow: "hidden" 
       }}>
-        {/* Blurred Background to fill gaps */}
-        <div style={{ position: "absolute", top: -30, left: -30, right: -30, bottom: -30, backgroundImage: "url('/images/page-headers/people-team-final.jpg')", backgroundSize: "cover", backgroundPosition: "center", filter: "blur(20px)", opacity: 0.5, zIndex: 0 }}></div>
+        {/* Blurred Background to fill gaps - Z-index -2 to sit behind the global diagonal slant */}
+        <div style={{ position: "absolute", top: -30, left: -30, right: -30, bottom: -30, backgroundImage: "url('/images/page-headers/people-team-final.jpg')", backgroundSize: "cover", backgroundPosition: "center", filter: "blur(20px)", opacity: 0.8, zIndex: -2 }}></div>
         
-        {/* Sharp Image with Contain to avoid cropping */}
-        <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundImage: "url('/images/page-headers/people-team-final.jpg')", backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "right center", zIndex: 1 }}></div>
-        
-        {/* Dark Gradient Overlay for Text Readability */}
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(90deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.6) 40%, rgba(15, 23, 42, 0.1) 100%)", zIndex: 2 }}></div>
+        {/* Sharp Image with Contain to avoid cropping - Z-index -1 to sit behind the global diagonal slant */}
+        <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundImage: "url('/images/page-headers/people-team-final.jpg')", backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "right center", zIndex: -1 }}></div>
 
         <div className="container" style={{ position: "relative", zIndex: 3 }}>
           <AutoBreadcrumb />
