@@ -70,7 +70,7 @@ export default function OngoingProjects() {
         <div className='container' style={{ maxWidth: "1500px" }}>
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))',
+            gridTemplateColumns: 'repeat(4, 1fr)',
             gap: '30px',
             padding: '20px'
           }}>
@@ -120,6 +120,8 @@ export default function OngoingProjects() {
     </div>
   );
 }
+
+
 
 
 

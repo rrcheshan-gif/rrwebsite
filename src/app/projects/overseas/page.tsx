@@ -139,13 +139,14 @@ export default function Projects() {
 
         
         {/* Projects Grid */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 340px), 1fr))", gap: "30px", paddingBottom: "80px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "30px", paddingBottom: "80px" }}>
           {filteredProjects.map(renderProjectCard)}
         </div>
       </div>
     </div>
   );
 }
+
 
 
 
