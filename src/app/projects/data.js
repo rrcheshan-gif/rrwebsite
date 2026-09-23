@@ -1545,8 +1545,24 @@ const projectsData = [
     duration: "18 Months",
     year: 2014
   },
-  {
-    id: 'project-79',
+      {
+      id: 'project-108',
+      type: 'completed', category: "bridges",
+      title: "Southern Transport Development Project-Structure construction from 50+000km to 57+000km",
+      desc: "Contract includes extension of RC Box Culverts, RC Box Underpass, Metal Arch Underpass, High Profile Arch, and RC Pipe in the mainline within Chain age 50+000km to 57+000km and the construction of Bridge No.20A",
+      status: "Completed",
+      client: "Road Development Authority",
+      duration: "10 months",
+      year: 2014,
+      heroImage: '/images/projects/new-folder/southern-transport-structure/1.jpg',
+      galleryImages: [
+        '/images/projects/new-folder/southern-transport-structure/1.jpg',
+        '/images/projects/new-folder/southern-transport-structure/2.jpg',
+        '/images/projects/new-folder/southern-transport-structure/3.jpg'
+      ]
+    },
+    {
+      id: 'project-79',
     type: 'completed', category: "bridges",
     title: "Padawkema Udamaththala Bridge",
     heroImage: "/images/projects/new-folder/padawkema-bridge/1.jpg",
@@ -1862,6 +1878,7 @@ if (typeof module !== 'undefined' && module.exports) {
     module.exports = projectsData;
 }
 export default projectsData;
+
 
 
 
