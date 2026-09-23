@@ -43,42 +43,26 @@ export default function People() {
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
 
-      {/* Hero Section — full-quality photo, no diagonal override */}
-      <style dangerouslySetInnerHTML={{ __html: `.people-hero::before, .people-hero::after { display: none !important; }` }} />
-      <section className="page-header people-hero" style={{
+      {/* Hero Section — Standard page-header with diagonal slant + full image on right */}
+      <section className="page-header" style={{
         backgroundImage: "url('/images/page-headers/people-team-final.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center 30%",
-        minHeight: isMobile ? "400px" : "580px",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "flex-end",
-        padding: isMobile ? "120px 20px 40px" : "160px 20px 50px",
-        textAlign: "left",
-        position: "relative",
-        borderRadius: isMobile ? "20px" : "32px",
-        margin: isMobile ? "0 12px 30px" : "0 20px 50px",
-        overflow: "hidden",
-        boxShadow: "0 20px 60px rgba(0,0,0,0.25)",
+        backgroundSize: "auto 100%",
+        backgroundPosition: "right center",
+        backgroundRepeat: "no-repeat",
+        minHeight: isMobile ? "350px" : "520px",
       }}>
-        {/* Dark gradient overlay for text readability */}
-        <div style={{
-          position: "absolute", top: 0, left: 0, width: "100%", height: "100%",
-          background: "linear-gradient(to top, rgba(10,14,26,0.95) 0%, rgba(10,14,26,0.5) 50%, transparent 100%)",
-          zIndex: 1
-        }} />
-        <div className="container" style={{ position: "relative", zIndex: 2 }}>
+        <div className="container">
           <AutoBreadcrumb />
           <h1 style={{
-            color: "white", fontFamily: "var(--font-heading)",
-            fontSize: "clamp(2.2rem, 7vw, 5rem)",
-            margin: "0 0 12px", fontWeight: 800,
-            textShadow: "0 4px 30px rgba(0,0,0,0.6)",
-            lineHeight: 1.05,
+            fontFamily: "var(--font-heading)",
+            fontSize: isMobile ? "2.4rem" : "clamp(2.5rem, 7vw, 5rem)",
+            margin: "0 0 14px", fontWeight: 800,
+            lineHeight: 1.05, color: "white",
+            textShadow: "0 4px 20px rgba(0,0,0,0.6)",
           }}>
             Our <span style={{ color: "var(--primary-red)" }}>People</span>
           </h1>
-          <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "clamp(1rem, 2.5vw, 1.25rem)", maxWidth: "580px", lineHeight: 1.7, margin: 0 }}>
+          <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "clamp(0.95rem, 2vw, 1.1rem)", maxWidth: "460px", lineHeight: 1.7, margin: 0 }}>
             Over 1,400+ professionals building the infrastructure of tomorrow — together.
           </p>
         </div>
