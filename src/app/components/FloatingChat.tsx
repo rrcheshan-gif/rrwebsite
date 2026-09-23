@@ -1,8 +1,10 @@
-﻿"use client";
+"use client";
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 export default function FloatingChat() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
     { text: "Ayubowan! Welcome to RR Construction.", sender: "bot" },
@@ -15,6 +17,8 @@ export default function FloatingChat() {
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+
+  if (pathname === '/launch') return null;
 
   useEffect(() => {
     scrollToBottom();

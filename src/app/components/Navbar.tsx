@@ -43,6 +43,9 @@ export default function Navbar() {
     if (path !== '/' && pathname.startsWith(path)) return true;
     return false;
   };
+
+  // Hide completely on /launch page
+  if (pathname === '/launch') return null;
   
   const isExactActive = (path) => pathname === path;
 
