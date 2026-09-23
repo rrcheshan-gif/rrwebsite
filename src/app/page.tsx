@@ -1,8 +1,8 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Map, GitMerge, Building2, Waves, Leaf, HardHat, Anchor, Droplets, MapPin, Clock, Mountain } from "lucide-react";
+import { ArrowRight, Map, GitMerge, Building2, Waves, Leaf, HardHat, Anchor, Droplets, MapPin, Clock, Mountain, Train } from "lucide-react";
 import { COMPANY_DATA } from '@/data/company-data';
 import { NEWS_DATA } from '@/data/news-data';
 
@@ -143,7 +143,7 @@ export default function Home() {
           {/* Bottom fade */}
           
 
-          {/* Foreground Content — CENTER ALIGNED */}
+          {/* Foreground Content â€” CENTER ALIGNED */}
           <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 3, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 clamp(20px, 5vw, 40px)', textAlign: 'center' }}>
             <div style={{ width: '100%', maxWidth: '900px', marginTop: '60px' }}>
               {slides.map((slide, index) => (
@@ -399,7 +399,8 @@ export default function Home() {
               { title: "Civil Structures", img: "/images/wellamankara/building-projects.jpg", icon: <Building2 size={30} />, text: "Specialized structural engineering encompassing water retaining facilities, towers, and heavy steel fabrication." },
               { title: "Maritime & Water", img: "/images/maritime-harbour-site.jpg", icon: <Waves size={30} />, text: "Dredging, reclamation, and water supply systems engineered to serve communities at scale." },
               { title: "Landslide Mitigation", img: "/images/home/landslide-mitigation-new.jpeg", icon: <Mountain size={30} />, text: "Expert slope stabilization and rock-fall protection systems in critical hill-country zones." },
-                { title: "Piling & Foundation", img: "/images/home/piling-service-card.jpg", icon: <HardHat size={30} />, position: "center 20%", text: "Advanced geotechnical solutions including bored cast-in-situ piling and retaining structures." }
+                { title: "Piling & Foundation", img: "/images/home/piling-service-card.jpg", icon: <HardHat size={30} />, position: "center 20%", text: "Advanced geotechnical solutions including bored cast-in-situ piling and retaining structures." },
+              { title: "Railway Civil Works", img: "/images/projects/new-folder/maho-railway/1.jpg", icon: <Train size={30} />, text: "Modernizing railway infrastructure and executing large-scale civil components for track upgrades." }
             ].map((srv, i) => (
               <div key={i} className="modern-service-card glass-panel hover-lift" style={{ width: "100%", minHeight: "280px", position: "relative", overflow: "hidden", padding: 0, borderRadius: "20px" }}>
                 <div style={{ width: "100%", height: "100%", transform: srv.scale || "scale(1)" }}>
@@ -616,5 +617,6 @@ export default function Home() {
     </>
   );
 }
+
 
 
