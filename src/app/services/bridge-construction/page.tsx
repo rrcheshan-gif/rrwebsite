@@ -28,9 +28,9 @@ export default function BridgeConstructionPage({ hideHero = false }: Props) {
         <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "url('/images/page-headers/technology-hero.jpg')",
-          backgroundColor: '#1b2738', backgroundSize: 'auto 100%', backgroundRepeat: 'no-repeat',
-          backgroundPosition: "right center",
+          backgroundImage: "url('/images/about/blueprint-blue-bg-wide.webp')",
+          backgroundSize: 'cover',
+          backgroundPosition: "center",
           color: 'var(--white)',
           padding: isMobile ? '40px 20px' : '70px 20px',
           textAlign: 'center'
@@ -162,4 +162,6 @@ export default function BridgeConstructionPage({ hideHero = false }: Props) {
     </main>
   );
 }
+
+
 
