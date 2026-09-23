@@ -23,7 +23,7 @@ export default function HealthAndSafety() {
       {/* Hero Section */}
       <section 
         className="page-header" style={{  
-          backgroundImage: "url('/images/page-headers/health-safety-hero-wide.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
+          backgroundImage: "url('/images/about/blueprint-blue-bg-wide.webp')", 
           padding: isMobile ? "60px 20px" : "100px 20px", 
           textAlign: "center", 
           position: "relative", 
@@ -211,6 +211,7 @@ export default function HealthAndSafety() {
     </div>
   );
 }
+
 
 
 
