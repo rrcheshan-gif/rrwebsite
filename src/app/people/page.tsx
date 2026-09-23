@@ -13,6 +13,10 @@ export default function People() {
       {/* Page Header */}
       <section className="page-header" style={{ 
         backgroundColor: "#1b2738",
+        backgroundImage: "url('/images/page-headers/people-team-padded.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "right center",
+        backgroundRepeat: "no-repeat",
         padding: "140px 20px 40px", 
         textAlign: "left", 
         position: "relative",
@@ -21,11 +25,9 @@ export default function People() {
         margin: '0 20px 40px', 
         overflow: "hidden" 
       }}>
-        {/* Blurred Background to fill gaps - Z-index -2 to sit behind the global diagonal slant */}
-        <div style={{ position: "absolute", top: -30, left: -30, right: -30, bottom: -30, backgroundImage: "url('/images/page-headers/people-team-final.jpg')", backgroundSize: "cover", backgroundPosition: "center", filter: "blur(20px)", opacity: 0.8, zIndex: -2 }}></div>
-        
-        {/* Sharp Image with Contain to avoid cropping - Z-index -1 to sit behind the global diagonal slant */}
-        <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundImage: "url('/images/page-headers/people-team-final.jpg')", backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "right center", zIndex: -1 }}></div>
+        {/* Soft edge gradient to hide the hard line of the padded image */}
+        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(to right, #1b2738 0%, rgba(27,39,56,0.8) 55%, transparent 100%)", pointerEvents: "none", zIndex: -1 }}></div>
+
 
         <div className="container" style={{ position: "relative", zIndex: 3 }}>
           <AutoBreadcrumb />
