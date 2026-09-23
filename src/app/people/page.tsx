@@ -11,23 +11,22 @@ export default function People() {
         
 
       {/* Page Header */}
-      <section className="page-header" style={{ 
-        backgroundColor: "#1b2738",
-        backgroundImage: "url('/images/page-headers/people-team-padded.jpg')",
+      <style dangerouslySetInnerHTML={{ __html: `
+        .people-hero::before, .people-hero::after { display: none !important; }
+      `}} />
+      <section className="page-header people-hero" style={{ 
+        backgroundImage: "url('/images/page-headers/people-team-final.jpg')",
         backgroundSize: "cover",
-        backgroundPosition: "right center",
-        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
         padding: "140px 20px 40px", 
         textAlign: "left", 
         position: "relative",
-        isolation: "isolate",
         borderRadius: '32px', 
         margin: '0 20px 40px', 
         overflow: "hidden" 
       }}>
-        {/* Soft edge gradient to hide the hard line of the padded image */}
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(to right, #1b2738 0%, rgba(27,39,56,0.8) 55%, transparent 100%)", pointerEvents: "none", zIndex: -1 }}></div>
-
+        {/* Dark Gradient Overlay for Text Readability */}
+        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(90deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.4) 60%, transparent 100%)", zIndex: 1 }}></div>
 
         <div className="container" style={{ position: "relative", zIndex: 3 }}>
           <AutoBreadcrumb />
