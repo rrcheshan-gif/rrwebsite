@@ -1057,7 +1057,12 @@ const projectsData = [
     client: "Road Development Authority",
     
     duration: "15 Months",
-    year: 2019
+    year: 2019,
+      heroImage: '/images/projects/new-folder/New Bridge at CH. 6+100 Udappuwa Town/1.jpg',
+      galleryImages: [
+        '/images/projects/new-folder/New Bridge at CH. 6+100 Udappuwa Town/1.jpg',
+        '/images/projects/new-folder/New Bridge at CH. 6+100 Udappuwa Town/2.jpg'
+      ]
   },
   {
     id: 'project-56',
@@ -1857,4 +1862,5 @@ if (typeof module !== 'undefined' && module.exports) {
     module.exports = projectsData;
 }
 export default projectsData;
+
 
