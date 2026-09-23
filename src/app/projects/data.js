@@ -1058,10 +1058,10 @@ const projectsData = [
     
     duration: "15 Months",
     year: 2019,
-      heroImage: '/images/projects/new-folder/New Bridge at CH. 6+100 Udappuwa Town/1.jpg',
+      heroImage: '/images/projects/new-folder/udappuwa-bridge/1.jpg',
       galleryImages: [
-        '/images/projects/new-folder/New Bridge at CH. 6+100 Udappuwa Town/1.jpg',
-        '/images/projects/new-folder/New Bridge at CH. 6+100 Udappuwa Town/2.jpg'
+        '/images/projects/new-folder/udappuwa-bridge/1.jpg',
+        '/images/projects/new-folder/udappuwa-bridge/2.jpg'
       ]
   },
   {
@@ -1862,5 +1862,6 @@ if (typeof module !== 'undefined' && module.exports) {
     module.exports = projectsData;
 }
 export default projectsData;
+
 
 
