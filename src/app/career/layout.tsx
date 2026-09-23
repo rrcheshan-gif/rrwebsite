@@ -1,7 +1,8 @@
-import { Metadata } from 'next';
-export const metadata: Metadata = {
-  title: 'Careers | RR Construction (Pvt) Ltd',
-  description: 'Join RR Construction (Pvt) Ltd. Explore exciting career opportunities in heavy civil engineering and construction in Sri Lanka.',
-  alternates: { canonical: 'https://www.rrconstruction.lk/career' }
+﻿export const metadata = {
+  title: 'Career Opportunities | RR Construction',
+  description: 'Join RR Construction, a leading heavy civil engineering company in Sri Lanka. View our open vacancies and apply online.',
+  alternates: {
+    canonical: 'https://www.rrconstruction.lk/career',
+  }
 };
-export default function Layout({ children }: { children: React.ReactNode }) { return <>{children}</>; }
+export default function CareerLayout({ children }: { children: React.ReactNode }) { return children; }

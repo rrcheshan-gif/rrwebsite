@@ -38,14 +38,14 @@ export const metadata: Metadata = {
       },
     ],
   },
+  alternates: {
+    canonical: '/',
+  },
   twitter: {
     card: 'summary_large_image',
     title: "RR Construction (Pvt) Ltd | Leading Construction & Heavy Civil Engineering Company in Sri Lanka",
     description: "RR Construction (Pvt) Ltd is a leading Sri Lankan construction and heavy civil engineering company specializing in highway and expressway construction, highways, bridges, infrastructure, harbour construction, geotechnical engineering, and sustainable construction solutions.",
     images: ['/images/og-image.jpg'],
-  },
-  alternates: {
-    canonical: 'https://www.rrconstruction.lk',
   },
 };
 
