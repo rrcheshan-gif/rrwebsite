@@ -112,6 +112,8 @@ export default function Career() {
                 <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.6rem", marginBottom: "25px", color: "var(--text-dark)" }}>Submit Your Application</h3>
                 
                 <form onSubmit={handleSubmit}>
+                    {/* Honeypot for spam bots */}
+                    <input type="text" name="honeypot" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
 
                   {status === 'success' && (
                     <div style={{ padding: "15px", marginBottom: "20px", background: "rgba(16, 185, 129, 0.1)", color: "#10b981", borderRadius: "8px", border: "1px solid rgba(16, 185, 129, 0.2)" }}>

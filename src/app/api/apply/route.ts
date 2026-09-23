@@ -3,8 +3,16 @@ import nodemailer from 'nodemailer';
 
 export async function POST(request: Request) {
   try {
+    // Basic Security: Referer Validation
+    const referer = request.headers.get('referer');
+    if (!referer || (!referer.includes('rrconstruction.lk') && !referer.includes('localhost'))) {
+      return NextResponse.json({ error: 'Unauthorized request origin' }, { status: 403 });
+    }
+
     const data = await request.formData();
     
+    const honeypot = data.get('honeypot');
+    if (honeypot) return NextResponse.json({ success: true, message: 'Application submitted successfully' }, { status: 200 }); // Spam bot trap
     const name = data.get('name') as string;
     const email = data.get('email') as string;
     const phone = data.get('phone') as string;

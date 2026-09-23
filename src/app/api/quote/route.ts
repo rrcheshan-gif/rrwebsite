@@ -3,7 +3,14 @@ import nodemailer from 'nodemailer';
 
 export async function POST(request: Request) {
   try {
+    // Basic Security: Referer Validation
+    const referer = request.headers.get('referer');
+    if (!referer || (!referer.includes('rrconstruction.lk') && !referer.includes('localhost'))) {
+      return NextResponse.json({ error: 'Unauthorized request origin' }, { status: 403 });
+    }
+
     const body = await request.json();
+    if (body.honeypot) return NextResponse.json({ success: true, message: 'Message sent successfully' }, { status: 200 }); // Spam bot trap
     const { name, company, email, phone, plant, product, qty, location, message } = body;
 
     // Use environment variables on Vercel, fallback to provided credentials

@@ -31,6 +31,7 @@ export default function Contact() {
           phone: formData.get('phone'),
           subject: formData.get('subject'),
           message: formData.get('message'),
+          honeypot: formData.get('honeypot'),
         }),
       });
       
@@ -118,6 +119,8 @@ export default function Contact() {
               <h3 style={{ fontFamily: "var(--font-heading)", color: "white", marginBottom: "30px", fontSize: "2.2rem" }}>Send a Message</h3>
               
               <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "25px", position: "relative", zIndex: 2 }}>
+                {/* Honeypot for spam bots */}
+                <input type="text" name="honeypot" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
                 <div>
                   <label htmlFor="name" style={{ display: "block", marginBottom: "10px", color: "#94a3b8", fontSize: "0.95rem",  letterSpacing: "1px" }}>Full Name</label>
                   <input type="text" id="name" name="name" style={{ width: "100%", padding: "16px", border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.02)", color: "white", borderRadius: "12px", fontSize: "1rem", outline: "none" }} required />

@@ -138,7 +138,12 @@ export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants
 
           <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "25px" }}>
             
-            {/* Step 1: Select Plant */}
+            
+              {/* Honeypot for spam bots */}
+              <input type="text" name="honeypot" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
+              
+              {/* Step 1: Select Plant */}
+
             <div style={{ background: "rgba(0,0,0,0.02)", padding: "25px", borderRadius: "12px", border: "1px solid var(--border-soft)" }}>
               <label htmlFor="q-plant" style={{ display: "block", marginBottom: "15px", color: "var(--text-dark)", fontSize: "1.1rem", fontWeight: "bold" }}>1. Select Preferred Plant / Location *</label>
               <select 

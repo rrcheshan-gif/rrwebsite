@@ -70,7 +70,7 @@ export default function GoalsAndTargets() {
       <section 
         className="page-header" 
         style={{ 
-          backgroundImage: "url('/images/about/blueprint-blue-bg.webp')", 
+          backgroundImage: "url('/images/about/blueprint-blue-bg-wide.webp')", 
           padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
           textAlign: "center", 
           position: "relative", 
