@@ -41,7 +41,7 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
       <section 
         className="page-header" 
         style={{ 
-          backgroundImage: "url('/images/projects/Hatangala/1.jpg')", 
+          backgroundImage: "url('/images/page-headers/news-hero.jpg')", 
           padding: "140px 20px 40px", 
           textAlign: "center", 
           position: "relative", 
@@ -111,3 +111,4 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
     </div>
   );
 }
+

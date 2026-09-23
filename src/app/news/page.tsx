@@ -27,7 +27,7 @@ export default function News() {
       {/* Page Header */}
       <section 
         className="page-header" style={{  
-          backgroundImage: "url('/images/projects/hulhudhoo/img1.jpg'), linear-gradient(180deg, #1f2937, #111827)", 
+          backgroundImage: "url('/images/page-headers/news-hero.jpg')", 
           padding: isMobile ? "90px 20px 30px" : "140px 20px 40px", 
           textAlign: "center", 
           position: "relative", 
@@ -172,3 +172,4 @@ export default function News() {
     </div>
   );
 }
+
