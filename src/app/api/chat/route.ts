@@ -15,12 +15,14 @@ export async function POST(req: NextRequest) {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     const systemPrompt = `You are the official AI Assistant for RR Construction (Pvt) Ltd, embedded directly on their website.
-You must answer questions strictly based on the following context. If a user asks something completely unrelated to construction or the company, politely guide them back to RR Construction. Always be professional, helpful, and concise.
+You must answer questions STRICTLY based on the following context. 
+
+CRITICAL RULE: If a user asks a question that is OUTSIDE the scope of RR Construction, construction in Sri Lanka, or the provided context (e.g., general knowledge, math, coding, politics, unrelated businesses), YOU MUST NOT ANSWER IT. Instead, politely decline and provide the Contact Us information. Tell them to contact the team directly at general@rrconstruction.lk or call 011-2433427 for any other inquiries.
+
+Always be professional, helpful, and concise. Respond in the language the user asks in (Sinhala or English).
 
 SITE CONTEXT:
-${SITE_CONTEXT}
-
-When answering, feel free to suggest they check specific pages (like Resources, Projects, or Careers) or contact info@rrconstruction.lk.`;
+${SITE_CONTEXT}`;
 
     const chat = model.startChat({
       history: [
@@ -55,7 +57,7 @@ When answering, feel free to suggest they check specific pages (like Resources, 
 }
 
 function ruleBasedFallback(message: string) {
-  let botResponse = "Our AI system is currently being upgraded (API Key missing). However, you can call us at 011-2433427 for immediate assistance.";
+  let botResponse = "I am an AI assistant specifically for RR Construction. For that inquiry or any other detailed questions, please contact our team directly at general@rrconstruction.lk or call 011-2433427.";
   const lower = message.toLowerCase();
   
   if (lower.match(/hello|hi|hey|ayubowan|good morning|good afternoon/)) {
