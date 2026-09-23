@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -43,11 +43,11 @@ export default function People() {
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
 
-      {/* Hero Section — Standard page-header with diagonal slant + full image on right */}
+      {/* Hero Section â€” Standard page-header with diagonal slant + full image on right */}
       <section className="page-header" style={{
-        backgroundImage: "url('/images/page-headers/people-team-padded.jpg')",
+        backgroundImage: "url('/images/about/blueprint-blue-bg-wide.webp')",
         backgroundSize: "cover",
-        backgroundPosition: "right center",
+        backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         minHeight: isMobile ? "350px" : "520px",
       }}>
@@ -63,7 +63,7 @@ export default function People() {
             Our <span style={{ color: "var(--primary-red)" }}>People</span>
           </h1>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "clamp(0.95rem, 2vw, 1.1rem)", maxWidth: "460px", lineHeight: 1.7, margin: 0 }}>
-            Over 1,400+ professionals building the infrastructure of tomorrow — together.
+            Over 1,400+ professionals building the infrastructure of tomorrow â€” together.
           </p>
         </div>
       </section>
@@ -161,7 +161,7 @@ export default function People() {
               { icon: <Shield size={20} color="var(--primary-red)" />, title: "Safety First", desc: "Every employee goes home safe. Our ISO 45001-certified HSE framework governs every site." },
               { icon: <Award size={20} color="var(--primary-red)" />, title: "Quality Excellence", desc: "ISO 9001:2015 quality management embedded in every process from planning to delivery." },
               { icon: <CheckCircle2 size={20} color="var(--primary-red)" />, title: "Continuous Learning", desc: "Structured CPD programs, technical workshops, and international certification support." },
-              { icon: <Users size={20} color="var(--primary-red)" />, title: "Team Ownership", desc: "A family culture — high retention, long-term careers, and recognition of field excellence." },
+              { icon: <Users size={20} color="var(--primary-red)" />, title: "Team Ownership", desc: "A family culture â€” high retention, long-term careers, and recognition of field excellence." },
             ].map((v, i) => (
               <div key={i} style={{
                 display: "flex", gap: "18px", alignItems: "flex-start",
@@ -218,3 +218,4 @@ export default function People() {
     </div>
   );
 }
+
