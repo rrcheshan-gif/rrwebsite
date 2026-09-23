@@ -7,10 +7,43 @@ import { useState } from "react";
 import FakeRecaptcha from "@/app/components/FakeRecaptcha";
 import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 export default function Contact() {
+  const [captchaVerified, setCaptchaVerified] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Thank you for your message! Our team will get back to you shortly.');
-    (e.target as HTMLFormElement).reset();
+    if (!captchaVerified) {
+      alert("Please verify that you are not a robot.");
+      return;
+    }
+    
+    setIsSubmitting(true);
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.get('name'),
+          email: formData.get('email'),
+          phone: formData.get('phone'),
+          subject: formData.get('subject'),
+          message: formData.get('message'),
+        }),
+      });
+      
+      if (!res.ok) throw new Error('Failed to send');
+      
+      alert('Thank you for your message! Our team will get back to you shortly.');
+      form.reset();
+      setCaptchaVerified(false);
+    } catch (error) {
+      alert("There was an error sending your message. Please try again or call us.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -111,7 +144,7 @@ export default function Contact() {
                   <textarea id="message" name="message" rows={5} style={{ width: "100%", padding: "16px", border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.02)", color: "white", borderRadius: "12px", fontSize: "1rem", resize: "vertical", fontFamily: "inherit", outline: "none" }} required></textarea>
                 </div>
                 <FakeRecaptcha onChange={(v) => setCaptchaVerified(v)} />
-                <button type="submit" className="btn btn-primary" style={{ width: "100%", marginTop: "15px", padding: "18px", fontSize: "1.1rem", borderRadius: "12px" }}>Send Message</button>
+                <button type="submit" disabled={isSubmitting} className="btn btn-primary" style={{ width: "100%", marginTop: "15px", padding: "18px", fontSize: "1.1rem", borderRadius: "12px", opacity: isSubmitting ? 0.7 : 1 }}>{isSubmitting ? "Sending..." : "Send Message"}</button>
               </form>
             </div>
 
