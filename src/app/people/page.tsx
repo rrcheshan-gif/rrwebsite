@@ -45,8 +45,8 @@ export default function People() {
 
       {/* Hero Section — Standard page-header with diagonal slant + full image on right */}
       <section className="page-header" style={{
-        backgroundImage: "url('/images/page-headers/people-team-final.jpg')",
-        backgroundSize: "auto 100%",
+        backgroundImage: "url('/images/page-headers/people-team-padded.jpg')",
+        backgroundSize: "cover",
         backgroundPosition: "right center",
         backgroundRepeat: "no-repeat",
         minHeight: isMobile ? "350px" : "520px",
