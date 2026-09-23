@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React from 'react';
 import { notFound } from 'next/navigation';
 
@@ -12,7 +12,7 @@ export default function OngoingCategoryPage({ params }: { params: Promise<{ cate
   const categoryData: Record<string, { title: string, img: string, gallery: string[] }> = {
     'roads': { 
       title: 'Highway and Expressway Construction', 
-      img: '/images/KRP/img-1.jpeg',
+      img: '/images/KRP/hero.jpeg',
       gallery: [
         '/images/KRP/img-1.jpeg',
         '/images/KRP/img-2.jpeg',
@@ -22,7 +22,7 @@ export default function OngoingCategoryPage({ params }: { params: Promise<{ cate
     },
     'bridges': { 
       title: 'Bridge Construction', 
-      img: '/images/BBP/img-1.jpeg',
+      img: '/images/BBP/hero.jpeg',
       gallery: [
         '/images/BBP/img-1.jpeg',
         '/images/BBP/img-2.jpeg',
@@ -142,3 +142,4 @@ export default function OngoingCategoryPage({ params }: { params: Promise<{ cate
     </div>
   );
 }
+
