@@ -14,7 +14,7 @@ const slides = [
   },
   {
     id: 2,
-    bg: "/images/projects/kilinochchi-bridge-feature.jpg",
+    bg: "/images/home/slider/polished/bridge.jpg",
     eyebrow: "30+ Years of Excellence",
     title: "Built on a Legacy\nof Engineering",
     subtitle: "From a small material supplier in the 1990s to Sri Lanka's premier heavy civil engineering contractor.",
