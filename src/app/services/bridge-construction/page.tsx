@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -28,9 +28,9 @@ export default function BridgeConstructionPage({ hideHero = false }: Props) {
         <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "url('/images/projects/puttalam/puttalam-6.jpg')",
+          backgroundImage: "url('/images/page-headers/technology-hero.jpg')",
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: "center",
           color: 'var(--white)',
           padding: isMobile ? '40px 20px' : '70px 20px',
           textAlign: 'center'

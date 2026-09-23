@@ -94,9 +94,9 @@ export default function TransportationCivilPage() {
 
       {/* HERO SECTION */}
       <section className="page-header" style={{
-        backgroundImage: "url('/images/projects/BADULLA/BACKGROUND%20IMAGE.jpeg')",
+        backgroundImage: "url('/images/page-headers/technology-hero.jpg')",
         backgroundSize: 'cover',
-        backgroundPosition: 'center 35%',
+        backgroundPosition: "center",
         padding: isMobile ? "90px 20px 30px" : "140px 20px 40px",
         borderRadius: isMobile ? '24px' : '32px',
         margin: isMobile ? '0 12px 30px' : '0 20px 40px',
@@ -178,3 +178,4 @@ export default function TransportationCivilPage() {
     </div>
   );
 }
+

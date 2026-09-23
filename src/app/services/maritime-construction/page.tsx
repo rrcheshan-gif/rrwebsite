@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -25,9 +25,9 @@ export default function MaritimeConstructionPage() {
       <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "url('/images/projects/Veerapuram/omanthai-3.jpg')",
+          backgroundImage: "url('/images/page-headers/technology-hero.jpg')",
           backgroundSize: 'cover',
-          backgroundPosition: 'right center',
+          backgroundPosition: "center",
           color: 'var(--white)',
           padding: isMobile ? '40px 20px' : '70px 20px',
           textAlign: 'center'
@@ -158,3 +158,4 @@ export default function MaritimeConstructionPage() {
     </main>
   );
 }
+

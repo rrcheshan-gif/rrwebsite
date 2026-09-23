@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from 'react';
 import { CheckCircle2 } from 'lucide-react';
@@ -24,9 +24,9 @@ export default function PilingFoundationEngineeringPage() {
       {/* 1. Hero Section */}
       <section 
         className="page-header" style={{  position: 'relative', 
-          backgroundImage: "linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('/images/home/slider-bridge-mahanama.jpg')",
+          backgroundImage: "url('/images/page-headers/technology-hero.jpg')",
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: "center",
           color: 'var(--white)',
           padding: isMobile ? '40px 20px' : '70px 20px',
           textAlign: 'center'
@@ -157,3 +157,4 @@ export default function PilingFoundationEngineeringPage() {
     </main>
   );
 }
+

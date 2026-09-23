@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from 'react';
 import { CheckCircle2, ChevronDown, Activity, Truck, ShieldCheck, Factory } from 'lucide-react';
@@ -29,9 +29,9 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
         <section 
         className="page-header" 
         style={{ position: 'relative', 
-          backgroundImage: "url('/images/projects/R3%20-%20iRoad/r3-hero.jpg')",
+          backgroundImage: "url('/images/page-headers/technology-hero.jpg')",
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: "center",
           color: 'var(--white)',
           padding: isMobile ? '40px 20px' : '70px 20px',
           textAlign: 'center'
@@ -240,3 +240,4 @@ export default function RoadConstructionPage({ hideHero = false }: Props) {
     </main>
   );
 }
+
