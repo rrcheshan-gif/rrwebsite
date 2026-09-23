@@ -108,7 +108,7 @@ export default function People() {
           }}>
             The Engine of RR <span className="text-gradient" style={{ fontWeight: 300 }}>Construction</span>
           </h2>
-          <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "var(--text-light)", maxWidth: "900px" }}>
+          <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "var(--text-light)", maxWidth: "100%" }}>
             Infrastructure isn't built by machines; it's built by people. From our boardroom in Colombo to the furthest reaches of our highway projects, the RR Construction family consists of over <strong>1,400+ dedicated professionals</strong>. We cultivate an environment that rewards precision, promotes safety, and encourages lifelong learning.
           </p>
         </div>
@@ -218,4 +218,5 @@ export default function People() {
     </div>
   );
 }
+
 
