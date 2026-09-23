@@ -27,8 +27,8 @@ export default function DredgingWaterInfrastructurePage() {
         className="page-header" 
         style={{ position: 'relative', 
           backgroundImage: "url('/images/page-headers/technology-hero.jpg')",
-          backgroundSize: 'cover',
-          backgroundPosition: "center",
+          backgroundColor: '#1b2738', backgroundSize: 'auto 100%', backgroundRepeat: 'no-repeat',
+          backgroundPosition: "right center",
           color: 'var(--white)',
           padding: isMobile ? '40px 20px' : '70px 20px',
           textAlign: 'center'
@@ -168,4 +168,5 @@ export default function DredgingWaterInfrastructurePage() {
     </main>
   );
 }
+
 

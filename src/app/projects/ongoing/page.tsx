@@ -16,7 +16,7 @@ export default function OngoingProjects() {
   return (
     <div style={{ minHeight: '100vh', background: 'var(--bg-light)' }}>
       {/* Hero Section with Image Space */}
-      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/page-headers/projects-hero.webp')", backgroundSize: 'cover', backgroundPosition: 'right center', color: 'var(--white)' }}>
+      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/page-headers/projects-hero.webp')", backgroundColor: '#1b2738', backgroundSize: 'auto 100%', backgroundPosition: 'right top', backgroundRepeat: 'no-repeat', color: 'var(--white)' }}>
         
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <AutoBreadcrumb />
@@ -120,5 +120,6 @@ export default function OngoingProjects() {
     </div>
   );
 }
+
 
 

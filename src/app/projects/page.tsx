@@ -123,7 +123,7 @@ export default function Projects() {
 
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
-            <section className="page-header" style={{ position: "relative", backgroundImage: "url('/images/page-headers/projects-hero.webp')", backgroundSize: "cover", backgroundPosition: "right center", color: "var(--white)" }}>
+            <section className="page-header" style={{ position: "relative", backgroundImage: "url('/images/page-headers/projects-hero.webp')", backgroundColor: "#1b2738", backgroundSize: "auto 100%", backgroundPosition: "right top", backgroundRepeat: "no-repeat", color: "var(--white)" }}>
         
         
         
@@ -208,6 +208,7 @@ export default function Projects() {
     </div>
   );
 }
+
 
 
 
