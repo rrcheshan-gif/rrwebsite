@@ -399,7 +399,7 @@ export default function Home() {
               { title: "Maritime & Water", img: "/images/maritime-harbour-site.jpg", icon: <Waves size={30} />, text: "Dredging, reclamation, and water supply systems engineered to serve communities at scale." },
               { title: "Landslide Mitigation", img: "/images/home/landslide-mitigation-new.jpeg", icon: <Mountain size={30} />, text: "Expert slope stabilization and rock-fall protection systems in critical hill-country zones." },
                 { title: "Piling & Foundation", img: "/images/home/piling-service-card.jpg", icon: <HardHat size={30} />, position: "center 20%", text: "Advanced geotechnical solutions including bored cast-in-situ piling and retaining structures." },
-              { title: "Railway Civil Works", img: "/images/news/railway-edited.jpg", icon: <Train size={30} />, text: "Modernizing railway infrastructure and executing large-scale civil components for track upgrades." }
+              { title: "Railway Civil Works", img: "/images/projects/new-folder/maho-railway/3.jpg", icon: <Train size={30} />, text: "Modernizing railway infrastructure and executing large-scale civil components for track upgrades." }
             ].map((srv, i) => (
               <div key={i} className="modern-service-card glass-panel hover-lift" style={{ width: "100%", minHeight: "280px", position: "relative", overflow: "hidden", padding: 0, borderRadius: "20px" }}>
                 <div style={{ width: "100%", height: "100%", transform: srv.scale || "scale(1)" }}>
@@ -616,6 +616,7 @@ export default function Home() {
     </>
   );
 }
+
 
 
 
