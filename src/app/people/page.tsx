@@ -12,9 +12,7 @@ export default function People() {
 
       {/* Page Header */}
       <section className="page-header" style={{ 
-        backgroundImage: "url('/images/about/our-people-team.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center center",
+        backgroundColor: "#0f172a",
         padding: "140px 20px 40px", 
         textAlign: "left", 
         position: "relative", 
@@ -22,7 +20,16 @@ export default function People() {
         margin: '0 20px 40px', 
         overflow: "hidden" 
       }}>
-        <div className="container" style={{ position: "relative", zIndex: 2 }}>
+        {/* Blurred Background to fill gaps */}
+        <div style={{ position: "absolute", top: -30, left: -30, right: -30, bottom: -30, backgroundImage: "url('/images/page-headers/people-team-final.jpg')", backgroundSize: "cover", backgroundPosition: "center", filter: "blur(20px)", opacity: 0.5, zIndex: 0 }}></div>
+        
+        {/* Sharp Image with Contain to avoid cropping */}
+        <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundImage: "url('/images/page-headers/people-team-final.jpg')", backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "right center", zIndex: 1 }}></div>
+        
+        {/* Dark Gradient Overlay for Text Readability */}
+        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(90deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.6) 40%, rgba(15, 23, 42, 0.1) 100%)", zIndex: 2 }}></div>
+
+        <div className="container" style={{ position: "relative", zIndex: 3 }}>
           <AutoBreadcrumb />
           <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Our <span style={{ color: "var(--primary-red)" }}>People</span></h1>
           
