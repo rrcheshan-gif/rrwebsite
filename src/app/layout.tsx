@@ -86,6 +86,7 @@ const jsonLd = {
   },
   "sameAs": [
     "https://web.facebook.com/profile.php?id=61594119435109",
+    "https://www.instagram.com/rrconstruction.lk/",
     "https://www.linkedin.com/company/rrconstruction"
   ],
   "priceRange": "$$$",
@@ -145,3 +146,4 @@ export default function RootLayout({
     </html>
   );
 }
+
