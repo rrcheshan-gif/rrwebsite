@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React from 'react';
 import Link from 'next/link';
 
@@ -16,7 +16,7 @@ export default function OngoingProjects() {
   return (
     <div style={{ minHeight: '100vh', background: 'var(--bg-light)' }}>
       {/* Hero Section with Image Space */}
-      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/projects/IRCON-MANNAR/WhatsApp%20Image%202026-08-01%20at%2012.32.07.jpeg')", backgroundSize: 'cover', backgroundPosition: 'center', color: 'var(--white)' }}>
+      <section className="page-header" style={{ position: 'relative', backgroundImage: "url('/images/page-headers/projects-hero.webp')", backgroundSize: 'cover', backgroundPosition: 'right center', color: 'var(--white)' }}>
         
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <AutoBreadcrumb />
@@ -120,3 +120,5 @@ export default function OngoingProjects() {
     </div>
   );
 }
+
+
