@@ -1,5 +1,6 @@
 ﻿"use client";
 import Link from "next/link";
+import { MapPin, Phone, Mail, Printer } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 export default function Footer() {
@@ -49,16 +50,16 @@ export default function Footer() {
             <h4 className="footer-heading">Head Office</h4>
             <ul className="footer-contact-list">
               <li>
-                <span className="contact-icon">ðŸ“</span>
-                <span>No. 865, Dr. Danister de Silva MW, Baseline Road, Colombo 09</span>
+                <span className="contact-icon"><MapPin size={18} /></span>
+                  <span>No. 865, Dr. Danister de Silva MW, Baseline Road, Colombo 09</span>
               </li>
               <li>
-                <span className="contact-icon">ðŸ“ž</span>
-                <span><a href="tel:+94112433427" style={{ color: 'inherit', textDecoration: 'none' }}>011-2433427</a></span>
+                <span className="contact-icon"><Phone size={18} /></span>
+                  <span><a href="tel:+94112433427" style={{ color: 'inherit', textDecoration: 'none' }}>011-2433427</a></span>
               </li>
               <li>
-                <span className="contact-icon">âœ‰ï¸</span>
-                <span><a href="mailto:general@rrconstruction.lk" style={{ color: 'inherit', textDecoration: 'none' }}>general@rrconstruction.lk</a></span>
+                <span className="contact-icon"><Mail size={18} /></span>
+                  <span><a href="mailto:general@rrconstruction.lk" style={{ color: 'inherit', textDecoration: 'none' }}>general@rrconstruction.lk</a></span>
               </li>
             </ul>
           </div>
@@ -71,6 +72,7 @@ export default function Footer() {
     </footer>
   );
 }
+
 
 
 
