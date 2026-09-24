@@ -67,11 +67,13 @@ export default function Footer() {
 
         <div className="footer-bottom-bar" style={{ textAlign: "center" }}>
           <p style={{ textAlign: "center", width: "100%" }}>&copy; {new Date().getFullYear()} RR Construction (Pvt) Ltd. All Rights Reserved. Engineering the ground beneath tomorrow.</p>
+          <p style={{ textAlign: "center", width: "100%", marginTop: "8px", fontSize: "0.85rem", color: "var(--text-light)" }}>Developed By Heshan Avishka Samaranayaka</p>
         </div>
       </div>
     </footer>
   );
 }
+
 
 
 
