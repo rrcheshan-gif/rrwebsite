@@ -218,7 +218,14 @@ const projectsData = [
     client: "Confidential",
     duration: "Ongoing",
     year: 2025,
-    status: "Ongoing"
+    status: "Ongoing",
+    heroImage: 'images/projects/ongoing/vbp/1.jpeg',
+    galleryImages: [
+      'images/projects/ongoing/vbp/1.jpeg',
+      'images/projects/ongoing/vbp/2.jpeg',
+      'images/projects/ongoing/vbp/3.jpeg',
+      'images/projects/ongoing/vbp/4.jpeg'
+    ]
   },
   {
     id: 'project-5',
@@ -229,7 +236,14 @@ const projectsData = [
     client: "Confidential",
     duration: "Ongoing",
     year: 2025,
-    status: "Ongoing"
+    status: "Ongoing",
+    heroImage: 'images/projects/ongoing/vbp/1.jpeg',
+    galleryImages: [
+      'images/projects/ongoing/vbp/1.jpeg',
+      'images/projects/ongoing/vbp/2.jpeg',
+      'images/projects/ongoing/vbp/3.jpeg',
+      'images/projects/ongoing/vbp/4.jpeg'
+    ]
   },
   {
     id: 'project-6',
@@ -261,7 +275,14 @@ const projectsData = [
     client: "Confidential",
     duration: "Ongoing",
     year: 2025,
-    status: "Ongoing"
+    status: "Ongoing",
+    heroImage: 'images/projects/ongoing/vbp/1.jpeg',
+    galleryImages: [
+      'images/projects/ongoing/vbp/1.jpeg',
+      'images/projects/ongoing/vbp/2.jpeg',
+      'images/projects/ongoing/vbp/3.jpeg',
+      'images/projects/ongoing/vbp/4.jpeg'
+    ]
   },
   {
     id: 'project-8',
@@ -283,7 +304,14 @@ const projectsData = [
     client: "Confidential",
     duration: "Ongoing",
     year: 2025,
-    status: "Ongoing"
+    status: "Ongoing",
+    heroImage: 'images/projects/ongoing/vbp/1.jpeg',
+    galleryImages: [
+      'images/projects/ongoing/vbp/1.jpeg',
+      'images/projects/ongoing/vbp/2.jpeg',
+      'images/projects/ongoing/vbp/3.jpeg',
+      'images/projects/ongoing/vbp/4.jpeg'
+    ]
   },
   {
     id: 'project-10',
@@ -360,7 +388,14 @@ const projectsData = [
     client: "Confidential",
     duration: "Ongoing",
     year: 2025,
-    status: "Ongoing"
+    status: "Ongoing",
+    heroImage: 'images/projects/ongoing/vbp/1.jpeg',
+    galleryImages: [
+      'images/projects/ongoing/vbp/1.jpeg',
+      'images/projects/ongoing/vbp/2.jpeg',
+      'images/projects/ongoing/vbp/3.jpeg',
+      'images/projects/ongoing/vbp/4.jpeg'
+    ]
   },
   {
     id: 'project-17',
@@ -423,7 +458,14 @@ const projectsData = [
     client: "Confidential",
     duration: "Ongoing",
     year: 2025,
-    status: "Ongoing"
+    status: "Ongoing",
+    heroImage: 'images/projects/ongoing/vbp/1.jpeg',
+    galleryImages: [
+      'images/projects/ongoing/vbp/1.jpeg',
+      'images/projects/ongoing/vbp/2.jpeg',
+      'images/projects/ongoing/vbp/3.jpeg',
+      'images/projects/ongoing/vbp/4.jpeg'
+    ]
   },
   {
     id: 'project-21',
@@ -1945,6 +1987,9 @@ if (typeof module !== 'undefined' && module.exports) {
     module.exports = projectsData;
 }
 export default projectsData;
+
+
+
 
 
 
