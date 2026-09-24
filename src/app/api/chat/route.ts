@@ -1,4 +1,4 @@
-﻿import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { SITE_CONTEXT } from './site-context';
 
@@ -42,7 +42,7 @@ ${SITE_CONTEXT}`;
         }))
       ],
       generationConfig: {
-        maxOutputTokens: 250,
+        maxOutputTokens: 500,
       },
     });
 
