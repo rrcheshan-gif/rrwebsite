@@ -124,13 +124,13 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {/* Google Analytics Placeholder */}
-        <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`} />
+        <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=G-N1C5H121BB`} />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX', {
+            gtag('config', 'G-N1C5H121BB', {
               page_path: window.location.pathname,
             });
           `}
@@ -148,5 +148,6 @@ export default function RootLayout({
     </html>
   );
 }
+
 
 
