@@ -55,9 +55,6 @@ export default function People() {
           }}>
             Our <span style={{ color: "var(--primary-red)" }}>People</span>
           </h1>
-          <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "clamp(0.95rem, 2vw, 1.1rem)", maxWidth: "460px", lineHeight: 1.7, margin: 0 }}>
-            Over 1,400+ professionals building the infrastructure of tomorrow — together.
-          </p>
         </div>
       </section>
 
@@ -77,7 +74,7 @@ export default function People() {
             The Engine of RR <span className="text-gradient" style={{ fontWeight: 300 }}>Construction</span>
           </h2>
           <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "var(--text-light)", maxWidth: "100%" }}>
-            Infrastructure isn't built by machines; it's built by people. From our boardroom in Colombo to the furthest reaches of our highway projects, the RR Construction family consists of over <strong>1,400+ dedicated professionals</strong>. We cultivate an environment that rewards precision, promotes safety, and encourages lifelong learning.
+            Infrastructure isn't built by machines; it's built by people. From our boardroom in Colombo to the furthest reaches of our highway projects, the RR Construction family consists of a <strong>dedicated team of professionals</strong>. We cultivate an environment that rewards precision, promotes safety, and encourages lifelong learning.
           </p>
         </div>
       </section>
@@ -186,6 +183,8 @@ export default function People() {
     </div>
   );
 }
+
+
 
 
 
