@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
@@ -7,6 +7,14 @@ import { useState, useEffect } from 'react';
 import FakeRecaptcha from '@/app/components/FakeRecaptcha';
 import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 export default function Career() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   
   const [status, setStatus] = useState('');
   const [captchaVerified, setCaptchaVerified] = useState(false);
@@ -43,14 +51,25 @@ export default function Career() {
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
       {/* Page Header */}
-      <section className="page-header" style={{ backgroundImage: "url('/images/projects/Bridge_12-1/3.jpg')", padding: "140px 20px 40px", textAlign: "center", position: "relative", backgroundSize: "cover", backgroundPosition: "center 30%",  borderRadius: '32px',
-          margin: '0 20px 40px', overflow: "hidden" }}>
-        
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", background: "linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%)", zIndex: 1 }}></div>
-        <div className="container" style={{ position: "relative", zIndex: 2 }}>
+            {/* Hero Section - Standard page-header with diagonal slant + full image on right */}
+      <section className="page-header" style={{
+        backgroundImage: "url('/images/about/blueprint-blue-bg-wide.webp')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        minHeight: isMobile ? "350px" : "520px",
+      }}>
+        <div className="container">
           <AutoBreadcrumb />
-          <h1 style={{ color: "white", fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 6vw, 4.2rem)", margin: 0, fontWeight: 800, textShadow: "0 4px 20px rgba(0,0,0,0.85)" }}>Build Your <span style={{ color: "var(--primary-red)" }}>Career</span></h1>
-              
+          <h1 style={{
+            fontFamily: "var(--font-heading)",
+            fontSize: isMobile ? "2.4rem" : "clamp(2.5rem, 7vw, 5rem)",
+            margin: "0 0 14px", fontWeight: 800,
+            lineHeight: 1.05, color: "white",
+            textShadow: "0 4px 20px rgba(0,0,0,0.6)",
+          }}>
+            Build Your <span style={{ color: "var(--primary-red)" }}>Career</span>
+          </h1>
         </div>
       </section>
 
