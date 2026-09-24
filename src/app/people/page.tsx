@@ -33,13 +33,6 @@ export default function People() {
     },
   ];
 
-  const stats = [
-    { number: '1,400+', label: 'Dedicated Professionals' },
-    { number: '30+', label: 'Years of Experience' },
-    { number: '3', label: 'ISO Certifications' },
-    { number: '1,000+', label: 'Heavy Machines Operated' },
-  ];
-
   return (
     <div style={{ paddingTop: "0px", minHeight: "100vh", backgroundColor: "var(--bg-light)" }}>
 
@@ -65,31 +58,6 @@ export default function People() {
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "clamp(0.95rem, 2vw, 1.1rem)", maxWidth: "460px", lineHeight: 1.7, margin: 0 }}>
             Over 1,400+ professionals building the infrastructure of tomorrow — together.
           </p>
-        </div>
-      </section>
-
-      {/* Stats Strip */}
-      <section style={{ padding: isMobile ? "0 12px 50px" : "0 20px 60px" }}>
-        <div style={{
-          maxWidth: "1500px", margin: "0 auto",
-          display: "grid", gridTemplateColumns: `repeat(${isMobile ? 2 : 4}, 1fr)`,
-          gap: "1px", background: "rgba(0,0,0,0.08)",
-          borderRadius: "16px", overflow: "hidden",
-          boxShadow: "0 4px 24px rgba(0,0,0,0.06)"
-        }}>
-          {stats.map((s, i) => (
-            <div key={i} style={{
-              background: "var(--white)", padding: isMobile ? "28px 16px" : "40px 32px",
-              textAlign: "center"
-            }}>
-              <div style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 800, color: "var(--primary-red)", fontFamily: "var(--font-heading)", lineHeight: 1 }}>
-                {s.number}
-              </div>
-              <div style={{ fontSize: "0.9rem", color: "var(--text-light)", marginTop: "8px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "1px" }}>
-                {s.label}
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -218,5 +186,7 @@ export default function People() {
     </div>
   );
 }
+
+
 
 
