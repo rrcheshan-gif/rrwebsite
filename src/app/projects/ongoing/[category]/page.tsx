@@ -112,11 +112,18 @@ export default function OngoingCategoryPage({ params }: { params: Promise<{ cate
     },
     'maritime': { 
       title: 'Maritime & Dredging', 
-      img: '/images/maritime-harbour-site.jpg',
+      img: '/images/projects/ongoing/kjp/1.jpeg',
       gallery: [
-        '/images/maritime-harbour-site.jpg',
-        '/images/service-maritime-card.jpg',
-        '/images/service-maritime-wellamankara.jpg'
+        '/images/projects/ongoing/kjp/1.jpeg',
+        '/images/projects/ongoing/kjp/2.jpeg',
+        '/images/projects/ongoing/kjp/3.jpeg',
+        '/images/projects/ongoing/kjp/4.jpeg',
+        '/images/projects/ongoing/kjp/5.jpeg',
+        '/images/projects/ongoing/kjp/6.jpeg',
+        '/images/projects/ongoing/kjp/7.jpeg',
+        '/images/projects/ongoing/kjp/8.jpeg',
+        '/images/projects/ongoing/kjp/9.jpeg',
+        '/images/projects/ongoing/kjp/10.jpeg'
       ]
     }
   };
@@ -200,4 +207,5 @@ export default function OngoingCategoryPage({ params }: { params: Promise<{ cate
     </div>
   );
 }
+
 
