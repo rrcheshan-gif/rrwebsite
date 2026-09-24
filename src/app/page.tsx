@@ -463,7 +463,7 @@ export default function Home() {
                   { name: "IRCON INTERNATIONAL", logo: "/images/clients/ircon-correct.svg" },
                   { name: "NATIONAL BUILDING RESEARCH ORGANISATION", logo: "/images/clients/nbro.svg" },
                   { name: "MINISTRY OF FISHERIES", logo: "/images/clients/fisheries.svg" },
-                  { name: "SRI LANKA RAILWAYS", logo: "/images/clients/slr.png" }
+                  { name: "SRI LANKA RAILWAYS", logo: "/images/clients/slr.svg" }
                 ].map((client, idx) => (
                   <div 
                     key={idx} 
@@ -616,6 +616,7 @@ export default function Home() {
     </>
   );
 }
+
 
 
 
