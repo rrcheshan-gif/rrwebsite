@@ -117,7 +117,7 @@ export default function RailwayCivilWorksPage() {
                 Geotechnical Stabilization
               </h2>
               <p style={{ color: 'var(--text-light)', lineHeight: 1.7 }}>
-                Railways traverse highly diverse geological terrains. Our geotechnical engineers employ advanced stabilization techniques"such as deep soil compaction, geogrid installation, and retaining structures"to ensure the tracks remain perfectly aligned under constant dynamic loading.
+                Railways traverse highly diverse geological terrains. Our geotechnical engineers employ advanced stabilization techniques — such as deep soil compaction, geogrid installation, and retaining structures — to ensure the tracks remain perfectly aligned under constant dynamic loading.
               </p>
             </div>
             
@@ -160,6 +160,7 @@ export default function RailwayCivilWorksPage() {
     </main>
   );
 }
+
 
 
 

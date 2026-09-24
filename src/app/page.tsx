@@ -143,7 +143,7 @@ export default function Home() {
           {/* Bottom fade */}
           
 
-          {/* Foreground Content â€” CENTER ALIGNED */}
+          {/* Foreground Content — CENTER ALIGNED */}
           <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 3, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 clamp(20px, 5vw, 40px)', textAlign: 'center' }}>
             <div style={{ width: '100%', maxWidth: '900px', marginTop: '60px' }}>
               {slides.map((slide, index) => (
