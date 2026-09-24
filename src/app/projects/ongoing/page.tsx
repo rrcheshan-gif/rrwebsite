@@ -10,7 +10,7 @@ export default function OngoingProjects() {
     { id: 'bridges', title: 'Bridge Construction', img: '/images/projects/ongoing/vbp/1.jpeg' },
     { id: 'irrigation', title: 'Irrigation & Water Supply', img: '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.28.jpeg' },
     { id: 'disaster', title: 'Landslide Mitigation', img: '/images/Badulla Landslide/Background image.jpeg' },
-    { id: 'maritime', title: 'Maritime & Dredging', img: '/images/maritime-harbour-site.jpg' }
+    { id: 'maritime', title: 'Maritime \u0026 Dredging', img: '/images/projects/ongoing/kjp/1.jpeg' }
   ];
 
   return (
@@ -120,6 +120,7 @@ export default function OngoingProjects() {
     </div>
   );
 }
+
 
 
 

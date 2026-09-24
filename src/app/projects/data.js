@@ -39,7 +39,20 @@ const projectsData = [
     client: "Confidential",
     duration: "Ongoing",
     year: 2025,
-    status: "Ongoing"
+    status: "Ongoing",
+    heroImage: 'images/projects/ongoing/kjp/1.jpeg',
+    galleryImages: [
+      'images/projects/ongoing/kjp/1.jpeg',
+      'images/projects/ongoing/kjp/2.jpeg',
+      'images/projects/ongoing/kjp/3.jpeg',
+      'images/projects/ongoing/kjp/4.jpeg',
+      'images/projects/ongoing/kjp/5.jpeg',
+      'images/projects/ongoing/kjp/6.jpeg',
+      'images/projects/ongoing/kjp/7.jpeg',
+      'images/projects/ongoing/kjp/8.jpeg',
+      'images/projects/ongoing/kjp/9.jpeg',
+      'images/projects/ongoing/kjp/10.jpeg'
+    ]
   },
   {
     id: 'project-mod-landslide-10j',
@@ -406,7 +419,20 @@ const projectsData = [
     client: "Confidential",
     duration: "Ongoing",
     year: 2025,
-    status: "Ongoing"
+    status: "Ongoing",
+    heroImage: 'images/projects/ongoing/kjp/1.jpeg',
+    galleryImages: [
+      'images/projects/ongoing/kjp/1.jpeg',
+      'images/projects/ongoing/kjp/2.jpeg',
+      'images/projects/ongoing/kjp/3.jpeg',
+      'images/projects/ongoing/kjp/4.jpeg',
+      'images/projects/ongoing/kjp/5.jpeg',
+      'images/projects/ongoing/kjp/6.jpeg',
+      'images/projects/ongoing/kjp/7.jpeg',
+      'images/projects/ongoing/kjp/8.jpeg',
+      'images/projects/ongoing/kjp/9.jpeg',
+      'images/projects/ongoing/kjp/10.jpeg'
+    ]
   },
   {
     id: 'project-18',
@@ -1987,6 +2013,7 @@ if (typeof module !== 'undefined' && module.exports) {
     module.exports = projectsData;
 }
 export default projectsData;
+
 
 
 
