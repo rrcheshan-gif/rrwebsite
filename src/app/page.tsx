@@ -446,11 +446,10 @@ export default function Home() {
               </div>
 
             <div 
+                className="clients-grid"
                 style={{ 
-                  display: "flex", 
-                  flexWrap: "wrap", 
-                  justifyContent: "center", 
-                  alignItems: "center", 
+                  display: "grid", 
+                  gridTemplateColumns: "repeat(4, 1fr)", 
                   gap: "20px", 
                   width: "100%", 
                   maxWidth: "1500px" 
@@ -463,7 +462,8 @@ export default function Home() {
                   { name: "MINISTRY OF IRRIGATION", logo: "/images/clients/irrigation-correct.svg" },
                   { name: "IRCON INTERNATIONAL", logo: "/images/clients/ircon-correct.svg" },
                   { name: "NATIONAL BUILDING RESEARCH ORGANISATION", logo: "/images/clients/nbro.svg" },
-                  { name: "MINISTRY OF FISHERIES", logo: "/images/clients/fisheries.svg" }
+                  { name: "MINISTRY OF FISHERIES", logo: "/images/clients/fisheries.svg" },
+                  { name: "SRI LANKA RAILWAYS", logo: "/images/clients/slr.png" }
                 ].map((client, idx) => (
                   <div 
                     key={idx} 
@@ -616,6 +616,7 @@ export default function Home() {
     </>
   );
 }
+
 
 
 
