@@ -392,14 +392,15 @@ export default function Home() {
               </p>
             </div>
           
-          <div className="services-grid-6">
+          <div className="services-grid-7">
             {[
               { title: "Highways & Expressways", scale: "scale(1.15)", img: "/images/home/rathnapura.jpg", icon: <Map size={30} />, text: "Specialized heavy civil engineering expertise carving expressways and national highways through every terrain." },
               { title: "Bridge Construction", img: "/images/home/bridge-construction-new.jpg", icon: <GitMerge size={30} />, text: "Structural steel and reinforced concrete bridges built to carry the load for generations." },
-              { title: "Maritime & Water", img: "/images/maritime-harbour-site.jpg", icon: <Waves size={30} />, text: "Dredging, reclamation, and water supply systems engineered to serve communities at scale." },
+              { title: "Maritime Construction", img: "/images/maritime-harbour-site.jpg", icon: <Waves size={30} />, text: "Breakwaters, harbour facilities, and comprehensive maritime infrastructure." },
               { title: "Landslide Mitigation", img: "/images/home/landslide-mitigation-new.jpeg", icon: <Mountain size={30} />, text: "Expert slope stabilization and rock-fall protection systems in critical hill-country zones." },
                 { title: "Piling & Foundation", img: "/images/home/piling-service-card.jpg", icon: <HardHat size={30} />, position: "center 20%", text: "Advanced geotechnical solutions including bored cast-in-situ piling and retaining structures." },
-              { title: "Railway Civil Works", img: "/images/projects/new-folder/maho-railway/3.jpg", icon: <Train size={30} />, text: "Modernizing railway infrastructure and executing large-scale civil components for track upgrades." }
+              { title: "Railway Civil Works", img: "/images/projects/new-folder/maho-railway/3.jpg", icon: <Train size={30} />, text: "Modernizing railway infrastructure and executing large-scale civil components for track upgrades." },
+                { title: 'Dredging & Water Infrastructure', img: '/images/services/watermaster.webp', icon: <Droplets size={30} />, text: 'Specialized dredging, land reclamation, and water supply systems engineered to serve communities.' }
             ].map((srv, i) => (
               <div key={i} className="modern-service-card glass-panel hover-lift" style={{ width: "100%", minHeight: "280px", position: "relative", overflow: "hidden", padding: 0, borderRadius: "20px" }}>
                 <div style={{ width: "100%", height: "100%", transform: srv.scale || "scale(1)" }}>
@@ -537,19 +538,24 @@ export default function Home() {
 
 
       <style jsx global>{`
-        .services-grid-6 {
-          display: grid;
-          grid-template-columns: repeat(6, 1fr);
-          gap: 20px;
+        .services-grid-7 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        @media (min-width: 1101px) {
+          .services-grid-7 {
+            display: flex; flex-wrap: wrap; justify-content: center;
+          }
+          .services-grid-7 > div {
+            width: calc(25% - 15px);
+          }
         }
         @media (max-width: 1100px) {
-          .services-grid-6 { grid-template-columns: repeat(3, 1fr); }
+          .services-grid-7 { grid-template-columns: repeat(3, 1fr); }
         }
         @media (max-width: 768px) {
-          .services-grid-6 { grid-template-columns: repeat(2, 1fr); }
+          .services-grid-7 { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 480px) {
-          .services-grid-6 { grid-template-columns: 1fr; }
+          .services-grid-7 { grid-template-columns: 1fr; }
+        }
         }
 
         @keyframes scrollWheel {
@@ -616,6 +622,8 @@ export default function Home() {
     </>
   );
 }
+
+
 
 
 
