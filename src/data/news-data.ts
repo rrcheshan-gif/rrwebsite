@@ -1,4 +1,4 @@
-export interface NewsItem {
+﻿export interface NewsItem {
   id: number;
   slug: string;
   tag: string;
@@ -12,6 +12,36 @@ export interface NewsItem {
 }
 
 export const NEWS_DATA: NewsItem[] = [
+  {
+    id: 1790320633834,
+    slug: 'acquisition-watermaster-classic-dredger',
+    tag: 'Fleet Expansion',
+    title: 'RR Construction Expands Marine Capabilities with New Watermaster Classic Dredger',
+    desc: 'We are thrilled to announce the latest addition to our heavy machinery fleet: the highly versatile, amphibious Watermaster Classic Multipurpose Dredger, enhancing our dredging and water infrastructure capabilities.',
+    date: 'September 25, 2026',
+    img: '/images/services/watermaster.webp',
+    crop: 'center',
+    content: `
+      <p>RR Construction is proud to announce a major enhancement to our heavy machinery fleet with the acquisition of a brand-new <strong>Watermaster Classic Multipurpose Dredger</strong>. This strategic investment significantly expands our capabilities in specialized marine engineering, dredging, and water infrastructure development.</p>
+      
+      <p>The Watermaster Classic is renowned globally for its unique amphibious design, allowing it to navigate and operate efficiently in shallow waters, narrow urban canals, and environmentally sensitive coastal zones where traditional heavy dredging equipment simply cannot reach.</p>
+      
+      <h3>Versatility and Advanced Capabilities</h3>
+      <p>Unlike standard machinery, the Watermaster is a true multi-purpose workhorse. Equipped with a suite of easily interchangeable, quick-connection attachments, it can seamlessly switch between tasks. Its core capabilities include:</p>
+      <ul>
+        <li><strong>Suction Dredging:</strong> Efficiently clearing silt, sludge, and debris from riverbeds and canals to restore natural water flow and prevent urban flooding.</li>
+        <li><strong>Backhoe Dredging & Excavation:</strong> Precision digging for deepening waterways and constructing embankment protections.</li>
+        <li><strong>Piling Operations:</strong> Driving timber or steel piles to reinforce riverbanks and marine structures.</li>
+        <li><strong>Raking & Vegetation Removal:</strong> Clearing invasive aquatic weeds and surface debris to improve water quality and navigability.</li>
+      </ul>
+      
+      <h3>Environmental Commitment</h3>
+      <p>As an ISO 14001:2015 certified company, environmental stewardship is at the forefront of our operations. The Watermaster Classic is engineered to execute high-impact work with a remarkably low environmental footprint. Its intelligent propulsion and independent operation minimize the need for auxiliary support vessels, reducing fuel consumption and emissions.</p>
+      
+      <p>This state-of-the-art acquisition reaffirms RR Construction's position as a premier engineering contractor in Sri Lanka, continuously adopting innovative technologies to deliver superior, sustainable infrastructure solutions to our clients.</p>
+
+`
+  },
   {
     id: 1790071356770,
     slug: 'reconstruction-of-bridge-horawela-pelawatta-pitigala',
@@ -137,7 +167,7 @@ export const NEWS_DATA: NewsItem[] = [
       </div>
 
       <h3 style="font-family: var(--font-heading); color: var(--text-dark); margin-top: 40px; margin-bottom: 20px;">Rapid Restoration of Critical Infrastructure</h3>
-      <p>Covering 105 km of damaged track corridor between Medawachchiya (MWH) and Talaimannar (TMP)—including the Chettikulam, Madhu Road, and Murukkan sections—our engineering teams mobilized rapidly to execute large-scale formation civil works and restore safe rail connectivity.</p>
+      <p>Covering 105 km of damaged track corridor between Medawachchiya (MWH) and Talaimannar (TMP)â€”including the Chettikulam, Madhu Road, and Murukkan sectionsâ€”our engineering teams mobilized rapidly to execute large-scale formation civil works and restore safe rail connectivity.</p>
       
       <p>The critical scope of the project comprised:</p>
       <ul style="color: var(--text-light); line-height: 1.8; margin-bottom: 20px; padding-left: 20px;">
@@ -161,3 +191,5 @@ export const NEWS_DATA: NewsItem[] = [
   }
 
 ];
+
+
