@@ -545,16 +545,18 @@ export default function Home() {
           }
           .services-grid-7 > div {
             width: calc(25% - 15px);
+            max-width: calc(25% - 15px);
+            flex: 0 0 calc(25% - 15px);
           }
         }
         @media (max-width: 1100px) {
-          .services-grid-7 { grid-template-columns: repeat(3, 1fr); }
+          .services-grid-7 { grid-template-columns: repeat(3, 1fr); display: grid; }
         }
         @media (max-width: 768px) {
-          .services-grid-7 { grid-template-columns: repeat(2, 1fr); }
+          .services-grid-7 { grid-template-columns: repeat(2, 1fr); display: grid; }
         }
         @media (max-width: 480px) {
-          .services-grid-7 { grid-template-columns: 1fr; }
+          .services-grid-7 { grid-template-columns: 1fr; display: grid; }
         } 
 
           @keyframes scrollWheel {
