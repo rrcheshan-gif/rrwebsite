@@ -165,6 +165,44 @@ export default function DredgingWaterInfrastructurePage() {
           </div>
         </div>
       </section>
+
+      {/* Watermaster Section */}
+      <section style={{ padding: isMobile ? '40px 15px' : '80px 20px', backgroundColor: 'var(--white)' }}>
+        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{
+            display: 'flex',
+            flexDirection: isMobile ? 'column' : 'row',
+            gap: '50px',
+            alignItems: 'center'
+          }}>
+            <div style={{ flex: 1 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '16px' }}>
+                <div style={{ width: '40px', height: '2px', background: 'var(--primary-red)' }} />
+                <h4 style={{ color: 'var(--primary-red)', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', margin: 0, fontSize: '0.9rem' }}>SPECIALIZED EQUIPMENT</h4>
+              </div>
+              <h2 style={{ fontSize: isMobile ? '2rem' : '2.5rem', color: 'var(--text-dark)', marginBottom: '20px', fontFamily: 'var(--font-heading)', lineHeight: 1.2 }}>
+                Watermaster <span className="text-gradient" style={{ fontWeight: 300 }}>Classic</span> Multipurpose Dredger
+              </h2>
+              <p style={{ color: 'var(--text-light)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '20px' }}>
+                The Watermaster Classic is a highly versatile, amphibious multipurpose dredger utilized by RR Construction for specialized water infrastructure projects. Its unique mobility allows it to operate effectively in shallow waters, narrow urban canals, and difficult-to-access coastal areas where conventional dredging equipment cannot reach.
+              </p>
+              <p style={{ color: 'var(--text-light)', fontSize: '1.1rem', lineHeight: 1.8 }}>
+                Equipped with multi-functional attachments, the Watermaster seamlessly performs suction dredging, backhoe dredging, piling, raking, and excavating. This advanced capability ensures rapid project execution, strict environmental compliance, and minimal disruption to surrounding aquatic ecosystems.
+              </p>
+            </div>
+            <div style={{ flex: 1, width: '100%' }}>
+              <div style={{ borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)', position: 'relative' }}>
+                <img 
+                  src="/images/services/watermaster.webp" 
+                  alt="Watermaster Classic Multipurpose Dredger operating in Sri Lanka" 
+                  style={{ width: '100%', height: 'auto', display: 'block' }} 
+                  className="img-hover-zoom"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
