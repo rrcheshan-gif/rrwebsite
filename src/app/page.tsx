@@ -11,7 +11,7 @@ export default function Home() {
 
   const slides = [
     {
-      img: '/images/home/slider-first-kjp.jpg',
+      img: '/images/home/kjp-home.jpg',
       fallback: '/images/hero-road-roller.jpg',
       duration: 8000,
       tag: 'PASSION FOR ENGINEERING EXCELLENCE',
@@ -616,6 +616,7 @@ export default function Home() {
     </>
   );
 }
+
 
 
 
