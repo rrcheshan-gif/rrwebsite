@@ -724,7 +724,7 @@ const projectsData = [
     client: "Road Development Authority",
     
     duration: "12 Months",
-    year: 2025
+    year: 2024
   },
   {
     id: 'project-30',
@@ -2028,6 +2028,7 @@ if (typeof module !== 'undefined' && module.exports) {
     module.exports = projectsData;
 }
 export default projectsData;
+
 
 
 
