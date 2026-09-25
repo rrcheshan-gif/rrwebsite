@@ -92,6 +92,17 @@ export default function Contact() {
                 </div>
               </div>
 
+              <div style={{ background: "var(--white)", padding: "40px", borderRadius: "24px", boxShadow: "0 10px 30px rgba(0,0,0,0.04)", marginBottom: "25px", display: "flex", gap: "25px", alignItems: "flex-start", border: "1px solid var(--border-soft)", transition: "transform 0.4s ease" }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'none'}>
+                <div style={{ background: "rgba(100,116,139,0.1)", color: "#64748b", padding: "20px", borderRadius: "20px" }}>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                </div>
+                <div>
+                  <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", color: "var(--text-dark)", marginBottom: "10px" }}>Main Warehouse</h3>
+                  <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.7 }}>NO 150,<br/>Keragala Estate,<br/>Keragala, Henegama.</p>
+                </div>
+              </div>
+
+
               <div style={{ background: "var(--white)", padding: "40px", borderRadius: "24px", boxShadow: "0 10px 30px rgba(0,0,0,0.04)", border: "1px solid var(--border-soft)", transition: "transform 0.4s ease" }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'none'}>
                 <ul style={{ listStyle: "none", fontSize: "1.1rem", lineHeight: 2.2, margin: 0, padding: 0 }}>
                   <li style={{ display: "flex", gap: "15px", alignItems: "center", color: "var(--text-dark)" }}>
