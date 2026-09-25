@@ -43,25 +43,6 @@ export const NEWS_DATA: NewsItem[] = [
 `
   },
   {
-    id: 1790071356770,
-    slug: 'reconstruction-of-bridge-horawela-pelawatta-pitigala',
-    tag: 'Project Completion',
-    title: 'Reconstruction of Bridge No. 4/1 on Horawela - Pelawatta - Pitigala Road (Balance Work)',
-    desc: 'RR Construction successfully completes a comprehensive Bridges project executed for Road Development Authority, emphasizing modern engineering standards and timely delivery.',
-    date: 'September 22, 2026',
-    img: '/images/Photos for Web Site - HBP/Background Image.jpeg',
-    crop: 'center',
-    content: `
-      <p>RR Construction is proud to announce the successful completion of the <strong>Reconstruction of Bridge No. 4/1 on the Horawela - Pelawatta - Pitigala Road (Balance Work)</strong>.</p>
-      
-      <p>Executed on behalf of the <strong>Road Development Authority (RDA)</strong>, this crucial infrastructure project reinforces our commitment to delivering high-quality, durable bridging solutions that connect communities and facilitate seamless transportation.</p>
-      
-      <p>Despite challenging conditions, our dedicated engineering teams utilized modern construction methodologies and stringent quality control measures to ensure the project was completed to the highest structural and safety standards.</p>
-      
-      <p>The successful delivery of this bridge stands as a testament to RR Construction's expertise in specialized heavy civil engineering and our ongoing contribution to the resilient development of Sri Lanka's national road network.</p>
-    `
-  },
-  {
     id: 1,
     slug: 'first-brand-new-wirtgen-w200f-milling-machine-sri-lanka',
     tag: 'Machinery & Technology',
@@ -94,6 +75,26 @@ export const NEWS_DATA: NewsItem[] = [
       <p>We remain dedicated to our vision of equipping our expert teams with the world's best machinery, ensuring that every road we build meets the highest international standards of quality and durability.</p>
     `
   },
+  {
+    id: 1790071356770,
+    slug: 'reconstruction-of-bridge-horawela-pelawatta-pitigala',
+    tag: 'Project Completion',
+    title: 'Reconstruction of Bridge No. 4/1 on Horawela - Pelawatta - Pitigala Road (Balance Work)',
+    desc: 'RR Construction successfully completes a comprehensive Bridges project executed for Road Development Authority, emphasizing modern engineering standards and timely delivery.',
+    date: 'September 22, 2026',
+    img: '/images/Photos for Web Site - HBP/Background Image.jpeg',
+    crop: 'center',
+    content: `
+      <p>RR Construction is proud to announce the successful completion of the <strong>Reconstruction of Bridge No. 4/1 on the Horawela - Pelawatta - Pitigala Road (Balance Work)</strong>.</p>
+      
+      <p>Executed on behalf of the <strong>Road Development Authority (RDA)</strong>, this crucial infrastructure project reinforces our commitment to delivering high-quality, durable bridging solutions that connect communities and facilitate seamless transportation.</p>
+      
+      <p>Despite challenging conditions, our dedicated engineering teams utilized modern construction methodologies and stringent quality control measures to ensure the project was completed to the highest structural and safety standards.</p>
+      
+      <p>The successful delivery of this bridge stands as a testament to RR Construction's expertise in specialized heavy civil engineering and our ongoing contribution to the resilient development of Sri Lanka's national road network.</p>
+    `
+  },
+
   {
     id: 2,
     slug: 'rehabilitation-of-kurikadduvan-jetty-approach-road',
@@ -191,5 +192,4 @@ export const NEWS_DATA: NewsItem[] = [
   }
 
 ];
-
 
