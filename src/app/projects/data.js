@@ -1726,7 +1726,22 @@ const projectsData = [
     year: 2013
   },
   {
-    id: 'project-80',
+    id: 'project-109',
+      type: 'completed', category: 'maritime',
+      title: 'Rehabilitation of Passiyoor Fishery Anchorage in Jaffna DS Division at Jaffna District',
+      heroImage: '/images/projects/passiyoor-rehab/1.jpg',
+      galleryImages: [
+        '/images/projects/passiyoor-rehab/1.jpg',
+        '/images/projects/passiyoor-rehab/2.jpg'
+      ],
+      status: 'Completed',
+      client: 'International Organization for Migration (IOM)',
+      duration: '6 months',
+      value: 'Rs. 32,911,750.00',
+      year: 2013
+    },
+    {
+      id: 'project-80',
     type: 'completed', category: "maritime",
     title: "Oluvil Port Project Coastal Protection",
     status: "Completed",
@@ -2013,6 +2028,7 @@ if (typeof module !== 'undefined' && module.exports) {
     module.exports = projectsData;
 }
 export default projectsData;
+
 
 
 
