@@ -402,7 +402,7 @@ export default function Home() {
               { title: "Railway Civil Works", img: "/images/projects/new-folder/maho-railway/3.jpg", icon: <Train size={30} />, text: "Modernizing railway infrastructure and executing large-scale civil components for track upgrades." },
                 { title: 'Dredging & Water Infrastructure', img: '/images/services/watermaster.webp', icon: <Droplets size={30} />, text: 'Specialized dredging, land reclamation, and water supply systems engineered to serve communities.' }
             ].map((srv, i) => (
-              <div key={i} className="modern-service-card glass-panel hover-lift" style={{ width: "100%", minHeight: "280px", position: "relative", overflow: "hidden", padding: 0, borderRadius: "20px" }}>
+              <div key={i} className="modern-service-card glass-panel hover-lift" style={{ minHeight: "280px", position: "relative", overflow: "hidden", padding: 0, borderRadius: "20px" }}>
                 <div style={{ width: "100%", height: "100%", transform: srv.scale || "scale(1)" }}>
                     <img src={srv.img} alt={srv.title} className="img-polished img-hover-zoom" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: srv.position || "center", opacity: 0.9, transition: "opacity 0.5s ease" }} onMouseOver={(e) => { e.currentTarget.style.opacity = '1' }} onMouseOut={(e) => { e.currentTarget.style.opacity = '0.9' }} />
                   </div>
@@ -555,10 +555,9 @@ export default function Home() {
         }
         @media (max-width: 480px) {
           .services-grid-7 { grid-template-columns: 1fr; }
-        }
-        }
+        } 
 
-        @keyframes scrollWheel {
+          @keyframes scrollWheel {
           0% { transform: translateY(0); opacity: 1; }
           100% { transform: translateY(20px); opacity: 0; }
         }
@@ -622,6 +621,7 @@ export default function Home() {
     </>
   );
 }
+
 
 
 
