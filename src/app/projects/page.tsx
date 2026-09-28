@@ -168,7 +168,7 @@ export default function Projects() {
                 boxShadow: filter === f ? '0 10px 20px rgba(229,57,53,0.2)' : '0 4px 10px rgba(0,0,0,0.02)'
               }}
             >
-              {f === 'all' ? 'All Projects' : f === 'disaster' ? 'Disaster Mgmt' : f}
+              {f === 'all' ? 'All Projects' : f === 'disaster' ? 'Disaster Mgmt' : f === 'roads' ? 'Roads and Highway' : f}
             </button>
           ))}
         </div>
