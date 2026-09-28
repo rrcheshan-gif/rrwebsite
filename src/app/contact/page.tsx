@@ -107,7 +107,7 @@ export default function Contact() {
                   <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.7 }}>NO 150,<br/>Keragala Estate,<br/>Keragala, Henegama.</p>
                 </div>
                   <div className="contact-map-square" style={{ marginLeft: "auto", width: "120px", height: "120px", borderRadius: "12px", overflow: "hidden", flexShrink: 0, border: "1px solid var(--border-soft)" }}>
-                    <iframe src="https://maps.google.com/maps?q=Keragala%20Estate%2C%20Henegama%2C%20Sri%20Lanka&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://maps.google.com/maps?q=RRC%20Main%20Warehouse%2C%20Henegama&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
 
