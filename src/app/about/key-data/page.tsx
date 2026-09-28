@@ -25,7 +25,7 @@ export default function KeyDataPage() {
     { label: "Direct Workforce", value: "1,400+", icon: <Users size={28} strokeWidth={1.5} /> },
     { label: "Machinery Units", value: "1,000+", icon: <Tractor size={28} strokeWidth={1.5} /> },
     { label: "Head Office", value: "No. 865, Dr. Danister De Silva Mawatha, Baseline Road, Colombo 9.", icon: <MapPin size={28} strokeWidth={1.5} /> },
-    { label: "Company Bankers", value: "HNB, DFCC, Sampath, NDB, Commercial, People's & NTB", icon: <Landmark size={28} strokeWidth={1.5} /> },
+    { label: "Company Bankers", value: "HNB, Seylan, Sampath, Cargils, Pan Asia, NTB & NDB", icon: <Landmark size={28} strokeWidth={1.5} /> },
   ];
 
   return (
