@@ -1065,7 +1065,7 @@ const projectsData = [
   // 2020
   {
     id: 'project-102',
-    type: 'completed', category: "water",
+    type: 'completed', category: "drainage",
     title: "Kolonnawa Canal Diversion Scheme - Stage I.",
     heroImage: "/images/projects/new-folder/kolonnawa-canal/background image.jpg",
     galleryImages: [
@@ -1134,7 +1134,7 @@ const projectsData = [
   },
   {
     id: 'project-52',
-    type: 'completed', category: "water",
+    type: 'completed', category: "drainage",
     title: "Kolonnawa Canal Diversion Scheme - Stage III",
     status: "Completed",
     client: "Ministry of Megapolis & Western Development.",
