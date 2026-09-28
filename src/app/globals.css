@@ -488,11 +488,11 @@ ul {
 }
 
 .logo-title {
-  font-family: 'Times New Roman', Times, serif !important;
-  font-weight: 700;
-  font-size: 1.4rem;
-  line-height: 1.1;
-  color: var(--text-dark);
+    font-family: 'Times New Roman', Times, serif !important;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.1;
+    color: #FF2020;
   letter-spacing: 0.3px;
 }
 
@@ -900,7 +900,7 @@ ul {
   
 
   .navbar-wrapper .logo-title {
-    color: #ffffff !important;
+      color: #FF2020 !important;
     font-size: 1.1rem !important;
   }
 
