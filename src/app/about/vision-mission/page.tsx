@@ -114,7 +114,7 @@ export default function VisionMission() {
                 </div>
                 <h2 style={{ fontSize: isMobile ? "2rem" : "3rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "20px", letterSpacing: "-1px" }}>Our <span className="text-gradient" style={{ fontWeight: 300 }}>Mission</span></h2>
                 <p style={{ fontSize: "1.25rem", lineHeight: 1.8, color: "var(--text-light)", margin: 0, fontWeight: 400, textAlign: "justify" }}>
-                  To deliver complex infrastructure and heavy civil engineering projects with excellence, innovation, and integrity — combining experienced people, advanced technology, integrated resources, uncompromising quality, and a strong commitment to safety, sustainability, and client satisfaction.
+                  To consistently deliver reliable, cost-effective construction solutions with unwavering quality, integrity and environmental consciousness, fostering long-term partnerships with our clients and stakeholders.
                 </p>
               </div>
             </div>
