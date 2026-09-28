@@ -94,7 +94,7 @@ export default function Contact() {
                   <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.7 }}>No. 626C, Samurdhi Mw,<br/>Cheenagahawela, Heiyanthuduwa,<br/>Sapugaskanda.</p>
                 </div>
                   <div className="contact-map-square" style={{ marginLeft: "auto", width: "120px", height: "120px", borderRadius: "12px", overflow: "hidden", flexShrink: 0, border: "1px solid var(--border-soft)" }}>
-                    <iframe src="https://maps.google.com/maps?q=RR%20Construction%20Workshop%2C%20Sapugaskanda%2C%20Sri%20Lanka&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://maps.google.com/maps?q=RR%20Constructions%20%7C%20Work%20Shop%2C%20Heiyanthuduwa&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
 
