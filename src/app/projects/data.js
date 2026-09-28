@@ -1,5 +1,26 @@
 ﻿// Sorted array of all RR Construction completed & ongoing projects by Year (Descending)
 const projectsData = [
+  {
+    id: 'project-vbp2',
+    type: 'ongoing',
+    category: "bridges",
+    title: "Ongoing Bridge Construction Project",
+    client: "Confidential",
+    duration: "Ongoing",
+    year: 2025,
+    status: "Ongoing",
+    heroImage: '/images/projects/ongoing/vbp2/Background-image.jpeg',
+    galleryImages: [
+      '/images/projects/ongoing/vbp2/WhatsApp-Image-2026-09-28-at-12.32.24.jpeg',
+      '/images/projects/ongoing/vbp2/WhatsApp-Image-2026-09-28-at-12.32.25-1.jpeg',
+      '/images/projects/ongoing/vbp2/WhatsApp-Image-2026-09-28-at-12.32.25-2.jpeg',
+      '/images/projects/ongoing/vbp2/WhatsApp-Image-2026-09-28-at-12.32.26-1.jpeg',
+      '/images/projects/ongoing/vbp2/WhatsApp-Image-2026-09-28-at-12.32.26.jpeg',
+      '/images/projects/ongoing/vbp2/WhatsApp-Image-2026-09-28-at-12.32.27-1.jpeg',
+      '/images/projects/ongoing/vbp2/WhatsApp-Image-2026-09-28-at-12.32.27-2.jpeg',
+      '/images/projects/ongoing/vbp2/WhatsApp-Image-2026-09-28-at-12.32.27.jpeg'
+    ]
+  },
   // ONGOING PROJECTS
   {
     id: 'project-mod-landslide-10d',
