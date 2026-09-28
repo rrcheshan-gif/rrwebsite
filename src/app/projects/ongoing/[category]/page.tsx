@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React from 'react';
 import { notFound } from 'next/navigation';
 
@@ -82,8 +82,17 @@ export default function OngoingCategoryPage({ params }: { params: Promise<{ cate
     },
     'bridges': {
       title: 'Bridge Construction',
-      img: '/images/projects/ongoing/vbp/1.jpeg',
+      img: '/images/projects/ongoing/vbp2/Background-image.jpeg',
       gallery: [
+        '/images/projects/ongoing/vbp2/Background-image.jpeg',
+        '/images/projects/ongoing/vbp2/WhatsApp-Image-2026-09-28-at-12.32.24.jpeg',
+        '/images/projects/ongoing/vbp2/WhatsApp-Image-2026-09-28-at-12.32.25-1.jpeg',
+        '/images/projects/ongoing/vbp2/WhatsApp-Image-2026-09-28-at-12.32.25-2.jpeg',
+        '/images/projects/ongoing/vbp2/WhatsApp-Image-2026-09-28-at-12.32.26-1.jpeg',
+        '/images/projects/ongoing/vbp2/WhatsApp-Image-2026-09-28-at-12.32.26.jpeg',
+        '/images/projects/ongoing/vbp2/WhatsApp-Image-2026-09-28-at-12.32.27-1.jpeg',
+        '/images/projects/ongoing/vbp2/WhatsApp-Image-2026-09-28-at-12.32.27-2.jpeg',
+        '/images/projects/ongoing/vbp2/WhatsApp-Image-2026-09-28-at-12.32.27.jpeg',
         '/images/projects/ongoing/vbp/1.jpeg',
         '/images/projects/ongoing/vbp/2.jpeg',
         '/images/projects/ongoing/vbp/3.jpeg',
