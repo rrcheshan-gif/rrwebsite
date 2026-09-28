@@ -24,7 +24,7 @@ export default function ConcretePage() {
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <AutoBreadcrumb />
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
-            Concrete <span style={{ color: "var(--primary-red)" }}>Batching Plants</span>
+            Ready Mix <span style={{ color: "var(--primary-red)" }}>Concrete</span>
           </h1>
           
         </div>
@@ -38,7 +38,7 @@ export default function ConcretePage() {
               <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", margin: 0, fontSize: "0.9rem" }}>ISLAND-WIDE NETWORK</h4>
             </div>
             <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2.2rem, 6vw, 3.2rem)", color: "var(--text-dark)", margin: "0 0 15px 0", fontWeight: 800, lineHeight: 1.1 }}>
-              Concrete Batching <span className="text-gradient" style={{ fontWeight: 300 }}>Plants</span>
+              Ready Mix <span className="text-gradient" style={{ fontWeight: 300 }}>Concrete</span>
             </h2>
             <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.6, textAlign: "left", margin: 0 }}>
               Our extensive network of batching plants ensures that high-grade ready-mix concrete reaches your construction site exactly when you need it, maintaining perfect consistency and strength.
