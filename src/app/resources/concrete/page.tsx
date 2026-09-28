@@ -70,7 +70,7 @@ export default function ConcretePage() {
                     </div>
                   </div>
                   <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "auto" }}>
-                    1
+                    <a href="/resources/request-order" className="btn-glass-red btn-glass-sm" style={{ width: "100%", textAlign: "center", textDecoration: "none" }} >Request Quote</a>
                       {loc.mapLink && (
                         <a href={loc.mapLink} target="_blank" rel="noopener noreferrer" className="btn-glass-sm" style={{ display: "inline-block", width: "100%", textAlign: "center", textDecoration: "none", border: "1px solid var(--primary-red)", background: "var(--white)", color: "var(--primary-red)", fontWeight: "bold", padding: "10px", borderRadius: "30px", transition: "all 0.3s ease" }}>📍 View on Map</a>
                       )}
