@@ -113,7 +113,7 @@ export default function VisionMission() {
                   <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.85rem" }}>PURPOSE</h4>
                 </div>
                 <h2 style={{ fontSize: isMobile ? "2rem" : "3rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "20px", letterSpacing: "-1px" }}>Our <span className="text-gradient" style={{ fontWeight: 300 }}>Mission</span></h2>
-                <p style={{ fontSize: "1.25rem", lineHeight: 1.8, color: "var(--text-light)", margin: 0, fontWeight: 400, textAlign: "justify" }}>
+                <p style={{ fontSize: "1.25rem", lineHeight: 1.8, color: "#000000", margin: 0, fontWeight: 400, textAlign: "justify" }}>
                   To consistently deliver reliable, cost-effective construction solutions with unwavering quality, integrity and environmental consciousness, fostering long-term partnerships with our clients and stakeholders.
                 </p>
               </div>
