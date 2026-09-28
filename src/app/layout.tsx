@@ -103,6 +103,7 @@ import Footer from "./components/Footer";
 import { ThemeProvider } from "./components/ThemeProvider";
 import PageTransition from "./components/PageTransition";
 import FloatingChat from "./components/FloatingChat";
+import ImageProtection from "./components/ImageProtection";
 import Script from "next/script";
 
 export default function RootLayout({
@@ -138,6 +139,7 @@ export default function RootLayout({
       </head>
       <body className={`${outfitHeading.variable} ${outfitBody.variable} antialiased`} suppressHydrationWarning>
         <ThemeProvider>
+            <ImageProtection />
           <PageTransition />
           <Navbar />
           <main>{children}</main>
