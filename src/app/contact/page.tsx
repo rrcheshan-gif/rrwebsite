@@ -81,7 +81,7 @@ export default function Contact() {
                   <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.7 }}>No. 865, Dr. Danister de Silva MW,<br/>Baseline Road, Colombo 09,<br/>Orugodawatta.</p>
                 </div>
                   <div className="contact-map-square" style={{ marginLeft: "auto", width: "120px", height: "120px", borderRadius: "12px", overflow: "hidden", flexShrink: 0, border: "1px solid var(--border-soft)" }}>
-                    <iframe src="https://maps.google.com/maps?q=RR%20Construction%20(Pvt)%20Ltd%2C%20Orugodawatta%2C%20Sri%20Lanka&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://maps.google.com/maps?q=RR%20Construction,%20No.%20865,%20Dr.%20Danister%20de%20Silva%20Mawatha,%20Colombo&t=&z=17&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
 
