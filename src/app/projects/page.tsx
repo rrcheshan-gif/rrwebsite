@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -41,8 +41,8 @@ export default function Projects() {
   );
 
   
-  const milestoneIds = ['project-ldpp-package-02', 'project-47', 'project-32', 'project-86'];
-  const milestoneProjects = filteredProjects.filter((p: any) => milestoneIds.includes(p.id)).sort((a: any, b: any) => milestoneIds.indexOf(a.id) - milestoneIds.indexOf(b.id));
+  const milestoneIds = ['project-88', 'project-86', 'project-colombo-port-harbour-infra', 'project-ldpp-package-02', 'project-47', 'project-32'];
+  const milestoneProjects = filteredProjects.filter((p: any) => milestoneIds.includes(p.id)).sort((a: any, b: any) => (a.year ?? 0) - (b.year ?? 0));
   const regularProjects = filteredProjects.filter((p: any) => !milestoneIds.includes(p.id));
 
   const renderProjectCard = (project: any) => (
