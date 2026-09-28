@@ -905,7 +905,7 @@ ul {
   }
 
   .navbar-wrapper .logo-sub {
-    color: var(--primary-red) !important;
+      color: #FF2020 !important;
     font-size: 0.65rem !important;
   }
 
