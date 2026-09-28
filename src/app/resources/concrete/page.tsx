@@ -11,7 +11,7 @@ export default function ConcretePage() {
   const locations = [
     { name: "Ampara", district: "Ampara", image: "/images/ampara-concrete.jpg" },
     { name: "Jaffna", district: "Jaffna", image: "/images/resources/concrete/jaffna-plant.jpg" },
-    { name: "Iththapana", district: "Kalutara", image: "/images/iththapana-concrete.jpg" },
+    { name: "Iththapana", district: "Kalutara", image: "/images/iththapana-concrete.jpg", mapLink: "https://maps.google.com/maps?q=6.427356,80.086922" },
     { name: "Vadduvakal", district: "Mullaitivu", image: "/images/resources/concrete/vadduvakal-plant.jpg" },
     { name: "Galgamuwa", district: "Kurunegala", image: "/images/galgamuwa-concrete.jpg" },
     { name: "Gandara", district: "Matara", image: "/images/resources/concrete/gandara-plant.jpg", mapLink: "https://maps.app.goo.gl/zFmLWKXwNahvweFP8" }
