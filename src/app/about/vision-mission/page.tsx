@@ -97,7 +97,7 @@ export default function VisionMission() {
                   <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", margin: 0, fontSize: "0.85rem" }}>FUTURE OUTLOOK</h4>
                 </div>
                 <h2 style={{ fontSize: isMobile ? "2rem" : "3rem", fontFamily: "var(--font-heading)", fontWeight: 800, color: "var(--text-dark)", marginBottom: "20px", letterSpacing: "-1px" }}>Our <span className="text-gradient" style={{ fontWeight: 300 }}>Vision</span></h2>
-                <p style={{ fontSize: "clamp(2rem, 4vw, 2.8rem)", lineHeight: 1.3, color: "var(--text-dark)", margin: 0, fontWeight: 800, fontFamily: "var(--font-heading)", letterSpacing: "-0.5px" }}>Passion for <span style={{ color: "var(--primary-red)" }}>Engineering Excellence</span></p>
+                <p style={{ fontSize: "clamp(1.1rem, 2vw, 1.35rem)", lineHeight: 1.8, color: "#000000", margin: 0, fontWeight: 400, textAlign: "justify" }}>Passion for <span style={{ color: "var(--primary-red)" }}>Engineering Excellence</span></p>
               </div>
             </div>
           </Reveal>
