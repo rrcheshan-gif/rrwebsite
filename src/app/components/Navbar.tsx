@@ -108,7 +108,7 @@ export default function Navbar() {
               
               <li className={`dropdown ${activeDropdown === 'people' ? 'open' : ''}`}>
                 <div className="dropdown-header">
-                  <Link href="/people" title="Heavy Civil Engineering Workforce Sri Lanka" onClick={() => setMobileMenuOpen(false)} className={isActive("/people") ? "active" : ""}>People</Link>
+                  <Link href="/people" title="Heavy Civil Engineering Workforce Sri Lanka" onClick={() => setMobileMenuOpen(false)} className={isActive("/people") || isActive("/welfare") || isActive("/career") || isActive("/training") ? "active" : ""}>People</Link>
                   <button className="dropdown-toggle-btn" onClick={(e) => toggleDropdown('people', e)} aria-label="Toggle People Submenu">
                     <ChevronDown size={14} />
                   </button>
