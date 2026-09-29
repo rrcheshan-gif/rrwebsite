@@ -1034,7 +1034,7 @@ const projectsData = [
   {
     id: 'project-46',
     mapQuery: "Lellama, Negombo, Sri Lanka",
-    type: 'completed', category: "maritime",
+    type: 'completed', category: "dredging",
     title: "Negombo Lagoon development Project, Dredging of Lagoon- Lellama Site II (Stage I, Package IV).",
     heroImage: "/images/projects/Negombo Lagoon development Project, Dredging of Lagoon- Lellama Site II/1.jpg",
     galleryImages: [
@@ -1184,7 +1184,7 @@ const projectsData = [
   {
     id: 'project-105',
     mapQuery: "Negombo Lagoon, Negombo, Sri Lanka",
-    type: 'completed', category: "maritime",
+    type: 'completed', category: "dredging",
     title: "Negombo Lagoon development Project Stage I, Package III Dredging of Lagoon- Near Regina Road.",
     heroImage: "/images/projects/new-folder/negombo-lagoon-stage-1/1.jpg",
     galleryImages: [
@@ -1244,7 +1244,7 @@ const projectsData = [
   },
   {
     id: 'project-57',
-    type: 'completed', category: "maritime",
+    type: 'completed', category: "dredging",
     title: "Bank Protection Works of St.Sebestian North Canal",
     heroImage: "/images/projects/new-folder/Bank Protection Works of St.Sebestian North Canal/1.jpg",
     galleryImages: [
@@ -1746,7 +1746,7 @@ const projectsData = [
   },
   {
     id: 'project-101',
-    type: 'completed', category: "maritime",
+    type: 'completed', category: "dredging",
     title: "Dredging of Fishery Anchorage in Passiyoor in Jaffna District.",
     heroImage: "/images/projects/new-folder/passiyoor-anchorage/1.jpg",
     galleryImages: [
@@ -2003,7 +2003,7 @@ const projectsData = [
   {
     id: 'project-100',
     type: 'completed',
-    category: 'maritime',
+    category: 'dredging',
     title: 'Harbour Basin Dredging up to -3m MSL Depth at Suduwella Anchorage',
     status: 'Completed',
     client: 'Ceylon Fishery Harbours Corporation (CFHC) / UNOPS',

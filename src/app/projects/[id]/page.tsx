@@ -44,7 +44,8 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
   // --- Category display name ---
   let cat = project.category || 'other';
   let categoryDisplay = cat.charAt(0).toUpperCase() + cat.slice(1);
-  if (cat === 'maritime') categoryDisplay = 'Maritime & Dredging';
+  if (cat === 'maritime') categoryDisplay = 'Maritime';
+  if (cat === 'dredging') categoryDisplay = 'Dredging and Reclamation';
   if (cat === 'disaster') categoryDisplay = 'Disaster Management';
   if (cat === 'roads') categoryDisplay = 'Roads & Highways';
 
