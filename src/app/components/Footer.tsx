@@ -55,7 +55,7 @@ export default function Footer() {
               </li>
               <li>
                 <span className="contact-icon"><Phone size={18} /></span>
-                  <span><a href="tel:+94112433427" style={{ color: 'inherit', textDecoration: 'none' }}>011-2433427</a></span>
+                  <span><a href="tel:+94112433427" style={{ color: 'inherit', textDecoration: 'none' }}>+94 11-2433427</a></span>
               </li>
               <li>
                 <span className="contact-icon"><Mail size={18} /></span>

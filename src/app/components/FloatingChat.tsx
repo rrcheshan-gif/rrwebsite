@@ -49,7 +49,7 @@ export default function FloatingChat() {
       setMessages(prev => [...prev, { text: data.reply, sender: "bot" }]);
     } catch (error) {
       console.error(error);
-      setMessages(prev => [...prev, { text: "Sorry, I'm having trouble connecting to my brain right now. Please call us at 011-2433427.", sender: "bot" }]);
+      setMessages(prev => [...prev, { text: "Sorry, I'm having trouble connecting to my brain right now. Please call us at +94 11-2433427.", sender: "bot" }]);
     } finally {
       setIsLoading(false);
     }
