@@ -1797,7 +1797,7 @@ const projectsData = [
     {
       id: 'project-colombo-port-harbour-infra',
     mapQuery: "Port of Colombo, Sri Lanka",
-      type: 'completed', category: "maritime",
+      type: 'completed', category: "roads",
       title: "Colombo Port Expansion Project - Harbour Infrastructure works - Service Road and Paving Works",
       status: "Completed",
       client: "Sri Lanka Port Authority",
@@ -1851,7 +1851,7 @@ const projectsData = [
 
   {
     id: 'project-83',
-    type: 'completed', category: "maritime",
+    type: 'completed', category: "roads",
     title: "SAGT Harbour Access Road",
     status: "Completed",
     client: "Hyundai Engineering",
