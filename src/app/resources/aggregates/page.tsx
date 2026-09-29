@@ -22,7 +22,7 @@ export default function CrusherPage() {
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <AutoBreadcrumb />
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
-            Aggregates <span style={{ color: "var(--primary-red)" }}>& Sand</span>
+            Aggregates and Sand <span style={{ color: "var(--primary-red)" }}>Plants</span>
           </h1>
           
         </div>

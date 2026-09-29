@@ -24,7 +24,7 @@ export default function ConcretePage() {
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <AutoBreadcrumb />
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '0 0 24px', lineHeight: 1.2 }}>
-            Ready Mix <span style={{ color: "var(--primary-red)" }}>Concrete</span>
+            Ready Mix Concrete <span style={{ color: "var(--primary-red)" }}>Plants</span>
           </h1>
           
         </div>
