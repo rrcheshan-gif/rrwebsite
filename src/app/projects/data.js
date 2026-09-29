@@ -384,7 +384,7 @@ const projectsData = [
       ],
 
     duration: "12 Months",
-    year: 2025,
+    year: 2026,
     status: "Completed"
   },
   {
