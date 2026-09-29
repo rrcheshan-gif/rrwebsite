@@ -8,7 +8,7 @@ export default function OngoingProjects() {
   const categories = [
     { id: 'roads', title: 'Highway and Expressway Construction', img: '/images/highway-workers-site.jpg' },
     { id: 'bridges', title: 'Bridge Construction', img: '/images/projects/ongoing/vbp/1.jpeg' },
-    { id: 'irrigation', title: 'Irrigation & Water Supply', img: '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.28.jpeg' },
+    { id: 'irrigation', title: 'Irrigation & Water Supply', img: '/images/projects/ongoing/irrigation/ktp-1.jpeg' },
     { id: 'disaster', title: 'Landslide Mitigation', img: '/images/projects/ongoing/landslide/img-1.jpeg' },
     { id: 'maritime', title: 'Maritime \u0026 Dredging', img: '/images/projects/ongoing/kjp/1.jpeg' }
   ];

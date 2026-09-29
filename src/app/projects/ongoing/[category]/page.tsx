@@ -101,12 +101,17 @@ export default function OngoingCategoryPage({ params }: { params: Promise<{ cate
     },
     'irrigation': { 
       title: 'Irrigation & Water Supply', 
-      img: '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.28.jpeg',
+      img: '/images/projects/ongoing/irrigation/ktp-1.jpeg',
       gallery: [
         '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.28 (1).jpeg',
         '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.28.jpeg',
         '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.33.jpeg',
         '/images/nagapaduwan/WhatsApp Image 2026-07-24 at 23.23.55.jpeg',
+        '/images/projects/ongoing/irrigation/ktp-1.jpeg',
+        '/images/projects/ongoing/irrigation/ktp-2.jpeg',
+        '/images/projects/ongoing/irrigation/ktp-3.jpeg',
+        '/images/projects/ongoing/irrigation/ktp-4.jpeg',
+        '/images/projects/ongoing/irrigation/ktp-5.jpeg'
       ]
     },
     'disaster': { 
