@@ -111,12 +111,25 @@ export default function OngoingCategoryPage({ params }: { params: Promise<{ cate
     },
     'disaster': { 
       title: 'Landslide Mitigation', 
-      img: '/images/Badulla Landslide/Background image.jpeg',
+      img: '/images/projects/ongoing/landslide/img-1.jpeg',
       gallery: [
-        '/images/Badulla Landslide/WhatsApp Image 2026-07-28 at 16.41.31.jpeg',
-        '/images/Badulla Landslide/WhatsApp Image 2026-07-28 at 16.41.34.jpeg',
-        '/images/Badulla Landslide/WhatsApp Image 2026-07-28 at 16.41.43.jpeg',
-        '/images/Badulla Landslide/WhatsApp Image 2026-07-28 at 16.41.45.jpeg',
+        '/images/projects/ongoing/landslide/img-1.jpeg',
+        '/images/projects/ongoing/landslide/img-2.jpeg',
+        '/images/projects/ongoing/landslide/img-3.jpeg',
+        '/images/projects/ongoing/landslide/img-4.jpeg',
+        '/images/projects/ongoing/landslide/img-5.jpeg',
+        '/images/projects/ongoing/landslide/img-6.jpeg',
+        '/images/projects/ongoing/landslide/img-7.jpeg',
+        '/images/projects/ongoing/landslide/img-8.jpeg',
+        '/images/projects/ongoing/landslide/img-9.jpeg',
+        '/images/projects/ongoing/landslide/img-10.jpeg',
+        '/images/projects/ongoing/landslide/img-11.jpeg',
+        '/images/projects/ongoing/landslide/img-12.jpeg',
+        '/images/projects/ongoing/landslide/img-13.jpeg',
+        '/images/projects/ongoing/landslide/img-14.jpeg',
+        '/images/projects/ongoing/landslide/img-15.jpeg',
+        '/images/projects/ongoing/landslide/img-16.jpeg',
+        '/images/projects/ongoing/landslide/img-17.jpeg'
       ]
     },
     'maritime': { 
