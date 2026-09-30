@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
@@ -91,27 +91,8 @@ export default function Career() {
             <div>
               <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.8rem", marginBottom: "30px", borderBottom: "2px solid var(--primary-red)", paddingBottom: "10px", display: "inline-block", color: "var(--text-dark)" }}>Current Openings</h3>
               
-              <div className="career-job-card">
-                <div className="career-job-header">
-                  <h4 style={{ fontSize: "1.3rem", color: "var(--primary-red)", fontFamily: "var(--font-heading)", margin: 0 }}>Project Manager (Civil)</h4>
-                  <span style={{ background: "rgba(229,57,53,0.1)", color: "var(--primary-red)", padding: "5px 12px", borderRadius: "15px", fontSize: "0.8rem", fontWeight: 600 }}>Full Time</span>
-                </div>
-                <p style={{ color: "var(--text-light)", fontSize: "0.95rem", marginBottom: "12px", display: "flex", alignItems: "center", gap: "5px" }}>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg> Colombo / Site Locations
-                </p>
-                <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, margin: 0 }}>B.Sc. in Civil Engineering with minimum 10 years of experience in large-scale road and bridge projects.</p>
-              </div>
 
-              <div className="career-job-card">
-                <div className="career-job-header">
-                  <h4 style={{ fontSize: "1.3rem", color: "var(--primary-red)", fontFamily: "var(--font-heading)", margin: 0 }}>Site Engineer</h4>
-                  <span style={{ background: "rgba(229,57,53,0.1)", color: "var(--primary-red)", padding: "5px 12px", borderRadius: "15px", fontSize: "0.8rem", fontWeight: 600 }}>Full Time</span>
-                </div>
-                <p style={{ color: "var(--text-light)", fontSize: "0.95rem", marginBottom: "12px", display: "flex", alignItems: "center", gap: "5px" }}>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg> Various Project Sites
-                </p>
-                <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: 1.6, margin: 0 }}>B.Sc. Engineering or NDES/HNDE/NCT with 3+ years experience in maritime or highway construction.</p>
-              </div>
+
 
               <div className="career-job-card">
                 <div className="career-job-header">
@@ -163,8 +144,6 @@ export default function Career() {
                     <label style={{ display: "block", marginBottom: "8px", fontWeight: 500, color: "var(--text-dark)" }}>Position Applied For</label>
                     <select name="position" required style={{ width: "100%", padding: "12px", border: "1px solid var(--input-border)", borderRadius: "8px", background: "var(--input-bg)", color: "var(--text-dark)" }}>
                       <option value="">Select a position...</option>
-                      <option value="Project Manager">Project Manager (Civil)</option>
-                      <option value="Site Engineer">Site Engineer</option>
                       <option value="Heavy Machinery Operator">Heavy Machinery Operator</option>
                       <option value="Quantity Surveyor">Quantity Surveyor</option>
                       <option value="Other">Other / General Application</option>
