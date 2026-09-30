@@ -1164,28 +1164,9 @@ ul {
   gap: 12px;
 }
 
-.footer-social-pills a {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 0.85rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
 
-.footer-social-pills a:hover {
-  background: var(--primary-red);
-  border-color: var(--primary-red);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(229, 57, 53, 0.4);
-}
+
+
 
 .footer-heading {
   color: #ffffff;
@@ -2895,4 +2876,9 @@ img {
 /* Global protection for background images on mobile */
 .bg-image, [style*='background-image'] {
   -webkit-touch-callout: none;
+}
+
+.footer-social-icon:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
