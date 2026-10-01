@@ -112,34 +112,7 @@ export default function Contact() {
                 </div>
 
 
-              ﻿                <div style={{ background: "var(--white)", padding: "40px", borderRadius: "24px", boxShadow: "0 10px 30px rgba(0,0,0,0.04)", marginBottom: "25px", display: "flex", gap: "25px", alignItems: "center", flexWrap: "wrap", border: "1px solid var(--border-soft)", transition: "transform 0.4s ease" }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'none'}>
-                  <div style={{ background: "rgba(100,116,139,0.1)", color: "#64748b", padding: "20px", borderRadius: "20px" }}>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-                  </div>
-                  <div style={{ flex: "1 1 200px", minWidth: "200px" }}>
-                    <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", color: "var(--text-dark)", marginBottom: "10px" }}>Machine Yard</h3>
-                    <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.7 }}>No.504/L,<br/>Gorakagaswaththa,<br/>Biyagama.</p>
-                  </div>
-                  <div className="contact-map-wrapper" style={{ marginLeft: "auto", flex: "0 0 280px", height: "180px", borderRadius: "16px", overflow: "hidden", border: "1px solid var(--border-soft)", boxShadow: "0 8px 25px rgba(0,0,0,0.08)", marginTop: "0" }}>
-                    <iframe src="https://maps.google.com/maps?q=6.9527412,79.9971937&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-                </div>
-
-
-                <div style={{ background: "var(--white)", padding: "40px", borderRadius: "24px", boxShadow: "0 10px 30px rgba(0,0,0,0.04)", marginBottom: "25px", display: "flex", gap: "25px", alignItems: "center", flexWrap: "wrap", border: "1px solid var(--border-soft)", transition: "transform 0.4s ease" }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'none'}>
-                  <div style={{ background: "rgba(100,116,139,0.1)", color: "#64748b", padding: "20px", borderRadius: "20px" }}>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-                  </div>
-                  <div style={{ flex: "1 1 200px", minWidth: "200px" }}>
-                    <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", color: "var(--text-dark)", marginBottom: "10px" }}>Piling Yard</h3>
-                    <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.7 }}>No. 301,<br/>Samurdhi Mw,<br/>Heiyanthuduwa.</p>
-                  </div>
-                  <div className="contact-map-wrapper" style={{ marginLeft: "auto", flex: "0 0 280px", height: "180px", borderRadius: "16px", overflow: "hidden", border: "1px solid var(--border-soft)", boxShadow: "0 8px 25px rgba(0,0,0,0.08)", marginTop: "0" }}>
-                    <iframe src="https://maps.google.com/maps?q=6.967826,79.966006&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-                </div>
-
-<div style={{ background: "var(--white)", padding: "40px", borderRadius: "24px", boxShadow: "0 10px 30px rgba(0,0,0,0.04)", border: "1px solid var(--border-soft)", transition: "transform 0.4s ease" }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'none'}>
+              ﻿                <div style={{ background: "var(--white)", padding: "40px", borderRadius: "24px", boxShadow: "0 10px 30px rgba(0,0,0,0.04)", border: "1px solid var(--border-soft)", transition: "transform 0.4s ease" }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'none'}>
                 <ul style={{ listStyle: "none", fontSize: "1.1rem", lineHeight: 2.2, margin: 0, padding: 0 }}>
                   <li style={{ display: "flex", gap: "15px", alignItems: "center", color: "var(--text-dark)" }}>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
@@ -161,7 +134,8 @@ export default function Contact() {
               </div>
             </div>
 
-            <div style={{ background: "linear-gradient(to bottom, #0a0a0a, #111)", color: "white", padding: "50px", borderRadius: "32px", boxShadow: "0 20px 50px rgba(0,0,0,0.15)", border: "1px solid rgba(255,255,255,0.05)", position: "relative", overflow: "hidden" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "25px" }}>
+<div style={{ background: "linear-gradient(to bottom, #0a0a0a, #111)", color: "white", padding: "50px", borderRadius: "32px", boxShadow: "0 20px 50px rgba(0,0,0,0.15)", border: "1px solid rgba(255,255,255,0.05)", position: "relative", overflow: "hidden" }}>
               <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "5px", background: "var(--primary-red)" }}></div>
               <h3 style={{ fontFamily: "var(--font-heading)", color: "white", marginBottom: "30px", fontSize: "2.2rem" }}>Send a Message</h3>
               
@@ -197,6 +171,36 @@ export default function Contact() {
                 <button type="submit" disabled={isSubmitting} className="btn btn-primary" style={{ width: "100%", marginTop: "15px", padding: "18px", fontSize: "1.1rem", borderRadius: "12px", opacity: isSubmitting ? 0.7 : 1 }}>{isSubmitting ? "Sending..." : "Send Message"}</button>
               </form>
             </div>
+
+<div style={{ background: "var(--white)", padding: "40px", borderRadius: "24px", boxShadow: "0 10px 30px rgba(0,0,0,0.04)", marginBottom: "25px", display: "flex", gap: "25px", alignItems: "center", flexWrap: "wrap", border: "1px solid var(--border-soft)", transition: "transform 0.4s ease" }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'none'}>
+                  <div style={{ background: "rgba(100,116,139,0.1)", color: "#64748b", padding: "20px", borderRadius: "20px" }}>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                  </div>
+                  <div style={{ flex: "1 1 200px", minWidth: "200px" }}>
+                    <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", color: "var(--text-dark)", marginBottom: "10px" }}>Machine Yard</h3>
+                    <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.7 }}>No.504/L,<br/>Gorakagaswaththa,<br/>Biyagama.</p>
+                  </div>
+                  <div className="contact-map-wrapper" style={{ marginLeft: "auto", flex: "0 0 280px", height: "180px", borderRadius: "16px", overflow: "hidden", border: "1px solid var(--border-soft)", boxShadow: "0 8px 25px rgba(0,0,0,0.08)", marginTop: "0" }}>
+                    <iframe src="https://maps.google.com/maps?q=6.9527412,79.9971937&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+
+
+                <div style={{ background: "var(--white)", padding: "40px", borderRadius: "24px", boxShadow: "0 10px 30px rgba(0,0,0,0.04)", marginBottom: "25px", display: "flex", gap: "25px", alignItems: "center", flexWrap: "wrap", border: "1px solid var(--border-soft)", transition: "transform 0.4s ease" }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'none'}>
+                  <div style={{ background: "rgba(100,116,139,0.1)", color: "#64748b", padding: "20px", borderRadius: "20px" }}>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                  </div>
+                  <div style={{ flex: "1 1 200px", minWidth: "200px" }}>
+                    <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", color: "var(--text-dark)", marginBottom: "10px" }}>Piling Yard</h3>
+                    <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.7 }}>No. 301,<br/>Samurdhi Mw,<br/>Heiyanthuduwa.</p>
+                  </div>
+                  <div className="contact-map-wrapper" style={{ marginLeft: "auto", flex: "0 0 280px", height: "180px", borderRadius: "16px", overflow: "hidden", border: "1px solid var(--border-soft)", boxShadow: "0 8px 25px rgba(0,0,0,0.08)", marginTop: "0" }}>
+                    <iframe src="https://maps.google.com/maps?q=6.967826,79.966006&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+
+
+</div>
 
         </div>
         
