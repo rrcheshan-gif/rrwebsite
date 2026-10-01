@@ -2906,10 +2906,7 @@ img, video, iframe, canvas {
 }
 
 /* Specific fix for next/image and explicit height images */
-img[style*="height"] {
-  height: auto !important;
-  object-fit: contain;
-}
+
 .hero-img-container img {
   height: 100% !important;
   object-fit: cover !important;
