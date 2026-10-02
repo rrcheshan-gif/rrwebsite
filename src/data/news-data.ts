@@ -17,33 +17,35 @@ export const NEWS_DATA: NewsItem[] = [
     slug: 'historic-return-podi-manike-peradeniya',
     tag: 'Railway Infrastructure',
     title: 'Historic Return of "Podi Manike" to Peradeniya After 10 Months',
-    desc: 'Following extensive rehabilitation work on the upcountry railway line, the iconic Podi Manike train successfully returned to Peradeniya station, marked by joyous celebrations.',
+    desc: 'Following extensive rehabilitation work by RR Construction to repair 103 locations damaged by Cyclone Ditwah, the iconic Podi Manike train returned to Peradeniya after 10 months.',
     date: 'October 2, 2026',
     img: '/images/news/podi-manike.jpg',
     crop: 'center',
     featured: true,
     content: `
-      <p>The iconic <strong>"Podi Manike"</strong> train has triumphantly returned to the Peradeniya Railway Station after a hiatus of 10 months, marking a significant milestone in Sri Lanka's railway infrastructure rehabilitation.</p>
-      
-      <p>The service resumption was met with joyous celebrations by locals and railway enthusiasts, complete with the lighting of firecrackers as the train navigated the challenging Balana Pass and arrived at the station.</p>
-      
-      <div style="margin: 40px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-        <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-          <iframe 
-            src="https://www.youtube.com/embed/VSvSuB4xQBc?si=L42r0xQ" 
-            title="YouTube video player" 
-            frameBorder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowFullScreen 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-          ></iframe>
+              <p>The iconic <strong>"Podi Manike"</strong> train has triumphantly returned to the Peradeniya Railway Station after a hiatus of 10 months, marking a significant milestone in Sri Lanka's railway infrastructure rehabilitation, spearheaded by <strong>RR Construction</strong>.</p>
+        
+        <p>The service resumption was met with joyous celebrations by locals and railway enthusiasts, complete with the lighting of firecrackers as the train safely navigated the challenging Balana Pass and arrived at the station.</p>
+        
+        <div style="margin: 40px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+          <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+            <iframe 
+              src="https://www.youtube.com/embed/VSvSuB4xQBc?si=L42r0xQ" 
+              title="YouTube video player" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowFullScreen 
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+            ></iframe>
+          </div>
         </div>
-      </div>
-      
-      <h3>Enhancing the Upcountry Line</h3>
-      <p>The suspension of the service was necessary to carry out critical infrastructure upgrades and rehabilitation work along the demanding upcountry railway line, particularly around the steep inclines of the Balana Pass. These extensive civil engineering and track stabilization efforts ensure the safety, efficiency, and longevity of the railway network.</p>
-      
-      <p>RR Construction remains committed to contributing to the modernization and maintenance of Sri Lanka's vital transportation infrastructure, ensuring safe and reliable journeys for all passengers.</p>
+        
+        <h3>Recovering from Cyclone Ditwah</h3>
+        <p>The 10-month suspension of train services was a direct result of the catastrophic <strong>Cyclone Ditwah</strong>, which wreaked havoc across Sri Lanka. The severe storm triggered massive landslides and washouts, severely damaging the upcountry railway line at <strong>103 different locations</strong> between Rambukkana and Gampola.</p>
+        
+        <p>Recognized for our rapid response and heavy civil engineering expertise, <strong>RR Construction</strong> was entrusted with the monumental task of restoring the critical rail link. Our teams worked tirelessly through treacherous conditions, particularly around the steep and historically unstable inclines of the Balana Pass. We executed extensive earthworks, slope stabilization, retaining wall construction, and track restoration to ensure the route was safe for passenger transit once again.</p>
+        
+        <p>This successful reopening stands as a testament to our commitment to rebuilding and modernizing Sri Lanka's vital transportation infrastructure, ensuring safe and reliable journeys even in the wake of natural disasters.</p>
     `
   },
   {
@@ -226,4 +228,6 @@ export const NEWS_DATA: NewsItem[] = [
   }
 
 ];
+
+
 
