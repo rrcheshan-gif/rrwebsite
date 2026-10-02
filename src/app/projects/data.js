@@ -769,7 +769,7 @@ const projectsData = [
     mapQuery: "Ratnapura, Sri Lanka",
     type: 'completed', category: "roads",
     title: "Rehabilitation of 30.12km rural roads in Rathnapura",
-    heroImage: '/images/IMAGES/RRP/rrp-5.jpg',
+    heroImage: '/images/IMAGES/RRP/rrp-13.jpg',
     galleryImages: ['/images/IMAGES/RRP/rrp-1.jpg', '/images/IMAGES/RRP/rrp-2.jpg', '/images/IMAGES/RRP/rrp-3.jpg', '/images/IMAGES/RRP/rrp-4.jpg', '/images/IMAGES/RRP/rrp-5.jpg', '/images/IMAGES/RRP/rrp-9.jpg', '/images/IMAGES/RRP/rrp-10.jpg', '/images/IMAGES/RRP/rrp-11.jpg', '/images/IMAGES/RRP/rrp-12.jpg', '/images/IMAGES/RRP/rrp-13.jpg'],
     status: "Completed",
     client: "Road Development Authority",
