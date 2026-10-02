@@ -1,4 +1,4 @@
-﻿export interface NewsItem {
+export interface NewsItem {
   id: number;
   slug: string;
   tag: string;
@@ -12,6 +12,40 @@
 }
 
 export const NEWS_DATA: NewsItem[] = [
+  {
+    id: 1790924318400,
+    slug: 'historic-return-podi-manike-peradeniya',
+    tag: 'Railway Infrastructure',
+    title: 'Historic Return of "Podi Manike" to Peradeniya After 10 Months',
+    desc: 'Following extensive rehabilitation work on the upcountry railway line, the iconic Podi Manike train successfully returned to Peradeniya station, marked by joyous celebrations.',
+    date: 'October 2, 2026',
+    img: '/images/news/podi-manike.jpg',
+    crop: 'center',
+    featured: true,
+    content: `
+      <p>The iconic <strong>"Podi Manike"</strong> train has triumphantly returned to the Peradeniya Railway Station after a hiatus of 10 months, marking a significant milestone in Sri Lanka's railway infrastructure rehabilitation.</p>
+      
+      <p>The service resumption was met with joyous celebrations by locals and railway enthusiasts, complete with the lighting of firecrackers as the train navigated the challenging Balana Pass and arrived at the station.</p>
+      
+      <div style="margin: 40px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+          <iframe 
+            src="https://www.youtube.com/embed/VSvSuB4xQBc?si=L42r0xQ" 
+            title="YouTube video player" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowFullScreen 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+          ></iframe>
+        </div>
+      </div>
+      
+      <h3>Enhancing the Upcountry Line</h3>
+      <p>The suspension of the service was necessary to carry out critical infrastructure upgrades and rehabilitation work along the demanding upcountry railway line, particularly around the steep inclines of the Balana Pass. These extensive civil engineering and track stabilization efforts ensure the safety, efficiency, and longevity of the railway network.</p>
+      
+      <p>RR Construction remains committed to contributing to the modernization and maintenance of Sri Lanka's vital transportation infrastructure, ensuring safe and reliable journeys for all passengers.</p>
+    `
+  },
   {
     id: 1790320633834,
     slug: 'acquisition-watermaster-classic-dredger',
@@ -50,7 +84,7 @@ export const NEWS_DATA: NewsItem[] = [
     desc: 'Setting a new benchmark in the local construction industry, RR Construction has successfully imported the first-ever brand new Wirtgen W 200 F milling machine to Sri Lanka.',
     date: 'September 17, 2026',
     img: '/images/news/wirtgen-milling-machine/img-1.jpg',
-    featured: true,
+    featured: false,
     content: `
       <p>RR Construction (Pvt) Ltd is proud to announce the latest addition to our extensive fleet of heavy machinery: the state-of-the-art <strong>Wirtgen W 200 F Cold Milling Machine</strong>. This milestone marks a significant achievement not only for our company but for the entire Sri Lankan construction industry, as it is the <strong>first brand new milling machine of its kind</strong> to be brought into the country.</p>
       
