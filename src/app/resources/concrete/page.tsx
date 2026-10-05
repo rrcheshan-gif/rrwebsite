@@ -9,7 +9,7 @@ import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 export default function ConcretePage() {
   const router = useRouter();
   const locations = [
-    { name: "Ampara", district: "Ampara", image: "/images/ampara-concrete.jpg" },
+    { name: "Ampara", district: "Ampara", image: "/images/ampara-concrete.jpg", mapLink: "https://maps.app.goo.gl/LeDzcGLNzVaBCfKG6" },
     { name: "Mirusuvil", district: "Jaffna", image: "/images/resources/concrete/jaffna-plant.jpg", mapLink: "https://maps.app.goo.gl/JSo3SVAKCvKWRW8n7?g_st=aw" },
     { name: "Iththapana", district: "Kalutara", image: "/images/iththapana-concrete.jpg", mapLink: "https://maps.google.com/maps?q=6.427356,80.086922" },
     { name: "Vadduvakal", district: "Mullaitivu", image: "/images/resources/concrete/vadduvakal-plant.jpg", mapLink: "https://maps.app.goo.gl/jbcU7ZPpsuu7PJLA6" },
@@ -88,6 +88,7 @@ export default function ConcretePage() {
     </main>
   );
 }
+
 
 
 
