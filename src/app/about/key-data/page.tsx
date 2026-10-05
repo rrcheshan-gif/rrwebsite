@@ -22,7 +22,7 @@ export default function KeyDataPage() {
     { label: "Registration No", value: "PV 11346", icon: <Hash size={28} strokeWidth={1.5} /> },
     { label: "National Grading", value: "CS2 (CIDA) - Highest Grade in Buildings, Roads, Water, Bridges", icon: <Award size={28} strokeWidth={1.5} /> },
     { label: "Quality Standards", value: "ISO 9001:2015, ISO 14001:2015, ISO 45001:2018", icon: <FileText size={28} strokeWidth={1.5} /> },
-    { label: "Direct Workforce", value: "1,400+", icon: <Users size={28} strokeWidth={1.5} /> },
+    { label: "Direct Workforce", value: "2,000+", icon: <Users size={28} strokeWidth={1.5} /> },
     { label: "Machinery Units", value: "1,000+", icon: <Tractor size={28} strokeWidth={1.5} /> },
     { label: "Head Office", value: "No. 865, Dr. Danister De Silva Mawatha, Baseline Road, Colombo 9.", icon: <MapPin size={28} strokeWidth={1.5} /> },
     { label: "Company Bankers", value: "HNB, Seylan, Sampath, Cargils, Pan Asia, NTB & NDB", icon: <Landmark size={28} strokeWidth={1.5} /> },

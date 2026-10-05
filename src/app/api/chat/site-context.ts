@@ -22,7 +22,7 @@ Type: 100% Sri Lankan Owned Private Limited Company
 CIDA Grade: CS2 — The highest civil engineering contractor grade in Sri Lanka (Highways, Bridges, Water Supply)
 CIDA Registration No: C-10171
 ISO Certifications: ISO 9001:2015 (Quality), ISO 14001:2015 (Environment), ISO 45001:2018 (Safety)
-Workforce: Over 1,400+ dedicated professionals (engineers, quantity surveyors, HSE officers, operators, tradespeople)
+Workforce: Over 2,000+ dedicated professionals (engineers, quantity surveyors, HSE officers, operators, tradespeople)
 Machinery Fleet: 1,000+ heavy construction machines — owned outright, ensuring total resource independence
 Completed Projects: 100+ landmark projects across Sri Lanka and overseas (Maldives)
 
@@ -48,7 +48,7 @@ Social Media: Facebook (fb.com/profile.php?id=61594119435109), Instagram (@rrcon
 
 3. Mr. S.R. Gamage — General Manager (Operations)
    Qualifications: Diploma in Engineering (NDT), CEI Part 1 & 2 London, MIEDSL, MNFET
-   Bio: Directs day-to-day execution of all active project sites. Coordinates the 1,400+ workforce and machinery fleet. Strict enforcer of ISO-certified HSE (Health, Safety & Environment) protocols.
+   Bio: Directs day-to-day execution of all active project sites. Coordinates the 2,000+ workforce and machinery fleet. Strict enforcer of ISO-certified HSE (Health, Safety & Environment) protocols.
 
 --- CORE SERVICES (8 Specializations) ---
 1. Highway & Expressway Construction:
