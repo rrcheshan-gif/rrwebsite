@@ -333,8 +333,8 @@ export default function VeerapuramPlant() {
                 </a>
               </div>
             </div>
-            <div style={{ position: "relative", minHeight: "350px", background: "#eee" }}>
-              <iframe src="https://maps.google.com/maps?q=RR+Construction+Veerapuram+Plant&t=k&output=embed" width="100%" height="100%" style={{ border: 0, position: "absolute", top: 0, left: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <div style={{ minHeight: "350px", background: "#eee", display: "flex" }}>
+              <iframe src="https://maps.google.com/maps?q=RR+Construction+Veerapuram+Plant&t=k&output=embed" width="100%" height="100%" style={{ border: 0, flex: 1, minHeight: "350px" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>

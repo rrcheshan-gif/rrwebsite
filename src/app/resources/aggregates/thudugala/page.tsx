@@ -118,8 +118,8 @@ export default function ThudugalaPlant() {
                 <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.6 }}>RR Construction (Pvt) Ltd,<br/>Thudugala,<br/>Kalutara.</p>
               </div>
             </div>
-            <div style={{ position: "relative", minHeight: "350px", background: "#eee" }}>
-              <iframe src="https://maps.google.com/maps?q=6.567102,80.0623541&t=k&z=17&output=embed" width="100%" height="100%" style={{ border: 0, position: "absolute", top: 0, left: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <div style={{ minHeight: "350px", background: "#eee", display: "flex" }}>
+              <iframe src="https://maps.google.com/maps?q=6.567102,80.0623541&t=k&z=17&output=embed" width="100%" height="100%" style={{ border: 0, flex: 1, minHeight: "350px" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
