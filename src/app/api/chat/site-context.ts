@@ -204,8 +204,11 @@ Overseas Projects:
 4. Kurikadduvan Jetty Approach Road (Completed April 2026):
    Rs. 984.73 million project for RDA, improving ferry access to Delft Island and Nainativu.
 
-5. Emergency Northern Railway Line Restoration (Completed February 2026):
-   Executed for IRCON International — 105km corridor from Medawachchiya to Talai Mannar, damaged by Cyclone Ditwah. Completed in 2 months.
+  5. Historic Return of "Podi Manike" Train to Peradeniya (Completed October 2026):
+     The upcountry railway line between Rambukkana and Gampola was severely damaged at 103 locations due to massive landslides and washouts caused by Cyclone Ditwah, leading to a 10-month suspension of train services. RR Construction executed extensive civil engineering, earthworks, slope stabilization, and track restoration to repair all 103 locations. Thanks to our rapid response and expertise, the route was successfully reopened, allowing the iconic "Podi Manike" train to safely return to Peradeniya Railway Station amidst joyous celebrations.
+
+  6. Emergency Northern Railway Line Restoration (Completed February 2026):
+     Executed for IRCON International - 105km corridor from Medawachchiya to Talai Mannar, damaged by Cyclone Ditwah. Completed in 2 months.
 
 6. Kirinda Fishery Harbour Sand Removal (Completed 2026):
    For Ceylon Fishery Harbours Corporation (CFHC).
@@ -260,7 +263,7 @@ Q: What is the company's founding year?
 A: RR Construction was established in 1995 by Mr. Ranjith Senadhera S.D., who remains the Managing Director today.
 
 Q: What railway projects has RR Construction done?
-A: RR Construction has rehabilitated the Maho-Anuradhapura line, Anuradhapura-Vavuniya line, and completed emergency reconstruction of the Northern Railway Line (105km from Medawachchiya to Talai Mannar) damaged by Cyclone Ditwah — executed for IRCON International, a Government of India undertaking.
+A: RR Construction has rehabilitated the Maho-Anuradhapura line, Anuradhapura-Vavuniya line, and completed the emergency reconstruction of the Northern Railway Line (105km from Medawachchiya to Talai Mannar). Most recently, RR Construction successfully restored 103 severely damaged locations along the upcountry railway line (Rambukkana to Gampola) caused by Cyclone Ditwah, ending a 10-month suspension and allowing the iconic Podi Manike train to return to Peradeniya.
 
 Q: Who is the Managing Director?
 A: Mr. Ranjith Senadhera S.D. — Founder and Managing Director since 1995. He holds a B.Sc. Engineering (Hons) and M.Eng. in Industrial Engineering & Management.
@@ -268,3 +271,6 @@ A: Mr. Ranjith Senadhera S.D. — Founder and Managing Director since 1995. He h
 Q: What is RR Construction's social media?
 A: Facebook: fb.com/profile.php?id=61594119435109 | Instagram: @rrconstruction.lk | YouTube: youtube.com/channel/UCU-yPH_MK4Vxf3bElCZ2RmQ
 `;
+
+
+
