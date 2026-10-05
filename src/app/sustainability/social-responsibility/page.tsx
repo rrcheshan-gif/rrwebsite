@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -201,6 +201,30 @@ export default function SocialResponsibility() {
               </div>
             </div>
           </div>
+
+          {/* Initiative Item 3 */}
+          <div style={{ background: "var(--white)", borderRadius: "24px", overflow: "hidden", boxShadow: "0 20px 40px rgba(0,0,0,0.05)", border: "1px solid var(--border-soft)", marginBottom: "40px" }}>
+            <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row" }}>
+              <div style={{ flex: 1, padding: isMobile ? "30px" : "50px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                <span style={{ background: "rgba(229,57,53,0.1)", color: "var(--primary-red)", padding: "6px 16px", borderRadius: "20px", fontSize: "0.9rem", fontWeight: 700, alignSelf: "flex-start", marginBottom: "20px" }}>Community & Heritage</span>
+                <h3 style={{ fontSize: "2rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>
+                  Ongoing Construction of "Sadaham Piyasa" Multipurpose Building
+                </h3>
+                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
+                  Reaffirming our commitment to the spiritual and social well-being of our communities, RR Construction has undertaken the construction of the "Sadaham Piyasa" Multipurpose Building. This ongoing corporate social responsibility initiative aims to provide a dedicated, modern facility for community gatherings, religious observances, and educational programs.
+                </p>
+                <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8 }}>
+                  Our engineering and construction teams are actively engaged in the structural development of the building, bringing our industry expertise to ensure a high-quality, durable establishment that will serve generations to come. This project stands as a testament to our philosophy of empowering local communities and fostering cultural heritage.
+                </p>
+              </div>
+              <div style={{ flex: 1, display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", gap: "2px", background: "var(--border-soft)" }}>
+                <img src="/CSR/csr-sadaham-1.jpg" alt="Sadaham Piyasa Construction 1" onClick={() => setLightboxImage('/CSR/csr-sadaham-1.jpg')} style={{ width: "100%", height: "100%", objectFit: "cover", minHeight: isMobile ? "150px" : "250px", cursor: "pointer", transition: "transform 0.3s ease" }} onMouseOver={(e) => e.currentTarget.style.transform="scale(1.02)"} onMouseOut={(e) => e.currentTarget.style.transform="scale(1)"} />
+                <img src="/CSR/csr-sadaham-2.jpg" alt="Sadaham Piyasa Construction 2" onClick={() => setLightboxImage('/CSR/csr-sadaham-2.jpg')} style={{ width: "100%", height: "100%", objectFit: "cover", minHeight: isMobile ? "150px" : "250px", cursor: "pointer", transition: "transform 0.3s ease" }} onMouseOver={(e) => e.currentTarget.style.transform="scale(1.02)"} onMouseOut={(e) => e.currentTarget.style.transform="scale(1)"} />
+                <img src="/CSR/csr-sadaham-3.jpg" alt="Sadaham Piyasa Construction 3" onClick={() => setLightboxImage('/CSR/csr-sadaham-3.jpg')} style={{ width: "100%", height: "100%", objectFit: "cover", minHeight: isMobile ? "150px" : "250px", cursor: "pointer", transition: "transform 0.3s ease" }} onMouseOver={(e) => e.currentTarget.style.transform="scale(1.02)"} onMouseOut={(e) => e.currentTarget.style.transform="scale(1)"} />
+                <img src="/CSR/csr-sadaham-4.jpg" alt="Sadaham Piyasa Construction 4" onClick={() => setLightboxImage('/CSR/csr-sadaham-4.jpg')} style={{ width: "100%", height: "100%", objectFit: "cover", minHeight: isMobile ? "150px" : "250px", cursor: "pointer", transition: "transform 0.3s ease" }} onMouseOver={(e) => e.currentTarget.style.transform="scale(1.02)"} onMouseOut={(e) => e.currentTarget.style.transform="scale(1)"} />
+              </div>
+            </div>
+          </div>
           
         </div>
       </section>
@@ -218,6 +242,7 @@ export default function SocialResponsibility() {
     </div>
   );
 }
+
 
 
 
