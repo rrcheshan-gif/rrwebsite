@@ -208,10 +208,10 @@ export default function SocialResponsibility() {
               <div style={{ flex: 1, padding: isMobile ? "30px" : "50px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
                 <span style={{ background: "rgba(229,57,53,0.1)", color: "var(--primary-red)", padding: "6px 16px", borderRadius: "20px", fontSize: "0.9rem", fontWeight: 700, alignSelf: "flex-start", marginBottom: "20px" }}>Community & Heritage</span>
                 <h3 style={{ fontSize: "2rem", color: "var(--text-dark)", fontFamily: "var(--font-heading)", fontWeight: 800, marginBottom: "20px", lineHeight: 1.2 }}>
-                  Ongoing Construction of "Sadaham Piyasa" Multipurpose Building
+                  Ongoing Construction of a Multipurpose Building
                 </h3>
                 <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8, marginBottom: "20px" }}>
-                  Reaffirming our commitment to the spiritual and social well-being of our communities, RR Construction has undertaken the construction of the "Sadaham Piyasa" Multipurpose Building. This ongoing corporate social responsibility initiative aims to provide a dedicated, modern facility for community gatherings, religious observances, and educational programs.
+                  Reaffirming our commitment to the spiritual and social well-being of our communities, RR Construction has undertaken the construction of a new Multipurpose Building. This ongoing corporate social responsibility initiative aims to provide a dedicated, modern facility for community gatherings, religious observances, and educational programs.
                 </p>
                 <p style={{ color: "var(--text-light)", fontSize: "1.1rem", lineHeight: 1.8 }}>
                   Our engineering and construction teams are actively engaged in the structural development of the building, bringing our industry expertise to ensure a high-quality, durable establishment that will serve generations to come. This project stands as a testament to our philosophy of empowering local communities and fostering cultural heritage.
@@ -242,6 +242,7 @@ export default function SocialResponsibility() {
     </div>
   );
 }
+
 
 
 
