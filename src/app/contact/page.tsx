@@ -88,7 +88,7 @@ export default function Contact() {
                     </div>
                   </div>
                   <div className="contact-map-wrapper" style={{ width: "100%", height: "300px", borderRadius: "16px", overflow: "hidden", border: "1px solid var(--border-soft)", boxShadow: "0 4px 15px rgba(0,0,0,0.05)" }}>
-                    <iframe src="https://maps.google.com/maps?q=RR%20Construction,%20No.%20865,%20Dr.%20Danister%20de%20Silva%20Mawatha,%20Colombo&t=&z=17&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://maps.google.com/maps?q=RR%20Construction,%20No.%20865,%20Dr.%20Danister%20de%20Silva%20Mawatha,%20Colombo&t=&z=17&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0, height: "100%", minHeight: "300px" }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
 
@@ -108,7 +108,7 @@ export default function Contact() {
                     </div>
                   </div>
                   <div className="contact-map-wrapper" style={{ width: "100%", height: "300px", borderRadius: "16px", overflow: "hidden", border: "1px solid var(--border-soft)", boxShadow: "0 4px 15px rgba(0,0,0,0.05)" }}>
-                    <iframe src="https://maps.google.com/maps?q=RR%20Constructions%20%7C%20Work%20Shop%2C%20Heiyanthuduwa&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://maps.google.com/maps?q=RR%20Constructions%20%7C%20Work%20Shop%2C%20Heiyanthuduwa&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0, height: "100%", minHeight: "300px" }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
 
@@ -127,7 +127,7 @@ export default function Contact() {
                     </div>
                   </div>
                   <div className="contact-map-wrapper" style={{ width: "100%", height: "300px", borderRadius: "16px", overflow: "hidden", border: "1px solid var(--border-soft)", boxShadow: "0 4px 15px rgba(0,0,0,0.05)" }}>
-                    <iframe src="https://maps.google.com/maps?q=RRC%20Main%20Warehouse%2C%20Henegama&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://maps.google.com/maps?q=RRC%20Main%20Warehouse%2C%20Henegama&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0, height: "100%", minHeight: "300px" }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
 
@@ -207,7 +207,7 @@ export default function Contact() {
                     </div>
                   </div>
                   <div className="contact-map-wrapper" style={{ width: "100%", height: "300px", borderRadius: "16px", overflow: "hidden", border: "1px solid var(--border-soft)", boxShadow: "0 4px 15px rgba(0,0,0,0.05)" }}>
-                    <iframe src="https://maps.google.com/maps?q=6.9527412,79.9971937&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://maps.google.com/maps?q=6.9527412,79.9971937&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0, height: "100%", minHeight: "300px" }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
 
@@ -227,7 +227,7 @@ export default function Contact() {
                     </div>
                   </div>
                   <div className="contact-map-wrapper" style={{ width: "100%", height: "300px", borderRadius: "16px", overflow: "hidden", border: "1px solid var(--border-soft)", boxShadow: "0 4px 15px rgba(0,0,0,0.05)" }}>
-                    <iframe src="https://maps.google.com/maps?q=6.967826,79.966006&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://maps.google.com/maps?q=6.967826,79.966006&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style={{ border: 0, height: "100%", minHeight: "300px" }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
 
@@ -264,6 +264,7 @@ export default function Contact() {
     </div>
   );
 }
+
 
 
 
