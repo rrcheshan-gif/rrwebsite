@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRouter } from "next/navigation";
 
@@ -65,7 +65,7 @@ export default function VeerapuramPlant() {
             }}
             style={{ position: 'absolute', left: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
-            ←
+            ?
           </button>
 
           <img src={`/${lightboxImg}`} alt="Fullscreen view" style={{ maxWidth: '90%', maxHeight: '90vh', borderRadius: '8px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', objectFit: 'contain', position: 'relative', zIndex: 10000 }} />
@@ -79,7 +79,7 @@ export default function VeerapuramPlant() {
             }}
             style={{ position: 'absolute', right: '30px', background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', borderRadius: '50%', width: '50px', height: '50px', fontSize: '24px', cursor: 'pointer', zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
-            →
+            ?
           </button>
         </div>
       )}
@@ -326,11 +326,15 @@ export default function VeerapuramPlant() {
               
               <div style={{ marginTop: "30px" }}>
                 <h4 style={{ color: "var(--primary-red)", marginBottom: "10px" }}>Location</h4>
-                <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.6 }}>RR Construction (Pvt) Ltd,<br/>Thudarikkulam, Veerapuram,<br/>Vavuniya.</p>
+                <p style={{ color: "var(--text-light)", fontSize: "1.05rem", lineHeight: 1.6, marginBottom: "15px" }}>RR Construction (Pvt) Ltd,<br/>Thudarikkulam, Veerapuram,<br/>Vavuniya.</p>
+                <a href="https://maps.app.goo.gl/FMZgn3uh1n9UNGgeA" target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--primary-red)", color: "var(--white)", padding: "10px 20px", borderRadius: "12px", textDecoration: "none", fontWeight: 600, fontSize: "0.95rem", transition: "all 0.3s ease" }} onMouseOver={(e) => { e.currentTarget.style.background = "#d32f2f"; e.currentTarget.style.transform = "translateY(-2px)"; }} onMouseOut={(e) => { e.currentTarget.style.background = "var(--primary-red)"; e.currentTarget.style.transform = "none"; }}>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  View Exact Location
+                </a>
               </div>
             </div>
             <div style={{ position: "relative", minHeight: "350px", background: "#eee" }}>
-              <iframe src="https://maps.google.com/maps?q=Veerapuram,+Vavuniya,+Sri+Lanka&t=k&output=embed" width="100%" height="100%" style={{ border: 0, position: "absolute", top: 0, left: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://maps.google.com/maps?q=RR+Construction+Veerapuram+Plant&t=k&output=embed" width="100%" height="100%" style={{ border: 0, position: "absolute", top: 0, left: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -340,5 +344,7 @@ export default function VeerapuramPlant() {
     </div>
   );
 }
+
+
 
 
