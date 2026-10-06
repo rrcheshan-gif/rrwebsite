@@ -30,7 +30,7 @@ export async function POST(request: Request) {
     const host = process.env.SMTP_HOST || 'smtp.office365.com';
     const user = process.env.SMTP_USER || 'sysadmin@rrconstruction.lk';
     const pass = process.env.SMTP_PASS || '0715719676@#Bcg';
-    const to = process.env.SMTP_TO || 'heshan@rrconstruction.lk';
+    const to = process.env.SMTP_TO || 'heshan@rrconstruction.lk, general@rrconstruction.lk';
 
     const transporter = nodemailer.createTransport({
       host: host,
@@ -100,3 +100,5 @@ Please find the applicant's CV attached to this email.
     );
   }
 }
+
+
