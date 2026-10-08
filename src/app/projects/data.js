@@ -2008,7 +2008,7 @@ const projectsData = [
   {
     id: 'project-100',
     type: 'completed',
-    category: 'dredging',
+    category: 'maritime',
     title: 'Harbour Basin Dredging up to -3m MSL Depth at Suduwella Anchorage',
     status: 'Completed',
     client: 'Ceylon Fishery Harbours Corporation (CFHC) / UNOPS',
@@ -2066,6 +2066,7 @@ if (typeof module !== 'undefined' && module.exports) {
     module.exports = projectsData;
 }
 export default projectsData;
+
 
 
 
