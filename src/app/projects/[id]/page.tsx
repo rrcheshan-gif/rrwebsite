@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { use, useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -158,31 +158,32 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
       {/* Dynamic Hero Section */}
       <section style={{ 
         position: 'relative', 
-        height: '50vh',
+        height: isMobile ? 'auto' : '50vh',
         borderRadius: isMobile ? '24px' : '32px',
         margin: isMobile ? '0 12px 30px' : '0 20px 40px', 
-        minHeight: '350px',
+        minHeight: isMobile ? '320px' : '350px',
         display: 'flex',
         alignItems: 'flex-end',
         background: heroImg ? `linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 100%), url('${heroImg.startsWith('/') ? heroImg : `/${heroImg}`}') center/cover` : 'linear-gradient(to bottom, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.95) 100%), url("/images/page-headers/blueprint-bg-hq.jpg") center/cover',
         color: 'white',
-        paddingBottom: '40px'
+        paddingTop: isMobile ? '100px' : '120px',
+        paddingBottom: '35px'
       }}>
         <div className="container" style={{ position: 'relative', zIndex: 10 }}>
           <button
             onClick={() => router.back()}
-            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '24px', color: '#ccc', textDecoration: 'none', paddingBottom: '2px', background: 'none', border: 'none', borderBottom: '1px solid #ccc', cursor: 'pointer', fontSize: '1rem', fontFamily: 'inherit' }}
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '20px', color: '#ccc', textDecoration: 'none', paddingBottom: '2px', background: 'none', border: 'none', borderBottom: '1px solid #ccc', cursor: 'pointer', fontSize: '1rem', fontFamily: 'inherit' }}
           >
             ← Back
           </button>
-          <div style={{ display: 'flex', gap: '8px', marginBottom: '15px' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '15px' }}>
             <span style={{ padding: '5px 14px', background: 'rgba(15, 23, 42, 0.8)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.25)', borderRadius: "30px", fontSize: '0.8rem', fontWeight: 700,  letterSpacing: '0.5px' }}>{categoryDisplay}</span>
             <span style={{ padding: '5px 14px', background: project.status?.includes('Ongoing') ? 'rgba(217, 119, 6, 0.85)' : 'rgba(16, 185, 129, 0.85)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.3)', borderRadius: "30px", fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.3px' }}>{project.status}</span>
             {project.year && project.type !== 'ongoing' && (
               <span style={{ padding: '5px 16px', background: 'rgba(255, 255, 255, 0.95)', color: '#1e293b', borderRadius: "30px", fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.5px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>{project.year}</span>
             )}
           </div>
-          <h1 className="hero-heading" style={{ fontSize: 'clamp(1.5rem, 3.2vw, 2.4rem)', lineHeight: '1.3', marginBottom: '0', textShadow: '0 2px 8px rgba(0,0,0,0.5)', color: 'white' }}>{project.title}</h1>
+          <h1 className="hero-heading" style={{ fontSize: 'clamp(1.4rem, 4vw, 2.4rem)', lineHeight: '1.3', marginBottom: '0', textShadow: '0 2px 8px rgba(0,0,0,0.5)', color: 'white', textAlign: 'left' }}>{project.title}</h1>
         </div>
         
         
@@ -195,20 +196,20 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px' }}>
             
             {/* Main Content (Left) */}
-            <div style={{ flex: '2', minWidth: '300px' }}>
-              <div style={{ background: 'var(--white)', padding: '40px', borderRadius: '12px', boxShadow: '0 10px 40px rgba(0,0,0,0.05)', marginBottom: '40px' }}>
+            <div style={{ flex: '2', minWidth: 'min(100%, 300px)' }}>
+              <div style={{ background: 'var(--white)', padding: 'clamp(20px, 5vw, 40px)', borderRadius: '12px', boxShadow: '0 10px 40px rgba(0,0,0,0.05)', marginBottom: '40px' }}>
                 <h3 style={{ color: 'var(--primary-red)', marginBottom: '24px', fontSize: '1.5rem' }}>Project Overview</h3>
                 <div style={{ fontSize: '1.05rem', lineHeight: 1.8, color: 'var(--text-dark)' }} dangerouslySetInnerHTML={{ __html: description }}></div>
               </div>
 
               {/* Gallery */}
               {hasGallery && (
-                <div style={{ background: 'var(--white)', padding: '40px', borderRadius: '12px', boxShadow: '0 10px 40px rgba(0,0,0,0.05)' }}>
+                <div style={{ background: 'var(--white)', padding: 'clamp(20px, 5vw, 40px)', borderRadius: '12px', boxShadow: '0 10px 40px rgba(0,0,0,0.05)' }}>
                   <h3 style={{ color: 'var(--primary-red)', marginBottom: '30px', fontSize: '1.5rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
                     Project Progress Gallery
                   </h3>
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '15px' }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 200px), 1fr))', gap: '15px' }}>
                     {galleryImages.map((img: string, idx: number) => (
                       <div 
                         key={idx} 
@@ -230,7 +231,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
             </div>
 
             {/* Sidebar (Right) */}
-            <div style={{ flex: '1', minWidth: '300px' }}>
+            <div style={{ flex: '1', minWidth: 'min(100%, 300px)' }}>
               <div style={{ background: 'var(--white)', padding: '30px', borderRadius: '12px', boxShadow: '0 10px 40px rgba(0,0,0,0.05)', marginBottom: '30px' }}>
                 
                 <div style={{ marginBottom: '24px', paddingBottom: '20px', borderBottom: '1px solid var(--border-soft)' }}>

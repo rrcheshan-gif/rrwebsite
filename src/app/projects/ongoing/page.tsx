@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React from 'react';
 import Link from 'next/link';
 
@@ -34,7 +34,7 @@ export default function OngoingProjects() {
         <div className="container" style={{ maxWidth: "1500px" }}>
           <div style={{
              background: 'var(--white)',
-             padding: '40px 50px',
+             padding: 'clamp(24px, 5vw, 40px) clamp(20px, 5vw, 50px)',
              borderRadius: '24px',
              boxShadow: '0 20px 40px rgba(0,0,0,0.08)',
              border: '1px solid var(--border-soft)',

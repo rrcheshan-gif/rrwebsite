@@ -155,9 +155,9 @@ export default function Contact() {
             </div>
 
             <div style={{ display: "flex", flexDirection: "column", gap: "25px" }}>
-<div style={{ background: "linear-gradient(to bottom, #0a0a0a, #111)", color: "white", padding: "50px", borderRadius: "32px", boxShadow: "0 20px 50px rgba(0,0,0,0.15)", border: "1px solid rgba(255,255,255,0.05)", position: "relative", overflow: "hidden" }}>
+<div style={{ background: "linear-gradient(to bottom, #0a0a0a, #111)", color: "white", padding: "clamp(24px, 5vw, 50px)", borderRadius: "24px", boxShadow: "0 20px 50px rgba(0,0,0,0.15)", border: "1px solid rgba(255,255,255,0.05)", position: "relative", overflow: "hidden" }}>
               <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "5px", background: "var(--primary-red)" }}></div>
-              <h3 style={{ fontFamily: "var(--font-heading)", color: "white", marginBottom: "30px", fontSize: "2.2rem" }}>Send a Message</h3>
+              <h3 style={{ fontFamily: "var(--font-heading)", color: "white", marginBottom: "30px", fontSize: "clamp(1.6rem, 4vw, 2.2rem)" }}>Send a Message</h3>
               
               <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "25px", position: "relative", zIndex: 2 }}>
                 {/* Honeypot for spam bots */}
@@ -237,22 +237,22 @@ export default function Contact() {
         </div>
         
         {/* Google Map Section */}
-        <div className="container" style={{ marginTop: "80px" }}>
+        <div className="container" style={{ marginTop: "60px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
             <div style={{ width: "40px", height: "1px", background: "var(--primary-red)" }}></div>
             <h4 style={{ color: "var(--primary-red)", fontWeight: 700, letterSpacing: "3px",  margin: 0, fontSize: "0.9rem" }}>Our Location</h4>
           </div>
-          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", color: "var(--text-dark)", marginBottom: "30px" }}>Visit Our Head Office</h2>
+          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.8rem, 5vw, 2.5rem)", color: "var(--text-dark)", marginBottom: "30px" }}>Visit Our Head Office</h2>
           <div style={{ background: "var(--white)", padding: "15px", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.08)", border: "1px solid var(--border-soft)", display: "flex", flexWrap: "wrap", gap: "15px" }}>
-            <div style={{ flex: "1", minWidth: "300px" }}>
-              <img src="/images/head-office.png" alt="RR Construction Head Office" style={{ width: "100%", height: "450px", objectFit: "cover", borderRadius: "16px" }} />
+            <div style={{ flex: "1 1 min(100%, 300px)", minWidth: "min(100%, 280px)" }}>
+              <img src="/images/head-office.png" alt="RR Construction Head Office" style={{ width: "100%", height: "clamp(260px, 50vw, 450px)", objectFit: "cover", borderRadius: "16px", display: "block" }} />
             </div>
-            <div style={{ flex: "1", minWidth: "300px" }}>
+            <div style={{ flex: "1 1 min(100%, 300px)", minWidth: "min(100%, 280px)", height: "clamp(260px, 50vw, 450px)" }}>
               <iframe 
                 src="https://maps.google.com/maps?q=6.9464,79.8780&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%" 
-                height="450" 
-                style={{ border: 0, borderRadius: "16px" }} 
+                height="100%" 
+                style={{ border: 0, borderRadius: "16px", height: "100%", minHeight: "260px" }} 
                 allowFullScreen={false} 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade">
