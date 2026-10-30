@@ -1,4 +1,4 @@
-﻿import type { Metadata, Viewport } from "next";
+import type { Metadata, Viewport } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 
@@ -86,7 +86,7 @@ const jsonLd = {
   },
   "sameAs": [
     "https://web.facebook.com/profile.php?id=61594119435109",
-    "https://www.instagram.com/rrconstruction.lk/",
+    "https://www.instagram.com/rrconstruction.privateltd/",
       "https://www.youtube.com/channel/UCU-yPH_MK4Vxf3bElCZ2RmQ",
 
     "https://www.linkedin.com/company/rrconstruction"

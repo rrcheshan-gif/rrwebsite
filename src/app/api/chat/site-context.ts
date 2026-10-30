@@ -35,7 +35,7 @@ Head Office Email: general@rrconstruction.lk
 Workshop Email: rrcworkshop@sltnet.lk
 Sub Office: No. 134, Gemunu Mawatha, Anuradhapura
 Sub Office Phone: 011-2856417
-Social Media: Facebook (fb.com/profile.php?id=61594119435109), Instagram (@rrconstruction.lk), YouTube (youtube.com/channel/UCU-yPH_MK4Vxf3bElCZ2RmQ)
+Social Media: Facebook (fb.com/profile.php?id=61594119435109), Instagram (@rrconstruction.privateltd - https://www.instagram.com/rrconstruction.privateltd/), YouTube (youtube.com/channel/UCU-yPH_MK4Vxf3bElCZ2RmQ)
 
 --- LEADERSHIP & MANAGEMENT ---
 1. Mr. Ranjith Senadhera S.D. — Managing Director
@@ -269,7 +269,7 @@ Q: Who is the Managing Director?
 A: Mr. Ranjith Senadhera S.D. — Founder and Managing Director since 1995. He holds a B.Sc. Engineering (Hons) and M.Eng. in Industrial Engineering & Management.
 
 Q: What is RR Construction's social media?
-A: Facebook: fb.com/profile.php?id=61594119435109 | Instagram: @rrconstruction.lk | YouTube: youtube.com/channel/UCU-yPH_MK4Vxf3bElCZ2RmQ
+A: Facebook: fb.com/profile.php?id=61594119435109 | Instagram: @rrconstruction.privateltd (https://www.instagram.com/rrconstruction.privateltd/) | YouTube: youtube.com/channel/UCU-yPH_MK4Vxf3bElCZ2RmQ
 `;
 
 

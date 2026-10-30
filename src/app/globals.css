@@ -1125,9 +1125,10 @@ ul {
 }
 
 .footer-brand-col .logo-box img {
-  height: 42px;
-  width: auto;
-  object-fit: contain;
+  height: 30px !important;
+  max-height: 30px !important;
+  width: auto !important;
+  object-fit: contain !important;
 }
 
 .footer-brand-col .footer-logo-text {
@@ -1753,11 +1754,19 @@ ul {
     margin-left: 0 !important;
   }
 
-.nav-logo-img, .footer-logo-img {
+.nav-logo-img {
   height: 60px !important;
   width: auto !important;
   object-fit: contain !important;
   transform: translateY(-6px) !important; /* Push logo up noticeably */
+}
+
+.footer-logo-img {
+  height: 30px !important;
+  max-height: 30px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  transform: none !important;
 }
 
 .logo-text, .footer-logo-text {
@@ -1785,8 +1794,21 @@ ul {
 
 /* Mobile specific tweaks for logo */
 @media (max-width: 768px) {
-  .nav-logo-img, .footer-logo-img {
+  .nav-logo-img {
     height: 36px !important;
+  }
+  .footer-logo-img,
+  .footer-brand-col .logo-box img {
+    height: 26px !important;
+    max-height: 26px !important;
+    transform: none !important;
+  }
+  .footer-brand-col .footer-logo-container {
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .footer-brand-col .logo-box {
+    justify-content: center !important;
   }
   .logo-title {
     font-size: 1.25rem !important;
@@ -2900,7 +2922,7 @@ html, body {
 }
 
 /* 3. Fluid Images & Media (Preserve explicit heights on cover images & maps) */
-img:not([style*="object-fit: cover"]):not([style*="objectFit"]):not(.img-polished):not(.nav-logo-img):not(.footer-logo-img),
+img:not([style*="object-fit: cover"]):not([style*="objectFit"]):not(.img-polished):not(.nav-logo-img):not(.footer-logo-img):not([src*="logo.png"]),
 video, canvas {
   max-width: 100% !important;
   height: auto;
