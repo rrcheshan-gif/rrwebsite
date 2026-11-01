@@ -89,7 +89,7 @@ const jsonLd = {
     "https://www.instagram.com/rrconstruction.privateltd/",
       "https://www.youtube.com/channel/UCU-yPH_MK4Vxf3bElCZ2RmQ",
 
-    "https://www.linkedin.com/company/rrconstruction"
+    "https://www.linkedin.com/company/144027678/"
   ],
   "priceRange": "$$$",
   "areaServed": {
