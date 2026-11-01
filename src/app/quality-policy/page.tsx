@@ -1,3 +1,20 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Quality Policy | RR Construction (Pvt) Ltd',
+  description: 'RR Construction\'s quality policy ensures every project meets the highest engineering standards — ISO-certified systems delivering consistent excellence in civil construction across Sri Lanka.',
+  keywords: ["Construction Quality Policy Sri Lanka", "ISO Construction Sri Lanka", "Quality Assurance Construction Sri Lanka", "RR Construction Quality Policy"],
+  alternates: {
+    canonical: '/quality-policy',
+  },
+  openGraph: {
+    title: 'Quality Policy | RR Construction (Pvt) Ltd',
+    description: 'RR Construction\'s quality policy ensures every project meets the highest engineering standards — ISO-certified systems delivering consistent excellence in civil construction across Sri Lanka.',
+    url: 'https://www.rrconstruction.lk/quality-policy',
+    type: 'website',
+  },
+};
+
 
 ﻿import Link from 'next/link';
 import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";

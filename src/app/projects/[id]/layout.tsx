@@ -1,38 +1,37 @@
-﻿import projectsData from '../data';
+import type { Metadata } from 'next';
+import projectsData from '../data';
 
-export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const resolvedParams = await params;
-  const project = projectsData.find((p: any) => p.id === resolvedParams.id);
-  
+  const project: any = projectsData.find((p: any) => p.id === resolvedParams.id);
+
   if (!project) {
     return {
-      title: 'Project Not Found | RR Construction',
+      title: 'Project Not Found | RR Construction (Pvt) Ltd',
     };
   }
 
+  const title = `${project.title || project.name} | RR Construction (Pvt) Ltd`;
+  const description = project.description
+    ? `${project.description}`.slice(0, 160)
+    : `View details of the ${project.title || project.name} project by RR Construction (Pvt) Ltd — Sri Lanka's leading civil engineering company.`;
+
   return {
-    title: `${project.title} | RR Construction`,
-    description: project.description || `Read about the ${project.title} project completed by RR Construction in Sri Lanka.`,
+    title,
+    description,
+    keywords: ['RR Construction Projects', 'Civil Engineering Projects Sri Lanka', 'Construction Portfolio Sri Lanka'],
     alternates: {
-      canonical: `https://www.rrconstruction.lk/projects/${resolvedParams.id}`,
+      canonical: `/projects/${resolvedParams.id}`,
     },
     openGraph: {
-      title: `${project.title} | RR Construction`,
-      description: project.description || `Read about the ${project.title} project completed by RR Construction in Sri Lanka.`,
+      title,
+      description,
       url: `https://www.rrconstruction.lk/projects/${resolvedParams.id}`,
-      type: 'article',
-      images: [
-        {
-          url: project.image || project.heroImage || '/images/og-image.jpg',
-          width: 1200,
-          height: 630,
-          alt: project.title,
-        },
-      ],
-    }
+      type: 'website',
+    },
   };
 }
 
-export default function ProjectLayout({ children }: { children: React.ReactNode }) {
-  return children;
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
 }

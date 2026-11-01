@@ -66,10 +66,10 @@ const jsonLd = {
   "description": "Leading heavy civil engineering and construction company in Sri Lanka specializing in highways, bridges, maritime structures, and infrastructure development.",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "No. 77, K.C. De Silva Puragama",
-    "addressLocality": "Peliyagoda",
+    "streetAddress": "No. 865, Dr. Danister de Silva MW, Baseline Road",
+    "addressLocality": "Colombo 09",
     "addressRegion": "Western Province",
-    "postalCode": "11830",
+    "postalCode": "00900",
     "addressCountry": "LK"
   },
   "geo": {

@@ -1,0 +1,588 @@
+{
+  "roads": [
+    {
+      "name": "Reconstruction of Proposed Improvement and Rehabilitation of Kurikadduvan Jetty (Approach Road)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2026",
+      "loc": "Jaffna & North, NP"
+    },
+    {
+      "name": "Central Expressway Project Section 3 (Pothuhera to Galagedara)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2024",
+      "loc": "Kurunegala District, NWP"
+    },
+    {
+      "name": "Rehabilitation of 30.12km rural roads in Rathnapura",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2024",
+      "loc": "Ratnapura, Sabaragamuwa"
+    },
+    {
+      "name": "Rehabilitation of 20.80 Km rural roads in Palindanuwara (Kalutara)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2025",
+      "loc": "Kalutara District, WP"
+    },
+    {
+      "name": "Second Integrated Road Investment Program - Rehabilitation, Improvement and Maintenance of 23.96 Km rural roads in Badulla District",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2024",
+      "loc": "Badulla / Monaragala, Uva"
+    },
+    {
+      "name": "Rehabilitation of 26.05 Km of rural roads in Kalutara District",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2024",
+      "loc": "Kalutara District, WP"
+    },
+    {
+      "name": "Second Integrated Road Investment Program - Mannar District (49.01 Km)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2022",
+      "loc": "Mannar District, NP"
+    },
+    {
+      "name": "Second Integrated Road Investment Program - Kilinochchi (53.60 Km)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2022",
+      "loc": "Kilinochchi District, NP"
+    },
+    {
+      "name": "Integrated Road Development Program - Kurunegala (99.00 Km)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2022",
+      "loc": "Kurunegala District, NWP"
+    },
+    {
+      "name": "Central Expressway Project Section - 2 (Package-A)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2020",
+      "loc": "Central Expressway Corridor"
+    },
+    {
+      "name": "Improvement of A009 Kandy Jaffna Road (Rambewa to Medawachchiya)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2019",
+      "loc": "Jaffna & North, NP"
+    },
+    {
+      "name": "Rehabilitation of Nawalapitiya - Nagaswella Road",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2019",
+      "loc": "Kandy District, CP"
+    },
+    {
+      "name": "Southern Expressway Subsection VI Structures (Matara to Beliatta)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2018",
+      "loc": "Hambantota District, SP"
+    },
+    {
+      "name": "Rehabilitation of 81km of rural roads in Rathnapura (R3)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2018",
+      "loc": "Ratnapura, Sabaragamuwa"
+    },
+    {
+      "name": "Rehabilitation of 42Km rural roads in Hambantota (H3)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2017",
+      "loc": "Hambantota District, SP"
+    },
+    {
+      "name": "Kiriella - Nedurana - Eheliyagoda Road (14+750 Km)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2016",
+      "loc": "Ratnapura, Sabaragamuwa"
+    },
+    {
+      "name": "Upgrading of Kotte - Bope (B240) Road",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2016",
+      "loc": "Colombo District, WP"
+    },
+    {
+      "name": "Hendala - Hunupitiya Road (4+020Km)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2015",
+      "loc": "Colombo District, WP"
+    },
+    {
+      "name": "Yakkalamulla - Imaduwa Road & Ahangama Road",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2015",
+      "loc": "Galle District, SP"
+    },
+    {
+      "name": "Kahawatte - Ela - Bemmullegeadara Road",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2014",
+      "loc": "Ratnapura, Sabaragamuwa"
+    },
+    {
+      "name": "Kotamulla - Karangoda - Dimiyawa Road",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2014",
+      "loc": "Ratnapura, Sabaragamuwa"
+    },
+    {
+      "name": "Colombo Port Expansion Project - Harbour Infrastructure works - Service Road and Paving Works",
+      "client": "Sri Lanka Ports Authority (SLPA)",
+      "yr": "2012",
+      "loc": "Colombo District, WP"
+    },
+    {
+      "name": "Ullukkulama - Elayapattuwa Road",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2012",
+      "loc": "Anuradhapura, NCP"
+    },
+    {
+      "name": "Improvement to Badalkumbura - Buttala - Sellakataragama Road (52+000 - 56+800 Km)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2011",
+      "loc": "Badulla / Monaragala, Uva"
+    },
+    {
+      "name": "SAGT Harbour Access Road",
+      "client": "Hyundai Engineering",
+      "yr": "2010",
+      "loc": "Colombo District, WP"
+    },
+    {
+      "name": "Construction of Approach Road works at Pudavkattu Bridge & Yan Oya Project",
+      "client": "UNOPS - Golden Relief Resources Lanka (Pvt) Ltd",
+      "yr": "2010",
+      "loc": "Trincomalee / Yan Oya, EP"
+    },
+    {
+      "name": "Improvement of Udawalava - Thanamalwila Road (5+000 - 11+500 Km)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2011",
+      "loc": "Island-wide Network"
+    }
+  ],
+  "bridges": [
+    {
+      "name": "Reconstruction of Bridge No. 4/1 on Horawela - Pelawatta - Pitigala Road (Balance Work)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2026",
+      "loc": "Kalutara District, WP"
+    },
+    {
+      "name": "Rehabilitation of Bridge No. 27/1 on Jaffna - Manipay - Karainagar Road (AB017)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2026",
+      "loc": "Jaffna & North, NP"
+    },
+    {
+      "name": "Reconstruction of Bridge No. 12/1 on Paranthan - Karachchi - Mullaitivu Road (A035) Balance Work",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2026",
+      "loc": "Jaffna & North, NP"
+    },
+    {
+      "name": "Widening & Redecking of Bridge No. 25/3 on Nagoda – Kalwellawa – Bellapitiya Road (B 304) – (Balance Work)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2025",
+      "loc": "Kalutara District, WP"
+    },
+    {
+      "name": "New Bridge at CH. 6+100 Udappuwa Town",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2019",
+      "loc": "Puttalam District, NWP"
+    },
+    {
+      "name": "Major Bridges Construction Project - Package 02",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2018",
+      "loc": "Island-wide Bridge Sites"
+    },
+    {
+      "name": "Reconstruction of Bridge 53/1 & 53/2 on Colombo-Batticaloa Road",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2017",
+      "loc": "Colombo District, WP"
+    },
+    {
+      "name": "Bridge Over Mahaweli River (Halloluwa & Dodanwala)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2017",
+      "loc": "Kandy District, CP"
+    },
+    {
+      "name": "46 Nos. Bridges Under French Government (Kirimetiya - Yala)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2016",
+      "loc": "Central & Southern Provinces"
+    },
+    {
+      "name": "Navathkuli - Keraitivu - Mannar Road (Sangupitiy Bridge Approach)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2015",
+      "loc": "Mannar District, NP"
+    },
+    {
+      "name": "Southern Transport Development Project-Structure construction from 50+000km to 57+000km",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2014",
+      "loc": "Southern Expressway Corridor"
+    },
+    {
+      "name": "Padawkema Udamaththala Bridge",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2013",
+      "loc": "Hambantota District, SP"
+    },
+    {
+      "name": "Construction of Sellakatharagama 6/2 Bridge",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2010",
+      "loc": "Hambantota District, SP"
+    },
+    {
+      "name": "Four Steel Bridges (Hirana, Molkawa, Lathpadura)",
+      "client": "MCE Austria",
+      "yr": "2009",
+      "loc": "Kalutara District, WP"
+    },
+    {
+      "name": "Matara Mahanama Bridge (116.4m)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2007",
+      "loc": "Matara District, SP"
+    },
+    {
+      "name": "Widening of Hartal Bridge in Ports of Colombo",
+      "client": "Sri Lanka Ports Authority",
+      "yr": "2012",
+      "loc": "Colombo District, WP"
+    },
+    {
+      "name": "Pudavkattu Bridge Structural Overpass Civil Works",
+      "client": "UNOPS",
+      "yr": "2010",
+      "loc": "Trincomalee / Yan Oya, EP"
+    },
+    {
+      "name": "Badalkumbura Multi-span River Box Bridge",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2011",
+      "loc": "Badulla / Monaragala, Uva"
+    },
+    {
+      "name": "Kurikadduvan Jetty Improvement & Structural Pier",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2026",
+      "loc": "Jaffna & North, NP"
+    },
+    {
+      "name": "Molkawa River Bridge Rehabilitation Package",
+      "client": "MCE Austria",
+      "yr": "2009",
+      "loc": "Kalutara District, WP"
+    }
+  ],
+  "maritime": [
+    {
+      "name": "Removal and Leveling of Accumulated Sea Sand at Kirinda Fishery Harbour",
+      "client": "Ceylon Fishery Harbours Corporation",
+      "yr": "2026",
+      "loc": "Hambantota District, SP"
+    },
+    {
+      "name": "Procurement of Construction of Boat Launching Ramp at Beruwala",
+      "client": "Ministry of Fisheries / CFHC",
+      "yr": "2026",
+      "loc": "Beruwala, Kalutara"
+    },
+    {
+      "name": "Reactivation and Reconstruction of Myliddy Fishery Harbour in Northern Province – Phase II",
+      "client": "State Ministry of Fishery Harbour Development",
+      "yr": "2021",
+      "loc": "Jaffna & North, NP"
+    },
+    {
+      "name": "Construction of Gandara Fishery Harbour",
+      "client": "Ministry of Fisheries / CFHC",
+      "yr": "2026",
+      "loc": "Matara District, SP"
+    },
+    {
+      "name": "Negombo Lagoon development Project, Dredging of Lagoon- Lellama Site II (Stage I, Package IV).",
+      "client": "Ministry of Fisheries / CFHC",
+      "yr": "2022",
+      "loc": "Gampaha District, WP"
+    },
+    {
+      "name": "Construction of Fishery Harbor at Wellamankara Wennappuwa",
+      "client": "Ministry of Fisheries / CFHC",
+      "yr": "2021",
+      "loc": "Puttalam District, NWP"
+    },
+    {
+      "name": "Negombo Lagoon development Project Stage I, Package III Dredging of Lagoon- Near Regina Road.",
+      "client": "Ministry of Fisheries / CFHC",
+      "yr": "2019",
+      "loc": "Gampaha District, WP"
+    },
+    {
+      "name": "Reconstruction of Myliddy Fishery Harbor - Phase I",
+      "client": "Ministry of Fisheries / CFHC",
+      "yr": "2019",
+      "loc": "Jaffna & North, NP"
+    },
+    {
+      "name": "Bank Protection Works of St.Sebestian North Canal",
+      "client": "Metro Colombo Urban Dev",
+      "yr": "2019",
+      "loc": "Island-wide Network"
+    },
+    {
+      "name": "Ha. Filadhoo Harbour Construction (Maldives)",
+      "client": "Ministry of Housing (Maldives)",
+      "yr": "2018",
+      "loc": "Republic of Maldives"
+    },
+    {
+      "name": "Anchorage Facility at Peraliya Landing Site",
+      "client": "Ministry of Fisheries / CFHC",
+      "yr": "2018",
+      "loc": "Galle District, SP"
+    },
+    {
+      "name": "Coastal Protection Structures in Seenu Hulhudhoo (Maldives)",
+      "client": "Ministry of Environment (Maldives)",
+      "yr": "2017",
+      "loc": "Republic of Maldives"
+    },
+    {
+      "name": "Upgrading of Harbor Seawall in R.Vandhoo (Maldives)",
+      "client": "Ministry of Environment (Maldives)",
+      "yr": "2016",
+      "loc": "Republic of Maldives"
+    },
+    {
+      "name": "Dredging of Fishery Anchorage in Passiyoor in Jaffna District.",
+      "client": "International Organization for Migration (IOM)",
+      "yr": "2013",
+      "loc": "Jaffna & North, NP"
+    },
+    {
+      "name": "Rehabilitation of Passiyoor Fishery Anchorage in Jaffna DS Division at Jaffna District",
+      "client": "International Organization for Migration (IOM)",
+      "yr": "2013",
+      "loc": "Jaffna & North, NP"
+    },
+    {
+      "name": "Oluvil Port Project Coastal Protection",
+      "client": "Sri Lanka Ports Authority",
+      "yr": "2012",
+      "loc": "Ampara District, EP"
+    },
+    {
+      "name": "Rock Revetment at Beruwala",
+      "client": "Kundanmals group",
+      "yr": "2006",
+      "loc": "Beruwala, Kalutara"
+    },
+    {
+      "name": "Queen Elizabeth Quay Project - Colombo Harbour",
+      "client": "Hyundai Engineering",
+      "yr": "2003",
+      "loc": "Colombo District, WP"
+    },
+    {
+      "name": "Harbour Basin Dredging up to -3m MSL Depth at Suduwella Anchorage",
+      "client": "Ministry of Fisheries / CFHC",
+      "yr": "2013",
+      "loc": "Suduwella Anchorage, Matara"
+    }
+  ],
+  "water": [
+    {
+      "name": "Rehabilitation of Kalmadu Scheme Headworks",
+      "client": "Ministry of Irrigation / Mahaweli",
+      "yr": "2023",
+      "loc": "Kilinochchi District, NP"
+    },
+    {
+      "name": "Matara Stage IV Water Supply Project - Raw Water Intake",
+      "client": "National Water Supply & Drainage Board",
+      "yr": "2022",
+      "loc": "Matara District, SP"
+    },
+    {
+      "name": "Pipe Laying Distribution Main in Katana Central Zone",
+      "client": "National Water Supply & Drainage Board",
+      "yr": "2022",
+      "loc": "Gampaha District, WP"
+    },
+    {
+      "name": "Kolonnawa Canal Diversion Scheme - Stage I.",
+      "client": "Ministry of Megapolis & Western Dev.",
+      "yr": "2020",
+      "loc": "Colombo District, WP"
+    },
+    {
+      "name": "Construction of Flood Gate With Culvert Near Thalangama Tank",
+      "client": "Ministry of Megapolis & Western Dev.",
+      "yr": "2020",
+      "loc": "Colombo District, WP"
+    },
+    {
+      "name": "Kolonnawa Canal Diversion Scheme - Stage III",
+      "client": "Ministry of Megapolis & Western Dev.",
+      "yr": "2020",
+      "loc": "Colombo District, WP"
+    },
+    {
+      "name": "Remedial Works at Ulhitiya - Rathkinda Dams",
+      "client": "Ministry of Irrigation / Mahaweli",
+      "yr": "2017",
+      "loc": "Mahaweli System C, Badulla"
+    },
+    {
+      "name": "Distribution Mains in Eheliyagoda W.S.S.",
+      "client": "National Water Supply & Drainage Board",
+      "yr": "2016",
+      "loc": "Ratnapura, Sabaragamuwa"
+    },
+    {
+      "name": "Laying of DI/uPVC Pipes & Fittings for Embilipitiya - Middeniya Road.",
+      "client": "National Water Supply & Drainage Board",
+      "yr": "2015",
+      "loc": "Embilipitiya / Hambantota"
+    },
+    {
+      "name": "Water Treatment Plant - Ampara (172,000 Cum/day)",
+      "client": "National Water Supply & Drainage Board",
+      "yr": "2006",
+      "loc": "Ampara District, EP"
+    }
+  ],
+  "disaster": [
+    {
+      "name": "Maho to Anuradhapura Railway Line Track Rehabilitation & Ancillary Works",
+      "client": "IRCON International Ltd (Govt. of India)",
+      "yr": "2023",
+      "loc": "Anuradhapura, NCP"
+    },
+    {
+      "name": "Landslide Mitigation Measures at 05 Locations in Nuwara Eliya District (RLVMMP)",
+      "client": "National Building Research Organisation (NBRO)",
+      "yr": "2025",
+      "loc": "Nuwara Eliya District, CP"
+    },
+    {
+      "name": "Landslide Mitigation Measures at 05 Locations in Kegalle and Rathnapura Districts (RLVMMP)",
+      "client": "National Building Research Organisation (NBRO)",
+      "yr": "2025",
+      "loc": "Ratnapura, Sabaragamuwa"
+    },
+    {
+      "name": "Landslide Mitigation Measures at 06 Location in Ratnapura District (Site No. 62,65,66,70,71,106) Under Package 6C of Reduction of Landslide Vulnerability by Mitigation Measures Project (RLVMMP)",
+      "client": "National Building Research Organisation (NBRO)",
+      "yr": "2025",
+      "loc": "Ratnapura, Sabaragamuwa"
+    },
+    {
+      "name": "Landslide Mitigation Measures at 02 Locations in Matara & Hambantota Districts (Site No. 104, 151) Under Package – 06F (RLVMMP)",
+      "client": "Ministry of Defence - Disaster Management Division",
+      "yr": "2024",
+      "loc": "Hambantota District, SP"
+    },
+    {
+      "name": "Emergency Reconstruction of Northern Railway Line Damaged by Cyclone Ditwah (Maho to Omanthai)",
+      "client": "IRCON International Ltd (Govt. of India)",
+      "yr": "2026",
+      "loc": "Vavuniya District, NP"
+    },
+    {
+      "name": "Emergency Reconstruction of Northern Railway Line Damaged by Cyclone Ditwah (Medawachchiya to Talai Mannar)",
+      "client": "IRCON International Ltd (Govt. of India)",
+      "yr": "2026",
+      "loc": "Mannar District, NP"
+    },
+    {
+      "name": "Rectification of Unstable Slope at NIFS Kandy",
+      "client": "National Building Research Organisation (NBRO)",
+      "yr": "2024",
+      "loc": "Kandy District, CP"
+    },
+    {
+      "name": "RLVMMP Landslide Mitigation at Nursing Training School Kandy",
+      "client": "Ministry of Defence",
+      "yr": "2024",
+      "loc": "Kandy District, CP"
+    },
+    {
+      "name": "Anuradhapura to Vavuniya Railway Track Rehabilitation",
+      "client": "IRCON International Ltd (Govt. of India)",
+      "yr": "2023",
+      "loc": "Anuradhapura, NCP"
+    },
+    {
+      "name": "Landslide Mitigation in 32 Sites (Kalutara, Rathnapura, Matara)",
+      "client": "Ministry of Defence",
+      "yr": "2023",
+      "loc": "Ratnapura, Sabaragamuwa"
+    },
+    {
+      "name": "Landslide Mitigation on Hatton Maskeliya - Delhouse Road",
+      "client": "Ministry of Defence",
+      "yr": "2023",
+      "loc": "Nuwara Eliya District, CP"
+    },
+    {
+      "name": "Landslide Mitigation Along Railway Main Line (22 Sites)",
+      "client": "Ministry of Defence",
+      "yr": "2023",
+      "loc": "Central Highlands Corridor"
+    },
+    {
+      "name": "Countermeasures at Six Locations in Sabaragamuwa & Uva",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2020",
+      "loc": "Sabaragamuwa & Uva"
+    },
+    {
+      "name": "Landslide Mitigation Works of Medithale - Pathanawatta",
+      "client": "CRIP, UVA Provincial Council",
+      "yr": "2020",
+      "loc": "Island-wide Network"
+    },
+    {
+      "name": "Landslide Disaster Protection Project - Package 02 (Countermeasures at Six Locations in Sabaragamuwa and Uva Provinces)",
+      "client": "Road Development Authority (RDA)",
+      "yr": "2017",
+      "loc": "Sabaragamuwa & Uva"
+    },
+    {
+      "name": "Sama Vihara Building Project (Havelock City)",
+      "client": "Mireka Capital Land",
+      "yr": "2014",
+      "loc": "Colombo District, WP"
+    },
+    {
+      "name": "Colombo Port Expansion Project - 45m Control Tower",
+      "client": "Sri Lanka Ports Authority",
+      "yr": "2012",
+      "loc": "Colombo District, WP"
+    },
+    {
+      "name": "Matara - Kamburugamuwa Hospital",
+      "client": "Sam Hee Construction Korea",
+      "yr": "2009",
+      "loc": "Matara District, SP"
+    },
+    {
+      "name": "Three Storied Building at Sapugaskanda",
+      "client": "Trelleborg Lanka",
+      "yr": "2007",
+      "loc": "Colombo District, WP"
+    }
+  ]
+}
