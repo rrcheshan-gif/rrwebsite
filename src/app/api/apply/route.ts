@@ -18,6 +18,12 @@ export async function POST(request: Request) {
     const phone = data.get('phone') as string;
     const position = data.get('position') as string;
     const file = data.get('file') as File;
+    const captchaAnswer = data.get('captchaAnswer') as string;
+    const captchaExpected = data.get('captchaExpected') as string;
+
+    if (!captchaAnswer || !captchaExpected || captchaAnswer.trim() === '' || parseInt(captchaAnswer, 10) !== parseInt(captchaExpected, 10)) {
+      return NextResponse.json({ error: 'Invalid or missing CAPTCHA value' }, { status: 400 });
+    }
 
     if (!name || !email || !phone || !position) {
       return NextResponse.json(

@@ -11,7 +11,11 @@ export async function POST(request: Request) {
 
     const body = await request.json();
     if (body.honeypot) return NextResponse.json({ success: true, message: 'Message sent successfully' }, { status: 200 }); // Spam bot trap
-    const { name, company, email, phone, plant, product, qty, location, message } = body;
+    const { name, company, email, phone, plant, product, qty, location, message, captchaAnswer, captchaExpected } = body;
+
+    if (captchaAnswer === undefined || captchaExpected === undefined || String(captchaAnswer).trim() === '' || parseInt(String(captchaAnswer), 10) !== parseInt(String(captchaExpected), 10)) {
+      return NextResponse.json({ error: 'Invalid or missing CAPTCHA value' }, { status: 400 });
+    }
 
     // Use environment variables on Vercel, fallback to provided credentials
     const host = process.env.SMTP_HOST || 'smtp.office365.com';

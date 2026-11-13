@@ -5,10 +5,14 @@ import Link from 'next/link';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import { COMPANY_DATA } from '@/data/company-data';
 import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
+import CaptchaValue from "@/app/components/CaptchaValue";
 
 export default function AsphaltPage() {
   const [isMobile, setIsMobile] = useState(false);
-  const [formData, setFormData] = useState({ name: '', company: '', phone: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', company: '', phone: '', message: '' });
+  const [captchaVerified, setCaptchaVerified] = useState(false);
+  const [resetCaptcha, setResetCaptcha] = useState(0);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
@@ -17,10 +21,39 @@ export default function AsphaltPage() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Thank you for your inquiry. Our team will get back to you soon.');
-    setFormData({ name: '', company: '', phone: '', message: '' });
+    if (!captchaVerified) {
+      alert('Please enter the correct CAPTCHA value.');
+      return;
+    }
+    setIsSubmitting(true);
+    const form = e.target as HTMLFormElement;
+    const formDataObj = new FormData(form);
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: 'Material Inquiry: Asphalt',
+          message: `Company: ${formData.company || 'N/A'}\n\nRequirements:\n${formData.message}`,
+          captchaAnswer: formDataObj.get('captchaAnswer'),
+          captchaExpected: formDataObj.get('captchaExpected'),
+        }),
+      });
+      if (!res.ok) throw new Error('Failed to send');
+      alert('Thank you for your inquiry! Our team will get back to you soon.');
+      setFormData({ name: '', email: '', company: '', phone: '', message: '' });
+      setCaptchaVerified(false);
+      setResetCaptcha(c => c + 1);
+    } catch (err) {
+      alert('There was an error sending your inquiry. Please try again or call us.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -208,9 +241,11 @@ export default function AsphaltPage() {
               <p style={{ color: 'var(--text-light)', marginBottom: '20px', fontSize: '0.9rem' }}>Contact us to discuss asphalt production availability or technical specifications for upcoming projects.</p>
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
                 <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleInputChange} required style={{ padding: '12px 15px', borderRadius: '8px', border: '1px solid var(--border-soft)', outline: 'none' }} />
+                <input type="email" name="email" placeholder="Your Email Address" value={formData.email} onChange={handleInputChange} required style={{ padding: '12px 15px', borderRadius: '8px', border: '1px solid var(--border-soft)', outline: 'none' }} />
                 <input type="text" name="company" placeholder="Company" value={formData.company} onChange={handleInputChange} style={{ padding: '12px 15px', borderRadius: '8px', border: '1px solid var(--border-soft)', outline: 'none' }} />
                 <input type="tel" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleInputChange} required style={{ padding: '12px 15px', borderRadius: '8px', border: '1px solid var(--border-soft)', outline: 'none' }} />
                 <textarea name="message" placeholder="Message" value={formData.message} onChange={handleInputChange} required rows={4} style={{ padding: '12px 15px', borderRadius: '8px', border: '1px solid var(--border-soft)', outline: 'none', resize: 'vertical' }} />
+                <CaptchaValue theme="light" onVerify={(v) => setCaptchaVerified(v)} resetTrigger={resetCaptcha} />
                 <button type="submit" className="btn btn-primary" style={{ border: 'none', cursor: 'pointer', padding: '15px', borderRadius: '8px', fontWeight: 600 }}>Submit Inquiry</button>
               </form>
             </div>

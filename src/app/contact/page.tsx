@@ -4,16 +4,17 @@ import Link from 'next/link';
 
 
 import { useState } from "react";
-import FakeRecaptcha from "@/app/components/FakeRecaptcha";
+import CaptchaValue from "@/app/components/CaptchaValue";
 import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 export default function Contact() {
   const [captchaVerified, setCaptchaVerified] = useState(false);
+  const [resetCaptcha, setResetCaptcha] = useState(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!captchaVerified) {
-      alert("Please verify that you are not a robot.");
+      alert("Please enter the correct CAPTCHA value.");
       return;
     }
     
@@ -32,6 +33,8 @@ export default function Contact() {
           subject: formData.get('subject'),
           message: formData.get('message'),
           honeypot: formData.get('honeypot'),
+          captchaAnswer: formData.get('captchaAnswer'),
+          captchaExpected: formData.get('captchaExpected'),
         }),
       });
       
@@ -187,7 +190,7 @@ export default function Contact() {
                   <label htmlFor="message" style={{ display: "block", marginBottom: "10px", color: "#94a3b8", fontSize: "0.95rem",  letterSpacing: "1px" }}>Message</label>
                   <textarea id="message" name="message" rows={5} style={{ width: "100%", padding: "16px", border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.02)", color: "white", borderRadius: "12px", fontSize: "1rem", resize: "vertical", fontFamily: "inherit", outline: "none" }} required></textarea>
                 </div>
-                <FakeRecaptcha onChange={(v) => setCaptchaVerified(v)} />
+                <CaptchaValue theme="dark" onVerify={(v) => setCaptchaVerified(v)} resetTrigger={resetCaptcha} />
                 <button type="submit" disabled={isSubmitting} className="btn btn-primary" style={{ width: "100%", marginTop: "15px", padding: "18px", fontSize: "1.1rem", borderRadius: "12px", opacity: isSubmitting ? 0.7 : 1 }}>{isSubmitting ? "Sending..." : "Send Message"}</button>
               </form>
             </div>

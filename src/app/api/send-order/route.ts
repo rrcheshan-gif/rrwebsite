@@ -10,7 +10,11 @@ export async function POST(request: Request) {
     }
 
     const body = await request.json();
-    const { name, company, email, phone, plant, product, qty, location, message } = body;
+    const { name, company, email, phone, plant, product, qty, location, message, captchaAnswer, captchaExpected } = body;
+
+    if (captchaAnswer !== undefined && captchaExpected !== undefined && parseInt(String(captchaAnswer), 10) !== parseInt(String(captchaExpected), 10)) {
+      return NextResponse.json({ error: 'Invalid CAPTCHA value' }, { status: 400 });
+    }
 
     // Use environment variables on Vercel, fallback to provided credentials
     const host = process.env.SMTP_HOST || 'smtp.office365.com';

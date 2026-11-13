@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 
-import FakeRecaptcha from '@/app/components/FakeRecaptcha';
+import CaptchaValue from '@/app/components/CaptchaValue';
 import AutoBreadcrumb from "@/app/components/AutoBreadcrumb";
 export default function Career() {
   const [isMobile, setIsMobile] = useState(false);
@@ -18,6 +18,7 @@ export default function Career() {
   
   const [status, setStatus] = useState('');
   const [captchaVerified, setCaptchaVerified] = useState(false);
+  const [resetCaptcha, setResetCaptcha] = useState(0);
 
   
 
@@ -25,7 +26,7 @@ export default function Career() {
     e.preventDefault();
     setStatus('loading');
     const form = e.target as HTMLFormElement;
-    if (!captchaVerified) { alert('Please verify that you are not a robot.'); setStatus(''); return; }
+    if (!captchaVerified) { alert('Please enter the correct CAPTCHA value.'); setStatus(''); return; }
     const formData = new FormData(form);
 
     try {
@@ -38,6 +39,7 @@ export default function Career() {
         setStatus('success');
         form.reset();
         setCaptchaVerified(false);
+        setResetCaptcha(c => c + 1);
       } else {
         setStatus('error');
       }
@@ -154,7 +156,7 @@ export default function Career() {
                     <input type="file" name="file" accept=".pdf,.doc,.docx" required style={{ width: "100%", padding: "10px", border: "1px dashed var(--input-border)", borderRadius: "8px", background: "var(--input-bg)", color: "var(--text-dark)" }} />
                   </div>
                   <div style={{ marginBottom: "30px", display: "flex", justifyContent: "center" }}>
-                    <FakeRecaptcha onChange={(v) => setCaptchaVerified(v)} />
+                    <CaptchaValue theme="light" onVerify={(v) => setCaptchaVerified(v)} resetTrigger={resetCaptcha} />
                   </div>
                   <button type="submit" disabled={status === 'loading'} className="btn btn-primary" style={{ width: "100%", opacity: status === 'loading' ? 0.7 : 1 }}>
                     {status === 'loading' ? 'Sending...' : 'Submit Application'}

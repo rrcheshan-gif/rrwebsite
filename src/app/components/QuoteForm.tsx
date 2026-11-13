@@ -2,7 +2,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import FakeRecaptcha from "./FakeRecaptcha";
+import CaptchaValue from "./CaptchaValue";
 
 interface QuoteFormProps {
   defaultPlant?: string;
@@ -16,6 +16,7 @@ export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants
   const [selectedPlant, setSelectedPlant] = useState<string>(defaultPlant || "");
   const [selectedProduct, setSelectedProduct] = useState<string>("");
   const [captchaVerified, setCaptchaVerified] = useState(false);
+  const [resetCaptcha, setResetCaptcha] = useState(0);
 
   
 
@@ -27,7 +28,7 @@ export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!captchaVerified) { alert('Please verify that you are not a robot.'); return; }
+    if (!captchaVerified) { alert('Please enter the correct CAPTCHA value.'); return; }
     setIsSubmitting(true);
     setStatus("idle");
 
@@ -50,6 +51,7 @@ export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants
         setStatus("success");
         (e.target as HTMLFormElement).reset();
         setCaptchaVerified(false);
+        setResetCaptcha(c => c + 1);
         setSelectedProduct("");
       } else {
         setStatus("error");
@@ -235,7 +237,7 @@ export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants
                 </div>
 
                 <div style={{ background: "rgba(0,0,0,0.02)", padding: "15px", borderRadius: "8px", border: "1px solid var(--border-soft)", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                  <FakeRecaptcha onChange={(v) => setCaptchaVerified(v)} />
+                  <CaptchaValue theme="light" onVerify={(v) => setCaptchaVerified(v)} resetTrigger={resetCaptcha} />
                 </div>
 
                 <div style={{ textAlign: "center", marginTop: "10px" }}>
