@@ -17,6 +17,7 @@ export default function Career() {
 
   
   const [status, setStatus] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
   const [captchaVerified, setCaptchaVerified] = useState(false);
   const [resetCaptcha, setResetCaptcha] = useState(0);
 
@@ -35,13 +36,16 @@ export default function Career() {
         body: formData,
       });
 
+      const data = await response.json().catch(() => ({}));
       if (response.ok) {
         setStatus('success');
+        setErrorMessage('');
         form.reset();
         setCaptchaVerified(false);
         setResetCaptcha(c => c + 1);
       } else {
         setStatus('error');
+        setErrorMessage(data.error || 'Failed to submit application. Please try again or email us directly.');
       }
     } catch (error) {
       console.error('Submission error:', error);

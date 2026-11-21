@@ -13,6 +13,7 @@ interface QuoteFormProps {
 export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants }: QuoteFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState<string>("");
   const [selectedPlant, setSelectedPlant] = useState<string>(defaultPlant || "");
   const [selectedProduct, setSelectedProduct] = useState<string>("");
   const [captchaVerified, setCaptchaVerified] = useState(false);
@@ -47,14 +48,17 @@ export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants
         body: JSON.stringify(data),
       });
 
+      const data = await response.json().catch(() => ({}));
       if (response.ok) {
         setStatus("success");
+        setErrorMessage("");
         (e.target as HTMLFormElement).reset();
         setCaptchaVerified(false);
         setResetCaptcha(c => c + 1);
         setSelectedProduct("");
       } else {
         setStatus("error");
+        setErrorMessage(data.error || "Something went wrong. Please try again later or contact us directly.");
       }
     } catch (error) {
       console.error("Error submitting form:", error);
