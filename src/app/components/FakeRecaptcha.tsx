@@ -1,7 +1,7 @@
 ﻿"use client";
 
 import React from "react";
-import CaptchaValue from "./CaptchaValue";
+import GoogleRecaptcha from "./GoogleRecaptcha";
 
 export default function FakeRecaptcha({
   onChange,
@@ -10,5 +10,5 @@ export default function FakeRecaptcha({
   onChange: (verified: boolean) => void;
   theme?: "light" | "dark";
 }) {
-  return <CaptchaValue onVerify={(v) => onChange(v)} theme={theme} />;
+  return <GoogleRecaptcha onVerify={(v) => onChange(v)} theme={theme} />;
 }

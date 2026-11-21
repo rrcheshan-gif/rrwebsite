@@ -23,7 +23,7 @@ export async function POST(request: Request) {
 
     const data = await request.formData();
 
-    const honeypot = data.get('honeypot');
+    const honeypot = (data.get('honeypot') as string) || (data.get('website_hp') as string);
     if (honeypot) {
       return NextResponse.json({ success: true, message: 'Application submitted successfully' }, { status: 200 }); // Spam bot trap
     }
@@ -35,15 +35,29 @@ export async function POST(request: Request) {
     const file = data.get('file') as File;
     const captchaAnswer = data.get('captchaAnswer') as string;
     const captchaExpected = data.get('captchaExpected') as string;
+    const recaptchaToken = (data.get('g-recaptcha-response') as string) || (data.get('recaptchaToken') as string);
 
-    // Validate CAPTCHA
-    if (
-      !captchaAnswer ||
-      !captchaExpected ||
-      captchaAnswer.trim() === '' ||
-      parseInt(captchaAnswer, 10) !== parseInt(captchaExpected, 10)
-    ) {
-      return NextResponse.json({ error: 'Invalid or missing CAPTCHA value. Please solve the math verification.' }, { status: 400 });
+    // Verify Google reCAPTCHA
+    if (process.env.RECAPTCHA_SECRET_KEY && recaptchaToken) {
+      try {
+        const verifyRes = await fetch('https://www.google.com/recaptcha/api/siteverify', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: `secret=${encodeURIComponent(process.env.RECAPTCHA_SECRET_KEY)}&response=${encodeURIComponent(recaptchaToken)}`,
+        });
+        const verifyData = await verifyRes.json();
+        if (!verifyData.success) {
+          return NextResponse.json({ error: 'Google reCAPTCHA verification failed. Please try again.' }, { status: 400 });
+        }
+      } catch (err) {
+        console.warn('reCAPTCHA verification error:', err);
+      }
+    } else {
+      const hasValidToken = typeof recaptchaToken === 'string' && recaptchaToken.length > 5;
+      const hasValidMath = captchaAnswer && captchaExpected && captchaAnswer.trim() !== '' && parseInt(captchaAnswer, 10) === parseInt(captchaExpected, 10);
+      if (!hasValidToken && !hasValidMath) {
+        return NextResponse.json({ error: 'Please verify that you are not a robot (reCAPTCHA).' }, { status: 400 });
+      }
     }
 
     if (!name || !email || !phone || !position) {

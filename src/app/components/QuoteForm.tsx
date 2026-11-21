@@ -29,7 +29,7 @@ export default function QuoteForm({ defaultPlant, allowedProducts, allowedPlants
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!captchaVerified) { alert('Please enter the correct CAPTCHA value.'); return; }
+    if (!captchaVerified) { alert('Please verify that you are not a robot.'); return; }
     setIsSubmitting(true);
     setStatus("idle");
 

@@ -14,7 +14,7 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!captchaVerified) {
-      alert("Please enter the correct CAPTCHA value.");
+      alert("Please verify that you are not a robot.");
       return;
     }
     
@@ -35,6 +35,8 @@ export default function Contact() {
           honeypot: formData.get('honeypot'),
           captchaAnswer: formData.get('captchaAnswer'),
           captchaExpected: formData.get('captchaExpected'),
+          recaptchaToken: formData.get('recaptchaToken') || formData.get('g-recaptcha-response'),
+          website_hp: formData.get('website_hp'),
         }),
       });
       

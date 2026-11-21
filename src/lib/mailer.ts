@@ -75,7 +75,7 @@ export async function sendNotificationEmail(payload: EmailPayload): Promise<{ su
   }
 
   // 2. Automatic Fallback Delivery via FormSubmit
-  const recipients = ['heshan@rrconstruction.lk', 'general@rrconstruction.lk', 'rrcheshan@gmail.com'];
+  const recipients = ['heshan@rrconstruction.lk', 'general@rrconstruction.lk'];
   let fallbackDelivered = false;
 
   for (const recipient of recipients) {

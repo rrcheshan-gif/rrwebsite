@@ -22,20 +22,34 @@ export async function POST(request: Request) {
     }
 
     const body = await request.json();
-    if (body.honeypot) {
+    if (body.honeypot || body.website_hp) {
       return NextResponse.json({ success: true, message: 'Message sent successfully' }, { status: 200 }); // Spam bot trap
     }
 
     const { name, company, email, phone, plant, product, qty, location, message, captchaAnswer, captchaExpected } = body;
+    const recaptchaToken = body['g-recaptcha-response'] || body.recaptchaToken;
 
-    // Validate CAPTCHA
-    if (
-      captchaAnswer === undefined ||
-      captchaExpected === undefined ||
-      String(captchaAnswer).trim() === '' ||
-      parseInt(String(captchaAnswer), 10) !== parseInt(String(captchaExpected), 10)
-    ) {
-      return NextResponse.json({ error: 'Invalid or missing CAPTCHA value. Please solve the math verification.' }, { status: 400 });
+    // Verify Google reCAPTCHA
+    if (process.env.RECAPTCHA_SECRET_KEY && recaptchaToken) {
+      try {
+        const verifyRes = await fetch('https://www.google.com/recaptcha/api/siteverify', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: `secret=${encodeURIComponent(process.env.RECAPTCHA_SECRET_KEY)}&response=${encodeURIComponent(recaptchaToken)}`,
+        });
+        const verifyData = await verifyRes.json();
+        if (!verifyData.success) {
+          return NextResponse.json({ error: 'Google reCAPTCHA verification failed. Please try again.' }, { status: 400 });
+        }
+      } catch (err) {
+        console.warn('reCAPTCHA verification error:', err);
+      }
+    } else {
+      const hasValidToken = typeof recaptchaToken === 'string' && recaptchaToken.length > 5;
+      const hasValidMath = captchaAnswer !== undefined && captchaExpected !== undefined && String(captchaAnswer).trim() !== '' && parseInt(String(captchaAnswer), 10) === parseInt(String(captchaExpected), 10);
+      if (!hasValidToken && !hasValidMath) {
+        return NextResponse.json({ error: 'Please verify that you are not a robot (reCAPTCHA).' }, { status: 400 });
+      }
     }
 
     const quoteDetailsHtml = `

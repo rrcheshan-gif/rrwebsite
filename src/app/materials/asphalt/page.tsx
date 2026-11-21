@@ -24,7 +24,7 @@ export default function AsphaltPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!captchaVerified) {
-      alert('Please enter the correct CAPTCHA value.');
+      alert('Please verify that you are not a robot.');
       return;
     }
     setIsSubmitting(true);
@@ -42,6 +42,8 @@ export default function AsphaltPage() {
           message: `Company: ${formData.company || 'N/A'}\n\nRequirements:\n${formData.message}`,
           captchaAnswer: formDataObj.get('captchaAnswer'),
           captchaExpected: formDataObj.get('captchaExpected'),
+          recaptchaToken: formDataObj.get('recaptchaToken') || formDataObj.get('g-recaptcha-response'),
+          website_hp: formDataObj.get('website_hp'),
         }),
       });
       if (!res.ok) throw new Error('Failed to send');

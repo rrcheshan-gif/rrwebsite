@@ -27,7 +27,7 @@ export default function Career() {
     e.preventDefault();
     setStatus('loading');
     const form = e.target as HTMLFormElement;
-    if (!captchaVerified) { alert('Please enter the correct CAPTCHA value.'); setStatus(''); return; }
+    if (!captchaVerified) { alert('Please verify that you are not a robot.'); setStatus(''); return; }
     const formData = new FormData(form);
 
     try {
