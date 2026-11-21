@@ -1,18 +1,33 @@
 import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+import { sendNotificationEmail } from '@/lib/mailer';
 
 export async function POST(request: Request) {
   try {
-    // Basic Security: Referer Validation
-    const referer = request.headers.get('referer');
-    if (!referer || (!referer.includes('rrconstruction.lk') && !referer.includes('localhost'))) {
+    // Referer & Origin validation
+    const referer = request.headers.get('referer') || '';
+    const origin = request.headers.get('origin') || '';
+    const isAllowed =
+      !referer && !origin
+      || referer.includes('rrconstruction.lk')
+      || referer.includes('localhost')
+      || referer.includes('127.0.0.1')
+      || referer.includes('vercel.app')
+      || origin.includes('rrconstruction.lk')
+      || origin.includes('localhost')
+      || origin.includes('127.0.0.1')
+      || origin.includes('vercel.app');
+
+    if (!isAllowed) {
       return NextResponse.json({ error: 'Unauthorized request origin' }, { status: 403 });
     }
 
     const data = await request.formData();
-    
+
     const honeypot = data.get('honeypot');
-    if (honeypot) return NextResponse.json({ success: true, message: 'Application submitted successfully' }, { status: 200 }); // Spam bot trap
+    if (honeypot) {
+      return NextResponse.json({ success: true, message: 'Application submitted successfully' }, { status: 200 }); // Spam bot trap
+    }
+
     const name = data.get('name') as string;
     const email = data.get('email') as string;
     const phone = data.get('phone') as string;
@@ -21,90 +36,80 @@ export async function POST(request: Request) {
     const captchaAnswer = data.get('captchaAnswer') as string;
     const captchaExpected = data.get('captchaExpected') as string;
 
-    if (!captchaAnswer || !captchaExpected || captchaAnswer.trim() === '' || parseInt(captchaAnswer, 10) !== parseInt(captchaExpected, 10)) {
-      return NextResponse.json({ error: 'Invalid or missing CAPTCHA value' }, { status: 400 });
+    // Validate CAPTCHA
+    if (
+      !captchaAnswer ||
+      !captchaExpected ||
+      captchaAnswer.trim() === '' ||
+      parseInt(captchaAnswer, 10) !== parseInt(captchaExpected, 10)
+    ) {
+      return NextResponse.json({ error: 'Invalid or missing CAPTCHA value. Please solve the math verification.' }, { status: 400 });
     }
 
     if (!name || !email || !phone || !position) {
       return NextResponse.json(
-        { error: 'Missing required fields' },
+        { error: 'Missing required fields: Name, Email, Phone, and Position are required.' },
         { status: 400 }
       );
     }
 
-    // Configure nodemailer transporter
-    const host = process.env.SMTP_HOST || 'smtp.office365.com';
-    const user = process.env.SMTP_USER || 'sysadmin@rrconstruction.lk';
-    const pass = process.env.SMTP_PASS || '0715719676@#Bcg';
-    const to = process.env.SMTP_TO || 'heshan@rrconstruction.lk, general@rrconstruction.lk';
-
-    const transporter = nodemailer.createTransport({
-      host: host,
-      port: 587,
-      secure: false, // TLS requires secure: false for port 587
-      auth: {
-        user: user,
-        pass: pass,
-      },
-      tls: {
-        ciphers: 'SSLv3'
-      }
-    });
-
-    const mailOptions: any = {
-      from: `"RR Construction Careers" <${user}>`,
-      to: to, // The requested recipient
-      replyTo: email,
-      subject: `New Job Application: ${name} for ${position}`,
-      text: `
-You have received a new job application.
-
-Name: ${name}
-Email: ${email}
-Phone: ${phone}
-Position Applied For: ${position}
-
-Please find the applicant's CV attached to this email.
-      `,
-      html: `
-        <h2>New Job Application Received</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Position:</strong> ${position}</p>
-        <br/>
-        <p>Please find the applicant's CV attached.</p>
-      `,
-    };
-
-    // If a file was uploaded, attach it
-    if (file && file.size > 0) {
-      const bytes = await file.arrayBuffer();
-      const buffer = Buffer.from(bytes);
-      
-      mailOptions.attachments = [
-        {
-          filename: file.name,
-          content: buffer,
-          contentType: file.type,
-        }
-      ];
+    // Attach CV file if provided
+    const attachments = [];
+    if (file && typeof file.arrayBuffer === 'function') {
+      const buffer = Buffer.from(await file.arrayBuffer());
+      attachments.push({
+        filename: file.name || 'Resume.pdf',
+        content: buffer,
+        contentType: file.type || 'application/pdf',
+      });
     }
 
-    // Attempt to send email
-    await transporter.sendMail(mailOptions);
+    const careerHtml = `
+      <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; max-width: 650px; margin: 0 auto; background-color: #ffffff; padding: 0; border: 1px solid #e0e0e0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+          <div style="background-color: #111827; padding: 25px 30px; text-align: center; border-bottom: 4px solid #d32f2f;">
+              <img src="https://www.rrconstruction.lk/images/logo.png" alt="RR Construction Logo" style="max-height: 70px; margin-bottom: 15px;">
+              <h2 style="color: #ffffff; margin: 0; font-size: 22px; font-weight: 600;">New Career Application</h2>
+          </div>
+          <div style="padding: 30px;">
+              <table style="width: 100%; border-collapse: collapse; margin-bottom: 25px;">
+                  <tr><td style="padding: 10px 0; border-bottom: 1px solid #eee; width: 35%; color: #6b7280;"><strong>Candidate Name:</strong></td><td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: 600; color: #111;">${name}</td></tr>
+                  <tr><td style="padding: 10px 0; border-bottom: 1px solid #eee; color: #6b7280;"><strong>Position Applied For:</strong></td><td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: 600; color: #d32f2f;">${position}</td></tr>
+                  <tr><td style="padding: 10px 0; border-bottom: 1px solid #eee; color: #6b7280;"><strong>Email Address:</strong></td><td style="padding: 10px 0; border-bottom: 1px solid #eee;"><a href="mailto:${email}" style="color: #d32f2f;">${email}</a></td></tr>
+                  <tr><td style="padding: 10px 0; border-bottom: 1px solid #eee; color: #6b7280;"><strong>Phone Number:</strong></td><td style="padding: 10px 0; border-bottom: 1px solid #eee; color: #111;">${phone}</td></tr>
+                  <tr><td style="padding: 10px 0; border-bottom: 1px solid #eee; color: #6b7280;"><strong>Attached Resume:</strong></td><td style="padding: 10px 0; border-bottom: 1px solid #eee; color: #111;">${file ? file.name : 'None'}</td></tr>
+              </table>
+          </div>
+      </div>
+    `;
+
+    const summaryText = `
+New Job Application:
+Name: ${name}
+Position: ${position}
+Email: ${email}
+Phone: ${phone}
+CV Attached: ${file ? file.name : 'None'}
+    `;
+
+    const result = await sendNotificationEmail({
+      name,
+      email,
+      phone,
+      subject: `New Job Application: ${position} - from ${name}`,
+      message: summaryText,
+      html: careerHtml,
+      attachments,
+    });
 
     return NextResponse.json(
-      { success: true, message: 'Application submitted successfully' },
+      { success: true, message: 'Application submitted successfully', method: result.method },
       { status: 200 }
     );
   } catch (error: any) {
-    console.error('Error sending application email:', error);
+    console.error('Error sending job application email:', error);
     return NextResponse.json(
-      { error: 'Failed to send application. Please try again later.' },
+      { error: error.message || 'Failed to send application. Please try again later.' },
       { status: 500 }
     );
   }
 }
-
-

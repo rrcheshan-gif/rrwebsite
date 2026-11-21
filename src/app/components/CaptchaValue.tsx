@@ -14,10 +14,11 @@ export default function CaptchaValue({
   theme = "light",
   resetTrigger = 0,
 }: CaptchaValueProps) {
-  const [numA, setNumA] = useState<number>(0);
-  const [numB, setNumB] = useState<number>(0);
+  const [numA, setNumA] = useState<number>(7);
+  const [numB, setNumB] = useState<number>(5);
   const [userAnswer, setUserAnswer] = useState<string>("");
   const [isRotating, setIsRotating] = useState<boolean>(false);
+  const [isMounted, setIsMounted] = useState<boolean>(false);
   const inputId = useId();
 
   // Generate new math problem
@@ -31,10 +32,11 @@ export default function CaptchaValue({
     if (onVerify) {
       onVerify(false, undefined);
     }
-    setTimeout(() => setIsRotating(false), 400);
+    setTimeout(() => setIsRotating(false), 300);
   };
 
   useEffect(() => {
+    setIsMounted(true);
     generateCaptcha();
   }, [resetTrigger]);
 
@@ -70,7 +72,7 @@ export default function CaptchaValue({
     >
       {/* Hidden inputs so any FormData(form) automatically receives these values */}
       <input type="hidden" name="captchaAnswer" value={userAnswer} />
-      <input type="hidden" name="captchaExpected" value={expected > 0 ? String(expected) : ""} />
+      <input type="hidden" name="captchaExpected" value={String(expected)} />
 
       {/* Header */}
       <div
@@ -118,7 +120,7 @@ export default function CaptchaValue({
               color: isDark ? "#94a3b8" : "#64748b",
             }}
           >
-            Solve the math value
+            Please solve the math puzzle
           </span>
         )}
       </div>
@@ -182,7 +184,7 @@ export default function CaptchaValue({
             type="number"
             value={userAnswer}
             onChange={handleInputChange}
-            placeholder="Enter value"
+            placeholder="Enter answer"
             required
             autoComplete="off"
             style={{

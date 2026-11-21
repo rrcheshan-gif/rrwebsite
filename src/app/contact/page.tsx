@@ -38,13 +38,15 @@ export default function Contact() {
         }),
       });
       
-      if (!res.ok) throw new Error('Failed to send');
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || 'Failed to send message');
       
       alert('Thank you for your message! Our team will get back to you shortly.');
       form.reset();
       setCaptchaVerified(false);
-    } catch (error) {
-      alert("There was an error sending your message. Please try again or call us.");
+      setResetCaptcha((prev) => prev + 1);
+    } catch (error: any) {
+      alert(error.message || "There was an error sending your message. Please try again or call us.");
     } finally {
       setIsSubmitting(false);
     }

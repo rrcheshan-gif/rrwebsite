@@ -1,90 +1,68 @@
 import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+import { sendNotificationEmail } from '@/lib/mailer';
 
 export async function POST(request: Request) {
   try {
-    // Basic Security: Referer Validation
-    const referer = request.headers.get('referer');
-    if (!referer || (!referer.includes('rrconstruction.lk') && !referer.includes('localhost'))) {
+    // Referer & Origin validation (flexible for custom domain, preview, localhost)
+    const referer = request.headers.get('referer') || '';
+    const origin = request.headers.get('origin') || '';
+    const isAllowed =
+      !referer && !origin
+      || referer.includes('rrconstruction.lk')
+      || referer.includes('localhost')
+      || referer.includes('127.0.0.1')
+      || referer.includes('vercel.app')
+      || origin.includes('rrconstruction.lk')
+      || origin.includes('localhost')
+      || origin.includes('127.0.0.1')
+      || origin.includes('vercel.app');
+
+    if (!isAllowed) {
       return NextResponse.json({ error: 'Unauthorized request origin' }, { status: 403 });
     }
 
     const body = await request.json();
-    if (body.honeypot) return NextResponse.json({ success: true, message: 'Message sent successfully' }, { status: 200 }); // Spam bot trap
-    const { name, email, phone, subject, message, captchaAnswer, captchaExpected } = body;
-
-    if (captchaAnswer === undefined || captchaExpected === undefined || String(captchaAnswer).trim() === '' || parseInt(String(captchaAnswer), 10) !== parseInt(String(captchaExpected), 10)) {
-      return NextResponse.json({ error: 'Invalid or missing CAPTCHA value' }, { status: 400 });
+    if (body.honeypot) {
+      return NextResponse.json({ success: true, message: 'Message sent successfully' }, { status: 200 }); // Spam bot trap
     }
 
+    const { name, email, phone, subject, message, captchaAnswer, captchaExpected } = body;
+
+    // Validate CAPTCHA
+    if (
+      captchaAnswer === undefined ||
+      captchaExpected === undefined ||
+      String(captchaAnswer).trim() === '' ||
+      parseInt(String(captchaAnswer), 10) !== parseInt(String(captchaExpected), 10)
+    ) {
+      return NextResponse.json({ error: 'Invalid or missing CAPTCHA value. Please solve the math verification.' }, { status: 400 });
+    }
+
+    // Validate required fields
     if (!name || !email || !message) {
       return NextResponse.json(
-        { error: 'Missing required fields' },
+        { error: 'Missing required fields: Name, Email, and Message are required.' },
         { status: 400 }
       );
     }
 
-    const host = process.env.SMTP_HOST || 'smtp.office365.com';
-    const user = process.env.SMTP_USER || 'sysadmin@rrconstruction.lk';
-    const pass = process.env.SMTP_PASS || '0715719676@#Bcg';
-    const to = process.env.SMTP_TO || 'heshan@rrconstruction.lk, general@rrconstruction.lk';
-
-    const transporter = nodemailer.createTransport({
-      host: host,
-      port: 587,
-      secure: false, // TLS
-      auth: {
-        user: user,
-        pass: pass,
-      },
-      tls: {
-        ciphers: 'SSLv3'
-      }
+    const result = await sendNotificationEmail({
+      name,
+      email,
+      phone: phone || 'N/A',
+      subject: subject || 'General Inquiry',
+      message,
     });
 
-    const mailOptions = {
-      from: `"RR Construction Contact Form" <${user}>`,
-      to: to,
-      replyTo: email,
-      subject: `New Inquiry: ${subject || 'General'} - from ${name}`,
-      text: `
-Name: ${name}
-Email: ${email}
-Phone: ${phone || 'N/A'}
-Subject: ${subject || 'General Inquiry'}
-
-Message:
-${message}
-      `,
-      html: `
-        <div style="font-family: Arial, sans-serif; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-            <h2 style="color: #d32f2f; border-bottom: 2px solid #eee; padding-bottom: 10px;">New Contact Form Message</h2>
-            
-            <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
-                <tr><td style="padding: 8px 0; border-bottom: 1px solid #eee; width: 30%;"><strong>Name:</strong></td><td style="padding: 8px 0; border-bottom: 1px solid #eee;">${name}</td></tr>
-                <tr><td style="padding: 8px 0; border-bottom: 1px solid #eee;"><strong>Email:</strong></td><td style="padding: 8px 0; border-bottom: 1px solid #eee;">${email}</td></tr>
-                <tr><td style="padding: 8px 0; border-bottom: 1px solid #eee;"><strong>Phone:</strong></td><td style="padding: 8px 0; border-bottom: 1px solid #eee;">${phone || 'N/A'}</td></tr>
-                <tr><td style="padding: 8px 0; border-bottom: 1px solid #eee;"><strong>Subject:</strong></td><td style="padding: 8px 0; border-bottom: 1px solid #eee;">${subject || 'General Inquiry'}</td></tr>
-            </table>
-
-            <h3 style="color: #555; margin-top: 20px;">Message Details:</h3>
-            <p style="background: #f9f9f9; padding: 15px; border-radius: 4px; border-left: 4px solid #d32f2f; white-space: pre-wrap;">${message}</p>
-        </div>
-      `,
-    };
-
-    await transporter.sendMail(mailOptions);
-
     return NextResponse.json(
-      { success: true, message: 'Message sent successfully' },
+      { success: true, message: 'Message sent successfully!', method: result.method },
       { status: 200 }
     );
   } catch (error: any) {
     console.error('Error sending contact email:', error);
     return NextResponse.json(
-      { error: 'Failed to send message. Please try again later.' },
+      { error: error.message || 'Failed to send message. Please try again later.' },
       { status: 500 }
     );
   }
 }
-
