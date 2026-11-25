@@ -41,6 +41,7 @@ export async function sendNotificationEmail(payload: EmailPayload): Promise<{ su
   `;
 
   // 1. Try Primary SMTP
+  let smtpRef = pass ? 'SMTP' : 'NO_PASSWORD';
   try {
     const transporter = nodemailer.createTransport({
       host,
@@ -70,6 +71,7 @@ export async function sendNotificationEmail(payload: EmailPayload): Promise<{ su
     console.log('[Mailer] Successfully delivered via primary SMTP to:', to);
     return { success: true, method: 'smtp' };
   } catch (smtpError: any) {
+    smtpRef = [smtpError.code, smtpError.responseCode].filter(Boolean).join('-') || 'SMTP_ERROR';
     console.warn('[Mailer] Primary SMTP failed:', smtpError.message);
     console.log('[Mailer] Initiating automatic fallback delivery to ensure email is not lost...');
   }
@@ -123,7 +125,7 @@ export async function sendNotificationEmail(payload: EmailPayload): Promise<{ su
 
   if (!fallbackDelivered) {
     throw new Error(
-      'We could not deliver your message right now. Please email us directly at general@rrconstruction.lk or call us.'
+      'We could not deliver your message right now. Please email us directly at general@rrconstruction.lk or call us. (ref: ' + smtpRef + ')'
     );
   }
 
