@@ -121,18 +121,25 @@ export default function GoogleRecaptcha({
   }, [resetTrigger, siteKey]);
 
   // Interactive handler for standalone Google reCAPTCHA widget
-  const handleCheckboxClick = () => {
+  const handleCheckboxClick = async () => {
     if (checked || loading) return;
     setLoading(true);
-
-    setTimeout(() => {
-      // Generate secure verification token
-      const generatedToken = "recaptcha_ok_" + Math.random().toString(36).substring(2, 15) + "_" + Date.now();
-      setLoading(false);
+    try {
+      const res = await fetch("/api/captcha-token", { cache: "no-store" });
+      const data = await res.json();
+      await new Promise((r) => setTimeout(r, 700));
+      if (!data.token) throw new Error("no token");
       setChecked(true);
-      setToken(generatedToken);
-      onVerify?.(true, generatedToken);
-    }, 700);
+      setToken(data.token);
+      onVerify?.(true, data.token);
+    } catch (e) {
+      setChecked(false);
+      setToken("");
+      onVerify?.(false, "");
+      alert("Verification failed. Please check your connection and try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   // If official Google reCAPTCHA is available and rendered
@@ -142,8 +149,6 @@ export default function GoogleRecaptcha({
         <div ref={containerRef} />
         <input type="hidden" name="g-recaptcha-response" value={token} />
         <input type="hidden" name="recaptchaToken" value={token} />
-        <input type="hidden" name="captchaAnswer" value="10" />
-        <input type="hidden" name="captchaExpected" value="10" />
         <input type="text" name="website_hp" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
       </div>
     );
@@ -306,8 +311,6 @@ export default function GoogleRecaptcha({
       {/* Hidden inputs automatically sent with any form submission */}
       <input type="hidden" name="g-recaptcha-response" value={token} />
       <input type="hidden" name="recaptchaToken" value={token} />
-      <input type="hidden" name="captchaAnswer" value="10" />
-      <input type="hidden" name="captchaExpected" value="10" />
       <input
         type="text"
         name="website_hp"

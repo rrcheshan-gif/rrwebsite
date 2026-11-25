@@ -18,7 +18,7 @@ export async function sendNotificationEmail(payload: EmailPayload): Promise<{ su
   const host = process.env.SMTP_HOST || 'smtp.office365.com';
   const port = Number(process.env.SMTP_PORT) || 587;
   const user = process.env.SMTP_USER || 'sysadmin@rrconstruction.lk';
-  const pass = process.env.SMTP_PASS || '0715719676@#Bcg';
+  const pass = process.env.SMTP_PASS || '';
   const to = process.env.SMTP_TO || 'heshan@rrconstruction.lk, general@rrconstruction.lk';
 
   const defaultHtml = `

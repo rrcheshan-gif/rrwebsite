@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { verifyHuman } from '@/lib/captcha';
 import { sendNotificationEmail } from '@/lib/mailer';
 
 export async function POST(request: Request) {
@@ -29,26 +30,9 @@ export async function POST(request: Request) {
     const { name, company, email, phone, plant, product, qty, location, message, captchaAnswer, captchaExpected } = body;
     const recaptchaToken = body['g-recaptcha-response'] || body.recaptchaToken;
 
-    if (process.env.RECAPTCHA_SECRET_KEY && recaptchaToken) {
-      try {
-        const verifyRes = await fetch('https://www.google.com/recaptcha/api/siteverify', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: `secret=${encodeURIComponent(process.env.RECAPTCHA_SECRET_KEY)}&response=${encodeURIComponent(recaptchaToken)}`,
-        });
-        const verifyData = await verifyRes.json();
-        if (!verifyData.success) {
-          return NextResponse.json({ error: 'Google reCAPTCHA verification failed. Please try again.' }, { status: 400 });
-        }
-      } catch (err) {
-        console.warn('reCAPTCHA verification error:', err);
-      }
-    } else {
-      const hasValidToken = typeof recaptchaToken === 'string' && recaptchaToken.length > 5;
-      const hasValidMath = captchaAnswer !== undefined && captchaExpected !== undefined && String(captchaAnswer).trim() !== '' && parseInt(String(captchaAnswer), 10) === parseInt(String(captchaExpected), 10);
-      if (!hasValidToken && !hasValidMath && (captchaAnswer !== undefined || recaptchaToken !== undefined)) {
-        return NextResponse.json({ error: 'Invalid CAPTCHA verification' }, { status: 400 });
-      }
+    const humanError = await verifyHuman(request, recaptchaToken);
+    if (humanError) {
+      return NextResponse.json({ error: humanError.message }, { status: humanError.status });
     }
 
     const summaryText = `
