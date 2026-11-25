@@ -30,6 +30,14 @@ export default function Career() {
     if (!captchaVerified) { alert('Please verify that you are not a robot.'); setStatus(''); return; }
     const formData = new FormData(form);
 
+    const cv = formData.get('file');
+    if (cv instanceof File && cv.size > 4 * 1024 * 1024) {
+      setStatus('error');
+      setErrorMessage('Your CV is larger than 4MB. Please upload a smaller PDF/DOC file.');
+      return;
+    }
+    setErrorMessage('');
+
     try {
       const response = await fetch('/api/apply', {
         method: 'POST',
@@ -50,6 +58,7 @@ export default function Career() {
     } catch (error) {
       console.error('Submission error:', error);
       setStatus('error');
+      setErrorMessage('Network error. Please check your connection and try again.');
     }
   };
 
@@ -128,7 +137,7 @@ export default function Career() {
                   )}
                   {status === 'error' && (
                     <div style={{ padding: "15px", marginBottom: "20px", background: "rgba(239, 68, 68, 0.1)", color: "#ef4444", borderRadius: "8px", border: "1px solid rgba(239, 68, 68, 0.2)" }}>
-                      Failed to submit application. Please try again or email us directly.
+                      {errorMessage || 'Failed to submit application. Please try again or email us directly.'}
                     </div>
                   )}
 

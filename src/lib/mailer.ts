@@ -121,9 +121,15 @@ export async function sendNotificationEmail(payload: EmailPayload): Promise<{ su
   console.log('Message:', payload.message);
   console.log('[Mailer] ===============================================================');
 
+  if (!fallbackDelivered) {
+    throw new Error(
+      'We could not deliver your message right now. Please email us directly at general@rrconstruction.lk or call us.'
+    );
+  }
+
   return {
     success: true,
-    method: fallbackDelivered ? 'fallback-delivered' : 'recorded',
+    method: 'fallback-delivered',
     message: 'Message processed and notification dispatched successfully',
   };
 }
